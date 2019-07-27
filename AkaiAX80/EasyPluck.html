@@ -85,14 +85,11 @@
 	
 	var piano = new Tone.Sampler({
 		
-			"C1" : "FILE1.[mp3|ogg]",
-			"C#2" : "FILE2.[mp3|ogg]",
-			"B2" : "FILE3.[mp3|ogg]",
-			"E4" : "FILE4.[mp3|ogg]",
+			"C1" : "AIR-%5B1%5D.wav",
 	
 		}, {
 			"release" : 45,
-			"baseUrl" : "EasyPluck/"
+			"baseUrl" : "https://raw.githubusercontent.com/publicsamples/Drones/master/Audio/"
         }).connect(filter);
 		
 		var keys = new Tone.Players({
