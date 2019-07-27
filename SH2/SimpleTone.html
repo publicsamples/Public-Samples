@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+
+
+	<script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2/webcomponents-bundle.js"></script>
+	<script src="../libraries/Tone//Tone.js"></script>
+	<script src="../libraries/Tone/tonejs-ui.js"></script>
+    <script type="text/javascript" src="../libraries/Tone/NexusUI.js"></script>
+    
+</head>
+<body>
+	<style>
+		tone-piano {
+			margin-bottom: 10px;
+		}
+		
+		.dropbtn {
+		  background-color: #3498DB;
+		  color: white;
+		  padding: 16px;
+		  font-size: 16px;
+		  border: none;
+		  cursor: pointer;
+		   text-align: center;
+		}
+
+		.dropbtn:hover, .dropbtn:focus {
+		  background-color: #2980B9;
+		}
+
+		.dropdown {
+		  position: relative;
+		  display: inline-block;
+		   text-align: center;
+		  
+		}
+
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #f1f1f1;
+		  min-width: 160px;
+		  overflow: auto;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+
+		.dropdown-content a {
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		}
+
+		.dropdown a:hover {background-color: #ddd;}
+
+		.show {display: block;}
+		</style>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Patches</button>
+  <div id="myDropdown" class="dropdown-content">
+<a href="AllIn.html">AllIn</a>		
+<a href="GhostBass.html">GhostBass</a>	
+<a href="LittleLFO.html">LittleLFO</a>	
+<a href="RezzySqr.html">RezzySqr</a>	
+<a href="SimpleTone.html">SimpleTone</a>	
+<a href="TwoFingerBass.html">TwoFingerBass</a>
+<a href="funky.html">funky</a>	
+<a href="wowie.html">wowie</a>
+<a href="Feelit.html">Feelit</a>	
+<a href="LFOPerc.html">LFOPerc</a>	
+<a href="Plastics.html">Plastics</a>	
+<a href="ShortPWM.html">ShortPWM</a>	
+<a href="TheBigR.html">TheBigR</a>	
+<a href="WowBass.html">WowBass</a>	
+<a href="openenvpwm.html">openenvpwm</a>
+  </div>
+		<tone-content>
+		<tone-transport></tone-transport>
+		<tone-step-sequencer></tone-step-sequencer>
+			<tone-piano polyphonic></tone-piano>
+			<tone-auto-filter collapsed frequency id="frequency"></tone-auto-filter>
+			<tone-ping-pong-delay collapsed></tone-ping-pong-delay>
+		</tone-content>
+	</tone-example>
+
+	<script type="text/javascript">
+
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		  document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+		    var dropdowns = document.getElementsByClassName("dropdown-content");
+		    var i;
+		    for (i = 0; i < dropdowns.length; i++) {
+		      var openDropdown = dropdowns[i];
+		      if (openDropdown.classList.contains('show')) {
+		        openDropdown.classList.remove('show');
+		      }
+		    }
+		  }
+		}
+
+		
+		
+		var eq = new Tone.EQ3().toMaster({
+				})
+				
+				//the feedback delay
+				var feedbackDelay = new Tone.PingPongDelay({
+					"frequency" : "8n",
+					"feedback" : 0.6,
+					"wet" : 0.0
+				}).connect(eq);		
+				
+				var lfo = new Tone.LFO("2n", 800, 8000);
+						lfo.connect(frequency);
+		
+				
+				var filter = new Tone.AutoFilter({
+							"frequency" : 100,
+							"wet" : 0.0,
+					"frequency" : "8n"
+						}).connect(feedbackDelay).start();
+				
+
+				
+		
+		var eq = new Tone.EQ3().toMaster({
+				})
+				
+				//the feedback delay
+				var feedbackDelay = new Tone.PingPongDelay({
+					"frequency" : "8n",
+					"feedback" : 0.6,
+					"wet" : 0.0
+				}).connect(eq);		
+				
+				var lfo = new Tone.LFO("2n", 800, 8000);
+						lfo.connect(frequency);
+		
+				
+				var filter = new Tone.AutoFilter({
+							"frequency" : 100,
+							"wet" : 0.0,
+					"frequency" : "8n"
+						}).connect(feedbackDelay).start();
+				
+
+				
+	
+	
+	var piano = new Tone.Sampler({
+		
+			"C1" : "FILE1.[mp3|ogg]",
+			"C#1" : "FILE2.[mp3|ogg]",
+			"D1" : "FILE3.[mp3|ogg]",
+			"D#1" : "FILE4.[mp3|ogg]",
+			"E1" : "FILE5.[mp3|ogg]",
+			"F1" : "FILE6.[mp3|ogg]",
+			"F#1" : "FILE7.[mp3|ogg]",
+			"G1" : "FILE8.[mp3|ogg]",
+			"G#1" : "FILE9.[mp3|ogg]",
+			"A1" : "FILE10.[mp3|ogg]",
+			"A#1" : "FILE11.[mp3|ogg]",
+			"B1" : "FILE12.[mp3|ogg]",
+			"C2" : "FILE13.[mp3|ogg]",
+			"C#2" : "FILE14.[mp3|ogg]",
+			"D2" : "FILE15.[mp3|ogg]",
+			"D#2" : "FILE16.[mp3|ogg]",
+			"E2" : "FILE17.[mp3|ogg]",
+			"F2" : "FILE18.[mp3|ogg]",
+			"F#2" : "FILE19.[mp3|ogg]",
+			"G2" : "FILE20.[mp3|ogg]",
+			"G#2" : "FILE21.[mp3|ogg]",
+			"A2" : "FILE22.[mp3|ogg]",
+			"A#2" : "FILE24.[mp3|ogg]",
+		    "B2" : "FILE25.[mp3|ogg]",
+		
+			
+		}, {
+			"release" : 0,
+			"baseUrl" : "SimpleTone/"
+        }).connect(filter);
+		
+		var keys = new Tone.Players({
+				"A" : "SimpleTone/FILE5.[mp3|ogg]",
+				"C#" : "SimpleTone/FILE10.[mp3|ogg]",
+				"E" : "SimpleTone/FILE15.[mp3|ogg]",
+				"F#" : "SimpleTone/FILE20.[mp3|ogg]",
+		}, {
+			"volume" : 00,
+			"fadeOut" : "8512n",
+			}).connect(filter);
+			
+			//the notes
+			var noteNames = ["F#", "E", "C#", "A"];
+
+			var loop = new Tone.Sequence(function(time, col){
+				var column = document.querySelector("tone-step-sequencer").currentColumn;
+				column.forEach(function(val, i){
+					if (val){
+						//slightly randomized velocities
+						var vel = Math.random() * 0.5 + 0.5;
+						keys.get(noteNames[i]).start(time, 0, "8N", 560, vel);
+					}
+				});
+				//set the columne on the correct draw frame
+				Tone.Draw.schedule(function(){
+					document.querySelector("tone-step-sequencer").setAttribute("highlight", col);
+				}, time);
+			}, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "16n").start(0);
+			
+		
+
+			//bind the interface
+			document.querySelector("tone-piano").bind(piano);
+			document.querySelector("tone-auto-filter").bind(filter);
+			document.querySelector("tone-transport").bind(Tone.Transport);
+	document.querySelector("tone-ping-pong-delay").bind(feedbackDelay);
+
+			Tone.Transport.on("stop", () => {
+				setTimeout(() => {
+					document.querySelector("tone-step-sequencer").setAttribute("highlight", "-1");
+				}, 100);
+			});
+		
+
+			
+	</script>
+
+</body>
+</html>
+	

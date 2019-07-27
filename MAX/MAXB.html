@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+
+
+	<script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2/webcomponents-bundle.js"></script>
+	<script src="../libraries/Tone//Tone.js"></script>
+	<script src="../libraries/Tone/tonejs-ui.js"></script>
+    <script type="text/javascript" src="../libraries/Tone/NexusUI.js"></script>
+    
+</head>
+<body>
+	<style>
+		tone-piano {
+			margin-bottom: 10px;
+		}
+	</style>
+
+
+		<tone-content>
+		<tone-transport></tone-transport>
+		<tone-step-sequencer></tone-step-sequencer>
+			<tone-piano polyphonic></tone-piano>
+			<tone-ping-pong-delay></tone-ping-pong-delay>
+			<tone-reverb></tone-reverb>
+		</tone-content>
+	</tone-example>
+
+	<script type="text/javascript">
+
+		
+		var eq = new Tone.EQ3().toMaster({
+				})
+				
+		var reverb = new Tone.Reverb({
+			"wet" : 0.0
+				}).connect(eq);
+				
+				//the feedback delay
+				var feedbackDelay = new Tone.PingPongDelay({
+					"delayTime" : "8n",
+					"feedback" : 0.6,
+					"wet" : 0.0
+				}).connect(reverb);
+	
+	var piano = new Tone.Sampler({
+		
+			"C6" : "FILE1.[mp3|ogg]"
+	
+		}, {
+			"release" : 45,
+			"baseUrl" : "MAXB/"
+        }).connect(feedbackDelay);
+		
+		var keys = new Tone.Players({
+			"A" : "MAXB/FILE1.[mp3|ogg]",
+			"C#" : "MAXB/FILE2.[mp3|ogg]",
+			"E" : "MAXB/FILE3.[mp3|ogg]",
+			"F#" : "MAXB/FILE4.[mp3|ogg]",
+		}, {
+			"volume" : 0,
+			"fadeOut" : "88512n",
+			}).connect(feedbackDelay);
+			
+			//the notes
+			var noteNames = ["F#", "E", "C#", "A"];
+
+			var loop = new Tone.Sequence(function(time, col){
+				var column = document.querySelector("tone-step-sequencer").currentColumn;
+				column.forEach(function(val, i){
+					if (val){
+						//slightly randomized velocities
+						var vel = Math.random() * 0.5 + 0.5;
+						keys.get(noteNames[i]).start(time, 0, "8n", 0, vel);
+					}
+				});
+				//set the columne on the correct draw frame
+				Tone.Draw.schedule(function(){
+					document.querySelector("tone-step-sequencer").setAttribute("highlight", col);
+				}, time);
+			}, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "16n").start(0);
+			
+		
+
+		//bind the interface
+		document.querySelector("tone-piano").bind(piano);
+		document.querySelector("tone-reverb").bind(reverb);
+		document.querySelector("tone-transport").bind(Tone.Transport);
+document.querySelector("tone-ping-pong-delay").bind(feedbackDelay);
+
+		Tone.Transport.on("stop", () => {
+			setTimeout(() => {
+				document.querySelector("tone-step-sequencer").setAttribute("highlight", "-1");
+			}, 100);
+		});
+
+
+			
+	</script>
+
+</body>
+</html>
