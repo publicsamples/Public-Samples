@@ -1,0 +1,137 @@
+<html>
+<head>
+ 
+
+	<script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2/webcomponents-bundle.js"></script>
+	<script src="../libraries/Tone//Tone.js"></script>
+	<script src="../libraries/Tone/tonejs-ui.js"></script>
+    <script type="text/javascript" src="../libraries/Tone/NexusUI.js"></script>
+
+<link rel="stylesheet" href="player.css" />  
+</head>
+<body>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Patches</button>
+  <div id="myDropdown" class="dropdown-content">
+	  <a href="80Function.html">80s function</a>		
+<a href="BrokenOldStrings.html">Broken Old Strings</a>		
+<a href="CrackBass.html">Crack Bass</a>	
+<a href="Diplodocus.html">Diplodocus</a>	
+<a href="EasyPluck.html">Easy Pluck</a>	
+<a href="Moogalike.html">Moogalike</a>	
+<a href="OddPiano.html">Odd Piano</a>
+<a href="RingDing.html">Ring Ding</a>	
+<a href="Solids.html">Solids</a>	
+<a href="Sub.html">Sub</a>	
+<a href="WobbleSquare.html">Wobble Square</a>	
+<a href="SyncBalls.html">SyncBalls</a>	
+</div>
+		<tone-content>
+		<tone-transport></tone-transport>
+		<tone-step-sequencer></tone-step-sequencer>
+			<tone-piano polyphonic></tone-piano>
+			<tone-reverb collapsed><tone-reverb>
+			<tone-ping-pong-delay collapsed></tone-ping-pong-delay>
+		</tone-content>
+	</tone-example>
+
+
+	<script type="text/javascript">
+
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		  document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+		    var dropdowns = document.getElementsByClassName("dropdown-content");
+		    var i;
+		    for (i = 0; i < dropdowns.length; i++) {
+		      var openDropdown = dropdowns[i];
+		      if (openDropdown.classList.contains('show')) {
+		        openDropdown.classList.remove('show');
+		      }
+		    }
+		  }
+		}
+
+		
+		
+		var eq = new Tone.EQ3().toMaster({
+				})
+				
+		var reverb = new Tone.Reverb({
+			"wet" : 0.0
+				}).connect(eq);
+				
+				//the feedback delay
+				var feedbackDelay = new Tone.PingPongDelay({
+					"delayTime" : "8n",
+					"feedback" : 0.6,
+					"wet" : 0.0
+				}).connect(reverb);
+	
+	var piano = new Tone.Sampler({
+		
+			"C1" : "FILE1.[mp3|ogg]",
+			"D#2" : "FILE2.[mp3|ogg]",
+			"D3" : "FILE3.[mp3|ogg]",
+			"F4" : "FILE4.[mp3|ogg]",
+	
+		}, {
+			"release" : 45,
+			"baseUrl" : "SyncBalls/"
+        }).connect(feedbackDelay);
+		
+		var keys = new Tone.Players({
+			"A" : "SyncBalls/FILE1.[mp3|ogg]",
+			"C#" : "SyncBalls/FILE2.[mp3|ogg]",
+			"E" : "SyncBalls/FILE3.[mp3|ogg]",
+			"F#" : "SyncBalls/FILE4.[mp3|ogg]",
+		}, {
+			"volume" : 00,
+			"fadeOut" : "8512n",
+			}).connect(feedbackDelay);
+			
+			//the notes
+			var noteNames = ["F#", "E", "C#", "A"];
+
+			var loop = new Tone.Sequence(function(time, col){
+				var column = document.querySelector("tone-step-sequencer").currentColumn;
+				column.forEach(function(val, i){
+					if (val){
+						//slightly randomized velocities
+						var vel = Math.random() * 0.5 + 0.5;
+						keys.get(noteNames[i]).start(time, 0, "8n", 560, vel);
+					}
+				});
+				//set the columne on the correct draw frame
+				Tone.Draw.schedule(function(){
+					document.querySelector("tone-step-sequencer").setAttribute("highlight", col);
+				}, time);
+			}, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "16n").start(0);
+			
+		
+
+		//bind the interface
+		document.querySelector("tone-piano").bind(piano);
+		document.querySelector("tone-reverb").bind(reverb);
+		document.querySelector("tone-transport").bind(Tone.Transport);
+document.querySelector("tone-ping-pong-delay").bind(feedbackDelay);
+
+		Tone.Transport.on("stop", () => {
+			setTimeout(() => {
+				document.querySelector("tone-step-sequencer").setAttribute("highlight", "-1");
+			}, 100);
+		});
+
+
+			
+	</script>
+
+</body>
+</html>

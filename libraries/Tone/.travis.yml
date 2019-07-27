@@ -1,0 +1,89 @@
+sudo: false
+dist: trusty
+language: node_js
+node_js:
+- '9'
+install:
+- npm install
+- git config --global user.email "travis@travis-ci.org"
+- git config --global user.name "Travis CI"
+script: 
+  - npm run test:travis
+  - npm run codecov
+before_deploy: 
+  - npm run increment
+  - npm run tsd
+jobs:
+  include:
+    - stage: test
+      env : BROWSER=chrome
+      os: linux
+      addons:
+        chrome: stable
+    - stage: test
+      env : BROWSER=chrome
+      os: linux
+      addons:
+        chrome: beta
+    - stage: test
+      env : BROWSER=firefox
+      os: linux
+      addons:
+        firefox: latest
+    # - stage: test
+    #   env : BROWSER=firefox
+    #   os: linux
+    #   addons:
+    #     firefox: latest-beta
+    - stage: test
+      before_script:
+      # needs an audio output device to run
+      - HOMEBREW_NO_AUTO_UPDATE=1 brew install Caskroom/cask/soundflower
+      env : BROWSER=safari
+      os: osx
+      osx_image: xcode9.2
+    - stage: test
+      # puppeteer tests
+      before_script: npm install puppeteer
+      script: 
+        - npm run build
+        - npm run test:html
+        - npm run test:node
+      env : BROWSER=puppeteer
+    - stage: deploy
+      os: linux
+      script: npm run build
+      deploy:
+      - provider: npm
+        skip_cleanup: true
+        email: yotammann@gmail.com
+        api_key: $NPM_TOKEN
+        tag: next
+        on:
+          repo: Tonejs/Tone.js
+          branch: dev
+          # don't publish on cron or PRs
+          condition: $TRAVIS_EVENT_TYPE != cron && $TRAVIS_EVENT_TYPE != pull_request
+      # publish without @next when pushing on master
+      - provider: npm
+        skip_cleanup: true
+        email: yotammann@gmail.com
+        api_key: $NPM_TOKEN
+        on:
+          repo: Tonejs/Tone.js
+          branch: master
+          # don't publish on cron or PRs
+          condition: $TRAVIS_EVENT_TYPE != cron && $TRAVIS_EVENT_TYPE != pull_request
+      # publish build files for releases
+      - provider: releases
+        api-key: $GH_TOKEN
+        file_glob: true
+        file: build/*
+        skip_cleanup: true
+        on:
+          tags: true
+# cache node_modules to speed up build
+cache:
+  directories:
+    - node_modules
+    - $HOME/Library/Caches/Homebrew
