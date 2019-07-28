@@ -14,9 +14,6 @@
 
     <div id="dial"></div>
 
-    <script>
-      var dial = new Nexus.Dial('#dial')
-    </script>
 
 
 <tone-content>
@@ -27,6 +24,9 @@
 			<tone-ping-pong-delay collapsed></tone-ping-pong-delay>
 		</tone-content>
 	</tone-example>
+	
+	   
+
 
 	<script type="text/javascript">
 		/* When the user clicks on the button, 
@@ -48,6 +48,7 @@
 		  }
 		}
 		
+		   var dial = new Nexus.Dial('#dial')
 		
 		var eq = new Tone.EQ3().toMaster({
 				})
