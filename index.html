@@ -53,70 +53,11 @@ gain.max = 0;
 gain.value = -30;
 
 		
-		var eq = new Tone.EQ3().toMaster({
-				})
-				
-				var filter = new Tone.AutoFilter({
-							"frequency" : 100,
-							"wet" : 0.0,
-					"frequency" : "8n"
-						}).connect(eq).start();
-				
-				
-				//the feedback delay
-				var feedbackDelay = new Tone.PingPongDelay({
-					"frequency" : "8n",
-					"feedback" : 0.6,
-					"wet" : 0.0
-				}).connect(filter);		
-			
-	
-	var piano = new Tone.Sampler({
 		
-			"c2" : "FILE1.[mp3|ogg]",
-			
-		}, {
-			"release" : 0,
-			"baseUrl" : "AkaiAX80/Clicking/"
-        }).connect(feedbackDelay);
-		
-		var keys = new Tone.Players({
-			"A" : "AkaiAX80/Clicking/FILE1.[mp3|ogg]",
-			"C#" : "AkaiAX80/Clicking/FILE2.[mp3|ogg]",
-			"E" : "AkaiAX80/Clicking/FILE3.[mp3|ogg]",
-			"F#" : "AkaiAX80/Clicking/FILE4.[mp3|ogg]",
-		}, {
-			"volume" : 00,
-			"fadeOut" : "8512n",
-			}).connect(feedbackDelay);
-			
-			//the notes
-			var noteNames = ["F#", "E", "C#", "A"];
-			var loop = new Tone.Sequence(function(time, col){
-				var column = document.querySelector("tone-step-sequencer").currentColumn;
-				column.forEach(function(val, i){
-					if (val){
-						//slightly randomized velocities
-						var vel = Math.random() * 0.5 + 0.5;
-						keys.get(noteNames[i]).start(time, 0, "8N", 560, vel);
-					}
-				});
-				//set the columne on the correct draw frame
-				Tone.Draw.schedule(function(){
-					document.querySelector("tone-step-sequencer").setAttribute("highlight", col);
-				}, time);
-			}, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "16n").start(0);
-			
 		
 			//bind the interface
 			document.querySelector("tone-piano").bind(piano);
-			document.querySelector("tone-auto-filter").bind(filter);
-			document.querySelector("tone-transport").bind(Tone.Transport);
-	document.querySelector("tone-ping-pong-delay").bind(feedbackDelay);
-			Tone.Transport.on("stop", () => {
-				setTimeout(() => {
-					document.querySelector("tone-step-sequencer").setAttribute("highlight", "-1");
-				}, 100);
+			
 			});
 		
 			
