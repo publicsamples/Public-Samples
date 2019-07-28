@@ -19,9 +19,27 @@
 
 var gain = new Nexus.Slider("#gain");
 
+// Create interfaces
+var gain = new Nexus.Slider("#gain");
+
 // Create a sound source
 var volume = new Tone.Volume(-Infinity).toMaster();
-var piano = new Tone.Sampler({
+var eq = new Tone.EQ3({
+
+				}).connect(volume);
+				
+		var reverb = new Tone.Reverb({
+			"wet" : 0.0
+				}).connect(eq);
+				
+				//the feedback delay
+				var feedbackDelay = new Tone.PingPongDelay({
+					"delayTime" : "8n",
+					"feedback" : 0.6,
+					"wet" : 0.0
+				}).connect(reverb);
+	
+	var piano = new Tone.Sampler({
 		
 			"C1" : "FILE1.[mp3|ogg]",
 			"C#1" : "FILE2.[mp3|ogg]",
@@ -48,23 +66,57 @@ var piano = new Tone.Sampler({
 			
 		}, {
 			"release" : 45,
-			"baseUrl" : "AkaiAX80/Solids/"
-        }).connect(volume);
+			"baseUrl" : "Solids/"
+        }).connect(feedbackDelay);
+		
+		var keys = new Tone.Players({
+			"A" : "Solids/FILE1.[mp3|ogg]",
+			"C#" : "Solids/FILE4.[mp3|ogg]",
+			"E" : "Solids/FILE8.[mp3|ogg]",
+			"F#" : "Solids/FILE13.[mp3|ogg]",
+		}, {
+			"volume" : 00,
+			"fadeOut" : "8512n",
+			}).connect(feedbackDelay);
+			
+			//the notes
+			var noteNames = ["F#", "E", "C#", "A"];
+			var loop = new Tone.Sequence(function(time, col){
+				var column = document.querySelector("tone-step-sequencer").currentColumn;
+				column.forEach(function(val, i){
+					if (val){
+						//slightly randomized velocities
+						var vel = Math.random() * 0.5 + 0.5;
+						keys.get(noteNames[i]).start(time, 0, "8n", 560, vel);
+					}
+				});
+				//set the columne on the correct draw frame
+				Tone.Draw.schedule(function(){
+					document.querySelector("tone-step-sequencer").setAttribute("highlight", col);
+				}, time);
+			}, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "16n").start(0);
+			
+		
 
-	document.querySelector("tone-piano").bind(piano);
-	
 // Listen for interface events
-
 
 gain.on('change',function(v) {
 	volume.volume.rampTo(v,.1)
 });
+	
 gain.min = -100;
 gain.max = 0;
 gain.value = -30;
 
-
-		//bind the interface
+document.querySelector("tone-piano").bind(piano);
+		document.querySelector("tone-reverb").bind(reverb);
+		document.querySelector("tone-transport").bind(Tone.Transport);
+document.querySelector("tone-ping-pong-delay").bind(feedbackDelay);
+		Tone.Transport.on("stop", () => {
+			setTimeout(() => {
+				document.querySelector("tone-step-sequencer").setAttribute("highlight", "-1");
+			}, 100);
+		});
 	
 </script>
 	</body>
