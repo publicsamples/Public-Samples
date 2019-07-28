@@ -12,43 +12,46 @@
 </head>
 <body>
 
-    <div id="dial"></div>
+ <div id="gain"><div>
 
 
 
 <tone-content>
-		<tone-transport></tone-transport>
-		<tone-step-sequencer></tone-step-sequencer>
-			<tone-piano polyphonic></tone-piano>
-			<tone-auto-filter collapsed frequency id="frequency"></tone-auto-filter>
-			<tone-ping-pong-delay collapsed></tone-ping-pong-delay>
-		</tone-content>
-	</tone-example>
-	
-	   
+		
+<tone-piano polyphonic></tone-piano>
+			
+</tone-content>
 
 
 	<script type="text/javascript">
-		/* When the user clicks on the button, 
-		toggle between hiding and showing the dropdown content */
-		function myFunction() {
-		  document.getElementById("myDropdown").classList.toggle("show");
-		}
-		// Close the dropdown if the user clicks outside of it
-		window.onclick = function(event) {
-		  if (!event.target.matches('.dropbtn')) {
-		    var dropdowns = document.getElementsByClassName("dropdown-content");
-		    var i;
-		    for (i = 0; i < dropdowns.length; i++) {
-		      var openDropdown = dropdowns[i];
-		      if (openDropdown.classList.contains('show')) {
-		        openDropdown.classList.remove('show');
-		      }
-		    }
-		  }
-		}
 		
-		   var dial = new Nexus.Dial('#dial')
+// Create interfaces
+var power = new Nexus.Toggle("#power");
+var gain = new Nexus.Slider("#gain");
+
+// Create a sound source
+var volume = new Tone.Volume(-Infinity).toMaster();
+var piano = new Tone.Sampler({
+		
+			"c2" : "FILE1.[mp3|ogg]",
+			
+		}, {
+			"release" : 0,
+			"baseUrl" : "AkaiAX80/Clicking/"
+        }).connect(volume);
+
+// Listen for interface events
+power.on('change',function(v) {
+	v ? synth.start() : synth.stop();
+});
+
+gain.on('change',function(v) {
+	volume.volume.rampTo(v,.1)
+});
+gain.min = -100;
+gain.max = 0;
+gain.value = -30;
+
 		
 		var eq = new Tone.EQ3().toMaster({
 				})
