@@ -41,8 +41,7 @@ var piano = new Tone.Sampler({
 
 // Listen for interface events
 
-	v ? synth.start() : synth.stop();
-});
+	
 
 gain.on('change',function(v) {
 	volume.volume.rampTo(v,.1)
