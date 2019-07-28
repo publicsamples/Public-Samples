@@ -12,51 +12,124 @@
 </head>
 <body>
 
- <div id="gain"><div>
-
-
-
-<tone-content>
+ 		// ********* Tone.js stuff
 		
-<tone-piano polyphonic></tone-piano>
+		var keys = new Tone.PolySynth(4).toMaster();
+		keys.volume.value = -25;
+		keys.setPreset("BrassCircuit");		
+		
+		var scaleNotes = ["E5", "D4", "B4", "A#4", "A4", "G4", "E4"];	
+		var stepNumber = 0;
+		
+		Tone.Transport.setInterval(function(time){
+			var column = sequencematrix.matrix[stepNumber];
+			for (var i = 0; i < 7; i++)
+			{
+				if (column[i] === 1)
+				{
+					keys.triggerAttackRelease(scaleNotes[i], "32n", time);
+				}
+			}			
+			stepNumber++;
+			stepNumber = stepNumber % 16;		
+		}, "16n");
+		Tone.Transport.loopEnd = "1m";
+		Tone.Transport.loop = true;
+				
+		// ********* NexusUI stuff
+
+		nx.onload = function() {
+		
+			sequencematrix.row = 7;
+			sequencematrix.col = 16;
+			sequencematrix.init();
 			
-</tone-content>
+			temposlider.on('*', function(data) {
+				Tone.Transport.bpm.value = data.value * 1000;
+			});
 
-
-	<script type="text/javascript">
-		
-// Create interfaces
-var gain = new Nexus.Slider("#gain");
-
-// Create a sound source
-var volume = new Tone.Volume(-Infinity).toMaster();
-var piano = new Tone.Sampler({
-		
-			"c2" : "FILE1.[mp3|ogg]",
+			toggleloop.on('*', function(data) {
+				if (data.value == 1)
+				{
+					stepNumber = 0;
+					Tone.Transport.start();
+				}
+				else
+				{
+					Tone.Transport.stop();	
+				}
+			});
 			
-		}, {
-			"release" : 0,
-			"baseUrl" : "AkaiAX80/Clicking/"
-        }).connect(volume);
+			temposlider.set({
+				value: 0.12,
+			}, true);
 
-// Listen for interface events
-
-
-gain.on('change',function(v) {
-	volume.volume.rampTo(v,.1)
-});
-gain.min = -100;
-gain.max = 0;
-gain.value = -30;
-
-		
-		
-		
-			//bind the interface
-			document.querySelector("tone-piano").bind(piano);
-		
 			
-	</script>
+		}
+		
+		function fillRandomNotes() {
+			for (var i = 0; i < 16; i++)
+			{
+				for (var j = 0; j < 7; j++)
+				{
+					if (Math.random() < .3)
+					{
+						sequencematrix.matrix[i][j] = 1;
+					}
+					else
+					{
+						sequencematrix.matrix[i][j] = 0;
+					}
+					sequencematrix.draw()
+				}			
+			}
+		}
+
+		function clearAllNotes() {
+			for (var i = 0; i < 16; i++)
+			{
+				for (var j = 0; j < 7; j++)
+				{
+					sequencematrix.matrix[i][j] = 0;
+					sequencematrix.draw()
+				}			
+			}
+		}
+		
+		function arpeggiMator() {
+			clearAllNotes();
+			var note = 6;
+			
+			for (var i = 0; i < 16; i++)
+			{
+				sequencematrix.matrix[i][note] = 1;
+				sequencematrix.draw()
+				note -= Math.floor(Math.random() * 2) + 1;
+				if (note < 0 || (Math.random() < .20))
+				{
+					note = 6;
+				}
+			}
+		}
+
+
+</script>
+
+</head>
+<body>
+
+<h3>Transport - Sequencer</h3>
+
+<canvas nx="matrix" id="sequencematrix" style="width:400px;"></canvas>
+<br />
+<canvas nx="slider" id="temposlider" style="width:400px; height:20px;"></canvas>
+<br />
+<canvas nx="toggle" id="toggleloop"></canvas>
+<br />
+
+<p><a href="#" onclick="fillRandomNotes()">random</a></p>
+<p><a href="#" onclick="arpeggiMator()">arpeggimator</a></p>
+<p><a href="#" onclick="clearAllNotes()">clear</a></p>
 
   </body>
 </html>
