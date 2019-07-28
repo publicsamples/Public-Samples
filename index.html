@@ -50,6 +50,9 @@ var piano = new Tone.Sampler({
 			"release" : 45,
 			"baseUrl" : "AkaiAX80/Solids/"
         }).connect(volume);
+
+	document.querySelector("tone-piano").bind(piano);
+	
 // Listen for interface events
 
 
