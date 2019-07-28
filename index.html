@@ -26,7 +26,6 @@
 	<script type="text/javascript">
 		
 // Create interfaces
-var power = new Nexus.Toggle("#power");
 var gain = new Nexus.Slider("#gain");
 
 // Create a sound source
@@ -41,9 +40,7 @@ var piano = new Tone.Sampler({
         }).connect(volume);
 
 // Listen for interface events
-power.on('change',function(v) {
-	v ? synth.start() : synth.stop();
-});
+
 
 gain.on('change',function(v) {
 	volume.volume.rampTo(v,.1)
