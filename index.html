@@ -7,20 +7,13 @@
 	<script src="libraries/Tone/tonejs-ui.js"></script>
     <script type="text/javascript" src="libraries/Tone/NexusUI.js"></script>
 
+<script type="text/javascript">
 
-</head>
-
-
-
-
-
-<body>
-	<script type="text/javascript">
-	
- 		// ********* Tone.js stuff
+		// ********* Tone.js stuff
 		
 		var keys = new Tone.PolySynth(4).toMaster();
-		keys.volume.value = -25;	
+		keys.volume.value = -25;
+		keys.setPreset("BrassCircuit");		
 		
 		var scaleNotes = ["E5", "D4", "B4", "A#4", "A4", "G4", "E4"];	
 		var stepNumber = 0;
@@ -118,6 +111,10 @@
 
 
 </script>
+
+</head>
+<body>
+
 <h3>Transport - Sequencer</h3>
 
 <canvas nx="matrix" id="sequencematrix" style="width:400px;"></canvas>
@@ -130,6 +127,5 @@
 <p><a href="#" onclick="fillRandomNotes()">random</a></p>
 <p><a href="#" onclick="arpeggiMator()">arpeggimator</a></p>
 <p><a href="#" onclick="clearAllNotes()">clear</a></p>
-
-  </body>
+</body>
 </html>
