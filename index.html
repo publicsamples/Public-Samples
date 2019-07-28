@@ -1,0 +1,57 @@
+<html>
+<head>
+ 
+
+	<script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2/webcomponents-bundle.js"></script>
+	<script src="libraries/Tone/Tone.js"></script>
+    <script type="text/javascript" src="libraries/Tone/NexusUI.js"></script>
+
+	
+<body>
+
+<div id="gain"><div>
+<tone-content>
+		<tone-transport></tone-transport>
+		<tone-step-sequencer></tone-step-sequencer>
+			<tone-piano polyphonic></tone-piano>
+			<tone-reverb collapsed><tone-reverb>
+			<tone-ping-pong-delay collapsed></tone-ping-pong-delay>
+		</tone-content>
+	</tone-example>
+<script type="text/javascript">
+
+
+// Create interfaces
+
+var gain = new Nexus.Slider("#gain");
+
+// Create a sound source
+var volume = new Tone.Volume(-Infinity).toMaster();
+var piano = new Tone.Sampler({
+		
+			"C1" : "c1.[mp3|ogg]",
+			"D2" : "d2.[mp3|ogg]",
+			"F1" : "f1.[mp3|ogg]",
+			"G2" : "g2.[mp3|ogg]",
+	
+		}, {
+			"release" : 45,
+			"baseUrl" : "AkaiAX80/WobbleSquare/"
+        }).connect(volume);
+
+// Listen for interface events
+
+	
+
+gain.on('change',function(v) {
+	volume.volume.rampTo(v,.1)
+});
+gain.min = -100;
+gain.max = 0;
+gain.value = -30;
+	
+</script>
+	</body>
+</head>
+
+</html>
