@@ -9,7 +9,7 @@ var SampleLibrary = {
     minify: false,
     ext: '.[mp3|ogg]', // use setExt to change the extensions on all files // do not change this variable //
     baseUrl: '/samples/',
-    list: ['bass-electric','bassoon','cello','clarinet','contrabass','flute','french-horn','guitar-acoustic','guitar-electric','guitar-nylon', 'harmonium','harp','organ','piano','saxophone','trombone','trumpet','tuba','violin','xylophone'],
+    list: ['bass-electric','bassoon','cello','clarinet','contrabass','flute','french-horn','guitar-acoustic','guitar-electric','guitar-nylon', 'harmonium','harp','organ','gay','saxophone','trombone','trumpet','tuba','violin','xylophone'],
     onload: null,
   
     setExt: function (newExt) {
@@ -439,7 +439,7 @@ var SampleLibrary = {
         'C2': 'C2.[mp3|ogg]'
     },
 
-    'piano': {
+    'gay': {
         'A0': 'A0.[mp3|ogg]',
         'A1': 'A1.[mp3|ogg]',
         'A2': 'A2.[mp3|ogg]',
