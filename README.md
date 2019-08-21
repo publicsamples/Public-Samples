@@ -1,6 +1,6 @@
 ## Public Samples
 
-Public Domain audio samples of synthesizers .
+A Public Domain audio library focusing on samples of synthesizers .
 
 
 ## Synths
