@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.custommenu {
+	background-color:#fff;
+	margin-top:-20px;
+	}
+	
+	.footer{
+	background-color: #fff;
+	margin-top: -20px;
+	text-align: center; 
+	background-image: url(/web/20150905145048im_/http://modularsamples.com/stylesheets/images/Unknown.png);
+}
+
+	
+	}
+	
+		.hd{
+	background-color:#000;
+	color:#fff;
+	margin-top:-20px;
+	text-align: center; 
+	padding-top:10px;
+	padding-bottom:10px;
+	
+	}
+	
+
+	
+	}
+	h13{
+	size: 14px;
+	font-size: 28px;
+	text-align: left;
+}
+
+
+	
+	.exs{
+	color: #396;
+}
+	.nki{
+	color: #B17C00;
+}
+	.live{
+	color: #313EFF;
+	font-weight: normal; 
+}
+	.refill{
+	color: #660000;
+}
+
+.sxt{
+	color: #FF3300;
+}
+
+/*
+     FILE ARCHIVED ON 14:50:48 Sep 05, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:12:20 Aug 21, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 48.04
+  esindex: 0.011
+  PetaboxLoader3.resolve: 1946.153 (2)
+  CDXLines.iter: 15.364 (3)
+  load_resource: 2341.259
+  PetaboxLoader3.datanode: 420.872 (5)
+  LoadShardBlock: 28.778 (3)
+  exclusion.robots.policy: 0.172
+  exclusion.robots: 0.186
+  RedisCDXSource: 0.529
+*/
