@@ -8,133 +8,190 @@
 <link rel="stylesheet" href="player.css" />  
 </head>
 <body>
+<html>
+<head>
+ 
+	<script src="../libraries/Tone//Tone.js"></script>
+	<script src="../libraries/Tone/tonejs-ui.js"></script>
+    <script src="../libraries/Tone/NexusUI.js"></script>
 
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Patches</button>
-  <div id="myDropdown" class="dropdown-content">
-	  <a href="80Function.html">80s function</a>		
-<a href="BrokenOldStrings.html">Broken Old Strings</a>		
-<a href="CrackBass.html">Crack Bass</a>	
-<a href="Diplodocus.html">Diplodocus</a>	
-<a href="EasyPluck.html">Easy Pluck</a>	
-<a href="Moogalike.html">Moogalike</a>	
-<a href="OddPiano.html">Odd Piano</a>
-<a href="RingDing.html">Ring Ding</a>	
-<a href="Solids.html">Solids</a>	
-<a href="Sub.html">Sub</a>	
-<a href="WobbleSquare.html">Wobble Square</a>	
-<a href="SyncBalls.html">SyncBalls</a>	
-  </div>
-		<tone-content>
-		<tone-transport></tone-transport>
-		<tone-step-sequencer></tone-step-sequencer>
-			<tone-piano polyphonic></tone-piano>
-			<tone-auto-filter collapsed frequency id="frequency"></tone-auto-filter>
-			<tone-ping-pong-delay collapsed></tone-ping-pong-delay>
-		</tone-content>
-	</tone-example>
+<link rel="stylesheet" href="player.css" />  
 
-	<script type="text/javascript">
+	<style type="text/css">
+	body {
+	background-image: url(files/Unknown.png);
+	background-repeat: repeat;
+}
+    .container .one-third.column p a {
+	text-align: center;
+}
+    .vladsector {
+	text-align: center;
+}
+    </style>
 
-		/* When the user clicks on the button, 
-		toggle between hiding and showing the dropdown content */
-		function myFunction() {
-		  document.getElementById("myDropdown").classList.toggle("show");
-		}
 
-		// Close the dropdown if the user clicks outside of it
-		window.onclick = function(event) {
-		  if (!event.target.matches('.dropbtn')) {
-		    var dropdowns = document.getElementsByClassName("dropdown-content");
-		    var i;
-		    for (i = 0; i < dropdowns.length; i++) {
-		      var openDropdown = dropdowns[i];
-		      if (openDropdown.classList.contains('show')) {
-		        openDropdown.classList.remove('show');
-		      }
-		    }
-		  }
-		}
+</head>
+<div class="container">
+		<div class="sixteen columns">
+			<h1 class="remove-bottom" style="margin-top: 40px; text-align: center;"><a href="https://web.archive.org/web/20150905084553/http://modularsamples.com/index.html"><img src="files/mshead4.gif" width="379" height="173" alt=""></a></h1>
+			<h5>&nbsp;</h5>
+			<h5>Synth Samples for Kontakt, Logic, Reason and Live</h5>
+			<hr>
+         
+	  </div>
+   
+
+	<div class="dropdown">
+	  <button onclick="myFunction()" class="dropbtn">Patches</button>
+	  <div id="myDropdown" class="dropdown-content">
+		  <a href="80Function.html">80s function</a>		
+	<a href="BrokenOldStrings.html">Broken Old Strings</a>		
+	<a href="CrackBass.html">Crack Bass</a>	
+	<a href="Diplodocus.html">Diplodocus</a>	
+	<a href="EasyPluck.html">Easy Pluck</a>	
+	<a href="Moogalike.html">Moogalike</a>	
+	<a href="OddPiano.html">Odd Piano</a>
+	<a href="RingDing.html">Ring Ding</a>	
+	<a href="Solids.html">Solids</a>	
+	<a href="Sub.html">Sub</a>	
+	<a href="WobbleSquare.html">Wobble Square</a>	
+	<a href="SyncBalls.html">SyncBalls</a>	
+	  </div>
+			<tone-content>
+			<tone-transport></tone-transport>
+			<tone-step-sequencer></tone-step-sequencer>
+				<tone-piano polyphonic></tone-piano>
+				<tone-auto-filter collapsed frequency id="frequency"></tone-auto-filter>
+				<tone-ping-pong-delay collapsed></tone-ping-pong-delay>
+			</tone-content>
+		</tone-example>
+
+		<script type="text/javascript">
+
+			/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+			  document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(event) {
+			  if (!event.target.matches('.dropbtn')) {
+			    var dropdowns = document.getElementsByClassName("dropdown-content");
+			    var i;
+			    for (i = 0; i < dropdowns.length; i++) {
+			      var openDropdown = dropdowns[i];
+			      if (openDropdown.classList.contains('show')) {
+			        openDropdown.classList.remove('show');
+			      }
+			    }
+			  }
+			}
 
 		
-		var eq = new Tone.EQ3().toMaster({
-				})
+			var eq = new Tone.EQ3().toMaster({
+					})
 				
-				//the feedback delay
-				var feedbackDelay = new Tone.PingPongDelay({
-					"frequency" : "8n",
-					"feedback" : 0.6,
-					"wet" : 0.0
-				}).connect(eq);		
+					//the feedback delay
+					var feedbackDelay = new Tone.PingPongDelay({
+						"frequency" : "8n",
+						"feedback" : 0.6,
+						"wet" : 0.0
+					}).connect(eq);		
 				
-				var lfo = new Tone.LFO("2n", 800, 8000);
-						lfo.connect(frequency);
+					var lfo = new Tone.LFO("2n", 800, 8000);
+							lfo.connect(frequency);
 		
 				
-				var filter = new Tone.AutoFilter({
-							"frequency" : 100,
-							"wet" : 0.0,
-					"frequency" : "8n"
-						}).connect(feedbackDelay).start();
+					var filter = new Tone.AutoFilter({
+								"frequency" : 100,
+								"wet" : 0.0,
+						"frequency" : "8n"
+							}).connect(feedbackDelay).start();
 				
 
 				
 	
 	
-	var piano = new Tone.Sampler({
+		var piano = new Tone.Sampler({
 		
-			"C2" : "FILE1.[mp3|ogg]",
+				"C2" : "FILE1.[mp3|ogg]",
 			
-		}, {
-			"release" : 30,
-			"baseUrl" : "80Function/"
-        }).connect(filter);
+			}, {
+				"release" : 30,
+				"baseUrl" : "80Function/"
+	        }).connect(filter);
 		
-		var keys = new Tone.Players({
-			"A" : "80Function/FILE1.[mp3|ogg]",
-			"C#" : "80Function/FILE2.[mp3|ogg]",
-			"E" : "80Function/FILE3.[mp3|ogg]",
-			"F#" : "80Function/FILE4.[mp3|ogg]",
-		}, {
-			"volume" : 00,
-			"fadeOut" : "8512n",
-			}).connect(filter);
+			var keys = new Tone.Players({
+				"A" : "80Function/FILE1.[mp3|ogg]",
+				"C#" : "80Function/FILE2.[mp3|ogg]",
+				"E" : "80Function/FILE3.[mp3|ogg]",
+				"F#" : "80Function/FILE4.[mp3|ogg]",
+			}, {
+				"volume" : 00,
+				"fadeOut" : "8512n",
+				}).connect(filter);
 			
-			//the notes
-			var noteNames = ["F#", "E", "C#", "A"];
+				//the notes
+				var noteNames = ["F#", "E", "C#", "A"];
 
-			var loop = new Tone.Sequence(function(time, col){
-				var column = document.querySelector("tone-step-sequencer").currentColumn;
-				column.forEach(function(val, i){
-					if (val){
-						//slightly randomized velocities
-						var vel = Math.random() * 0.5 + 0.5;
-						keys.get(noteNames[i]).start(time, 0, "4n", 560, vel);
-					}
+				var loop = new Tone.Sequence(function(time, col){
+					var column = document.querySelector("tone-step-sequencer").currentColumn;
+					column.forEach(function(val, i){
+						if (val){
+							//slightly randomized velocities
+							var vel = Math.random() * 0.5 + 0.5;
+							keys.get(noteNames[i]).start(time, 0, "4n", 560, vel);
+						}
+					});
+					//set the columne on the correct draw frame
+					Tone.Draw.schedule(function(){
+						document.querySelector("tone-step-sequencer").setAttribute("highlight", col);
+					}, time);
+				}, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "16n").start(0);
+			
+		
+
+				//bind the interface
+				document.querySelector("tone-piano").bind(piano);
+				document.querySelector("tone-auto-filter").bind(filter);
+				document.querySelector("tone-transport").bind(Tone.Transport);
+		document.querySelector("tone-ping-pong-delay").bind(feedbackDelay);
+
+				Tone.Transport.on("stop", () => {
+					setTimeout(() => {
+						document.querySelector("tone-step-sequencer").setAttribute("highlight", "-1");
+					}, 100);
 				});
-				//set the columne on the correct draw frame
-				Tone.Draw.schedule(function(){
-					document.querySelector("tone-step-sequencer").setAttribute("highlight", col);
-				}, time);
-			}, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "16n").start(0);
-			
-		
-
-			//bind the interface
-			document.querySelector("tone-piano").bind(piano);
-			document.querySelector("tone-auto-filter").bind(filter);
-			document.querySelector("tone-transport").bind(Tone.Transport);
-	document.querySelector("tone-ping-pong-delay").bind(feedbackDelay);
-
-			Tone.Transport.on("stop", () => {
-				setTimeout(() => {
-					document.querySelector("tone-step-sequencer").setAttribute("highlight", "-1");
-				}, 100);
-			});
 		
 
 			
-	</script>
+		</script>
+       
+    <p class="vladsector"><a href="https://web.archive.org/web/20150905084553/https://soundcloud.com/modularsamples-com" target="new"><img src="files/black_white_64-94fc761.png" width="64" height="64" alt=""></a> <a href="https://web.archive.org/web/20150905084553/https://www.facebook.com/ModularSamples" target="new"><img src="files/fb.png" width="64" height="64" alt=""></a></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p class="vladsector">All files <a href="https://web.archive.org/web/20150905084553/http://en.wikipedia.org/wiki/Public_domain" target="new"><em>public domain</em></a> unless  stated otherwise. </p>
+<p>&nbsp;</p>
+
+<!-- container --><!-- End Document
+================================================== -->
+
+
+<!--
+playback timings (ms):
+  PetaboxLoader3.datanode: 168.42 (5)
+  exclusion.robots.policy: 0.299
+  LoadShardBlock: 160.296 (3)
+  exclusion.robots: 0.316
+  esindex: 0.04
+  load_resource: 556.805
+  CDXLines.iter: 14.147 (3)
+  RedisCDXSource: 0.875
+  captures_list: 184.487
+  PetaboxLoader3.resolve: 513.948 (3)
+--></div></div></body></html>
 
 </body>
 </html>
