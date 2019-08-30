@@ -1,0 +1,223 @@
+<html>
+<head>
+ 
+	<script src="../libraries/Tone//Tone.js"></script>
+	<script src="../libraries/Tone/tonejs-ui.js"></script>
+    <script src="../libraries/Tone/NexusUI.js"></script>
+
+<link rel="stylesheet" href="player.css" />  
+
+
+
+
+	<style type="text/css">
+	body {
+	background-image: url(files/Unknown.png);
+	background-repeat: repeat;
+}
+    .container .one-third.column p a {
+	text-align: center;
+}
+    .vladsector {
+	text-align: center;
+}
+    </style>
+
+
+</head>
+<body>
+<div>
+	
+	  </div>
+			<tone-content>
+            <tone-transport></tone-transport>
+			<tone-step-sequencer id="seq1"></tone-step-sequencer>
+			<tone-step-sequencer id="seq2"></tone-step-sequencer>
+			<tone-step-sequencer id="seq3"></tone-step-sequencer>
+			<tone-step-sequencer id="seq4"></tone-step-sequencer>
+				<tone-auto-filter collapsed frequency id="frequency"></tone-auto-filter>
+				<tone-ping-pong-delay collapsed></tone-ping-pong-delay>
+			</tone-content>
+		</tone-example>
+
+		<script type="text/javascript">
+			
+			var eq = new Tone.EQ3().toMaster({
+					})
+				
+					//the feedback delay
+					var feedbackDelay = new Tone.PingPongDelay({
+						"frequency" : "8n",
+						"feedback" : 0.6,
+						"wet" : 0.0
+					}).connect(eq);		
+				
+					var lfo = new Tone.LFO("2n", 800, 8000);
+							lfo.connect(frequency);
+		
+				
+					var filter = new Tone.AutoFilter({
+								"frequency" : 100,
+								"wet" : 0.0,
+						"frequency" : "8n"
+							}).connect(feedbackDelay).start();
+				
+
+				
+	
+	
+
+		
+			var keys = new Tone.Players({
+				"1" : "DynamicSaw/FILE25.[mp3|ogg]",
+				"2" : "DynamicSaw/FILE24.[mp3|ogg]",
+				"3" : "DynamicSaw/FILE23.[mp3|ogg]",
+				"4" : "DynamicSaw/FILE22.[mp3|ogg]",
+			}, {
+				"volume" : 00,
+				"fadeOut" : "8512n",
+				}).connect(filter);
+				
+			
+				//the notes
+				var noteNames = ["1", "2", "3", "4"];
+		
+				var loop = new Tone.Sequence(function(time, col){
+					var column = document.querySelector("#seq1").currentColumn;
+					column.forEach(function(val, i){
+						if (val){
+							//slightly randomized velocities
+							var vel = Math.random() * 0.5 + 0.5;
+							keys.get(noteNames[i]).start(time, 0, "16n", 560, vel);
+						}
+					});
+					//set the columne on the correct draw frame
+					Tone.Draw.schedule(function(){
+						document.querySelector("#seq1").setAttribute("highlight", col);
+					}, time);
+				}, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "16n").start(0);
+			
+		
+		
+				var keys2 = new Tone.Players({
+					"5" : "DynamicSaw/FILE21.[mp3|ogg]",
+					"6" : "DynamicSaw/FILE20.[mp3|ogg]",
+					"7" : "DynamicSaw/FILE19.[mp3|ogg]",
+					"8" : "DynamicSaw/FILE18.[mp3|ogg]",
+				}, {
+					"volume" : 00,
+					"fadeOut" : "8512n",
+					}).connect(filter);
+			
+				//the notes
+				var noteNames2 = ["5", "6", "7", "8"];
+
+			
+
+				var loop2 = new Tone.Sequence(function(time, col){
+					var column2 = document.querySelector("#seq2").currentColumn;
+					column2.forEach(function(val, i){
+						if (val){
+							//slightly randomized velocities
+							var vel2 = Math.random() * 0.5 + 0.5;
+							keys2.get(noteNames2[i]).start(time, 0, "16n", 560, vel2);
+						}
+					});
+					//set the columne on the correct draw frame
+					Tone.Draw.schedule(function(){
+						document.querySelector("#seq2").setAttribute("highlight", col);
+					}, time);
+				}, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "16n").start(0);
+		
+				var keys3 = new Tone.Players({
+					"9" : "DynamicSaw/FILE17.[mp3|ogg]",
+					"10" : "DynamicSaw/FILE16.[mp3|ogg]",
+					"11" : "DynamicSaw/FILE15.[mp3|ogg]",
+					"12" : "DynamicSaw/FILE14.[mp3|ogg]",
+				}, {
+					"volume" : 00,
+					"fadeOut" : "8512n",
+					}).connect(filter);
+				
+			
+					//the notes
+					var noteNames3 = ["9", "10", "11", "12"];
+		
+					var loop3 = new Tone.Sequence(function(time, col){
+						var column3 = document.querySelector("#seq3").currentColumn;
+						column3.forEach(function(val, i){
+							if (val){
+								//slightly randomized velocities
+								var vel3 = Math.random() * 0.5 + 0.5;
+								keys.get(noteNames[i]).start(time, 0, "16n", 560, vel3);
+							}
+						});
+						//set the columne on the correct draw frame
+						Tone.Draw.schedule(function(){
+							document.querySelector("#seq3").setAttribute("highlight", col);
+						}, time);
+					}, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "16n").start(0);
+			
+		
+		
+					var keys4 = new Tone.Players({
+						"13" : "DynamicSaw/FILE13.[mp3|ogg]",
+						"14" : "DynamicSaw/FILE12.[mp3|ogg]",
+						"15" : "DynamicSaw/FILE11.[mp3|ogg]",
+						"16" : "DynamicSaw/FILE10.[mp3|ogg]",
+					}, {
+						"volume" : 00,
+						"fadeOut" : "8512n",
+						}).connect(filter);
+			
+					//the notes
+					var noteNames4 = ["13", "14", "15", "16"];
+
+			
+
+					var loop4 = new Tone.Sequence(function(time, col){
+						var column4 = document.querySelector("#seq4").currentColumn;
+						column4.forEach(function(val, i){
+							if (val){
+								//slightly randomized velocities
+								var vel4 = Math.random() * 0.5 + 0.5;
+								keys4.get(noteNames4[i]).start(time, 0, "16n", 560, vel4);
+							}
+						});
+						//set the columne on the correct draw frame
+						Tone.Draw.schedule(function(){
+							document.querySelector("#seq4").setAttribute("highlight", col);
+						}, time);
+					}, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "16n").start(0);
+				
+
+				//bind the interface
+				document.querySelector("tone-auto-filter").bind(filter);
+				document.querySelector("tone-transport").bind(Tone.Transport);
+		document.querySelector("tone-ping-pong-delay").bind(feedbackDelay);
+
+				Tone.Transport.on("stop", () => {
+					setTimeout(() => {
+						document.querySelector("#seq1").setAttribute("highlight", "-1");
+						document.querySelector("#seq2").setAttribute("highlight", "-1");
+						document.querySelector("#seq3").setAttribute("highlight", "-1");
+						document.querySelector("#seq4").setAttribute("highlight", "-1");
+					}, 100);
+				
+				});
+		
+				//an amplitude envelope
+				var gainNode = Tone.context.createGain();
+				var env = new Tone.Envelope({
+					"attack" : 0.1,
+					"decay" : 0.2,
+					"sustain" : 1,
+					"release" : 0.8,
+				});
+				env.connect(gainNode.gain);
+			
+		</script>
+    
+</body>
+</html>
+	
