@@ -1,6 +1,5 @@
-
-</html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <script type="text/javascript">
         function setIframeSource() {
@@ -12,18 +11,74 @@
             theIframe.src = theUrl;
         }
     </script>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
 </head>
 <body>
-<form id="form1" method="post">
+
+  <!-- .container is main centered wrapper -->
+  <div class="container">
+
+    <!-- columns should be the immediate child of a .row -->
+    <div class="row">
+      <div class="one column"><h1>Public Samples</h1></div>
+      <div class="eleven columns">Eleven</div>
+    </div>
+
+    <!-- just use a number and class 'column' or 'columns' -->
+    <div class="row">
+      <div class="two columns">Public Domain Audio Samples</div>
+      <div class="ten columns">Ten</div>
+    </div>
+
+    <!-- there are a few shorthand columns widths as well -->
+    <div class="row">
+      <div class="one-third column"><form id="form1" method="post">
    <label> patch</label>
 
     <select id="location" onchange="setIframeSource()"> 
-      <option value="Allin.html">All In</option> 
-      <option value="Allin.html">AMERICANAS</option> 
-      <option value="Allin.html">BBC</option> 
+      <option value="https://publicsamples.github.io/Public-Samples/SH2/AllIn.html">All In</option> 
+      <option value="https://publicsamples.github.io/Public-Samples/SH2/AllIn.html">AMERICANAS</option> 
+      <option value="https://publicsamples.github.io/Public-Samples/SH2/AllIn.html">BBC</option> 
    </select>
-</form>
+</form></div>
+      <div class="two-thirds column">
 
-<iframe id="myIframe" src="Allin.html" frameborder="0" marginwidth="0" marginheight="0" width="600" height="800"></iframe>
+<iframe id="myIframe" src="https://publicsamples.github.io/Public-Samples/AllIn.html" frameborder="0" marginwidth="0" marginheight="0" width="600" height="800"></iframe></div>
+    </div>
+    <div class="row">
+      <div class="one-half column">1/2</div>
+      <div class="one-half column">1/2</div>
+    </div>
 
+  </div>
+
+  <!-- Note: columns can be nested, but it's not recommended since Skeleton's grid has %-based gutters, meaning a nested grid results in variable with gutters (which can end up being *really* small on certain browser/device sizes) -->
+  
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+</html>
