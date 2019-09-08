@@ -1,138 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        function setIframeSource() {
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
 
-	<style type="text/css">
-	body {
-	background-image: url(files/Unknown.png);
-	background-repeat: repeat;
-}
-    .container .one-third.column p a {
-	text-align: center;
-}
-    .vladsector {
-	text-align: center;
-}
-    </style>
-/head>
-<div class="container">
-	<table border="1" cellpadding="1" cellspacing="1" style="width: 500px;">
-	<tbody>
-		<tr>
-			<td>
-			<h2>Synths</h2>
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+        }
+    </script>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-			<ul>
-				<li><a href="https://github.com/publicsamples/Akai-AX-80-Pt1"><strong>Akai AX-80 Pt1 </strong></a><strong>&amp; </strong><a href="https://github.com/publicsamples/Akai-AX-80-pt2"><strong>pt2 </strong></a></li>
-				<li><a href="https://github.com/publicsamples/Sequential-MAX"><strong>Sequential MAX </strong></a></li>
-				<li><a href="https://github.com/publicsamples/Roland-SH-2"><strong>Roland SH-2 </strong></a></li>
-				<li><a href="https://github.com/publicsamples/Roland-JX-8P-pt1"><strong>Roland-JX-8P-pt1 </strong></a><strong>&amp; </strong><a href="https://github.com/publicsamples/Roland-JX-8P-pt2"><strong>pt2 </strong></a></li>
-				<li><a href="https://github.com/publicsamples/Roland-JX-3P"><strong>Roland-JX-3P </strong></a></li>
-				<li><a href="https://github.com/publicsamples/Roland-Jupiter-4"><strong>Roland-Jupiter-4 </strong></a></li>
-				<li><a href="https://github.com/publicsamples/Roland-Juno-6"><strong>Roland-Juno-6 </strong></a></li>
-				<li><a href="https://github.com/publicsamples/Roland-JD-800"><strong>Roland-JD-800 </strong></a></li>
-				<li><a href="https://github.com/publicsamples/Roland-HS-80"><strong>Roland-HS-80 </strong></a></li>
-				<li><a href="https://github.com/publicsamples/Novation-UltraNova"><strong>Novation-UltraNova </strong></a></li>
-				<li><a href="https://github.com/publicsamples/Modular"><strong>Modular </strong></a></li>
-				<li><a href="https://github.com/publicsamples/Misc-Synth-Samples"><strong>Misc-Synth-Samples pt1 &amp; </strong></a><a href="https://github.com/publicsamples/Misc-Synth-Samples-pt2"><strong>z-pt2 </strong></a></li>
-				<li><a href="https://github.com/publicsamples/MFB-Kraftzwerg"><strong>MFB-Kraftzwerg </strong></a></li>
-				<li><a href="https://github.com/publicsamples/Kawai-K3"><strong>Kawai-K3 </strong></a></li>
-				<li><a href="https://github.com/publicsamples/hybrids"><strong>hybrids </strong></a></li>
-				<li><a href="https://github.com/publicsamples/Fender-Chroma-Polaris"><strong>Fender-Chroma-Polaris </strong></a></li>
-				<li><a href="https://github.com/publicsamples/ESQ1"><strong>ESQ1 </strong></a></li>
-				<li><a href="https://github.com/publicsamples/Elektron-Analog-Four"><strong>Elektron-Analog-Four </strong></a></li>
-				<li><a href="https://github.com/publicsamples/DSI-Tetra-pt2"><strong>DSI-Tetra-pt2 </strong></a></li>
-				<li><a href="https://github.com/publicsamples/DSI-Tetra-pt1"><strong>DSI-Tetra-pt1 </strong></a></li>
-				<li><a href="https://github.com/publicsamples/Arturia-Microbrute"><strong>Arturia-Microbrute</strong></a></li>
-				<li><a href="https://github.com/publicsamples/Korg-MonoPoly">Korg-MonoPoly</a></li>
-				<li>
-				<h3><a href="https://github.com/publicsamples/Korg-Z1">Korg-Z1</a></h3>
-				</li>
-				<li>
-				<h3><a href="https://github.com/publicsamples/Yamaha-CS30L">Yamaha-CS30L</a></h3>
-				</li>
-				<li>
-				<h3><a href="https://github.com/publicsamples/Elektronika-EM-25">Elektronika-EM-25</a></h3>
-				</li>
-				<li>
-				<h3><a href="https://github.com/publicsamples/Korg-DW8000-pt1">Korg-DW8000-pt1</a>&nbsp;&amp;&nbsp;<a href="https://github.com/publicsamples/Korg-DW8000-pt2">pt2</a></h3>
-				</li>
-			</ul>
-			</td>
-			<td>
-			<h2>Construction Kits</h2>
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-			<ul>
-				<li><a href="https://github.com/publicsamples/Roland-Alpha-Juno-Kit"><strong>Roland-Alpha-Juno-Kit </strong></a></li>
-				<li><a href="https://github.com/publicsamples/Oberheim-Xpander-Kit"><strong>Oberheim-Xpander-Kit</strong></a></li>
-				<li><a href="https://github.com/publicsamples/Model-101-Construction-Kit"><strong>Model-101-Construction-Kit</strong></a></li>
-				<li><a href="https://github.com/publicsamples/Moog-Minitaur-Construction-Kit">Moog-Minitaur-Construction-Kit</a></li>
-			</ul>
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-			<h2>Kontakt Instruments</h2>
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
 
-			<ul>
-				<li><a href="https://github.com/publicsamples/Elektronika-EM-25-K6">Elektronika-EM-25-K6</a></li>
-			</ul>
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
-			<h2>Wavetable</h2>
+</head>
+<body>
 
-			<ul>
-				<li><a href="https://github.com/publicsamples/Assorted-Wavetables">Assorted-Wavetables</a></li>
-				<li>
-				<h3><a href="https://github.com/publicsamples/Retro-Synth">Retro-Synth</a></h3>
-				</li>
-			</ul>
+  <!-- .container is main centered wrapper -->
+  <div class="container">
 
-			<h3>Hits</h3>
+    <!-- columns should be the immediate child of a .row -->
+    <div class="row">
+      <div class="one column"><h1>Public Samples</h1></div>
+      <div class="eleven columns">Eleven</div>
+    </div>
 
-			<ul>
-				<li><a href="https://github.com/publicsamples/Akai-S612-Modular"><strong>Akai-S612-Modular</strong></a></li>
-				<li><a href="https://github.com/publicsamples/hits">hits</a></li>
-				<li><a href="https://github.com/publicsamples/Modular-Hits">Modular-Hits</a></li>
-			</ul>
+    <!-- just use a number and class 'column' or 'columns' -->
+    <div class="row">
+      <div class="two columns">Public Domain Audio Samples</div>
+      <div class="ten columns">Ten</div>
+    </div>
 
-			<h2>Loops</h2>
+    <!-- there are a few shorthand columns widths as well -->
+    <div class="row">
+      <div class="one-third column"><form id="form1" method="post">
+   <label> patch</label>
 
-			<ul>
-				<li><a href="https://github.com/publicsamples/Drones">Drones</a></li>
-				<li><a href="https://github.com/publicsamples/Metasynth-Loops"><strong>Metasynth-Loops</strong></a></li>
-				<li><a href="https://github.com/publicsamples/Xpander-Loops">Xpander-Loops</a></li>
-			</ul>
-			</td>
-		</tr>
-	</tbody>
-</table>
+    <select id="location" onchange="setIframeSource()"> 
+      <option value="SH2/Allin.html">All In</option> 
+      <option value="SH2/Allin.html">AMERICANAS</option> 
+      <option value="SH2/Allin.html">BBC</option> 
+   </select>
+</form></div>
+      <div class="two-thirds column">
 
-<h2>&nbsp;</h2>
+<iframe id="myIframe" src="SH2/Allin.html" frameborder="0" marginwidth="0" marginheight="0" width="600" height="800"></iframe></div>
+    </div>
+    <div class="row">
+      <div class="one-half column">1/2</div>
+      <div class="one-half column">1/2</div>
+    </div>
 
-	  </div>
-   
-	  <div class="one-third column">
-	    <h3>Announcements</h3>
-        <ul>
-          <li>Ableton Live Files added</li>
-          <li><a href="https://web.archive.org/web/20150905084553/http://modularsamples.com/live/Akai%20AX80.zip">K</a>org MS-20 Mini  part	1 added</li>
-          <li>Analog Four Unison Library coming soon</li>
-        </ul>
-       
-    <p class="vladsector"><a href="https://web.archive.org/web/20150905084553/https://soundcloud.com/modularsamples-com" target="new"><img src="files/black_white_64-94fc761.png" width="64" height="64" alt=""></a> <a href="https://web.archive.org/web/20150905084553/https://www.facebook.com/ModularSamples" target="new"><img src="files/fb.png" width="64" height="64" alt=""></a></p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p class="vladsector">All files <a href="https://web.archive.org/web/20150905084553/http://en.wikipedia.org/wiki/Public_domain" target="new"><em>public domain</em></a> unless  stated otherwise. </p>
-<p>&nbsp;</p>
+  </div>
 
-<!-- container --><!-- End Document
-================================================== -->
+  <!-- Note: columns can be nested, but it's not recommended since Skeleton's grid has %-based gutters, meaning a nested grid results in variable with gutters (which can end up being *really* small on certain browser/device sizes) -->
+  
 
-
-<!--
-playback timings (ms):
-  PetaboxLoader3.datanode: 168.42 (5)
-  exclusion.robots.policy: 0.299
-  LoadShardBlock: 160.296 (3)
-  exclusion.robots: 0.316
-  esindex: 0.04
-  load_resource: 556.805
-  CDXLines.iter: 14.147 (3)
-  RedisCDXSource: 0.875
-  captures_list: 184.487
-  PetaboxLoader3.resolve: 513.948 (3)
---></div></div></body></html>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

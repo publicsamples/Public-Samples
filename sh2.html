@@ -1,0 +1,29 @@
+
+</html>
+
+<head>
+    <script type="text/javascript">
+        function setIframeSource() {
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+        }
+    </script>
+</head>
+<body>
+<form id="form1" method="post">
+   <label> patch</label>
+
+    <select id="location" onchange="setIframeSource()"> 
+      <option value="SH2/Allin.html">All In</option> 
+      <option value="SH2/Allin.html">AMERICANAS</option> 
+      <option value="SH2/Allin.html">BBC</option> 
+   </select>
+</form>
+
+<iframe id="myIframe" src="SH2/Allin.html" frameborder="0" marginwidth="0" marginheight="0" width="600" height="800"></iframe>
+
+</body>
