@@ -1,84 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <script type="text/javascript">
-        function setIframeSource() {
-            var theSelect = document.getElementById('location');
-            var theIframe = document.getElementById('myIframe');
-            var theUrl;
-
-            theUrl = theSelect.options[theSelect.selectedIndex].value;
-            theIframe.src = theUrl;
-        }
-    </script>
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
-</head>
+<html>
 <body>
+	<!-- ... existing HTML ... -->
 
-  <!-- .container is main centered wrapper -->
-  <div class="container">
+	<div id="like_button_container"></div>
 
-    <!-- columns should be the immediate child of a .row -->
-    <div class="row">
-      <div class="one column"><h1>Public Samples</h1></div>
-      <div class="eleven columns">Eleven</div>
-    </div>
+	<!-- ... existing HTML ... -->
+	 <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+	  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 
-    <!-- just use a number and class 'column' or 'columns' -->
-    <div class="row">
-      <div class="two columns">Public Domain Audio Samples</div>
-      <div class="ten columns">Ten</div>
-    </div>
+	  <!-- Load our React component. -->
+	  <script src="like_button.js"></script>
 
-    <!-- there are a few shorthand columns widths as well -->
-    <div class="row">
-      <div class="one-third column"><form id="form1" method="post">
-   <label> patch</label>
+ <!-- ... other HTML ... -->
 
-    <select id="location" onchange="setIframeSource()"> 
-      <option value="https://publicsamples.github.io/Public-Samples/AllIn.html">All In</option> 
-      <option value="https://publicsamples.github.io/Public-Samples/AllIn.html">AMERICANAS</option> 
-      <option value="https://publicsamples.github.io/Public-Samples/AllIn.html">BBC</option> 
-   </select>
-</form></div>
-      <div class="two-thirds column">
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 
-<iframe id="myIframe" src="https://publicsamples.github.io/Public-Samples/AllIn.html" frameborder="0" marginwidth="0" marginheight="0" width="600" height="800"></iframe></div>
-    </div>
-    <div class="row">
-      <div class="one-half column">1/2</div>
-      <div class="one-half column">1/2</div>
-    </div>
+  <!-- Load our React component. -->
+  <script src="like_button.js"></script>
 
-  </div>
-
-  <!-- Note: columns can be nested, but it's not recommended since Skeleton's grid has %-based gutters, meaning a nested grid results in variable with gutters (which can end up being *really* small on certain browser/device sizes) -->
-  
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
-</html>
+
+	</body>
+	</html>
