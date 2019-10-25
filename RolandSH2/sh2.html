@@ -494,7 +494,7 @@ power.on('change', v => v ? Tone.Transport.start() : Tone.Transport.stop())
 var tempo = new Nexus.Dial('#tempo', {size: [35, 35], min: 50,max: 200,  value: 120 });
 tempo.on('change', v => Tone.Transport.bpm.value = v)
 
-var vol = new Nexus.Dial('#vol', {size: [35, 35], min: 0,max: 1,  value: 1 });
+var vol = new Nexus.Dial('#vol', {size: [35, 35], min: -1,max: 1,  value: 0 });
 vol.on('change', v => eq.gain.value = v)
 
 Tone.Transport.on("stop", () => {
