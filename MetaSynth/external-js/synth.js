@@ -1,174 +1,3 @@
-<meta charset="utf-8">
-<title>Your page title here :)</title>
-<meta name="description" content="">
-<meta name="author" content="">
-
-<!-- Mobile Specific Metas
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- FONT
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-<!-- CSS
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/skeleton.css">
-<link rel="stylesheet" href="css/style.css">
-
-<!-- Ext. Script
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<script src="https://unpkg.com/tone"></script>
-<script src="https://unpkg.com/@tonejs/ui"></script>
-
-<script type="text/javascript" src="external-js/NexusUI.js"></script>
-<script type="text/javascript" src="external-js/audiokeys.js"></script>
-
-
-<body onload="loadJS('patches/file1.js');">
-
-<tone-loader></tone-loader>
-
-
-
-<!-- html
-–––––––––––––––––––––––––––––––––––––––––––––––––– --> 
-
-<div class="row">
-
-<div class="one-half column">
-<div class="dropdown">
-<button>Patches</button>
-<div class="dropdown-content">
-<ol>
-<li onclick="clear(); stop(); loadJS('patches/file1.js');">Bright</li>
-<li onclick="clear(); stop(); loadJS('patches/file2.js');">Bum</li>
-<li onclick="clear(); stop(); loadJS('patches/file3.js');">Space</li>
-<li onclick="clear(); stop(); loadJS('patches/file4.js');;">Level Headed</li>
-<li onclick="clear(); stop(); loadJS('patches/file5.js');">Multi</li>
-<li onclick="clear(); stop(); loadJS('patches/file6.js');">Nasty</li>
-<li onclick="clear(); stop(); loadJS('patches/file7.js');">Ominous</li>
-<li onclick="clear(); stop(); loadJS('patches/file8.js');">Orange</li>
-<li onclick="clear(); stop(); loadJS('patches/file9.js');">Short Life</li>
-
-</ol>
-</div>
-</div>
-<tone-step-sequencer id="seq1"></tone-step-sequencer>
-<tone-step-sequencer id="seq2"></tone-step-sequencer>
-<tone-step-sequencer id="seq3"></tone-step-sequencer>
-<tone-step-sequencer id="seq4"></tone-step-sequencer>
-<tone-step-sequencer id="seq5"></tone-step-sequencer>
-<tone-step-sequencer id="seq6"></tone-step-sequencer>
-<br>
- <div id="power"></div>
-
-<table>
- <tr>
-
-   <td>Tempo</td> 
-<td>Volume</td> 
- </tr>
- <tr>
-   <td id="tempo"></td>
-<td id="vol"></td>
- </tr>
-</table>
-<h6>CLICK HERE to play notes on your keyboard</h6>
-<p><img alt="keys" data-entity-type="" data-entity-uuid="" height="74" src="https://raw.githubusercontent.com/publicsamples/Public-Samples/master/400px-KB_United_States.svg.png" width="222" /></p>
-</div>
-
-
-<div class="one-half column">
-<p>&nbsp;</p>
-<table>
-
- 
-  <tr>
-    <th>Envelope</th>
-  </tr>
-   <tr>
-     <td>attack</td>
-     <td>Release</td> 
-     <td>Curve</td>
-   </tr>
-   <tr>
-     <td id="attack"></td>
-     <td id="release"></td>
-     <td id="curve"></td>
-   </tr>
-
-    <tr>
-      <th>Filter</th>
-    </tr>
-  <tr>
-    <td>Wet</td>
-    <td>CutOff</td>
-    <td>Res</td> 
-	 </tr>
-  <tr>
-	<td id="fwet"></td>
-	<td id="baseFrequency"></td>
-	<td id="Q"></td>
-	</tr>
-	<tr> 
-		  <td>LFO Depth</td> 
-		   <td>LFO Speed</td> 
-	  </tr>
-	 <tr>
-	<td id="depth"></td>
-	<td id="ffrequency"></td>
-	
-
-</tr>
-
-
-    <tr>
-      <th>Delay</th>
-    </tr>
-  <tr>
-    <td>Wet</td>
-    <td>Delay Time</td> 
-    <td>Feedback</td>
-  </tr>
-  <tr>
-	<td id="dwet"></td>
-	<td id="dtime"></td>
-	<td id="dfeedback"></td>
-</tr>
-    <tr>
-      <th>Reverb</th>
-    </tr>
-  <tr>
-	  
-    <td>Wet</td>
-    <td>Size</td> 
-    <td>Dampening</td>
- 
-  </tr>
-  <tr>
-	<td id="rwet"></td>
-	<td id="roomSize"></td>
-	<td id="dampening"></td>
-</table>
-
-</div>
-
-
-<script type="text/javascript">
-
-function loadJS(file) {
-// DOM: Create the script element
-var jsElm = document.createElement("script");
-// set the type attribute
-jsElm.type = "application/javascript";
-// make the script element load file
-jsElm.src = file;
-// finally insert the element to the body element in order to load the script
-document.body.appendChild(jsElm);
-}
-
 var eq = new Tone.Gain().toMaster({
 })
 
@@ -227,6 +56,8 @@ document.querySelector("#seq2").setAttribute("highlight", col);
 }, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "16n").start(0);
 
 
+
+
 var loop3 = new Tone.Sequence(function(time, col){
 var column3 = document.querySelector("#seq3").currentColumn;
 column3.forEach(function(val, i){
@@ -239,6 +70,8 @@ Tone.Draw.schedule(function(){
 document.querySelector("#seq3").setAttribute("highlight", col);
 }, time);
 }, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "16n").start(0);
+
+
 
 var loop4 = new Tone.Sequence(function(time, col){
 var column4 = document.querySelector("#seq4").currentColumn;
@@ -255,6 +88,8 @@ document.querySelector("#seq4").setAttribute("highlight", col);
 }, time);
 }, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "16n").start(0);
 
+
+
 var loop5 = new Tone.Sequence(function(time, col){
 var column5 = document.querySelector("#seq5").currentColumn;
 column5.forEach(function(val, i){
@@ -270,6 +105,9 @@ Tone.Draw.schedule(function(){
 document.querySelector("#seq5").setAttribute("highlight", col);
 }, time);
 }, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "16n").start(0);
+
+
+
 
 var loop6 = new Tone.Sequence(function(time, col){
 var column6 = document.querySelector("#seq6").currentColumn;
@@ -291,11 +129,13 @@ power.turnOff();
 
 }
 
+
 function clear() {
 
 keys.disconnect();
 keys.dispose();
 }
+
 
 //aENV Controls
 var attack = new Nexus.Slider('#attack', {
@@ -333,7 +173,9 @@ curve.on('change', function(v) {
 keys.curve = v;
 });
 
+
 //chorus Controls
+
 
 var fwet = new Nexus.Slider('#fwet', {
 'mode': 'relative', // "absolute" or "absolute"
@@ -359,6 +201,7 @@ var baseFrequency = new Nexus.Slider('#baseFrequency', {
 baseFrequency.on('change', function(v) {
 filter.filter.frequency.value = v;
 });
+
 
 var Q = new Nexus.Slider('#Q', {
 'mode': 'absolute', // "absolute" or "absolute"
@@ -399,7 +242,9 @@ ffrequency.on('change', function(v) {
 filter.frequency.value = v;
 });
 
+
 //delay Controls
+
 
 var dwet = new Nexus.Slider('#dwet', {
 'mode': 'relative', // "absolute" or "absolute"
@@ -483,14 +328,16 @@ verb.dampening.value = v;
 
 //Transport/seq Controls
 
+
 var power = new Nexus.TextButton("power", { mode: "toggle", size: [40, 40], text: "▶", alternate: "▪"});		
 power.on('change', v => v ? Tone.Transport.start() : Tone.Transport.stop())
 
 var tempo = new Nexus.Dial('#tempo', {size: [35, 35], min: 50,max: 200,  value: 120 });
 tempo.on('change', v => Tone.Transport.bpm.value = v)
 
-var vol = new Nexus.Dial('#vol', {size: [35, 35], min: 0,max: 1,  value: 0.5 });
+var vol = new Nexus.Dial('#vol', {size: [35, 35], min: -12,max: 12,  value: 0 });
 vol.on('change', v => eq.gain.value = v)
+
 
 Tone.Transport.on("stop", () => {
 setTimeout(() => {
@@ -503,17 +350,12 @@ document.querySelector("#seq3").setAttribute("highlight", "-1");
 
 //keys
 
+
+
 var keyboard = new AudioKeys();
 keyboard.down(function(note) {
 keys.triggerAttack(Tone.Frequency(note.note, "midi").toNote());
 });
-
 keyboard.up(function(note) {
 keys.triggerRelease(Tone.Frequency(note.note, "midi").toNote());
 });
-
-
-</script>
-
-</body>
-</html>
