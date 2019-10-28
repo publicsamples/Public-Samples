@@ -11,7 +11,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "https://github.com/publicsamples/Misc-Synth-Samples-pt2/blob/master/mp3/Booty/"
+						"baseUrl" : "https://raw.githubusercontent.com/publicsamples/Misc-Synth-Samples-pt2/master/mp3/Booty/"
 					})					.connect(filter);
 					
 				
