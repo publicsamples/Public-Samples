@@ -35,6 +35,12 @@ height:50px;
 
 }
 
+tone-step-sequencer {
+
+width:250px;
+height:50px;
+background-color: blue;
+}
 tone-play-toggle {
 
 width:300px;
