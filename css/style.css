@@ -1,11 +1,11 @@
 
 body {
-width:600px;
+width:500px;
 }
 
 table {
 table-layout: fixed;
-width:250px;
+width:125px;
 font-size: 10px;
 }
 
@@ -19,27 +19,11 @@ padding-top:10px;
 padding-bottom:10px;
 }
 
-tone-grain-player {
+tone-step-sequencer {
 
-width:300px;
+width:250px;
 height:50px;
-padding-right:20px;
-}
-
-
-tone-fft {
-
-width:300px;
-height:50px;
-
-
-}
-
-tone-play-toggle {
-
-width:300px;
-height:30px;
-margin-bottom:30px;
+background-color: blue;
 }
 
 .dropbtn {
