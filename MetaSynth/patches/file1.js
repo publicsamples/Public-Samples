@@ -3,3 +3,10 @@ var keys = new Tone.GrainPlayer({
 	
 		}).connect(filter);
 					
+		document.querySelector("tone-fft").bind(keys);
+		document.querySelector("tone-play-toggle").bind(keys);
+		document.querySelector("tone-grain-player").bind(keys);
+					
+		document.querySelector("tone-fft").bind(keys);
+		document.querySelector("tone-play-toggle").bind(keys);
+		document.querySelector("tone-grain-player").bind(keys);
