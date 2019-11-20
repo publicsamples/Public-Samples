@@ -9,11 +9,17 @@
 <meta name="MobileOptimized" content="width" />
 <meta name="HandheldFriendly" content="true" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/css/normalize.css" />
+<script src="https://unpkg.com/tone"></script>
+<script type="text/javascript" src="/external-js/audiokeys.js"></script>
+<script type="text/javascript" src="/external-js/tonejs-ui.js"></script>
+<script type="text/javascript" src="/external-js/NexusUI.js"></script>
+<script></script>
 <link rel="shortcut icon" href="/themes/ms/favicon.ico" type="image/vnd.microsoft.icon" />
 
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com"><title>Contact Form | Modularsamples</title>
-    <link rel="stylesheet" media="all" href="/sites/lightning-8-x-4-000.dd/files/css/css_PsrixfuhUuZN0n4sQQTB81xo-VlsjA5g_NQFxlR-028.css?q02dgc" />
-<link rel="stylesheet" media="all" href="/sites/lightning-8-x-4-000.dd/files/css/css_s_D0gcVmm-4ugtvm8fYx7cqa5oyALk6aidIMIsNnVws.css?q02dgc" />
+    <link rel="stylesheet" media="all" href="/sites/lightning-8-x-4-000.dd/files/css/css_ROMXZgYUwFPDAx9EWgEp16SzEWJZ8lomJvj4RSo8G9M.css?q19piv" />
+<link rel="stylesheet" media="all" href="/sites/lightning-8-x-4-000.dd/files/css/css_uPiRjIn3CUpyKadGQoScDBdm1KHUoGE7LrXkXXimCUk.css?q19piv" />
 
     <script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
 
@@ -23,18 +29,18 @@
       <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
     
 <div class="page js-layout">
-  <div data-at-row="header" class="l-header l-row">
+  <div data-at-row="leaderboard" class="l-leaderboard l-row">
   
-  <header class="l-pr page__row pr-header" role="banner" id="masthead">
-    <div class="l-rw regions container pr-header__rw arc--1 hr--1" data-at-regions="">
-      <div  data-at-region="1" data-at-block-count="1" class="l-r region pr-header__header-first" id="rid-header-first"><div id="block-ms-branding" data-block-plugin-id="system_branding_block" class="l-bl block block-branding block-config-provider--system block-plugin-id--system-branding-block has-name" id="system-branding-block">
+  <div class="l-pr page__row pr-leaderboard" id="leaderboard">
+    <div class="l-rw regions container pr-leaderboard__rw arc--1 hr--1" data-at-regions="">
+      <div  data-at-region="1" data-at-block-count="1" class="l-r region pr-leaderboard__leaderboard" id="rid-leaderboard"><div id="block-ms-branding" data-block-plugin-id="system_branding_block" class="l-bl block block-branding block-config-provider--system block-plugin-id--system-branding-block has-logo" id="system-branding-block">
   <div class="block__inner block-branding__inner">
 
-    <div class="block__content block-branding__content site-branding"><span class="site-branding__text"><strong class="site-branding__name"><a href="/" title="Home" itemprop="url" rel="home" class="site-branding__name-link">Modularsamples</a></strong></span></div></div>
+    <div class="block__content block-branding__content site-branding"><a href="/" title="Home" itemprop="url" rel="home" class="site-branding__logo-link"><img src="/sites/lightning-8-x-4-000.dd/files/headers.png" alt="Home" itemprop="logo" class="site-branding__logo-img" /></a></div></div>
 </div>
 </div>
     </div>
-  </header>
+  </div>
   
 </div>
 <div data-at-row="navbar" class="l-navbar l-row">
@@ -57,17 +63,82 @@
 </div>
 <div data-at-row="main" class="l-main l-row">
   
-  <div class="l-pr page__row pr-main" id="main-content">
-    <div class="l-rw regions container pr-main__rw arc--1 hr--1" data-at-regions="">
-      <div  data-at-region="1" data-at-block-count="3" class="l-r region pr-main__content" id="rid-content"><div id="block-ms-page-title" data-block-plugin-id="page_title_block" class="l-bl block block-config-provider--core block-plugin-id--page-title-block"id="page-title-block">
+  <div class="l-pr page__row pr-main regions-multiple" id="main-content">
+    <div class="l-rw regions container pr-main__rw arc--2 hr--1-2" data-at-regions="">
+      <div  data-at-region="1" data-at-block-count="3" class="l-r region pr-main__content" id="rid-content"><div id="block-autofilter" data-block-plugin-id="block_content:364383b5-d7a3-4da2-b1cc-a57b50de4839" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-364383b5-d7a3-4da2-b1cc-a57b50de4839 has-title block--type-text block--view-mode-full" role="region" aria-labelledby="block-autofilter-title"id="block-content364383b5-d7a3-4da2-b1cc-a57b50de4839">
   <div class="block__inner">
 
-    <div class="block__content">
-  <h1 class="page__title">Contact Form</h1>
+    <h2  class="block__title" id="block-autofilter-title"><span>Filter</span></h2><div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><div class="grid-filter">
+<div class="grid-item">
+<div id="fwet">Wet</div>
+</div>
 
+<div class="grid-item">
+<div id="baseFrequency">Cutoff</div>
+</div>
+
+<div class="grid-item">
+<div id="Q">Res</div>
+</div>
+
+<div class="grid-item">
+<div id="depth">Depth</div>
+</div>
+
+<div class="grid-item">
+<div id="ffrequency">Speed</div>
+</div>
+</div>
 </div></div>
 </div>
-<main id="block-ms-content" data-block-plugin-id="system_main_block" class="l-bl block block-main-content" role="main" id="system-main-block">
+</div></div>
+</div>
+<div id="block-delay" data-block-plugin-id="block_content:7d393c03-ebdd-4f96-915f-1c430fd8612f" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-7d393c03-ebdd-4f96-915f-1c430fd8612f has-title block--type-text block--view-mode-full" role="region" aria-labelledby="block-delay-title"id="block-content7d393c03-ebdd-4f96-915f-1c430fd8612f">
+  <div class="block__inner">
+
+    <h2  class="block__title" id="block-delay-title"><span>Delay</span></h2><div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><div class="grid-delay">
+
+<div class="grid-item">
+
+<div id="dwet">Wet</div>
+</div>
+
+<div class="grid-item">
+
+<div id="dtime">Time</div>
+</div>
+
+<div class="grid-item">
+<div id="dfeedback">Feed</div>
+</div>
+
+</div></div></div>
+</div>
+</div></div>
+</div>
+<div id="block-reverb" data-block-plugin-id="block_content:7c148dbe-0db3-4fef-982e-eeb4545e58c5" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-7c148dbe-0db3-4fef-982e-eeb4545e58c5 has-title block--type-text block--view-mode-full" role="region" aria-labelledby="block-reverb-title"id="block-content7c148dbe-0db3-4fef-982e-eeb4545e58c5">
+  <div class="block__inner">
+
+    <h2  class="block__title" id="block-reverb-title"><span>Reverb</span></h2><div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><div class="grid-reverb">
+
+
+
+<div class="grid-item">
+<div id="rwet">Wet</div>
+</div>
+
+<div class="grid-item">
+<div id="roomSize"> Size</div>
+</div>
+
+<div class="grid-item">
+<div id="dampening">Damp</div>
+</div>
+</div></div></div>
+</div>
+</div></div>
+</div>
+</div><div  data-at-region="2" data-at-block-count="2" class="l-r region pr-main__sidebar-first" id="rid-sidebar-first"><main id="block-mainpagecontent" data-block-plugin-id="system_main_block" class="l-bl block block-main-content" role="main" id="system-main-block">
   
   <form class="contact-message-sitewide-form contact-message-form contact-form" data-user-info-from-browser data-drupal-selector="contact-message-sitewide-form" action="/contact" method="post" id="contact-message-sitewide-form" accept-charset="UTF-8" role="form">
   <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-name form-item-name">
@@ -80,7 +151,11 @@
         <input data-drupal-selector="edit-mail" type="email" id="edit-mail" name="mail" value="" size="60" maxlength="254" class="form-email required" required="required" aria-required="true" />
 
         </div>
-<div class="field--type-string field--name-subject field--widget-string-textfield element-container-wrapper js-form-wrapper form-wrapper" data-drupal-selector="edit-subject-wrapper" id="edit-subject-wrapper">      <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-subject-0-value form-item-subject-0-value">
+<input autocomplete="off" data-drupal-selector="form-3cwc9hut3itclzjghoaqcr4hg0x1dad-uesyao3hnaa" type="hidden" name="form_build_id" value="form-3Cwc9hut3itCLZJGhoAQcR4HG0X1dAD-uESYao3HnAA" />
+<input data-drupal-selector="edit-contact-message-sitewide-form" type="hidden" name="form_id" value="contact_message_sitewide_form" />
+  <div data-drupal-selector="edit-field-layout" class="atl atl--layout-onecol layout layout--onecol">
+    <div  data-drupal-selector="edit-content" class="layout__region layout__region--content">
+      <div class="field--type-string field--name-subject field--widget-string-textfield element-container-wrapper js-form-wrapper form-wrapper" data-drupal-selector="edit-subject-wrapper" id="edit-subject-wrapper">      <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-subject-0-value form-item-subject-0-value">
       <label for="edit-subject-0-value" class="js-form-required form-required">Subject</label>
         <input class="js-text-full text-full form-text required" data-drupal-selector="edit-subject-0-value" type="text" id="edit-subject-0-value" name="subject[0][value]" value="" size="60" maxlength="100" placeholder="" required="required" aria-required="true" />
 
@@ -96,8 +171,9 @@
         </div>
 
   </div>
-<input autocomplete="off" data-drupal-selector="form-fvdym53zgx9ximbo8dr1fqzz-brrbg0ckby7gtcy6ek" type="hidden" name="form_build_id" value="form-FVDYm53zGX9xiMBO8dR1FqZZ-BrRbG0CKBy7GtCy6Ek" />
-<input data-drupal-selector="edit-contact-message-sitewide-form" type="hidden" name="form_id" value="contact_message_sitewide_form" />
+
+    </div>
+  </div>
 <div class="field--type-language field--name-langcode field--widget-language-select element-container-wrapper js-form-wrapper form-wrapper" data-drupal-selector="edit-langcode-wrapper" id="edit-langcode-wrapper">      
   </div>
 <div data-drupal-selector="edit-actions" class="form-actions element-container-wrapper js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Send" class="button button--primary js-form-submit form-submit" />
@@ -107,9 +183,369 @@
 
   
 </main>
+<div id="block-seq" data-block-plugin-id="block_content:a0868ac9-ba5d-4e57-b949-76c2d9833510" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-a0868ac9-ba5d-4e57-b949-76c2d9833510 block--type-text block--view-mode-full"id="block-contenta0868ac9-ba5d-4e57-b949-76c2d9833510">
+  <div class="block__inner">
+
+    <div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><tone-transport></tone-transport>
+<tone-step-sequencer id="seq1"></tone-step-sequencer></div></div>
+</div>
+</div></div>
+</div>
 </div>
     </div>
   </div>
+  
+</div>
+<div data-at-row="footer" class="l-footer l-row">
+  
+  <footer class="l-pr page__row pr-footer" role="contentinfo" id="footer">
+    <div class="l-rw regions container pr-footer__rw arc--1 hr--1" data-at-regions="">
+      <div  data-at-region="1" data-at-block-count="1" class="l-r region pr-footer__footer" id="rid-footer"><div id="block-sequencer" data-block-plugin-id="block_content:1d6ccec8-b3db-4cc3-b6c4-236b9c4f2084" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-1d6ccec8-b3db-4cc3-b6c4-236b9c4f2084 block--type-text block--view-mode-full"id="block-content1d6ccec8-b3db-4cc3-b6c4-236b9c4f2084">
+  <div class="block__inner">
+
+    <div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><script type="text/javascript">
+
+function loadJS(file) {
+// DOM: Create the script element
+var jsElm = document.createElement("script");
+// set the type attribute
+jsElm.type = "application/javascript";
+// make the script element load file
+jsElm.src = file;
+// finally insert the element to the body element in order to load the script
+document.body.appendChild(jsElm);
+}
+
+var eq = new Tone.Gain().toMaster({
+})
+
+var verb = new Tone.Freeverb({
+"wet" : 0.0
+}).connect(eq);	
+
+//the feedback delay
+var feedbackDelay = new Tone.PingPongDelay({
+"wet" : 0.0
+}).connect(verb);		
+
+var chorus = new Tone.Chorus({
+	"wet" : 0.0
+}).connect(feedbackDelay);		
+
+
+var filter = new Tone.AutoFilter({
+	"wet" : 0.0
+}).connect(chorus).start();		
+
+
+//the notes
+var noteNames = ["B3", "A#3", "A3", "G#3", "G3", "F#3", "F3", "E3","D#3", "D3", "C#3", "C3", "B2", "A#2", "A2", "G#2","G2", "F#2", "F2", "E2","D#2", "D2", "C#2", "C2"  ];
+
+
+
+
+
+
+var loop = new Tone.Sequence(function(time, col){
+var column = document.querySelector("#seq1").currentColumn;
+column.forEach(function(val, i){
+if (val){
+
+//slightly randomized velocities
+keys.triggerAttackRelease(noteNames[i], "0.25", time);
+}
+});
+
+Tone.Transport.start("+0.2");
+//set the columne on the correct draw frame
+Tone.Draw.schedule(function(){
+document.querySelector("#seq1").setAttribute("highlight", col);
+}, time);
+}, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "16n").start(0);
+
+
+function stop() {
+Tone.Transport.stop();
+
+}
+
+function clear() {
+
+keys.disconnect();
+keys.dispose();
+}
+
+//aENV Controls
+var attack = new Nexus.Slider('#attack', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [20, 50],
+'min': 0,
+'max': 100,
+'step': 0,
+'value': 0
+})
+
+attack.on('change', function(v) {
+keys.attack = v;
+});
+
+var release = new Nexus.Slider('#release', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [20, 50],
+'min': 0,
+'max': 40,
+'step': 0,
+'value': 12
+})
+
+release.on('change', function(v) {
+keys.release = v;
+});
+
+var curve = new Nexus.Toggle('#curve', {
+'size': [30,30],
+'state': true
+})
+
+curve.on('change', function(v) {
+keys.curve = v;
+});
+
+//chorus Controls
+
+var fwet = new Nexus.Slider('#fwet', {
+'mode': 'relative', // "absolute" or "absolute"
+'size': [20, 50],
+"min": 0,
+"max" : 1,
+'value' : 0
+})
+
+fwet.on('change', function(v) {
+filter.wet.value = v;
+});
+
+var baseFrequency = new Nexus.Slider('#baseFrequency', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [20, 50],
+'min': 20,
+'max': 4000,
+'step': 0,
+	'value': 200
+})
+
+baseFrequency.on('change', function(v) {
+filter.filter.frequency.value = v;
+});
+
+var Q = new Nexus.Slider('#Q', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [20, 50],
+'min': 0,
+'max': 10,
+'step': 0,
+	'value': 1
+})
+
+Q.on('change', function(v) {
+filter.filter.Q.value = v;
+});
+
+var depth = new Nexus.Slider('#depth', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [20, 50],
+'min': 0.00,
+'max': 1.00,
+'step': 0,
+'value': 0
+})
+
+depth.on('change', function(v) {
+filter.depth.value = v;
+});
+
+var ffrequency = new Nexus.Slider('#ffrequency', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [20, 50],
+'min': 0,
+'max': 20,
+'step': 0,
+	'value': 4
+})
+
+ffrequency.on('change', function(v) {
+filter.frequency.value = v;
+});
+
+
+//delay Controls
+
+var cwet = new Nexus.Slider('#cwet', {
+'mode': 'relative', // "absolute" or "absolute"
+'size': [20, 50],
+'min': 0.0,
+'max': 1.0,
+'step': 0,
+'value': 0
+})
+
+cwet.on('change', function(v) {
+chorus.wet.value = v;
+});
+
+var ctime = new Nexus.Slider('#ctime', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [20, 50],
+'min': 0.01,
+'max': 1.0,
+'step': 0,
+'value': 0.25
+})
+
+ctime.on('change', function(v) {
+chorus.delayTime.value = v;
+});
+
+var cdepth = new Nexus.Slider('#cdepth', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [20, 50],
+'min': 0.0,
+'max': 0.95,
+'step': 0,
+'value': 0.60
+})
+
+cdepth.on('change', function(v) {
+chorus.depth.value = v;
+});
+
+var cfreq = new Nexus.Slider('#cfreq', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [20, 50],
+'min': 0.0,
+'max': 0.95,
+'step': 0,
+'value': 0.60
+})
+
+cfreq.on('change', function(v) {
+chorus.frequency.value = v;
+});
+
+//delay Controls
+
+var dwet = new Nexus.Slider('#dwet', {
+'mode': 'relative', // "absolute" or "absolute"
+'size': [20, 50],
+'min': 0.0,
+'max': 1.0,
+'step': 0,
+'value': 0
+})
+
+dwet.on('change', function(v) {
+feedbackDelay.wet.value = v;
+});
+
+var dtime = new Nexus.Slider('#dtime', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [20, 50],
+'min': 0.01,
+'max': 1.0,
+'step': 0,
+'value': 0.25
+})
+
+dtime.on('change', function(v) {
+feedbackDelay.delayTime.value = v;
+});
+
+var dfeedback = new Nexus.Slider('#dfeedback', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [20, 50],
+'min': 0.0,
+'max': 0.95,
+'step': 0,
+'value': 0.60
+})
+
+dfeedback.on('change', function(v) {
+feedbackDelay.feedback.value = v;
+});
+
+//Reverb Controls
+
+var rwet = new Nexus.Slider('#rwet', {
+'mode': 'relative', // "absolute" or "absolute"
+'size': [20, 50],
+'min': 0,
+'max': 1,
+'step': 0,
+'value': 0
+})
+
+rwet.on('change', function(v) {
+verb.wet.value = v;
+});
+
+var roomSize = new Nexus.Slider('#roomSize', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [20, 50],
+'min': 0.10,
+'max': 0.95,
+'step': 0,
+'value': 0.70
+})
+
+roomSize.on('change', function(v) {
+verb.roomSize.value = v;
+});
+
+var dampening = new Nexus.Slider('#dampening', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [20, 50],
+'min': 100,
+'max': 5000,
+'step': 0,
+'value': 3000
+})
+
+dampening.on('change', function(v) {
+verb.dampening.value = v;
+});
+
+//Transport/seq Controls
+
+var vol = new Nexus.Dial('#vol', {size: [35, 35], min: 0,max: 1,  value: 0.5 });
+vol.on('change', v => eq.gain.value = v)
+
+document.querySelector("tone-transport").bind(Tone.Transport);
+Tone.Transport.on("stop", () => {
+setTimeout(() => {
+document.querySelector("#seq1").setAttribute("highlight", "-1");
+
+}, 100);
+
+});
+		document.querySelector("tone-oscilloscope").bind(eq);
+//keys
+
+var keyboard = new AudioKeys();
+keyboard.down(function(note) {
+keys.triggerAttack(Tone.Frequency(note.note, "midi").toNote());
+});
+
+keyboard.up(function(note) {
+keys.triggerRelease(Tone.Frequency(note.note, "midi").toNote());
+});
+
+</script></div></div>
+</div>
+</div></div>
+</div>
+</div>
+    </div>
+  </footer>
   
 </div>
 
@@ -119,7 +555,7 @@
   </div>
 
     
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"ajaxPageState":{"theme":"ms","libraries":"at_core\/at.accordion,at_core\/at.breakpoints,at_core\/at.responsivemenus,at_core\/at.settings,core\/drupal.form,ms\/base,ms\/ckeditor,ms\/color,ms\/contact,ms\/custom_css_file,ms\/fontfaceobserver,ms\/fonts,ms\/image_styles,ms\/jquery_ui,ms\/ms.layout.page,ms\/responsive_menus,ms\/responsive_menus_accordion,ms\/responsive_menus_dropmenu,ms\/responsive_menus_slidedown,ms\/responsive_tables,ms\/taxonomy,ms\/title_styles,system\/base"},"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"contact\/sitewide","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","ms":{"at_responsivemenus":{"bp":"all and (min-width: 60.0625em)","default":"ms-slidedown","responsive":"ms-dropmenu","acd":{"acd_load":true,"acd_default":true,"acd_responsive":false,"acd_both":false}},"at_breakpoints":{"at_core_simple_wide":{"breakpoint":"wide","mediaquery":"all and (min-width: 60.0625em)"},"at_core_simple_tablet-isolate":{"breakpoint":"tablet-isolate","mediaquery":"all and (min-width: 45.0625em) and (max-width: 60em)"},"at_core_simple_mobile":{"breakpoint":"mobile","mediaquery":"all and (max-width: 45em)"}}},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"8cbe66551d5d2fdc654ea728d8cceb45cc2b11d977ebde29bd5f1e2fe4a98d8d"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"ajaxPageState":{"theme":"ms","libraries":"at_core\/at.accordion,at_core\/at.breakpoints,at_core\/at.responsivemenus,at_core\/at.settings,core\/drupal.form,layout_discovery\/onecol,ms\/base,ms\/ckeditor,ms\/color,ms\/contact,ms\/custom_css,ms\/custom_css_file,ms\/fontfaceobserver,ms\/fonts,ms\/image_styles,ms\/jquery_ui,ms\/ms.layout.page,ms\/responsive_menus,ms\/responsive_menus_accordion,ms\/responsive_menus_dropmenu,ms\/responsive_menus_slidedown,ms\/responsive_tables,ms\/taxonomy,ms\/title_styles,system\/base"},"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"contact\/sitewide","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","ms":{"at_responsivemenus":{"bp":"all and (min-width: 60.0625em)","default":"ms-slidedown","responsive":"ms-dropmenu","acd":{"acd_load":true,"acd_default":true,"acd_responsive":false,"acd_both":false}},"at_breakpoints":{"at_core_simple_wide":{"breakpoint":"wide","mediaquery":"all and (min-width: 60.0625em)"},"at_core_simple_tablet-isolate":{"breakpoint":"tablet-isolate","mediaquery":"all and (min-width: 45.0625em) and (max-width: 60em)"},"at_core_simple_mobile":{"breakpoint":"mobile","mediaquery":"all and (max-width: 45em)"}}},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"96a0fa8e4ac014047ede282931f101624e348063bf05a96eb0045bd25a00702b"}}</script>
 <script src="/sites/lightning-8-x-4-000.dd/files/js/js_c6sBYcgPYd3dKKsqe7iP6GIHZvyCj-q66Ny81NMgZ7U.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fontfaceobserver/2.0.8/fontfaceobserver.js"></script>
 <script src="/sites/lightning-8-x-4-000.dd/files/js/js_G4K6wfohJENxm7f-tZEUj-sKDY9Ikgg-jGTvjplJcwY.js"></script>
