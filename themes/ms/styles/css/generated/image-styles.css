@@ -1,0 +1,24 @@
+@media all and (min-width: 60.0625em) {
+  .node--type-page.node--view-mode-full .field-type-image__figure { 
+  text-align: center;
+  margin: 0.25rem auto 1rem auto;
+ }
+}
+@media all and (min-width: 60.0625em) {
+  .node--type-page.node--view-mode-teaser .field-type-image__figure { 
+  float: right;
+  margin: 0.25rem 0 0.5rem 1rem;
+ }
+}
+@media all and (max-width: 45em) {
+  .node--type-page.node--view-mode-full .field-type-image__figure { 
+  text-align: center;
+  margin: 0.25rem auto 0.75rem auto;
+ }
+}
+@media all and (max-width: 45em) {
+  .node--type-page.node--view-mode-teaser .field-type-image__figure { 
+  text-align: center;
+  margin: 0.25rem auto 0.75rem auto;
+ }
+}
