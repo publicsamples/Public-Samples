@@ -1,0 +1,96 @@
+/**
+ * Content Types (nodes)
+ *  - in Drupal a content type is a bunch of fields we use to enter and display
+ *    content, such as pages, blog posts, forum posts and so on. Each of those
+ *    is usually a content type you create in the Drupal admin.
+ *  - an instance of a content type (e.g. a single blog post) is called a node,
+ *    the root template is node.html.twig and the base selector is .node {}
+ ============================================================================ */
+.node {
+  margin-bottom: 1.25em;
+  padding: 1.25em;
+  border-radius: 2px;
+}
+
+.node p:last-child {
+  margin-bottom: 0;
+}
+
+.node__status {
+  float: right;
+}
+
+.node--view-mode-full__title {
+  margin: 0 0 1rem;
+}
+
+.node--view-mode-teaser ul:last-of-type {
+  margin-bottom: 0;
+}
+
+.node__meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
+.node__meta .field-type-image {
+  margin: 0 0.75rem 0 0;
+}
+
+.node__meta .field-type-image__figure {
+  margin: 0;
+  padding: 0;
+}
+
+.node__meta .field-type-image img {
+  width: auto;
+  height: 3rem;
+}
+
+.node__meta article:empty {
+  display: none;
+}
+
+.node .node__author:after {
+  content: "-";
+  display: inline-block;
+}
+
+.node__meta--has-author-picture .node__submitted {
+  margin-top: 0.25rem;
+}
+
+.node__meta--has-author-picture .node__author:after {
+  display: none;
+}
+
+.node__meta--has-author-picture .node__author,
+.node__meta--has-author-picture .node__pubdate {
+  margin: 0;
+  display: block;
+}
+
+@media screen and (max-width: 60em) {
+  .node .node__author:after {
+    display: none;
+  }
+  .node .node__author,
+  .node .node__pubdate {
+    margin: 0;
+    display: block;
+  }
+}
+
+.node__links {
+  clear: both;
+}
+
+.node--sticky {
+  padding: 0;
+}
+/*# sourceMappingURL=node.css.map */

@@ -1,0 +1,14 @@
+/**
+ * User forms, e.g. login, register and password reset.
+ ============================================================================ */
+.user-login-form .form-text {
+  width: 100%;
+}
+
+/**
+ * User Profiles
+ ============================================================================ */
+.user__status {
+  float: right;
+}
+/*# sourceMappingURL=user.css.map */

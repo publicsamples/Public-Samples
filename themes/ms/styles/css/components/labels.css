@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/**
+ * Labels
+ ============================================================================ */
+.more-link {
+  text-align: right;
+  display: inline-block;
+}
+
+.more-help-link {
+  text-align: left;
+}
+
+[dir="rtl"] .more-help-link {
+  text-align: right;
+}
+
+.filter-help a {
+  display: block;
+}
+
+.filter-help a:after {
+  position: static;
+  top: auto;
+  right: auto;
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+[dir="rtl"] .filter-help a:after {
+  left: auto;
+}
+
+.filter-help a, .more-help-link a {
+  background-color: transparent;
+  margin-right: 0;
+}
+
+.filter-help a:after, .more-help-link a:after {
+  font-family: FontAwesome, sans-serif;
+  content: "";
+  float: right;
+  padding: 0 1px;
+  text-align: right;
+  background-color: transparent;
+  background-image: none;
+  width: 1rem;
+  display: none;
+}
+
+.fa-loaded .filter-help a:after, .fa-loaded .more-help-link a:after {
+  display: inline-block;
+}
+/*# sourceMappingURL=labels.css.map */
