@@ -1,4 +1,4 @@
-var keys = new Tone.Sampler({
+			var keys = new Tone.Sampler({
 		
 			"C1" : "File1.[mp3|ogg]",
 			"E1" : "File5.[mp3|ogg]",
