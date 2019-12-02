@@ -1,16 +1,9 @@
 
 
-
-.grid-title{
-  text-align: left;
-}
-
-
-
-
 .grid-patch {
   display: grid;
   grid-template-columns: auto auto auto ;
+  
  
 
 }
@@ -20,6 +13,7 @@
 .grid-env {
   display: grid;
   grid-template-columns: auto auto auto auto;
+   	 text-align: center; 
 
 }
 
@@ -55,15 +49,16 @@
 
 
 .grid-item {
-	 text-align: center;  
-	 font-size:12px;
-  padding-left:5px;
-   padding-bottom:10px;
+	 align: center;  
+	 font-size:15px;
+     padding-left:5px;
+      padding-bottom:10px;
+
  }
 
  .grid-item2 {
  	 text-align: center;  
- 	 font-size:12px;
+ 	 font-size:15px;
    padding-left:5px;
     padding-bottom:10px;
   }
@@ -116,20 +111,27 @@
 .node__container{
    background-color:#1F5966;
    color:white;
-   padding: 30px;
+   padding: 10px;
 
 }
 
-.node__container a{
+.node__container a:link{
    color:#ED6355;
 
 }
 
-.node__container h3{
-   padding-bottom:5px;
-   
+
+.node__container a:visited{
+   color:#ED6355;
 
 }
+
+.node__container a:hover{
+   text-decoration:underline;
+
+}
+
+
 
 .node__container li{
 	color:#8AD6D8;
@@ -138,7 +140,82 @@
 
 }
 
+#block-downloads {
+   background-color:#2BACA9;
+  color:white;
+  padding: 10px;
+ align: center;
+ font-size:20px;
+ 
 
+}
+
+#block-downloads .field-item{
+   color:#ED6355;
+   padding:10px;
+
+}
+
+#block-downloads a:link{
+   color:white;
+
+}
+
+
+#block-downloads a:visited{
+   color:white;
+
+}
+
+#block-downloads a:hover{
+   text-decoration:underline;
+
+}
+
+#block-downloads h2{
+   color:black;
+
+}
+
+
+#block-libraryinfo {
+   background-color:#8AD6D8;
+  color:black;
+  padding: 5px;
+
+}
+
+
+.block-libraryinfo a:link{
+   color:#ED6355;
+
+}
+
+
+.block-libraryinfo a:visited{
+   color:#ED6355;
+
+}
+
+.block-libraryinfo a:hover{
+   text-decoration:underline;
+
+}
+
+
+
+.block-libraryinfo li{
+	color:#8AD6D8;
+	margin-left:-25px;
+   
+
+}
+
+#block-libtext {
+   background-color:#1F5966;
+  color:white;
+  padding: 5px;
+}
 
 #block-seq {
    background-color:#2BACA9;
@@ -146,8 +223,46 @@
 }
 
 
+#block-dev {
+    background-color:#FE9D8E;
+   color:black;
+  align: center;
+  font-size:15px;
+}
 
 
+#block-views-block-s-libview {
+	background-color:#353535;
+	font-size:12px;
+   text-align:center; 
+}
+
+#block-views-block-s-libview a:link{
+ color:#ccc;
+}
+
+#block-views-block-s-libview a:visited{
+ color:#ccc;
+}
+
+#block-builtwith {
+   padding-top:12px;
+    }
+  #block-builtwith a:link{
+      color:#ED6355;
+
+   }
+
+   #block-builtwith a:visited{
+      color:#ED6355;
+
+   }
+
+   #block-builtwith a:hover{
+      text-decoration:underline;
+
+  
+}
 
 #block-keys {
      color:white;

@@ -1,0 +1,22 @@
+/**
+ * @file
+ * Pagerer mini CSS
+ */
+
+div.pagerer-page-widget {
+  display: inline-block;
+}
+input.pagerer-page {
+  border: 1px black dotted;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+input.ui-button.pagerer-page-button {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+.pagerer-page-has-focus {
+  background-color: Gainsboro;
+}

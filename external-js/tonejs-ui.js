@@ -2144,6 +2144,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					text-align: center;
 					font-family: monospace;
 					font-size: 12px;
+					font-color: whit;
 				}
 
 				#container {
@@ -2278,24 +2279,26 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 				:host {
 					display: block;
 					color: #182C40;
+					background-color: #2BACA9;
 				}
 				#container {
-					background-color: #182C40;
+					background-color: #2BACA9;
 					padding: 5px;
+					
 				}
 				tone-play-toggle {
 					width: 50%;
-					background-color: #182C40;
+					background-color: #2BACA9;
 				}
 				#top {
 					position: relative;
 				}
 				#top tone-play-toggle {
 					width: 60%;
-					color: #182C40;
+					color: #2BACA9;
 				}
 				#top #position {
-					background-color: #2BACA9;
+					background-color: #1F5966;
 					padding: 5px;
 					position: absolute;
 					width: 30%;
@@ -2304,32 +2307,36 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					text-align: center;
 					top: 50%;
 					font-family: monospace;
+					color:white;
 				}
 				tone-rack {
 					margin-top: 10px;
-					
+					color: #2BACA9;
+					background-color: #2BACA9;
 				}
 
 				tone-slider, tone-toggle {
 					display: block;
 					margin-top: 10px;
-					background-color: #182C40;
+					background-color: #2BACA9;
+					
 				}
 				tone-slider {
 					width: 80%;
 					margin: 10px auto 0;
-					background-color: #182C40;
+					background-color: #2BACA9;
 					
 				}
 				#tempo {
 					width: calc(100% - 10px);
-					color: #8AD6D8;
+					color: #000;
+				
 				}
 				
 			}
-			tempo .attributes {
+			#tempo .attributes {
 		
-				color: #8AD6D8;
+				color: #2BACA9;
 			}
 			</style>
 			<div id="container">
