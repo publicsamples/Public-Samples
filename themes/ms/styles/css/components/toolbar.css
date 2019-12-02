@@ -1,0 +1,45 @@
+/**
+ * Toolbar
+ * Drupal core does a poor job of protecting the toolbar items, so we isolate
+ * and override the CSS. The ID should be enough specificity to do the job.
+ * This is not exhaustive, the toolbar can still break, however this gets
+ * most "very easily broken" things protected from normal theme styles.
+ ============================================================================ */
+#toolbar-administration a {
+  font-family: 'Source Sans Pro', 'Lucida Grande', Verdana, sans-serif;
+  line-height: 1;
+}
+
+#toolbar-administration a:after {
+  display: none !important;
+}
+
+#toolbar-administration button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+}
+
+#toolbar-administration .toolbar-menu-administration ul {
+  padding: 0;
+}
+
+#toolbar-administration .toolbar-menu-administration a {
+  color: #565656;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border: 0;
+}
+
+#toolbar-administration .toolbar-menu-administration a:visited, #toolbar-administration .toolbar-menu-administration a:active {
+  color: #565656;
+}
+
+#toolbar-administration .level-3 ul {
+  padding-left: 1em;
+}
+
+#toolbar-administration .toolbar-tray-horizontal a {
+  padding-right: 1.3334em;
+}
+/*# sourceMappingURL=toolbar.css.map */

@@ -1,0 +1,39 @@
+/**
+ * Aggregator
+ ============================================================================ */
+.aggregator-feed {
+  margin-bottom: 1.25em;
+}
+
+.aggregator-item {
+  margin-bottom: 1.25em;
+  padding: 1.25em;
+  border-radius: 2px;
+}
+
+.aggregator-item:before, .aggregator-item:after {
+  content: " ";
+  display: table;
+}
+
+.aggregator-item:after {
+  clear: both;
+}
+
+.feed-item-title {
+  margin: 0 0 1rem;
+}
+
+.item-description {
+  margin: 1rem 0;
+}
+
+.block-plugin-id--aggregator-feed-block .item-list__item {
+  margin-bottom: 0.625rem;
+}
+
+.block-plugin-id--aggregator-feed-block .item-list__item a {
+  display: inline-block;
+  line-height: 1.25;
+}
+/*# sourceMappingURL=aggregator.css.map */

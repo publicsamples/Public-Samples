@@ -1,0 +1,166 @@
+/**
+ * Shortcodes (Grid blocks)
+ ============================================================================ */
+@media screen and (min-width: 60.0625em) {
+  .grid-block-2 .block {
+    width: 50%;
+    float: left;
+  }
+  .grid-block-2 .block:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  .grid-block-2 .block:nth-child(2n + 2) {
+    margin-left: 50%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .grid-block-3 .block {
+    width: 33.33333%;
+    float: left;
+  }
+  .grid-block-3 .block:nth-child(3n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  .grid-block-3 .block:nth-child(3n + 2) {
+    margin-left: 33.33333%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .grid-block-3 .block:nth-child(3n + 3) {
+    margin-left: 66.66667%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .grid-block-4 .block {
+    width: 25%;
+    float: left;
+  }
+  .grid-block-4 .block:nth-child(4n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  .grid-block-4 .block:nth-child(4n + 2) {
+    margin-left: 25%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .grid-block-4 .block:nth-child(4n + 3) {
+    margin-left: 50%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .grid-block-4 .block:nth-child(4n + 4) {
+    margin-left: 75%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .grid-block-6 .block {
+    width: 16.66667%;
+    float: left;
+  }
+  .grid-block-6 .block:nth-child(6n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  .grid-block-6 .block:nth-child(6n + 2) {
+    margin-left: 16.66667%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .grid-block-6 .block:nth-child(6n + 3) {
+    margin-left: 33.33333%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .grid-block-6 .block:nth-child(6n + 4) {
+    margin-left: 50%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .grid-block-6 .block:nth-child(6n + 5) {
+    margin-left: 66.66667%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .grid-block-6 .block:nth-child(6n + 6) {
+    margin-left: 83.33333%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .grid-block-12 .block {
+    width: 8.33333%;
+    float: left;
+  }
+  .grid-block-12 .block:nth-child(12n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  .grid-block-12 .block:nth-child(12n + 2) {
+    margin-left: 8.33333%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .grid-block-12 .block:nth-child(12n + 3) {
+    margin-left: 16.66667%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .grid-block-12 .block:nth-child(12n + 4) {
+    margin-left: 25%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .grid-block-12 .block:nth-child(12n + 5) {
+    margin-left: 33.33333%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .grid-block-12 .block:nth-child(12n + 6) {
+    margin-left: 41.66667%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .grid-block-12 .block:nth-child(12n + 7) {
+    margin-left: 50%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .grid-block-12 .block:nth-child(12n + 8) {
+    margin-left: 58.33333%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .grid-block-12 .block:nth-child(12n + 9) {
+    margin-left: 66.66667%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .grid-block-12 .block:nth-child(12n + 10) {
+    margin-left: 75%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .grid-block-12 .block:nth-child(12n + 11) {
+    margin-left: 83.33333%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .grid-block-12 .block:nth-child(12n + 12) {
+    margin-left: 91.66667%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+/*# sourceMappingURL=shortcodes--grid-blocks.css.map */

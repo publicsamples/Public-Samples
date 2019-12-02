@@ -1,0 +1,44 @@
+/*
+  This file is hard coded to support the Site Builder layout. If you alter the grid in the Site Builder
+  layout you can turn on debugging manually in the $susy global settings, SEE _site-builder-base.scss.
+*/
+
+head {
+  display: block;
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  z-index: 999;
+  color: #333;
+  background: rgba(255, 255, 255, 0.25);
+}
+head:before {
+  content: "|||";
+  display: block;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+head:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: red;
+}
+head:hover ~ .regions, head:hover ~ body .regions {
+  position: relative;
+}
+head:hover ~ .regions:before, head:hover ~ body .regions:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: " ";
+  z-index: 998;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(38, 38, 38, 0.25) 76.19048%, transparent 76.19048%);
+  background-size: 8.50202%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
+  margin: 0 1rem;
+}

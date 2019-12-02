@@ -1,0 +1,44 @@
+/**
+ * CKEditor iframe CSS
+ ============================================================================ */
+html {
+  background-color: transparent !important;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding: 0.75rem;
+}
+
+textarea {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.cke_editable,
+.cke_source {
+  background-color: inherit !important;
+  color: inherit !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background-image: none !important;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all, 225ms, ease-in-out;
+  -o-transition: all, 225ms, ease-in-out;
+  transition: all, 225ms, ease-in-out;
+}
+
+.cke_editable {
+  cursor: text;
+  padding: 0.5em !important;
+}
+
+ul,
+ol,
+dl {
+  padding-left: 3.25rem;
+  padding-right: 0;
+}
+/*# sourceMappingURL=ckeditor-iframe.css.map */
