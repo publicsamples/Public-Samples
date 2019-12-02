@@ -29,45 +29,49 @@
 .grid-chorus {
   display: grid;
   grid-template-columns: auto auto auto auto;
-
+ text-align: center;
 }
 
 
 .grid-delay {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
 
-
+ text-align: center;
 }
 
 
 .grid-reverb {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-
+  grid-template-columns: auto auto auto;
+ text-align: center;
 }
 
 
 .grid-item {
-	 align: center;  
-	 font-size:15px;
-     padding-left:5px;
-      padding-bottom:10px;
-
+	padding-left:10px;
+	padding-right:10px;
  }
 
- .grid-item2 {
- 	 text-align: center;  
- 	 font-size:15px;
-   padding-left:5px;
-    padding-bottom:10px;
+ .grid-item p {
+ 	 font-size:16px;
+	 text-align:left;
+	 margin-left:-5px;
+	 margin-bottom:-2px;
   }
 
+  #rid-content {
+     background-color:#395e5f;
+    color:white;
+    padding: 2px;
+   align: center;
+
+  }
 
 #block-controls {
    background-color:#ED6355;
   color:white;
-  padding: 10px;
+  padding: 2px;
  align: center;
 
 }
@@ -75,35 +79,35 @@
 #block-autofilter {
    background-color:#FE9D8E;
   color:white;
-  padding: 5px;
+  padding: 2px;
 
 }
 
 #block-distortionfeedback{
    background-color:#8AD6D8;
   color:white;
-  padding: 5px;
+  padding: 2px;
 }
 
 
 #block-chorus {
    background-color:#8AD6D8;
   color:white;
-  padding: 5px;
+  padding: 2px;
 
 }
 
 #block-delay {
    background-color:#2BACA9;
   color:white;
-  padding: 5px;
+  padding: 2px;
 
 }
 
 #block-reverb {
    background-color:#1F5966;
   color:white;
-  padding: 5px;
+  padding: 2px;
 }
 
 
@@ -165,20 +169,14 @@
   font-size:15px;
 }
 
-
-#block-views-block-s-libview {
-	background-color:#353535;
-	font-size:12px;
-   text-align:center; 
+#block-dev a:link{
+   color:#1F5966;
 }
 
-#block-views-block-s-libview a:link{
- color:#ccc;
+#block-dev a:visited{
+   color:#1F5966;
 }
 
-#block-views-block-s-libview a:visited{
- color:#ccc;
-}
 
 
 
