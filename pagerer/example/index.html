@@ -32,12 +32,20 @@
 <div class="page js-layout">
   <div data-at-row="header" class="l-header l-row">
   
-  <header class="l-pr page__row pr-header" role="banner" id="masthead">
-    <div class="l-rw regions container pr-header__rw arc--1 hr--1" data-at-regions="">
+  <header class="l-pr page__row pr-header regions-multiple" role="banner" id="masthead">
+    <div class="l-rw regions container pr-header__rw arc--2 hr--1-2" data-at-regions="">
       <div  data-at-region="1" data-at-block-count="1" class="l-r region pr-header__header-first" id="rid-header-first"><div id="block-ms-branding" class="l-bl block block-branding block-config-provider--system block-plugin-id--system-branding-block has-name" id="system-branding-block">
   <div class="block__inner block-branding__inner">
 
     <div class="block__content block-branding__content site-branding"><span class="site-branding__text"><strong class="site-branding__name"><a href="/" title="Home" itemprop="url" rel="home" class="site-branding__name-link">Modularsamples</a></strong></span></div></div>
+</div>
+</div><div  data-at-region="2" data-at-block-count="1" class="l-r region pr-header__header-second" id="rid-header-second"><div id="block-dev" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-4ce4bd8d-a081-48a3-aeac-2c766c0cc177 block--type-basic block--view-mode-full"id="block-content4ce4bd8d-a081-48a3-aeac-2c766c0cc177">
+  <div class="block__inner">
+
+    <div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><p class="text-align-center">This service is under active development. Please report any issues <a href="https://github.com/publicsamples/Public-Samples/issues">here</a>. Alternatively you can send me a message on the <a href="https://www.facebook.com/ModularSamples/">Facebook group</a>.</p>
+</div></div>
+</div>
+</div></div>
 </div>
 </div>
     </div>
@@ -48,24 +56,24 @@
   
   <div class="l-pr page__row pr-highlighted" id="highlighted">
     <div class="l-rw regions container pr-highlighted__rw arc--1 hr--1" data-at-regions="">
-      <div  data-at-region="1" data-at-block-count="2" class="l-r region pr-highlighted__highlighted" id="rid-highlighted"><div class="l-bl block--messages" id="system-messages-block" data-drupal-messages><div data-drupal-messages-fallback class="hidden"></div></div><div id="block-dev" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-4ce4bd8d-a081-48a3-aeac-2c766c0cc177 block--type-basic block--view-mode-full"id="block-content4ce4bd8d-a081-48a3-aeac-2c766c0cc177">
-  <div class="block__inner">
-
-    <div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><p class="text-align-center">This service is under active development. Please report any issues <a href="https://github.com/publicsamples/Public-Samples/issues">here</a>. Alternatively you can send me a message on the <a href="https://www.facebook.com/ModularSamples/">Facebook group</a>.</p>
-</div></div>
-</div>
-</div></div>
-</div>
-</div>
+      <div  data-at-region="1" data-at-block-count="1" class="l-r region pr-highlighted__highlighted" id="rid-highlighted"><div class="l-bl block--messages" id="system-messages-block" data-drupal-messages><div data-drupal-messages-fallback class="hidden"></div></div></div>
     </div>
   </div>
   
 </div>
-<div data-at-row="content-prefix" class="l-content-prefix l-row">
+<div data-at-row="main" class="l-main l-row">
   
-  <div class="l-pr page__row pr-content-prefix" id="content-prefix">
-    <div class="l-rw regions container pr-content-prefix__rw arc--1 hr--1" data-at-regions="">
-      <div  data-at-region="1" data-at-block-count="1" class="l-r region pr-content-prefix__content-prefix" id="rid-content-prefix"><main id="block-ms-content--3" class="l-bl block block-main-content" role="main" id="system-main-block">
+  <div class="l-pr page__row pr-main regions-multiple" id="main-content">
+    <div class="l-rw regions container pr-main__rw arc--3 hr--1-2-3" data-at-regions="">
+      <div  data-at-region="1" data-at-block-count="4" class="l-r region pr-main__content" id="rid-content"><div id="block-ms-page-title--2" class="l-bl block block-config-provider--core block-plugin-id--page-title-block"id="page-title-block">
+  <div class="block__inner">
+
+    <div class="block__content">
+  <h1 class="page__title">Pagerer 8.x-1.5 - example page</h1>
+
+</div></div>
+</div>
+<main id="block-ms-content--3" class="l-bl block block-main-content" role="main" id="system-main-block">
   
   This page is an example of pagerer's features. It runs three separate queries on the database, and renders three tables with the results. A distinct pager is associated to each of the tables, and each pager is rendered through various pagerer's styles.<p /><hr /><br /><br /><h2><b>First data table:</b></h2><table data-striping="1" class="table cols-3">
   
@@ -161,7 +169,7 @@
               <span class="pager__next" aria-hidden="true">next ›</span>
             </a>
           </li><li class="pager__item pager__item--last pager__item--text">
-            <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=342%2C0%2C0" class="pager__link" title="Go to last page">
+            <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=445%2C0%2C0" class="pager__link" title="Go to last page">
               <span class="visually-hidden">Last page</span>
               <span class="pager__last" aria-hidden="true">last »</span>
             </a>
@@ -214,7 +222,7 @@
                   </a>
                 </li>
                                                                                 <li class="pager__item pager__item--last">
-                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=342%2C0%2C0" title="Go to last page">
+                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=445%2C0%2C0" title="Go to last page">
                     <span class="visually-hidden">Last page</span>
                     <span aria-hidden="true">Last »</span>
                   </a>
@@ -269,7 +277,7 @@
                   </a>
                 </li>
                                                                                 <li class="pager__item pager__item--last">
-                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=342%2C0%2C0" title="Go to last item">
+                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=445%2C0%2C0" title="Go to last item">
                     <span class="visually-hidden">Last item</span>
                     <span aria-hidden="true">Last »</span>
                   </a>
@@ -324,7 +332,7 @@
                   </a>
                 </li>
                                                                                 <li class="pager__item pager__item--last">
-                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=342%2C0%2C0" title="Go to last items">
+                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=445%2C0%2C0" title="Go to last items">
                     <span class="visually-hidden">Last items</span>
                     <span aria-hidden="true">Last »</span>
                   </a>
@@ -386,8 +394,8 @@
                 </li>
                                                         <li class="pager__item pager__item--ellipsis pagerer-breaker" role="presentation">…</li>
                                                         <li class="pager__item">
-                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=342%2C0%2C0" title="Go to page 343">
-                    <span class="visually-hidden">Page</span>343</a>
+                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=445%2C0%2C0" title="Go to page 446">
+                    <span class="visually-hidden">Page</span>446</a>
                 </li>
                                                                                                             </ul>
         </nav>
@@ -396,39 +404,39 @@
       <h4 id="pagination-heading" class="visually-hidden">Pagination</h4>
                 <ul class="pager__items js-pager__items">
                                                                                                                               <li class="pager__item is-active">
-                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=0%2C0%2C0&page_ak=0.342" title="Current page">
+                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=0%2C0%2C0&page_ak=0.445" title="Current page">
                     <span class="visually-hidden">Current page</span>1</a>
                 </li>
                                                         <li class="pager__item">
-                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=1%2C0%2C0&page_ak=0.342" title="Go to page 2">
+                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=1%2C0%2C0&page_ak=0.445" title="Go to page 2">
                     <span class="visually-hidden">Page</span>2</a>
                 </li>
                                                         <li class="pager__item">
-                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=2%2C0%2C0&page_ak=0.342" title="Go to page 3">
+                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=2%2C0%2C0&page_ak=0.445" title="Go to page 3">
                     <span class="visually-hidden">Page</span>3</a>
                 </li>
                                                         <li class="pager__item">
-                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=3%2C0%2C0&page_ak=0.342" title="Go to page 4">
+                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=3%2C0%2C0&page_ak=0.445" title="Go to page 4">
                     <span class="visually-hidden">Page</span>4</a>
                 </li>
                                                         <li class="pager__item">
-                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=4%2C0%2C0&page_ak=0.342" title="Go to page 5">
+                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=4%2C0%2C0&page_ak=0.445" title="Go to page 5">
                     <span class="visually-hidden">Page</span>5</a>
                 </li>
                                                         <li class="pager__item pager__item--ellipsis pagerer-breaker" role="presentation">…</li>
                                                         <li class="pager__item">
-                  <a href="/pagerer/example?page=85%2C0%2C0&page_ak=4.171" title="Go to page 86">
-                    <span class="visually-hidden">Page</span>+85</a>
+                  <a href="/pagerer/example?page=111%2C0%2C0&page_ak=4.222" title="Go to page 112">
+                    <span class="visually-hidden">Page</span>+111</a>
                 </li>
                                                         <li class="pager__item pager__item--ellipsis pagerer-breaker" role="presentation">…</li>
                                                         <li class="pager__item">
-                  <a href="/pagerer/example?page=171%2C0%2C0&page_ak=85.342" title="Go to page 172">
-                    <span class="visually-hidden">Page</span>+171</a>
+                  <a href="/pagerer/example?page=222%2C0%2C0&page_ak=111.445" title="Go to page 223">
+                    <span class="visually-hidden">Page</span>+222</a>
                 </li>
                                                         <li class="pager__item pager__item--ellipsis pagerer-breaker" role="presentation">…</li>
                                                         <li class="pager__item">
-                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=342%2C0%2C0&page_ak=0.342" title="Go to page 343">
-                    <span class="visually-hidden">Page</span>343</a>
+                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=445%2C0%2C0&page_ak=0.445" title="Go to page 446">
+                    <span class="visually-hidden">Page</span>446</a>
                 </li>
                                                                                                             </ul>
         </nav>
@@ -453,10 +461,10 @@
               </li>
                                                                   <li class="pager__item pagerer-widget">
                   
-<div class="pagerer-page-widget"><input type="number" class="pagerer-page" id="pagerer-widget-q1yY75ht" title="Enter page, then press Return." value="1" min="1" max="343" step="1"><input type="button" class="pagerer-page-button" value="&#10003;"></div>
+<div class="pagerer-page-widget"><input type="number" class="pagerer-page" id="pagerer-widget-zl5DVNzR" title="Enter page, then press Return." value="1" min="1" max="446" step="1"><input type="button" class="pagerer-page-button" value="&#10003;"></div>
                 </li>
                                                                 <li class="pager__item pagerer-suffix">
-                <span aria-hidden="true" role="presentation">of 343</span>
+                <span aria-hidden="true" role="presentation">of 446</span>
               </li>
                                                                   <li class="pager__item pager__item--next">
                   <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=1%2C0%2C0" title="Go to next page" rel="next">
@@ -465,7 +473,7 @@
                   </a>
                 </li>
                                                                                 <li class="pager__item pager__item--last">
-                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=342%2C0%2C0" title="Go to last page">
+                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=445%2C0%2C0" title="Go to last page">
                     <span class="visually-hidden">Last page</span>
                     <span aria-hidden="true">»</span>
                   </a>
@@ -486,7 +494,7 @@
                 </li>
                                                         <li class="pager__item pagerer-widget">
                   
-    <nav  class="pager pagerer-pager-standard pagerer-scrollpane-embedded" role="navigation" aria-labelledby="pagination-heading" id="pagerer-widget-dy3uHuA1"
+    <nav  class="pager pagerer-pager-standard pagerer-scrollpane-embedded" role="navigation" aria-labelledby="pagination-heading" id="pagerer-widget-kteVSIfk"
 >
       <h4 id="pagination-heading" class="visually-hidden">Pagination</h4>
               
@@ -555,7 +563,7 @@
                 </li>
                                                         <li class="pager__item pagerer-widget">
                   
-<div class='pagerer-slider' id="pagerer-widget-cNWRNNTt" title="Drag the handle to the page required." />
+<div class='pagerer-slider' id="pagerer-widget-mSzhUiLr" title="Drag the handle to the page required." />
 
                 </li>
                                                         <li class="pager__item pagerer-widget">
@@ -563,7 +571,7 @@
 
                 </li>
                                                                 <li class="pager__item pagerer-suffix">
-                <span aria-hidden="true" role="presentation">of 343</span>
+                <span aria-hidden="true" role="presentation">of 446</span>
               </li>
                                                                       </ul>
         </nav>
@@ -592,10 +600,10 @@
               </li>
                                                                   <li class="pager__item pagerer-widget">
                   
-<div class="pagerer-page-widget"><input type="number" class="pagerer-page" id="pagerer-widget-hEaNQ2IL" title="Enter page, then press Return." value="1" min="1" max="343" step="1"><input type="button" class="pagerer-page-button" value="&#10003;"></div>
+<div class="pagerer-page-widget"><input type="number" class="pagerer-page" id="pagerer-widget-xq32SbA5" title="Enter page, then press Return." value="1" min="1" max="446" step="1"><input type="button" class="pagerer-page-button" value="&#10003;"></div>
                 </li>
                                                                 <li class="pager__item pagerer-suffix">
-                <span aria-hidden="true" role="presentation">of 343</span>
+                <span aria-hidden="true" role="presentation">of 446</span>
               </li>
                                                                   <li class="pager__item pager__item--next">
                   <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=1%2C0%2C0" title="Go to next page" rel="next">
@@ -604,7 +612,7 @@
                   </a>
                 </li>
                                                                                 <li class="pager__item pager__item--last">
-                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=342%2C0%2C0" title="Go to last page">
+                  <a href="/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example/pagerer/example?page=445%2C0%2C0" title="Go to last page">
                     <span class="visually-hidden">Last page</span>
                     <span aria-hidden="true">»</span>
                   </a>
@@ -749,7 +757,7 @@
               </li>
                                                                   <li class="pager__item pagerer-widget">
                   
-<div class="pagerer-page-widget"><input type="number" class="pagerer-page" id="pagerer-widget-oiR6ldHx" title="Enter page, then press Return." value="1" min="1" max="53" step="1"><input type="button" class="pagerer-page-button" value="&#10003;"></div>
+<div class="pagerer-page-widget"><input type="number" class="pagerer-page" id="pagerer-widget-mllrrYaX" title="Enter page, then press Return." value="1" min="1" max="53" step="1"><input type="button" class="pagerer-page-button" value="&#10003;"></div>
                 </li>
                                                                 <li class="pager__item pagerer-suffix">
                 <span aria-hidden="true" role="presentation">of 53</span>
@@ -803,10 +811,10 @@
               </li>
                                                                   <li class="pager__item pagerer-widget">
                   
-<div class="pagerer-page-widget"><input type="number" class="pagerer-page" id="pagerer-widget-jnKKtr8E" title="Enter record and press Return. Up/Down arrow keys are enabled." value="1" min="1" max="528" step="10"><input type="button" class="pagerer-page-button" value="&#10003;"></div>
+<div class="pagerer-page-widget"><input type="number" class="pagerer-page" id="pagerer-widget-umqAdeB0" title="Enter record and press Return. Up/Down arrow keys are enabled." value="1" min="1" max="527" step="10"><input type="button" class="pagerer-page-button" value="&#10003;"></div>
                 </li>
                                                                 <li class="pager__item pagerer-suffix">
-                <span aria-hidden="true" role="presentation">of 528</span>
+                <span aria-hidden="true" role="presentation">of 527</span>
               </li>
                                                                       </ul>
         </nav>
@@ -931,7 +939,7 @@
               </li>
                                                                   <li class="pager__item pagerer-widget">
                   
-<div class="pagerer-page-widget"><input type="number" class="pagerer-page" id="pagerer-widget-pYPcmbdw" title="Enter page, then press Return." value="1" min="1" max="101" step="1"><input type="button" class="pagerer-page-button" value="&#10003;"></div>
+<div class="pagerer-page-widget"><input type="number" class="pagerer-page" id="pagerer-widget-fY3WJ7ID" title="Enter page, then press Return." value="1" min="1" max="101" step="1"><input type="button" class="pagerer-page-button" value="&#10003;"></div>
                 </li>
                                                                 <li class="pager__item pagerer-suffix">
                 <span aria-hidden="true" role="presentation">of 101</span>
@@ -957,23 +965,6 @@
 <p /><hr />
   
 </main>
-</div>
-    </div>
-  </div>
-  
-</div>
-<div data-at-row="main" class="l-main l-row">
-  
-  <div class="l-pr page__row pr-main regions-multiple" id="main-content">
-    <div class="l-rw regions container pr-main__rw arc--3 hr--1-2-3" data-at-regions="">
-      <div  data-at-region="1" data-at-block-count="3" class="l-r region pr-main__content" id="rid-content"><div id="block-ms-page-title--2" class="l-bl block block-config-provider--core block-plugin-id--page-title-block"id="page-title-block">
-  <div class="block__inner">
-
-    <div class="block__content">
-  <h1 class="page__title">Pagerer 8.x-1.5 - example page</h1>
-
-</div></div>
-</div>
 <div id="block-keys" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-3a705ecf-e07d-4892-b8e4-843e17dda90e block--type-basic block--view-mode-full"id="block-content3a705ecf-e07d-4892-b8e4-843e17dda90e">
   <div class="block__inner">
 
@@ -1195,6 +1186,23 @@
   </div>
   
 </div>
+<div data-at-row="footer" class="l-footer l-row">
+  
+  <footer class="l-pr page__row pr-footer" role="contentinfo" id="footer">
+    <div class="l-rw regions container pr-footer__rw arc--1 hr--1" data-at-regions="">
+      <div  data-at-region="1" data-at-block-count="1" class="l-r region pr-footer__footer" id="rid-footer"><div id="block-builtwith" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-1dc05664-2e50-43ba-be77-94e311735695 block--type-basic block--view-mode-full"id="block-content1dc05664-2e50-43ba-be77-94e311735695">
+  <div class="block__inner">
+
+    <div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><p class="text-align-center">Built with: <a href="https://tonejs.github.io">ToneJS</a> - <a href="https://nexus-js.github.io/ui/">NexusUI</a> - <a href="https://github.com/djipco/webmidi">WebMidi.js</a> - <a href="https://www.drupal.org">Drupal</a> - <a href="https://tome.fyi/">Tome</a></p>
+</div></div>
+</div>
+</div></div>
+</div>
+</div>
+    </div>
+  </footer>
+  
+</div>
 
   
 </div>
@@ -1202,7 +1210,7 @@
   </div>
 
     
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"ajaxPageState":{"theme":"ms","libraries":"at_core\/at.breakpoints,at_core\/at.responsivemenus,at_core\/at.settings,ms\/base,ms\/ckeditor,ms\/color,ms\/comment,ms\/contact,ms\/custom_css,ms\/custom_css_file,ms\/fontfaceobserver,ms\/fonts,ms\/google_fonts,ms\/image_styles,ms\/jquery_ui,ms\/ms.layout.page,ms\/responsive_menus,ms\/responsive_menus_tiles,ms\/responsive_tables,ms\/search,ms\/taxonomy,ms\/title_styles,pagerer\/base.css,pagerer\/mini,pagerer\/multipane,pagerer\/scrollpane,pagerer\/slider,system\/base"},"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"pagerer\/example","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","ms":{"at_responsivemenus":{"bp":"only screen and (min-width: 16.5em)","default":"ms-tiles","responsive":"ms-tiles","acd":{"acd_load":false,"acd_default":false,"acd_responsive":false,"acd_both":true}},"at_breakpoints":{"at_core_simple_wide":{"breakpoint":"wide","mediaquery":"all and (min-width: 60.0625em)"},"at_core_simple_tablet-isolate":{"breakpoint":"tablet-isolate","mediaquery":"all and (min-width: 45.0625em) and (max-width: 60em)"},"at_core_simple_mobile":{"breakpoint":"mobile","mediaquery":"all and (max-width: 45em)"}}},"pagerer":{"state":{"pagerer-widget-pYPcmbdw":{"url":"","queryString":"page=0%2C0%2Cpagererpage","element":2,"total":101,"totalItems":"502","current":0,"interval":1,"display":"pages","value":1,"pageSeparator":"none","pageTag":{"page_current":"@number","page_previous":null,"page_next":null},"widgetResize":true,"widgetButton":"auto"},"pagerer-widget-jnKKtr8E":{"url":"","queryString":"page=0%2Cpagererpage%2C0","element":1,"total":53,"totalItems":"528","current":0,"interval":10,"display":"items","value":1,"pageSeparator":"none","pageTag":{"page_current":"@item","page_previous":null,"page_next":null},"widgetResize":true,"widgetButton":"auto"},"pagerer-widget-oiR6ldHx":{"url":"","queryString":"page=0%2Cpagererpage%2C0","element":1,"total":53,"totalItems":"528","current":0,"interval":1,"display":"pages","value":1,"pageSeparator":"none","pageTag":{"page_current":"@number","page_previous":null,"page_next":null},"widgetResize":true,"widgetButton":"auto"},"pagerer-widget-hEaNQ2IL":{"url":"","queryString":"page=pagererpage%2C0%2C0","element":0,"total":343,"totalItems":"1714","current":0,"interval":1,"display":"pages","value":1,"pageSeparator":"none","pageTag":{"page_current":"@number","page_previous":null,"page_next":null},"widgetResize":true,"widgetButton":"auto"},"pagerer-widget-cNWRNNTt":{"url":"","queryString":"page=pagererpage%2C0%2C0","element":0,"total":343,"totalItems":"1714","current":0,"interval":1,"display":"pages","value":1,"pageSeparator":"none","pageTag":{"page_current":"@number","page_previous":"@number","page_next":"@number"},"action":"tickmark","timeout":null,"icons":"yes","tickmarkTitle":"Then, click on the tickmark.","sliderWidth":27},"pagerer-widget-dy3uHuA1":{"url":"","queryString":"page=pagererpage%2C0%2C0","element":0,"total":343,"totalItems":"1714","current":0,"interval":1,"display":"pages","value":1,"pageSeparator":"none","pageTag":{"page_current":"@number","page_previous":"@number","page_next":"@number","page_title":"Go to page @number","first_title":"Go to first page","last_title":"Go to last page"},"quantity":9},"pagerer-widget-q1yY75ht":{"url":"","queryString":"page=pagererpage%2C0%2C0","element":0,"total":343,"totalItems":"1714","current":0,"interval":1,"display":"pages","value":1,"pageSeparator":"none","pageTag":{"page_current":"@number","page_previous":null,"page_next":null},"widgetResize":true,"widgetButton":"auto"}}},"user":{"uid":0,"permissionsHash":"f60f398bc62243b192065b0b95914eb5f257b8c4c5428238f5bb3fed61e13b5d"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"ajaxPageState":{"theme":"ms","libraries":"at_core\/at.breakpoints,at_core\/at.responsivemenus,at_core\/at.settings,ms\/base,ms\/ckeditor,ms\/color,ms\/comment,ms\/contact,ms\/custom_css,ms\/custom_css_file,ms\/fontfaceobserver,ms\/fonts,ms\/google_fonts,ms\/image_styles,ms\/jquery_ui,ms\/ms.layout.page,ms\/responsive_menus,ms\/responsive_menus_tiles,ms\/responsive_tables,ms\/search,ms\/taxonomy,ms\/title_styles,pagerer\/base.css,pagerer\/mini,pagerer\/multipane,pagerer\/scrollpane,pagerer\/slider,system\/base"},"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"pagerer\/example","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","ms":{"at_responsivemenus":{"bp":"only screen and (min-width: 16.5em)","default":"ms-tiles","responsive":"ms-tiles","acd":{"acd_load":false,"acd_default":false,"acd_responsive":false,"acd_both":true}},"at_breakpoints":{"at_core_simple_wide":{"breakpoint":"wide","mediaquery":"all and (min-width: 60.0625em)"},"at_core_simple_tablet-isolate":{"breakpoint":"tablet-isolate","mediaquery":"all and (min-width: 45.0625em) and (max-width: 60em)"},"at_core_simple_mobile":{"breakpoint":"mobile","mediaquery":"all and (max-width: 45em)"}}},"pagerer":{"state":{"pagerer-widget-fY3WJ7ID":{"url":"","queryString":"page=0%2C0%2Cpagererpage","element":2,"total":101,"totalItems":"502","current":0,"interval":1,"display":"pages","value":1,"pageSeparator":"none","pageTag":{"page_current":"@number","page_previous":null,"page_next":null},"widgetResize":true,"widgetButton":"auto"},"pagerer-widget-umqAdeB0":{"url":"","queryString":"page=0%2Cpagererpage%2C0","element":1,"total":53,"totalItems":"527","current":0,"interval":10,"display":"items","value":1,"pageSeparator":"none","pageTag":{"page_current":"@item","page_previous":null,"page_next":null},"widgetResize":true,"widgetButton":"auto"},"pagerer-widget-mllrrYaX":{"url":"","queryString":"page=0%2Cpagererpage%2C0","element":1,"total":53,"totalItems":"527","current":0,"interval":1,"display":"pages","value":1,"pageSeparator":"none","pageTag":{"page_current":"@number","page_previous":null,"page_next":null},"widgetResize":true,"widgetButton":"auto"},"pagerer-widget-xq32SbA5":{"url":"","queryString":"page=pagererpage%2C0%2C0","element":0,"total":446,"totalItems":"2230","current":0,"interval":1,"display":"pages","value":1,"pageSeparator":"none","pageTag":{"page_current":"@number","page_previous":null,"page_next":null},"widgetResize":true,"widgetButton":"auto"},"pagerer-widget-mSzhUiLr":{"url":"","queryString":"page=pagererpage%2C0%2C0","element":0,"total":446,"totalItems":"2230","current":0,"interval":1,"display":"pages","value":1,"pageSeparator":"none","pageTag":{"page_current":"@number","page_previous":"@number","page_next":"@number"},"action":"tickmark","timeout":null,"icons":"yes","tickmarkTitle":"Then, click on the tickmark.","sliderWidth":27},"pagerer-widget-kteVSIfk":{"url":"","queryString":"page=pagererpage%2C0%2C0","element":0,"total":446,"totalItems":"2230","current":0,"interval":1,"display":"pages","value":1,"pageSeparator":"none","pageTag":{"page_current":"@number","page_previous":"@number","page_next":"@number","page_title":"Go to page @number","first_title":"Go to first page","last_title":"Go to last page"},"quantity":9},"pagerer-widget-zl5DVNzR":{"url":"","queryString":"page=pagererpage%2C0%2C0","element":0,"total":446,"totalItems":"2230","current":0,"interval":1,"display":"pages","value":1,"pageSeparator":"none","pageTag":{"page_current":"@number","page_previous":null,"page_next":null},"widgetResize":true,"widgetButton":"auto"}}},"user":{"uid":0,"permissionsHash":"f60f398bc62243b192065b0b95914eb5f257b8c4c5428238f5bb3fed61e13b5d"}}</script>
 <script src="/sites/default/files/js/js_wYk05JcsZg_GqgqdZDHvOjM9-LGEl_ZYcpJLsCmMn7o.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fontfaceobserver/2.0.8/fontfaceobserver.js"></script>
 <script src="/sites/default/files/js/js_G4K6wfohJENxm7f-tZEUj-sKDY9Ikgg-jGTvjplJcwY.js"></script>

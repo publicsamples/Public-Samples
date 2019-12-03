@@ -57,14 +57,11 @@
  	 font-size:16px;
 	 text-align:left;
 	 margin-left:-5px;
-	 margin-bottom:-2px;
+	 margin-bottom:2px;
   }
 
   #rid-content {
-     background-color:#395e5f;
-    color:white;
-    padding: 2px;
-   align: center;
+
 
   }
 
