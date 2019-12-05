@@ -1,12 +1,4 @@
- #tone-oscilloscope {
-position: absolute;
-			width: 100%;
-			height: 100%;
-			border-radius: 22px;
-			background-color: #1F5966;
-z-index: -1;
 
-		}
 
 .grid-patch {
   display: grid;
@@ -173,23 +165,24 @@ z-index: -1;
    background-color:#1F5966;
    color:white;
    padding: 10px;
+  
 
 }
 
 .node__container a:link{
    color:#ED6355;
-
+ font-weight:bold;
 }
 
 
 .node__container a:visited{
    color:#ED6355;
-
+ font-weight:bold;
 }
 
 .node__container a:hover{
    text-decoration:underline;
-
+ font-weight:bold;
 }
 
 
