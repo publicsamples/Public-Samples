@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " class="no-js adaptivetheme">
+  <head>
+    <link href="http://modularsamples.com/themes/ms/images/touch-icons/Icon-60.png" rel="apple-touch-icon" sizes="60x60" /><link href="http://modularsamples.com/themes/ms/images/touch-icons/Icon-76.png" rel="apple-touch-icon" sizes="76x76" /><link href="http://modularsamples.com/themes/ms/images/touch-icons/Icon-60-2x.png" rel="apple-touch-icon" sizes="120x120" /><link href="http://modularsamples.com/themes/ms/images/touch-icons/Icon-76-2x.png" rel="apple-touch-icon" sizes="152x152" /><link href="http://modularsamples.com/themes/ms/images/touch-icons/Icon-60-3x.png" rel="apple-touch-icon" sizes="180x180" /><link href="http://modularsamples.com/themes/ms/images/touch-icons/Icon-192x192.png" rel="icon" sizes="192x192" />
+    <meta charset="utf-8" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2231938-9"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("config", "UA-2231938-9", {"groups":"default","linker":{"domains":["modularsamples.com"]},"anonymize_ip":true});</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/themes/ms/normalize.css" />
+<script src="https://unpkg.com/tone"></script>
+<script type="text/javascript" src="/external-js/audiokeys.js"></script>
+<script type="text/javascript" src="/external-js/tonejs-ui.js"></script>
+<script type="text/javascript" src="/external-js/NexusUI.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/webmidi"></script>
+<script></script>
+
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com"><title>Slide | Modularsamples</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_PsrixfuhUuZN0n4sQQTB81xo-VlsjA5g_NQFxlR-028.css?q2mkcq" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_ppxtBezDf8IkeKVDiMMgH0vorNvdUzpzWoQAzpHdOc8.css?q2mkcq" />
+<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Quicksand&amp;amp;display=swap" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_sWyLaZOT11xlucnlPExNDtbFueHPqzXAwr8x09qBHIA.css?q2mkcq" />
+
+    <script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
+
+  </head>
+
+<tone-oscilloscope></tone-oscilloscope><body role="document" class="layout-type--page-layout user-logged-out path-not-frontpage path-slide path-query-page22 site-name--modularsamples theme-name--ms">
+        <a href="#block-ms-content" class="visually-hidden focusable skip-link">Skip to main content</a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+<div class="page js-layout">
+  <div data-at-row="header" class="l-header l-row">
+  
+  <header class="l-pr page__row pr-header regions-multiple" role="banner" id="masthead">
+    <div class="l-rw regions container pr-header__rw arc--2 hr--1-2" data-at-regions="">
+      <div  data-at-region="1" data-at-block-count="1" class="l-r region pr-header__header-first" id="rid-header-first"><div id="block-ms-branding" class="l-bl block block-branding block-config-provider--system block-plugin-id--system-branding-block has-name" id="system-branding-block">
+  <div class="block__inner block-branding__inner">
+
+    <div class="block__content block-branding__content site-branding"><span class="site-branding__text"><strong class="site-branding__name"><a href="/" title="Home" itemprop="url" rel="home" class="site-branding__name-link">Modularsamples</a></strong></span></div></div>
+</div>
+</div><div  data-at-region="2" data-at-block-count="1" class="l-r region pr-header__header-second" id="rid-header-second"><div id="block-dev" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-4ce4bd8d-a081-48a3-aeac-2c766c0cc177 block--type-basic block--view-mode-full"id="block-content4ce4bd8d-a081-48a3-aeac-2c766c0cc177">
+  <div class="block__inner">
+
+    <div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+tone-oscilloscope, tone-fft {
+position: absolute;
+			width: 100%;
+			height: 100%;
+			color: #ccc;
+			background-color: #1b2e42;
+z-index: -1;
+
+		}
+
+/*--><!]]>*/
+</style>
+<p class="text-align-center">This service is under active development. Please report any issues <a href="https://github.com/publicsamples/Public-Samples/issues">here</a>. Alternatively you can send me a message on the <a href="https://www.facebook.com/ModularSamples/">Facebook group</a>.</p></div></div>
+</div>
+</div></div>
+</div>
+</div>
+    </div>
+  </header>
+  
+</div>
+<div data-at-row="highlighted" class="l-highlighted l-row">
+  
+  <div class="l-pr page__row pr-highlighted" id="highlighted">
+    <div class="l-rw regions container pr-highlighted__rw arc--1 hr--1" data-at-regions="">
+      <div  data-at-region="1" data-at-block-count="1" class="l-r region pr-highlighted__highlighted" id="rid-highlighted"><div class="l-bl block--messages" id="system-messages-block" data-drupal-messages><div data-drupal-messages-fallback class="hidden"></div></div></div>
+    </div>
+  </div>
+  
+</div>
+<div data-at-row="main" class="l-main l-row">
+  
+  <div class="l-pr page__row pr-main regions-multiple" id="main-content">
+    <div class="l-rw regions container pr-main__rw arc--2 hr--1-3" data-at-regions="">
+      <div  data-at-region="1" data-at-block-count="3" class="l-r region pr-main__content" id="rid-content"><div id="block-ms-page-title" class="l-bl block block-config-provider--core block-plugin-id--page-title-block"id="page-title-block">
+  <div class="block__inner">
+
+    <div class="block__content">
+  <h1 class="page__title">Slide</h1>
+
+</div></div>
+</div>
+<main id="block-ms-content" class="l-bl block block-main-content" role="main" id="system-main-block">
+  
+  <div class="views-element-container element-container-wrapper"><div class="view view-slide view-id-slide view-display-id-page_1 js-view-dom-id-7eba7836790a98e96087789ade56a4c2d6a887384e6ca3a5c4c3a2770aa8b94b">
+  
+    
+      
+      <div class="view-content view-rows">
+          <div class="views-row">
+    <div class="views-field views-field-rendered-entity"><span class="field-content"><article data-history-node-id="2" role="article" about="/akaiax80" class="node node--id-2 node--type-sample-lib node--promoted node--view-mode-default">
+  <div class="node__container">
+
+    <header class="node__header"><h2 class="node__title"><a href="/akaiax80" class="node__title-link" rel="bookmark"><span class="field field-name-title field-formatter-string field-type-string field-label-hidden">Akai AX-80</span>
+</a></h2></header>
+
+    <div class="node__content"><div class="atl atl--twocol-6-6 l-arc--2 l-ac--1-2">
+  
+      <div class="atl__lr atl__cw">
+              <div class="atl__lc lc-1">
+          <div data-layout-content-preview-placeholder-label="&quot;Library Info&quot; field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodesample-libfield-library-info"id="field-blocknodesample-libfield-library-info">
+  <div class="block__inner">
+
+    <div class="block__content"><div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-above has-single"><h3 class="field__label">Library Info</h3><div class="field__items"><div class="field__item"><ul>
+	<li><strong>Patches</strong>: 34</li>
+	<li><strong>Formats:</strong> EXS24, Kontakt &amp; SFZ  </li>
+	<li><strong>Approx Size:</strong> 2.5GB  </li>
+</ul>
+</div></div>
+</div>
+</div></div>
+</div>
+
+        </div>
+      
+              <div class="atl__lc lc-2">
+          <div data-layout-content-preview-placeholder-label="&quot;Downloads&quot; field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodesample-libfield-downloads"id="field-blocknodesample-libfield-downloads">
+  <div class="block__inner">
+
+    <div class="block__content"><div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-above has-multiple"><h3 class="field__label">Downloads</h3><div class="field__items"><div class="field__item"><a href="https://publicsamples.com/modularsamples/Akai-AX-80-Pt1/-/archive/master/Akai-AX-80-Pt1-master.zip">Akai AX80</a></div><div class="field__item"><a href="https://publicsamples.com/modularsamples/Akai-AX-80-Pt1">Git Repository</a></div></div>
+</div>
+</div></div>
+</div>
+
+        </div>
+          </div>
+  
+  </div>
+</div></div>
+</article>
+</span></div>
+  </div>
+
+    </div>
+  
+        <nav class="pager pager--mini" role="navigation" aria-labelledby="pagination-heading">
+    <h4 id="pagination-heading" class="pager__heading visually-hidden">Pagination</h4>
+    <ul class="pager__items js-pager__items">
+
+              <li class="pager__item pager__item--previous pager__item--text">
+          <a href="/slide/page/22" class="pager__link" title="Go to previous page" rel="prev">
+            <span class="visually-hidden">Previous page</span>
+            <span aria-hidden="true">‹‹</span>
+          </a>
+        </li>
+      
+              <li class="pager__item is-active">
+          <span class="pager__link pager__link--is-active">(Page 23)</span>
+        </li>
+      
+              <li class="pager__item pager__item--next pager__item--text">
+          <a href="/slide/page/24" class="pager__link" title="Go to next page" rel="next">
+            <span class="visually-hidden">Next page</span>
+            <span aria-hidden="true">››</span>
+          </a>
+        </li>
+      
+    </ul>
+  </nav>
+
+          </div>
+</div>
+
+  
+</main>
+</div><div  data-at-region="3" data-at-block-count="4" class="l-r region pr-main__sidebar-second" id="rid-sidebar-second"><div id="block-autofilter" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-31bbdb58-9678-4c64-8e29-8c18209150cb has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="block-autofilter-title"id="block-content31bbdb58-9678-4c64-8e29-8c18209150cb">
+  <div class="block__inner">
+
+    <h2  class="block__title" id="block-autofilter-title"><span>AutoFilter</span></h2><div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><div class="grid-filter">
+
+<div class="grid-item">
+<p>Wet</p>
+</div>
+
+<div class="grid-item">
+<p>Cut</p>
+</div>
+
+<div class="grid-item">
+<p>Res</p>
+</div>
+
+<div class="grid-item">
+<p>Dpth</p>
+</div>
+
+<div class="grid-item">
+<p>Spd</p>
+</div>
+
+<div class="grid-item">
+<div id="fwet"></div>
+</div>
+
+<div class="grid-item">
+<div id="baseFrequency"></div>
+</div>
+
+<div class="grid-item">
+<div id="Q"></div>
+</div>
+
+<div class="grid-item">
+<div id="depth"></div>
+</div>
+
+<div class="grid-item">
+<div id="ffrequency"></div>
+</div>
+
+
+</div>
+</div></div>
+</div>
+</div></div>
+</div>
+<div id="block-chorus" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-426eca68-e6ea-40de-9c8a-60eb2565a5ea has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="block-chorus-title"id="block-content426eca68-e6ea-40de-9c8a-60eb2565a5ea">
+  <div class="block__inner">
+
+    <h2  class="block__title" id="block-chorus-title"><span>Chorus</span></h2><div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><div class="grid-env">
+	
+<div class="grid-item">
+<p>Wet</p>
+</div>
+
+<div class="grid-item">
+<p>Time</p>
+</div>
+
+<div class="grid-item">
+<p>Depth</p>
+</div>
+
+<div class="grid-item">
+<p>Speed</p>
+</div>
+
+<div class="grid-item">
+<div id="cwet"></div>
+</div>
+
+<div class="grid-item">
+<div id="ctime"></div>
+</div>
+
+<div class="grid-item">
+<div id="cdepth"></div>
+</div>
+
+<div class="grid-item">
+<div id="cfreq"></div>
+</div>
+</div></div></div>
+</div>
+</div></div>
+</div>
+<div id="block-delay" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-96de5361-cfee-4c6a-be06-c124cef27d7b has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="block-delay-title"id="block-content96de5361-cfee-4c6a-be06-c124cef27d7b">
+  <div class="block__inner">
+
+    <h2  class="block__title" id="block-delay-title"><span>Delay</span></h2><div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><div class="grid-delay">
+<div class="grid-item">
+<p>Wet</p>
+</div>
+
+<div class="grid-item">
+<p>Time</p>
+</div>
+
+<div class="grid-item">
+<p>Feed</p>
+</div>
+
+<div class="grid-item">
+<div id="dwet"></div>
+</div>
+
+<div class="grid-item">
+<div id="dtime"></div>
+</div>
+
+<div class="grid-item">
+<div id="dfeedback"></div>
+</div>
+</div>
+</div></div>
+</div>
+</div></div>
+</div>
+<div id="block-reverb" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-2133502b-e557-48a4-bafe-7e3c8b5c4503 has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="block-reverb-title"id="block-content2133502b-e557-48a4-bafe-7e3c8b5c4503">
+  <div class="block__inner">
+
+    <h2  class="block__title" id="block-reverb-title"><span>Reverb</span></h2><div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><div class="grid-reverb">
+	
+<div class="grid-item">
+<p>Wet</p>
+</div>
+
+<div class="grid-item">
+<p>Size</p>
+</div>
+
+<div class="grid-item">
+<p>Damp</p>
+</div>
+
+<div class="grid-item">
+<div id="rwet"></div>
+</div>
+
+<div class="grid-item">
+<div id="roomSize"></div>
+</div>
+
+<div class="grid-item">
+<div id="dampening"></div>
+</div>
+
+</div>
+</div></div>
+</div>
+</div></div>
+</div>
+</div>
+    </div>
+  </div>
+  
+</div>
+<div data-at-row="footer" class="l-footer l-row">
+  
+  <footer class="l-pr page__row pr-footer" role="contentinfo" id="footer">
+    <div class="l-rw regions container pr-footer__rw arc--1 hr--1" data-at-regions="">
+      <div  data-at-region="1" data-at-block-count="1" class="l-r region pr-footer__footer" id="rid-footer"><div id="block-builtwith" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-1dc05664-2e50-43ba-be77-94e311735695 block--type-basic block--view-mode-full"id="block-content1dc05664-2e50-43ba-be77-94e311735695">
+  <div class="block__inner">
+
+    <div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><p class="text-align-center">Built with: <a href="https://tonejs.github.io">ToneJS</a> - <a href="https://nexus-js.github.io/ui/">NexusUI</a> - <a href="https://github.com/djipco/webmidi">WebMidi.js</a> - <a href="https://www.drupal.org">Drupal</a> - <a href="https://tome.fyi/">Tome</a></p>
+</div></div>
+</div>
+</div></div>
+</div>
+</div>
+    </div>
+  </footer>
+  
+</div>
+
+  
+ 
+</div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"slide","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en","currentQuery":{"page":"22"}},"pluralDelimiter":"\u0003","ajaxPageState":{"theme":"ms","libraries":"at_core\/at.breakpoints,at_core\/at.responsivemenus,at_core\/at.settings,at_core\/at.twocol-6-6,google_analytics\/google_analytics,ms\/base,ms\/ckeditor,ms\/color,ms\/comment,ms\/contact,ms\/custom_css,ms\/custom_css_file,ms\/fontfaceobserver,ms\/fonts,ms\/google_fonts,ms\/image_styles,ms\/jquery_ui,ms\/ms.layout.page,ms\/responsive_menus,ms\/responsive_menus_tiles,ms\/responsive_tables,ms\/search,ms\/taxonomy,ms\/title_styles,system\/base,views\/views.module"},"google_analytics":{"account":"UA-2231938-9","trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackDomainMode":2,"trackCrossDomains":["modularsamples.com"]},"ms":{"at_responsivemenus":{"bp":"only screen and (min-width: 16.5em)","default":"ms-tiles","responsive":"ms-tiles","acd":{"acd_load":false,"acd_default":false,"acd_responsive":false,"acd_both":true}},"at_breakpoints":{"at_core_simple_wide":{"breakpoint":"wide","mediaquery":"all and (min-width: 60.0625em)"},"at_core_simple_tablet-isolate":{"breakpoint":"tablet-isolate","mediaquery":"all and (min-width: 45.0625em) and (max-width: 60em)"},"at_core_simple_mobile":{"breakpoint":"mobile","mediaquery":"all and (max-width: 45em)"}}},"user":{"uid":0,"permissionsHash":"f60f398bc62243b192065b0b95914eb5f257b8c4c5428238f5bb3fed61e13b5d"}}</script>
+<script src="/sites/default/files/js/js_qenJeBw2njetFhP69OFOsT-WfuI4rshvzZN9WENbxCc.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fontfaceobserver/2.0.8/fontfaceobserver.js"></script>
+<script src="/sites/default/files/js/js_G4K6wfohJENxm7f-tZEUj-sKDY9Ikgg-jGTvjplJcwY.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/enquire.js/2.1.2/enquire.min.js"></script>
+<script src="/sites/default/files/js/js_IXXM0JyuKXLkx6vQcq8R_JR95o07Mkzej4e-E9tCYsg.js"></script>
+
+  </body>
+</html>

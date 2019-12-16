@@ -1,0 +1,6 @@
+html, body, textarea, p { font-family: "Quick Sand", sans-serif; font-size: 100%; line-height: 1.5em; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.site-branding__name-link { font-family: "Quick Sand", sans-serif; font-size: 1.875rem; line-height: 1.5; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.node__title, .page__title, .user__title { font-family: "Open Sans", sans-serif; font-size: 2.5rem; line-height: 1.5; }
+.block__title, .block-menu__title, .pane__title { font-family: "Open Sans", sans-serif; font-size: 1.563rem; line-height: 1.5; }
+
+
