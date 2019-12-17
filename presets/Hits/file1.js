@@ -1,26 +1,35 @@
-var keys = new Tone.Players({
+var keys = new Tone.Sampler({
 		
-			"1" : "https://raw.githubusercontent.com/publicsamples/hits/master/mp3/CS-30L%20Hits/file1.[mp3|ogg]",
-			"2" : "https://raw.githubusercontent.com/publicsamples/hits/master/mp3/CS-30L%20Hits/file2.[mp3|ogg]",
-			"3" : "https://raw.githubusercontent.com/publicsamples/hits/master/mp3/CS-30L%20Hits/file3.[mp3|ogg]",
-			"4" : "https://raw.githubusercontent.com/publicsamples/hits/master/mp3/CS-30L%20Hits/file4.[mp3|ogg]",
-			"5" : "https://raw.githubusercontent.com/publicsamples/hits/master/mp3/CS-30L%20Hits/file5.[mp3|ogg]",
-			"6" : "https://raw.githubusercontent.com/publicsamples/hits/master/mp3/CS-30L%20Hits/file6.[mp3|ogg]",
-			"7" : "https://raw.githubusercontent.com/publicsamples/hits/master/mp3/CS-30L%20Hits/file7.[mp3|ogg]",
-			"8" : "https://raw.githubusercontent.com/publicsamples/hits/master/mp3/CS-30L%20Hits/file8.[mp3|ogg]",
-			"9" : "https://raw.githubusercontent.com/publicsamples/hits/master/mp3/CS-30L%20Hits/file9.[mp3|ogg]",
-			"10" : "https://raw.githubusercontent.com/publicsamples/hits/master/mp3/CS-30L%20Hits/file10.[mp3|ogg]",
-			"11" : "https://raw.githubusercontent.com/publicsamples/hits/master/mp3/CS-30L%20Hits/file11.[mp3|ogg]",
-			"12" : "https://raw.githubusercontent.com/publicsamples/hits/master/mp3/CS-30L%20Hits/file12.[mp3|ogg]",
-			"13" : "https://raw.githubusercontent.com/publicsamples/hits/master/mp3/CS-30L%20Hits/file13.[mp3|ogg]",
-			"14" : "https://raw.githubusercontent.com/publicsamples/hits/master/mp3/CS-30L%20Hits/file14.[mp3|ogg]",
-			"15" : "https://raw.githubusercontent.com/publicsamples/hits/master/mp3/CS-30L%20Hits/file15.[mp3|ogg]",
-			"16" : "https://raw.githubusercontent.com/publicsamples/hits/master/mp3/CS-30L%20Hits/file16.[mp3|ogg]",
-			"17" : "https://raw.githubusercontent.com/publicsamples/hits/master/mp3/CS-30L%20Hits/file17.[mp3|ogg]",
-			"18" : "https://raw.githubusercontent.com/publicsamples/hits/master/mp3/CS-30L%20Hits/file18.[mp3|ogg]",
-			"19" : "https://raw.githubusercontent.com/publicsamples/hits/master/mp3/CS-30L%20Hits/file19.[mp3|ogg]",
-			"20" : "https://raw.githubusercontent.com/publicsamples/hits/master/mp3/CS-30L%20Hits/file20.[mp3|ogg]"
-		})					.connect(filter);
-					
+			"C2" : "file1.mp3",
+	        "C#2" : "file2.mp3",
+	        "D2" : "file3.mp3",
+			"D#2" : "file4.mp3",
+			"E2" : "file5.mp3",
+			"F2" : "file6.mp3",
+			"F#2" : "file7.mp3",
+			"G2" : "file8.mp3",
+			"G#2" : "file9.mp3",
+			"A2" : "file10.mp3",
+			"A#2" : "file11.mp3",
+			"B2" : "file12.mp3",
+			"C3" : "file13.mp3",
+	        "C#3" : "file14.mp3",
+	        "D3" : "file15.mp3",
+			"D#3" : "file16.mp3",
+			"E3" : "file17.mp3",
+			"F3" : "file18.mp3",
+			"F#3" : "file19.mp3",
+			"G3" : "file20.mp3",
+			"G#3" : "file21.mp3",
+			"A3" : "file22.mp3",
+			"A#3" : "file23.mp3",
+			"B3" : "file24.mp3",
+			"C4" : "file25.mp3"
+	
 				
+				
+					}, {
 
+						"baseUrl" : "/presets/hits/kit1/"
+					})					.connect(filter);
+					
