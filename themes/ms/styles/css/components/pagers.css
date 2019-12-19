@@ -6,6 +6,8 @@
 .pager {
   margin: 1rem 0;
   text-align: center;
+    font-size: 3rem;
+	
 }
 
 .pager ul, .pager ol {
@@ -18,16 +20,17 @@
 }
 
 .pager--mini .pager__link--is-active {
-  font-size: 0.875rem;
+  font-size: 1.875rem;
 }
 
 .pager__items {
   padding: 0;
   margin: 0 auto;
+ 
 }
 
 .pager__item {
-  margin: 1px;
+
   display: inline-block;
 }
 

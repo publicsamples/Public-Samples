@@ -1,10 +1,9 @@
-/* Layout CSS for: page.html.twig, generated: Fri, 29 Nov 19 18:17:15 +0000 */
+/* Layout CSS for: page.html.twig, generated: Tue, 17 Dec 19 19:47:20 +0000 */
 
 .page {
   display: flex;
   flex-flow: column;
   width: 100%;
-  
 }
 
 .l-rw {
@@ -13,14 +12,12 @@
   flex-direction: row;
   max-width: 75em;
   width: 100%;
-  
 }
 
 .l-r {
   flex: 0 0 auto;
   padding: 0 0.625em;
   width: 100%;
-  
 }
 
 /* Begin breakpoint: wide */
@@ -42,56 +39,52 @@
 }
 
 .pr-features .hr--1-2 .l-r {
-  width: 16.66667%;
+  width: 75%;
 }
 
 .pr-features .hr--1-2 .l-r:last-child {
-  width: 83.33333%;
+  width: 25%;
 }
 
 .pr-features .hr--1-3 .l-r {
-  width: 33.33333%;
-}
-
-.pr-features .hr--1-3 .l-r:last-child {
   width: 66.66667%;
 }
 
 .pr-features .hr--2-3 .l-r {
-  width: 66.66667%;
+  width: 58.33333%;
+}
+
+.pr-features .hr--2-3 .l-r:last-child {
+  width: 41.66667%;
 }
 
 .pr-features .arc--3 .l-r {
-  width: 16.66667%;
+  width: 41.66667%;
 }
 
 .pr-features .arc--3 .l-r:nth-child(2) {
-  width: 50%;
+  width: 25%;
 }
 
 .pr-features .arc--3 .l-r:last-child,
-.pr-features .hr--2-3 .l-r:last-child {
+.pr-features .hr--1-3 .l-r:last-child {
   width: 33.33333%;
 }
 
 .pr-main .hr--1-2 .l-r {
   width: 66.66667%;
-  
 }
 
 .pr-main .hr--1-2 .l-r:last-child {
   width: 33.33333%;
-  
 }
 
 .pr-main .hr--1-3 .l-r {
   width: 75%;
-  
 }
 
 .pr-main .hr--2-3 .l-r {
   width: 58.33333%;
-  
 }
 
 .pr-main .hr--2-3 .l-r:last-child {
@@ -100,10 +93,7 @@
 
 .pr-main .arc--3 .l-r {
   width: 41.66667%;
-  
 }
-
-
 
 .pr-main .arc--3 .l-r:nth-child(2) {
   width: 33.33333%;
@@ -142,6 +132,28 @@
 .l-content-suffix { -webkit-order: 7; -ms-flex-order: 7; order: 7; }
 .l-subfeatures { -webkit-order: 8; -ms-flex-order: 8; order: 8; }
 .l-footer { -webkit-order: 9; -ms-flex-order: 9; order: 9; }
+
+.pr-header .arc--2 .l-r {
+  width: 50%;
+}
+
+.pr-features .hr--2-3 .l-r,
+.pr-features .arc--3 .l-r:nth-child(2) {
+  width: 33.33333%;
+}
+
+.pr-features .hr--2-3 .l-r:last-child,
+.pr-features .arc--3 .l-r:last-child {
+  width: 66.66667%;
+}
+
+.pr-main .arc--2 .l-r {
+  width: 50%;
+}
+
+.pr-main .arc--3 .l-r {
+  width: 33.33333%;
+}
 
 }
 /* End breakpoint */

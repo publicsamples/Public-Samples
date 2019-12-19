@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  color: white;
+  background-color: black;
   
 }
 
@@ -148,12 +148,14 @@ samp {
 }
 
 .regions {
-  background-color: #353535;
+  background-color: #5d1007;
+  padding-top:5px;
+   padding-bottom:10px;
  
 }
 
 .pr-header {
-  color: #363636;
+  color: #030100;
   ß
 }
 
@@ -162,8 +164,8 @@ samp {
 }
 
 .pr-navbar {
-  color: #ffffff;
-  background-color: #666666;
+  color: black;
+  background-color: #030100;
 }
 
 .pr-navbar .regions {
@@ -176,7 +178,7 @@ samp {
 
 .pr-features {
   color: #363636;
-  background-color: #d3d3d3;
+  background-color: #030100;
 }
 
 .pr-features .regions {
@@ -198,7 +200,7 @@ samp {
 }
 
 .pr-main {
-  color: #ffffff;
+
 
 }
 
@@ -208,11 +210,11 @@ samp {
 }
 
 .pr-footer .menu a {
-  color: inherit;
+  color: #d3d3d3;
 }
 
 .pr-footer .menu a.active, .pr-footer .menu a:hover, .pr-footer .menu a:focus {
-  color: inherit;
+  color: #d3d3d3;
 }
 
 /**
@@ -241,11 +243,16 @@ samp {
  *  - Drupal core branding block.
  ============================================================================ */
 .site-branding__name-link:link, .site-branding__name-link:visited {
-  color: #fff;
+  color: #f4f1de;
+  background-color:#5d1007;
+
+ 
 }
 
 .site-branding__name-link:hover, .site-branding__name-link:active {
-  color: #ccc;
+  color: #f4f2de;
+    background-color:#5d1007;
+
 }
 
 /**
@@ -545,7 +552,6 @@ samp {
 }
 
 .pager__link:focus, .pager__link:hover {
-  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .pager__link:active {
@@ -555,12 +561,11 @@ samp {
 }
 
 .pager__link--is-active {
-  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .pager--mini .pager__link--is-active {
   background-color: transparent;
-  opacity: 0.65;
+  opacity: 0.0;
 }
 
 /**
@@ -725,7 +730,7 @@ a.button_disabled {
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #363636;
+
 }
 
 input:-moz-placeholder,
