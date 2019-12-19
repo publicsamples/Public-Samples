@@ -208,7 +208,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					line-height: 18px;
 					border-radius: 12px;
 					-webkit-appearance: none;
-					background-color: transparent;
+					background-color: #306597;
 					border:2px solid var(--border-color, var(--color-gray));
 					box-sizing: border-box;
 					outline-color: var(--outline-color);
@@ -450,7 +450,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					border: 2px solid black;
 					border-radius: 22px;
 					padding: 20px;
-					background-color:#8AD6D8;
+					background-color:#f4f1de;
 					width: 100%;
 				}
 
@@ -598,7 +598,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					box-sizing: border-box;
 					width: 100%;
 					height: 44px;
-					background-color: #8AD6D8;
+					background-color: #f4f1de;
 					outline-color: var(--outline-color);
 					border: 2px solid black;
 					border-radius: 22px;
@@ -1414,7 +1414,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 				}
 
 				.column.highlight {
-					background-color: #182C40;
+					background-color: #bb8f16;
 				}
 
 				.column.highlight .row {
@@ -1426,19 +1426,20 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 				}
 
 				.column.highlight .row.filled{
-					background-color: white;
+					background-color: #b88111;
 				}
 
 				.row {
 					flex: 1;
 					margin: 1px;
-					background-color: #294E55;
+					background-color: #f4f1de;
 					transition: background-color 0s;
 				}
 
 				.row.filled {
-					background-color: #ED6355;
+				background-color: #522d14;
 				}
+				
 			</style>
 			<div id="container">
 				${this.values.map((t,e)=>i.b`
@@ -2279,26 +2280,26 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 				:host {
 					display: block;
 					color: #182C40;
-					background-color: #2BACA9;
+					background-color: #cc820f;
 				}
 				#container {
-					background-color: #2BACA9;
+					background-color: #cc820f;
 					padding: 5px;
 					
 				}
 				tone-play-toggle {
 					width: 50%;
-					background-color: #2BACA9;
+					background-color: #cc820f;
 				}
 				#top {
 					position: relative;
 				}
 				#top tone-play-toggle {
 					width: 60%;
-					color: #2BACA9;
+					color: #cc820f;
 				}
 				#top #position {
-					background-color: #1F5966;
+					background-color: #cc820f;
 					padding: 5px;
 					position: absolute;
 					width: 30%;
@@ -2311,20 +2312,20 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 				}
 				tone-rack {
 					margin-top: 10px;
-					color: #2BACA9;
-					background-color: #2BACA9;
+					color: #cc820f;
+					background-color: #cc820f;
 				}
 
 				tone-slider, tone-toggle {
 					display: block;
 					margin-top: 10px;
-					background-color: #2BACA9;
+					background-color: #cc820f;
 					
 				}
 				tone-slider {
 					width: 80%;
 					margin: 10px auto 0;
-					background-color: #2BACA9;
+					background-color: #cc820f;
 					
 				}
 				#tempo {
@@ -2336,7 +2337,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 			}
 			#tempo .attributes {
 		
-				color: #2BACA9;
+				color: #cc820f;
 			}
 			</style>
 			<div id="container">

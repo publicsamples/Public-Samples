@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " class="no-js adaptivetheme">
+  <head>
+    <link href="http://modularsamples.com/themes/ms/images/touch-icons/Icon-60.png" rel="apple-touch-icon" sizes="60x60" /><link href="http://modularsamples.com/themes/ms/images/touch-icons/Icon-76.png" rel="apple-touch-icon" sizes="76x76" /><link href="http://modularsamples.com/themes/ms/images/touch-icons/Icon-60-2x.png" rel="apple-touch-icon" sizes="120x120" /><link href="http://modularsamples.com/themes/ms/images/touch-icons/Icon-76-2x.png" rel="apple-touch-icon" sizes="152x152" /><link href="http://modularsamples.com/themes/ms/images/touch-icons/Icon-60-3x.png" rel="apple-touch-icon" sizes="180x180" /><link href="http://modularsamples.com/themes/ms/images/touch-icons/Icon-192x192.png" rel="icon" sizes="192x192" />
+    <meta charset="utf-8" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2231938-9"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("config", "UA-2231938-9", {"groups":"default","linker":{"domains":["modularsamples.com"]},"anonymize_ip":true});</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/themes/ms/normalize.css" />
+<script src="https://unpkg.com/tone"></script>
+<script type="text/javascript" src="/external-js/audiokeys.js"></script>
+<script type="text/javascript" src="/external-js/tonejs-ui.js"></script>
+<script type="text/javascript" src="/external-js/NexusUI.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/webmidi"></script>
+<script></script>
+<link rel="canonical" href="http://modularsamples.com/roland-sh-2-0" />
+<link rel="shortlink" href="http://modularsamples.com/node/100" />
+<link rel="revision" href="http://modularsamples.com/roland-sh-2-0" />
+
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com"><title>Modularsamples</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_PsrixfuhUuZN0n4sQQTB81xo-VlsjA5g_NQFxlR-028.css?q2rjgo" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css__bKl-G0ZP0ZQnGLrY-6a6bN72hDFn1Hf-1E10WRaK4c.css?q2rjgo" />
+<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Quicksand&amp;amp;display=swap" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_zTRFeTD3N7OQ8B6RW41c4F2Zs6nbiWNJfeJT3cwtkmQ.css?q2rjgo" />
+
+    <script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
+
+  </head>
+
+<tone-oscilloscope></tone-oscilloscope><body role="document" class="layout-type--page-layout user-logged-out path-not-frontpage path-node path-query-page11 page-node-type--samplelibrarygrid site-name--modularsamples theme-name--ms">
+        <a href="#block-ms-content" class="visually-hidden focusable skip-link">Skip to main content</a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+<div class="page js-layout">
+  <div data-at-row="header" class="l-header l-row">
+  
+  <header class="l-pr page__row pr-header regions-multiple" role="banner" id="masthead">
+    <div class="l-rw regions container pr-header__rw arc--2 hr--1-2" data-at-regions="">
+      <div  data-at-region="1" data-at-block-count="1" class="l-r region pr-header__header-first" id="rid-header-first"><div id="block-ms-branding" class="l-bl block block-branding block-config-provider--system block-plugin-id--system-branding-block has-name" id="system-branding-block">
+  <div class="block__inner block-branding__inner">
+
+    <div class="block__content block-branding__content site-branding"><span class="site-branding__text"><strong class="site-branding__name"><a href="/" title="Home" itemprop="url" rel="home" class="site-branding__name-link">Modularsamples</a></strong></span></div></div>
+</div>
+</div><div  data-at-region="2" data-at-block-count="1" class="l-r region pr-header__header-second" id="rid-header-second"><div id="block-dev" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-4ce4bd8d-a081-48a3-aeac-2c766c0cc177 block--type-basic block--view-mode-full"id="block-content4ce4bd8d-a081-48a3-aeac-2c766c0cc177">
+  <div class="block__inner">
+
+    <div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+tone-oscilloscope, tone-fft {
+position: absolute;
+			width: 100%;
+			height: 100%;
+			color:green;
+			background-color: #0c032d;
+z-index: -1;
+
+		}
+
+/*--><!]]>*/
+</style>
+<p> </p>
+
+<p class="text-align-right"><a data-patreon-widget-type="become-patron-button" href="https://www.patreon.com/bePatron?u=3947038">Become a Patron!</a><script async="" src="https://c6.patreon.com/becomePatronButton.bundle.js"></script></p>
+</div></div>
+</div>
+</div></div>
+</div>
+</div>
+    </div>
+  </header>
+  
+</div>
+<div data-at-row="highlighted" class="l-highlighted l-row">
+  
+  <div class="l-pr page__row pr-highlighted" id="highlighted">
+    <div class="l-rw regions container pr-highlighted__rw arc--1 hr--1" data-at-regions="">
+      <div  data-at-region="1" data-at-block-count="1" class="l-r region pr-highlighted__highlighted" id="rid-highlighted"><div class="l-bl block--messages" id="system-messages-block" data-drupal-messages><div data-drupal-messages-fallback class="hidden"></div></div></div>
+    </div>
+  </div>
+  
+</div>
+<div data-at-row="main" class="l-main l-row">
+  
+  <div class="l-pr page__row pr-main" id="main-content">
+    <div class="l-rw regions container pr-main__rw arc--1 hr--1" data-at-regions="">
+      <div  data-at-region="1" data-at-block-count="2" class="l-r region pr-main__content" id="rid-content"><main id="block-ms-content--2" class="l-bl block block-main-content" role="main" id="system-main-block">
+  
+  <article data-history-node-id="100" role="article" about="/roland-sh-2-0" class="node node--id-100 node--type-samplelibrarygrid node--promoted node--view-mode-full">
+  <div class="node__container">
+
+    <header class="node__header"><h1 class="node__title"><span class="field field-name-title field-formatter-string field-type-string field-label-hidden"></span>
+</h1></header>
+
+    <div class="node__content"><div class="atl atl--grid-3x3">
+  <div class="atl__lr atl__cw">
+              <div class="atl__lc lc-r1c1 lc-1">
+        <div data-layout-content-preview-placeholder-label="&quot;Title&quot; field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodesamplelibrarygridtitle"id="field-blocknodesamplelibrarygridtitle">
+  <div class="block__inner">
+
+    <div class="block__content"><span class="field field-name-title field-formatter-string field-type-string field-label-hidden">Roland SH-2</span>
+</div></div>
+</div>
+<div data-layout-content-preview-placeholder-label="&quot;Downloads&quot; field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodesamplelibrarygridfield-downloads"id="field-blocknodesamplelibrarygridfield-downloads">
+  <div class="block__inner">
+
+    <div class="block__content"><div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-above has-multiple"><h3 class="field__label">Downloads</h3><div class="field__items"><div class="field__item"><a href="https://publicsamples.com/modularsamples/Roland-SH-2/-/archive/master/Roland-SH-2-master.zip">Roland SH-2 Zip</a></div><div class="field__item"><a href="https://publicsamples.com/modularsamples/Roland-SH-2">Git Repository</a></div></div>
+</div>
+</div></div>
+</div>
+<div data-layout-content-preview-placeholder-label="&quot;Library Info&quot; field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodesamplelibrarygridfield-library-info"id="field-blocknodesamplelibrarygridfield-library-info">
+  <div class="block__inner">
+
+    <div class="block__content"><div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-above has-single"><h3 class="field__label">Library Info</h3><div class="field__items"><div class="field__item"><ul>
+	<li><strong>Patches</strong>: 22</li>
+	<li><strong>Formats:</strong> EXS24, NN-XT Kontakt &amp; SFZ  </li>
+	<li><strong>Approx Size:</strong> 1.1GB </li>
+</ul>
+</div></div>
+</div>
+</div></div>
+</div>
+<div data-layout-content-preview-placeholder-label="&quot;image&quot; field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodesamplelibrarygridfield-pic"id="field-blocknodesamplelibrarygridfield-pic">
+  <div class="block__inner">
+
+    <div class="block__content"><div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"><figure class="field-type-image__figure image-count-1"><div class="field-type-image__item">
+        <img src="/sites/default/files/2019-12/sh2.png" width="600" height="379" alt="SH2" typeof="foaf:Image" />
+</div>
+    </figure></div>
+</div></div>
+</div>
+
+      </div>
+    
+          <div class="atl__lc lc-r1c2 lc-2">
+        <div data-layout-content-preview-placeholder-label="&quot;Patches&quot; views block" class="l-bl block block-config-provider--views block-plugin-id--views-block-patches-block-1"id="views-blockpatches-block-1">
+  <div class="block__inner">
+
+    <div class="block__content"><div class="views-element-container element-container-wrapper"><div class="view view-patches view-id-patches view-display-id-block_1 js-view-dom-id-61ec633a1ee4b1c866dfade727df6ef1dfe5432662fe8efdd8660330b8b37e12">
+  
+    
+      
+      <div class="view-content view-rows">
+          <div class="views-row">
+    <span><span><script>
+var keys = new Tone.Sampler({
+			"C1" : "file1.[mp3|ogg]",
+	        "C#1" : "file2.[mp3|ogg]",
+	        "D1" : "file3.[mp3|ogg]",
+			"D#1" : "file4.[mp3|ogg]",
+			"E1" : "file5.[mp3|ogg]",
+			"F1" : "file6.[mp3|ogg]",
+			"F#1" : "file7.[mp3|ogg]",
+			"G1" : "file8.[mp3|ogg]",
+			"G#1" : "file9.[mp3|ogg]",
+			"A1" : "file10.[mp3|ogg]",
+			"A#1" : "file11.[mp3|ogg]",
+			"B1" : "file12.[mp3|ogg]",
+			"C2" : "file13.[mp3|ogg]",
+	        "C#2" : "file14.[mp3|ogg]",
+	        "D2" : "file15.[mp3|ogg]",
+			"D#2" : "file16.[mp3|ogg]",
+			"E2" : "file17.[mp3|ogg]",
+			"F2" : "file18.[mp3|ogg]",
+			"F#2" : "file19.[mp3|ogg]",
+			"G2" : "file20.[mp3|ogg]",
+			"G#2" : "file21.[mp3|ogg]",
+			"A2" : "file22.[mp3|ogg]",
+			"A#2" : "file23.[mp3|ogg]",
+			"B2" : "file24.[mp3|ogg]",
+			"C3" : "file25.[mp3|ogg]"
+				
+				
+				
+					}, {
+
+						"baseUrl" : "/presets/RolandSH2/TheBigR/"
+					})					.connect(filter);
+					
+					
+					</script>
+				</span></span><h3 class="views-label views-label-title">Patch: </h3><h3 class="field-content">TheBigR</h3>
+  </div>
+
+    </div>
+  
+        <nav class="pager pager--mini" role="navigation" aria-labelledby="pagination-heading">
+    <h4 id="pagination-heading" class="pager__heading visually-hidden">Pagination</h4>
+    <ul class="pager__items js-pager__items">
+
+              <li class="pager__item pager__item--previous pager__item--text">
+          <a href="/roland-sh-2-0/page/11" class="pager__link" title="Go to previous page" rel="prev">
+            <span class="visually-hidden">Previous page</span>
+            <span aria-hidden="true">‹‹</span>
+          </a>
+        </li>
+      
+              <li class="pager__item is-active">
+          <span class="pager__link pager__link--is-active">(Page 12)</span>
+        </li>
+      
+              <li class="pager__item pager__item--next pager__item--text">
+          <a href="/roland-sh-2-0/page/13" class="pager__link" title="Go to next page" rel="next">
+            <span class="visually-hidden">Next page</span>
+            <span aria-hidden="true">››</span>
+          </a>
+        </li>
+      
+    </ul>
+  </nav>
+
+          </div>
+</div>
+</div></div>
+</div>
+<div data-layout-content-preview-placeholder-label="&quot;seq&quot; block" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-a2490e01-f952-4735-ba3b-4805545e142d block--type-basic block--view-mode-full"id="block-contenta2490e01-f952-4735-ba3b-4805545e142d">
+  <div class="block__inner">
+
+    <div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item">
+<tone-transport></tone-transport>
+
+<tone-step-sequencer id="seq1"></tone-step-sequencer></div></div>
+</div>
+</div></div>
+</div>
+<div data-layout-content-preview-placeholder-label="&quot;keys&quot; block" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-3a705ecf-e07d-4892-b8e4-843e17dda90e block--type-basic block--view-mode-full"id="block-content3a705ecf-e07d-4892-b8e4-843e17dda90e">
+  <div class="block__inner">
+
+    <div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><h6>MIDI input is enabled for Chrome and Opera users. Alternatively, you can use a QWERTY keyboard on all browsers using Z &amp; X to transpose.</h6>
+</div></div>
+</div>
+</div></div>
+</div>
+
+      </div>
+    
+          <div class="atl__lc lc-r1c3 lc-3">
+        <div data-layout-content-preview-placeholder-label="&quot;Controls&quot; block" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-ea342fb5-7779-4f05-870e-f07f5466ac32 has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="-title"id="block-contentea342fb5-7779-4f05-870e-f07f5466ac32">
+  <div class="block__inner">
+
+    <h2  class="block__title" id="-title"><span>Controls</span></h2><div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><div class="grid-env">
+<div class="grid-item">
+<p>Vol</p>
+</div>
+
+<div class="grid-item">
+<p>Atk</p>
+</div>
+
+<div class="grid-item">
+<p>Rel</p>
+</div>
+
+<div class="grid-item">
+<p>Curve</p>
+</div>
+
+<div class="grid-item">
+<div id="vol"></div>
+</div>
+
+<div class="grid-item">
+<div id="attack"></div>
+</div>
+
+<div class="grid-item">
+<div id="release"></div>
+</div>
+
+<div class="grid-item">
+<div id="curve"></div>
+</div>
+</div>
+</div></div>
+</div>
+</div></div>
+</div>
+<div data-layout-content-preview-placeholder-label="&quot;AutoFilter&quot; block" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-31bbdb58-9678-4c64-8e29-8c18209150cb has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="-title"id="block-content31bbdb58-9678-4c64-8e29-8c18209150cb">
+  <div class="block__inner">
+
+    <h2  class="block__title" id="-title"><span>AutoFilter</span></h2><div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><div class="grid-filter">
+
+<div class="grid-item">
+<p>Wet</p>
+</div>
+
+<div class="grid-item">
+<p>Cut</p>
+</div>
+
+<div class="grid-item">
+<p>Res</p>
+</div>
+
+<div class="grid-item">
+<p>Dpth</p>
+</div>
+
+<div class="grid-item">
+<p>Spd</p>
+</div>
+
+<div class="grid-item">
+<div id="fwet"></div>
+</div>
+
+<div class="grid-item">
+<div id="baseFrequency"></div>
+</div>
+
+<div class="grid-item">
+<div id="Q"></div>
+</div>
+
+<div class="grid-item">
+<div id="depth"></div>
+</div>
+
+<div class="grid-item">
+<div id="ffrequency"></div>
+</div>
+
+
+</div>
+</div></div>
+</div>
+</div></div>
+</div>
+<div data-layout-content-preview-placeholder-label="&quot;Chorus&quot; block" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-426eca68-e6ea-40de-9c8a-60eb2565a5ea has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="-title"id="block-content426eca68-e6ea-40de-9c8a-60eb2565a5ea">
+  <div class="block__inner">
+
+    <h2  class="block__title" id="-title"><span>Chorus</span></h2><div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><div class="grid-env">
+	
+<div class="grid-item">
+<p>Wet</p>
+</div>
+
+<div class="grid-item">
+<p>Time</p>
+</div>
+
+<div class="grid-item">
+<p>Depth</p>
+</div>
+
+<div class="grid-item">
+<p>Speed</p>
+</div>
+
+<div class="grid-item">
+<div id="cwet"></div>
+</div>
+
+<div class="grid-item">
+<div id="ctime"></div>
+</div>
+
+<div class="grid-item">
+<div id="cdepth"></div>
+</div>
+
+<div class="grid-item">
+<div id="cfreq"></div>
+</div>
+</div></div></div>
+</div>
+</div></div>
+</div>
+<div data-layout-content-preview-placeholder-label="&quot;Delay&quot; block" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-96de5361-cfee-4c6a-be06-c124cef27d7b has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="-title"id="block-content96de5361-cfee-4c6a-be06-c124cef27d7b">
+  <div class="block__inner">
+
+    <h2  class="block__title" id="-title"><span>Delay</span></h2><div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><div class="grid-delay">
+<div class="grid-item">
+<p>Wet</p>
+</div>
+
+<div class="grid-item">
+<p>Time</p>
+</div>
+
+<div class="grid-item">
+<p>Feed</p>
+</div>
+
+<div class="grid-item">
+<div id="dwet"></div>
+</div>
+
+<div class="grid-item">
+<div id="dtime"></div>
+</div>
+
+<div class="grid-item">
+<div id="dfeedback"></div>
+</div>
+</div>
+</div></div>
+</div>
+</div></div>
+</div>
+<div data-layout-content-preview-placeholder-label="&quot;Reverb&quot; block" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-2133502b-e557-48a4-bafe-7e3c8b5c4503 has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="-title"id="block-content2133502b-e557-48a4-bafe-7e3c8b5c4503">
+  <div class="block__inner">
+
+    <h2  class="block__title" id="-title"><span>Reverb</span></h2><div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><div class="grid-reverb">
+	
+<div class="grid-item">
+<p>Wet</p>
+</div>
+
+<div class="grid-item">
+<p>Size</p>
+</div>
+
+<div class="grid-item">
+<p>Damp</p>
+</div>
+
+<div class="grid-item">
+<div id="rwet"></div>
+</div>
+
+<div class="grid-item">
+<div id="roomSize"></div>
+</div>
+
+<div class="grid-item">
+<div id="dampening"></div>
+</div>
+
+</div>
+</div></div>
+</div>
+</div></div>
+</div>
+
+      </div>
+    
+        
+    
+          <div class="atl__lc lc-r2c3 lc-6">
+        <div data-layout-content-preview-placeholder-label="&quot;sequencer-code&quot; block" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-97d12a4b-901d-4838-92db-bf1e5e4c9b64 block--type-basic block--view-mode-full"id="block-content97d12a4b-901d-4838-92db-bf1e5e4c9b64">
+  <div class="block__inner">
+
+    <div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><script type="text/javascript">
+
+function loadJS(file) {
+// DOM: Create the script element
+var jsElm = document.createElement("script");
+// set the type attribute
+jsElm.type = "application/javascript";
+// make the script element load file
+jsElm.src = file;
+// finally insert the element to the body element in order to load the script
+document.body.appendChild(jsElm);
+}
+
+
+
+var midi = {};
+ 
+WebMidi.enable(function (err) {
+     
+    if (err) {
+      console.log("WebMidi could not be enabled.", err);
+      return;
+    } else {
+      console.log("WebMidi enabled!");
+	  console.log(WebMidi.inputs);
+	     console.log(WebMidi.outputs);
+    }
+ 
+    WebMidi.inputs.forEach((o) => {
+      console.log(o.name)
+   
+    o.addListener('noteon', "all", function (e) {
+       
+      console.log(e)
+ 
+        let octave = parseInt(e.note.octave);
+        let note = e.note.name + octave;
+      console.log(note)
+ 
+        if (!(note in midi)) {
+           
+            console.log(keys)
+            keys.triggerAttack(note, Tone.context.currentTime + 0.01, e.velocity);
+            midi[note] = keys;
+        }
+    });
+   
+        o.addListener('noteoff', "all", function (e) {
+            let octave = parseInt(e.note.octave);
+            let note = e.note.name + octave;
+            let keys = midi[note];
+ 
+            if (keys) {
+                keys.triggerRelease(note, undefined, e.velocity);
+                delete midi[note];
+            }
+        });
+    });
+     
+});
+
+
+
+
+//////////////////////////
+
+var eq = new Tone.Volume({
+	"volume" : -6
+	
+}).toMaster({
+})
+
+var verb = new Tone.Freeverb({
+"wet" : 0.0
+}).connect(eq);	
+
+//the feedback delay
+var feedbackDelay = new Tone.PingPongDelay({
+"wet" : 0.0
+}).connect(verb);		
+
+var chorus = new Tone.Chorus({
+	"wet" : 0.0
+}).connect(feedbackDelay);		
+
+
+var filter = new Tone.AutoFilter({
+	"wet" : 0.0
+}).connect(chorus).start();		
+
+
+//the notes
+var noteNames = ["B3", "A#3", "A3", "G#3", "G3", "F#3", "F3", "E3","D#3", "D3", "C#3", "C3", "B2", "A#2", "A2", "G#2","G2", "F#2", "F2", "E2","D#2", "D2", "C#2", "C2"  ];
+
+
+
+
+
+
+var loop = new Tone.Sequence(function(time, col){
+var column = document.querySelector("#seq1").currentColumn;
+column.forEach(function(val, i){
+if (val){
+
+//slightly randomized velocities
+keys.triggerAttackRelease(noteNames[i], "0.25", time);
+}
+});
+
+Tone.Transport.start("+0.2");
+//set the columne on the correct draw frame
+Tone.Draw.schedule(function(){
+document.querySelector("#seq1").setAttribute("highlight", col);
+}, time);
+}, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "16n").start(0);
+
+
+function stop() {
+Tone.Transport.stop();
+
+}
+
+function clear() {
+
+keys.disconnect();
+keys.dispose();
+}
+
+Nexus.colors.accent = "#806f14"
+Nexus.colors.fill = "#ecd7a2"
+
+
+//aENV Controls
+var attack = new Nexus.Slider('#attack', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [30, 70],
+'min': 0,
+'max': 100,
+'step': 0,
+'value': 0
+})
+
+attack.on('change', function(v) {
+keys.attack = v;
+});
+
+var release = new Nexus.Slider('#release', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [30, 70],
+'min': 0,
+'max': 40,
+'step': 0,
+'value': 12
+})
+
+release.on('change', function(v) {
+keys.release = v;
+});
+
+var curve = new Nexus.Toggle('#curve', {
+'size': [30,30],
+'state': true
+})
+
+curve.on('change', function(v) {
+keys.curve = v;
+});
+
+//chorus Controls
+
+var fwet = new Nexus.Slider('#fwet', {
+'mode': 'relative', // "absolute" or "absolute"
+'size': [30, 70],
+"min": 0,
+"max" : 1,
+'value' : 0
+})
+
+fwet.on('change', function(v) {
+filter.wet.value = v;
+});
+
+var baseFrequency = new Nexus.Slider('#baseFrequency', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [30, 70],
+'min': 20,
+'max': 4000,
+'step': 0,
+	'value': 200
+})
+
+baseFrequency.on('change', function(v) {
+filter.filter.frequency.value = v;
+});
+
+var Q = new Nexus.Slider('#Q', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [30, 70],
+'min': 0,
+'max': 10,
+'step': 0,
+	'value': 1
+})
+
+Q.on('change', function(v) {
+filter.filter.Q.value = v;
+});
+
+var depth = new Nexus.Slider('#depth', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [30, 70],
+'min': 0.00,
+'max': 1.00,
+'step': 0,
+'value': 0
+})
+
+depth.on('change', function(v) {
+filter.depth.value = v;
+});
+
+var ffrequency = new Nexus.Slider('#ffrequency', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [30, 70],
+'min': 0,
+'max': 20,
+'step': 0,
+	'value': 4
+})
+
+ffrequency.on('change', function(v) {
+filter.frequency.value = v;
+});
+
+
+//delay Controls
+
+var cwet = new Nexus.Slider('#cwet', {
+'mode': 'relative', // "absolute" or "absolute"
+'size': [30, 70],
+'min': 0.0,
+'max': 1.0,
+'step': 0,
+'value': 0
+})
+
+cwet.on('change', function(v) {
+chorus.wet.value = v;
+});
+
+var ctime = new Nexus.Slider('#ctime', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [30, 70],
+'min': 0.01,
+'max': 1.0,
+'step': 0,
+'value': 0.25
+})
+
+ctime.on('change', function(v) {
+chorus.delayTime.value = v;
+});
+
+var cdepth = new Nexus.Slider('#cdepth', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [30, 70],
+'min': 0.0,
+'max': 0.95,
+'step': 0,
+'value': 0.60
+})
+
+cdepth.on('change', function(v) {
+chorus.depth.value = v;
+});
+
+var cfreq = new Nexus.Slider('#cfreq', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [30, 70],
+'min': 0.0,
+'max': 0.95,
+'step': 0,
+'value': 0.60
+})
+
+cfreq.on('change', function(v) {
+chorus.frequency.value = v;
+});
+
+//delay Controls
+
+var dwet = new Nexus.Slider('#dwet', {
+'mode': 'relative', // "absolute" or "absolute"
+'size': [30, 70],
+'min': 0.0,
+'max': 1.0,
+'step': 0,
+'value': 0
+})
+
+dwet.on('change', function(v) {
+feedbackDelay.wet.value = v;
+});
+
+var dtime = new Nexus.Slider('#dtime', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [30, 70],
+'min': 0.01,
+'max': 1.0,
+'step': 0,
+'value': 0.25
+})
+
+dtime.on('change', function(v) {
+feedbackDelay.delayTime.value = v;
+});
+
+var dfeedback = new Nexus.Slider('#dfeedback', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [30, 70],
+'min': 0.0,
+'max': 0.95,
+'step': 0,
+'value': 0.60
+})
+
+dfeedback.on('change', function(v) {
+feedbackDelay.feedback.value = v;
+});
+
+//Reverb Controls
+
+var rwet = new Nexus.Slider('#rwet', {
+'mode': 'relative', // "absolute" or "absolute"
+'size': [30, 70],
+'min': 0,
+'max': 1,
+'step': 0,
+'value': 0
+})
+
+rwet.on('change', function(v) {
+verb.wet.value = v;
+});
+
+var roomSize = new Nexus.Slider('#roomSize', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [30, 70],
+'min': 0.10,
+'max': 0.95,
+'step': 0,
+'value': 0.70
+})
+
+roomSize.on('change', function(v) {
+verb.roomSize.value = v;
+});
+
+var dampening = new Nexus.Slider('#dampening', {
+'mode': 'absolute', // "absolute" or "absolute"
+'size': [30, 70],
+'min': 100,
+'max': 5000,
+'step': 0,
+'value': 3000
+})
+
+dampening.on('change', function(v) {
+verb.dampening.value = v;
+});
+
+//Transport/seq Controls
+
+var vol = new Nexus.Dial('#vol', {size: [50, 50], min: -12,max: 2,  value: -6 });
+vol.on('change', v => eq.volume.value = v)
+
+document.querySelector("tone-transport").bind(Tone.Transport);
+Tone.Transport.on("stop", () => {
+setTimeout(() => {
+document.querySelector("#seq1").setAttribute("highlight", "-1");
+
+}, 100);
+
+});
+		document.querySelector("tone-oscilloscope").bind(eq);
+//keys
+
+
+var keyboard = new AudioKeys(
+	{
+		rootNote: 36
+		
+	}
+);
+
+Tone.context.currentTime + 0.01
+
+keyboard.down(function(note) {
+keys.triggerAttack(Tone.Frequency(note.note, "midi").toNote());
+});
+
+keyboard.up(function(note) {
+keys.triggerRelease(Tone.Frequency(note.note, "midi").toNote());
+});
+
+// Enable WebMidi.js
+
+
+
+
+</script></div></div>
+</div>
+</div></div>
+</div>
+
+      </div>
+    
+        
+    
+      </div>
+</div>
+</div></div>
+</article>
+
+  
+</main>
+</div>
+    </div>
+  </div>
+  
+</div>
+<div data-at-row="footer" class="l-footer l-row">
+  
+  <footer class="l-pr page__row pr-footer" role="contentinfo" id="footer">
+    <div class="l-rw regions container pr-footer__rw arc--1 hr--1" data-at-regions="">
+      <div  data-at-region="1" data-at-block-count="2" class="l-r region pr-footer__footer" id="rid-footer"><div id="block-builtwith" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-1dc05664-2e50-43ba-be77-94e311735695 block--type-basic block--view-mode-full"id="block-content1dc05664-2e50-43ba-be77-94e311735695">
+  <div class="block__inner">
+
+    <div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><p class="text-align-center">Built with: <a href="https://tonejs.github.io">ToneJS</a> - <a href="https://nexus-js.github.io/ui/">NexusUI</a> - <a href="https://github.com/djipco/webmidi">WebMidi.js</a> - <a href="https://www.drupal.org">Drupal</a> - <a href="https://tome.fyi/">Tome</a></p>
+
+<p class="text-align-center">All audio content on this site is</p>
+<img alt="Public Domain" data-entity-type="file" data-entity-uuid="995494a2-39ad-4686-9f8e-df2f017e968d" height="74" src="/sites/default/files/inline-images/public-domain-logo-streamlined.png" width="234" class="align-center" /></div></div>
+</div>
+</div></div>
+</div>
+<div class="views-element-container l-bl block block-config-provider--views block-plugin-id--views-block-bottompatches-block-1" id="block-views-block-bottompatches-block-1--2"id="views-blockbottompatches-block-1">
+  <div class="block__inner">
+
+    <div class="block__content"><div class="element-container-wrapper"><div class="view view-bottompatches view-id-bottompatches view-display-id-block_1 js-view-dom-id-0b787891539738ff873a182ac60a68a65a4cc0c1fe0fc9f58f1038009b6230e8">
+  
+    
+      
+      <div class="view-content view-rows">
+          <div class="views-row">
+    <span class="views-field views-field-body"><script>
+var keys = new Tone.Sampler({
+			"C1" : "file1.[mp3|ogg]",
+	        "C#1" : "file2.[mp3|ogg]",
+	        "D1" : "file3.[mp3|ogg]",
+			"D#1" : "file4.[mp3|ogg]",
+			"E1" : "file5.[mp3|ogg]",
+			"F1" : "file6.[mp3|ogg]",
+			"F#1" : "file7.[mp3|ogg]",
+			"G1" : "file8.[mp3|ogg]",
+			"G#1" : "file9.[mp3|ogg]",
+			"A1" : "file10.[mp3|ogg]",
+			"A#1" : "file11.[mp3|ogg]",
+			"B1" : "file12.[mp3|ogg]",
+			"C2" : "file13.[mp3|ogg]",
+	        "C#2" : "file14.[mp3|ogg]",
+	        "D2" : "file15.[mp3|ogg]",
+			"D#2" : "file16.[mp3|ogg]",
+			"E2" : "file17.[mp3|ogg]",
+			"F2" : "file18.[mp3|ogg]",
+			"F#2" : "file19.[mp3|ogg]",
+			"G2" : "file20.[mp3|ogg]",
+			"G#2" : "file21.[mp3|ogg]",
+			"A2" : "file22.[mp3|ogg]",
+			"A#2" : "file23.[mp3|ogg]",
+			"B2" : "file24.[mp3|ogg]",
+			"C3" : "file25.[mp3|ogg]"
+				
+				
+				
+					}, {
+
+						"baseUrl" : "/presets/RolandSH2/AllIn/"
+					})					.connect(filter);
+					
+					
+					</script>
+				</span>
+  </div>
+
+    </div>
+  
+          </div>
+</div>
+</div></div>
+</div>
+</div>
+    </div>
+  </footer>
+  
+</div>
+
+  
+</div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/100","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en","currentQuery":{"page":"11"}},"pluralDelimiter":"\u0003","ajaxPageState":{"theme":"ms","libraries":"at_core\/at.breakpoints,at_core\/at.grid-3x3,at_core\/at.responsivemenus,at_core\/at.settings,google_analytics\/google_analytics,ms\/base,ms\/ckeditor,ms\/color,ms\/comment,ms\/contact,ms\/custom_css,ms\/custom_css_file,ms\/fontfaceobserver,ms\/fonts,ms\/google_fonts,ms\/image_styles,ms\/jquery_ui,ms\/ms.layout.page,ms\/responsive_menus,ms\/responsive_menus_dropmenu,ms\/responsive_tables,ms\/search,ms\/superfish,ms\/taxonomy,ms\/title_styles,system\/base,views\/views.ajax,views\/views.module","theme_token":null},"ajaxTrustedUrl":[],"google_analytics":{"account":"UA-2231938-9","trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackDomainMode":2,"trackCrossDomains":["modularsamples.com"]},"ms":{"at_responsivemenus":{"bp":"all and (max-width: 60em)","default":"ms-dropmenu","responsive":"ms-dropmenu","acd":{"acd_load":false,"acd_default":false,"acd_responsive":false,"acd_both":true}},"at_breakpoints":{"at_core_simple_wide":{"breakpoint":"wide","mediaquery":"all and (min-width: 60.0625em)"},"at_core_simple_tablet-isolate":{"breakpoint":"tablet-isolate","mediaquery":"all and (min-width: 45.0625em) and (max-width: 60em)"},"at_core_simple_mobile":{"breakpoint":"mobile","mediaquery":"all and (max-width: 45em)"}}},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:0b787891539738ff873a182ac60a68a65a4cc0c1fe0fc9f58f1038009b6230e8":{"view_name":"bottompatches","view_display_id":"block_1","view_args":"31","view_path":"\/roland-sh-2-0","view_base_path":null,"view_dom_id":"0b787891539738ff873a182ac60a68a65a4cc0c1fe0fc9f58f1038009b6230e8","pager_element":0},"views_dom_id:61ec633a1ee4b1c866dfade727df6ef1dfe5432662fe8efdd8660330b8b37e12":{"view_name":"patches","view_display_id":"block_1","view_args":"31","view_path":"\/roland-sh-2-0","view_base_path":null,"view_dom_id":"61ec633a1ee4b1c866dfade727df6ef1dfe5432662fe8efdd8660330b8b37e12","pager_element":0}}},"user":{"uid":0,"permissionsHash":"f60f398bc62243b192065b0b95914eb5f257b8c4c5428238f5bb3fed61e13b5d"}}</script>
+<script src="/sites/default/files/js/js_o5UqTi3uWqfHPa_ScNChyIAohn4osmdamG8OgugDxec.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fontfaceobserver/2.0.8/fontfaceobserver.js"></script>
+<script src="/sites/default/files/js/js_G4K6wfohJENxm7f-tZEUj-sKDY9Ikgg-jGTvjplJcwY.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/enquire.js/2.1.2/enquire.min.js"></script>
+<script src="/sites/default/files/js/js_iWJ7Sns6T4ROkagpyxYCYqqDqEA-CigM_tv8ecilLMc.js"></script>
+
+  </body>
+</html>
