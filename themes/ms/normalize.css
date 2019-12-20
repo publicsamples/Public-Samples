@@ -57,14 +57,13 @@
 
 .grid-item {
 margin-bottom:15%;
-margin-left:15%;
-margin-right:15%;
+
  }
  
 
  .grid-item p {
- 	 font-size:20px;
-	 text-align:left;
+ 	 font-size:12px;
+	 padding-left:10%;
 
   }
 
@@ -87,7 +86,7 @@ padding-top:5px;
    */
   #block-contentea342fb5-7779-4f05-870e-f07f5466ac32{
 	 background-color:#975975;
-	 padding-left:15px;
+	 padding-left:25px;
 	 padding-right:15px;
 	 margin-bottom:5px;
   }
@@ -97,9 +96,9 @@ padding-top:5px;
    */
   #block-content31bbdb58-9678-4c64-8e29-8c18209150cb{
 	 background-color:#0555b3;
-	 padding-left:15px;
+	 padding-left:25px;
 	 padding-right:15px;
-	 pamargin-bottom:5px;
+	 padding-bottom:5px;
 }
 
   /**
@@ -107,7 +106,7 @@ padding-top:5px;
    */
   #block-content426eca68-e6ea-40de-9c8a-60eb2565a5ea{
 	 background-color:#205a0a;
-	 padding-left:15px;
+	 padding-left:25px;
 	 padding-right:15px;
 	 margin-bottom:5px;
   }
@@ -116,7 +115,7 @@ padding-top:5px;
    */
   #block-content96de5361-cfee-4c6a-be06-c124cef27d7b{
 	 background-color:#bd7503;
-	 padding-left:15px;
+	 padding-left:25px;
 	 padding-right:15px;
 	margin-bottom:5px;
 }
@@ -126,7 +125,7 @@ padding-top:5px;
    */
   #block-content2133502b-e557-48a4-bafe-7e3c8b5c4503{
 	 background-color:#4b0e4b;
-	 padding-left:15px;
+	 padding-left:25px;
 	 padding-right:15px;
 margin-bottom:5px;
   }
@@ -220,7 +219,6 @@ padding-right:75%;
 .node__container{
    background-color:#965b3f;
    color:#ecd7a2;
-padding:25px;
 font-size: 1.2em;
 
 }

@@ -7,6 +7,103 @@
     <language>en</language>
     
     <item>
+  <title>Korg DW-8000</title>
+  <link>http://modularsamples.com/korg-dw-8000</link>
+  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Korg DW-8000&lt;/span&gt;
+&lt;div class="clearfix text-formatted field field-node--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;p&gt;A mid 80s analogue/digital hybrid. &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Sat, 11/30/2019 - 00:40&lt;/span&gt;
+&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://publicsamples.com/modularsamples/korg-dw-8000/-/archive/master/korg-dw-8000-master.zip"&gt;Zip&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://publicsamples.com/modularsamples/korg-dw-8000"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;Patches&lt;/strong&gt;: 15&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Formats:&lt;/strong&gt; Kontakt  &lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 2GB  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
+        &lt;img src="http://modularsamples.com/sites/default/files/2019-12/dw.jpg" width="600" height="372" alt="DW800" typeof="foaf:Image" /&gt;
+&lt;/div&gt;
+    &lt;/figure&gt;&lt;/div&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-0ecc094f67ec21f64e277548e04ba54ddd4a8c9bf048ff3d4c43e71b0f459ede"&gt;
+  
+    
+
+  
+  
+
+      &lt;div class="views-row"&gt;
+    &lt;script&gt;
+&lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
+
+var keys = new Tone.GrainPlayer({
+			"url" : "/presets//MetaSynth/1.mp3"
+	
+		}).connect(filter);
+					
+		document.querySelector("tone-oscilloscope").bind(keys);
+		document.querySelector("tone-grain-player").bind(keys);
+document.querySelector("tone-play-toggle").bind(keys);
+
+
+//--&gt;&lt;!]]&gt;
+&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  
+    &lt;nav class="pager pager--mini" role="navigation" aria-labelledby="pagination-heading"&gt;
+    &lt;h4 id="pagination-heading" class="pager__heading visually-hidden"&gt;Pagination&lt;/h4&gt;
+    &lt;ul class="pager__items js-pager__items"&gt;
+
+      
+              &lt;li class="pager__item is-active"&gt;
+          &lt;span class="pager__link pager__link--is-active"&gt;(Page 1)&lt;/span&gt;
+        &lt;/li&gt;
+      
+              &lt;li class="pager__item pager__item--next pager__item--text"&gt;
+          &lt;a href="http://modularsamples.com/rss.xml?page=1" class="pager__link" title="Go to next page" rel="next"&gt;
+            &lt;span class="visually-hidden"&gt;Next page&lt;/span&gt;
+            &lt;span aria-hidden="true"&gt;››&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+
+
+  
+  
+
+  
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
+&lt;div class="dropdown-content"&gt;
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/dw8000/file1.js');"&gt;Drug Waves&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/dw8000/file2.js');"&gt;Eggcelent&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/dw8000/file3.js');"&gt;Electrolites&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/dw8000/file4.js');;"&gt;Mr Clicky&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/dw8000/file5.js');"&gt;Pulser&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/dw8000/file6.js');"&gt;Spunky Organs&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/dw8000/file7.js');"&gt;Swirly Whirl&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+</description>
+  <pubDate>Sat, 30 Nov 2019 00:40:41 +0000</pubDate>
+    <dc:creator>rick</dc:creator>
+    <guid isPermaLink="false">110 at http://modularsamples.com</guid>
+    <category domain="http://modularsamples.com/taxonomy/term/7">dw8000</category>
+    </item>
+<item>
   <title>Sequential MAX</title>
   <link>http://modularsamples.com/sequential-max-0</link>
   <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Sequential MAX&lt;/span&gt;
@@ -27,7 +124,7 @@
         &lt;img src="http://modularsamples.com/sites/default/files/2019-12/max.jpg" width="601" height="372" alt="max" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-4f771f18e524f442af29a18a017c5321b9db0fd10678ab9365a3a3fcf9b3faba"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-50f086c2ab1b9eccc2212ab4c991bd699b000bf54a3814eab7e549f09a6af836"&gt;
   
     
 
@@ -126,7 +223,7 @@ document.querySelector("tone-play-toggle").bind(keys);
         &lt;img src="http://modularsamples.com/sites/default/files/2019-12/mp.jpg" width="600" height="373" alt="monopoly" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-b44f48772d9f1c17f1e2d470700bc73f6dbc68e6aac5c213535503b1624773f8"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-ffe33b55c02cfdb9e1c86df9a0b1b3eef28089ad50e84dd93ec7205e8c14ff18"&gt;
   
     
 
@@ -244,7 +341,7 @@ document.querySelector("tone-play-toggle").bind(keys);
         &lt;img src="http://modularsamples.com/sites/default/files/2019-12/a4.jpg" width="600" height="372" alt="AnalogFour" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-ebf1920c0de158f9892c4a24f6a0ec6446e5bd1a40799985ab49b2bce11811fa"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-ac0fd546f7edcb38657ecbd849fcd40b4eed0454c411781266e41d31f2e6c6e1"&gt;
   
     
 
@@ -353,7 +450,7 @@ document.querySelector("tone-play-toggle").bind(keys);
         &lt;img src="http://modularsamples.com/sites/default/files/2019-12/1280px-Yamaha_logo.svg__0.png" width="600" height="131" alt="Yamaha" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-9806b98f53ce82a6dd55f78e8a806a5f1818dc779c3c60e17a7886158a8dc53f"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-8b8fa0d89f083b713532fa13ced5988d11cef5a30e0e189dfce636e65a445a62"&gt;
   
     
 
@@ -447,103 +544,6 @@ document.querySelector("tone-play-toggle").bind(keys);
     <category domain="http://modularsamples.com/taxonomy/term/4">cs30</category>
     </item>
 <item>
-  <title>Korg DW-8000</title>
-  <link>http://modularsamples.com/korg-dw-8000</link>
-  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Korg DW-8000&lt;/span&gt;
-&lt;div class="clearfix text-formatted field field-node--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;p&gt;A mid 80s analogue/digital hybrid. &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Sat, 11/30/2019 - 00:40&lt;/span&gt;
-&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://publicsamples.com/modularsamples/korg-dw-8000/-/archive/master/korg-dw-8000-master.zip"&gt;Zip&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://publicsamples.com/modularsamples/korg-dw-8000"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
-	&lt;li&gt;&lt;strong&gt;Patches&lt;/strong&gt;: 15&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Formats:&lt;/strong&gt; Kontakt  &lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 2GB  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
-        &lt;img src="http://modularsamples.com/sites/default/files/2019-12/dw.jpg" width="600" height="372" alt="DW800" typeof="foaf:Image" /&gt;
-&lt;/div&gt;
-    &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-2ee4f080d62ea256364708ff0699157fb4558000392c3f8d68c6b0eb0630eb96"&gt;
-  
-    
-
-  
-  
-
-      &lt;div class="views-row"&gt;
-    &lt;script&gt;
-&lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
-
-var keys = new Tone.GrainPlayer({
-			"url" : "/presets//MetaSynth/1.mp3"
-	
-		}).connect(filter);
-					
-		document.querySelector("tone-oscilloscope").bind(keys);
-		document.querySelector("tone-grain-player").bind(keys);
-document.querySelector("tone-play-toggle").bind(keys);
-
-
-//--&gt;&lt;!]]&gt;
-&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;
-  &lt;/div&gt;
-
-  
-    &lt;nav class="pager pager--mini" role="navigation" aria-labelledby="pagination-heading"&gt;
-    &lt;h4 id="pagination-heading" class="pager__heading visually-hidden"&gt;Pagination&lt;/h4&gt;
-    &lt;ul class="pager__items js-pager__items"&gt;
-
-      
-              &lt;li class="pager__item is-active"&gt;
-          &lt;span class="pager__link pager__link--is-active"&gt;(Page 1)&lt;/span&gt;
-        &lt;/li&gt;
-      
-              &lt;li class="pager__item pager__item--next pager__item--text"&gt;
-          &lt;a href="http://modularsamples.com/rss.xml?page=1" class="pager__link" title="Go to next page" rel="next"&gt;
-            &lt;span class="visually-hidden"&gt;Next page&lt;/span&gt;
-            &lt;span aria-hidden="true"&gt;››&lt;/span&gt;
-          &lt;/a&gt;
-        &lt;/li&gt;
-      
-    &lt;/ul&gt;
-  &lt;/nav&gt;
-
-
-  
-  
-
-  
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
-&lt;div class="dropdown-content"&gt;
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/dw8000/file1.js');"&gt;Drug Waves&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/dw8000/file2.js');"&gt;Eggcelent&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/dw8000/file3.js');"&gt;Electrolites&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/dw8000/file4.js');;"&gt;Mr Clicky&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/dw8000/file5.js');"&gt;Pulser&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/dw8000/file6.js');"&gt;Spunky Organs&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/dw8000/file7.js');"&gt;Swirly Whirl&lt;/h3&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-
-</description>
-  <pubDate>Sat, 30 Nov 2019 00:40:41 +0000</pubDate>
-    <dc:creator>rick</dc:creator>
-    <guid isPermaLink="false">110 at http://modularsamples.com</guid>
-    <category domain="http://modularsamples.com/taxonomy/term/7">dw8000</category>
-    </item>
-<item>
   <title>Roland Jupiter 4</title>
   <link>http://modularsamples.com/roland-jupiter-4-0</link>
   <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Roland Jupiter 4&lt;/span&gt;
@@ -565,7 +565,7 @@ document.querySelector("tone-play-toggle").bind(keys);
         &lt;img src="http://modularsamples.com/sites/default/files/2019-12/jp4.jpg" width="600" height="379" alt="Jupiter 4" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-6f55a63a9f364b607f9e79ae114214dcb06f6acffbdae64bbc8e9772e4defd20"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-f1c6e31966ca1d19f4acecdb69afdd752dcfacbafdb208a6f03dd4a9c08f47ad"&gt;
   
     
 
@@ -680,7 +680,7 @@ document.querySelector("tone-play-toggle").bind(keys);
         &lt;img src="http://modularsamples.com/sites/default/files/2019-12/esq1.jpg" width="600" height="372" alt="Ensoniq ESQ1" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-38dcba7f52ed6be0bc0b489eefba7fbdf7047e8929064d89cda59751fc58bd7f"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-e69dc47a9998f79ef81d616fd52800e7e6a2867264a428feb13f9f89015ab2d0"&gt;
   
     
 
@@ -784,7 +784,7 @@ document.querySelector("tone-play-toggle").bind(keys);
         &lt;img src="http://modularsamples.com/sites/default/files/2019-12/mmm.jpg" width="456" height="187" alt="braids" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-7b93041cf8776b2997c34a9d24343dacdef2c06cf2afc39cb0e81511c31ecb06"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-5a747d61649642eeb8ce147710484bb207fb15855380306d3579f8c8757f79cd"&gt;
   
     
 
@@ -875,7 +875,7 @@ document.querySelector("tone-play-toggle").bind(keys);
         &lt;img src="http://modularsamples.com/sites/default/files/2019-12/misc_2.jpg" width="600" height="379" alt="misc" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-15f49738c26d8a06759fad3dc4f92d0ba5da5410de92eaa18b2ae1c1147828a5"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-ff68eb698109b1b2e4e398605408ca051252bd5e7b9796bb6501661e0fba8b11"&gt;
   
     
 
@@ -966,7 +966,7 @@ document.querySelector("tone-play-toggle").bind(keys);
         &lt;img src="http://modularsamples.com/sites/default/files/2019-12/fc.jpg" width="600" height="338" alt="Chroma Polaris" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-faf464ec19e438e4656bb3899f34ac6fe214c2d53262a92dacac417746a6a081"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-8eae04aa3d478a07812814ff8b88b94645520453366bb1c93143c4228d21d0cf"&gt;
   
     
 
