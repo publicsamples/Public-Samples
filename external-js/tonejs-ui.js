@@ -208,7 +208,11 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					line-height: 18px;
 					border-radius: 12px;
 					-webkit-appearance: none;
+<<<<<<< Updated upstream
 					background-color: #306597;
+=======
+					background-color: transparent;
+>>>>>>> Stashed changes
 					border:2px solid var(--border-color, var(--color-gray));
 					box-sizing: border-box;
 					outline-color: var(--outline-color);
@@ -450,7 +454,11 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					border: 2px solid black;
 					border-radius: 22px;
 					padding: 20px;
+<<<<<<< Updated upstream
 					background-color:#f4f1de;
+=======
+					background-color:#8AD6D8;
+>>>>>>> Stashed changes
 					width: 100%;
 				}
 
@@ -598,7 +606,11 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					box-sizing: border-box;
 					width: 100%;
 					height: 44px;
+<<<<<<< Updated upstream
 					background-color: #f4f1de;
+=======
+					background-color: #8AD6D8;
+>>>>>>> Stashed changes
 					outline-color: var(--outline-color);
 					border: 2px solid black;
 					border-radius: 22px;
@@ -1414,7 +1426,11 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 				}
 
 				.column.highlight {
+<<<<<<< Updated upstream
 					background-color: #bb8f16;
+=======
+					background-color: #182C40;
+>>>>>>> Stashed changes
 				}
 
 				.column.highlight .row {
@@ -1426,20 +1442,33 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 				}
 
 				.column.highlight .row.filled{
+<<<<<<< Updated upstream
 					background-color: #b88111;
+=======
+					background-color: white;
+>>>>>>> Stashed changes
 				}
 
 				.row {
 					flex: 1;
 					margin: 1px;
+<<<<<<< Updated upstream
 					background-color: #f4f1de;
+=======
+					background-color: #294E55;
+>>>>>>> Stashed changes
 					transition: background-color 0s;
 				}
 
 				.row.filled {
+<<<<<<< Updated upstream
 				background-color: #522d14;
 				}
 				
+=======
+					background-color: #ED6355;
+				}
+>>>>>>> Stashed changes
 			</style>
 			<div id="container">
 				${this.values.map((t,e)=>i.b`
@@ -2280,26 +2309,44 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 				:host {
 					display: block;
 					color: #182C40;
+<<<<<<< Updated upstream
 					background-color: #cc820f;
 				}
 				#container {
 					background-color: #cc820f;
+=======
+					background-color: #2BACA9;
+				}
+				#container {
+					background-color: #2BACA9;
+>>>>>>> Stashed changes
 					padding: 5px;
 					
 				}
 				tone-play-toggle {
 					width: 50%;
+<<<<<<< Updated upstream
 					background-color: #cc820f;
+=======
+					background-color: #2BACA9;
+>>>>>>> Stashed changes
 				}
 				#top {
 					position: relative;
 				}
 				#top tone-play-toggle {
 					width: 60%;
+<<<<<<< Updated upstream
 					color: #cc820f;
 				}
 				#top #position {
 					background-color: #cc820f;
+=======
+					color: #2BACA9;
+				}
+				#top #position {
+					background-color: #1F5966;
+>>>>>>> Stashed changes
 					padding: 5px;
 					position: absolute;
 					width: 30%;
@@ -2312,20 +2359,33 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 				}
 				tone-rack {
 					margin-top: 10px;
+<<<<<<< Updated upstream
 					color: #cc820f;
 					background-color: #cc820f;
+=======
+					color: #2BACA9;
+					background-color: #2BACA9;
+>>>>>>> Stashed changes
 				}
 
 				tone-slider, tone-toggle {
 					display: block;
 					margin-top: 10px;
+<<<<<<< Updated upstream
 					background-color: #cc820f;
+=======
+					background-color: #2BACA9;
+>>>>>>> Stashed changes
 					
 				}
 				tone-slider {
 					width: 80%;
 					margin: 10px auto 0;
+<<<<<<< Updated upstream
 					background-color: #cc820f;
+=======
+					background-color: #2BACA9;
+>>>>>>> Stashed changes
 					
 				}
 				#tempo {
@@ -2337,7 +2397,11 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 			}
 			#tempo .attributes {
 		
+<<<<<<< Updated upstream
 				color: #cc820f;
+=======
+				color: #2BACA9;
+>>>>>>> Stashed changes
 			}
 			</style>
 			<div id="container">
