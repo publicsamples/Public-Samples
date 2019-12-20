@@ -1,0 +1,15 @@
+/**
+ * Web fonts
+ ============================================================================ */
+/* Override Font Awesome classes. */
+.fa-border {
+  border: solid 1px;
+  border-radius: 2px;
+}
+
+/* Hide in-content icons if Font Awesome fails to load. */
+.fa-loading .fa,
+.fa-unavailable .fa {
+  display: none;
+}
+/*# sourceMappingURL=webfonts.css.map */
