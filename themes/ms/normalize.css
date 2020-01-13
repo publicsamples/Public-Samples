@@ -164,6 +164,28 @@ padding:25px;
 margin-bottom:5%;
 }
 
+#field-blocknodeslgraintitle{
+font-size:2.0rem;
+padding:25px;
+line-height:100%;
+ background-color:#2e3229;
+ margin-bottom:5%;
+}
+ 
+#field-blocknodeslgrainfield-downloads{
+padding:25px;
+ background-color:#30450a;
+margin-bottom:5%;
+}
+
+
+#field-blocknodeslgrainfield-library-info{
+
+padding:25px;
+ background-color:#bd7503;
+margin-bottom:5%;
+}
+
 #block-ms-branding{
 	padding:25px;
 	padding-top:15px;

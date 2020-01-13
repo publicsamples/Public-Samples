@@ -450,7 +450,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					border: 2px solid black;
 					border-radius: 22px;
 					padding: 20px;
-					background-color:#f4f1de;
+					background-color:#bd7303;
 					width: 100%;
 				}
 
@@ -579,7 +579,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					display: inline-block;
 					min-width: 80px;
 					width: 100%;
-					background-color: #182C40;
+				
 				}
 
 				#container {
@@ -598,7 +598,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					box-sizing: border-box;
 					width: 100%;
 					height: 44px;
-					background-color: #f4f1de;
+					background-color: #bd7403;
 					outline-color: var(--outline-color);
 					border: 2px solid black;
 					border-radius: 22px;
@@ -917,7 +917,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					border-radius: 10px;
 					padding: 10px;
 					margin-top: 20px;
-					background-color:#ED6355;
+					background-color:#5d1007;
 				}
 
 				tone-play-toggle {
