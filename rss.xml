@@ -7,6 +7,340 @@
     <language>en</language>
     
     <item>
+  <title>Elektron Analog 4</title>
+  <link>http://modularsamples.com/elektron-analog-4</link>
+  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Elektron Analog 4&lt;/span&gt;
+&lt;div class="clearfix text-formatted field field-node--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;p&gt;A four voice analog groovebox. Bleepy bloopy madness. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://www.elektron.se/legacy-products/"&gt;https://www.elektron.se/legacy-products/&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Thu, 11/28/2019 - 11:43&lt;/span&gt;
+&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Elektron-Analog-4/archive/master.zip"&gt;Patches&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="http://drupal.dd:8083/sites/drupal.dd/files/2020-01/a4Audio.torrent"&gt;Audio (Bittorrent)&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://publicsamples.com/modularsamples/Elektron-Analog-Four"&gt;Git Project&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;Patches&lt;/strong&gt;: 31&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Formats:&lt;/strong&gt; EXS24, Kontakt &amp; SFZ  &lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 8GB  &lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Misc: &lt;/strong&gt;Lots of multisampled loops&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
+        &lt;img src="http://modularsamples.com/sites/default/files/2019-12/a4.jpg" width="600" height="372" alt="AnalogFour" typeof="foaf:Image" /&gt;
+&lt;/div&gt;
+    &lt;/figure&gt;&lt;/div&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-a0e966c2a9f540143263d17c9f2af434bb247474071d83a153048feecfd947ce"&gt;
+  
+    
+
+  
+  
+
+      &lt;div class="views-row"&gt;
+    &lt;script&gt;
+&lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
+
+var keys = new Tone.GrainPlayer({
+			"url" : "/presets//MetaSynth/1.mp3"
+	
+		}).connect(filter);
+					
+		document.querySelector("tone-oscilloscope").bind(keys);
+		document.querySelector("tone-grain-player").bind(keys);
+document.querySelector("tone-play-toggle").bind(keys);
+
+
+//--&gt;&lt;!]]&gt;
+&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  
+    &lt;nav class="pager pager--mini" role="navigation" aria-labelledby="pagination-heading"&gt;
+    &lt;h4 id="pagination-heading" class="pager__heading visually-hidden"&gt;Pagination&lt;/h4&gt;
+    &lt;ul class="pager__items js-pager__items"&gt;
+
+      
+              &lt;li class="pager__item is-active"&gt;
+          &lt;span class="pager__link pager__link--is-active"&gt;(Page 1)&lt;/span&gt;
+        &lt;/li&gt;
+      
+              &lt;li class="pager__item pager__item--next pager__item--text"&gt;
+          &lt;a href="http://modularsamples.com/rss.xml?page=1" class="pager__link" title="Go to next page" rel="next"&gt;
+            &lt;span class="visually-hidden"&gt;Next page&lt;/span&gt;
+            &lt;span aria-hidden="true"&gt;››&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+
+
+  
+  
+
+  
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
+&lt;div class="dropdown-content"&gt;
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/A4/file1.js');"&gt;All 8&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/A4/file2.js');"&gt;Anilgo&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/A4/file3.js');"&gt;Spider 120&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/A4/file4.js');;"&gt;Bleep World&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/A4/file5.js');"&gt;Chirpy Chord&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/A4/file6.js');"&gt;CBass&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/A4/file7.js');"&gt;Darkplace&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/A4/file8.js');"&gt;GritChrd&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/A4/file9.js');"&gt;luck&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/A4/file10.js');"&gt;PlsWait&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/A4/file11.js');"&gt;Pleasing FM&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/A4/file12.js');"&gt;sines75&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/A4/file13.js');"&gt;Stacker&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="field field-node--field-file field-formatter-file-default field-name-field-file field-type-file field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;File&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;span class="file file--mime-application-x-bittorrent file--general"&gt; &lt;a href="http://modularsamples.com/sites/default/files/2020-01/a4Audio.torrent" type="application/x-bittorrent; length=505092"&gt;a4Audio.torrent&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+</description>
+  <pubDate>Thu, 28 Nov 2019 11:43:14 +0000</pubDate>
+    <dc:creator>rick</dc:creator>
+    <guid isPermaLink="false">98 at http://modularsamples.com</guid>
+    <category domain="http://modularsamples.com/taxonomy/term/3">a4</category>
+    </item>
+<item>
+  <title>Fender Chroma Polaris</title>
+  <link>http://modularsamples.com/fender-chroma-polaris-0</link>
+  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Fender Chroma Polaris&lt;/span&gt;
+&lt;div class="clearfix text-formatted field field-node--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;p&gt;CEM based 80's polysynth. A pretty deep instrument with extensive MIDI control.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Mon, 12/16/2019 - 19:41&lt;/span&gt;
+&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Fender-Chroma-Polaris/archive/master.zip"&gt;Zip&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="http://drupal.dd:8083/sites/drupal.dd/files/2020-01/FenderChromaPolAudio.torrent"&gt;Audio (Bittorrent)&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Fender-Chroma-Polaris"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;Patches&lt;/strong&gt;: 51&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Formats:&lt;/strong&gt; EXS24, Kontakt &amp; SFZ  &lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 7.7GB  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
+        &lt;img src="http://modularsamples.com/sites/default/files/2019-12/fc.jpg" width="600" height="338" alt="Chroma Polaris" typeof="foaf:Image" /&gt;
+&lt;/div&gt;
+    &lt;/figure&gt;&lt;/div&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-3a8921d619ea21670b15ec4211f5c62686cb54dccca48df21c3a9fed3c6d4085"&gt;
+  
+    
+
+  
+  
+
+      &lt;div class="views-row"&gt;
+    &lt;script&gt;
+&lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
+
+var keys = new Tone.GrainPlayer({
+			"url" : "/presets//MetaSynth/1.mp3"
+	
+		}).connect(filter);
+					
+		document.querySelector("tone-oscilloscope").bind(keys);
+		document.querySelector("tone-grain-player").bind(keys);
+document.querySelector("tone-play-toggle").bind(keys);
+
+
+//--&gt;&lt;!]]&gt;
+&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  
+    &lt;nav class="pager pager--mini" role="navigation" aria-labelledby="pagination-heading"&gt;
+    &lt;h4 id="pagination-heading" class="pager__heading visually-hidden"&gt;Pagination&lt;/h4&gt;
+    &lt;ul class="pager__items js-pager__items"&gt;
+
+      
+              &lt;li class="pager__item is-active"&gt;
+          &lt;span class="pager__link pager__link--is-active"&gt;(Page 1)&lt;/span&gt;
+        &lt;/li&gt;
+      
+              &lt;li class="pager__item pager__item--next pager__item--text"&gt;
+          &lt;a href="http://modularsamples.com/rss.xml?page=1" class="pager__link" title="Go to next page" rel="next"&gt;
+            &lt;span class="visually-hidden"&gt;Next page&lt;/span&gt;
+            &lt;span aria-hidden="true"&gt;››&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+
+
+  
+  
+
+  
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
+&lt;div class="dropdown-content"&gt;
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/Polaris/file1.js');"&gt;Dusty&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/Polaris/file2.js');"&gt;Empiricist&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/Polaris/file3.js');"&gt;Far off&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/Polaris/file4.js');;"&gt;Lander&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/Polaris/file5.js');"&gt;Messy&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/Polaris/file6.js');"&gt;Poke it with a stick&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/Polaris/file7.js');"&gt;Dark Piano&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/Polaris/file8.js');"&gt;Ring Sync&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/Polaris/file9.js');"&gt;Sharp Mush&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/Polaris/file10.js');"&gt;Sweet &amp; Full of Grace&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="field field-node--field-file field-formatter-file-default field-name-field-file field-type-file field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;File&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;span class="file file--mime-application-x-bittorrent file--general"&gt; &lt;a href="http://modularsamples.com/sites/default/files/2020-01/FenderChromaPolAudio.torrent" type="application/x-bittorrent; length=912405"&gt;FenderChromaPolAudio.torrent&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+</description>
+  <pubDate>Mon, 16 Dec 2019 19:41:17 +0000</pubDate>
+    <dc:creator>rick</dc:creator>
+    <guid isPermaLink="false">119 at http://modularsamples.com</guid>
+    <category domain="http://modularsamples.com/taxonomy/term/19">pol</category>
+    </item>
+<item>
+  <title>Roland System 100 Construction Kit</title>
+  <link>http://modularsamples.com/roland-system-100-construction-kit</link>
+  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Roland System 100 Construction Kit&lt;/span&gt;
+&lt;div class="clearfix text-formatted field field-node--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;p&gt;A construction kit recorded with this Funky 70s semi-modular.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Tue, 12/17/2019 - 17:39&lt;/span&gt;
+&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-System-100-Construction-Kit/archive/master.zip"&gt;Patches&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="http://drupal.dd:8083/sites/drupal.dd/files/2020-01/Rolandsys100CKAudio.torrent"&gt;Audio (Bittorrent)&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-System-100-Construction-Kit"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;Patches&lt;/strong&gt;: 3&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Formats:&lt;/strong&gt; EXS24, Kontakt &amp; SFZ (partial)&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 14.2GB  &lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Misc: &lt;/strong&gt;Includes a Kontakt instrument &amp; several Logic multis with smart controls&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
+        &lt;img src="http://modularsamples.com/sites/default/files/2019-12/101.jpg" width="600" height="371" alt="101" typeof="foaf:Image" /&gt;
+&lt;/div&gt;
+    &lt;/figure&gt;&lt;/div&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-9755b420aea486d68f2ec4c7c4130fe50bfb377e66919989cc8cd9080ceeebf4"&gt;
+  
+    
+
+  
+  
+
+      &lt;div class="views-row"&gt;
+    &lt;script&gt;
+&lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
+
+var keys = new Tone.GrainPlayer({
+			"url" : "/presets//MetaSynth/1.mp3"
+	
+		}).connect(filter);
+					
+		document.querySelector("tone-oscilloscope").bind(keys);
+		document.querySelector("tone-grain-player").bind(keys);
+document.querySelector("tone-play-toggle").bind(keys);
+
+
+//--&gt;&lt;!]]&gt;
+&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  
+    &lt;nav class="pager pager--mini" role="navigation" aria-labelledby="pagination-heading"&gt;
+    &lt;h4 id="pagination-heading" class="pager__heading visually-hidden"&gt;Pagination&lt;/h4&gt;
+    &lt;ul class="pager__items js-pager__items"&gt;
+
+      
+              &lt;li class="pager__item is-active"&gt;
+          &lt;span class="pager__link pager__link--is-active"&gt;(Page 1)&lt;/span&gt;
+        &lt;/li&gt;
+      
+              &lt;li class="pager__item pager__item--next pager__item--text"&gt;
+          &lt;a href="http://modularsamples.com/rss.xml?page=1" class="pager__link" title="Go to next page" rel="next"&gt;
+            &lt;span class="visually-hidden"&gt;Next page&lt;/span&gt;
+            &lt;span aria-hidden="true"&gt;››&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+
+
+  
+  
+
+  
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="grid-patch"&gt;
+&lt;div class="grid-item2"&gt;
+&lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
+&lt;div class="dropdown-content"&gt;
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/101/file1.js');"&gt;1OSC&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/101/file2.js');"&gt;a-bass&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/101/file3.js');"&gt;Gentle Mmm&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/101/file4.js');;"&gt;Hog chord&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/101/file5.js');"&gt;Subby Tom&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/101/file6.js');"&gt;Syn Wave&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/101/file7.js');"&gt;Plucky Sqr&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/101/file8.js');"&gt;PWM Sweep&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/101/file9.js');"&gt;Random Love&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/101/file10.js');;"&gt;Weird Res&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="field field-node--field-file field-formatter-file-default field-name-field-file field-type-file field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;File&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;span class="file file--mime-application-x-bittorrent file--general"&gt; &lt;a href="http://modularsamples.com/sites/default/files/2020-01/Rolandsys100CKAudio.torrent" type="application/x-bittorrent; length=2078818"&gt;Rolandsys100CKAudio.torrent&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+</description>
+  <pubDate>Tue, 17 Dec 2019 17:39:19 +0000</pubDate>
+    <dc:creator>rick</dc:creator>
+    <guid isPermaLink="false">128 at http://modularsamples.com</guid>
+    <category domain="http://modularsamples.com/taxonomy/term/1">101</category>
+    </item>
+<item>
   <title>Roland JX-3P</title>
   <link>http://modularsamples.com/roland-jx-3p-0</link>
   <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Roland JX-3P&lt;/span&gt;
@@ -14,7 +348,7 @@
 &lt;/div&gt;
 &lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
 &lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Thu, 12/05/2019 - 20:53&lt;/span&gt;
-&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-JX3P-pt1/archive/master.zip"&gt;Zip pt1&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-JX3P-pt1"&gt;Git Repository pt1&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-JX3P-pt2/archive/master.zip"&gt;Zip pt2&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-JX3P-pt2"&gt;Git Repository pt2&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-JX3P-pt1/archive/master.zip"&gt;Zip pt1&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-JX3P-pt2/archive/master.zip"&gt;Zip pt2&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-JX3P-pt1"&gt;Git Repository pt1&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-JX3P-pt2"&gt;Git Repository pt2&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
 	&lt;li&gt;&lt;strong&gt;Patches&lt;/strong&gt;: 31&lt;/li&gt;
@@ -27,7 +361,7 @@
         &lt;img src="http://modularsamples.com/sites/default/files/2019-12/Roland-JX3P.jpg" width="1328" height="387" alt="jx3p" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-e8cef9262ec07f56e702f920238d8747e1a6c6317be602434794355d4c8a59dd"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-b3ca4323563da9544c5c5ddd8cb1a71b883ff718fefd86b4142fd89cce8889fb"&gt;
   
     
 
@@ -110,6 +444,209 @@ document.querySelector("tone-play-toggle").bind(keys);
     <category domain="http://modularsamples.com/taxonomy/term/11">jx3p</category>
     </item>
 <item>
+  <title>Oberheim Xpander Construction Kit</title>
+  <link>http://modularsamples.com/oberheim-xpander-construction-kit-0</link>
+  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Oberheim Xpander Construction Kit&lt;/span&gt;
+&lt;div class="clearfix text-formatted field field-node--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;p&gt;A large library of building blocks made with an Oberheim Xpander&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Sun, 12/01/2019 - 00:18&lt;/span&gt;
+&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://publicsamples.com/modularsamples/oberheim-xpander-construction-kit/-/archive/master/oberheim-xpander-construction-kit-master.zip"&gt;Patches&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="http://drupal.dd:8083/sites/drupal.dd/files/2020-01/XPsounds.torrent"&gt;Audio (Bittorrent)&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://publicsamples.com/modularsamples/oberheim-xpander-construction-kit"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;Patches&lt;/strong&gt;: 400+&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Formats:&lt;/strong&gt; EXS24 &amp; Kontakt &lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 50GB  &lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Misc: &lt;/strong&gt;100s of included presets. Logic Smart controls. Kontakt instruments. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
+        &lt;img src="http://modularsamples.com/sites/default/files/2019-12/Oberheim_Xpander_0.jpg" width="600" height="218" alt="Xpander" typeof="foaf:Image" /&gt;
+&lt;/div&gt;
+    &lt;/figure&gt;&lt;/div&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-9c4adbb31000b0f17514d1563a5cd672d13e8fe9db6fa0778f4ab4de67e9e2e4"&gt;
+  
+    
+
+  
+  
+
+      &lt;div class="views-row"&gt;
+    &lt;script&gt;
+&lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
+
+var keys = new Tone.GrainPlayer({
+			"url" : "/presets//MetaSynth/1.mp3"
+	
+		}).connect(filter);
+					
+		document.querySelector("tone-oscilloscope").bind(keys);
+		document.querySelector("tone-grain-player").bind(keys);
+document.querySelector("tone-play-toggle").bind(keys);
+
+
+//--&gt;&lt;!]]&gt;
+&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  
+    &lt;nav class="pager pager--mini" role="navigation" aria-labelledby="pagination-heading"&gt;
+    &lt;h4 id="pagination-heading" class="pager__heading visually-hidden"&gt;Pagination&lt;/h4&gt;
+    &lt;ul class="pager__items js-pager__items"&gt;
+
+      
+              &lt;li class="pager__item is-active"&gt;
+          &lt;span class="pager__link pager__link--is-active"&gt;(Page 1)&lt;/span&gt;
+        &lt;/li&gt;
+      
+              &lt;li class="pager__item pager__item--next pager__item--text"&gt;
+          &lt;a href="http://modularsamples.com/rss.xml?page=1" class="pager__link" title="Go to next page" rel="next"&gt;
+            &lt;span class="visually-hidden"&gt;Next page&lt;/span&gt;
+            &lt;span aria-hidden="true"&gt;››&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+
+
+  
+  
+
+  
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
+&lt;div class="dropdown-content"&gt;
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpander/file1.js');"&gt;Another Time&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpander/file2.js');"&gt;Boat&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpander/file3.js');"&gt;FMBell&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpander/file4.js');;"&gt;Leaf Blower&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpander/file5.js');"&gt;Never this High&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpander/file6.js');"&gt;Romance&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpander/file7.js');"&gt;Telapia&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpander/file8.js');"&gt;Tube String&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpander/file9.js');"&gt;Videodrome&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpander/file10.js');"&gt;Vox Lead&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpander/file11.js');"&gt;Warm Min 7&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpander/file12.js');"&gt;Weeper&lt;/h3&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="field field-node--field-file field-formatter-file-default field-name-field-file field-type-file field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;File&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;span class="file file--mime-application-x-bittorrent file--general"&gt; &lt;a href="http://modularsamples.com/sites/default/files/2020-01/XPsounds.torrent" type="application/x-bittorrent; length=6971806"&gt;XPsounds.torrent&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+</description>
+  <pubDate>Sun, 01 Dec 2019 00:18:56 +0000</pubDate>
+    <dc:creator>rick</dc:creator>
+    <guid isPermaLink="false">112 at http://modularsamples.com</guid>
+    <category domain="http://modularsamples.com/taxonomy/term/22">xp</category>
+    </item>
+<item>
+  <title>Modular Hits</title>
+  <link>http://modularsamples.com/modular-hits-0</link>
+  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Modular Hits&lt;/span&gt;
+&lt;div class="clearfix text-formatted field field-node--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;p&gt;One shots and drum sounds recorded with small modular system.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Tue, 12/17/2019 - 02:01&lt;/span&gt;
+&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Modular-Hits/archive/master.zip"&gt;Zip&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Modular-Hits/"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
+	&lt;li&gt;&lt;b&gt;Files: &lt;/b&gt;474&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Formats:&lt;/strong&gt; AIF &amp; WAV  &lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 94mb  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
+        &lt;img src="http://modularsamples.com/sites/default/files/2019-12/mmm.jpg" width="456" height="187" alt="braids" typeof="foaf:Image" /&gt;
+&lt;/div&gt;
+    &lt;/figure&gt;&lt;/div&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-2fd65a92a147e8568d96809cbe40c48b3bdd8977ab68af47a12d9432a13d9bc3"&gt;
+  
+    
+
+  
+  
+
+      &lt;div class="views-row"&gt;
+    &lt;script&gt;
+&lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
+
+var keys = new Tone.GrainPlayer({
+			"url" : "/presets//MetaSynth/1.mp3"
+	
+		}).connect(filter);
+					
+		document.querySelector("tone-oscilloscope").bind(keys);
+		document.querySelector("tone-grain-player").bind(keys);
+document.querySelector("tone-play-toggle").bind(keys);
+
+
+//--&gt;&lt;!]]&gt;
+&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  
+    &lt;nav class="pager pager--mini" role="navigation" aria-labelledby="pagination-heading"&gt;
+    &lt;h4 id="pagination-heading" class="pager__heading visually-hidden"&gt;Pagination&lt;/h4&gt;
+    &lt;ul class="pager__items js-pager__items"&gt;
+
+      
+              &lt;li class="pager__item is-active"&gt;
+          &lt;span class="pager__link pager__link--is-active"&gt;(Page 1)&lt;/span&gt;
+        &lt;/li&gt;
+      
+              &lt;li class="pager__item pager__item--next pager__item--text"&gt;
+          &lt;a href="http://modularsamples.com/rss.xml?page=1" class="pager__link" title="Go to next page" rel="next"&gt;
+            &lt;span class="visually-hidden"&gt;Next page&lt;/span&gt;
+            &lt;span aria-hidden="true"&gt;››&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+
+
+  
+  
+
+  
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
+&lt;div class="dropdown-content"&gt;
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/modhits/file1.js');;"&gt;Kit 1&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/modhits/file2.js');"&gt;Kit 2&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/modhits/file3.js');"&gt;Kit 3&lt;/h3&gt;
+
+&lt;h3 onclick="clear(); stop(); loadJS('/presets/modhits/file4.js');"&gt;Kit 4&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+</description>
+  <pubDate>Tue, 17 Dec 2019 02:01:27 +0000</pubDate>
+    <dc:creator>rick</dc:creator>
+    <guid isPermaLink="false">124 at http://modularsamples.com</guid>
+    <category domain="http://modularsamples.com/taxonomy/term/16">modhits</category>
+    </item>
+<item>
   <title>Modular</title>
   <link>http://modularsamples.com/modular-0</link>
   <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Modular&lt;/span&gt;
@@ -130,7 +667,7 @@ document.querySelector("tone-play-toggle").bind(keys);
         &lt;img src="http://modularsamples.com/sites/default/files/2019-12/mod.jpg" width="600" height="372" alt="modular" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-9053d6df8033d7192829d138fefcefe87eb49c344ec17787d95fe34a560dabb3"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-b3c87bdf2e197434c77b567b7059d0643fa70078b86eecd87ba1531f7d69677a"&gt;
   
     
 
@@ -249,7 +786,7 @@ document.querySelector("tone-play-toggle").bind(keys);
         &lt;img src="http://modularsamples.com/sites/default/files/2019-12/esq1.jpg" width="600" height="372" alt="Ensoniq ESQ1" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-3ce5e902fa6a5d03129542928e301623bd4a02d0cd0c017c61199ed7eae34fcc"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-6d136d636774c3a754cef669a4e2d576acd277539ee5b480927836009728d55e"&gt;
   
     
 
@@ -353,7 +890,7 @@ document.querySelector("tone-play-toggle").bind(keys);
         &lt;img src="http://modularsamples.com/sites/default/files/2019-12/Roland_JX-8P_Small_0.jpg" width="400" height="162" alt="jx8p" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-3632e8cafeda23c626fa52a85c48a084e8c7f7ff4c66afede2c7d247c7548096"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-7f688a3d5c46e01713e8502f5f61b19abbe5be0f3492a4b77ed4095d239bc1d9"&gt;
   
     
 
@@ -451,7 +988,7 @@ document.querySelector("tone-play-toggle").bind(keys);
         &lt;img src="http://modularsamples.com/sites/default/files/2019-12/mp.jpg" width="600" height="373" alt="monopoly" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-5dce2edf2d715e15af39d343ca8f87acef39595782dc25c801f95ef9f35526b4"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-903658473341e824828bcf5e5a1fa14fd84520f5aa0c95dec334439452d52a8d"&gt;
   
     
 
@@ -545,1293 +1082,6 @@ document.querySelector("tone-play-toggle").bind(keys);
     <dc:creator>rick</dc:creator>
     <guid isPermaLink="false">127 at http://modularsamples.com</guid>
     <category domain="http://modularsamples.com/taxonomy/term/18">monopoly</category>
-    </item>
-<item>
-  <title>Akai AX-80</title>
-  <link>http://modularsamples.com/akai-ax-80</link>
-  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Akai AX-80&lt;/span&gt;
-&lt;div class="clearfix text-formatted field field-node--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;p&gt;Aggressive sounding 80's, CEM polysynth&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Fri, 11/29/2019 - 18:46&lt;/span&gt;
-&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Akai-AX80-pt1/archive/master.zip"&gt;Akai AX80 pt1&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Akai-AX80-pt2/archive/master.zip"&gt;Akai AX80 pt2&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
-	&lt;li&gt;&lt;strong&gt;Patches&lt;/strong&gt;: 34&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Formats:&lt;/strong&gt; EXS24, Kontakt &amp; SFZ  &lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 2.5GB  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
-        &lt;img src="http://modularsamples.com/sites/default/files/2019-12/akai.jpg" width="600" height="377" alt="AX80" typeof="foaf:Image" /&gt;
-&lt;/div&gt;
-    &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-c7717cd08fecb60879620b2065e7b284c64f968a3e9dc8db03960aa21753e1cb"&gt;
-  
-    
-
-  
-  
-
-      &lt;div class="views-row"&gt;
-    &lt;script&gt;
-&lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
-
-var keys = new Tone.GrainPlayer({
-			"url" : "/presets//MetaSynth/1.mp3"
-	
-		}).connect(filter);
-					
-		document.querySelector("tone-oscilloscope").bind(keys);
-		document.querySelector("tone-grain-player").bind(keys);
-document.querySelector("tone-play-toggle").bind(keys);
-
-
-//--&gt;&lt;!]]&gt;
-&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;
-  &lt;/div&gt;
-
-  
-    &lt;nav class="pager pager--mini" role="navigation" aria-labelledby="pagination-heading"&gt;
-    &lt;h4 id="pagination-heading" class="pager__heading visually-hidden"&gt;Pagination&lt;/h4&gt;
-    &lt;ul class="pager__items js-pager__items"&gt;
-
-      
-              &lt;li class="pager__item is-active"&gt;
-          &lt;span class="pager__link pager__link--is-active"&gt;(Page 1)&lt;/span&gt;
-        &lt;/li&gt;
-      
-              &lt;li class="pager__item pager__item--next pager__item--text"&gt;
-          &lt;a href="http://modularsamples.com/rss.xml?page=1" class="pager__link" title="Go to next page" rel="next"&gt;
-            &lt;span class="visually-hidden"&gt;Next page&lt;/span&gt;
-            &lt;span aria-hidden="true"&gt;››&lt;/span&gt;
-          &lt;/a&gt;
-        &lt;/li&gt;
-      
-    &lt;/ul&gt;
-  &lt;/nav&gt;
-
-
-  
-  
-
-  
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
-&lt;div class="dropdown-content"&gt;
-
-&lt;p onclick="clear(); stop(); loadJS('/presets/ax80/file2.js');"&gt;Broken Strings&lt;/p&gt;
-
-&lt;p onclick="clear(); stop(); loadJS('/presets/ax80/file3.js');"&gt;CrackBass&lt;/p&gt;
-
-&lt;p onclick="clear(); stop(); loadJS('/presets/ax80/file4.js');;"&gt;Diplodocus&lt;/p&gt;
-
-&lt;p onclick="clear(); stop(); loadJS('/presets/ax80/file5.js');"&gt;Easy Pluck&lt;/p&gt;
-
-&lt;p onclick="clear(); stop(); loadJS('/presets/ax80/file6.js');"&gt;Gentle&lt;/p&gt;
-
-&lt;p onclick="clear(); stop(); loadJS('/presets/ax80/file7.js');"&gt;Grit Lead&lt;/p&gt;
-
-&lt;p onclick="clear(); stop(); loadJS('/presets/ax80/file8.js');"&gt;Olsko&lt;/p&gt;
-
-&lt;p onclick="clear(); stop(); loadJS('/presets/ax80/file9.js');"&gt;Odd Piano&lt;/p&gt;
-
-&lt;p onclick="clear(); stop(); loadJS('/presets/ax80/file10.js');"&gt;Bender&lt;/p&gt;
-
-&lt;p onclick="clear(); stop(); loadJS('/presets/ax80/file11.js');"&gt;Ring Dinger&lt;/p&gt;
-
-&lt;p onclick="clear(); stop(); loadJS('/presets/ax80/file12.js');"&gt;Simple Rise&lt;/p&gt;
-
-&lt;p onclick="clear(); stop(); loadJS('/presets/ax80/file13.js');"&gt;simppleton&lt;/p&gt;
-
-&lt;p onclick="clear(); stop(); loadJS('/presets/ax80/file14.js');"&gt;Solids&lt;/p&gt;
-
-&lt;p onclick="clear(); stop(); loadJS('/presets/ax80/file15.js');"&gt;Spacy Strings&lt;/p&gt;
-
-&lt;p onclick="clear(); stop(); loadJS('/presets/ax80/file16.js');"&gt;SQbass&lt;/p&gt;
-
-&lt;p onclick="clear(); stop(); loadJS('/presets/ax80/file17.js');"&gt;SyncBalls&lt;/p&gt;
-
-&lt;p onclick="clear(); stop(); loadJS('/presets/ax80/file18.js');"&gt;Cutting&lt;/p&gt;
-
-&lt;p onclick="clear(); stop(); loadJS('/presets/ax80/file19.js');"&gt;Wise old pad&lt;/p&gt;
-
-&lt;p onclick="clear(); stop(); loadJS('/presets/ax80/file20.js');"&gt;Wobble Sq&lt;/p&gt;
-
-&lt;p onclick="clear(); stop(); loadJS('/presets/ax80/file21.js');"&gt;Woderment&lt;/p&gt;
-
-&lt;p onclick="clear(); stop(); loadJS('/presets/ax80/file22.js');"&gt;Working Strings&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-</description>
-  <pubDate>Fri, 29 Nov 2019 18:46:25 +0000</pubDate>
-    <dc:creator>rick</dc:creator>
-    <guid isPermaLink="false">99 at http://modularsamples.com</guid>
-    <category domain="http://modularsamples.com/taxonomy/term/2">ax80</category>
-    </item>
-<item>
-  <title>Korg DW-8000</title>
-  <link>http://modularsamples.com/korg-dw-8000</link>
-  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Korg DW-8000&lt;/span&gt;
-&lt;div class="clearfix text-formatted field field-node--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;p&gt;A mid 80s analogue/digital hybrid. &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Sat, 11/30/2019 - 00:40&lt;/span&gt;
-&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Korg-DW-8000-pt1/archive/master.zip"&gt;Korg DW-8000 pt1&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Korg-DW-8000-pt2"&gt;Korg DW-8000 pt2&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
-	&lt;li&gt;&lt;strong&gt;Patches&lt;/strong&gt;: 15&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Formats:&lt;/strong&gt; Kontakt  &lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 2GB  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
-        &lt;img src="http://modularsamples.com/sites/default/files/2019-12/dw.jpg" width="600" height="372" alt="DW800" typeof="foaf:Image" /&gt;
-&lt;/div&gt;
-    &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-54d1de39c94c91cf90bd3242e3fd1ca34844bb1aa392189c4d3015f9203bd219"&gt;
-  
-    
-
-  
-  
-
-      &lt;div class="views-row"&gt;
-    &lt;script&gt;
-&lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
-
-var keys = new Tone.GrainPlayer({
-			"url" : "/presets//MetaSynth/1.mp3"
-	
-		}).connect(filter);
-					
-		document.querySelector("tone-oscilloscope").bind(keys);
-		document.querySelector("tone-grain-player").bind(keys);
-document.querySelector("tone-play-toggle").bind(keys);
-
-
-//--&gt;&lt;!]]&gt;
-&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;
-  &lt;/div&gt;
-
-  
-    &lt;nav class="pager pager--mini" role="navigation" aria-labelledby="pagination-heading"&gt;
-    &lt;h4 id="pagination-heading" class="pager__heading visually-hidden"&gt;Pagination&lt;/h4&gt;
-    &lt;ul class="pager__items js-pager__items"&gt;
-
-      
-              &lt;li class="pager__item is-active"&gt;
-          &lt;span class="pager__link pager__link--is-active"&gt;(Page 1)&lt;/span&gt;
-        &lt;/li&gt;
-      
-              &lt;li class="pager__item pager__item--next pager__item--text"&gt;
-          &lt;a href="http://modularsamples.com/rss.xml?page=1" class="pager__link" title="Go to next page" rel="next"&gt;
-            &lt;span class="visually-hidden"&gt;Next page&lt;/span&gt;
-            &lt;span aria-hidden="true"&gt;››&lt;/span&gt;
-          &lt;/a&gt;
-        &lt;/li&gt;
-      
-    &lt;/ul&gt;
-  &lt;/nav&gt;
-
-
-  
-  
-
-  
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
-&lt;div class="dropdown-content"&gt;
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/dw8000/file1.js');"&gt;Drug Waves&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/dw8000/file2.js');"&gt;Eggcelent&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/dw8000/file3.js');"&gt;Electrolites&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/dw8000/file4.js');;"&gt;Mr Clicky&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/dw8000/file5.js');"&gt;Pulser&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/dw8000/file6.js');"&gt;Spunky Organs&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/dw8000/file7.js');"&gt;Swirly Whirl&lt;/h3&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-</description>
-  <pubDate>Sat, 30 Nov 2019 00:40:41 +0000</pubDate>
-    <dc:creator>rick</dc:creator>
-    <guid isPermaLink="false">110 at http://modularsamples.com</guid>
-    <category domain="http://modularsamples.com/taxonomy/term/7">dw8000</category>
-    </item>
-<item>
-  <title>Metasynth Loops</title>
-  <link>http://modularsamples.com/MetasynthLoops</link>
-  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Metasynth Loops&lt;/span&gt;
-&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Thu, 12/19/2019 - 11:05&lt;/span&gt;
-  &lt;div class="atl atl--layout-onecol layout layout--onecol"&gt;
-    &lt;div class="layout__region layout__region--content"&gt;
-      &lt;div data-layout-content-preview-placeholder-label=""Body" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodeslgrainbody" id="field-blocknodeslgrainbody"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-node--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;p&gt;&lt;a href="http://www.uisoftware.com/MetaSynth/"&gt;http://www.uisoftware.com/MetaSynth/&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div data-layout-content-preview-placeholder-label=""Downloads" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodeslgrainfield-downloads" id="field-blocknodeslgrainfield-downloads"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Metasynth-Loops/archive/master.zip"&gt;Zip&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Metasynth-Loops"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div data-layout-content-preview-placeholder-label=""Library Info" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodeslgrainfield-library-info" id="field-blocknodeslgrainfield-library-info"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
-	&lt;li&gt;&lt;strong&gt;Loops&lt;/strong&gt;: 164&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Formats:&lt;/strong&gt; WAV  &lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 140mb  &lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Misc: &lt;/strong&gt;Organised by BPM&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div data-layout-content-preview-placeholder-label=""image" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodeslgrainfield-pic" id="field-blocknodeslgrainfield-pic"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
-        &lt;img src="http://modularsamples.com/sites/default/files/2019-12/meta_0.jpg" width="600" height="372" alt="metasynth" typeof="foaf:Image" /&gt;
-&lt;/div&gt;
-    &lt;/figure&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div data-layout-content-preview-placeholder-label=""Links" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--extra-field-block-nodeslgrainlinks" id="extra-field-blocknodeslgrainlinks"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div data-layout-content-preview-placeholder-label=""Controls" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodeslgrainfield-controls" id="field-blocknodeslgrainfield-controls"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-node--field-controls field-formatter-text-default field-name-field-controls field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Controls&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;/div&gt;&lt;div data-at-region="3" data-at-block-count="5" class="l-r region pr-main__sidebar-second" id="rid-sidebar-second"&gt;&lt;div id="block-controls" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-ea342fb5-7779-4f05-870e-f07f5466ac32 has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="block-controls-title"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;h2 class="block__title" id="block-controls-title"&gt;&lt;span&gt;Controls&lt;/span&gt;&lt;/h2&gt;&lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="grid-env"&gt;
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Vol&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Atk&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Rel&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Curve&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="vol"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="attack"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="release"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="curve"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="block-autofilter" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-31bbdb58-9678-4c64-8e29-8c18209150cb has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="block-autofilter-title"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;h2 class="block__title" id="block-autofilter-title"&gt;&lt;span&gt;AutoFilter&lt;/span&gt;&lt;/h2&gt;&lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="grid-filter"&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Wet&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Cut&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Res&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Dpth&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Spd&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="fwet"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="baseFrequency"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="Q"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="depth"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="ffrequency"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="block-chorus" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-426eca68-e6ea-40de-9c8a-60eb2565a5ea has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="block-chorus-title"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;h2 class="block__title" id="block-chorus-title"&gt;&lt;span&gt;Chorus&lt;/span&gt;&lt;/h2&gt;&lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="grid-env"&gt;
-	
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Wet&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Time&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Depth&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Speed&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="cwet"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="ctime"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="cdepth"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="cfreq"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="block-delay" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-96de5361-cfee-4c6a-be06-c124cef27d7b has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="block-delay-title"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;h2 class="block__title" id="block-delay-title"&gt;&lt;span&gt;Delay&lt;/span&gt;&lt;/h2&gt;&lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="grid-delay"&gt;
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Wet&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Time&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Feed&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="dwet"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="dtime"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="dfeedback"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="block-reverb" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-2133502b-e557-48a4-bafe-7e3c8b5c4503 has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="block-reverb-title"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;h2 class="block__title" id="block-reverb-title"&gt;&lt;span&gt;Reverb&lt;/span&gt;&lt;/h2&gt;&lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="grid-reverb"&gt;
-	
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Wet&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Size&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Damp&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="rwet"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="roomSize"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="dampening"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-
-&lt;div data-layout-content-preview-placeholder-label=""Grid" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodeslgrainfield-grid" id="field-blocknodeslgrainfield-grid"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-node--field-grid field-formatter-text-default field-name-field-grid field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Grid&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div id="block-seq" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-a2490e01-f952-4735-ba3b-4805545e142d block--type-basic block--view-mode-full"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;
-&lt;tone-transport&gt;&lt;/tone-transport&gt;
-
-&lt;tone-step-sequencer id="seq1"&gt;&lt;/tone-step-sequencer&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div data-layout-content-preview-placeholder-label=""Presets" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodeslgrainfield-spreset" id="field-blocknodeslgrainfield-spreset"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-node--field-spreset field-formatter-text-default field-name-field-spreset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Presets&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="grid-patch"&gt;
-&lt;div class="grid-item2"&gt;
-&lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
-&lt;div class="dropdown-content"&gt;
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file1.js');"&gt;1&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file2.js');"&gt;2&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file3.js');"&gt;2softbeat120&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file4.js');"&gt;3&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file5.js');"&gt;75a&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file6.js');"&gt;125C&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file7.js');"&gt;basher120&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file8.js');"&gt;Bt80&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file9.js');"&gt;clangerdebate&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file10.js');"&gt;Fall175&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file11.js');"&gt;grace&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file12.js');"&gt;grace2&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file13.js');"&gt;Space&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file14.js');"&gt;Lambs90&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file15.js');"&gt;m90d&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file16.js');"&gt;modloop110low&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file17.js');"&gt;moonpad&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file18.js');"&gt;mountup&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file19.js');"&gt;MuhTuning&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file20.js');"&gt;multibass120&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file21.js');"&gt;nicely120&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file22.js');"&gt;py75&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file23.js');"&gt;softpad&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file24.js');"&gt;Spiffy&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file25.js');"&gt;swan130&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file26.js');"&gt;sweet115&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file27.js');"&gt;t90a&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file28.js');"&gt;techblur130&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file29.js');"&gt;tinkle1&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file30.js');"&gt;troublement60&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file31.js');"&gt;UmbongoAcid&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file32.js');"&gt;up&amp;up&lt;/p&gt;
-
-&lt;p onclick="stop(); loadJS('https://modularsamples.com/presets/MetaSynth/file33.js');"&gt;zxdrone&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-    
-  
-</description>
-  <pubDate>Thu, 19 Dec 2019 11:05:02 +0000</pubDate>
-    <dc:creator>rick</dc:creator>
-    <guid isPermaLink="false">418 at http://modularsamples.com</guid>
-    <category domain="http://modularsamples.com/taxonomy/term/5">meta</category>
-    <category domain="http://modularsamples.com/taxonomy/term/5">meta</category>
-    </item>
-<item>
-  <title>Xpander Loops</title>
-  <link>http://modularsamples.com/node/434</link>
-  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Xpander Loops&lt;/span&gt;
-&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Thu, 12/19/2019 - 11:33&lt;/span&gt;
-  &lt;div class="atl atl--layout-onecol layout layout--onecol"&gt;
-    &lt;div class="layout__region layout__region--content"&gt;
-      &lt;div data-layout-content-preview-placeholder-label=""Body" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodeslgrainbody" id="field-blocknodeslgrainbody"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-node--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;p&gt;Loops created with the &lt;a href="http://drupal.dd:8083/oberheim-xpander-construction-kit"&gt;Oberheim Xpander Construction Kit&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div data-layout-content-preview-placeholder-label=""Downloads" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodeslgrainfield-downloads" id="field-blocknodeslgrainfield-downloads"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Xpander-Loops/archive/master.zip"&gt;Zip&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Xpander-Loops"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div data-layout-content-preview-placeholder-label=""Library Info" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodeslgrainfield-library-info" id="field-blocknodeslgrainfield-library-info"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
-	&lt;li&gt;&lt;strong&gt;Patches&lt;/strong&gt;: 147&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Formats:&lt;/strong&gt; WAV  &lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 700mb  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div data-layout-content-preview-placeholder-label=""image" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodeslgrainfield-pic" id="field-blocknodeslgrainfield-pic"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
-        &lt;img src="http://modularsamples.com/sites/default/files/2019-12/Oberheim_Xpander_1_0.jpg" width="600" height="218" alt="xpander" typeof="foaf:Image" /&gt;
-&lt;/div&gt;
-    &lt;/figure&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div data-layout-content-preview-placeholder-label=""Links" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--extra-field-block-nodeslgrainlinks" id="extra-field-blocknodeslgrainlinks"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div data-layout-content-preview-placeholder-label=""Controls" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodeslgrainfield-controls" id="field-blocknodeslgrainfield-controls"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-node--field-controls field-formatter-text-default field-name-field-controls field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Controls&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;/div&gt;&lt;div data-at-region="3" data-at-block-count="5" class="l-r region pr-main__sidebar-second" id="rid-sidebar-second"&gt;&lt;div id="block-controls" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-ea342fb5-7779-4f05-870e-f07f5466ac32 has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="block-controls-title"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;h2 class="block__title" id="block-controls-title"&gt;&lt;span&gt;Controls&lt;/span&gt;&lt;/h2&gt;&lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="grid-env"&gt;
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Vol&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Atk&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Rel&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Curve&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="vol"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="attack"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="release"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="curve"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="block-autofilter" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-31bbdb58-9678-4c64-8e29-8c18209150cb has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="block-autofilter-title"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;h2 class="block__title" id="block-autofilter-title"&gt;&lt;span&gt;AutoFilter&lt;/span&gt;&lt;/h2&gt;&lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="grid-filter"&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Wet&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Cut&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Res&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Dpth&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Spd&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="fwet"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="baseFrequency"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="Q"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="depth"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="ffrequency"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="block-chorus" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-426eca68-e6ea-40de-9c8a-60eb2565a5ea has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="block-chorus-title"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;h2 class="block__title" id="block-chorus-title"&gt;&lt;span&gt;Chorus&lt;/span&gt;&lt;/h2&gt;&lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="grid-env"&gt;
-	
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Wet&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Time&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Depth&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Speed&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="cwet"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="ctime"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="cdepth"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="cfreq"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="block-delay" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-96de5361-cfee-4c6a-be06-c124cef27d7b has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="block-delay-title"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;h2 class="block__title" id="block-delay-title"&gt;&lt;span&gt;Delay&lt;/span&gt;&lt;/h2&gt;&lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="grid-delay"&gt;
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Wet&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Time&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Feed&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="dwet"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="dtime"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="dfeedback"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="block-reverb" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-2133502b-e557-48a4-bafe-7e3c8b5c4503 has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="block-reverb-title"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;h2 class="block__title" id="block-reverb-title"&gt;&lt;span&gt;Reverb&lt;/span&gt;&lt;/h2&gt;&lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="grid-reverb"&gt;
-	
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Wet&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Size&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Damp&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="rwet"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="roomSize"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="dampening"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-
-&lt;div data-layout-content-preview-placeholder-label=""Grid" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodeslgrainfield-grid" id="field-blocknodeslgrainfield-grid"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-node--field-grid field-formatter-text-default field-name-field-grid field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Grid&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div id="block-seq" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-a2490e01-f952-4735-ba3b-4805545e142d block--type-basic block--view-mode-full"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;
-&lt;tone-transport&gt;&lt;/tone-transport&gt;
-
-&lt;tone-step-sequencer id="seq1"&gt;&lt;/tone-step-sequencer&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div data-layout-content-preview-placeholder-label=""Presets" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodeslgrainfield-spreset" id="field-blocknodeslgrainfield-spreset"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-node--field-spreset field-formatter-text-default field-name-field-spreset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Presets&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="grid-patch"&gt;
-&lt;div class="grid-item2"&gt;
-&lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
-&lt;div class="dropdown-content"&gt;
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file1.js');"&gt;Birdy&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file2.js');"&gt;Bloop&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file3.js');"&gt;BP Nightmare&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file4.js');;"&gt;Canal&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file5.js');"&gt;Crack House&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file6.js');"&gt;Daft&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file7.js');"&gt;deep bleeps&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file8.js');"&gt;Croco&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file9.js');"&gt;Diners&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file10.js');"&gt;Dragger&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file11.js');"&gt;FAST PWM&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file12.js');"&gt;feed&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file13.js');"&gt;Gents&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file14.js');"&gt;Gigamoth&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file15.js');"&gt;Gorgon&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file16.js');;"&gt;Greatest&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file17.js');"&gt;Grumble&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file18.js');"&gt;Hell 4&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file19.js');"&gt;Hey consumer&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file20.js');"&gt;Leaf Blower Stack&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file21.js');"&gt;Little Crd&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file22.js');"&gt;Look&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file23.js');"&gt;Lucid&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file24.js');"&gt;Make&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file25.js');"&gt;MEMEMEEMEME&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file26.js');"&gt;Micro&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file27.js');"&gt;Minor Fireworks&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file28.js');;"&gt;multi&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file29.js');"&gt;Noisette&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file30.js');"&gt;Noisy Bass&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file31.js');"&gt;Pluk&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file32.js');"&gt;really&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file33.js');"&gt;REST&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file34.js');"&gt;Round 2 Sharp&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file35.js');"&gt;Shark&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file36.js');"&gt;Simple Mod&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file37.js');"&gt;Snakey&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file38.js');"&gt;SQRDance&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file39.js');"&gt;Stack&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file40.js');;"&gt;The word&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file41.js');"&gt;thang&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file42.js');"&gt;Trex&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file43.js');"&gt;UniSqr&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/xpanderloops/file44.js');"&gt;Wobbler&lt;/h3&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-    
-  
-</description>
-  <pubDate>Thu, 19 Dec 2019 11:33:48 +0000</pubDate>
-    <dc:creator>rick</dc:creator>
-    <guid isPermaLink="false">434 at http://modularsamples.com</guid>
-    <category domain="http://modularsamples.com/taxonomy/term/30">xploops</category>
-    <category domain="http://modularsamples.com/taxonomy/term/30">xploops</category>
-    </item>
-<item>
-  <title>Drones</title>
-  <link>http://modularsamples.com/node/435</link>
-  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Drones&lt;/span&gt;
-&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Thu, 12/19/2019 - 11:38&lt;/span&gt;
-  &lt;div class="atl atl--layout-onecol layout layout--onecol"&gt;
-    &lt;div class="layout__region layout__region--content"&gt;
-      &lt;div data-layout-content-preview-placeholder-label=""Body" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodeslgrainbody" id="field-blocknodeslgrainbody"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-node--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;p&gt;On and on and on and on and on and on and on and on and on and on and on and on and on &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div data-layout-content-preview-placeholder-label=""Downloads" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodeslgrainfield-downloads" id="field-blocknodeslgrainfield-downloads"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Drones/archive/master.zip"&gt;zip&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Drones"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div data-layout-content-preview-placeholder-label=""Library Info" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodeslgrainfield-library-info" id="field-blocknodeslgrainfield-library-info"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
-	&lt;li&gt;&lt;strong&gt;Patches&lt;/strong&gt;: 44&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Formats:&lt;/strong&gt; Kontakt &amp; Alchemy  &lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 1.5GB  &lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Misc: &lt;/strong&gt;Ongoing Project&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div data-layout-content-preview-placeholder-label=""image" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodeslgrainfield-pic" id="field-blocknodeslgrainfield-pic"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
-        &lt;img src="http://modularsamples.com/sites/default/files/2019-12/DJI_Phantom_1_1530564a_0.jpg" width="496" height="372" alt="drone" typeof="foaf:Image" /&gt;
-&lt;/div&gt;
-    &lt;/figure&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div data-layout-content-preview-placeholder-label=""Links" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--extra-field-block-nodeslgrainlinks" id="extra-field-blocknodeslgrainlinks"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div data-layout-content-preview-placeholder-label=""Controls" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodeslgrainfield-controls" id="field-blocknodeslgrainfield-controls"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-node--field-controls field-formatter-text-default field-name-field-controls field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Controls&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;/div&gt;&lt;div data-at-region="3" data-at-block-count="5" class="l-r region pr-main__sidebar-second" id="rid-sidebar-second"&gt;&lt;div id="block-controls" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-ea342fb5-7779-4f05-870e-f07f5466ac32 has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="block-controls-title"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;h2 class="block__title" id="block-controls-title"&gt;&lt;span&gt;Controls&lt;/span&gt;&lt;/h2&gt;&lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="grid-env"&gt;
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Vol&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Atk&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Rel&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Curve&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="vol"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="attack"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="release"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="curve"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="block-autofilter" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-31bbdb58-9678-4c64-8e29-8c18209150cb has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="block-autofilter-title"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;h2 class="block__title" id="block-autofilter-title"&gt;&lt;span&gt;AutoFilter&lt;/span&gt;&lt;/h2&gt;&lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="grid-filter"&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Wet&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Cut&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Res&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Dpth&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Spd&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="fwet"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="baseFrequency"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="Q"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="depth"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="ffrequency"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="block-chorus" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-426eca68-e6ea-40de-9c8a-60eb2565a5ea has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="block-chorus-title"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;h2 class="block__title" id="block-chorus-title"&gt;&lt;span&gt;Chorus&lt;/span&gt;&lt;/h2&gt;&lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="grid-env"&gt;
-	
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Wet&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Time&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Depth&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Speed&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="cwet"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="ctime"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="cdepth"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="cfreq"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="block-delay" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-96de5361-cfee-4c6a-be06-c124cef27d7b has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="block-delay-title"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;h2 class="block__title" id="block-delay-title"&gt;&lt;span&gt;Delay&lt;/span&gt;&lt;/h2&gt;&lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="grid-delay"&gt;
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Wet&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Time&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Feed&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="dwet"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="dtime"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="dfeedback"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="block-reverb" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-2133502b-e557-48a4-bafe-7e3c8b5c4503 has-title block--type-basic block--view-mode-full" role="region" aria-labelledby="block-reverb-title"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;h2 class="block__title" id="block-reverb-title"&gt;&lt;span&gt;Reverb&lt;/span&gt;&lt;/h2&gt;&lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="grid-reverb"&gt;
-	
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Wet&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Size&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;p&gt;Damp&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="rwet"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="roomSize"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;div id="dampening"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-
-&lt;div data-layout-content-preview-placeholder-label=""Grid" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodeslgrainfield-grid" id="field-blocknodeslgrainfield-grid"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-node--field-grid field-formatter-text-default field-name-field-grid field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Grid&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div id="block-seq" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-a2490e01-f952-4735-ba3b-4805545e142d block--type-basic block--view-mode-full"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;
-&lt;tone-transport&gt;&lt;/tone-transport&gt;
-
-&lt;tone-step-sequencer id="seq1"&gt;&lt;/tone-step-sequencer&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div data-layout-content-preview-placeholder-label=""Presets" field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodeslgrainfield-spreset" id="field-blocknodeslgrainfield-spreset"&gt;
-  &lt;div class="block__inner"&gt;
-
-    &lt;div class="block__content"&gt;&lt;div class="clearfix text-formatted field field-node--field-spreset field-formatter-text-default field-name-field-spreset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Presets&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="grid-patch"&gt;
-&lt;div class="grid-item2"&gt;
-&lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
-&lt;div class="dropdown-content"&gt;
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/drones/file1.js');"&gt;Listen&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/drones/file2.js');"&gt;A4 Mellow Stretch&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/drones/file3.js');"&gt;ACUI&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/drones/file4.js');;"&gt;AIR&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/drones/file5.js');"&gt;ALL&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/drones/file6.js');"&gt;BANGER&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/drones/file7.js');"&gt;Chim3&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/drones/file8.js');"&gt;Kite Down&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/drones/file9.js');"&gt;Kite Up&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/drones/file10.js');"&gt;EFX Drone&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/drones/file11.js');"&gt;Fast Fluff&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/drones/file12.js');"&gt;MIGHT&lt;/h3&gt;
-
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/drones/file13.js');"&gt;Shiv3&lt;/h3&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-    
-  
-</description>
-  <pubDate>Thu, 19 Dec 2019 11:38:06 +0000</pubDate>
-    <dc:creator>rick</dc:creator>
-    <guid isPermaLink="false">435 at http://modularsamples.com</guid>
-    <category domain="http://modularsamples.com/taxonomy/term/6">drones</category>
-    <category domain="http://modularsamples.com/taxonomy/term/6">drones</category>
     </item>
 
   </channel>
