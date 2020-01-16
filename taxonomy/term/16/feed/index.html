@@ -242,7 +242,7 @@ var keys = new Tone.Sampler({
         &lt;img src="http://modularsamples.com/sites/default/files/2019-12/mmm.jpg" width="456" height="187" alt="braids" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-6994d152f4d691e3719292d75f296c53406800b8a0cf898d3782858ac03a3043"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-c6e39ed6ef9728bedbb716406643e96de664e007cdd0042d795de54764855370"&gt;
   
     
 
@@ -294,17 +294,61 @@ document.querySelector("tone-play-toggle").bind(keys);
   
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
+&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;
+&lt;div class="grid-patch"&gt;
+&lt;div class="grid-item2"&gt;
+&lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
 &lt;div class="dropdown-content"&gt;
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/modhits/file1.js');;"&gt;Kit 1&lt;/h3&gt;
+&lt;h3 onclick="move(); stop(); loadJS('/presets/modhits/file1.js');;"&gt;Kit 1&lt;/h3&gt;
 
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/modhits/file2.js');"&gt;Kit 2&lt;/h3&gt;
+&lt;h3 onclick="move(); stop(); loadJS('/presets/modhits/file2.js');"&gt;Kit 2&lt;/h3&gt;
 
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/modhits/file3.js');"&gt;Kit 3&lt;/h3&gt;
+&lt;h3 onclick="move(); stop(); loadJS('/presets/modhits/file3.js');"&gt;Kit 3&lt;/h3&gt;
 
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/modhits/file4.js');"&gt;Kit 4&lt;/h3&gt;
+&lt;h3 onclick="move(); stop(); loadJS('/presets/modhits/file4.js');"&gt;Kit 4&lt;/h3&gt;
+
+
+
+
 &lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class="grid-item2"&gt;
+&lt;div id="myProgress"&gt;
+  &lt;div id="myBar"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;script&gt;
+&lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
+
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width &gt;= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
+
+//--&gt;&lt;!]]&gt;
+&lt;/script&gt;
+
+&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
 </description>
   <pubDate>Tue, 17 Dec 2019 02:01:27 +0000</pubDate>

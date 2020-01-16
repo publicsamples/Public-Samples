@@ -462,7 +462,7 @@ var keys = new Tone.Sampler({
         &lt;img src="http://modularsamples.com/sites/default/files/2019-12/micro.jpg" width="600" height="379" alt="Microbrute" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-a2080fdc93a012583cce37b6992e7137f2b128c5f4b1dec3257b03da52efa138"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-92a58ac898ce92043c7ae7ca53b325b29052ae7279caa1c55283defb277d8453"&gt;
   
     
 
@@ -514,25 +514,65 @@ document.querySelector("tone-play-toggle").bind(keys);
   
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
+&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;
+&lt;div class="grid-patch"&gt;
+&lt;div class="grid-item2"&gt;
+&lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
 &lt;div class="dropdown-content"&gt;
-&lt;p onclick="clear(); stop(); loadJS(''https://modularsamples.com/presets/Microbrute/file1.js');"&gt;DynamicSaw&lt;/p&gt;
+&lt;p onclick="move(); stop(); loadJS(''https://modularsamples.com/presets/Microbrute/file1.js');"&gt;DynamicSaw&lt;/p&gt;
 
-&lt;p onclick="clear(); stop(); loadJS('https://modularsamples.com/presets/Microbrute/file2.js');"&gt;DynamicSqr&lt;/p&gt;
+&lt;p onclick="move(); stop(); loadJS('https://modularsamples.com/presets/Microbrute/file2.js');"&gt;DynamicSqr&lt;/p&gt;
 
-&lt;p onclick="clear(); stop(); loadJS('https://modularsamples.com/presets/Microbrute/file3.js');"&gt;HareMetal&lt;/p&gt;
+&lt;p onclick="move(); stop(); loadJS('https://modularsamples.com/presets/Microbrute/file3.js');"&gt;HareMetal&lt;/p&gt;
 
-&lt;p onclick="clear(); stop(); loadJS('https://modularsamples.com/presets/Microbrute/file4.js');;"&gt;MBStrings&lt;/p&gt;
+&lt;p onclick="move(); stop(); loadJS('https://modularsamples.com/presets/Microbrute/file4.js');;"&gt;MBStrings&lt;/p&gt;
 
-&lt;p onclick="clear(); stop(); loadJS('https://modularsamples.com/presets/Microbrute/file5.js');"&gt;MicroPiano&lt;/p&gt;
+&lt;p onclick="move(); stop(); loadJS('https://modularsamples.com/presets/Microbrute/file5.js');"&gt;MicroPiano&lt;/p&gt;
 
-&lt;p onclick="clear(); stop(); loadJS('https://modularsamples.com/presets/Microbrute/file6.js');"&gt;SharpBass&lt;/p&gt;
+&lt;p onclick="move(); stop(); loadJS('https://modularsamples.com/presets/Microbrute/file6.js');"&gt;SharpBass&lt;/p&gt;
 
-&lt;p onclick="clear(); stop(); loadJS('https://modularsamples.com/presets/Microbrute/file7.js');"&gt;ShortSens&lt;/p&gt;
+&lt;p onclick="move(); stop(); loadJS('https://modularsamples.com/presets/Microbrute/file7.js');"&gt;ShortSens&lt;/p&gt;
 
-&lt;p onclick="clear(); stop(); loadJS('https://modularsamples.com/presets/Microbrute/file8.js');"&gt;ThePubeinyourcoffee&lt;/p&gt;
+&lt;p onclick="move(); stop(); loadJS('https://modularsamples.com/presets/Microbrute/file8.js');"&gt;ThePubeinyourcoffee&lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class="grid-item2"&gt;
+&lt;div id="myProgress"&gt;
+  &lt;div id="myBar"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;script&gt;
+&lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
+
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width &gt;= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
+
+//--&gt;&lt;!]]&gt;
+&lt;/script&gt;
+
+&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
 </description>
   <pubDate>Fri, 29 Nov 2019 20:15:34 +0000</pubDate>

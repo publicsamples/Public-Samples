@@ -619,7 +619,7 @@ var keys = new Tone.Sampler({
         &lt;img src="http://modularsamples.com/sites/default/files/2019-12/esq1.jpg" width="600" height="372" alt="Ensoniq ESQ1" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-ae38b2657b697f7abee20bfc12057ffbf41f6c85576ab73732b8b828ac71c266"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-e9f917dc26dd1f3832be51676b73026442e14718a07f0dc54e4498ec9c94c076"&gt;
   
     
 
@@ -671,30 +671,71 @@ document.querySelector("tone-play-toggle").bind(keys);
   
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
+&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;
+&lt;div class="grid-patch"&gt;
+&lt;div class="grid-item2"&gt;
+&lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
 &lt;div class="dropdown-content"&gt;
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/esq1/file1.js');"&gt;E-Piano&lt;/h3&gt;
+&lt;h3 onclick="move(); stop(); loadJS('/presets/esq1/file1.js');"&gt;E-Piano&lt;/h3&gt;
 
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/esq1/file2.js');"&gt;Fibre&lt;/h3&gt;
+&lt;h3 onclick="move(); stop(); loadJS('/presets/esq1/file2.js');"&gt;Fibre&lt;/h3&gt;
 
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/esq1/file3.js');"&gt;Funky Keys&lt;/h3&gt;
+&lt;h3 onclick="move(); stop(); loadJS('/presets/esq1/file3.js');"&gt;Funky Keys&lt;/h3&gt;
 
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/esq1/file4.js');;"&gt;Hypnotic State&lt;/h3&gt;
+&lt;h3 onclick="move(); stop(); loadJS('/presets/esq1/file4.js');;"&gt;Hypnotic State&lt;/h3&gt;
 
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/esq1/file5.js');"&gt;Mouth Hole&lt;/h3&gt;
+&lt;h3 onclick="move(); stop(); loadJS('/presets/esq1/file5.js');"&gt;Mouth Hole&lt;/h3&gt;
 
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/esq1/file6.js');"&gt;Puppies&lt;/h3&gt;
+&lt;h3 onclick="move(); stop(); loadJS('/presets/esq1/file6.js');"&gt;Puppies&lt;/h3&gt;
 
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/esq1/file7.js');"&gt;Sawed in 3&lt;/h3&gt;
+&lt;h3 onclick="move(); stop(); loadJS('/presets/esq1/file7.js');"&gt;Sawed in 3&lt;/h3&gt;
 
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/esq1/file8.js');"&gt;Simmering&lt;/h3&gt;
+&lt;h3 onclick="move(); stop(); loadJS('/presets/esq1/file8.js');"&gt;Simmering&lt;/h3&gt;
 
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/esq1/file9.js');"&gt;Sine Chord&lt;/h3&gt;
+&lt;h3 onclick="move(); stop(); loadJS('/presets/esq1/file9.js');"&gt;Sine Chord&lt;/h3&gt;
 
-&lt;h3 onclick="clear(); stop(); loadJS('/presets/esq1/file10.js');"&gt; Slow Kitten&lt;/h3&gt;
+&lt;h3 onclick="move(); stop(); loadJS('/presets/esq1/file10.js');"&gt; Slow Kitten&lt;/h3&gt;
+
 
 &lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class="grid-item2"&gt;
+&lt;div id="myProgress"&gt;
+  &lt;div id="myBar"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;script&gt;
+&lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
+
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width &gt;= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
+
+//--&gt;&lt;!]]&gt;
+&lt;/script&gt;
+
+&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
 </description>
   <pubDate>Mon, 16 Dec 2019 21:01:24 +0000</pubDate>

@@ -193,7 +193,7 @@ var keys = new Tone.Sampler({
         &lt;img src="http://modularsamples.com/sites/default/files/2019-12/hs.jpg" width="600" height="372" alt="hs80" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-20d5bdbd2f1f6aa338b65ed35e7524a6de752f9096b38337bceba830bf8bd2f9"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-8ef602c6ef6edaf2dfde0d3ab2ec6eb916787dff02b936e61ad6e1cc9fd01a1f"&gt;
   
     
 
@@ -245,16 +245,56 @@ document.querySelector("tone-play-toggle").bind(keys);
   
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
+&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;
+&lt;div class="grid-patch"&gt;
+&lt;div class="grid-item2"&gt;
+&lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
 &lt;div class="dropdown-content"&gt;
-&lt;p onclick="clear(); stop(); loadJS('https://modularsamples.com/presets/hs80/file1.js');"&gt;Chicken&lt;/p&gt;
+&lt;p onclick="move(); stop(); loadJS('https://modularsamples.com/presets/hs80/file1.js');"&gt;Chicken&lt;/p&gt;
 
-&lt;p onclick="clear(); stop(); loadJS('https://modularsamples.com/presets/hs80/file2.js');"&gt;I'm the one&lt;/p&gt;
+&lt;p onclick="move(); stop(); loadJS('https://modularsamples.com/presets/hs80/file2.js');"&gt;I'm the one&lt;/p&gt;
 
-&lt;p onclick="clear(); stop(); loadJS('https://modularsamples.com/presets/hs80/file3.js');"&gt;Wide Open&lt;/p&gt;
+&lt;p onclick="move(); stop(); loadJS('https://modularsamples.com/presets/hs80/file3.js');"&gt;Wide Open&lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
+
+
+&lt;div class="grid-item2"&gt;
+&lt;div id="myProgress"&gt;
+  &lt;div id="myBar"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;script&gt;
+&lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
+
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width &gt;= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
+
+//--&gt;&lt;!]]&gt;
+&lt;/script&gt;
+
+&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
 </description>
   <pubDate>Fri, 29 Nov 2019 20:50:17 +0000</pubDate>
     <dc:creator>rick</dc:creator>

@@ -342,7 +342,7 @@ var keys = new Tone.Sampler({
         &lt;img src="http://modularsamples.com/sites/default/files/2019-12/juno.jpg" width="600" height="372" alt="Juno" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-36de162d494a7c6f249d69c2b5aa273bc7022cc75511f82a4b2196a4480e29c0"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-be7c8f8ae25ee8312b238bcda8dab2cafc09e8ef308dc2a2ac2278e96eb6d0f7"&gt;
   
     
 
@@ -394,27 +394,69 @@ document.querySelector("tone-play-toggle").bind(keys);
   
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
+&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;
+&lt;div class="grid-patch"&gt;
+&lt;div class="grid-item2"&gt;
+&lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
 &lt;div class="dropdown-content"&gt;
-&lt;p onclick="clear(); stop(); loadJS('https://modularsamples.com/presets/RolandJuno6/file1.js');"&gt;Juno Strings&lt;/p&gt;
 
-&lt;p onclick="clear(); stop(); loadJS('https://modularsamples.com/presets/RolandJuno6/file2.js');"&gt;LFO pad&lt;/p&gt;
 
-&lt;p onclick="clear(); stop(); loadJS('https://modularsamples.com/presets/RolandJuno6/file3.js');"&gt;New&lt;/p&gt;
+&lt;p onclick="move(); stop(); loadJS('https://modularsamples.com/presets/RolandJuno6/file1.js');"&gt;Juno Strings&lt;/p&gt;
 
-&lt;p onclick="clear(); stop(); loadJS('https://modularsamples.com/presets/RolandJuno6/file4.js');;"&gt;Open&lt;/p&gt;
+&lt;p onclick="move(); stop(); loadJS('https://modularsamples.com/presets/RolandJuno6/file2.js');"&gt;LFO pad&lt;/p&gt;
 
-&lt;p onclick="clear(); stop(); loadJS('https://modularsamples.com/presets/RolandJuno6/file5.js');"&gt;PW Pluck&lt;/p&gt;
+&lt;p onclick="move(); stop(); loadJS('https://modularsamples.com/presets/RolandJuno6/file3.js');"&gt;New&lt;/p&gt;
 
-&lt;p onclick="clear(); stop(); loadJS('https://modularsamples.com/presets/RolandJuno6/file6.js');"&gt;Short Bass&lt;/p&gt;
+&lt;p onclick="move(); stop(); loadJS('https://modularsamples.com/presets/RolandJuno6/file4.js');;"&gt;Open&lt;/p&gt;
 
-&lt;p onclick="clear(); stop(); loadJS('https://modularsamples.com/presets/RolandJuno6/file7.js');"&gt;Sine Pad&lt;/p&gt;
+&lt;p onclick="move(); stop(); loadJS('https://modularsamples.com/presets/RolandJuno6/file5.js');"&gt;PW Pluck&lt;/p&gt;
 
-&lt;p onclick="clear(); stop(); loadJS('https://modularsamples.com/presets/RolandJuno6/file8.js');"&gt;Sine Pluck&lt;/p&gt;
+&lt;p onclick="move(); stop(); loadJS('https://modularsamples.com/presets/RolandJuno6/file6.js');"&gt;Short Bass&lt;/p&gt;
 
-&lt;p onclick="clear(); stop(); loadJS('https://modularsamples.com/presets/RolandJuno6/file9.js');"&gt;Wow singer&lt;/p&gt;
+&lt;p onclick="move(); stop(); loadJS('https://modularsamples.com/presets/RolandJuno6/file7.js');"&gt;Sine Pad&lt;/p&gt;
+
+&lt;p onclick="move(); stop(); loadJS('https://modularsamples.com/presets/RolandJuno6/file8.js');"&gt;Sine Pluck&lt;/p&gt;
+
+&lt;p onclick="move(); stop(); loadJS('https://modularsamples.com/presets/RolandJuno6/file9.js');"&gt;Wow singer&lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class="grid-item2"&gt;
+&lt;div id="myProgress"&gt;
+  &lt;div id="myBar"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;script&gt;
+&lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
+
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width &gt;= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
+
+//--&gt;&lt;!]]&gt;
+&lt;/script&gt;
+
+&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
 </description>
   <pubDate>Fri, 29 Nov 2019 21:31:19 +0000</pubDate>

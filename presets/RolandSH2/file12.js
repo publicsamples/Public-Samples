@@ -1,5 +1,6 @@
 
 
+NProgress.start(); 
 var keys = new Tone.Sampler({
 		"C1" : "FILE1.[mp3|ogg]",
 			"E1" : "FILE5.[mp3|ogg]",
@@ -15,6 +16,9 @@ var keys = new Tone.Sampler({
 
 						"baseUrl" : "https://raw.githubusercontent.com/publicsamples/Roland-SH-2/master/MP3/TwoFingerBass/"
 					})					.connect(filter);
+Tone.Buffer.on('load', function() {
+            document.querySelector("#loading").style.display = 'none';
+            NProgress.done();
 					
 					
 					

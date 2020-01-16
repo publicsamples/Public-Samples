@@ -1,5 +1,6 @@
 
-var keys = new Tone.Sampler({
+NProgress.start(); 
+var keys = new Tone.Sampler({({
 		"C1" : "FILE1.[mp3|ogg]",
 			"E1" : "FILE5.[mp3|ogg]",
 			"G#1" : "FILE9.[mp3|ogg]",
