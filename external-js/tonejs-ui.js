@@ -426,7 +426,6 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 			<style>
 				:host {
 					display: block;
-					min-width: 300px;
 					width: 100%;
 				}
 				button {
@@ -890,7 +889,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 			<style>
 				:host {
 					display: block;
-					
+					width: 100%;
 				}
 
 				tone-slider, tone-toggle {
@@ -906,16 +905,16 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 
 				tone-rack:not([collapsed]) tone-player-viz#top{
 					display: none;
+					width: 100%;
 				}
 
 				tone-player-viz#bottom {
 					position: relative;
 					display: block;
-					width: calc(100% - 20px);
+					width: 100%;
 					height: 60px;
 					background-color: black;
 					border-radius: 10px;
-					padding: 10px;
 					margin-top: 20px;
 					background-color:#5d1007;
 				}
@@ -923,7 +922,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 				tone-play-toggle {
 					position: absolute;
 					top: 5px;
-					left: 50%;
+
 					transform: translate(-50%, 0);
 				}
 
@@ -996,7 +995,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 
 				#container {
 					position: relative;
-					width: 100%;
+					width: 80%;
 					height: 55px;
 					display: block;
 					background-color: #eee;

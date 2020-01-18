@@ -1,0 +1,39 @@
+/**
+ * CKEditor
+ *  - brutal overrides to style the CKEditor to match the theme.
+ *  - colors are in the _color.scss file (near the bottom).
+ * This file loads as an library override of Stable, see the info.yml file.
+ ============================================================================ */
+.cke_chrome {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: 1px solid !important;
+  border-top: 1px solid !important;
+  border-bottom: 1px solid !important;
+}
+
+.cke_top {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border-bottom: 1px solid !important;
+  background-image: none !important;
+}
+
+.cke_bottom {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border-top: 1px solid !important;
+  background-image: none !important;
+}
+
+textarea.cke_source {
+  padding: 0.5em !important;
+  font-family: "Courier New", Courier, monospace !important;
+  font-size: 14px !important;
+}
+
+a.cke_path_item,
+span.cke_path_empty {
+  text-shadow: none !important;
+}
+/*# sourceMappingURL=ckeditor.css.map */

@@ -1,5 +1,5 @@
 var keys = new Tone.Sampler({
-		
+	
 			"C1" : "file1.[mp3|ogg]",
 	        "C#1" : "file2.[mp3|ogg]",
 	        "D1" : "file3.[mp3|ogg]",
@@ -37,6 +37,9 @@ var keys = new Tone.Sampler({
 			"A#3" : "file35.[mp3|ogg]",
 			"B3" : "file36.[mp3|ogg]",
 			"C4" : "file37.[mp3|ogg]"
+	
+		
+		
 	
 				
 				

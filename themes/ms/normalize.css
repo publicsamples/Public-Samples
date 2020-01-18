@@ -204,9 +204,7 @@ margin-bottom:5%;
 }
 
 #block-ms-branding{
-	padding:25px;
-	padding-top:15px;
-	padding-bottom:15px;
+
  background-color:#5d1007;
 
 }
@@ -253,13 +251,19 @@ padding-right:75%;
   padding: 2px;
 }
 
+#bblock-views-block-frontpage-block-1-2  {
+   background-color:#272A44;
+  color:white;
+  padding: 2px;
+}
 
 
 .node__container{
    background-color:#965b3f;
    color:#ecd7a2;
 font-size: 1.2em;
-
+padding-left:5px;
+padding-right:5px;
 }
 
 .node__container a:link{
@@ -376,10 +380,9 @@ background-color: #2e3229;
  
 
  .grid-item p {
- 	 font-size:16px;
+ 	 font-size:12px;
 	 text-align:left;
-	 margin-left:-5px;
-	 margin-bottom:2px;
+
   }
 
 
