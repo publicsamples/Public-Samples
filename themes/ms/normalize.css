@@ -1,6 +1,7 @@
 #myProgress {
   width: 100%;
   background-color: #ED6355 ;
+margin-left:10%;
 }
 
 #myBar {
@@ -11,11 +12,13 @@
 
 .grid-patch {
   display: grid;
-  grid-template-columns: 25% 75% ;
+  grid-template-columns: 25% 72% ;
+
   
  
 
 }
+
 
 
 
@@ -42,6 +45,9 @@ margin:5%;
   grid-template-columns: auto auto auto auto auto auto;
  text-align: center;
 margin:5%;
+padding-top:10px;
+
+padding-bottom:15px;
 
 }
 
@@ -50,7 +56,7 @@ margin:5%;
   grid-template-columns: auto auto auto auto;
  text-align: center;
 margin:5%;
-
+padding-bottom:20px;
 }
 
 .grid-chorus {
@@ -96,16 +102,6 @@ margin:5%;
   }
 
 
-  #views-blockpatches-block-1 {
-	  
-	    background-color:#2F3229;
-  color:#cc820f;
-font-size:12px;
-text-align:center;
-padding-left:15px;
-padding-right:15px;
-
-}
 
   /**
    * Controls
@@ -151,16 +147,41 @@ margin-bottom:5px;
    * seq
    */
  
-  #block-contenta2490e01-f952-4735-ba3b-4805545e142d {
+  #block-content3a705ecf-e07d-4892-b8e4-843e17dda90e {
 
 
-
-
+font-size:1.6rem
+line-height:100%;
+ background-color:#2e3229;
+padding:5px;
 }
-  
+
+  #block-content9620ef86-a5b2-41a8-b101-a6ef2db3232b {
+
+
+font-size:1.6rem;
+line-height:100%;
+ background-color:#bd7503;
+ margin-bottom:5%;
+padding:0px;
+}
+
+  #views-blockfrontpage-block-1 {
+
+
+font-size:1rem;
+line-height:100%;
+ background-color:#bd7503;
+ margin-bottom:5%;
+padding:0px;
+}
+
+
+ 
+
 
 #field-blocknodesamplelibrarygridtitle{
-font-size:2.0rem;
+font-size:1.6rem;
 padding:25px;
 line-height:100%;
  background-color:#2e3229;
@@ -182,7 +203,7 @@ margin-bottom:5%;
 }
 
 #field-blocknodeslgraintitle{
-font-size:2.0rem;
+font-size:1.6rem;
 padding:25px;
 line-height:100%;
  background-color:#2e3229;
@@ -333,7 +354,7 @@ padding-right:5px;
 .dropbtn {
   background-color: #5d1007;
   color: #ecd7a1;
-  font-size: 16px;
+  font-size: 12px;
   border: none;
 }
 

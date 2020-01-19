@@ -1399,7 +1399,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 				:host {
 					display: inline-block;
 					width: 100%;
-					height: 550px;
+					height: 375px;
 				}
 				#container {
 					width: 100%;
@@ -2280,10 +2280,13 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					display: block;
 					color: #182C40;
 					background-color: #cc820f;
+                              
 				}
 				#container {
 					background-color: #cc820f;
 					padding: 5px;
+                        height:100px;
+                            
 					
 				}
 				tone-play-toggle {
@@ -2299,7 +2302,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 				}
 				#top #position {
 					background-color: #cc820f;
-					padding: 5px;
+            
 					position: absolute;
 					width: 30%;
 					right: 8px;
@@ -2310,20 +2313,20 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					color:white;
 				}
 				tone-rack {
-					margin-top: 10px;
+
 					color: #cc820f;
 					background-color: #cc820f;
 				}
 
 				tone-slider, tone-toggle {
 					display: block;
-					margin-top: 10px;
+
 					background-color: #cc820f;
 					
 				}
 				tone-slider {
 					width: 80%;
-					margin: 10px auto 0;
+
 					background-color: #cc820f;
 					
 				}
@@ -2346,8 +2349,8 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 				</div>
 				<tone-slider
 					id="tempo"
-					min="60"
-					max="240"
+					min="1"
+					max="500"
 					label="Tempo"
 					exp="2"
 					units="bpm"
