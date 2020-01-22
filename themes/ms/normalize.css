@@ -45,9 +45,9 @@ margin:5%;
   grid-template-columns: auto auto auto auto auto auto;
  text-align: center;
 margin:5%;
-padding-top:10px;
+padding-top:0.5rem;
 
-padding-bottom:15px;
+padding-bottom:1rem;
 
 }
 
@@ -56,7 +56,7 @@ padding-bottom:15px;
   grid-template-columns: auto auto auto auto;
  text-align: center;
 margin:5%;
-padding-bottom:20px;
+padding-bottom:2.1rem;
 }
 
 .grid-chorus {
@@ -108,7 +108,8 @@ margin:5%;
    */
   #block-contentea342fb5-7779-4f05-870e-f07f5466ac32{
 	 background-color:#975975;
-
+ 	margin-bottom:0.5rem;
+ 	 padding-top:0.5rem;
 
   }
 
@@ -117,7 +118,8 @@ margin:5%;
    */
   #block-content31bbdb58-9678-4c64-8e29-8c18209150cb{
 	 background-color:#0555b3;
-	
+	 padding-top:0.5rem;
+	margin-bottom:0.5rem;
 }
 
   /**
@@ -125,14 +127,16 @@ margin:5%;
    */
   #block-content426eca68-e6ea-40de-9c8a-60eb2565a5ea{
 	 background-color:#205a0a;
-	 margin-bottom:5px;
+	 margin-bottom:0.5rem;
+	  padding-top:0.5rem;
   }
   /**
    * Delay
    */
   #block-content96de5361-cfee-4c6a-be06-c124cef27d7b{
 	 background-color:#bd7503;
-	margin-bottom:5px;
+	margin-bottom:0.5rem;
+	 padding-top:0.5rem;
 }
 
   /**
@@ -140,7 +144,8 @@ margin:5%;
    */
   #block-content2133502b-e557-48a4-bafe-7e3c8b5c4503{
 	 background-color:#4b0e4b;
-margin-bottom:5px;
+margin-bottom:0.5rem;
+ padding-top:0.5rem;
   }
 
   /**
@@ -153,8 +158,12 @@ margin-bottom:5px;
 font-size:1.6rem
 line-height:100%;
  background-color:#2e3229;
-padding:5px;
+padding:0.8rem;
 }
+
+/**
+ * disks
+ */
 
   #block-content9620ef86-a5b2-41a8-b101-a6ef2db3232b {
 
@@ -165,6 +174,17 @@ line-height:100%;
  margin-bottom:5%;
 padding:0px;
 }
+
+#block-content9620ef86-a5b2-41a8-b101-a6ef2db3232b a:link{
+   color: #30450a;
+ font-weight:bold;
+}
+
+#block-content9620ef86-a5b2-41a8-b101-a6ef2db3232b a:visited{
+   color: #30450a;
+ font-weight:bold;
+}
+
 
   #views-blockfrontpage-block-1 {
 
@@ -181,37 +201,55 @@ padding:0px;
 
 
 #field-blocknodesamplelibrarygridtitle{
-font-size:1.6rem;
-padding:25px;
+font-size:2.0rem;
+padding:0.8rem;
 line-height:100%;
  background-color:#2e3229;
  margin-bottom:5%;
 }
  
 #field-blocknodesamplelibrarygridfield-downloads{
-padding:25px;
+padding:2.2rem;
  background-color:#30450a;
 margin-bottom:5%;
+line-height:1.5rem;
 }
+
+#field-blocknodesamplelibrarygridfield-downloads a:link{
+color:#bd7503;
+
+}
+
 
 
 #field-blocknodesamplelibrarygridfield-library-info{
 
-padding:25px;
+padding:2.6rem;
  background-color:#bd7503;
 margin-bottom:5%;
 }
 
+#field-blocknodesamplelibrarygridfield-library-info a:link{
+color:#2e3229;
+
+}
+
+#field-blocknodesamplelibrarygridfield-library-info p{
+font-size:1.1rem;
+}
+
+
+
 #field-blocknodeslgraintitle{
 font-size:1.6rem;
-padding:25px;
+padding:0.8rem;
 line-height:100%;
  background-color:#2e3229;
  margin-bottom:5%;
 }
  
 #field-blocknodeslgrainfield-downloads{
-padding:25px;
+padding:0.8rem;
  background-color:#30450a;
 margin-bottom:5%;
 }
@@ -219,7 +257,7 @@ margin-bottom:5%;
 
 #field-blocknodeslgrainfield-library-info{
 
-padding:25px;
+padding:0.8rem;
  background-color:#bd7503;
 margin-bottom:5%;
 }
@@ -228,48 +266,6 @@ margin-bottom:5%;
 
  background-color:#5d1007;
 
-}
-
-#block-controls {
-   background-color:#ED6355;
-  color:white;
-  padding: 2px;
- align: center;
-
-}
-#node__title {
-   background-color:#FE9D8E;
-  color:white;
-padding-right:75%;
-}
-
-
-
-#block-distortionfeedback{
-   background-color:#8AD6D8;
-  color:white;
-  padding: 2px;
-}
-
-
-#block-chorus {
-   background-color:#8AD6D8;
-  color:white;
-  padding: 2px;
-
-}
-
-#block-delay {
-   background-color:#2BACA9;
-  color:white;
-  padding: 2px;
-
-}
-
-#block-reverb {
-   background-color:#272A44;
-  color:white;
-  padding: 2px;
 }
 
 #bblock-views-block-frontpage-block-1-2  {
@@ -283,18 +279,18 @@ padding-right:75%;
    background-color:#965b3f;
    color:#ecd7a2;
 font-size: 1.2em;
-padding-left:5px;
-padding-right:5px;
+padding-left:0.5rem;
+padding-right:0.5rem;
 }
 
 .node__container a:link{
-   color: #bd921a;
+   color: #5d1007;
  font-weight:bold;
 }
 
 
 .node__container a:visited{
-   color:#bd921a;
+   color:#5d1007;
  font-weight:bold;
 }
 
@@ -307,9 +303,9 @@ padding-right:5px;
 
 
 .node__container li{
-	padding-top:10px;
+	padding-top:0.5rem;
 	color:#511500;
-	margin-left:-15px;
+	margin-left:-0.7rem;
    
 
 }
@@ -317,13 +313,13 @@ padding-right:5px;
 #block-content {
    background-color:#030603;
   color:white;
-  padding: 5px;
+  padding:0.8rem;
 }
 
 #block-libtext {
    background-color:#1F5966;
   color:white;
-  padding: 5px;
+  padding:0.8rem;
 }
 
 

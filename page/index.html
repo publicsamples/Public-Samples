@@ -50,7 +50,7 @@
 
     <div class="block__content block-branding__content site-branding"><span class="site-branding__text"><strong class="site-branding__name"><a href="/" title="Home" itemprop="url" rel="home" class="site-branding__name-link">Modularsamples</a></strong></span></div></div>
 </div>
-<main id="block-ms-content--3" class="l-bl block block-main-content" role="main" id="system-main-block">
+<main id="block-ms-content--2" class="l-bl block block-main-content" role="main" id="system-main-block">
   
   <div class="page_variant page-variant--id-page-panels-variant-0 panels-page panels-page--page atl atl--grid-3x3">
   <div class="atl__lr atl__cw">
@@ -652,7 +652,7 @@ verb.dampening.value = v;
 
 //Transport/seq Controls
 
-var vol = new Nexus.Dial('#vol', {size: [25, 25], min: -24,max: 12,  value: -12});
+var vol = new Nexus.Dial('#vol', {size: [25, 25], min: -36, max: 12,  value: -12});
 vol.on('change', v => eq.volume.value = v)
 
 document.querySelector("tone-transport").bind(Tone.Transport);
