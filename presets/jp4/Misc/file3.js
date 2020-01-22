@@ -45,6 +45,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/jp4/Misc/EvilBrain140/"
+						"baseUrl" : "https://raw.githubusercontent.com/publicsamples/Roland-Jupiter-4-Misc/master/jp4/Misc/EvilBrain140/"
 					})					.connect(filter);
 					
