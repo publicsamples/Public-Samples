@@ -6,3 +6,5 @@
 .DS_Store
 .DS_Store
 .DS_Store
+modules/contrib/content_type_clone/
+modules/contrib/js_injector/
