@@ -1,0 +1,158 @@
+/**
+ * Forums
+ *  - see table.scss for generic table styles.
+ ============================================================================ */
+
+// Forum is a table.
+.forum {
+  width: 100%;
+
+  .indent {
+    @include cf;
+    @include output-rhythm(margin-#{$flow-from}, 33px);
+  }
+
+  .title {
+    @include cf;
+  }
+
+  .icon {
+    @include output-rhythm(margin, 1px 10px 0 0);  // LTR
+    float: left;
+
+    svg {
+      @include output-rhythm(height, 20px);
+      @include output-rhythm(width, 20px);
+    }
+  }
+
+  td,
+  th {
+    vertical-align: top;
+  }
+}
+
+
+// Forum id. Every top level forum has a unique numeric ID.
+#forum-0 {}
+
+
+// thead selectors.
+.forum-header {
+  th {
+    white-space: nowrap;
+    font-weight: $font-weight-normal;
+  }
+}
+
+
+// Forum list headers.
+.forum-header__forum {}
+.forum-header__topics {}
+.forum-header__posts {}
+.forum-header__last-post {}
+
+
+// Forum topics headers.
+.forum-header__topic {}
+.forum-header__replies {}
+.forum-header__last-reply {}
+
+
+// Hide some columns in mobile devices.
+.forum [class*="__last-reply"],
+.forum [class*="__Last-reply"] {
+  //white-space: nowrap;
+
+  @media #{$mobile-isolate} {
+    display: none;
+  }
+
+  @media #{$tablet-isolate} {
+    //display: none;
+  }
+}
+
+
+// Set alignment.
+.forum [class*="__topics"],
+.forum [class*="__posts"],
+.forum [class*="__replies"] {
+  text-align: center;
+}
+
+
+// tbody selectors.
+.forum-list {
+
+  // Child id.
+  &--0 {}
+
+  .odd {}
+  .even {}
+
+  .container {}
+}
+
+
+.forum-list__forum {
+  .indent {}
+}
+
+
+.forum-list__name {
+  a {}
+}
+
+
+.forum-list__description {
+  @include cf;
+
+  @include output-rhythm(font-size, $medium / 1.25); // 13px
+  @include output-rhythm(margin, $xx-small $xx-small $xx-small 33px); // LTR, force the desc text to align with the forum name.
+
+  // RTL
+  [dir="rtl"] & {
+    @include output-rhythm(margin, $xx-small 33px $xx-small $xx-small);
+  }
+
+  // Paragraph.
+  &:empty {
+    display: none;
+  }
+}
+
+
+.forum-list__topics {
+  a {}
+}
+
+.forum-list__posts {}
+.forum-list__last-reply {}
+
+
+// Topics
+.forum-list__forum__topic {}
+
+.forum__title {
+
+  @include cf;
+
+  a {}
+  .submitted {
+    @include output-rhythm(font-size, $medium * .875); // 14px
+  }
+}
+
+.forum-list__forum__replies {}
+.forum-list__forum__last-reply {}
+
+
+// The link to the topic node that appears in the Replies column.
+.forum-list__replies-link {
+  display: block;
+}
+
+
+
+

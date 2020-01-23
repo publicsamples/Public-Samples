@@ -1,0 +1,45 @@
+# Pagerer module routes
+
+entity.pagerer_preset.collection:
+  path: '/admin/config/user-interface/pagerer'
+  defaults:
+    _form: '\Drupal\pagerer\Form\PagererConfigForm'
+    _title: 'Pagerer'
+  requirements:
+    _permission: 'administer site configuration'
+
+pagerer.preset_add:
+  path: '/admin/config/user-interface/pagerer/preset/add'
+  defaults:
+    _entity_form: 'pagerer_preset.add'
+    _title: 'Add pager'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.pagerer_preset.edit_form:
+  path: '/admin/config/user-interface/pagerer/preset/manage/{pagerer_preset}'
+  defaults:
+    _entity_form: 'pagerer_preset.edit'
+  requirements:
+    _entity_access: 'pagerer_preset.edit'
+
+entity.pagerer_preset.delete_form:
+  path: '/admin/config/user-interface/pagerer/preset/manage/{pagerer_preset}/delete'
+  defaults:
+    _entity_form: 'pagerer_preset.delete'
+  requirements:
+    _entity_access: 'pagerer_preset.delete'
+
+entity.pagerer_preset.pane_edit_form:
+  path: '/admin/config/user-interface/pagerer/preset/manage/{pagerer_preset}/pane/{pane}'
+  defaults:
+    _entity_form: 'pagerer_preset.pane_edit'
+  requirements:
+    _entity_access: 'pagerer_preset.edit'
+
+entity.pagerer_preset.pane_reset_form:
+  path: '/admin/config/user-interface/pagerer/preset/manage/{pagerer_preset}/pane-reset/{pane}'
+  defaults:
+    _entity_form: 'pagerer_preset.pane_reset'
+  requirements:
+    _entity_access: 'pagerer_preset.edit'

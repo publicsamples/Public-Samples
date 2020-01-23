@@ -1,0 +1,50 @@
+// Tiles
+//
+// Parameters
+// - $tile_count: whole number, must be a factor of the $context
+// - $context: whole number, a $susy container, can be 8, 10 or 12 (or whatever
+//   if you write a new container).
+// - $arrows: boolean
+
+@mixin tiles($context: 12, $tile_count: 2, $arrows: false) {
+
+  $span: $context/$tile_count;
+
+  .ms-tiles {
+
+    // By default block title and all sub-menus are hidden.
+    .rm-block {
+      .menu-level-2 {
+        display: none;
+      }
+    }
+
+    .rm-toggle {
+      display: none;
+    }
+
+    .rm-block__content {
+
+      .menu-level-1 {
+        margin: 0 -0.625em;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: $row-direction;
+        justify-content: space-between;
+
+        > .menu__item {
+          padding: 0 0.625em;
+          flex: 0 0 span($span of 12);
+        }
+
+        .menu__link {
+          @include output-rhythm(padding, $xx-small $medium);
+        }
+      }
+
+      .menu__item--expanded > .menu__link:after {
+        content: none;
+      }
+    }
+  }
+}

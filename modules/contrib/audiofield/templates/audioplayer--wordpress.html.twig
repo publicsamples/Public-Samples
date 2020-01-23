@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Default theme implementation for Wordpress audio player.
+ *
+ * Available variables:
+ * - plugin_id: the name of the plugin being used for templating.
+ * - plugin_theme: the name of the specific plugin theme, if it exists.
+ * - files: array of render info for each file.
+ * - settings: array of settings for thie player.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="audiofield">
+  {% for file in files %}
+    <div class="wordpressaudio_frame">
+      <div class="wordpressaudioplayer" id="wordpressaudioplayer_{{ file.id }}">{{ file.description }}</div>
+    </div>
+  {% endfor %}
+</div>

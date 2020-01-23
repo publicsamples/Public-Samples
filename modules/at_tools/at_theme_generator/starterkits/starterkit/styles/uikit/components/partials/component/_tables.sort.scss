@@ -1,0 +1,42 @@
+/**
+ * Table sort indicators.
+ ============================================================================ */
+
+.tablesort {
+  @include output-rhythm(height, $medium);
+  @include output-rhythm(width, $medium);
+  display: inline-block;
+
+  &--asc,
+  &--desc {
+    &:after {
+      font-family: $icon-font;
+      @include output-rhythm(height, $medium);
+      @include output-rhythm(width, $medium);
+      @include output-rhythm(padding, 0 3px);
+
+      // Nuke any silly image icons.
+      background-image: none;
+
+      // Wait for FontAwesome to load.
+      display: none;
+      .fa-loaded & {
+        display: inline-block;
+      }
+    }
+  }
+
+  &--asc {
+    &:after {
+      content: $table-sort-asc;
+    }
+  }
+  &--desc {
+    &:after {
+      content: $table-sort-desc;
+    }
+  }
+}
+
+
+

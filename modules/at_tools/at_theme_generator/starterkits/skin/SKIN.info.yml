@@ -1,0 +1,46 @@
+name: 'SKIN'
+type: theme
+'base theme': BASETHEME
+'base theme original': git
+'subtheme type': adaptive_skin
+layout: flex-builder
+description: 'Skin type theme.'
+'alt text': 'Theme screenshot'
+tags: sub-theme
+# core: 8.x
+hidden: true
+regions:
+  leaderboard: Leaderboard
+  header_first: 'Header first'
+  header_second: 'Header second'
+  navbar: Navbar
+  highlighted: Highlighted
+  features_first: 'Features first'
+  features_second: 'Features second'
+  features_third: 'Features third'
+  content_prefix: 'Content prefix'
+  content: 'Main content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  content_suffix: 'Content suffix'
+  subfeatures_first: 'Sub-features first'
+  subfeatures_second: 'Sub-features second'
+  subfeatures_third: 'Sub-features third'
+  subfeatures_fourth: 'Sub-features fourth'
+  footer: Footer
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+features:
+  - logo
+  - favicon
+  - node_user_picture
+  - comment_user_picture
+  - comment_user_verification
+libraries:
+  - SKIN/skin
+
+# Information added by Drupal.org packaging script on 2018-02-12
+version: '8.x-3.2'
+core: '8.x'
+project: 'at_tools'
+datestamp: 1518479901

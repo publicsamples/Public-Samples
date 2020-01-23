@@ -1,0 +1,21 @@
+/* Override styles on the themes list page */
+
+#system-themes-page {}
+
+#system-themes-page  a[title="Set AT Theme Generator as default theme"] {
+  display: none;
+}
+
+#system-themes-page .at-theme-generator {}
+
+#system-themes-page .at-theme-generator ul.operations li:last-child {
+  display: none;
+}
+
+#system-themes-page .at-theme-generator ul.operations li:nth-child(2) {
+  border: 0 none;
+}
+
+#system-themes-page .system-themes-list-uninstalled .at-theme-generator ul.operations li {
+  border: 0 none;
+}

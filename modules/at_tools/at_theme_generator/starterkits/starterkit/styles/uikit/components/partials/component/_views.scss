@@ -1,0 +1,250 @@
+/**
+ * Views
+ ============================================================================ */
+
+// View wrapper.
+.views-element-container {}
+
+.view {}
+.view-title {}
+.view-content {}
+.views-row {}
+
+
+// Some core views, not exhaustive.
+.view-frontpage {}
+.view-taxonomy-term {}
+
+
+// Item lists
+.view-content {
+  .item-list > ul {
+    padding: 0;
+  }
+}
+
+
+// Grid view overrides.
+.views-view-grid  {
+
+  .views-row {
+    margin-bottom: 1.25em;
+  }
+
+  &.horizontal {
+    @media #{$mobile} {
+      .views-col {
+        margin-bottom: 1.25em;
+
+         &:last-child {
+           margin-bottom: 0;
+         }
+       }
+     }
+
+     @media #{$tablet-isolate}, #{$wide} {
+      .views-row {
+        display: flex;
+        margin-left: -0.625em;
+        margin-right: -0.625em;
+      }
+
+      .views-col {
+        flex: 0 0 100%;
+        padding: 0 0.625em;
+      }
+    }
+  }
+
+  &.vertical {
+    @media #{$tablet-isolate}, #{$wide} {
+      display: flex;
+      margin-left: -0.625em;
+      margin-right: -0.625em;
+
+      .views-col {
+        flex: 0 0 100%;
+        padding: 0 0.625em;
+      }
+    }
+  }
+
+  @media #{$tablet-isolate}, #{$wide} {
+    .views-col {
+      flex: 0 0 100%;
+      padding: 0 0.625em;
+    }
+  }
+
+  @media #{$tablet-isolate} {
+    &.cols-2,
+    &.cols-4,
+    &.cols-5 {
+      .views-col {
+        flex-basis: span(6 of 12);
+      }
+    }
+
+    &.cols-3,
+    &.cols-6,
+    &.cols-8,
+    &.cols-10,
+    &.cols-12 {
+      .views-col {
+        flex-basis: span(4 of 12);
+      }
+    }
+  }
+
+  @media #{$wide} {
+    &.cols-2 {
+      .views-col {
+        flex-basis: span(6 of 12);
+      }
+    }
+
+    &.cols-3 {
+      .views-col {
+        flex-basis: span(4 of 12);
+      }
+    }
+
+    &.cols-4 {
+      .views-col {
+        flex-basis: span(3 of 12);
+      }
+    }
+
+    &.cols-6 {
+      .views-col {
+        flex-basis: span(2 of 12);
+      }
+    }
+
+    &.cols-12 {
+      .views-col {
+        flex-basis: span(1 of 12);
+      }
+    }
+
+    @include nested($container-8) {
+      &.cols-8 {
+        .views-col {
+          flex-basis: span(1 of 8);
+        }
+      }
+    }
+
+    @include nested($container-10) {
+      &.cols-5 {
+        .views-col {
+          flex-basis: span(2 of 10);
+        }
+      }
+      &.cols-10 {
+        .views-col {
+          flex-basis: span(1 of 10);
+        }
+      }
+    }
+  }
+
+  // Reset nodes.
+  .node {
+    margin-bottom: 0;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+
+// Table style column align (from core views.module.css).
+.views-align {
+  &-left {
+    text-align: left;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-center {
+    text-align: center;
+  }
+}
+
+
+// View is empty, but has message etc.
+.view-empty:not(:empty) {
+  @include output-rhythm(margin-bottom, $large);
+
+  // Front page no content, add content links
+  .links {
+    list-style: none;
+    @include output-rhythm(margin, $medium 0);
+    padding: 0;
+
+    a[href="/node/add"] {
+      max-width: 100%;
+      width: auto;
+      position: relative;
+      box-sizing: border-box;
+      border-radius: $button-border-radius;
+      border-width: $button-border-width;
+      border-style: $button-border-style;
+      transition: background-color, .15s, ease-in-out;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: $button-text-align;
+      font-weight: $font-weight-normal;
+      white-space: nowrap;
+      @include output-rhythm(height, $form_input_button_select_height);
+      @include output-rhythm(padding, 0 $x-small);
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+
+      display: inline-block;
+
+      &:before {
+        font-family: $icon-font;
+        content: $button-action-icon;
+        vertical-align: middle;
+        @include output-rhythm('font-size', $small);
+        @include output-rhythm(padding-#{$flow-to}, 4px);
+        @include output-rhythm(line-height, $form_input_button_select_height);
+
+        // Wait for FontAwesome to load.
+        display: none;
+        .fa-loaded & {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+
+// Recent Content
+.view-comments-recent,
+.view-content-recent {
+  .item-list__item {
+    @include output-rhythm(margin-bottom, $x-small);
+
+    span {
+      display: block;
+    }
+
+    .views-field-title {}
+
+    .views-field-changed {
+      @include output-rhythm('font-size', $medium * 0.75);
+      line-height: 1;
+    }
+  }
+}
+
+

@@ -1,0 +1,56 @@
+/**
+ * Fields
+ * Common styles for field templates.
+ * SEE: image and taxonomy field styles as these both have unique
+ * template html markup and selectors.
+ ============================================================================ */
+
+.field {
+  @include output-rhythm(margin-bottom, $medium);
+
+  .field__items {}
+  .field__item {}
+}
+
+
+// Labels
+.field__label {
+  font-family: inherit;
+  font-weight: $font-weight-semibold;
+  @include output-rhythm(font-size, $medium);
+  margin: 0;
+}
+
+
+// Label inline
+.field-label-inline {
+  // Remove the margin on inline field labels to preserve vertical formatting.
+  .field__label {
+    margin: 0;
+    display: inline-block;
+    @include output-rhythm(padding, 0 $xxx-small 0 0); // LTR
+
+    &:after {
+      content: ":";
+    }
+
+    // RTL
+    [dir="rtl"] & {
+      @include output-rhythm(padding, 0 0 0 $xxx-small);
+    }
+  }
+
+  .field__items,
+  .field__item {
+    display: inline-block;
+  }
+}
+
+
+// Label above
+.field-label-above {
+  .field__label,
+  .field__items {
+    display: block;
+  }
+}

@@ -1,0 +1,35 @@
+// Markup free clearing
+
+@mixin cf {
+  overflow: hidden;  // New formatting context in better browsers.
+}
+
+// Micro clearfix.
+// Based on the micro clearfix hack by Nicolas Gallagher, with the :before
+// pseudo selector removed to allow normal top margin collapse.
+// This has the distinct advantage of allowing overflow.
+// @see http://nicolasgallagher.com/micro-clearfix-hack
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of 'table' rather than 'block' is only necessary if using
+//    :before' to contain the top-margins of child elements.
+//
+@mixin clearfix-micro {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Alias for clearfix-micro.
+@mixin cfm {
+  @include clearfix-micro;
+}

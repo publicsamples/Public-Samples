@@ -1,0 +1,9 @@
+/**
+ * Mega Nav
+ * Hamburger menu that shows the top level items horizontal, and when expanded
+ * the top level items show vertically with sub-menus horizontal.
+ * This style was borrowed from http://www.theguardian.com
+ ============================================================================ */
+
+@include meganav($col-width: 12em);
+

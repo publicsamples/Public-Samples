@@ -1,0 +1,48 @@
+@import "../page-layout-base";
+//
+// Five region
+//
+
+.fivecol-12--6-6-6-6 {
+
+  // Two active regions.
+  .arc--2 {
+    .l-r {
+      width: span(6 of 12);
+    }
+  }
+
+
+  // Three active regions.
+  .arc--3 {
+    .l-r {
+      width: span(6 of 12);
+
+      &:last-child {
+        width: span(12 of 12);
+      }
+    }
+  }
+
+
+  // Four active regions.
+  .arc--4 {
+    .l-r {
+      width: span(6 of 12);
+    }
+  }
+
+
+  // Five active regions.
+  .arc--5 {
+    .l-r {
+      width: span(6 of 12);
+
+      &:first-child {
+        width: span(12 of 12);
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,69 @@
+// Font smoothing
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+// Convert font-size from px to rem with px fallback
+// @param $size - the value in pixel you want to convert
+// e.g. p {@include fontSize(12px);}
+// https://github.com/stubbornella/oocss/blob/master/oocss/src/components/utils/_fontSize.scss
+@function calculateRem($size) {
+  $remSize: $size / $base-font-size; // rem = size / Modular scale base size
+  //Default font size on html element is 100%, equivalent to 16px;
+  @return #{$remSize}rem;
+}
+
+// Return rem value from px value.
+@mixin px-to-rem($size) {
+  font-size: calculateRem($size);
+}
+
+// Mixin that will include the fall back px declaration as well as the
+// calculated rem value.
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+// Mixin that will include the fall back px declaration as well as the
+// calculated rem value.
+@mixin line-height($size) {
+  line-height: $size;
+  line-height: calculateRem($size);
+}
+
+@mixin font-icon-before($font, $char, $color: '', $size: '') {
+  font-family: $font;
+  &:before {
+    content: '#{$char} ';
+    @if $color != '' {
+      color: $color;
+    }
+    @if $size != '' {
+      font-size: $size;
+    }
+  }
+}
+
+@mixin font-icon-after($char, $color: '', $size: '') {
+  font-family: $font;
+  &:after {
+    content: ' #{$char}';
+    @if $color != '' {
+      color: $color;
+    }
+    @if $size != '' {
+      font-size: $size;
+    }
+  }
+}
+
+
+

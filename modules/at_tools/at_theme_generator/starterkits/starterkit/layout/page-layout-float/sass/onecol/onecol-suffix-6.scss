@@ -1,0 +1,8 @@
+@import "../page-layout-base";
+//
+// suffix six
+//
+
+.onecol-suffix-6 .l-r {
+  @include suffix(6 of 12);
+}

@@ -1,0 +1,37 @@
+@import "../page-layout-base";
+//
+// Three Regions - stack order 3-2-1
+//
+// All regions are full width, only the flex order changes.
+// ---------------------------------------------------------------------------
+
+.threecol-stack-order-3-2-1 {
+
+  // Two active regions.
+  .arc--2 {
+    .l-r {
+      &:first-child {
+        order: 2;
+      }
+      &:last-child {
+        order: 1;
+      }
+    }
+  }
+
+  // Three active regions.
+  .arc--3 {
+    .l-r {
+      &:first-child {
+        order: 3;
+      }
+      &:nth-child(2) {
+        order: 2;
+      }
+      &:last-child {
+        order: 1;
+      }
+    }
+  }
+}
+

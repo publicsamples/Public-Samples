@@ -1,0 +1,36 @@
+/**
+ * Shortcodes (Float region blocks)
+ ============================================================================ */
+
+@media #{$wide} {
+  [class*="frb-"] .block {
+    margin-#{$flow-to}: 2%;
+    float: $flow-from;
+    clear: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .frb-2 .block {
+    width: 48%;
+  }
+
+  .frb-3 .block {
+    width: 32%;
+  }
+
+  .frb-4 .block {
+    width: 23.5%;
+  }
+
+  .frb-5 .block {
+    width: 18.4%;
+  }
+
+  .frb-6 .block {
+    width: 15%;
+  }
+}
+

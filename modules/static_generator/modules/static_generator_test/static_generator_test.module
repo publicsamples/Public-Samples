@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Generates a static version of a Drupal site.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function static_generator_test_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.static_generator':
+      $output = '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The Static Generator module generates a static version of a Drupal site. For more information, see the <a href=":static_generator-documentation">online documentation for the Static Generator module</a>.', [':static_generator-documentation' => 'https://www.drupal.org/documentation/modules/static_generator']) . '</p>';
+      $output .= '<h3>' . t('Uses') . '</h3>';
+      $output .= '<dl>';
+      $output .= '<dt>' . t('Creating a read only "brochure" site.') . '</dt>';
+      $output .= '<dd>' . t('Creating a hybrid static/dynamic site') . '</dd>';
+      $output .= '</dl>';
+      return $output;
+  }
+}
+
+
+

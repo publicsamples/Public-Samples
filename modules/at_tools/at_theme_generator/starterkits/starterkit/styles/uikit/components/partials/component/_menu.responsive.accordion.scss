@@ -1,0 +1,71 @@
+/**
+ * Accordion styles are set automatically for offcanvas & slidedown.
+ ============================================================================ */
+
+.rm-accordion-trigger {
+  display: none;
+}
+
+.ms-accordion {
+
+  .menu__link {
+    &:hover,
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .is-parent {
+    .menu__link {
+      @include output-rhythm(margin-#{$flow-from}, 40px);
+    }
+  }
+
+  .menu__link--wrapper {
+    display: block;
+    position: relative;
+  }
+
+  .rm-accordion-trigger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    #{$flow-from}: 0;
+    top: 0;
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+    height: 100%;
+    @include output-rhythm(width, 36px);
+
+    &:hover,
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .is-open--parent {
+    .rm-accordion-trigger__icon {
+      transform: rotate(45deg);
+      transition: $global-transition;
+    }
+  }
+
+  .rm-accordion-trigger__icon {
+    border-radius: 0;
+    border: 0;
+    padding: 0;
+    margin: auto;
+    @include output-rhythm(width, $medium);
+  }
+
+  .is-child {
+    padding: 0;
+
+    .is-parent {
+       @include output-rhythm(margin-#{$flow-from}, 40px);
+    }
+  }
+}
+

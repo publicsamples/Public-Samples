@@ -1,0 +1,68 @@
+/**
+ * Images
+ ============================================================================ */
+
+// Set styles for Drupal core data-align classes. These are applied using
+// the CKEditor (wysiwyg). When captions are used images are wrapped in
+// a figure element.
+img,
+figure,
+.field-type-image__figure {
+
+  @media #{$wide} {
+    &.align-left {
+      @include output-rhythm(margin, 0 $medium $medium 0);
+    }
+
+    &.align-right {
+      @include output-rhythm(margin, 0 0 $medium $medium);
+    }
+  }
+
+  @media #{$mobile} {
+    &.align-left,
+    &.align-right {
+      float: none;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      @include output-rhythm(margin-bottom, $medium);
+    }
+  }
+
+  &.align-center {
+    @include output-rhythm(margin-bottom, $medium);
+
+    figcaption {
+      text-align: center;
+    }
+  }
+
+  &[class*="align-"] {
+    clear: both;
+  }
+}
+
+
+// In editor margins.
+.cke_widget_wrapper {
+  &.align-left {
+    @include output-rhythm(margin, 0 $medium $medium 0);
+  }
+
+  &.align-right {
+    @include output-rhythm(margin, 0 0 $medium $medium);
+  }
+  &.align-center {
+    @include output-rhythm(margin-bottom, $medium);
+
+    figcaption {
+      text-align: center;
+    }
+  }
+
+  &[class*="align-"] {
+    clear: both;
+  }
+}
+

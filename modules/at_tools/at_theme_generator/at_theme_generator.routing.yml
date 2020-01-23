@@ -1,0 +1,7 @@
+at_theme_generator.generator:
+  path: '/admin/appearance/at_generate'
+  defaults:
+    _form: '\Drupal\at_theme_generator\Form\GeneratorForm'
+    _title: 'AT Theme Generator'
+  requirements:
+    _permission: 'administer at_theme_generator'

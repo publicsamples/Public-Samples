@@ -1,0 +1,76 @@
+/**
+ * Forums
+ *  - see table.scss for generic table styles.
+ ============================================================================ */
+.forum {
+  width: 100%;
+}
+
+.forum .indent {
+  overflow: hidden;
+  margin-left: 2.0625rem;
+}
+
+.forum .title {
+  overflow: hidden;
+}
+
+.forum .icon {
+  margin: 0.0625rem 0.625rem 0 0;
+  float: left;
+}
+
+.forum .icon svg {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.forum td,
+.forum th {
+  vertical-align: top;
+}
+
+.forum-header th {
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 45em) {
+  .forum [class*="__last-reply"],
+  .forum [class*="__Last-reply"] {
+    display: none;
+  }
+}
+
+.forum [class*="__topics"],
+.forum [class*="__posts"],
+.forum [class*="__replies"] {
+  text-align: center;
+}
+
+.forum-list__description {
+  overflow: hidden;
+  font-size: 0.8rem;
+  margin: 0.5rem 0.5rem 0.5rem 2.0625rem;
+}
+
+[dir="rtl"] .forum-list__description {
+  margin: 0.5rem 2.0625rem 0.5rem 0.5rem;
+}
+
+.forum-list__description:empty {
+  display: none;
+}
+
+.forum__title {
+  overflow: hidden;
+}
+
+.forum__title .submitted {
+  font-size: 0.875rem;
+}
+
+.forum-list__replies-link {
+  display: block;
+}
+/*# sourceMappingURL=forum.css.map */

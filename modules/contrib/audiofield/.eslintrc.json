@@ -1,0 +1,11 @@
+{
+  "globals": {
+    "audiojs": true,
+    "jPlayerPlaylist": true,
+    "CirclePlayer": true,
+    "projekktor": true,
+    "soundManager": true,
+    "WaveSurfer": true,
+    "AudioPlayer": true
+  }
+}

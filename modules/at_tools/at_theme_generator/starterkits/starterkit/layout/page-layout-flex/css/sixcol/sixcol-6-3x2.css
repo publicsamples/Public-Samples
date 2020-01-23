@@ -1,0 +1,24 @@
+.sixcol-6-3x2 .arc--2 .l-r {
+  width: 50%;
+}
+
+.sixcol-6-3x2 .arc--3 .l-r:first-child {
+  width: 50%;
+}
+
+.sixcol-6-3x2 .arc--3 .l-r:nth-child(2) {
+  width: 50%;
+}
+
+.sixcol-6-3x2 .arc--5 .l-r {
+  width: 50%;
+}
+
+.sixcol-6-3x2 .arc--5 .l-r:last-child {
+  width: 100%;
+}
+
+.sixcol-6-3x2 .arc--4 .l-r,
+.sixcol-6-3x2 .arc--6 .l-r {
+  width: 33.33333%;
+}

@@ -1,0 +1,63 @@
+.fivecol-6-6-6-6--12 .arc--2 .l-r {
+  width: 50%;
+  float: left;
+}
+
+.fivecol-6-6-6-6--12 .arc--2 .l-r:last-child {
+  float: right;
+  margin-right: 0;
+}
+
+.fivecol-6-6-6-6--12 .arc--3 .l-r {
+  width: 50%;
+  float: left;
+}
+
+.fivecol-6-6-6-6--12 .arc--3 .l-r:nth-child(2n) {
+  float: right;
+  margin-right: 0;
+}
+
+.fivecol-6-6-6-6--12 .arc--3 .l-r:last-child {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  clear: both;
+}
+
+.fivecol-6-6-6-6--12 .arc--4 .l-r {
+  width: 50%;
+  float: left;
+}
+
+.fivecol-6-6-6-6--12 .arc--4 .l-r:nth-child(2n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+
+.fivecol-6-6-6-6--12 .arc--4 .l-r:nth-child(2n + 2) {
+  margin-left: 50%;
+  margin-right: -100%;
+  clear: none;
+}
+
+.fivecol-6-6-6-6--12 .arc--5 .l-r {
+  width: 50%;
+  float: left;
+}
+
+.fivecol-6-6-6-6--12 .arc--5 .l-r:nth-child(2n) {
+  float: right;
+  margin-right: 0;
+}
+
+.fivecol-6-6-6-6--12 .arc--5 .l-r:last-child {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  clear: both;
+}

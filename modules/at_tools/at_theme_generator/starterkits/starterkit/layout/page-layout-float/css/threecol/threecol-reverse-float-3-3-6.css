@@ -1,0 +1,28 @@
+.threecol-reverse-float-3-3-6 .hr--1-2 .l-r,
+.threecol-reverse-float-3-3-6 .hr--1-3 .l-r,
+.threecol-reverse-float-3-3-6 .hr--2-3 .l-r {
+  width: 50%;
+  float: left;
+}
+
+.threecol-reverse-float-3-3-6 .hr--1-2 .l-r:first-child,
+.threecol-reverse-float-3-3-6 .hr--1-3 .l-r:first-child {
+  float: right;
+  margin-right: 0;
+}
+
+.threecol-reverse-float-3-3-6 .hr--2-3 .l-r:last-child {
+  float: right;
+  margin-right: 0;
+}
+
+.threecol-reverse-float-3-3-6 .arc--3 .l-r {
+  width: 25%;
+  float: left;
+}
+
+.threecol-reverse-float-3-3-6 .arc--3 .l-r:first-child {
+  width: 50%;
+  float: right;
+  margin-right: 0;
+}

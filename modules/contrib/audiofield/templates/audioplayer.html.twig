@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Default implementation for Audiofield audio players.
+ *
+ * Available variables:
+ * - plugin_id: the name of the plugin being used for templating.
+ * - plugin_theme: the name of the specific plugin theme, if it exists.
+ * - files: array of render info for each file.
+ * - settings: array of settings for thie player.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="audiofield">
+  {% for file in files %}
+    <div class="audiofield-player">
+      <audio id="audiofield-audio-player-{{ file.id }}" preload="{% if settings.audio_player_lazyload == 1 %}none{% else %}auto{% endif %}" controls {% if settings.audio_player_autoplay == 1 %} autoplay {% endif %} {% if settings.download_button != 1 %} controlsList="nodownload" {% endif %}>
+         <source src="{{ file.url }}" type="audio/mpeg">
+         Your browser does not support the audio element.
+      </audio>
+      <label for="audiofield-audio-player-{{ file.id }}">{{ file.description }}</label>
+    </div>
+  {% endfor %}
+</div>

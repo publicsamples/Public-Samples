@@ -1,0 +1,11 @@
+type: module
+core: 8.x
+name: 'Pagerer Test'
+description: 'Support module for Pagerer tests.'
+package: Testing
+# version: VERSION
+
+# Information added by Drupal.org packaging script on 2019-10-18
+version: '8.x-1.5'
+project: 'pagerer'
+datestamp: 1571388493

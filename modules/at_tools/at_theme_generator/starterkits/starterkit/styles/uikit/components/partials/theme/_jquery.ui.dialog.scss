@@ -1,0 +1,86 @@
+/**
+ * Modal dialogs.
+ *  -  override jQuery UI styles.
+ ============================================================================ */
+
+.ui-widget-overlay {
+  z-index: 100;
+}
+
+.ui-dialog {
+  border: 0;
+  font-family: $sans-serif;
+  @include output-rhythm(margin, $xxx-small);
+
+  .form-type-radio,
+  .form-type-checkbox {
+    display: block;
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .option {
+      @include output-rhythm(padding, $xxxx-small);
+      min-width: 0;
+      border: none;
+      border-radius: 0;
+    }
+  }
+
+  .form-type-radio.js-form-item-attributes-data-align {
+    float: $flow-from;
+    @include output-rhythm(margin-#{$flow-to}, 12px);
+  }
+
+  .container-inline label:after {
+    content: '';
+  }
+
+  .form-file {
+    @include output-rhythm(padding, $xx-small 0);
+  }
+
+  .ui-dialog-titlebar {
+    padding: 0.625em;
+    position: relative;
+    background: none;
+    border: 0;
+  }
+
+  .ui-dialog-content {
+    padding: 0.625em;
+  }
+
+  .ui-dialog-buttonpane {
+    margin: 0;
+    padding: 0.625em;
+    border: 0;
+
+    .ui-dialog-buttonset {
+      float: none;
+      display: flex;
+    }
+
+    button {
+      max-width: 100%;
+      width: auto;
+      position: relative;
+      box-sizing: border-box;
+      border-radius: $button-border-radius;
+      border-width: $button-border-width;
+      border-style: $button-border-style;
+      transition: background-color, .15s, ease-in-out;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: $button-text-align;
+      font-weight: $font-weight-normal;
+      white-space: nowrap;
+      @include output-rhythm(height, $form_input_button_select_height);
+      @include output-rhythm(padding, 0 $x-small);
+    }
+  }
+}
+
+

@@ -1,0 +1,44 @@
+.l-rw {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.l-rw:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.l-r {
+  float: left;
+  width: 100%;
+  padding: 0 0.625em;
+}
+
+.threecol-source-ordered-5-7--12 .hr--1-2 .l-r:first-child {
+  width: 58.33333%;
+  float: right;
+  margin-right: 0;
+}
+
+.threecol-source-ordered-5-7--12 .hr--1-2 .l-r:last-child {
+  width: 41.66667%;
+  float: left;
+}
+
+.threecol-source-ordered-5-7--12 .arc--3 .l-r:first-child {
+  width: 58.33333%;
+  float: right;
+  margin-right: 0;
+}
+
+.threecol-source-ordered-5-7--12 .arc--3 .l-r:nth-child(2) {
+  width: 41.66667%;
+  float: left;
+}
+
+.threecol-source-ordered-5-7--12 .arc--3 .l-r:last-child {
+  clear: both;
+}

@@ -1,0 +1,21 @@
+@import "../page-layout-base";
+//
+// Three Regions split 10-2--12
+//
+// ---------------------------------------------------------------------------
+
+.threecol-split-row-10-2--12 {
+
+  // Two or three regions have layout.
+  .hr--1-2,
+  .arc--3 {
+    .l-r:first-child {
+      width: span(10 of 12);
+    }
+  }
+
+  .hr--1-2 .l-r:last-child,
+  .arc--3 .l-r:nth-child(2) {
+    width: span(2 of 12);
+  }
+}

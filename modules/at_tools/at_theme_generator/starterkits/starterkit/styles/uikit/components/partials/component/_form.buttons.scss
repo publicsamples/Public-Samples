@@ -1,0 +1,310 @@
+/**
+ * Buttons
+ * We include button styling separate (from _forms.scss, Form Base/Theme in base.css)
+ * mainly because the form styles are quite long already and we often want to add
+ * unique button variants.
+ *
+ *  - applies to elements with class "button", includes styles for:
+ *  - input buttons
+ *  - anchor links styled as buttons
+ *  - drop buttons
+ *  - action link buttons
+ ============================================================================ */
+
+button,
+.button {
+  width: auto;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: $button-border-radius;
+  border-width: $button-border-width;
+  border-style: $button-border-style;
+  transition: background-color, .15s, ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: $button-text-align;
+  font-weight: $font-weight-normal;
+  white-space: nowrap;
+  @include output-rhythm(height, $form_input_button_select_height);
+  @include output-rhythm(padding, 0 $x-small);
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &[disabled] {
+    &:hover {}
+  }
+}
+
+
+// Button styles for things that are not actually button elements.
+a.button {
+  display: inline-block;
+  text-align: center;
+  @include output-rhythm(line-height, $form_input_button_select_height);
+}
+
+
+// Remove button styles.
+.un-button,
+.un-button:hover,
+.un-button:focus,
+.un-button:active {
+  border: none;
+  box-shadow: none;
+  background-color: inherit;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  height: auto;
+}
+
+
+//
+// Button variants are primarily changes in colors, so are set in
+//_theme.color.scss using the button-variant() mixin.
+//
+
+// Primary button
+.button--primary {}
+
+// Danger button, e.g. delete buttons often have this class.
+.button--danger {
+  border: 0;
+  box-shadow: none;
+}
+
+// Action button
+// - are links with an icon, and we add an icon for extra visibility.
+.button-action {
+  display: inline-block;
+  //vertical-align: bottom;
+
+  &:before {
+    font-family: $icon-font;
+    content: $button-action-icon;
+    vertical-align: middle;
+    @include output-rhythm('font-size', $small);
+    @include output-rhythm(padding-#{$flow-to}, 4px);
+    @include output-rhythm(line-height, $form_input_button_select_height);
+
+    // Wait for FontAwesome to load.
+    display: none;
+    .fa-loaded & {
+      display: inline-block;
+    }
+  }
+
+  // User is logged out, gets a button link to login.
+  &[data-drupal-link-system-path="user/login"]:before {
+    content: $button-action-login-icon;
+    vertical-align: baseline;
+    @include output-rhythm('font-size', $medium);
+    @include output-rhythm(padding-#{$flow-to}, 7px);
+  }
+}
+
+
+// Action links wrappers.
+.action-links {
+  &__button {
+    padding: 0;
+    @include output-rhythm(margin, $medium 0);
+
+    @media #{$mobile-isolate} {
+      a {
+        display: block;
+      }
+    }
+  }
+}
+
+// Styles for link buttons and action links.
+li[class*="action--"] {
+  list-style: none;
+  padding: 0;
+  @include output-rhythm(margin, $medium 0);
+}
+
+
+// Preview buttons should be neutral. See _theme.color.scss
+#edit-preview {}
+
+
+/* Drop buttons */
+.dropbutton-widget {
+  border: $button-border-width $button-border-style;
+  border-radius: $button-border-radius;
+}
+
+.dropbutton-wrapper {
+  display: block;
+  position: relative;
+  @include output-rhythm(min-height, $medium * 2);
+  @include output-rhythm(margin-#{$flow-to}, 4px);
+  @include output-rhythm(margin-bottom, $medium);
+}
+
+.dropbutton {
+  input {
+    text-align: $flow-from;
+    @include output-rhythm(height, $form_input_button_select_height -$button-border-width * 2);
+  }
+
+  .dropbutton-action {
+    > * {
+      white-space: nowrap;
+      line-height: normal; // some drop buttons are links
+      //@include output-rhythm(padding, 0 $x-small);
+    }
+
+    a {
+      @include output-rhythm(padding, 2px $x-small);
+    }
+  }
+
+  .secondary-action {
+    border-top: $button-border-width $button-border-style;
+    border-radius: 0 0 0 $button-border-radius;
+
+    .button {
+      border: 0;
+      width: 100%;
+
+      &:hover,
+      &:focus {
+        border-radius: 0 0 0 $button-border-radius;
+      }
+    }
+  }
+
+  .dropbutton-toggle {
+    button {
+      background: none;
+      box-shadow: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  // RTL
+  [dir="rtl"] & {
+    margin: 0 3px 0 0;
+
+    input {
+      text-align: right;
+    }
+  }
+}
+
+
+// Dropbutton Multiple
+
+// .dropbutton-multiple .dropbutton .dropbutton-action .button
+.dropbutton-multiple {
+  .dropbutton {
+    border-right: $button-border-width $button-border-style;
+
+   .dropbutton-action > * {
+      margin-right: 0;
+      border: 0;
+    }
+
+    .dropbutton-action .button {
+      border-radius: $button-border-radius 0 0 $button-border-radius;
+      width: 100%;
+      border: 0;
+      margin: 0;
+    }
+
+    // RTL
+    [dir="rtl"] & {
+      border-left: $button-border-width $button-border-style;
+      border-right: 0;
+
+      .dropbutton-action > * {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &.open {
+    .dropbutton-action .button {
+      border-radius: $button-border-radius 0 0 0;
+    }
+  }
+
+  // Include secondary actions after "open" so
+  // the styles cascade properly.
+  .dropbutton {
+    .secondary-action {
+      .button {
+        border-radius: 0 0 0 $button-border-radius;
+
+        &:hover,
+        &:focus {
+          border-radius: 0 0 0 $button-border-radius;
+        }
+      }
+    }
+  }
+}
+
+
+// Show buttons as links.
+button {
+  &.link,
+  &.link:hover,
+  &.link:focus {
+    color: $link-color;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  &.tableresponsive-toggle {
+    float: $flow-to;
+    @include cf;
+  }
+}
+
+label button.link {
+  font-weight: $font-weight-bold;
+}
+
+
+// UI Buttons (jQuery UI)
+.ui-button-text-only {
+  .ui-button-text {
+    padding: 0;
+  }
+
+  button,
+  .button {
+    &:hover,
+    &:focus {
+      background: inherit !important;
+      color: #292929 !important;
+    }
+  }
+}
+
+
+// Table drag weight button.
+.tabledrag-toggle-weight {
+  @include output-rhythm(font-size, $medium * 0.75);
+}
+
+

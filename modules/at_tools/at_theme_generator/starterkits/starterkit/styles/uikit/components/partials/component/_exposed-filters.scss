@@ -1,0 +1,36 @@
+/**
+ * Exposed Filters.
+ ============================================================================ */
+
+.exposed-filters {
+
+  .filters,
+  .additional-filters {
+    float: $flow-from;
+    @include output-rhythm(margin-#{$flow-to}, $medium);
+  }
+
+  .form-item {
+    margin: 0 0 0.1em 0;
+    padding: 0;
+
+    label {
+      float: $flow-from;
+      font-weight: $font-weight-normal;
+      width: 10em;
+    }
+  }
+
+  .form-select {
+    width: 14em;
+  }
+
+  .current-filters {
+    @include output-rhythm(margin-bottom, $medium);
+
+    .placeholder {
+      font-style: normal;
+      font-weight: $font-weight-bold;
+    }
+  }
+}

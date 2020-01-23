@@ -1,0 +1,109 @@
+# Flex Builder Layout.
+# This file is used to build the Layout settings form, the generated page
+# templates, and to set atrributes on rows and regions. It is cached in
+# cache_default db table, so changes require a clear cache.
+
+name: 'Flex Builder Row Styles'  # Human readable layout name. Required.
+type: 'at_layout'                # All layouts are type 'at_layout'. Required.
+version: '8.x-1.0'               # Version string. Optional.
+js_layout: true                  # Is compatable with the JS layout system.
+
+# Rows. Required.
+# Define layout rows and regions.
+rows:
+  leaderboard:                  # row key (name of the row).
+    attributes:                 # attributes - set id, role, classes.
+      id: leaderboard
+    regions:
+      leaderboard:              # region machine name.
+        label: 'Leaderboard'    # region label.
+        order: 1                # source order in this row.
+  header:
+    attributes:
+      role: banner
+      id: masthead
+    regions:
+      header_first:
+        label: 'Header first'
+        order: 1
+      header_second:
+        label: 'Header second'
+        order: 2
+  navbar:
+    attributes:
+      id: navbar
+    regions:
+      navbar:
+        label: 'Navbar'
+        order: 1
+  highlighted:
+    attributes:
+      id: highlighted
+    regions:
+      highlighted:
+        label: 'Highlighted'
+        order: 1
+  features:
+    attributes:
+      id: features
+    regions:
+      features_first:
+        label: 'Features first'
+        order: 1
+      features_second:
+        label: 'Features second'
+        order: 2
+      features_third:
+        label: 'Features third'
+        order: 3
+  content_prefix:
+    attributes:
+      id: content-prefix
+    regions:
+      content_prefix:
+        label: 'Content prefix'
+        order: 1
+  main:
+    attributes:
+      id: main-content
+    regions:
+      content:
+        label: 'Main content'
+        order: 1
+      sidebar_first:
+        label: 'Sidebar first'
+        order: 2
+      sidebar_second:
+        label: 'Sidebar second'
+        order: 3
+  content_suffix:
+    attributes:
+      id: content-suffix
+    regions:
+      content_suffix:
+        label: 'Content suffix'
+        order: 1
+  subfeatures:
+    attributes:
+      id: sub-features
+    regions:
+      subfeatures_first:
+        label: 'Sub-features first'
+        order: 1
+      subfeatures_second:
+        label: 'Sub-features second'
+        order: 2
+      subfeatures_third:
+        label: 'Sub-features third'
+        order: 3
+      subfeatures_fourth:
+        label: 'Sub-features fourth'
+        order: 4
+  footer:
+    attributes:
+      role: contentinfo
+      id: footer
+    regions:
+      footer:
+        label: 'Footer'
+        order: 1

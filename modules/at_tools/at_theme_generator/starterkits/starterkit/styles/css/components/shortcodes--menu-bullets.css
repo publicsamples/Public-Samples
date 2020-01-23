@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/**
+ * Shortcodes (Menu bullets)
+ ============================================================================ */
+.fa-arrow .menu li a:after {
+  font-family: FontAwesome, sans-serif;
+  float: right;
+  padding: 0 1px;
+  text-align: right;
+  width: 1rem;
+}
+
+.fa-arrow .menu li.menu__item > a:after {
+  content: "";
+}
+
+.fa-arrow .menu li.menu__item--expanded > a:after {
+  content: "";
+}
+
+[dir="rtl"] .fa-arrow .menu li.menu__item--collapsed > a:after {
+  content: "";
+}
+
+.fa-caret .menu li a:after {
+  font-family: FontAwesome, sans-serif;
+  float: right;
+  padding: 0 1px;
+  text-align: right;
+  width: 1rem;
+}
+
+.fa-caret .menu li.menu__item > a:after {
+  content: "";
+}
+
+.fa-caret .menu li.menu__item--expanded > a:after {
+  content: "";
+}
+
+[dir="rtl"] .fa-caret .menu li.menu__item--collapsed > a:after {
+  content: "";
+}
+
+.fa-angle-double .menu li a:after {
+  font-family: FontAwesome, sans-serif;
+  float: right;
+  padding: 0 1px;
+  text-align: right;
+  width: 1rem;
+}
+
+.fa-angle-double .menu li.menu__item > a:after {
+  content: "";
+}
+
+.fa-angle-double .menu li.menu__item--expanded > a:after {
+  content: "";
+}
+
+[dir="rtl"] .fa-angle-double .menu li.menu__item--collapsed > a:after {
+  content: "";
+}
+
+.fa-chevron .menu li a:after {
+  font-family: FontAwesome, sans-serif;
+  float: right;
+  padding: 0 1px;
+  text-align: right;
+  width: 1rem;
+}
+
+.fa-chevron .menu li.menu__item > a:after {
+  content: "";
+}
+
+.fa-chevron .menu li.menu__item--expanded > a:after {
+  content: "";
+}
+
+[dir="rtl"] .fa-chevron .menu li.menu__item--collapsed > a:after {
+  content: "";
+}
+
+.ms-dropmenu .fa-arrow .rm-block__content .menu-level-1 .menu__item--expanded > a:after,
+.ms-dropmenu .fa-arrow .rm-block__content .odd ul .odd > .menu__item--expanded > a:after {
+  content: "";
+}
+
+.ms-dropmenu .fa-arrow .rm-block__content .odd ul > .menu__item--expanded > a:after,
+.ms-dropmenu .fa-arrow .rm-block__content .odd ul > .menu__item--collapsed > a:after {
+  content: "";
+}
+
+.ms-dropmenu .fa-caret .rm-block__content .menu-level-1 .menu__item--expanded > a:after,
+.ms-dropmenu .fa-caret .rm-block__content .odd ul .odd > .menu__item--expanded > a:after {
+  content: "";
+}
+
+.ms-dropmenu .fa-caret .rm-block__content .odd ul > .menu__item--expanded > a:after,
+.ms-dropmenu .fa-caret .rm-block__content .odd ul > .menu__item--collapsed > a:after {
+  content: "";
+}
+
+.ms-dropmenu .fa-angle-double .rm-block__content .menu-level-1 .menu__item--expanded > a:after,
+.ms-dropmenu .fa-angle-double .rm-block__content .odd ul .odd > .menu__item--expanded > a:after {
+  content: "";
+}
+
+.ms-dropmenu .fa-angle-double .rm-block__content .odd ul > .menu__item--expanded > a:after,
+.ms-dropmenu .fa-angle-double .rm-block__content .odd ul > .menu__item--collapsed > a:after {
+  content: "";
+}
+
+.ms-dropmenu .fa-chevron .rm-block__content .menu-level-1 .menu__item--expanded > a:after,
+.ms-dropmenu .fa-chevron .rm-block__content .odd ul .odd > .menu__item--expanded > a:after {
+  content: "";
+}
+
+.ms-dropmenu .fa-chevron .rm-block__content .odd ul > .menu__item--expanded > a:after,
+.ms-dropmenu .fa-chevron .rm-block__content .odd ul > .menu__item--collapsed > a:after {
+  content: "";
+}
+/*# sourceMappingURL=shortcodes--menu-bullets.css.map */

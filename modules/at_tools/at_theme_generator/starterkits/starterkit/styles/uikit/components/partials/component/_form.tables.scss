@@ -1,0 +1,79 @@
+/**
+ * Form Tables
+ * Table select and table drag are form elements.
+ ============================================================================ */
+
+// TODO analyse colors for table drag
+// use rem units?
+// use compass rhythm? will it work?
+
+// Table drag.
+tr {
+  &.drag {
+    background-color: #fffff1;
+
+    &-previous {
+      background-color: #ffd;
+    }
+  }
+}
+
+a.tabledrag-handle .handle {
+  height: auto;
+  margin: -0.2em 0.5em 0;
+  width: auto;
+}
+
+body div.tabledrag-changed-warning {
+  margin-bottom: 0.5em;
+}
+
+
+// Table select.
+tr.selected td {
+  background-color: #ffc;
+}
+
+td,
+th {
+  &.checkbox {
+    text-align: center;
+  }
+}
+
+[dir="rtl"] td.checkbox,
+[dir="rtl"] th.checkbox {
+  /* This is required to win over specificity of [dir="rtl"] td */
+  text-align: center;
+}
+
+
+// Strip vertical margins inside tables.
+tr {
+  .form-item {
+    margin-top: 0;
+    margin-bottom: 0;
+    //white-space: nowrap;
+  }
+}
+
+
+// Paragraph admin overrides.
+.js .field--widget-entity-reference-paragraphs {
+  td {
+    @include output-rhythm(padding, $medium);
+
+    &.field-multiple-drag {
+      @include output-rhythm(padding, $medium $xxx-small);
+    }
+  }
+
+  a.tabledrag-handle .handle {
+    margin: -0.4em 0.5em 0 0;
+  }
+}
+
+
+
+
+

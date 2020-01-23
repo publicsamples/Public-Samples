@@ -1,0 +1,63 @@
+/**
+ * Page
+ *  - page layout additions and overrides.
+ ============================================================================ */
+
+// Page wrapper
+// Set relative to make it easier to use absolute positioning and ensure items
+// do not go under the toolbar or other items in the page-top region. If you are
+// using offcanvas responsive menu, it's .page that transforms, not body.
+.page {
+  position: relative;
+  min-height: 100%;
+  min-width: 100%;
+
+  // Remove layout form hidden regions. These regions have no row, so
+  // they get a basic region class unlike theme regions.
+  &-top,
+  &-bottom {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+// Row outer wrapper:
+// .l-pr is a layout class on each page row outer wrapper.
+.l-pr {
+  display: flex;
+  justify-content: center; // Center the page.
+}
+
+
+// Regions outer wrapper:
+//  - .l-rw is the main layout wrapper selector for all regions within a row.
+//    The layout system uses this wrapper and selector extensively.
+.l-rw {
+  padding: 0 0.625em; // Avoid browser chrome collision.
+  //background-color: greenyellow !important;
+}
+
+
+// Region:
+//  - .l-r is the global selector for all regions, each region also includes
+//    a region-name selector, e.g. .l-r__sidebar-first {}
+.l-r {
+  transition: $global-transition;
+}
+
+
+// Debug
+.l-rw {
+  //background-color: greenyellow !important;
+}
+
+.block {
+  //background-color: wheat !important;
+}
+
+.field {
+  //background-color: ghostwhite !important;
+}
+
+

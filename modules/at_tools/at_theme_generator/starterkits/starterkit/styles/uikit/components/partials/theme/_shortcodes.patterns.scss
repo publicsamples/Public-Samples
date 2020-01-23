@@ -1,0 +1,12 @@
+/**
+ * Shortcodes (Patterns)
+ ============================================================================ */
+
+@if $patterns {
+ @each $pattern in $patterns {
+    .pattern-#{$pattern} {
+      @include page-row-pattern-overlay('../images/patterns/#{$pattern}.png', $page-row-fullwidth);
+    }
+  }
+}
+

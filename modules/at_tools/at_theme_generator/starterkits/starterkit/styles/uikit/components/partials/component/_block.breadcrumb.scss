@@ -1,0 +1,152 @@
+/**
+ * Breadcrumbs
+ * Breadcrumbs leverage AT's responsive lists JS feature. This sets a class if
+ * the list is too wide for it's container. This allows us to dynamically change
+ * the design of the breadcrumbs if they are too wide. We use media queries as a
+ * no-js fallback.
+ ============================================================================ */
+
+// Block wrapper for breadcrumbs
+.block-breadcrumbs {
+
+  &:not(.has-title) {
+    margin: 0;
+  }
+
+  .block__content {}
+}
+
+
+.breadcrumb {
+  margin: 1.25em 0;
+
+  &__title {
+    font-size: inherit;
+    line-height: inherit;
+
+    .has-title & {
+      @include output-rhythm(margin-#{$flow-to}, $xxx-small);
+      display: inline-block;
+    }
+  }
+
+  &__title,
+  &__list,
+  &__list-item {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list {
+    display: inline-block;
+  }
+
+  &__list-item {
+    list-style: none;
+
+    &:before {
+      font-family: inherit;
+      content: "\00BB";
+      display: inline-block;
+      padding: 0;
+      @include output-rhythm(margin-#{$flow-to}, $xxx-small);
+      text-align: center;
+
+      // RTL
+      [dir="rtl"] & {
+        @include fa-icon-flip(-1, 1, 0);
+      }
+
+      // FontAwesome loaded.
+      .fa-loaded & {
+        font-family: $icon-font;
+        content: $breadcrumb-separator-icon;
+
+        // RTL
+        [dir="rtl"] & {
+          @include fa-icon-flip(-1, 1, 0);
+        }
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:link,
+    &:visited {}
+
+    &:active,
+    &.active {}
+
+    &:hover,
+    &:focus {}
+  }
+
+  // Responsive selectors set with JavaScript, if the breadcrumbs are too wide
+  // for their container they will display vertically.
+  .is-vertical & {
+    &__title {
+      display: block;
+    }
+
+    &__title,
+    &__list-item {
+
+      &:before {
+        display: inline-block;
+        text-align: #{$flow-from};
+        @include output-rhythm(margin-#{$flow-to}, $xx-small);
+      }
+    }
+
+    &__link {}
+  }
+  .is-horizontal & {
+    &__title {
+      display: inline-block;
+    }
+
+    &__list-item {
+      display: inline;
+    }
+
+    &__list-item {
+      @include output-rhythm(margin-#{$flow-to}, $xxx-small);
+      display: inline-block;
+
+      &:first-child:before {
+        display: none;
+      }
+    }
+
+    &__link {
+      display: inline-block;
+    }
+  }
+
+  // Use media queries when JS is unavailable.
+  @media #{$mobile} {
+    .no-js & {
+      &__list-item:first-child:before {
+        content: $breadcrumb-separator-icon;
+      }
+    }
+  }
+  @media #{$wide} {
+    .no-js & {
+      &__title,
+      &__list,
+      &__list-item {
+        display: inline-block;
+      }
+
+      &__list-item:first-child:before {
+        content: "";
+        display: none;
+      }
+    }
+  }
+}
+
+

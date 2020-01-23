@@ -1,0 +1,9 @@
+
+administer static generator:
+  title: 'Administer static generator'
+  description: 'Allow access to the configuration form to configure the static generator module.'
+  restrict access: true
+generate static pages:
+  title: 'Generate static pages'
+  description: 'Generate page from node edit form.'
+  restrict access: true

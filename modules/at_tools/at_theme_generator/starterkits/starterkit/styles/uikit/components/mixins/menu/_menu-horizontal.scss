@@ -1,0 +1,41 @@
+// Basic Horizontal Menu
+// This will hide all sub-menus no matter what, it has the advantage over the
+// drop menu of not requiring a width on menu items or arrows.
+
+@mixin horizontal($arrows: false) {
+
+  .ms-horizontal {
+
+    .rm-toggle {
+      display: none;
+    }
+
+    .rm-block__content {
+      .menu {
+        @include list-horizontal($flow-from, $margin: (t: 0, r: 0, b: 0, l: 0), $list-item-selector: '.menu__item');
+
+        .menu {
+          display: none;
+        }
+      }
+
+      .menu__item {
+        .menu__link:after {
+          content: '';
+          display: none;
+        }
+
+        @if $arrows == true {
+          &.menu__item--expanded > span > .menu__link:after {
+            content: $menu-arrow-down;
+          }
+
+          &.menu__item--collapsed > span > .menu__link:after {
+            content: '';
+          }
+        }
+      }
+    }
+  }
+}
+

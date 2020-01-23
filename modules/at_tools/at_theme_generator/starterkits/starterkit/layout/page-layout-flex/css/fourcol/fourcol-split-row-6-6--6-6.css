@@ -1,0 +1,9 @@
+.fourcol-split-row-6-6--6-6 .arc--2 .l-r,
+.fourcol-split-row-6-6--6-6 .arc--3 .l-r:first-child,
+.fourcol-split-row-6-6--6-6 .arc--4 .l-r {
+  width: 50%;
+}
+
+.fourcol-split-row-6-6--6-6 .arc--3 .l-r:nth-child(2) {
+  width: 50%;
+}

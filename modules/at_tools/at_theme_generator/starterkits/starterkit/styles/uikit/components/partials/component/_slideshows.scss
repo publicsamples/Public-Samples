@@ -1,0 +1,374 @@
+/**
+ * jQuery FlexSlider v2.3.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Ville Ristimäki (@villeristi)
+ * Converted to SCSS syntax for Adaptivetheme by Jeff Burnz.
+ */
+
+.flex {
+  &-container,
+  &-slider,
+  &-container,
+  &-slider {
+    a:focus {
+      outline: none;
+    }
+  }
+
+  &-control-nav,
+  &-direction-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &-pauseplay span {
+    text-transform: capitalize;
+  }
+}
+
+
+/**
+ * BASE STYLES
+ ============================================================================ */
+.flexslider {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  zoom: 1;
+
+  .slides {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    zoom: 1;
+
+    > li {
+      display: none;
+      position: relative;
+      backface-visibility: hidden;
+
+      .no-js & {
+        &:first-child {
+          display: block;
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    &:after {
+      content: "\0020"; // a space
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0;
+      width: 0;
+    }
+
+    html[xmlns] & {
+      display: block;
+    }
+
+    * html & {
+      height: 1%;
+    }
+  }
+}
+
+
+
+/**
+ * DEFAULT THEME
+ ============================================================================ */
+.flexslider {
+  background-color: #ffffff;  // Color module ?
+  border-radius: 0;
+
+  // Add space for the pager. Set nothing to have the pager over the slider.
+  &.has-pager {
+    //@include output-rhythm(padding-bottom, $xxx-large);
+  }
+
+  // Useful class if you need custom styles if this is carousel
+  &.is-carousel {}
+}
+
+
+// Viewport - is this even required?
+.flex-viewport {
+  max-height: 2000px;
+  transition: all 1s ease;
+
+  .loading & {
+    max-height: 300px;
+  }
+}
+
+
+// Captions.
+.flex-caption {
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  text-align: left;
+
+  margin: 0;
+  @include output-rhythm(padding, $medium $medium $xx-large);
+
+  // Color module ?
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+
+  // This is critical for Chrome otherwise the caption can appear to flicker or "pop up".
+  backface-visibility: hidden;
+
+  // Responsive captions - hide in really small screens to prevent
+  // obscuring the image entirely when there are long captions.
+  @media #{$mobile-isolate} {
+    display: none;
+  }
+}
+
+
+// Direction Navigation.
+$direction-nav-size: 30px;
+
+.flex-direction-nav {
+  a {
+    background-color: transparent;
+    color: transparent;
+    border: 0;
+    text-decoration: none;
+
+    @include output-rhythm(height, $direction-nav-size);
+    @include output-rhythm(margin, -$direction-nav-size 0 0);
+
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+
+    display: block;
+    font: 0/0 a;
+    position: absolute;
+
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: transparent;
+      color: transparent;
+      border: 0;
+      text-decoration: none;
+    }
+
+    // Use Font Awesome to save loading yet another webfont.
+    &:before {
+      font-family: $icon-font;
+      content: $slide-direction-previous;
+
+      @include output-rhythm(font-size, $direction-nav-size);
+
+      color: #ffffff; // Color module?
+      line-height: 1;
+      text-align: left;
+
+      // Wait for FontAwesome to load.
+      display: none;
+      .fa-loaded & {
+        display: block;
+      }
+
+      // Use a unicode char if FontAwesome does not load.
+      .fa-unavailable & {
+        display: block;
+        content: "\2329";
+      }
+    }
+  }
+
+  .flex-prev {
+    left: -50px;
+
+    // Responsive nav
+    @media #{$mobile} {
+      opacity: 0.7;
+      left: 10px;
+    }
+  }
+
+  .flex-next {
+    right: -50px;
+
+    &:before {
+      content: $slide-direction-next;
+      text-align: right;
+
+      // Use a unicode char if FontAwesome does not load.
+      .fa-unavailable & {
+          content: "\232a";
+      }
+    }
+
+    // Responsive nav
+    @media #{$mobile} {
+      opacity: 0.7;
+      right: 10px;
+    }
+  }
+
+  .flexslider:hover & {
+    .flex-prev,
+    .flex-next {
+      opacity: 0.7;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .flex-prev {
+      left: 10px;
+    }
+
+    .flex-next {
+      right: 10px;
+    }
+  }
+
+  // Disabled.
+  .flex-disabled {
+    opacity: 0!important;
+    filter: alpha(opacity=0);
+    cursor: default;
+  }
+}
+
+
+// Pause play stuff, by default AT slideshows don't support adding play buttons.
+// We found almost no one uses them, to be removed?
+//.flex-pauseplay {
+//  a {
+//    display: block;
+//    width: 20px;
+//    height: 20px;
+//    position: absolute;
+//    bottom: 5px;
+//    left: 10px;
+//    opacity: 0.8;
+//    z-index: 10;
+//    overflow: hidden;
+//    cursor: pointer;
+//    color: #000;
+//
+//    &:before {
+//      font-family: "flexslider-icon";
+//      font-size: 20px;
+//      display: inline-block;
+//      content: '\f004';
+//    }
+//
+//    &:hover {
+//      opacity: 1;
+//    }
+//
+//    .flex-play:before {
+//      content: '\f003';
+//    }
+//  }
+//}
+
+
+// Controls (Pagers).
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+
+  li {
+    margin: 0 6px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+  }
+}
+
+
+// Control paging.
+.flex-control-paging {
+  li a {
+    width: 11px;
+    height: 11px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.3);  // Color module ?
+    cursor: pointer;
+    text-indent: -9999px;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.1);  // Color module ?
+    border-radius: 20px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.6);  // Color module ?
+    }
+
+    &.flex-active {
+      background-color: #000;  // Color module ?
+      background-color: rgba(255, 255, 255, 0.9);  // Color module ?
+      cursor: default;
+    }
+  }
+}
+
+
+// Thumbs can be supported, it needs documenting to add the data-image
+// attributes to li items.
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+
+  li {
+    width: 25%;
+    float: left;
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+    opacity: .7;
+    cursor: pointer;
+    transition: all 1s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .flex-active {
+    opacity: 1;
+    cursor: default;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,66 @@
+/**
+ * Node previews
+ *  - style the preview bar a little better than default.
+ ============================================================================ */
+
+.node-preview-container {
+  position: relative;
+  z-index: 499;
+  width: 100%;
+  min-width: 100%;
+  background-color: #d1e8f5;
+  background-image: linear-gradient(to bottom, #d1e8f5, #d3e8f4);
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3333);
+  font-family: $narrow-sans-serif;
+  @include output-rhythm(padding, $large 0);
+
+  form {
+    @include container($container-12);
+  }
+
+  .form-item-view-mode {
+    @media #{$mobile-isolate} {
+      display: block !important;
+    }
+  }
+}
+
+.node-preview-backlink {
+  float: $flow-from;
+  @include output-rhythm(margin-#{$flow-to}, $large);
+
+  @media #{$mobile-isolate} {
+    float: none;
+    display: block;
+    @include output-rhythm(margin, 0 0 $small);
+  }
+
+  &:before {
+    font-family: $icon-font;
+    content: $fa-var-arrow-left;
+    @include output-rhythm(padding, 0 $xx-small 0 0);
+    margin: 0;
+
+    // Wait for FontAwesome to load.
+    display: none;
+    .fa-loaded & {
+      display: inline-block;
+    }
+
+    // RTL
+    [dir="rtl"] & {
+      @include fa-icon-flip(-1, 1, 0);
+    }
+  }
+}
+
+.node-preview-form-select {
+  @include output-rhythm(margin, $large 0);
+  @include output-rhythm(padding, 0 $large);
+
+  .form-select {
+    @include output-rhythm(min-width, 160px);
+  }
+}
+
+

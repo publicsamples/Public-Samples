@@ -1,0 +1,27 @@
+@import "plugin-layout-base";
+//
+// Grid 2x2
+// -----------------------------------------------------------------------------
+
+.atl--grid-2x2 {
+  > .atl__cw > .atl__lc {
+    margin-bottom: gutter();
+  }
+}
+
+.bp--at-core-simple-tablet-isolate,
+.bp--at-core-simple-wide {
+  .atl--grid-2x2 {
+    > .atl__cw {
+      > .atl__lc {
+        width: span(6 of 12);
+      }
+
+      // Full width hanging widow.
+      > .lc-3:last-child {
+        flex: 1 1 auto;
+      }
+    }
+  }
+}
+

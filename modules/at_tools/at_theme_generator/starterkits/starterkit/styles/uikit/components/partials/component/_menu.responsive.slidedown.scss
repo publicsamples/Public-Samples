@@ -1,0 +1,23 @@
+/**
+ * Slidedown
+ * Simple hamburger menu that slides vertically downwards. Pushes and re-flows
+ * the content below. You could try setting this to postion absolute and
+ * style like an overlay.
+ ============================================================================ */
+
+@include slidedown($arrows: false);
+
+.ms-slidedown {
+  // Header second specific styling.
+  .pr-header__header-second {
+    .rm-toggle {
+      //text-align: #{$flow-to};
+    }
+  }
+
+  .menu__link:after {
+    display: none !important;
+  }
+}
+
+

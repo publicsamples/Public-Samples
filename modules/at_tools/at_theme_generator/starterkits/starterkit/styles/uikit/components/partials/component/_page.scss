@@ -1,0 +1,125 @@
+/**
+ * Page
+ *  - for page.html.twig and region markup.
+ ============================================================================ */
+
+// Page wrapper
+// Set relative to make it easier to use absolute positioning and ensure items
+// do not go under the toolbar or other items in the page-top region. If you are
+// using offcanvas responsive menu, it's .page that transforms, not body.
+.page {}
+
+
+// Page Rows and Regions.
+// These match the Site Builder layout.
+// Do not add layout to these selectors, other than top/bottom margin as you
+// might break the layout.
+
+// Leaderboard
+.pr-leaderboard {
+
+  .block {
+    &:not(.has-title) {
+      margin: 0;
+
+      p {
+        @include output-rhythm(margin, $medium 0 0);
+      }
+    }
+
+    ul,
+    ol {
+      margin: 0;
+    }
+  }
+
+  &__rw {}           // Regions wrapper (takes max-width from layout settings).
+  &__leaderboard {}  // Region.
+}
+
+
+// Header
+.pr-header {
+  &__rw {}
+  &__header-first {}
+  &__header-second {}
+}
+
+
+// Navbar
+.pr-navbar {
+
+  .block {
+    margin: 0;
+
+    ul {
+      margin: 0;
+    }
+  }
+
+  &__rw {
+    // Remove padding left/right in wide.
+    @media #{$wide} {
+      padding: 0;
+    }
+  }
+
+  &__navbar {}
+}
+
+
+// Highlighted
+.pr-highlighted {
+  &__rw {}
+  &__highlighted {}
+}
+
+
+// Features
+.pr-features {
+  &__rw {}
+  &__features-first {}
+  &__features-second {}
+  &__features-third {}
+}
+
+
+// Content prefix
+.pr-content-prefix {
+  &__rw {}
+  &__content-prefix {}
+}
+
+
+// Main
+.pr-main {
+  &__rw {}
+  &__content {}
+  &__sidebar-first {}
+  &__sidebar-second {}
+}
+
+
+// Content suffix
+.pr-content-suffix {
+  &__rw {}
+  &__content-suffix {}
+}
+
+
+// Sub features
+.pr-subfeatures {
+  &__rw {}
+  &__subfeatures-first {}
+  &__subfeatures-second {}
+  &__subfeatures-third {}
+  &__subfeatures-fourth {}
+}
+
+
+// Footer
+.pr-footer {
+  &__rw {}
+  &__footer {}
+}
+

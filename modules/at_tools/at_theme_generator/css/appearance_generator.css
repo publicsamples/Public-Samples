@@ -1,0 +1,40 @@
+/* CSS for the Generator form */
+#edit-generate {
+  overflow: hidden;
+  *overflow: visible;
+  *zoom: 1;
+}
+
+#edit-generate .at-docs {
+  float: right;
+  font-weight: 700;
+}
+
+#edit-generate .docs-ext-link-icon {
+  fill: #a6a6a6;
+  width: 1.1em;
+  position: relative;
+  top: .25em;
+}
+
+#edit-generate-options {
+  margin-top: 20px;
+}
+
+#edit-generate-generate-type {
+  min-width: 200px;
+}
+
+.generate-type__description {
+  margin-top: 10px;
+}
+
+#edit-generate ul.tips,
+#edit-generate div.description,
+#edit-generate .form-item .description {
+  color: #a6a5a1;
+}
+
+.messages code, .messages pre, .messages kbd {
+  font-size: 1em;
+}

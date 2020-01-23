@@ -1,0 +1,49 @@
+.threecol-source-ordered-3-5-4 .hr--1-2 .l-r:first-child {
+  width: 75%;
+  float: right;
+  margin-right: 0;
+}
+
+.threecol-source-ordered-3-5-4 .hr--1-2 .l-r:last-child {
+  width: 25%;
+  float: left;
+}
+
+.threecol-source-ordered-3-5-4 .hr--1-3 .l-r:first-child {
+  width: 66.66667%;
+  float: left;
+}
+
+.threecol-source-ordered-3-5-4 .hr--1-3 .l-r:last-child {
+  width: 33.33333%;
+  float: right;
+  margin-right: 0;
+}
+
+.threecol-source-ordered-3-5-4 .hr--2-3 .l-r {
+  width: 50%;
+  float: left;
+}
+
+.threecol-source-ordered-3-5-4 .hr--2-3 .l-r:last-child {
+  float: right;
+  margin-right: 0;
+}
+
+.threecol-source-ordered-3-5-4 .arc--3 .l-r:first-child {
+  width: 41.66667%;
+  float: left;
+  margin-left: 25%;
+}
+
+.threecol-source-ordered-3-5-4 .arc--3 .l-r:nth-child(2) {
+  width: 25%;
+  float: left;
+  margin-left: -66.66667%;
+}
+
+.threecol-source-ordered-3-5-4 .arc--3 .l-r:last-child {
+  width: 33.33333%;
+  float: right;
+  margin-right: 0;
+}

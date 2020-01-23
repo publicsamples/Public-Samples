@@ -1,0 +1,12 @@
+name: Automatic Menu Titles
+type: module
+description: "Allows content types to set the default value of the 'Provide a menu link' checkbox."
+# core: 8.x
+dependencies:
+  - menu_ui:menu_ui
+
+# Information added by Drupal.org packaging script on 2017-05-22
+version: '8.x-1.0-alpha1'
+core: '8.x'
+project: 'auto_menutitle'
+datestamp: 1495439287

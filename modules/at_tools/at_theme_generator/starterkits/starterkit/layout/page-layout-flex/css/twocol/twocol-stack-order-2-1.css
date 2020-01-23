@@ -1,0 +1,11 @@
+.twocol-stack-order-2-1 .arc--2 .l-r:first-child {
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.twocol-stack-order-2-1 .arc--2 .l-r:last-child {
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}

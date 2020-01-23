@@ -1,0 +1,34 @@
+// List items as columns.
+// By default these inherit most list global styles, e.g. if you set
+// $list-border-width in variables.scss it will apply here unless overridden in
+// the file you are calling the mixin from.
+
+// Flow the top level items horizontally, with each sub-list flowed vertically,
+// the effect is a multi-column list.
+@mixin list-multicolumn($list_selector, $col_width: 12em) {
+
+  #{$list_selector} {
+    @include cfm;
+
+    > li {
+      width: $col_width;
+      float: $flow-from;
+      list-style: none;
+    }
+
+    ul, ol {
+      padding: 0;
+    }
+
+    a {
+      display: block;
+    }
+  }
+}
+
+
+// Layout a standard list in columns. Uses CSS3 columns. Not suitable for use
+// with lists that contain sub-lists. This is probably pointless since it would
+// just call compass mixin compass-columns()
+@mixin list-columns() {}
+

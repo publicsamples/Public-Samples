@@ -1,0 +1,87 @@
+# Schema for the configuration files of the Static Generator module.
+
+static_generator.settings:
+  type: config_object
+  label: 'Static generator settings'
+  mapping:
+    generator_directory:
+      type: string
+      label: 'Generator directory'
+    css_directory:
+      type: string
+      label: 'CSS Directory'
+    js_directory:
+      type: string
+      label: 'JS Directory'
+    paths_generate:
+      type: string
+      label: 'Paths to Generate'
+    paths_do_not_generate:
+      type: string
+      label: 'Paths to not generate.'
+    blocks_esi:
+      type: string
+      label: 'Block ids to generate.'
+    blocks_no_esi:
+      type: string
+      label: 'Block ids to not generate.'
+    blocks_frequent:
+      type: string
+      label: 'Block ids to not generate.'
+    drupal:
+      type: string
+      label: 'Drupal directories and files.'
+    non_drupal:
+      type: string
+      label: 'Non Drupal directories and files.'
+    gen_node:
+      type: string
+      label: 'Node bundles to generate.'
+    gen_media:
+      type: string
+      label: 'Media bundles to generate.'
+    gen_taxonomy:
+      type: string
+      label: 'Taxonomy bundles to generate.'
+    rsync_public:
+      type: string
+      label: 'rSync for generating Drupal public files.'
+    rsync_public_exlude:
+      type: string
+      label: 'Public files to exclude.'
+    rsync_code:
+      type: string
+      label: 'rSync for generating Drupal code files.'
+    verbose_logging:
+      type: boolean
+      label: 'Turn on verbose logging.'
+    gen_unpublished:
+      type: boolean
+      label: "Generate pages with class node--unpublished."
+    generate_index:
+      type: boolean
+      label: 'Generate index.html.'
+    process_video:
+      type: boolean
+      label: 'Process video urls.'
+    process_views:
+      type: boolean
+      label: 'Process views urls.'
+    static_url:
+      type: string
+      label: 'Turn on verbose logging.'
+    esi_blocks:
+      type: boolean
+      label: 'ESI blocks.'
+    esi_sg_esi:
+      type: boolean
+      label: 'ESI class="sg-esi--<id>".'
+    render_method:
+      type: string
+      label: 'Method used to render pages.'
+    guzzle_host:
+      type: string
+      label: 'The host to use for Guzzle.'
+    guzzle_options:
+      type: string
+      label: "Guzzle options, e.g. ['verify' => false] to turn off HTTPS checking."

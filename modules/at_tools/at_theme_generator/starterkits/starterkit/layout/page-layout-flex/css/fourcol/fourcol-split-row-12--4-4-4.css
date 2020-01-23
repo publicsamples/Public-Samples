@@ -1,0 +1,24 @@
+.fourcol-split-row-12--4-4-4 .hr--2-3 .l-r,
+.fourcol-split-row-12--4-4-4 .hr--2-4 .l-r,
+.fourcol-split-row-12--4-4-4 .hr--3-4 .l-r,
+.fourcol-split-row-12--4-4-4 .hr--1-2-3 .l-r:nth-child(2),
+.fourcol-split-row-12--4-4-4 .hr--1-2-4 .l-r:nth-child(2) {
+  width: 50%;
+}
+
+.fourcol-split-row-12--4-4-4 .hr--1-2-3 .l-r:last-child,
+.fourcol-split-row-12--4-4-4 .hr--1-2-4 .l-r:last-child {
+  width: 50%;
+}
+
+.fourcol-split-row-12--4-4-4 .hr--2-3-4 .l-r {
+  width: 33.33333%;
+}
+
+.fourcol-split-row-12--4-4-4 .arc--4 .l-r:nth-child(2), .fourcol-split-row-12--4-4-4 .arc--4 .l-r:nth-child(3) {
+  width: 33.33333%;
+}
+
+.fourcol-split-row-12--4-4-4 .arc--4 .l-r:last-child {
+  width: 33.33333%;
+}

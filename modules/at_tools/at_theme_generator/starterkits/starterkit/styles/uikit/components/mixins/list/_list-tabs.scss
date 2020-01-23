@@ -1,0 +1,123 @@
+/// List items as tabs and tab groups.
+// By default these inherit most tab global styles, e.g. if you set
+// $tab-border-width in variables.scss it will apply here unless overridden in
+// the file you are calling the mixin from.
+
+// List items as tabs.
+@mixin list-style-tabs($list_selector) {
+
+  #{$list_selector} {
+    border-bottom: $tab-border-width $tab-border-style $tab-border-color;
+    @include list-horizontal($flow-from, $margin: (t: 0, r: $tab-border-width, b: 0, l: 0));  // LTR
+
+    li {
+      margin-bottom: -$tab-border-width;
+      border-radius: $tab-border-radius $tab-border-radius 0 0;
+    }
+
+    a {
+      display: block;
+      line-height: 1;
+      color: $tab-color;
+      background-color: $tab-background-color;
+      border: $tab-border-width $tab-border-style $tab-border-color;
+      border-radius: $tab-border-radius $tab-border-radius 0 0;
+      @include output-rhythm(padding, $xx-small $medium);
+      transition: background-color, .15s, ease-in-out;
+
+      @if $tab-box-shadow == true {
+        box-shadow: rgba(255, 255, 255, 0.5) 0 $tab-border-width 0 inset;
+      }
+
+      &:hover,
+      &:focus {
+        color: $tab-hover-color;
+        background-color: $tab-background-hover-color;
+        text-decoration: none;
+      }
+
+      &.active,
+      &.is-active {
+        color: $tab-active-color;
+        background: none;
+        border-bottom-color: $regions-background-color;
+
+        &:hover,
+        &:focus {
+          color: $tab-hover-color;
+          background: none;
+        }
+      }
+    }
+  }
+}
+
+
+// List items as a tab-group.
+@mixin list-style-tab-group($list_selector) {
+
+  #{$list_selector} {
+    border-bottom: $tab-border-width $tab-border-style $tab-border-color;
+    @include list-horizontal($flow-from, $margin: (t: 0, r: 0, b: 0, l: 0));
+    white-space: nowrap;
+    align-items: flex-end;
+
+    li {
+      margin-bottom: -$tab-border-width;
+
+      // LTR, RTL
+      @if $flow-from == left {
+        &:first-child a {
+          border-radius: $tab-border-radius 0 0 0;
+        }
+        &:last-child a {
+          border-radius: 0 $tab-border-radius 0 0;
+        }
+      }
+      @else if $flow-from == right {
+        &:first-child a {
+          border-radius: 0 $tab-border-radius 0 0;
+        }
+        &:last-child a {
+          border-radius: $tab-border-radius 0 0 0;
+        }
+      }
+    }
+
+    a {
+      display: block;
+      line-height: 1;
+      color: $tab-color;
+      background-color: $tab-background-color;
+      border: $tab-border-width $tab-border-style $tab-border-color;
+      @include output-rhythm(padding, $xx-small $medium);
+      transition: background-color, .15s, ease-in-out;
+      margin-#{$flow-to}: -$tab-border-width;  // LTR, RTL
+
+      @if $tab-box-shadow == true {
+        box-shadow: rgba(255, 255, 255, 0.5) 0 $tab-border-width 0 inset;
+      }
+
+      &:hover,
+      &:focus {
+        color: $tab-hover-color;
+        background-color: $tab-background-hover-color;
+        text-decoration: none;
+      }
+
+      &.active,
+      &.is-active {
+        color: $tab-active-color;
+        background: none;
+        border-bottom-color: $regions-background-color;
+
+        &:hover,
+        &:focus {
+          color: $tab-hover-color;
+          background: none;
+        }
+      }
+    }
+  }
+}
+

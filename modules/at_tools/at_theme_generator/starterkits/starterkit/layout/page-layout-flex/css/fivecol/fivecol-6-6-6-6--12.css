@@ -1,0 +1,23 @@
+.fivecol-6-6-6-6--12 .arc--2 .l-r {
+  width: 50%;
+}
+
+.fivecol-6-6-6-6--12 .arc--3 .l-r {
+  width: 50%;
+}
+
+.fivecol-6-6-6-6--12 .arc--3 .l-r:last-child {
+  width: 100%;
+}
+
+.fivecol-6-6-6-6--12 .arc--4 .l-r {
+  width: 50%;
+}
+
+.fivecol-6-6-6-6--12 .arc--5 .l-r {
+  width: 50%;
+}
+
+.fivecol-6-6-6-6--12 .arc--5 .l-r:last-child {
+  width: 100%;
+}

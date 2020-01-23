@@ -1,0 +1,351 @@
+/**
+ * Elements
+ * - set element global styles, basically whenever this element appears
+ *   it should look like this by default.
+ ============================================================================ */
+
+// Establish (Compass) baseline.
+@include establish-baseline;
+
+
+body {
+  font-family: $base-font-family;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: subpixel-antialiased;
+
+  [dir="rtl"] & {
+    text-align: right;
+  }
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+// Set display block for html elements.
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+
+// Set a global margin bottom, strip other margins.
+ul,
+ol,
+dd,
+dl,
+p,
+figure,
+pre,
+table,
+hr,
+form,
+fieldset {
+  @include output-rhythm(margin, 0 0 $large);
+}
+
+
+// Headings.
+// TODO media queries for heading font sizes and line heights.
+h1, h2, h3, h4, h5, h6 {
+  @include output-rhythm(margin, 0 0 $medium);
+  line-height: 1.125;
+}
+
+h1, h2, h3, h5 {
+  font-weight: $font-weight-normal;
+}
+
+h4, h6 {
+  font-weight: $font-weight-semibold;
+}
+
+// Mobile Heading Sizes
+h1, .h1 {@include output-rhythm(font-size, $xx-large)}
+h2, .h2 {@include output-rhythm(font-size, $x-large)}
+h3, .h3 {@include output-rhythm(font-size, $large)}
+h4, .h4,
+h5, .h5 {@include output-rhythm(font-size, $medium)}
+h6, .h6 {@include output-rhythm(font-size, $small)}
+
+// Using the small element to control font size, an idea lifted from Bootstrap.
+h1 small, .h1 small {@include output-rhythm(font-size, $x-large)}
+h2 small, .h2 small {@include output-rhythm(font-size, $large)}
+h3 small, .h3 small,
+h4 small, .h4 small {@include output-rhythm(font-size, $medium)}
+
+// Wide Heading Sizes
+@media #{$wide} {
+  h1, .h1 {@include output-rhythm(font-size, $xxx-large)}
+  h2, .h2 {@include output-rhythm(font-size, $xx-large)}
+  h3, .h3 {@include output-rhythm(font-size, $x-large)}
+  h4, .h4,
+  h5, .h5 {@include output-rhythm(font-size, $large)}
+  h6, .h6 {@include output-rhythm(font-size, $medium)}
+
+  // Using the small element to control font size, an idea lifted from Bootstrap.
+  h1 small, .h1 small {@include output-rhythm(font-size, $xx-large)}
+  h2 small, .h2 small {@include output-rhythm(font-size, $x-large)}
+  h3 small, .h3 small {@include output-rhythm(font-size, $large)}
+  h4 small, .h4 small {@include output-rhythm(font-size, $medium)}
+}
+
+
+// Paragraph.
+p {
+  // Attempt to hide empty paragraph elements.
+  &:empty {
+    display: none;
+  }
+}
+
+small {
+  @include output-rhythm(font-size, $small);
+}
+
+// Media.
+img {
+  height: auto;
+  line-height: 0;
+  display: inline-block;
+}
+
+
+// Flexible responsive media elements.
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+
+// Video element gets width 100%, slightly dangerous.
+video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  overflow: hidden;
+}
+
+
+// Remove the gap between images, videos, audio and canvas and the bottom of
+// their containers: h5bp.com/i/440.
+img,
+audio,
+canvas,
+video {
+  vertical-align: middle;
+}
+
+
+svg {
+  // Mitigate a bug in old webkit.
+  max-height: 100%;
+
+  // Make IE9 conform to spec.
+  &:not(:root) {
+    overflow: hidden;
+  }
+}
+
+
+// Global caption style.
+figcaption {
+  @include output-rhythm(font-size, $medium * 0.75);
+  @include output-rhythm(line-height, $medium * 1.25);
+  @include output-rhythm(padding, $xx-small 0);
+  margin: auto; // automatic centering, mitigates issues when the viewport is zoomed.
+}
+
+
+// Links.
+a {
+  text-decoration: none;
+  cursor: pointer;
+
+  &:active,
+  &:hover {}
+
+  &:link,
+  &:visited {}
+
+  &:active,
+  &.active {}
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  img {
+    border: 0;
+  }
+}
+
+
+// Equalize margins for indented elements.
+ul,
+ol,
+dl {
+  @include output-rhythm(padding-#{$flow-from}, $xxxx-large);
+  padding-#{$flow-to}: 0;
+}
+
+
+// Definition lists.
+dl {}
+
+dt {
+  font-weight: $font-weight-semibold;
+}
+
+dd {
+  @include output-rhythm(margin-left, $medium);
+
+  // RTL
+  [dir="rtl"] & {
+    margin-left: 0;
+    @include output-rhythm(margin-right, $medium);
+  }
+}
+
+
+// Blockquotes, Bootstrap style.
+blockquote {
+  @include output-rhythm(padding, $medium);
+  @include output-rhythm(margin-#{$flow-from}, $xxxx-large);
+
+  margin-#{$flow-to}: 0;
+  border-#{$flow-from}: 5px solid;
+  
+  &.simple-quote {
+    border: 0 none;
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    @media #{$wide} {
+      @include output-rhythm(font-size, $large);
+    }
+
+    font-weight: $font-weight-light;
+
+    &:first-child {
+      margin-top: 0;
+
+      &:before {
+        font-family: $icon-font;
+        content: $blockquote-icon;
+        @include output-rhythm(padding, 0 5px 0 0);
+        margin: 0;
+        text-align: $flow-from;
+        @include output-rhythm(width, $large);
+
+        // Wait for FontAwesome to load.
+        display: none;
+        .fa-loaded & {
+          display: inline-block;
+        }
+
+        // RTL
+        [dir="rtl"] & {
+          @include fa-icon-flip(-1, 1, 0);
+        }
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  small {
+    display: block;
+
+    &:before {
+      content: '\2014 \00A0'; // EM DASH, NBSP
+    }
+  }
+
+  // Float right with text-align: right
+  &.pull-right {
+    padding-#{$flow-to}: gutters();
+    padding-#{$flow-from}: 0;
+    border-#{$flow-to}: 5px solid;
+    border-#{$flow-from}: 0;
+
+    p,
+    small {
+      text-align: #{$flow-to};
+    }
+
+    small {
+      &:before {
+        content: '';
+      }
+      &:after {
+        content: '\00A0 \2014'; // NBSP, EM DASH
+      }
+    }
+  }
+}
+
+
+// A better looking default horizontal rule.
+hr {
+  height: $border-width;
+  border: 0;
+  border-top: $border-width $border-style;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+// Del is strike-through text and supported by the CKEditor.
+del {}
+
+
+// Code related elements.
+code,
+pre,
+var,
+kbd,
+samp {
+  font-family: $monospace;
+  overflow-x: auto;
+}
+
+pre {
+  @include output-rhythm(padding, $medium);
+}
+
+
+// Polyfill hidden for IE8/9/10, hide Firefox template element.
+[hidden],
+template {
+  display: none !important;
+}
+
+

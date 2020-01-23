@@ -1,0 +1,137 @@
+/**
+ * File icons
+ *  - AT unsets Drupal core file field CSS for image icons and replaces them
+ *    with FontAwesome icons.
+ ============================================================================ */
+
+.file {
+  display: block;
+
+  a {
+    text-decoration: none;
+    word-break: break-all;
+    hyphens: auto;
+
+    &:before {
+      font-family: $icon-font;
+      content: $file-default-icon; // Set a default in case nothing else matches.
+      @include output-rhythm(padding-#{$flow-to}, $xx-small);
+
+      // Wait for FontAwesome to load.
+      display: none;
+      .fa-loaded & {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+
+// Generic file types inherit the default.
+.file--general,
+.file--application-octet-stream,
+.file--application-x-executable {
+  a:before {}
+}
+
+
+// Archives
+.file--package-x-generic a:before {
+  content: $file-archive-icon;
+}
+
+
+// Spreadsheet type files.
+.file--x-office-spreadsheet a:before,
+.file [href$='.numbers']:before {
+  content: $file-spreadsheet-icon;
+}
+
+
+// Word type files.
+.file--x-office-document a:before,
+.file [href$='.pages']:before {
+  content: $file-office-document-icon;
+}
+
+
+// Presentation type files.
+.file--x-office-presentation a:before,
+.file [href$='.key']:before {
+  content: $file-presentation-icon;
+}
+
+
+// Drupal renames some file types for security reasons, in this case the class
+// name and type will be "text/plain", so we search for a file extension in the
+// href attribute to find the original file extension, since Drupal simply
+// appends .txt to the file name.
+.file--text-x-script,
+.file--text-html,
+.file [href*='.js'],
+.file [href*='.css'],
+.file [href*='.scss'],
+.file [href*='.sass'],
+.file [href*='.less'],
+.file [href*='.rb'],
+.file [href*='.php'],
+.file [href*='.inc'],
+.file [href*='.htm'],
+.file [href*='.html'],
+.file [href*='.xml'],
+.file [href*='.twig'],
+.file [href*='.theme'],
+.file [href*='.module'],
+.file [href*='.config'],
+.file [href*='.install'],
+.file [href*='.yml'],
+.file [href*='.json'],
+.file [href*='.sh'] {
+  &:before {
+    content: $file-code-icon;
+  }
+}
+
+
+// Pain text
+.file--text,
+.file--text-plain {
+  a:before {
+    content: $file-plain-text-file-icon;
+  }
+}
+
+
+// PDF
+.file--application-pdf a:before {
+  content: $file-pdf-icon;
+}
+
+
+// Audio
+.file--audio a:before {
+  content: $file-audio-icon;
+}
+
+
+// Video
+.file--video a:before {
+  content: $file-video-icon;
+}
+
+
+// Image
+.file--image a:before {
+  content: $file-image-icon ;
+}
+
+
+// In forms.
+.form-managed-file {
+  .file {
+    background-image: none;
+    padding-#{$flow-from}: 0;
+  }
+}
+
+

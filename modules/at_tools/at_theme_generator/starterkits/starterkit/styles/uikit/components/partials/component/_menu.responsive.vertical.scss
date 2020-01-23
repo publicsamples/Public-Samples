@@ -1,0 +1,14 @@
+/**
+ * Vertical accordion
+ * A basic vertical menu with toggles to open sub-menus, this is the same as
+ * the slidedown, overlay and offcanvas toggle but without hiding the entire
+ * menu also.
+ ============================================================================ */
+
+.ms-vertical {
+  .rm-toggle {
+    display: none;
+  }
+}
+
+@include vertical-accordion($arrows: false);

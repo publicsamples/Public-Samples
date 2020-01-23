@@ -1,0 +1,204 @@
+address:
+  label: Address
+  group: Sectioning
+  description: Contact Information For A Page Or Article Element
+article:
+  label: Article
+  group: Sectioning
+  description: Self-contained Syndicatable Or Reusable Composition
+aside:
+  label: Aside
+  group: Sectioning
+  description: Sidebar For Tangentially Related Content
+b:
+  label: Bold
+  group: Phrasing
+  description: Keywords
+bdi:
+  label: Bidirectional Text
+  group: Phrasing
+  description: Text Directionality Isolation
+blockquote:
+  label: Block Quote
+  group: Sectioning
+  description: A Section Quoted From Another Source
+cite:
+  label: Cite
+  group: Phrasing
+  description: A Citation Or A Reference To Other Sources
+code:
+  label: Code
+  group: Phrasing
+  description: Computer Code
+dl:
+  label: Description List
+  group: List
+  description: Association List Consisting Of Name-value Groups
+dt:
+  label: Description List’s Term
+  group: List
+  description: Legend For Corresponding Dd Element(s)
+dd:
+  label: Description List’s Definition
+  group: List
+  description: Content For Corresponding Dt Element(s)
+del:
+  label: Deletion
+  group: Phrasing
+  description: A Removal From The Document
+details:
+  label: Details
+  group: Sectioning
+  description: Disclosure Control For Hiding Details
+div:
+  label: Division
+  group: Block-level
+  description: Generic Container; Only Use As A Last Resort
+em:
+  label: Emphasis
+  group: Phrasing
+  description: Stress Emphasis
+figcaption:
+  label: Figure Caption
+  group: Block-level
+  description: Caption For Figure
+figure:
+  label: Figure
+  group: Block-level
+  description: Figure With Optional Caption
+footer:
+  label: Footer
+  group: Sectioning
+  description: Footer For A Page Or Section
+h1:
+  label: Heading Rank 1
+  group: Sectioning
+  description: Section Heading
+h2:
+  label: Heading Rank 2
+  group: Sectioning
+  description: Section Heading
+h3:
+  label: Heading Rank 3
+  group: Sectioning
+  description: Section Heading
+h4:
+  label: Heading Rank 4
+  group: Sectioning
+  description: Section Heading
+h5:
+  label: Heading Rank 5
+  group: Sectioning
+  description: Section Heading
+h6:
+  label: Heading Rank 6
+  group: Sectioning
+  description: Section Heading
+header:
+  label: Header
+  group: Sectioning
+  description: Introductory Or Navigational Aids For A Page Or Section
+hgroup:
+  label: Heading Group
+  group: Sectioning
+  description: Heading Group
+i:
+  label: Italic
+  group: Phrasing
+  description: Alternate Voice
+ins:
+  label: Insertion
+  group: Phrasing
+  description: An Addition To The Document
+li:
+  label: List item
+  group: List
+  description: List item
+kbd:
+  label: Keyboard
+  group: Phrasing
+  description: User Input
+mark:
+  label: Mark
+  group: Phrasing
+  description: Highlight
+menu:
+  label: Menu
+  group: List
+  description: Menu Of Commands
+nav:
+  label: Navigation
+  group: Sectioning
+  description: Section With Navigational Links
+ol:
+  label: Ordered List
+  group: List
+  description: Ordered List
+p:
+  label: Paragraph
+  group: Block-level
+  description: Paragraph
+pre:
+  label: Preformatted Text
+  group: Block-level
+  description: Block Of Preformatted Text
+pre code:
+  label: Preformatted Code
+  group: Block-level
+  description: Block Of Preformatted Code
+q:
+  label: Quotation
+  group: Phrasing
+  description: Quotation
+s:
+  label: Strikethrough
+  group: Phrasing
+  description: Inaccurate Text
+samp:
+  label: Sample Output
+  group: Phrasing
+  description: Computer Output
+section:
+  label: Section
+  group: Sectioning
+  description: Generic Document Or Application Section
+small:
+  label: Small
+  group: Phrasing
+  description: Side Comment
+span:
+  label: Span
+  group: Phrasing
+  description: Generic Phrasing Container
+strong:
+  label: Strong
+  group: Phrasing
+  description: Importance
+sub:
+  label: Subscript
+  group: Phrasing
+  description: Subscript
+summary:
+  label: Summary
+  group: Block-level
+  description: Caption For Details
+sup:
+  label: Superscript
+  group: Phrasing
+  description: Superscript
+u:
+  label: Underline
+  group: Phrasing
+  description: Keywords
+ul:
+  label: Unordered List
+  group: List
+  description: Unordered List
+var:
+  label: Variable
+  group: Phrasing
+  description: Variable
+label:
+  label: Label
+  group: Forms
+  description: A form label.

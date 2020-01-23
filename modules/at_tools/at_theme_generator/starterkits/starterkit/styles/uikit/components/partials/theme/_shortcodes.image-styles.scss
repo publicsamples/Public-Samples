@@ -1,0 +1,59 @@
+/**
+ * Shortcodes (Image styles)
+ ============================================================================ */
+
+.image {
+
+  &-align-left {
+    img,
+    .field-type-image__figure {
+      float: left;
+    }
+  }
+
+  &-align-right {
+    img,
+    .field-type-image__figure {
+      float: right;
+    }
+  }
+
+  &-align-center {
+    img,
+    .field-type-image__figure {
+      text-align: center; // cascades to figcaption
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
+
+  &-spaceless {
+    img,
+    .field-type-image__figure {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &-full-width {
+    img,
+    .field-type-image__figure {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}
+
+[class*="image-align-"] {
+  clear: both;
+
+  img {
+    display: block;
+  }
+}
+

@@ -1,0 +1,138 @@
+/**
+ * Table Theme
+ * Style Drupal selectors for tables.
+ ============================================================================ */
+
+table {
+  // If for some crazy reason this theme is used in admin, set tables to be
+  // 100% width.
+  .path-admin & {
+    width: 100%;
+  }
+
+  // Prevent the sticky header from hiding behind other content.
+  &.sticky-header {
+    z-index: 10;
+  }
+
+  .view-table__details {
+    padding: 0;
+    @include output-rhythm(margin, 0 0 $medium);
+    @include output-rhythm(font-size, $medium);
+  }
+
+  .view-table__details,
+  .view-table__details--summary {
+    border: 0;
+  }
+
+  .view-table__details--description {
+    font-style: italic;
+  }
+
+  // Lists, such as item-lists, can appear in tables.
+  ul {
+    margin: 0;
+  }
+
+  // Support align attribute.
+  &[align='right'] {
+    @include output-rhythm(margin-left, $medium);
+  }
+
+  &[align='left'] {
+    @include output-rhythm(margin-right, $medium);
+  }
+
+  @media #{$mobile-isolate} {
+    &[align='right'],
+    &[align='left'] {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+
+// tr, takes extensive styles if enabled in variables.scss. Color is applied in
+//_theme.color.scss to most of these selectors.
+tr {
+  // Row striping (zebra).
+  @if $table-row-striping == true {
+    &.odd {}
+
+    // nth-child class will capture tables in content that do not include the
+    // odd/even classes.
+    &.info,
+    &.even,
+    &:nth-child(2n+2) {}
+  }
+
+  // Hover color.
+  @if $tr-hover == true {
+    &:hover {}
+  }
+
+  // Column striping, applies to the active column in sortable tables.
+  @if $table-col-striping == true {
+    &.odd td.active {}
+    &.even td.active {}
+  }
+}
+
+
+// td, th.
+td,
+th {
+  @if $table-cell-borders == false {
+    border-width: 0;
+  }
+}
+
+
+// Display all borders.
+@if $table-cell-borders == true {
+  thead, tbody, tr, th, td {
+    border-width: $border-width;
+
+    // Attempt to support border attributes up to 10px
+    [border='2'] & {
+      border-width: $border-width * 2;
+    }
+    [border='3'] & {
+      border-width: $border-width * 3;
+    }
+    [border='4'] & {
+      border-width: $border-width * 4;
+    }
+    [border='5'] & {
+      border-width: $border-width * 5;
+    }
+    [border='6'] & {
+      border-width: $border-width * 6;
+    }
+    [border='7'] & {
+      border-width: $border-width * 7;
+    }
+    [border='8'] & {
+      border-width: $border-width * 8;
+    }
+    [border='9'] & {
+      border-width: $border-width * 9;
+    }
+    [border='10'] & {
+      border-width: $border-width * 10;
+    }
+  }
+}
+
+
+// thead. TODO, figure out where this applies?
+thead {
+  .active img {
+    display: inline;
+  }
+}
+
+
+

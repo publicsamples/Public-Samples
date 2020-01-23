@@ -1,0 +1,7 @@
+automatic_taxonomy_terms:
+  path: '/admin/structure/taxonomy/manage/{taxonomy_vocabulary}/automatic-taxonomy-terms'
+  defaults:
+    _form: '\Drupal\automatic_taxonomy_terms\Form\AutomaticTaxonomyTermsForm'
+    _title: 'Automatic taxonomy terms configuration'
+  requirements:
+    _permission: 'administer taxonomy'

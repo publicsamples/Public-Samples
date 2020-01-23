@@ -1,0 +1,81 @@
+/**
+ * Shortcodes (Menu bullets)
+ ============================================================================ */
+
+@mixin menu-bullets($bullet-closed, $bullet-open, $bullet-closed-rtl) {
+  .menu {
+    li {
+      a:after {
+        font-family: $icon-font;
+        float: $flow-to; // LTR
+        padding: 0 1px;
+        text-align: $flow-to; // LTR
+        @include output-rhythm(width, $medium);
+      }
+
+      &.menu__item > a:after {
+        content: $bullet-closed; // LTR
+      }
+
+      &.menu__item--expanded > a:after {
+        content: $bullet-open ;
+      }
+    }
+
+    // RTL
+    [dir="rtl"] & {
+      li.menu__item--collapsed > a:after {
+        content: $bullet-closed-rtl;
+      }
+    }
+  }
+}
+
+// fat arrows.
+.fa-arrow {
+  @include menu-bullets($fa-var-arrow-right, $fa-var-arrow-down, $fa-var-arrow-left);
+}
+
+// caret.
+.fa-caret {
+  @include menu-bullets($fa-var-caret-right, $fa-var-caret-down, $fa-var-caret-left);
+}
+
+// double angle.
+.fa-angle-double {
+  @include menu-bullets($fa-var-angle-double-right, $fa-var-angle-double-down, $fa-var-angle-double-left);
+}
+
+// chevron.
+.fa-chevron {
+  @include menu-bullets($fa-var-chevron-right, $fa-var-chevron-down, $fa-var-chevron-left);
+}
+
+// Special case drop menus.
+@mixin ms-dropmenu-bullets($bullet-down, $bullet-right) {
+  .rm-block__content .menu-level-1 .menu__item--expanded > a:after,
+  .rm-block__content .odd ul .odd > .menu__item--expanded > a:after {
+    content: $bullet-down;
+  }
+  .rm-block__content .odd ul > .menu__item--expanded > a:after,
+  .rm-block__content .odd ul > .menu__item--collapsed > a:after {
+    content: $bullet-right;
+  }
+}
+
+.ms-dropmenu {
+  .fa-arrow {
+    @include ms-dropmenu-bullets($fa-var-arrow-down, $fa-var-arrow-right);
+  }
+  .fa-caret {
+    @include ms-dropmenu-bullets($fa-var-caret-down, $fa-var-caret-right);
+  }
+  .fa-angle-double {
+    @include ms-dropmenu-bullets($fa-var-angle-double-down, $fa-var-angle-double-right);
+  }
+  .fa-chevron {
+    @include ms-dropmenu-bullets($fa-var-chevron-down, $fa-var-chevron-right);
+  }
+}
+
+

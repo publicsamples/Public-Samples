@@ -1,0 +1,99 @@
+/**
+ * Social media
+ *  - styles for the Social Media Links module.
+ *  - https://www.drupal.org/project/social_media_links
+ ============================================================================ */
+
+.block-social-media-links,
+.pane-social-media-link-widget {
+
+  .platforms {
+    padding-left: 0;
+    @include cf;
+  }
+
+  .platform__link {
+    @include output-rhythm(padding, $xxxx-small $xxx-small);
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  .is-horizontal {
+    @include list-horizontal($flow-from, $margin: (t: $x-small, r: 1px, b: $x-small, l: 1px), $list-item-selector: '.platform');
+
+    .platform {
+      text-align: center;
+
+      &__link {
+        vertical-align: sub;
+      }
+    }
+  }
+
+  .is-vertical {
+    .platform {
+      list-style: none;
+      @include output-rhythm(margin, 0 0 $xx-small 0);
+
+      &__name {
+        vertical-align: middle;
+      }
+
+      .fa {
+        text-align: center;
+        vertical-align: middle;
+        @include output-rhythm(margin-#{$flow-to}, $xx-small);
+      }
+
+      .fa-lg {
+        @include output-rhythm(width, $large);
+      }
+
+      .fa-2x {
+        @include output-rhythm(width, $medium * 2);
+      }
+
+      .fa-3x {
+        @include output-rhythm(width, $medium * 3);
+      }
+
+      .fa-4x {
+        @include output-rhythm(width, $medium * 4);
+      }
+
+      .fa-5x {
+        @include output-rhythm(width, $medium * 5);
+      }
+
+      img {
+        vertical-align: middle;
+        @include output-rhythm(margin-#{$flow-to}, $xx-small);
+      }
+    }
+  }
+
+  .fa-lg + .platform__name {
+    @include output-rhythm(font-size, $medium);
+  }
+
+  .fa-2x + .platform__name {
+    @include output-rhythm(font-size, $large);
+  }
+
+  .fa-3x + .platform__name {
+    @include output-rhythm(font-size, $x-large);
+  }
+
+  .fa-4x + .platform__name {
+    @include output-rhythm(font-size, $xx-large);
+  }
+
+  .fa-5x + .platform__name {
+    @include output-rhythm(font-size, $xxx-large);
+  }
+}
+
+

@@ -1,0 +1,10 @@
+.twocol-2-10 .arc--2 .l-r {
+  width: 16.66667%;
+  float: left;
+}
+
+.twocol-2-10 .arc--2 .l-r:last-child {
+  width: 83.33333%;
+  float: right;
+  margin-right: 0;
+}

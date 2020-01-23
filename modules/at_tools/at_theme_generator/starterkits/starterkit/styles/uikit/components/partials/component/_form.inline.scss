@@ -1,0 +1,21 @@
+/**
+ * Inline form styles.
+ ============================================================================ */
+
+.form--inline {
+
+  .form-item {
+    float: $flow-from;
+    @include output-rhythm(margin-#{$flow-to}, $small);
+  }
+
+  .form-item-separator {
+    @include output-rhythm(margin-top, $large);
+    @include output-rhythm(margin-#{$flow-to}, $medium);
+    @include output-rhythm(margin-#{$flow-from}, $small);
+  }
+
+  .form-actions {
+    clear: $flow-from;
+  }
+}

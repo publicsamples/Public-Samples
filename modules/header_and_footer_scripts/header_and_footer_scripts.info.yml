@@ -1,0 +1,14 @@
+name: Header and Footer Scripts
+description: This plugin allows you to add the scripts and styles on overall site from the front-end. No need to open files and add them there.
+package: HFS
+
+type: module
+# core: 8.x
+
+configure: header_and_footer_scripts.admin.header
+
+# Information added by Drupal.org packaging script on 2019-02-21
+version: '8.x-2.2'
+core: '8.x'
+project: 'header_and_footer_scripts'
+datestamp: 1550736487

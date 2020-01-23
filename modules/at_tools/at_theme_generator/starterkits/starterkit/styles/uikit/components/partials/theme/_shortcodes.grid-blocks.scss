@@ -1,0 +1,36 @@
+/**
+ * Shortcodes (Grid blocks)
+ ============================================================================ */
+
+@media #{$wide} {
+  .grid-block-2 {
+    .block {
+      @include gallery(6 of 12);
+    }
+  }
+
+  .grid-block-3 {
+    .block {
+      @include gallery(4 of 12);
+    }
+  }
+
+  .grid-block-4 {
+    .block {
+      @include gallery(3 of 12);
+    }
+  }
+
+  .grid-block-6 {
+    .block {
+      @include gallery(2 of 12);
+    }
+  }
+
+  .grid-block-12 {
+    .block {
+      @include gallery(1 of 12);
+    }
+  }
+}
+

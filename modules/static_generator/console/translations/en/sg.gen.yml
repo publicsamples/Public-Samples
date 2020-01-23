@@ -1,0 +1,5 @@
+description: 'Generate all static page files.'
+options: {}
+arguments: {}
+messages:
+    success: 'Generation of all static page files complete.'

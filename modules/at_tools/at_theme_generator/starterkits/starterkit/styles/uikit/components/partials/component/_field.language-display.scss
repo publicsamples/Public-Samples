@@ -1,0 +1,17 @@
+/**
+ * Field Language Display
+ ============================================================================ */
+
+[id*="field-language-display"] {
+
+  @include output-rhythm(margin-bottom, $medium);
+
+  .js-form-item {}
+
+  .form-item {
+    margin: 0;
+  }
+
+  label {}
+
+}

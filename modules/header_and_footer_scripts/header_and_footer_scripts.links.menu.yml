@@ -1,0 +1,5 @@
+header_and_footer_scripts.admin.header:
+  title: 'Header Footer Scripts'
+  description: 'Allow to add scripts and styles from the frontend at the start of body tag.'
+  parent: system.admin_config_development
+  route_name: header_and_footer_scripts.admin.header

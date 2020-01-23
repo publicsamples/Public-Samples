@@ -1,0 +1,40 @@
+/*
+ * Waveform requires custom styling as it is not built in to the library.
+ */
+.audiofield-wavesurfer .player-button {
+  color: #fff;
+  background-color: #337ab7;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  width: 55px;
+}
+.audiofield-wavesurfer .player-button.playpause {
+  width: 45px;
+}
+.audiofield-wavesurfer .player-button:hover {
+  background-color: #286090;
+}
+.audiofield-wavesurfer .volume {
+  float: right;
+}
+.audiofield-wavesurfer.playlist .playlist {
+  margin-top: 5px;
+}
+.audiofield-wavesurfer.playlist .playlist .track {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  padding: 6px 4px;
+}
+.audiofield-wavesurfer.playlist .playlist .track.playing {
+  color: #337ab7;
+}
+.audiofield-wavesurfer.playlist .playlist .track:hover {
+  background-color: #337ab7;
+  color: #fff;
+}

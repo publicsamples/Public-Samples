@@ -1,0 +1,5 @@
+at_theme_generator.generate:
+  title: 'AT Theme Generator'
+  route_name: at_theme_generator.generator
+  base_route: system.themes_page
+  weight: 200

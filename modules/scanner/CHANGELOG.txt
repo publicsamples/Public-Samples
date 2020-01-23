@@ -1,0 +1,4 @@
+Search and Replace Scanner 8.x-1.0-rc1, 2019-09-25
+--------------------------------------------------
+#2941359 by DamienMcKenna, Shreya Shetty, ccrawford91, anacolautti: Initial port
+  of Search and Replace Scanner to Drupal 8.

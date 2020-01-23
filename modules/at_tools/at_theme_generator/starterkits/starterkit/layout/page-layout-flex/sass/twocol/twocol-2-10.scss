@@ -1,0 +1,32 @@
+@import "../page-layout-base";
+//
+// Two Regions 2-10
+//
+// First region  : 2 grid columns.
+// Second region : 10 grid columns.
+//
+// Actual Source Order:
+//
+//  - first
+//  - second
+//
+// Appearance:
+//
+//  ------------------------------------------------
+//  |  first (2) |             second (10)         |
+//  ------------------------------------------------
+//  Key: region-name (grid columns)
+
+.twocol-2-10 {
+
+  .arc--2 {
+    .l-r {
+      width: span(2 of 12);
+
+      &:last-child {
+        width: span(10 of 12);
+      }
+    }
+  }
+}
+

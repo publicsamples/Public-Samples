@@ -1,0 +1,51 @@
+@import "../page-layout-base";
+//
+// Five regions, 2 grid cols each.
+//
+
+.fivecol-2-3-2-3-2 {
+
+  // Two active regions.
+  .arc--2 {
+    .l-r {
+      width: span(6 of 12);
+    }
+  }
+
+
+  // Three active regions.
+  .arc--3 {
+    .l-r {
+      width: span(4 of 12);
+    }
+  }
+
+
+  // Four active regions.
+  .arc--4 {
+    .l-r {
+      width: span(4 of 12);
+
+      &:first-child,
+      &:last-child {
+        width: span(2 of 12);
+      }
+    }
+  }
+
+
+  // Five active regions.
+  .arc--5 {
+    .l-r {
+      width: span(2 of 12);
+
+      &:nth-child(2n) {
+        width: span(3 of 12);
+      }
+    }
+  }
+
+
+  // The last region in the source is always the :last-child.
+  .l-rw:not(.arc--1) .l-r:last-child {}
+}

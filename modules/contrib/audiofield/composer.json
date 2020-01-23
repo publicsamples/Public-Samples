@@ -1,0 +1,25 @@
+{
+    "name": "drupal/audiofield",
+    "description": "AudioField Module",
+    "type": "drupal-module",
+    "license": "GPL-2.0+",
+    "homepage": "https://www.drupal.org/project/audiofield",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Daniel Moberly",
+            "homepage": "https://www.drupal.org/u/danielmoberly",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/audiofield"
+    },
+    "extra": {
+        "drush": {
+            "services": {
+                "drush.services.yml": "^9"
+            }
+        }
+    }
+}

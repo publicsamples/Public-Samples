@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Player 360 theme implementation for SoundManager audio player.
+ *
+ * Available variables:
+ * - plugin_id: the name of the plugin being used for templating.
+ * - plugin_theme: the name of the specific plugin theme, if it exists.
+ * - files: array of render info for each file.
+ * - settings: array of settings for thie player.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="audiofield">
+  {% for file in files %}
+    <div class="ui360">
+      <a href="{{ file.url }} ">{{ file.description }}</a>
+    </div>
+  {% endfor %}
+</div>

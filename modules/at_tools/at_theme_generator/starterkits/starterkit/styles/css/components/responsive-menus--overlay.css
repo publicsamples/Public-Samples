@@ -1,0 +1,103 @@
+/**
+ * Overlay
+ * Overlay menu positions the toggle in a corner (any), with the menu
+ * hidden. When toggled the menu opens in an overlay above the content
+ * and fills the whole screen.
+ ============================================================================ */
+.ms-overlay .rm-toggle {
+  display: block;
+  position: fixed;
+  padding: 0;
+  z-index: 1000;
+  opacity: 0.5;
+  border-radius: 2px;
+  top: 1rem;
+  right: 1rem;
+}
+
+.ms-overlay .rm-toggle span {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  word-wrap: normal;
+  font: 0/0 a;
+}
+
+.ms-overlay .rm-toggle__link {
+  border: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 0.5rem 1rem;
+}
+
+.ms-overlay .rm-toggle__link:hover, .ms-overlay .rm-toggle__link:focus {
+  outline: none;
+  padding: 0.5rem 1rem;
+}
+
+.ms-overlay .rm-toggle__icon {
+  margin-top: 0.1875rem;
+}
+
+.ms-overlay .rm-toggle__link, .ms-overlay .rm-toggle__icon {
+  background-color: transparent;
+}
+
+.ms-overlay .rm-toggle__link:hover, .ms-overlay .rm-toggle__link:focus, .ms-overlay .rm-toggle__icon:hover, .ms-overlay .rm-toggle__icon:focus {
+  background-color: transparent;
+}
+
+.ms-overlay .rm-block__content {
+  display: none;
+  opacity: .001;
+}
+
+.ms-overlay .rm-block__content .is-child {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all, 225ms, ease-in-out;
+  -o-transition: all, 225ms, ease-in-out;
+  transition: all, 225ms, ease-in-out;
+}
+
+.ms-overlay .rm-block__content .is-child.is-open--child {
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+}
+
+.ms-overlay.rm-is-open .rm-toggle {
+  opacity: 1;
+}
+
+.ms-overlay.rm-is-open .rm-block__content {
+  opacity: 1;
+  display: block;
+  position: absolute;
+  z-index: 990;
+  top: 0.75rem;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  left: 0.75rem;
+  padding: 0.25rem;
+}
+
+.ms-overlay.rm-is-open .rm-block__content .menu {
+  background-color: transparent;
+}
+
+.ms-overlay.rm-is-open .rm-block__content .menu .menu__link {
+  padding: 0.625rem;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.ms-overlay.rm-is-open .rm-block__content .menu .menu__link:after {
+  content: none;
+  display: none;
+}
+/*# sourceMappingURL=responsive-menus--overlay.css.map */

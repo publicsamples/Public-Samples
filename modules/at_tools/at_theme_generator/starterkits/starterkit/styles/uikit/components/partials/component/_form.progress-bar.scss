@@ -1,0 +1,48 @@
+/**
+ * Progress bar.
+ *  - unlike Drupal core we don't include all the vendor prefixes, instead
+ *    we just rely on autoprefixer doing it's thing.
+ * @see progress.js
+ ============================================================================ */
+
+.progress {
+  @include output-rhythm(margin, $large 0);
+
+  &__track {
+    border-color: #b3b3b3;
+    border-radius: 10em;
+    background-color: #f2f1eb;
+    background-image: linear-gradient(#e7e7df, #f0f0f0);
+    box-shadow: inset 0 1px 3px hsla(0, 0%, 0%, 0.16);
+  }
+
+  &__bar {
+    border: 1px #07629a solid;
+    background-color: #057ec9;
+    background-image:
+      linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15) ),
+      linear-gradient( to right bottom,
+        #0094f0 0%,
+        #0094f0 25%,
+        #007ecc 25%,
+        #007ecc 50%,
+        #0094f0 50%,
+        #0094f0 75%,
+        #0094f0 100% );
+    background-size: 40px 40px;
+    margin-top: -1px;
+    margin-left: -1px;
+    padding: 0 1px;
+    height: 16px;
+    border-radius: 10em;
+    animation: animate-stripes 3s linear infinite;
+    transition: width 0.5s ease-out;
+  }
+}
+
+
+// Progress bar animations.
+@keyframes animate-stripes {
+  0% {background-position: 0 0, 0 0;} 100% {background-position: 0 0, -80px 0;}
+}
+

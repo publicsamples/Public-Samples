@@ -1,0 +1,26 @@
+// Flex layout form globals.
+
+// Import base.
+@import "page-layout-base";
+
+.l-rw {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: $row-direction;
+  width: 100%;
+}
+
+.l-rw .l-r {
+  flex: 0 0 auto; // Support IE10/11
+  padding: 0 1px;
+  width: 100%;
+}
+
+// Reverse row direction.
+div[class*="threecol-row-reverse"] {
+  .l-rw {
+    flex-direction: $row-direction-reverse;
+    margin: 0;
+  }
+}
+

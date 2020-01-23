@@ -1,0 +1,43 @@
+.threecol-reverse-float-4-3-5 .hr--1-2 .l-r:first-child,
+.threecol-reverse-float-4-3-5 .hr--1-3 .l-r:first-child {
+  -ms-flex-preferred-size: 58.33333%;
+          -webkit-flex-basis: 58.33333%;
+          flex-basis: 58.33333%;
+}
+
+.threecol-reverse-float-4-3-5 .hr--1-2 .l-r:last-child,
+.threecol-reverse-float-4-3-5 .hr--1-3 .l-r:last-child {
+  -ms-flex-preferred-size: 41.66667%;
+          -webkit-flex-basis: 41.66667%;
+          flex-basis: 41.66667%;
+}
+
+.threecol-reverse-float-4-3-5 .hr--2-3 .l-r {
+  -ms-flex-preferred-size: 58.33333%;
+          -webkit-flex-basis: 58.33333%;
+          flex-basis: 58.33333%;
+}
+
+.threecol-reverse-float-4-3-5 .hr--2-3 .l-r:last-child {
+  -ms-flex-preferred-size: 41.66667%;
+          -webkit-flex-basis: 41.66667%;
+          flex-basis: 41.66667%;
+}
+
+.threecol-reverse-float-4-3-5 .arc--3 .l-r:first-child {
+  -ms-flex-preferred-size: 41.66667%;
+          -webkit-flex-basis: 41.66667%;
+          flex-basis: 41.66667%;
+}
+
+.threecol-reverse-float-4-3-5 .arc--3 .l-r:nth-child(2) {
+  -ms-flex-preferred-size: 33.33333%;
+          -webkit-flex-basis: 33.33333%;
+          flex-basis: 33.33333%;
+}
+
+.threecol-reverse-float-4-3-5 .arc--3 .l-r:nth-child(3) {
+  -ms-flex-preferred-size: 25%;
+          -webkit-flex-basis: 25%;
+          flex-basis: 25%;
+}

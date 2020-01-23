@@ -1,0 +1,411 @@
+/**
+ * Form Component
+ *  - common styles for form elements and classes.
+ ============================================================================ */
+
+.form-text {
+  appearance: none;
+
+  // Give contact and comment subject forms some symmetry.
+  &[name="subject[0][value]"] {
+    width: 50%;
+  }
+}
+
+// Punch these to full width on smaller devices.
+@media #{$mobile-isolate} {
+  .form-text[name="subject[0][value]"] {
+    width: 100%;
+  }
+}
+
+
+// Cross browser selects, we hope.
+.form-type-select__select-wrapper {
+  &:not(.is-multiple) {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    &:after {
+      font-family: $icon-font;
+      content: "\f0dc";
+      position: absolute;
+      @include output-rhythm(top, $medium * 0.25);
+      @include output-rhythm(#{$flow-to}, $medium * 0.75);
+      pointer-events: none;
+      display: none;
+      //z-index: 2;
+    }
+  }
+
+  &.is-multiple {
+    display: block;
+  }
+}
+
+.form-select {
+  min-width: 50%;
+	margin: 0;
+  font-size: 16px; // Font size must be 16px to prevent iOS page zoom on focus
+}
+
+// Firefox <= 34 has a false positive on @supports( -moz-appearance: none )
+// @supports ( mask-type: alpha ) is Firefox 35+
+@supports (-webkit-appearance: none) or (appearance: none) or ((-moz-appearance: none) and (mask-type: alpha)) {
+	.form-type-select__select-wrapper {
+    &:not(.is-multiple) {
+      &:after {
+        // Wait for FontAwesome to load.
+        .fa-loaded & {
+          display: block;
+        }
+      }
+
+      .form-select {
+        @include output-rhythm(text-indent, 3px);
+        @include output-rhythm(padding-#{$flow-to}, $medium * 1.5);
+        @include output-rhythm(margin-right, $medium / 2);
+
+        border-width: $border-width;
+        border-style: $border-style;
+        appearance: none;
+
+        &:focus {}
+      }
+    }
+  }
+}
+
+
+// Checkboxes, Radios, Items.
+.form-item,
+.form-radios,
+.form-checkboxes {
+  @include output-rhythm(margin, 0 0 $medium);
+}
+
+
+// Radio and checkbox items are radically restyled to stretch the label
+// underneath the input using padding and margin, this gives a bigger target
+// for touch/clicks. This is usually known as a "button zone", see:
+// http://uxmovement.com/forms/ways-to-make-checkboxes-radio-buttons-easier-to-click/
+.form-type-radio,
+.form-type-checkbox {
+  .option {
+    @include output-rhythm(padding, $xxxx-small $xx-small);
+    border-radius: $border-radius;
+
+    &:focus,
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .description {}
+}
+
+
+// Actions.
+.form-actions {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  @include output-rhythm(margin, $medium 0);
+
+  .button {
+    @include output-rhythm(margin-#{$flow-to}, 4px);
+  }
+}
+
+
+// Long text textarea (with tips).
+.field-type-text-long {
+  textarea {
+    border-radius: $form-border-radius $form-border-radius 0 0;
+  }
+}
+
+
+// Textarea wrapper.
+.form-textarea-wrapper {
+  textarea {
+    display: block;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+
+// Text field with formatting.
+.text-format-wrapper {
+  .text-full {
+    width: 100%;
+  }
+}
+
+
+// Filters and tips.
+.filter-wrapper {
+  border: $form-border-width $form-border-style;
+  border-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+
+  .form-type-select__select-wrapper,
+  .form-type-select__select-wrapper select {
+    width: auto !important;
+  }
+}
+
+
+// Filter guidelines
+.filter-guidelines {
+  flex: 0 0 100%;
+
+  .filter-guidelines-item {
+    @include output-rhythm(margin, $small 0);
+  }
+}
+
+
+.filter-help {
+  float: none;
+  margin-#{$flow-to}: auto;
+  @include output-rhythm(font-size, $medium * 0.875);
+}
+
+
+.tips {
+  padding-#{$flow-from}: 0;
+  @include output-rhythm(font-size, $medium * 0.875);
+
+  li {
+    list-style: none;
+  }
+}
+
+
+// Descriptions.
+.description {
+  @include output-rhythm(font-size, $small);
+}
+
+
+// Labels
+h4.label,
+.form-composite > legend {
+  font-size: inherit;
+  font-weight: $font-weight-semibold;
+  margin: 0;
+  padding: 0;
+}
+
+
+// Form required.
+.form-required:after {
+  font-family: $base-font-family; // protect the asterisk from webfonts etc.
+  content: " \002A ";
+  line-height: 1;
+}
+
+
+// abbr in drupal forms, often used to indicate a state change.
+abbr {
+  &.form-required,
+  &.ajax-changed {
+    border-bottom: none;
+  }
+
+  &.tabledrag-changed {
+    @include visually-hidden;
+  }
+}
+
+
+// Errors.
+.form-item {
+  input.error,
+  textarea.error,
+  select.error {
+    border: $form-border-width $form-border-style;
+  }
+}
+
+
+// Container inline.
+.container-inline {
+  display: flex;
+
+  div,
+  label {
+    display: flex;
+    @include output-rhythm(margin-#{$flow-to}, $xxx-small);
+  }
+
+  label:after {
+    content: ':';
+  }
+
+  .form-actions,
+  &.form-actions {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  // YAML module support
+  .yamlform-flex--container > .form-item {
+    @include output-rhythm(margin-#{$flow-to}, $xxx-small);
+  }
+}
+
+
+.form-type-radios {
+  .container-inline {
+    label:after {
+      content: none;
+    }
+
+    .form-type-radio {
+      @include output-rhythm(margin, 0 $medium);
+    }
+  }
+}
+
+
+// Form Composite inline, e.g. dialog.
+// TODO check https://www.drupal.org/node/2236789 when it lands.
+.form-composite--inline {
+
+  legend {
+    float: $flow-from;
+    margin-#{$flow-to}: 0.5em;
+    margin-top: 1px;
+
+    @media screen and (min-width: 321px) {
+      margin-#{$flow-to}: 1em;
+    }
+  }
+
+  .fieldset-legend:after {
+    content: ':';
+  }
+
+  input[type="radio"],
+  label {
+    vertical-align: middle;
+  }
+
+  label:after {
+    content: none;
+  }
+
+  @media screen and (min-width: 480px) {
+    .form-item {
+      margin-#{$flow-to}: 1.25em;
+    }
+  }
+}
+
+
+// Autocomplete.
+.ui-autocomplete li.ui-menu-item a.ui-state-focus,
+.autocomplete li.ui-menu-item a.ui-state-hover {
+  background-color: #0072b9; // TODO check background color.
+  color: #fff;
+  margin: 0;
+}
+
+
+// Collapsible details.
+details {
+  > .details-wrapper {
+    @include output-rhythm(margin, $medium);
+  }
+}
+
+.collapse-processed {
+  > summary {
+    @include output-rhythm(padding, $x-small);
+
+    &:before {
+      font-family: $icon-font;
+      content: $form-details-summary-open; // LTR
+      float: left;
+      margin: -1px 0 0;
+      @include output-rhythm(height, $medium);
+      @include output-rhythm(width, $medium);
+
+      // Wait for FontAwesome to load.
+      display: none;
+      .fa-loaded & {
+        display: block;
+      }
+
+      // RTL
+      [dir="rtl"] & {
+        float: right;
+      }
+    }
+  }
+}
+
+.collapse-processed:not([open]) > summary:before {
+  content: $form-details-summary-closed; // LTR
+
+  // RTL
+  [dir="rtl"] & {
+    @include fa-icon-flip(-1, 1, 0);
+  }
+}
+
+
+// Vertical tabs
+.vertical-tabs {
+  background-color: #ffffff;  // Color module?
+}
+
+
+// Special case for blocks config page to be nice.
+.block-list-secondary {
+  border-bottom-width: 1px;
+  box-sizing: border-box;
+  @include output-rhythm(padding, 0 $small);
+}
+
+
+// Extend reset-appearance class.
+.reset-appearance {
+  transition: none;
+  box-shadow: none;
+  border-radius: 0;
+
+  &:hover,
+  &:focus {
+    background: none;
+    color: inherit;
+  }
+}
+
+
+// CK Editor.
+.cke_editable {
+  padding: 5px 10px;
+}
+
+
+// Pet peeves with core forms.
+.field-storage-config-edit-form {
+  .container-inline {
+    display: block;
+  }
+  .form-select {
+    min-width: unset;
+  }
+}
+
+
+

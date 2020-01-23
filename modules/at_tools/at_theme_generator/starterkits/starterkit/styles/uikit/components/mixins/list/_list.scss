@@ -1,0 +1,75 @@
+// List mixins.
+// Common list mixins and import list style mixins.
+
+// Basic horizontal list, uses a map and the familiar trbl (top, left, bottom,
+// right) CSS syntax.
+@mixin list-horizontal($direction, $margin: (t: 0, r: $medium, b: 0, l: $medium), $list_item_selector: null, $sub-levels: null) {
+
+  // Set the row direction.
+  $row-direction: if($direction == left, row, row-reverse);
+
+  display: flex;
+  flex-direction: $row-direction;
+
+  $item_selector: 'li';
+  @if $list_item_selector {
+    $item_selector: $list_item_selector;
+  }
+
+  #{$item_selector} {
+    @include output-rhythm(margin, map-get($margin, t) map-get($margin, r) map-get($margin, b) map-get($margin, l));
+    list-style: none;
+
+    ul,
+    ol {
+      @if $sub-levels == hidden {
+        display: none;
+      }
+    }
+
+    [dir="rtl"] & {
+      margin-right: map-get($margin, l);
+      margin-left: map-get($margin, r);
+    }
+  }
+}
+
+// Use display property instead of float.
+// TODO change to FLEX ?
+@mixin list-horizontal-inline($display: inline-block, $margin: (t: 0, r: $medium, b: 0, l: $medium), $list_item_selector: null) {
+
+  $item_selector: 'li';
+  @if $list_item_selector {
+    $item_selector: $list_item_selector;
+  }
+
+  #{$item_selector} {
+    display: #{$display};
+    @include output-rhythm(margin, map-get($margin, t) map-get($margin, r) map-get($margin, b) map-get($margin, l));
+    list-style: none;
+
+    ul,
+    ol {
+      display: #{$display};
+    }
+
+    [dir="rtl"] & {
+      margin-right: map-get($margin, l);
+      margin-left: map-get($margin, r);
+    }
+  }
+}
+
+
+// Add webfont icons to list items.
+@mixin list-webfont-icon($font, $icon, $element) {}
+
+
+// Import list styles.
+@import
+  "list-buttons",
+  "list-tabs",
+  "list-seven",
+  "list-columns";
+
+

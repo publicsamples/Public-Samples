@@ -1,0 +1,37 @@
+form:
+  version: VERSION
+  css:
+    theme:
+      css/views_slideshow.css: {}
+
+widget_info:
+  version: VERSION
+  js:
+    js/views_slideshow.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+
+controls_text:
+  version: VERSION
+  css:
+    theme:
+      css/controls_text.css: {}
+
+pager_bullets:
+  version: VERSION
+  css:
+    component:
+      css/views-slideshow-pager-bullets.css: {}
+
+jquery_hoverIntent:
+  remote: https://github.com/briancherne/jquery-hoverIntent
+  version: 1.9
+  license:
+      name: MIT
+      gpl-compatible: true
+  js:
+    /libraries/jquery.hoverIntent/jquery.hoverIntent.js: {}
+  dependencies:
+    - core/jquery

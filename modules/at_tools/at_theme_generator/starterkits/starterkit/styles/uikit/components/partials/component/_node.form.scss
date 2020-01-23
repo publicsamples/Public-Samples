@@ -1,0 +1,125 @@
+/**
+ * Node Add Edit Forms.
+ ============================================================================ */
+
+.node-form {
+  margin: 0 -0.625em;
+}
+
+
+.layout-region {
+  padding: 0 0.625em;
+}
+
+
+// Horizontal.
+.is-horizontal {
+  .layout-node-form {
+    display: flex;
+    flex-direction: $row-direction;
+  }
+
+  .layout-region-node-main,
+  .layout-region-node-secondary {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .layout-region-node-main,
+  .layout-region-node-footer {
+    flex-basis: span(8 of 12);
+  }
+
+  .layout-region-node-secondary {
+    flex-basis: span(4 of 12);
+  }
+
+  .form-autocomplete,
+  .form-text,
+  .form-tel,
+  .form-email,
+  .form-url,
+  .form-search {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.layout-region-node-footer {
+  .form-actions {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+
+// Vertical.
+.layout-region-node-secondary__inner {
+  border-radius: $border-radius;
+  border: $border-width $border-style;
+
+  details {
+    border-radius: 0;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+    margin: 0;
+    @include output-rhythm(max-height, 45px);
+  }
+
+  .entity-meta .summary {
+    display: none;
+  }
+
+  .entity-meta__header {
+    padding: 0.625em 0.625em 0;
+
+    .form-type-radio,
+    .form-type-checkbox {
+      margin-#{$flow-from}: 0;
+    }
+  }
+
+  .entity-meta__title {
+    @include output-rhythm(padding, $xx-small);
+    @include output-rhythm(font-size, $medium);
+    font-weight: 400;
+    color: #fff;
+    border-radius: $border-radius;
+
+    &.is-published {
+      background-color: $marker-success-background-color;
+    }
+
+    &.unpublished {
+      background-color: $marker-warning-background-color;
+    }
+  }
+
+  .entity-meta__last-saved {
+    margin: 0;
+  }
+
+  .entity-meta__author {}
+
+  .label {
+    &.inline {
+      display: inline-block;
+      min-width: 33%;
+    }
+  }
+
+  .form-type-radio,
+  .form-type-checkbox {
+    .option {
+      border: 0;
+    }
+  }
+
+  .description {
+    @include output-rhythm(margin, 4px 0);
+  }
+}
+
+

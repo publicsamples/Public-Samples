@@ -1,0 +1,134 @@
+/**
+ * List Styles
+ ============================================================================ */
+
+// Links inline, e.g. node and comment "links".
+ul {
+  &.inline,
+  &.links.inline {
+    padding: 0;
+    @include cfm;
+  }
+
+  &.inline {
+    @include list-horizontal-inline('inline-block', $margin: (t: 0, r: 0, b: 0, l: 0));
+
+    a {
+      &:hover,
+      &:focus {}
+    }
+  }
+}
+
+
+// Remove bullets.
+.no-bullets {
+  li {
+    list-style: none;
+  }
+}
+
+
+// Remove padding.
+.no-padding {
+  padding: 0;
+}
+
+
+// Item lists are frequently used in Drupal by Views and other modules that need
+// to output a list of something, sometimes with a title.
+.item-list {
+
+  &__title {
+    font-weight: $font-weight-bold;
+  }
+
+  &__list {
+    padding: 0;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  a {
+    @include output-rhythm(padding, $menu-item-padding 0);
+    @include output-rhythm(margin, $menu-item-margin 0);
+
+    &:hover,
+    &:focus {}
+  }
+}
+
+
+// Comma separated item lists.
+.item-list--comma-list {
+  display: inline;
+}
+
+.item-list--comma-list .item-list__comma-list,
+.item-list__comma-list li,
+[dir="rtl"] .item-list--comma-list .item-list__comma-list,
+[dir="rtl"] .item-list__comma-list li {
+  margin: 0;
+}
+
+
+// Simple horizontal list, see: mixins/_list.scss.
+.list-horizontal {
+  @include list-horizontal($flow-from);
+}
+
+
+// Simple horizontal list, see: mixins/_list.scss.
+.list-multicolumn {
+  padding: 0;
+  @include cfm;
+
+  > li {
+    font-weight: $font-weight-bold;
+    list-style: none;
+  }
+
+  ul, ol {
+    font-weight: $font-weight-normal;
+    padding: 0;
+  }
+}
+
+@media #{$mobile} {
+  @include list-multicolumn('.list-multicolumn', 12em);
+}
+
+
+// Horizontal description lists, adjust the media query to suit.
+@media #{$mobile} {
+  .dl-horizontal {
+    dt {
+      float: $flow-from;
+      clear: $flow-from;
+      text-align: $flow-from;
+      width: 11em;
+
+      &:after {
+        content: ":";
+      }
+    }
+    dd {
+      margin-#{$flow-from}: 12em;
+      @include cf;
+    }
+  }
+}
+
+
+// DL list groups
+.list-group {
+  @include output-rhythm(padding-#{$flow-from}, 0);
+  @include output-rhythm(margin-#{$flow-from}, 0);
+
+  .list-group__link {}
+  .list-group__description {}
+}
+
+

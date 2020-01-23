@@ -1,0 +1,67 @@
+.fourcol-source-ordered-12--3-9--12 .hr--2-3 .l-r:first-child {
+  width: 75%;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.fourcol-source-ordered-12--3-9--12 .hr--2-3 .l-r:last-child {
+  width: 25%;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.fourcol-source-ordered-12--3-9--12 .hr--1-2-3 .l-r:first-child {
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.fourcol-source-ordered-12--3-9--12 .hr--1-2-3 .l-r:nth-child(2) {
+  width: 75%;
+  -webkit-order: 3;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.fourcol-source-ordered-12--3-9--12 .hr--1-2-3 .l-r:last-child {
+  width: 25%;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.fourcol-source-ordered-12--3-9--12 .hr--2-3-4 .l-r:first-child {
+  width: 75%;
+}
+
+.fourcol-source-ordered-12--3-9--12 .hr--2-3-4 .l-r:nth-child(2) {
+  width: 25%;
+}
+
+.fourcol-source-ordered-12--3-9--12 .arc--4 .l-r:first-child {
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.fourcol-source-ordered-12--3-9--12 .arc--4 .l-r:nth-child(2) {
+  width: 75%;
+  -webkit-order: 3;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.fourcol-source-ordered-12--3-9--12 .arc--4 .l-r:nth-child(3) {
+  width: 25%;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.fourcol-source-ordered-12--3-9--12 .arc--4 .l-r:last-child {
+  -webkit-order: 4;
+      -ms-flex-order: 4;
+          order: 4;
+}

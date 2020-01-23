@@ -1,0 +1,15 @@
+/**
+ * Feed Icons
+ *  - icons are SVG, SEE feed-icon.html.twig in AT Core templates directory.
+ ============================================================================ */
+
+// Feed icon link. Set a width and height to constrain the SVG icon.
+.feed-icon {
+  display: block;
+  @include output-rhythm(width, $medium);
+  @include output-rhythm(height, $medium);
+}
+
+// SVG feed icon. SEE at_core/templates/feed-icon.html.twig.
+.feed-icon-rss {}
+

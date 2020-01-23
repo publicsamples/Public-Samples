@@ -1,0 +1,24 @@
+{#
+/**
+ * @file
+ * Default theme implementation for Wavesurfer audio player.
+ *
+ * Available variables:
+ * - plugin_id: the name of the plugin being used for templating.
+ * - plugin_theme: the name of the specific plugin theme, if it exists.
+ * - files: array of render info for each file.
+ * - settings: array of settings for thie player.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="audiofield">
+  {% for file in files %}
+    <div class="audiofield-wavesurfer" id="wavesurfer_{{ file.id }}">
+      <div id="audiofield-audio-player-{{ file.id }}" class="waveform"></div>
+      <div class="player-button playpause play">Play</div>
+      <input type="range" class="volume" min="0" max="10" value="{{ settings.audio_player_initial_volume}}">
+      <label for="audiofield-audio-player-{{ file.id }}">{{ file.description }}</label>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,53 @@
+@import "plugin-layout-base";
+//
+// Three Regions 6-3-3
+//
+// First region  : 6 grid columns.
+// Second region : 3 grid columns.
+// Third region  : 3 grid columns.
+// -----------------------------------------------------------------------------
+
+.bp--at-core-simple-wide,
+.bp--at-core-simple-tablet-isolate {
+  .atl--threecol-6-3-3 {
+    // Two active regions.
+    &.l-arc--2 {
+      > .atl__cw > .atl__lc {
+        width: span(9 of 12);
+
+        &:last-child {
+          width: span(3 of 12);
+        }
+      }
+    }
+  }
+}
+
+.bp--at-core-simple-tablet-isolate {
+  .atl--threecol-6-3-3 {
+    // Three active regions.
+    &.l-arc--3 {
+      > .atl__cw > .atl__lc {
+        &:nth-child(2),
+        &:last-child {
+          width: span(6 of 12);
+        }
+      }
+    }
+  }
+}
+
+.bp--at-core-simple-wide {
+  .atl--threecol-6-3-3 {
+    // Three active regions.
+    &.l-arc--3 {
+      > .atl__cw > .atl__lc {
+        width: span(3 of 12);
+
+        &:first-child {
+          width: span(6 of 12);
+        }
+      }
+    }
+  }
+}

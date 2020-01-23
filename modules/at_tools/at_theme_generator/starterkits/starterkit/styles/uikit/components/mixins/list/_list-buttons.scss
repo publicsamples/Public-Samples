@@ -1,0 +1,135 @@
+// List items as buttons and button groups.
+// By default these inherit most button global styles, e.g. if you set
+// $button-border-width in variables.scss it will apply here unless overridden
+// in the file you are calling the mixin from.
+
+// List items as buttons.
+@mixin list-style-buttons($list_selector) {
+
+  #{$list_selector} {
+    @include list-horizontal($flow-from, $margin: (t: 0, r: $xxxx-small, b: 0, l: 0));  // LTR
+
+    li {
+      a {
+        @include button-variant($button-color, $button-background-color, true, $button-border-width, $button-border-color, $button-border-style);
+
+        @if $button-box-shadow == true {
+          box-shadow: rgba(255, 255, 255, 0.5) 0 $button-border-width 0 inset;
+        }
+
+        //border: $button-border-width $button-border-style $button-border-color;
+        border-radius: $button-border-radius;
+
+        text-align: $button-text-align;
+        text-decoration: none;
+        font-weight: $font-weight-normal;
+        line-height: 1;
+
+        width: auto;
+        display: block;
+        position: relative;
+
+        @include output-rhythm(padding, $xx-small $medium);
+        transition: $global-transition;
+      }
+    }
+  }
+
+  // Use .page to increase the specificity as a safety margin in RTL
+  [dir="rtl"] .page & {
+    @include list-horizontal($flow-from, $margin: (t: 0, r: 0, b: 0, l: $xxxx-small));
+  }
+}
+
+
+// List items as a buttons-group, horizontal.
+@mixin list-style-button-group-horizontal($list_selector) {
+
+  #{$list_selector} {
+    @include list-horizontal($flow-from, $margin: (t: 0, r: 0, b: 0, l: 0));
+    border-bottom: 0;
+
+    li {
+      // LTR, RTL
+      @if $flow-from == left {
+        &:first-child a {
+          border-radius: $button-border-radius 0 0 $button-border-radius;
+        }
+        &:last-child a {
+          border-radius: 0 $button-border-radius $button-border-radius 0;
+        }
+      }
+      @else if $flow-from == right {
+        &:first-child a {
+          border-radius: 0 $button-border-radius $button-border-radius 0;
+        }
+        &:last-child a {
+          border-radius: $button-border-radius 0 0 $button-border-radius;
+        }
+      }
+
+      a {
+        @include button-variant($button-color, $button-background-color, true, $button-border-width, $button-border-color, $button-border-style);
+
+        @if $button-box-shadow == true {
+          box-shadow: rgba(255, 255, 255, 0.5) 0 $button-border-width 0 inset;
+        }
+
+        margin-#{$flow-to}: -$tab-border-width;
+        @include output-rhythm(padding, $xx-small $medium);
+        text-align: $button-text-align;
+        text-decoration: none;
+        font-weight: $font-weight-normal;
+        line-height: 1;
+        width: auto;
+        display: block;
+        position: relative;
+        transition: $global-transition;
+      }
+    }
+  }
+}
+
+
+// List items as a buttons-group, vertically.
+@mixin list-style-button-group-vertical($list_selector) {
+
+  #{$list_selector} {
+    border-bottom: 0;
+
+    li {
+      list-style: none;
+
+      &:first-child a {
+        border-radius: $button-border-radius $button-border-radius 0 0;
+      }
+      &:last-child a {
+        border-radius: 0 0 $button-border-radius $button-border-radius;
+      }
+
+      a {
+        @include button-variant($button-color, $button-background-color, true, $button-border-width, $button-border-color, $button-border-style);
+
+        @if $button-box-shadow == true {
+          box-shadow: rgba(255, 255, 255, 0.5) 0 $button-border-width 0 inset;
+        }
+
+        //border: $button-border-width $button-border-style;
+        margin-bottom: -$tab-border-width;
+        @include output-rhythm(padding, $xx-small $medium);
+        text-align: $flow-from;
+        text-decoration: none;
+        font-weight: $font-weight-normal;
+        line-height: 1;
+        width: auto;
+        display: block;
+        position: relative;
+        transition: $global-transition;
+      }
+    }
+  }
+}
+
+
+
+

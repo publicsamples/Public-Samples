@@ -1,0 +1,5 @@
+automatic_taxonomy_terms:
+  title: 'Automatic Taxonomy Terms'
+  route_name: automatic_taxonomy_terms
+  base_route: entity.taxonomy_vocabulary.overview_form
+  weight: 10

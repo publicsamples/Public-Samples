@@ -1,0 +1,11 @@
+name: AudioField
+description: "Adds audio widget for uploading and playing audio files."
+type: module
+package: Field types
+# core: '8.x'
+
+# Information added by Drupal.org packaging script on 2019-03-27
+version: '8.x-1.9'
+core: '8.x'
+project: 'audiofield'
+datestamp: 1553712785

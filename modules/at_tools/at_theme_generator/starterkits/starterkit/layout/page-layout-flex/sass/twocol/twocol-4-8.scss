@@ -1,0 +1,31 @@
+@import "../page-layout-base";
+//
+// Two Regions 4-8
+//
+// First region  : 4 grid columns.
+// Second region : 8 grid columns.
+//
+// Actual Source Order:
+//
+//  - first
+//  - second
+//
+// Appearance:
+//
+//  ------------------------------------------------
+//  |    first (4)   |           second (8)        |
+//  ------------------------------------------------
+//  Key: region-name (grid columns)
+
+.twocol-4-8 {
+
+  .arc--2 {
+    .l-r {
+      width: span(4 of 12);
+
+      &:last-child {
+        width: span(8 of 12);
+      }
+    }
+  }
+}

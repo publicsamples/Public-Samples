@@ -1,0 +1,98 @@
+// List items styled like Seven themes secondary links list. These have a
+// active/hover border bottom with transitions.
+// By default these inherit most list global styles, e.g. if you set
+// $list-border-width in variables.scss it will apply here unless
+// overridden in the file you are calling the mixin from.
+
+
+// Standard horizontal display, just like the Seven theme, however
+// we remove the border bottom on the ul/ol container, this makes
+// it more versatile as a mixin style.
+
+@mixin list-style-seven-horizontal($list_selector) {
+
+  #{$list_selector} {
+    @include list-horizontal($flow-from, $margin: (t: 0, r: 0, b: 0, l: 0));
+    padding: 0;
+
+    a {
+      display: block;
+      line-height: 1;
+      color: $list-color;
+      border-bottom: $list-border-width $list-border-style lighten($list-border-color, $lighten-more);
+      transition: $global-transition;
+
+      @include output-rhythm(padding, $medium $xx-small $x-small);
+      @include output-rhythm(margin-#{$flow-to}, $medium);
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        color: $list-hover-color;
+        border-bottom: $list-border-width $list-border-style $list-border-color;
+      }
+
+      &.active,
+      &.is-active {
+        border-bottom: $list-border-width $list-border-style $list-border-color;
+
+        &:hover,
+        &:focus {
+          color: $list-hover-color;
+        }
+      }
+    }
+  }
+}
+
+
+//
+// Vertically displayed.
+//
+@mixin list-style-seven-vertical($list_selector) {
+
+  #{$list_selector} {
+    @include cfm;
+    text-align: $flow-from;
+
+    li {
+      list-style: none;
+      //border-bottom: $list-border-width $list-border-style $list-border-color;
+      //display: block;
+
+      &:first-child {
+        //border-top: $list-border-width $list-border-style $list-border-color;
+      }
+    }
+
+    a {
+      display: inline-block;
+      line-height: 1;
+      color: $list-color;
+      border-bottom: $list-border-width $list-border-style transparent;
+      border-left: 3px $list-border-style;
+      transition: $global-transition;
+
+      @include output-rhythm(padding, $small $medium $xx-small ($medium - 2)); // LTR
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        color: $list-hover-color;
+        border-bottom: $list-border-width $list-border-style $list-border-color;
+      }
+
+      &.active,
+      &.is-active {
+        border-bottom: $list-border-width $list-border-style $list-border-color;
+
+        &:hover,
+        &:focus {
+          color: $list-hover-color;
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,49 @@
+/**
+ * Basic Horizontal Menu
+ * This will hide all sub-menus no matter what, it has the advantage over the
+ * drop menu of not requiring a width on menu items or arrows.
+ */
+.ms-horizontal .rm-toggle {
+  display: none;
+}
+
+.ms-horizontal .rm-block__content .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.ms-horizontal .rm-block__content .menu .menu__item {
+  margin: 0 0 0 0;
+  list-style: none;
+}
+
+[dir="rtl"] .ms-horizontal .rm-block__content .menu .menu__item {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.ms-horizontal .rm-block__content .menu .menu {
+  display: none;
+}
+
+.ms-horizontal .rm-block__content .menu__item .menu__link:after {
+  content: '';
+  display: none;
+}
+
+.ms-horizontal .rm-block__content .menu__link {
+  padding: 0.5rem 1.25rem;
+}
+
+.ms-horizontal .rm-block__content .menu__link:before, .ms-horizontal .rm-block__content .menu__link:after {
+  content: "";
+  float: none;
+  width: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=responsive-menus--horizontal.css.map */

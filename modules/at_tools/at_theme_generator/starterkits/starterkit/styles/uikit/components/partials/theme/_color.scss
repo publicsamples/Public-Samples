@@ -1,0 +1,1627 @@
+/**
+ * Colors
+ * - Add or modify colors for all theme elements.
+ * - Most colors are set in _variables.scss where you can make global changes
+ *   without touching this file at all.
+ * - If your theme is using the Color module be very careful about what you
+ *   change in this file, or in the global _variables.scss file, the color
+ *   schemes expect certain hex values to exist in the color.css file - it is
+ *   safer to place colors in a partial that is not parsed by the Color module.
+ ============================================================================ */
+
+/**
+ * base.elements
+ ============================================================================ */
+
+// Background for offcanvas menus goes on html so CKEditor does not inherit
+// it from the body element.
+html {
+  background-color: $body-background-color;
+}
+
+// Body.
+body {
+  background-color: transparent;
+  color: $text-color;
+}
+
+
+// Links.
+a {
+  color: $link-color;
+
+  &:visited {
+    color: $link-color; // or use $link-visited-color
+  }
+
+  &:active,
+  &.active {
+    color: $link-active-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+  }
+}
+
+
+// Blockquotes, Bootstrap style.
+blockquote {
+  border-color: $border-color; // LTR
+
+  p {
+    &:first-child {
+      &:before {
+        color: $border-color;
+      }
+    }
+  }
+
+  small {
+    color: $text-color-medium;
+  }
+
+  // Float right with text-align: right
+  &.pull-right {
+    border-#{$flow-to}-color: $border-color; // TODO check interpolation is OK
+  }
+}
+
+
+// A better looking default horizontal rule
+hr {
+  border-color: $border-color;
+}
+
+
+/**
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background-color: $selection-color;
+}
+
+::selection {
+  background-color: $selection-color;
+}
+
+
+// Stylise strike-through text.
+del {
+  color: $text-color-medium;
+}
+
+
+// Code related tags.
+code,
+pre,
+var,
+kbd,
+samp {
+  background: $text-background-color-light;
+}
+
+
+/**
+ * Web fonts
+ ============================================================================ */
+
+/* Override Font Awesome classes. */
+.#{$fa-css-prefix}-border {
+  border-color: $border-color;
+}
+
+/*  Extra classes for Font Awesome. */
+.#{$fa-css-prefix}-text-color {
+  color: $text-color;
+}
+
+.#{$fa-css-prefix}-text-color-light {
+  color: $text-color-light;
+}
+
+.#{$fa-css-prefix}-text-color-medium {
+  color: $text-color-medium ;
+}
+
+.#{$fa-css-prefix}-match-border {
+  color: $border-color;
+}
+
+.#{$fa-css-prefix}-match-border-light {
+  color: $border-color-light;
+}
+
+.#{$fa-css-prefix}-match-link {
+  color: $link-color;
+}
+
+.#{$fa-css-prefix}-trans-white-25 {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.#{$fa-css-prefix}-trans-white-50 {
+  color: rgba(255, 255, 255, 0.50);
+}
+
+.#{$fa-css-prefix}-trans-white-75 {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.#{$fa-css-prefix}-trans-black-25 {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.#{$fa-css-prefix}-trans-black-50 {
+  color: rgba(0, 0, 0, 0.50);
+}
+
+.#{$fa-css-prefix}-trans-black-75 {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+
+/**
+ * Page
+ *  - mainly for markup that is printed directly in page.html.twig and
+ *    .l-r {}
+ ============================================================================ */
+
+// Page wrapper.
+.page {
+  background-color: $page-background-color;
+}
+
+
+// Regions
+//  - .regions is the main wrapper selector for all regions within a page.
+.regions {
+  background-color: $regions-background-color;
+}
+
+
+//  Page Rows - these match the Site Builder layout.
+
+// Leaderboard
+.pr-leaderboard {    // Outer wrapper.
+  &__rw {}           // Regions wrapper (container that takes max-width from your layout settings).
+  &__leaderboard {}  // Region.
+}
+
+
+// Header
+.pr-header {
+  color: $page-header-color;
+  @include page-row-background-color($page-header-background-color, $page-row-fullwidth);
+
+  &__rw {}
+  &__header-first {}
+  &__header-second {}
+}
+
+
+// Navbar
+.pr-navbar {
+  color: $page-navbar-color;
+  @include page-row-background-color($page-navbar-background-color, $page-row-fullwidth);
+
+  .menu a {
+    color: inherit;
+  }
+
+  &__rw {}
+  &__navbar {}
+}
+
+
+// Highlighted
+.pr-highlighted {
+  &__rw {}
+  &__highlighted {}
+}
+
+
+// Features
+.pr-features {
+  color: $page-features-color;
+  @include page-row-background-color($page-features-background-color, $page-row-fullwidth);
+
+  &__rw {}
+  &__features-first {}
+  &__features-second {}
+  &__features-third {}
+}
+
+
+// Content prefix
+.pr-content-prefix {
+  &__rw {}
+  &__content-prefix {}
+}
+
+
+// Main
+.pr-main {
+  &__rw {}
+  &__content {}
+  &__sidebar-first {}
+  &__sidebar-second {}
+}
+
+
+// Content suffix
+.pr-content-suffix {
+  &__rw {}
+  &__content-suffix {}
+}
+
+
+// Sub features
+.pr-subfeatures {
+  color: $page-subfeatures-color;
+  @include page-row-background-color($page-subfeatures-background-color, $page-row-fullwidth);
+
+  &__rw {}
+  &__subfeatures-first {}
+  &__subfeatures-second {}
+  &__subfeatures-third {}
+  &__subfeatures-fourth {}
+}
+
+
+// Footer
+.pr-footer {
+  color: $page-footer-color;
+  @include page-row-background-color($page-footer-background-color, $page-row-fullwidth);
+
+  .menu a {
+    color: inherit;
+
+    &.active,
+    &:hover,
+    &:focus {
+      color: inherit;
+    }
+  }
+
+  &__rw {}
+  &__footer {}
+}
+
+
+/**
+ * AT attribution message
+ *  - a toggle setting in the theme settings, you can turn it on/off using
+ *    the Markup overrides extension.
+ ============================================================================ */
+
+.attribution {
+  .l-rw {
+    background-color: transparent;
+  }
+  .attribution__link {
+    color: $text-color;
+  }
+}
+
+
+/**
+ * Feed Icons
+ *  - icons are SVG, SEE feed-icon.html.twig in AT Core templates directory.
+ ============================================================================ */
+
+.feed-icon-rss__path {
+  fill: rgba(0, 0, 0, 0.6);
+}
+
+
+/**
+ * Branding styles
+ *  - Drupal core branding block.
+ ============================================================================ */
+
+.block--system-branding-block {}
+
+.site-branding-text {}
+
+.site-branding__name-link {
+  &:link,
+  &:visited {
+    color: $text-color-medium;
+  }
+
+  &:hover,
+  &:active {
+    color: $text-color;
+  }
+}
+
+.site-branding__logo-link {}
+.site-branding__slogan {}
+
+
+/**
+ * Blocks
+ ============================================================================ */
+
+.block {}
+.block__title {}
+
+
+/**
+ * Menus
+ *  - style Drupal core block menus.
+ *  - for the drop menu and other responsive menus see the mixins and the
+ *    _navbar.scss partial.
+ ============================================================================ */
+
+.menu {
+  .menu__link {
+    color: $menu-color;
+    border-color: $border-color;
+    //background-color: $menu-background-color;
+
+    &:hover,
+    &:focus {
+      color: $menu-hover-color;
+      //background-color: $menu-background-hover-color;
+    }
+
+    &.active {
+      color: $menu-active-color;
+      //background-color: $menu-background-active-color;
+    }
+  }
+
+  // Nested menus.
+  .menu {
+    .menu__link {
+      &:hover,
+      &:focus {}
+      &.active-trail {}
+    }
+  }
+}
+
+.menu__item {
+  &--active-trail > .menu__link {
+    //color: $menu-active-color;
+    //background-color: $menu-background-active-color;
+  }
+
+  // If menu arrows are true.
+  @if $menu-arrows == true {
+    &--collapsed,
+    &--expanded {
+      > .menu__link:after {
+        //color: $text-color;
+      }
+    }
+  }
+
+  // Add the border top to the first item only.
+  &:first-child .menu__link {
+    border-color: $border-color;
+  }
+}
+
+
+/**
+ * Responsive menu styles.
+ *
+ * Mixins provide the basic structure and a base style (not much), the rest
+ * is up to you, add colors, borders, padding and so on. Icons such as
+ * the hamburger and arrows are set in variables in _variables.scss, and you
+ * use the color variables for menus from there also.
+ *
+ * Menu styles are set in Appearance settings using the Responsive Menus extension.
+ * There you select a block, breakpoint, a default style and a responsive style.
+ * You can safely remove mixins from this file if you not going to use them later
+ * on, and want to save a few bytes in stylesheet size.
+ *
+ * Each mixin takes one or more parameters. Use these to customize the basic structure
+ * of the menu, or call options, for example you can place the offcanvas menu on the
+ * left or right.
+ *
+ * Do not import into breakpoints unless you are not using the Responsive Menu
+ * settings in Appearance Extensions, in which case you will need to load the
+ * at_core/at.responsivemenus library and provide it's required drupalSettings.
+ *
+ * Breakpoints are handled in matchMedia using Enquire.
+ *
+ * Responsive styles are a combination of three things:
+ *  1. Sass/CSS defined here (with breakpoints etc).
+ *  2. jQuery: responsive-menus.js in AT Core libraries which adds/toggles classes.
+ *  3. Theme settings as set in your themes Advanced extension settings.
+ ============================================================================ */
+
+// Provide a consistent style for visible click handles.
+.rm-toggle {
+  &__link,
+  &__link:hover,
+  &__link:focus,
+  &__link:active {
+    color: $resp-menu-color;
+    background-color: $resp-menu-background-color;
+  }
+
+  &__icon {
+    fill: $resp-menu-color;
+  }
+
+  span {
+    background-color: transparent;
+  }
+}
+
+.ms-offcanvas,
+.ms-vertical,
+.ms-slidedown,
+.ms-tiles {
+  .rm-block__content {
+    .menu {
+      .menu__link,
+      .rm-accordion-trigger {
+        color: $resp-menu-color;
+        background-color: $resp-menu-background-color;
+
+        &:hover,
+        &:focus {
+          color: $resp-menu-hover-color ;
+          background-color: $resp-menu-hover-background-color;
+        }
+      }
+
+      .menu__link.is-active {
+        color: $resp-menu-active-color ;
+        background-color: $resp-menu-active-background-color;
+
+        &[href="/"] {
+          color: $resp-menu-color;
+          background-color: $resp-menu-background-color;
+
+          &:hover,
+          &:focus {
+            color: $resp-menu-hover-color;
+            background-color: $resp-menu-hover-background-color;
+          }
+        }
+      }
+    }
+
+    .rm-accordion-trigger__icon {
+      background-color: transparent !important;
+      fill: $resp-menu-color;
+    }
+  }
+}
+
+
+.ms-slidedown {
+  .rm-row,
+  .rm-region {
+    background-color: $slidedown-background-color;
+  }
+}
+
+
+.ms-dropmenu,
+.ms-horizontal {
+  .rm-block__content {
+    .menu-level-1 {
+      > li > span > .menu__link {
+        color: inherit;
+        background-color: transparent;
+
+        &:hover,
+        &:focus {
+          color: $resp-menu-hover-color;
+          background-color: $resp-menu-hover-background-color;
+        }
+
+        &.is-active {
+          color: $resp-menu-active-color;
+          background-color: $resp-menu-active-background-color;
+
+          &[href="/"] {
+            color: inherit;
+            background-color: transparent; // Match Drupal base path for frontpage/home links
+
+            &:hover,
+            &:focus {
+              color: $resp-menu-hover-color;
+              background-color: $resp-menu-hover-background-color;
+            }
+          }
+        }
+      }
+    }
+
+    .menu-level-2 {
+      .menu__link {
+        color: $resp-menu-color;
+        background-color: $resp-menu-background-color;
+
+        &:hover,
+        &:focus {
+          color: $resp-menu-hover-color ;
+          background-color: $resp-menu-hover-background-color;
+        }
+
+        &.is-active {
+          color: $resp-menu-active-color ;
+          background-color: $resp-menu-active-background-color;
+        }
+      }
+    }
+  }
+}
+
+
+.ms-overlay {
+  .rm-toggle {
+    background-color: rgba(0, 0, 0, 0.875);
+
+    &:hover,
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.95);
+    }
+
+    &__link,
+    &__icon {
+      background-color: transparent;
+
+      &:hover,
+      &:focus {
+        background-color: transparent;
+      }
+    }
+  }
+
+  &.rm-is-open {
+    .rm-toggle {
+      opacity: 1;
+      background-color: white;
+
+      &__icon {
+        fill: black;
+      }
+    }
+  }
+
+  .rm-block__content {
+    background-color: rgba(0, 0, 0, 0.80);
+
+    .menu {
+      background-color: transparent;
+
+      .menu__link {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.95);
+
+        &:hover,
+        &:focus,
+        &.is-active {
+          background-color: rgba(0, 0, 0, 0.75);
+        }
+
+        &.is-active {
+          &[href="/"] {
+            background-color: rgba(0, 0, 0, 0.75);
+
+            &:hover,
+            &:focus {
+              background-color: rgba(0, 0, 0, 0.75);
+            }
+          }
+        }
+      }
+
+      .rm-accordion-trigger {
+        background-color: rgba(0, 0, 0, 0.95);
+
+        &:hover,
+        &:focus {
+          background-color: rgba(0, 0, 0, 0.75);
+        }
+
+        &__icon {
+          fill: white;
+        }
+      }
+    }
+  }
+}
+
+
+.ms-meganav {
+  .rm-block__content {
+    .menu {
+      .menu__link {
+        color: inherit;
+        background-color: transparent;
+
+        &:hover,
+        &:focus {
+          color: $resp-menu-hover-color;
+          background-color: $resp-menu-hover-background-color;
+        }
+
+        &.is-active {
+          //color: $resp-menu-active-color;
+          //background-color: $resp-menu-active-background-color;
+        }
+      }
+    }
+  }
+
+  &.rm-is-open {
+    .rm-block__content {
+      .menu-level-1 > .menu__item {
+        border-bottom: $border-width $border-style $border-color;
+
+        > span > .menu__link {
+          color: $resp-menu-color;
+          background-color: $resp-menu-background-color;
+
+          &:hover,
+          &:focus {
+            color: $resp-menu-hover-color;
+            background-color: $resp-menu-hover-background-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/**
+ * Breadcrumbs
+ ============================================================================ */
+
+.breadcrumb {
+  li {
+    &:before {
+      color: $breadcrumb-separator-color;
+    }
+  }
+
+  a {
+    color: $breadcrumb-color;
+    text-decoration: none;
+  }
+}
+
+
+/**
+ * Pagers
+ * - Full system pager.
+ * - Views mini pager.
+ ============================================================================ */
+
+// Pager links are either an <a>, or a <span> for the current item in the Views mini-pager.
+.pager__link {
+  border-color: $border-color;
+
+  &:focus,
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+
+  &:active {
+    box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.75);
+    opacity: 0.9;
+  }
+}
+
+// Active item link.
+.pager__link--is-active {
+  background-color: rgba(255, 255, 255, 0.75);
+
+  .pager--mini & {
+    background-color: transparent;
+    opacity: 0.65;
+  }
+}
+
+
+/**
+ * Table Theme
+ * Style Drupal selectors for tables.
+ ============================================================================ */
+
+// tr, takes extensive styles if enabled in variables.scss.
+tr {
+  // Row striping (zebra).
+  @if $table-row-striping == true {
+    &.odd {
+      background-color: $table-row-odd-color;
+    }
+
+    &.info,
+    &.even,
+    &:nth-child(2n+2)  {
+      background-color: $table-row-even-color;
+    }
+  }
+
+  // Hover color.
+  @if $tr-hover == true {
+    &:hover {
+      background-color: $tr-hover-color;
+    }
+  }
+
+  // Column striping, applies to the active column in sortable tables.
+  @if $table-col-striping == true {
+    &.odd td.active {
+      background-color: $table-col-odd-color;
+    }
+    &.even td.active {
+      background-color: $table-col-even-color;
+    }
+  }
+}
+
+
+// Captions and cell content.
+caption {}
+
+
+// thead.
+thead {
+  tr {
+    color: $thead-text-color;
+    background-color: $thead-background-color;
+  }
+}
+
+
+// tr, td and th border properties.
+tr,
+td,
+th {
+  border-color: $border-color;
+}
+
+
+/**
+ * Forms
+ *  - This probably seems like a lot - remember AT unsets system.theme.css and
+ *    gives you complete control over all form elements.
+ *
+ * Note:
+ *  - input type submit is treated as a 'button', see _buttons.scss
+ *  - for drop buttons see _buttons.scss
+ ============================================================================ */
+
+// Select, Textarea and most input types
+// Select, Textarea and most input types
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  color: $form-text-color;
+  border-color: $form-border-color;
+  background-color: $form-background-color;
+
+  @if $form-box-shadow == true {
+    box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.1) ;
+  }
+
+  &:focus {
+    border-color: $form-border-color;
+    color: $form-text-focus-color;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $form-background-focus-color;
+  }
+
+  &[disabled] {
+    &:hover,
+    &:focus {
+      color: $form-text-focus-color;
+    }
+  }
+}
+
+
+/**
+ * Collapsible details.
+ *
+ * @see collapse.js
+ * @thanks http://nicolasgallagher.com/css-background-image-hacks/
+ */
+details {
+  border-color: $form-border-color;
+  background-color: $form-details-background-color;
+}
+
+
+// Readonly
+input,
+select,
+textarea {
+  &[readonly] {
+    background-color: $text-background-color-normal;
+    color: $text-color;
+  }
+}
+
+
+// Disabled
+button[disabled],
+input[disabled],
+select[disabled],
+select[disabled] option,
+select[disabled] optgroup,
+textarea[disabled],
+a.button_disabled {
+  background-color: $text-background-color-normal;
+  color: $text-color;
+}
+
+
+// Placeholders
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: $form-text-color;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: $form-text-color;
+}
+
+input.placeholder_text,
+textarea.placeholder_text {
+  color: $form-text-color;
+}
+
+// Search form submit example with svg and a gradient.
+//.search-block-form__form .form-submit {
+//  background-image:
+//    url(../images/search-icon.svg),
+//    linear-gradient(to bottom, lighten($button-background-color, $lighten-most), $button-background-color);
+//}
+
+
+/**
+ * Form Theme
+ ============================================================================ */
+
+.form-type-radio,
+.form-type-checkbox {
+  label.option {
+    border-color: $form-border-color;
+    background-color: $form-background-color;
+
+    &:focus,
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.75);
+    }
+  }
+}
+
+// Filters and tips
+.filter-wrapper {
+  border-color: $form-border-color;
+}
+
+
+// Tips
+.tips {
+  color: $form-help-color;
+}
+
+
+// Form item descriptions
+.description {
+  color: $form-help-color;
+}
+
+
+form .marker {
+  color: $form-marker-color;
+}
+
+
+.form-required:after {
+  color: $form-marker-color;
+}
+
+
+// Errors.
+.form-item {
+  input.error,
+  textarea.error,
+  select.error {
+    border-color: $error-border-color;
+  }
+}
+
+
+/**
+ * Vertical tabs.
+ ============================================================================ */
+
+// Wrapper
+.vertical-tabs {
+  background-color: $vertical-tabs-selected-color;
+  border-color: $vertical-tabs-border-color;
+}
+
+// Menu
+.vertical-tabs__menu {
+  background-color: $vertical-tabs-menu-background-color;
+  border-top-color: $vertical-tabs-border-color;
+}
+
+.vertical-tabs__menu-item {
+  background: $vertical-tabs-background-color;
+  border-color: $vertical-tabs-border-color;
+
+  &.is-selected {
+    background-color: $vertical-tabs-selected-color;
+
+    .vertical-tabs__menu-item-title {
+      color: $vertical-tabs-color;
+    }
+  }
+}
+
+// Panes
+.vertical-tabs__pane {
+  background-color: $vertical-tabs-selected-color;
+}
+
+
+/**
+ * Buttons
+ * We include button styling separate (from _forms.scss) mainly because the form
+ * styles are quite long already and we often want to add unique button variants.
+ *
+ *  - applies to elements with class "button", includes styles for:
+ *  - input buttons
+ *  - anchor links styled as buttons
+ *  - drop buttons
+ *  - action link buttons
+ ============================================================================ */
+
+button,
+.button {
+  color: $button-color;
+  background-color: $button-background-color;
+  border-color: $button-border-color;
+  opacity: 0.9;
+
+  @if $button-box-shadow == true {
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.5);
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    color: $button-hover-color;
+    background-color: $button-background-hover-color;
+  }
+
+  &:visited {
+    color: $button-color;
+    background-color: $button-background-color;
+  }
+
+  &[disabled] {
+    &:hover {
+      opacity: 1;
+      //color: darken($button-color, $darken); // No variable because it's just disabled, this works fine.
+    }
+  }
+}
+
+
+// Primary button
+.button--primary {
+  @include button-variant($button-primary-text-color, $button-primary-background-color, true, $button-border-width, $button-primary-border-color, $button-border-style);
+}
+
+
+// Danger button, e.g. delete buttons often have this class.
+.button--danger {
+  @include button-variant($error-text-color, transparent, false, 0, transparent, none);
+  box-shadow: none;
+}
+
+
+// Action button
+.button-action {
+  opacity: 1;
+}
+
+
+// Preview buttons should be neutral.
+#edit-preview {
+  background-color: $form-background-color;
+  color: $button-border-color;
+}
+
+
+// Summary hide buttons are actually button element and need special treatment
+button.link-edit-summary {
+  background-color: inherit;
+  color: $text-color;
+
+  &:hover,
+  &:focus {
+    background-color: inherit;
+    color: $text-color;
+  }
+}
+
+
+/* Drop buttons */
+.dropbutton-widget {
+  background-color: $regions-background-color;
+  border-color: $button-border-color;
+
+  &:hover,
+  &:focus {
+    border-color: $button-border-color;
+  }
+}
+
+
+// Drop button actions and toggle.
+.dropbutton {
+  .dropbutton-action {
+    .button {
+      @include button-variant($button-primary-text-color, $button-primary-background-color, false);
+    }
+  }
+
+  .secondary-action {
+    border-top-color: $button-border-color;
+
+    .button {
+      background-color: $regions-background-color;
+      color: $button-border-color;
+    }
+  }
+
+  .dropbutton-toggle {
+    button {
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+
+// Dropbutton Multiple.
+.dropbutton-multiple {
+  .dropbutton {
+    border-right-color: $button-border-color;
+
+    // RTL
+    [dir="rtl"] & {
+      border-left-color: $button-border-color;
+    }
+  }
+
+  &.open {
+    .dropbutton-action .button {
+      border-radius: $button-border-radius 0 0 0;
+    }
+  }
+}
+
+
+// Color the arrow.
+.dropbutton-arrow {
+  color: $button-border-color;
+}
+
+
+/**
+ * Modal dialogs.
+ *  -  override jQuery UI styles.
+ ============================================================================ */
+
+.ui-widget-overlay {
+  background: rgba(0, 0, 0, 0.95);
+  opacity: 0.3;
+}
+
+.ui-dialog {
+  .form-text {
+    background-color: inherit !important;
+    color: black !important;
+    border-color: silver !important;
+
+    //noinspection CssInvalidPseudoSelector
+    &::placeholder {
+      color: silver;
+    }
+  }
+
+  .form-type-radio,
+  .form-type-checkbox {
+    label.option {
+      border-color: transparent;
+      background-color: inherit;
+
+      &:focus,
+      &:hover {
+        color: inherit;
+        background-color: inherit;
+      }
+    }
+  }
+
+  .ui-dialog-titlebar {
+    color: $text-color;
+  }
+
+  .ui-dialog-buttonpane {
+    button {
+      color: $button-color;
+      background: $button-background-color;
+      border-color: $button-border-color;
+      opacity: 0.9;
+
+      @if $button-box-shadow == true {
+        box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.5);
+      }
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+        color: $button-hover-color;
+        background: $button-background-hover-color;
+      }
+
+      &:visited {
+        color: $button-color;
+        background: $button-background-color;
+      }
+
+      &[disabled] {
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    .button--primary {
+      @include button-variant($button-primary-text-color, $button-primary-background-color, true, $button-border-width, $button-primary-border-color, $button-border-style);
+    }
+  }
+}
+
+
+/**
+ * File icons
+ * AT un-sets Drupal core file field CSS for image icons and replaces them
+ * with FontAwesome icons.
+ ============================================================================ */
+
+.file {
+  a:before {
+    color: $text-color-light;
+  }
+}
+
+
+/**
+ * File upload widgets.
+ ============================================================================ */
+
+.field--widget-file-generic,
+.field--widget-image-image {
+  background-color: $node-teaser-background-color;
+  border-color: $border-color;
+
+  details {
+    background: transparent;
+  }
+}
+
+.field--widget-image-image {
+  .image-preview {
+    background-color: transparent;
+  }
+}
+
+
+/**
+ * Field Taxonomy Reference
+ ============================================================================ */
+
+[class*="tags"].field-type-entity-reference {
+  @if ($field-taxonomy-item-as-labels == true) {
+    .field__item-wrapper {
+      background-color: $text-background-color-light;
+      color: $text-color;
+      border-color: $border-color;
+
+      &:hover,
+      &:focus {
+        background-color: $text-background-color-normal;
+      }
+
+      a {
+        color: $text-color;
+
+        &:hover,
+        &:focus {
+        }
+      }
+    }
+  }
+}
+
+
+/**
+ * Labels.
+ *  -  for example "new" mark on comments, tags etc.
+ ============================================================================ */
+
+.filter-help a,
+.more-help-link a {
+  &:after {
+    color: $border-color;
+  }
+}
+
+
+/**
+ * Messages
+ *  - System messages such as status, warning and error are NOT included
+ *    here as we don't want them to shift or change in color module, since
+ *    they are too important with regards to accessibility etc.
+ ============================================================================ */
+
+// Devel query messages
+.dev-query {
+  color: $page-background-color;
+}
+
+
+// xdebug-var-dump
+body > pre,
+.xdebug-var-dump {
+  color: $page-background-color;
+}
+
+
+.page {
+  .xdebug-var-dump {
+    color: $text-color;
+  }
+}
+
+
+// SASS errors
+body {
+  &:before {
+    color: $error-text-color;
+  }
+}
+
+
+/**
+ * Content Types (nodes)
+ *  - in Drupal a content type is a bunch of fields we use to enter and display
+ *    content, such as pages, blog posts, forum posts and so on. Each of those
+ *    is usually a content type you create in the Drupal admin.
+ *  - an instance of a content type (e.g. a single blog post) is called a node,
+ *    the root template is called node.html.twg and the base selector is .node {}
+ ============================================================================ */
+
+.node {
+  // $node-teaser-border-color
+  background-color: $node-teaser-background-color;
+  box-shadow: $node-teaser-box-shadow;
+
+  // States
+  &--promoted {}
+
+  &--sticky {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  // View modes
+  &--view-mode-full {}
+  &--view-mode-teaser {}
+
+  // Field image borders.
+  .field-type-image__item {
+    //border-color: $border-color-light;
+  }
+}
+
+
+/**
+ * Node Add Edit Forms.
+ ============================================================================ */
+
+.layout-node-form {}
+.layout-region-node-main,
+.layout-region-node-secondary {}
+
+
+.layout-region-node-secondary__inner {
+  border-color: $border-color;
+  background-color: $node-teaser-background-color;
+
+  .entity-meta details[open] {
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.085);
+
+    > summary {
+      background-color: rgba(0, 0, 0, 0.025);
+      //background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.045), $row-background-color-lite);
+    }
+  }
+}
+
+
+
+/**
+ * Aggregator
+ ============================================================================ */
+
+.aggregator-item {
+  background-color: $node-teaser-background-color;
+  box-shadow: $node-teaser-box-shadow;
+}
+
+
+/**
+ * Forums
+ *  - see table.scss for generic table styles.
+ ============================================================================ */
+
+.forum {
+  .icon {
+    svg {
+      fill: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+
+/**
+ * Search results pages
+ ============================================================================ */
+
+.item-list--search-results {
+  background-color: $node-teaser-background-color;
+  box-shadow: $node-teaser-box-shadow;
+}
+
+.search-result__snippet-info {
+  color: $text-color-medium;
+}
+
+
+/**
+ * Comments
+ *  - comment field (holds comment title, form, comments etc)
+ *  - styles for comments
+ ============================================================================ */
+
+// Comments are articles, they all have the base class of .comment:
+.comment {
+  border-color: $border-color-light;
+}
+
+
+/**
+ * Social media
+ *  - styles for socila media links, modules etc.
+ ============================================================================ */
+
+// Social Media Links
+// https://www.drupal.org/project/social_media_links
+
+.block-social-media-links,
+.pane-social-media-link-widget {
+  .platform__link {
+    color: $text-color;
+    opacity: 0.65;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+}
+
+
+/**
+ * Views
+ ============================================================================ */
+
+.view-empty:not(:empty) {
+  // Front page no content, add content links
+  .links {
+
+    a[href="/node/add"] {
+      opacity: 0.9;
+
+      @if $button-box-shadow == true {
+        box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.5);
+      }
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+
+      &:visited {}
+
+      &[disabled] {
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      @include button-variant($button-primary-text-color, $button-primary-background-color, true, $button-border-width, $button-primary-border-color, $button-border-style);
+    }
+  }
+}
+
+
+/**
+ * CKEditor Colors
+ * Pretty brutal, but effective, combines with other editor partials and files,
+ * mainly for Mimic but will color borders for moono also.
+ ============================================================================ */
+
+.cke_chrome {
+  border-color: $border-color !important;
+  border-top-color: $border-color !important;
+  border-bottom-color: $border-color !important;
+  color: $text-color !important;
+}
+
+.cke_top {
+  border-bottom-color: $border-color !important;
+  background-color: $page-background-color !important;
+  color: $text-color !important;
+}
+
+.cke_bottom {
+  border-top-color: $border-color !important;
+  background-color: $page-background-color !important;
+  color: $text-color !important;
+}
+
+.cke_editable,
+textarea.cke_source,
+.cke_combopanel {
+  background-color: $node-background-color !important;
+  color: $text-color !important;
+}
+
+.cke_combo_off a.cke_combo_button,
+a.cke_button_off {
+  color: $text-color !important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $text-background-color-light !important;
+    color: $text-color !important;
+  }
+}
+
+.cke_combo_on a.cke_combo_button,
+a.cke_button_on {
+  background-color: $text-background-color-light !important;
+  color: $text-color !important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $text-background-color-light !important;
+    color: $text-color !important;
+  }
+}
+
+.cke_panel,
+.cke_combopanel {
+  background-color: $node-background-color !important;
+  border-color: $border-color !important;
+}
+
+.cke_combo_text {
+  color: $text-color !important;
+}
+
+.cke_combo_arrow {
+  border-top-color: $border-color !important;
+}
+
+.cke_panel_listItem {
+  a {
+    color: inherit !important;
+  }
+}
+
+* {
+  html .cke_panel_listItem a {
+    color: $text-color !important;
+  }
+
+  &:first-child + html .cke_panel_listItem a {
+    color: $text-color !important;
+  }
+}
+
+.cke_panel_listItem {
+  &.cke_selected a {
+    background-color: $text-background-color-light !important;
+  }
+
+  a {
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $text-background-color-light !important;
+      color: $text-color !important;
+    }
+  }
+}
+
+.cke_reset_all,
+.cke_button_icon:before {
+  color: $text-color !important;
+}
+
+.cke_resizer {
+  border-color: transparent $border-color transparent transparent !important;
+}
+
+a.cke_menu_button,
+a.cke_combo_button,
+a.cke_button {
+  &:after,
+  &:before {
+    display: none !important;
+  }
+}
+
+input.cke_dialog_ui_input_text,
+input.cke_dialog_ui_input_password {
+  background-color: white !important;
+  color: black !important;
+}
+
+.ckeditor-dialog-loading,
+.ckeditor-dialog-loading * {
+  background-color: $text-background-color-light !important;
+  color: $text-color !important;
+  border-color: $border-color-light !important;
+}
+
+

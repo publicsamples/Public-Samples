@@ -1,0 +1,53 @@
+@import "../page-layout-base";
+//
+// Six regions, 2 grid cols each.
+//
+
+.sixcol-6x2 {
+
+  // Two active regions.
+  .arc--2 {
+    .l-r {
+      width: span(6 of 12);
+    }
+  }
+
+
+  // Three active regions.
+  .arc--3 {
+    .l-r {
+      width: span(4 of 12);
+    }
+  }
+
+
+  // Four active regions.
+  .arc--4 {
+    .l-r {
+      width: span(3 of 12);
+    }
+  }
+
+
+  // Five active regions.
+  @include with-layout($container-10) {
+    .arc--5 {
+      .l-r {
+        width: span(2 of 10);
+      }
+    }
+  }
+
+
+  // Six active regions.
+  .arc--6 {
+    .l-r {
+      width: span(2 of 12);
+    }
+  }
+
+
+  // The last region in the source is always the :last-child.
+  .l-rw:not(.arc--1) .l-r:last-child {}
+}
+

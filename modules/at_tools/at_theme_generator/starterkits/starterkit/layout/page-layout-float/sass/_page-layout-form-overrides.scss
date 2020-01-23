@@ -1,0 +1,14 @@
+// Special case some form elements for the form display only.
+.layout-preview .region {
+  padding: 0;
+
+  span {
+    border: 1px solid #fff;
+  }
+}
+#edit-layouts #edit-layout-select {
+  .fourcol-source-ordered-inset-left .arc--4 .l-r:last-child span {
+    height: 3.55em;
+  }
+}
+

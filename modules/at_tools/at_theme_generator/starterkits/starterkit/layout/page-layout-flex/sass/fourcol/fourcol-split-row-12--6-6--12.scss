@@ -1,0 +1,74 @@
+@import "../page-layout-base";
+//
+// Four Regions 12--6-6--12
+//
+// Double split row type layout. This layout splits 4 regions over 3 rows.
+//
+// Appearance:
+//
+//   -------------------------------------
+//  | First (12)                          |
+//  |-------------------------------------|
+//  | Second (6)       | Third (6)        |
+//  |-------------------------------------|
+//  | Fourth (12)                         |
+//   -------------------------------------
+//  Key: region (grid columns)
+//
+// ---------------------------------------------------------------------------
+
+.fourcol-split-row-12--6-6--12 {
+
+  // Second and third is a special case.
+  .hr--2-3 {
+    .l-r {
+      &:first-child {
+        width: span(6 of 12);
+      }
+
+      &:last-child {
+        width: span(6 of 12);
+      }
+    }
+  }
+
+  // First, second and third.
+  .hr--1-2-3 {
+    .l-r {
+      &:nth-child(2) {
+        width: span(6 of 12);
+      }
+
+      &:last-child {
+        width: span(6 of 12);
+      }
+    }
+  }
+
+  // Second, third and fourth.
+  .hr--2-3-4 {
+    .l-r {
+      &:first-child {
+        width: span(6 of 12);
+      }
+
+      &:nth-child(2) {
+        width: span(6 of 12);
+      }
+    }
+  }
+
+  // All regions.
+  .arc--4 {
+    .l-r {
+      &:nth-child(2) {
+        width: span(6 of 12);
+      }
+
+      &:nth-child(3) {
+        width: span(6 of 12);
+      }
+    }
+  }
+}
+

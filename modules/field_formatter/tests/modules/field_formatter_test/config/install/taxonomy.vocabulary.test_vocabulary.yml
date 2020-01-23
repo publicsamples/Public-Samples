@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: test_vocabulary
+vid: test_vocabulary
+description: ''
+hierarchy: 0
+weight: 0

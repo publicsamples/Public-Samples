@@ -220,6 +220,11 @@ color:#bd7503;
 
 }
 
+#field-blocknodesamplelibrarygridfield-downloads a:visited{
+color:#bd7503;
+
+}
+
 
 
 #field-blocknodesamplelibrarygridfield-library-info{
@@ -230,6 +235,10 @@ margin-bottom:5%;
 }
 
 #field-blocknodesamplelibrarygridfield-library-info a:link{
+color:#2e3229;
+
+}
+#field-blocknodesamplelibrarygridfield-library-info a:visited{
 color:#2e3229;
 
 }

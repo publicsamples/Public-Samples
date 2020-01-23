@@ -1,0 +1,43 @@
+@import "../page-layout-base";
+//
+// Four Regions 4-8--8-4
+//
+// Offset grid type layout.
+//
+// First region  : 4 grid columns.
+// Second region : 8 grid columns.
+// -- break to new line --
+// Third region  : 8 grid columns.
+// Fourth region : 4 grid columns.
+//
+// ---------------------------------------------------------------------------
+
+.fourcol-split-row-4-8--8-4 {
+
+  .arc--2 .l-r,
+  .arc--3 .l-r:first-child,
+  .arc--4 .l-r:first-child,
+  .arc--4 .l-r:last-child {
+    width: span(4 of 12);
+  }
+
+  .arc--2 .l-r:last-child {
+    width: span(8 of 12);
+  }
+
+  // Three active regions.
+  .arc--3 .l-r{
+    &:nth-child(2) {
+      width: span(8 of 12);
+    }
+  }
+
+  .arc--4 {
+    .l-r {
+      width: span(8 of 12);
+
+      &:nth-child(2n) {}
+    }
+  }
+}
+

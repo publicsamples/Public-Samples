@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.test_content_type.field_field_test_ref
+    - field.field.node.test_content_type.field_field_test_ref_inline
+    - node.type.test_content_type
+  module:
+    - field_formatter
+    - user
+id: node.test_content_type.default
+targetEntityType: node
+bundle: test_content_type
+mode: default
+content:
+  field_field_test_ref:
+    weight: 101
+    label: above
+    settings:
+      view_mode: test_view_mode
+      field_name: field_test_field
+    third_party_settings: {  }
+    type: field_formatter_from_view_display
+  field_field_test_ref_inline:
+    weight: 102
+    label: above
+    settings:
+      field_name: field_test_field
+      type: string
+      settings:
+        link_to_entity: false
+    third_party_settings: {  }
+    type: field_formatter_with_inline_settings
+hidden:
+  links: true

@@ -1,0 +1,109 @@
+// Mega Nav
+// Hamburger menu that shows the top level items horizontal, and when expanded
+// the top level items show vertically with sub-menus horizontal.
+// This style was borrowed from http://www.theguardian.com
+
+@mixin meganav($col-width: 12em) {
+
+  .ms-meganav {
+
+    .rm-region,
+    .rm-block {
+      position: relative;
+    }
+
+    .rm-toggle {
+      position: absolute;
+      #{$flow-to}: 0;
+      top: 0;
+      z-index: 200;
+      padding: 0;
+      @include output-rhythm(margin, 2px 0 0);
+
+      &__link,
+      &__link:hover,
+      &__link:focus,
+      &__link:active {
+        @include output-rhythm(padding, 5px 6px 3px);
+      }
+    }
+
+    .rm-toggle__label {
+      @include visually-hidden;
+    }
+
+    .rm-block__content {
+      transition: $global-transition;
+
+      .menu {
+        padding: 0;
+
+        .menu__link {
+          @include output-rhythm(padding, $xx-small $medium);
+
+          &:before,
+          &:after {
+            content: "";
+            display: none;
+          }
+        }
+      }
+
+      .menu-level-1 > .menu__item {
+        float: #{$flow-from};
+      }
+
+      .menu-level-2 {
+        display: none;
+        opacity: 0.001;
+      }
+    }
+
+    // Menu is open
+    &.rm-is-open {
+
+      .rm-block__content {
+        padding: 0;
+        margin: 0;
+
+        .menu-level-1 > .menu__item {
+          float: none;
+          margin-right: 2.5rem;
+          @include cfm;
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          .menu__link {
+            float: #{$flow-from};
+          }
+
+          > span > .menu__link  {
+            width: $col-width;
+          }
+        }
+
+        .menu-level-2 {
+          display: block;
+          float: #{$flow-from};
+          opacity: 1;
+
+          .menu {
+            padding: 0;
+          }
+
+          .menu,
+          .menu__item {
+            float: #{$flow-from};
+
+            .menu__link {
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,53 @@
+/**
+ * Tile menu
+ * $tile_count: whole number, must be a factor of the $context
+ * $context: whole number, a $susy container, can be 8, 10 or 12.
+ * $arrows: boolean
+ ============================================================================ */
+.ms-tiles .rm-block .menu-level-2 {
+  display: none;
+}
+
+.ms-tiles .rm-toggle {
+  display: none;
+}
+
+.ms-tiles .rm-block__content .menu-level-1 {
+  margin: 0 -0.625em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ms-tiles .rm-block__content .menu-level-1 > .menu__item {
+  padding: 0 0.625em;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.ms-tiles .rm-block__content .menu-level-1 .menu__link {
+  padding: 0.5rem 1rem;
+}
+
+.ms-tiles .rm-block__content .menu__item--expanded > .menu__link:after {
+  content: none;
+}
+
+.ms-tiles .rm-block__content {
+  padding: 0.5rem 0;
+}
+
+.ms-tiles .rm-block__content .menu-level-1 > .menu__item {
+  margin: 0.5rem 0;
+}
+/*# sourceMappingURL=responsive-menus--tiles.css.map */

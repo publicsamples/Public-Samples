@@ -1,0 +1,4 @@
+pagerer_example.page:
+  title: 'Pagerer example'
+  description: 'Display various combinations of Pagerer styles.'
+  route_name: pagerer_example.page

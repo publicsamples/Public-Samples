@@ -1,0 +1,13 @@
+/**
+ * @file
+ * Pagerer base CSS
+ */
+
+li.pager__item.pagerer-widget,
+li.pager__item.pagerer-separator,
+li.pager__item.pagerer-breaker,
+li.pager__item.pagerer-prefix,
+li.pager__item.pagerer-suffix {
+  padding-left: 0;
+  padding-right: 0;
+}

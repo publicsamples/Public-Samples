@@ -1,0 +1,73 @@
+<?php
+
+/**
+ * @file
+ * Contains at_tools.module
+ */
+
+use Drupal\Component\Utility\Html;
+use Drupal\at_core\Layout\LayoutCompatible;
+
+/**
+ * Prepares variables for appearance page templates.
+ *
+ * Default template: system-themes-page.html.twig.
+ *
+ * @param $variables
+ *   An associative array containing:
+ *   - theme_groups: An associative array containing groups of themes.
+ *   - theme_group_titles: An associative array containing titles of themes.
+ */
+function at_tools_preprocess_system_themes_page(&$variables) {
+  $variables['#attached']['library'][] = 'at_tools/appearance_settings';
+  $theme_groups = $variables['theme_groups'];
+  foreach ($theme_groups as $group_key => $theme_group) {
+    foreach ($theme_group['themes'] as $theme_key => $theme) {
+      foreach ($theme as $t => $theme_values) {
+        // Add a class to each "theme-selector" wrapper.
+        $variables['theme_groups'][$group_key]['themes'][$theme_key]['attributes']->addClass(Html::cleanCssIdentifier(strtolower($theme['name'])));
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_library_info_alter().
+ *
+ * @param array $libraries
+ *   An associative array of libraries registered by $extension. Keyed by
+ *   internal library name and passed by reference.
+ * @param string $extension
+ *   Can either be 'core' or the machine name of the extension that registered
+ *   the libraries.
+ */
+function at_tools_library_info_alter(&$libraries, $extension) {
+  $themes = \Drupal::service('theme_handler')->listInfo();
+  $active_theme = \Drupal::theme()->getActiveTheme()->getName();
+  $config_active_theme = \Drupal::config($active_theme . '.settings')->get('settings');
+
+  if (isset($config_active_theme['enable_devel']) && $config_active_theme['enable_devel'] === 1) {
+    if (isset($config_active_theme['enable_live_reload']) && $config_active_theme['enable_live_reload'] === 1) {
+      $live_reload_port = isset($config_active_theme['live_reload_port']) ? Html::escape($config_active_theme['live_reload_port']) : '35729';
+      $live_reload_path = '//localhost:' . $live_reload_port . '/livereload.js';
+      $libraries['at.livereload']['js'] = [$live_reload_path => []];
+    }
+  }
+
+  // Replace the layout form CSS with the right stylesheet (in Layout Settings).
+  if (\Drupal::service('router.admin_context')->isAdminRoute(\Drupal::routeMatch()->getRouteObject())) {
+    if (isset($config_active_theme['layouts_enable']) && $config_active_theme['layouts_enable'] === 1) {
+      foreach ($themes as $theme_key => $theme_info) {
+        if (isset($theme_info->info['layout']) && $theme_key == $extension) {
+          $layout_data = new LayoutCompatible($theme_key);
+          $layout_compatible_data = $layout_data->getCompatibleLayout();
+          $css_config = $layout_compatible_data['css_config'];
+          $layout_form_css = drupal_get_path('theme', $css_config['layout_provider']) . '/layout/' . $css_config['layout'] . '/' . $css_config['css_form_styles_path'];
+          if (file_exists($layout_form_css)) {
+            $libraries['layout_settings']['css']['theme'] = ['/' . $layout_form_css => []];
+          }
+        }
+      }
+    }
+  }
+}

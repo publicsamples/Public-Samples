@@ -1,0 +1,25 @@
+/**
+ * Shortcodes (textalign)
+ ============================================================================ */
+
+.ta-center,
+.ta-center * {
+  text-align: center;
+}
+
+.ta-left,
+.ta-left * {
+  text-align: left;
+}
+
+.ta-right,
+.ta-right * {
+  text-align: right;
+}
+
+.ta-justify
+.ta-justify * {
+  text-align: justify;
+  hyphens: auto;
+}
+

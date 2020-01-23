@@ -1,0 +1,5 @@
+entity.pagerer_preset.collection:
+  title: 'Pagerer'
+  description: 'Configurable pager styles.'
+  parent: system.admin_config_ui
+  route_name: entity.pagerer_preset.collection

@@ -1,0 +1,52 @@
+@import "../page-layout-base";
+//
+// Six regions, 3x2
+//
+
+.sixcol-6-3x2 {
+
+  // Two active regions.
+  .arc--2 {
+    .l-r {
+      width: span(6 of 12);
+    }
+  }
+
+
+  // Three active regions.
+  .arc--3 {
+    .l-r {
+      &:first-child {
+        width: span(6 of 12);
+      }
+
+      &:nth-child(2) {
+        width: span(6 of 12);
+      }
+    }
+  }
+
+
+  // Five active regions.
+  .arc--5 {
+    .l-r {
+      width: span(6 of 12);
+
+      &:nth-child(2n) {}
+
+      &:last-child {
+        width: span(12 of 12);
+      }
+    }
+  }
+
+
+  // Four or Six active regions.
+  .arc--4,
+  .arc--6 {
+    .l-r {
+      width: span(4 of 12);
+    }
+  }
+}
+

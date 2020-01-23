@@ -1,0 +1,9 @@
+/**
+ * Overlay
+ * Overlay menu positions the toggle in a corner (any), with the menu
+ * hidden. When toggled the menu opens in an overlay above the content
+ * and fills the whole screen.
+ ============================================================================ */
+// Change the $toggle_position values to move to the top/left etc.
+@include overlay($toggle_position: (vert: top, horz: right));
+

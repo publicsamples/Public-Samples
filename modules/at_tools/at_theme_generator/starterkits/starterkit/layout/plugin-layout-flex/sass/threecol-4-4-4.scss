@@ -1,0 +1,23 @@
+@import "plugin-layout-base";
+//
+// Three Regions 4-4-4
+//
+// First region  : 4 grid columns.
+// Second region : 4 grid columns.
+// Third region  : 4 grid columns.
+// -----------------------------------------------------------------------------
+
+.bp--at-core-simple-wide,
+.bp--at-core-simple-tablet-isolate {
+  .atl--threecol-4-4-4 {
+    // Two active regions.
+    &.l-arc--2 > .atl__cw > .atl__lc {
+      width: span(6 of 12);
+    }
+
+    // Three active regions.
+    &.l-arc--3 > .atl__cw > .atl__lc {
+      width: span(4 of 12);
+    }
+  }
+}
