@@ -263,6 +263,14 @@ padding:0.8rem;
 margin-bottom:5%;
 }
 
+#field-blocknodeslgrainfield-downloads a:link{
+color:#bd7403;
+
+}
+#field-blocknodeslgrainfield-downloads a:visited{
+color:#bd7403;
+
+}
 
 #field-blocknodeslgrainfield-library-info{
 
