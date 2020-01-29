@@ -59,53 +59,27 @@
   <div class="block__inner">
 
     <h2  class="block__title" id="-title"><span>AutoFilter</span></h2><div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><div class="grid-filter">
-
 <div class="grid-item">
-<p>Wet</p>
-</div>
-
-<div class="grid-item">
-<div id="fwet"></div>
-</div>
-
-
-<div class="grid-item">
-<p>Cut</p>
+<p class="text-align-center">Wet</p>
 </div>
 
 <div class="grid-item">
-<div id="baseFrequency"></div>
+<div class="text-align-center" id="fwet">Cut</div>
 </div>
 
 <div class="grid-item">
-<p>Res</p>
+<p class="text-align-center">Res</p>
+</div>
 </div>
 
-<div class="grid-item">
-<div id="Q"></div>
-</div>
-</div>
 <div class="grid-filter2">
-
 <div class="grid-item">
-<p>Dpth</p>
+<p class="text-align-center">Dpth</p>
 </div>
 
 <div class="grid-item">
-<div id="depth"></div>
+<p class="text-align-center">Spd</p>
 </div>
-
-
-<div class="grid-item">
-<p>Spd</p>
-</div>
-
-<div class="grid-item">
-<div id="ffrequency"></div>
-</div>
-
-
-
 </div>
 </div></div>
 </div>
@@ -423,9 +397,9 @@ Nexus.colors.fill = "#ecd7a2"
 
 
 //aENV Controls
-var attack = new Nexus.Slider('#attack', {
+var attack = new Nexus.Dial('#attack', {
 'mode': 'absolute', // "absolute" or "absolute"
-'size': [18, 50],
+'size': [22, 30],
 'min': 0,
 'max': 100,
 'step': 0,
@@ -436,9 +410,9 @@ attack.on('change', function(v) {
 keys.attack = v;
 });
 
-var release = new Nexus.Slider('#release', {
+var release = new Nexus.Dial('#release', {
 'mode': 'absolute', // "absolute" or "absolute"
-'size': [18, 50],
+'size': [22, 30],
 'min': 0,
 'max': 100,
 'step': 0,
@@ -451,9 +425,9 @@ keys.release = v;
 
 //fliter Controls
 
-var fwet = new Nexus.Slider('#fwet', {
+var fwet = new Nexus.Dial('#fwet', {
 'mode': 'relative', // "absolute" or "absolute"
-'size': [18, 50],
+'size': [22, 30],
 "min": 0,
 "max" : 1,
 'value' : 0
@@ -463,9 +437,9 @@ fwet.on('change', function(v) {
 filter.wet.value = v;
 });
 
-var baseFrequency = new Nexus.Slider('#baseFrequency', {
+var baseFrequency = new Nexus.Dial('#baseFrequency', {
 'mode': 'absolute', // "absolute" or "absolute"
-'size': [18, 50],
+'size': [22, 30],
 'min': 20,
 'max': 4000,
 'step': 0,
@@ -476,9 +450,9 @@ baseFrequency.on('change', function(v) {
 filter.filter.frequency.value = v;
 });
 
-var Q = new Nexus.Slider('#Q', {
+var Q = new Nexus.Dial('#Q', {
 'mode': 'absolute', // "absolute" or "absolute"
-'size': [18, 50],
+'size': [22, 30],
 'min': 0,
 'max': 10,
 'step': 0,
@@ -489,9 +463,9 @@ Q.on('change', function(v) {
 filter.filter.Q.value = v;
 });
 
-var depth = new Nexus.Slider('#depth', {
+var depth = new Nexus.Dial('#depth', {
 'mode': 'absolute', // "absolute" or "absolute"
-'size': [18, 50],
+'size': [22, 30],
 'min': 0.00,
 'max': 1.00,
 'step': 0,
@@ -502,9 +476,9 @@ depth.on('change', function(v) {
 filter.depth.value = v;
 });
 
-var ffrequency = new Nexus.Slider('#ffrequency', {
+var ffrequency = new Nexus.Dial('#ffrequency', {
 'mode': 'absolute', // "absolute" or "absolute"
-'size': [18, 50],
+'size': [22, 30],
 'min': 0.1,
 'max': 20,
 'step': 0,
@@ -516,9 +490,9 @@ filter.frequency.value = v;
 
 //chorus Controls
 
-var cwet = new Nexus.Slider('#cwet', {
+var cwet = new Nexus.Dial('#cwet', {
 'mode': 'relative', // "absolute" or "absolute"
-'size': [18, 50],
+'size': [22, 30],
 'min': 0.0,
 'max': 1.0,
 'step': 0,
@@ -529,35 +503,10 @@ cwet.on('change', function(v) {
 chorus.wet.value = v;
 });
 
-var ctime = new Nexus.Slider('#ctime', {
+
+var cfreq = new Nexus.Dial('#cfreq', {
 'mode': 'relative', // "absolute" or "absolute"
-'size': [18, 50],
-'min': 0.1,
-'max': 12.0,
-'step': 0,
-'value': 0.25
-})
-
-ctime.on('change', function(v) {
-chorus.delayTime.value = v;
-});
-
-var cdepth = new Nexus.Slider('#cdepth', {
-'mode': 'relative', // "absolute" or "absolute"
-'size': [18, 50],
-'min': 0.1,
-'max': 1.0,
-'step': 0,
-'value': 0.60
-})
-
-cdepth.on('change', function(v) {
-chorus.depth.value = v;
-});
-
-var cfreq = new Nexus.Slider('#cfreq', {
-'mode': 'relative', // "absolute" or "absolute"
-'size': [18, 50],
+'size': [22, 30],
 'min': 0.1,
 'max': 2.0,
 'step': 0,
@@ -570,9 +519,9 @@ chorus.frequency.value = v;
 
 //delay Controls
 
-var dwet = new Nexus.Slider('#dwet', {
+var dwet = new Nexus.Dial('#dwet', {
 'mode': 'relative', // "absolute" or "absolute"
-'size': [18, 50],
+'size': [22, 30],
 'min': 0.0,
 'max': 1.0,
 'step': 0,
@@ -583,9 +532,9 @@ dwet.on('change', function(v) {
 feedbackDelay.wet.value = v;
 });
 
-var dtime = new Nexus.Slider('#dtime', {
+var dtime = new Nexus.Dial('#dtime', {
 'mode': 'relative', // "absolute" or "absolute"
-'size': [18, 50],
+'size': [22, 30],
 'min': 0.01,
 'max': 1.0,
 'step': 0,
@@ -596,24 +545,12 @@ dtime.on('change', function(v) {
 feedbackDelay.delayTime.value = v;
 });
 
-var dfeedback = new Nexus.Slider('#dfeedback', {
-'mode': 'absolute', // "absolute" or "absolute"
-'size': [18, 50],
-'min': 0.0,
-'max': 0.95,
-'step': 0,
-'value': 0.60
-})
-
-dfeedback.on('change', function(v) {
-feedbackDelay.feedback.value = v;
-});
 
 //Reverb Controls
 
-var rwet = new Nexus.Slider('#rwet', {
+var rwet = new Nexus.Dial('#rwet', {
 'mode': 'relative', // "absolute" or "absolute"
-'size': [18, 50],
+'size': [22, 30],
 'min': 0.0,
 'max': 1.0,
 'step': 0,
@@ -624,35 +561,10 @@ rwet.on('change', function(v) {
 verb.wet.value = v;
 });
 
-var roomSize = new Nexus.Slider('#roomSize', {
-'mode': 'absolute', // "absolute" or "absolute"
-'size': [18, 50],
-'min': 0.10,
-'max': 0.95,
-'step': 0,
-'value': 0.70
-})
-
-roomSize.on('change', function(v) {
-verb.roomSize.value = v;
-});
-
-var dampening = new Nexus.Slider('#dampening', {
-'mode': 'absolute', // "absolute" or "absolute"
-'size': [18, 50],
-'min': 100,
-'max': 5000,
-'step': 0,
-'value': 3000
-})
-
-dampening.on('change', function(v) {
-verb.dampening.value = v;
-});
 
 //Transport/seq Controls
 
-var vol = new Nexus.Dial('#vol', {size: [25, 25], min: -36, max: 12,  value: -12});
+var vol = new Nexus.Dial('#vol', {size: [22, 30], min: -36, max: 12,  value: -12});
 vol.on('change', v => eq.volume.value = v)
 
 document.querySelector("tone-transport").bind(Tone.Transport);

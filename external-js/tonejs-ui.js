@@ -1399,7 +1399,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 				:host {
 					display: inline-block;
 					width: 100%;
-					height: 375px;
+					height: 300px;
 				}
 				#container {
 					width: 100%;
@@ -2280,13 +2280,14 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					display: block;
 					color: #182C40;
 					background-color: #cc820f;
+					height:100px;
                               
 				}
 				#container {
 					background-color: #cc820f;
 					padding: 5px;
                         height:100px;
-                            
+                            height:100px;
 					
 				}
 				tone-play-toggle {
@@ -2305,6 +2306,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
             
 					position: absolute;
 					width: 30%;
+					height:100px;
 					right: 8px;
 					transform: translate(0%, -50%);
 					text-align: center;
@@ -2325,7 +2327,6 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					
 				}
 				tone-slider {
-					width: 80%;
 
 					background-color: #cc820f;
 					
@@ -2345,7 +2346,6 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 			<div id="container">
 				<div id="top">
 					<tone-play-toggle></tone-play-toggle>
-					<div id="position">0:0:0</div>
 				</div>
 				<tone-slider
 					id="tempo"
