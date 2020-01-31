@@ -1399,7 +1399,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 				:host {
 					display: inline-block;
 					width: 100%;
-					height: 300px;
+					height: 380px;
 				}
 				#container {
 					width: 100%;
