@@ -75,7 +75,7 @@
         <div data-layout-content-preview-placeholder-label="&quot;Frontpage&quot; views block" class="l-bl block block-config-provider--views block-plugin-id--views-block-frontpage-block-1"id="views-blockfrontpage-block-1">
   <div class="block__inner">
 
-    <div class="block__content"><div class="views-element-container element-container-wrapper"><div class="view view-frontpage view-id-frontpage view-display-id-block_1 js-view-dom-id-ea9796442c441e69b78a6205f38b35270c8aa8654ebf8ed98908a5456f3aec91">
+    <div class="block__content"><div class="views-element-container element-container-wrapper"><div class="view view-frontpage view-id-frontpage view-display-id-block_1 js-view-dom-id-65d0c784b5ee899d5a076d0ae7fe9d2be79f5b7dcd49f0e1391c8d4c85525271">
   
     
       
@@ -147,7 +147,7 @@
 <div data-layout-content-preview-placeholder-label="&quot;Downloads&quot; field" class="l-bl block block-config-provider--layout-builder block-plugin-id--field-block-nodesamplelibrarygridfield-downloads"id="field-blocknodesamplelibrarygridfield-downloads">
   <div class="block__inner">
 
-    <div class="block__content"><div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-above has-multiple"><h3 class="field__label">Downloads</h3><div class="field__items"><div class="field__item"><a href="https://github.com/publicsamples/Xpander-Construction-Kit/archive/master.zip">Patches</a></div><div class="field__item"><a href="/sites/drupal.dd/files/2020-01/XPCKSounds.torrent">Audio (Bittorrent)</a></div><div class="field__item"><a href="https://github.com/publicsamples/Xpander-Construction-Kit/">Git Repository</a></div></div>
+    <div class="block__content"><div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-above has-multiple"><h3 class="field__label">Downloads</h3><div class="field__items"><div class="field__item"><a href="https://github.com/publicsamples/Xpander-Construction-Kit/archive/master.zip">Patches</a></div><div class="field__item"><a href="/sites/drupal.dd/files/2020-02/XPCKSounds2.torrent">Audio (Bittorrent)</a></div><div class="field__item"><a href="https://github.com/publicsamples/Xpander-Construction-Kit/">Git Repository</a></div></div>
 </div>
 </div></div>
 </div>
@@ -495,10 +495,10 @@ Nexus.colors.fill = "#ecd7a2"
 
 //aENV Controls
 var attack = new Nexus.Dial('#attack', {
-'mode': 'absolute', // "absolute" or "absolute"
+'mode': 'relative', // "absolute" or "absolute"
 'size': [22, 30],
-'min': 0,
-'max': 100,
+'min': 0.01,
+'max': 2.00,
 'step': 0,
 'value': 0
 })
@@ -508,12 +508,12 @@ keys.attack = v;
 });
 
 var release = new Nexus.Dial('#release', {
-'mode': 'absolute', // "absolute" or "absolute"
+'mode': 'relative', // "absolute" or "absolute"
 'size': [22, 30],
-'min': 0,
-'max': 100,
+'min': 0.01,
+'max': 4.00,
 'step': 0,
-'value': 12
+'value': 0
 })
 
 release.on('change', function(v) {

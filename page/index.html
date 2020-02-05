@@ -51,7 +51,7 @@
 
     <div class="block__content block-branding__content site-branding"><span class="site-branding__text"><strong class="site-branding__name"><a href="/" title="Home" itemprop="url" rel="home" class="site-branding__name-link">Modularsamples</a></strong></span></div></div>
 </div>
-<main id="block-ms-content--3" class="l-bl block block-main-content" role="main" id="system-main-block">
+<main id="block-ms-content" class="l-bl block block-main-content" role="main" id="system-main-block">
   
   <div class="page_variant page-variant--id-page-panels-variant-0 panels-page panels-page--page atl atl--grid-3x3">
   <div class="atl__lr atl__cw">
@@ -399,10 +399,10 @@ Nexus.colors.fill = "#ecd7a2"
 
 //aENV Controls
 var attack = new Nexus.Dial('#attack', {
-'mode': 'absolute', // "absolute" or "absolute"
+'mode': 'relative', // "absolute" or "absolute"
 'size': [22, 30],
-'min': 0,
-'max': 100,
+'min': 0.01,
+'max': 2.00,
 'step': 0,
 'value': 0
 })
@@ -412,12 +412,12 @@ keys.attack = v;
 });
 
 var release = new Nexus.Dial('#release', {
-'mode': 'absolute', // "absolute" or "absolute"
+'mode': 'relative', // "absolute" or "absolute"
 'size': [22, 30],
-'min': 0,
-'max': 100,
+'min': 0.01,
+'max': 4.00,
 'step': 0,
-'value': 12
+'value': 0
 })
 
 release.on('change', function(v) {

@@ -54,7 +54,7 @@
 
     <div class="block__content block-branding__content site-branding"><span class="site-branding__text"><strong class="site-branding__name"><a href="/" title="Home" itemprop="url" rel="home" class="site-branding__name-link">Modularsamples</a></strong></span></div></div>
 </div>
-<main id="block-ms-content--5" class="l-bl block block-main-content" role="main" id="system-main-block">
+<main id="block-ms-content--4" class="l-bl block block-main-content" role="main" id="system-main-block">
   
   <article data-history-node-id="461" role="article" about="/roland-jupiter-4-pads" class="node node--id-461 node--type-samplelibrarygrid node--promoted node--view-mode-full">
   <div class="node__container">
@@ -75,7 +75,7 @@
         <div data-layout-content-preview-placeholder-label="&quot;Frontpage&quot; views block" class="l-bl block block-config-provider--views block-plugin-id--views-block-frontpage-block-1"id="views-blockfrontpage-block-1">
   <div class="block__inner">
 
-    <div class="block__content"><div class="views-element-container element-container-wrapper"><div class="view view-frontpage view-id-frontpage view-display-id-block_1 js-view-dom-id-ca5e511ccc518a400daf37175522c298772990c6d8dc1d1320567ee2385d4251">
+    <div class="block__content"><div class="views-element-container element-container-wrapper"><div class="view view-frontpage view-id-frontpage view-display-id-block_1 js-view-dom-id-380e74f038d5fe6850f5fb3d464b2bab05bd8ef52fe59d30f78788d981f83d63">
   
     
       
@@ -498,10 +498,10 @@ Nexus.colors.fill = "#ecd7a2"
 
 //aENV Controls
 var attack = new Nexus.Dial('#attack', {
-'mode': 'absolute', // "absolute" or "absolute"
+'mode': 'relative', // "absolute" or "absolute"
 'size': [22, 30],
-'min': 0,
-'max': 100,
+'min': 0.01,
+'max': 2.00,
 'step': 0,
 'value': 0
 })
@@ -511,12 +511,12 @@ keys.attack = v;
 });
 
 var release = new Nexus.Dial('#release', {
-'mode': 'absolute', // "absolute" or "absolute"
+'mode': 'relative', // "absolute" or "absolute"
 'size': [22, 30],
-'min': 0,
-'max': 100,
+'min': 0.01,
+'max': 4.00,
 'step': 0,
-'value': 12
+'value': 0
 })
 
 release.on('change', function(v) {
