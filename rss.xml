@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="http://modularsamples.com/rss.xml">
   <channel>
-    <title>Modularsamples</title>
+    <title>Modularsamples - 100% Full Fat, Ethically Sourced Audio </title>
     <link>http://modularsamples.com/rss.xml</link>
     <description/>
     <language>en</language>
@@ -28,7 +28,7 @@
         &lt;img src="http://modularsamples.com/sites/default/files/2020-01/mw.jpg" width="600" height="374" alt="morph wave" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-791a2bbd81031c530cd28c82a2ede4af9aa574784f5f6d730ee1f8f1ebccf430"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-637ed9fba7a21c8b06ece02e591e7b12c3b9d506cc692e8c66263d3fa2e25281"&gt;
   
     
 
@@ -172,7 +172,7 @@ function move() {
         &lt;img src="http://modularsamples.com/sites/default/files/2020-01/aj.jpg" width="600" height="372" alt="aj" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-791a2bbd81031c530cd28c82a2ede4af9aa574784f5f6d730ee1f8f1ebccf430"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-637ed9fba7a21c8b06ece02e591e7b12c3b9d506cc692e8c66263d3fa2e25281"&gt;
   
     
 
@@ -325,7 +325,7 @@ function move() {
         &lt;img src="http://modularsamples.com/sites/default/files/2020-01/mt.jpg" width="600" height="372" alt="Minitaur" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-791a2bbd81031c530cd28c82a2ede4af9aa574784f5f6d730ee1f8f1ebccf430"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-637ed9fba7a21c8b06ece02e591e7b12c3b9d506cc692e8c66263d3fa2e25281"&gt;
   
     
 
@@ -460,7 +460,7 @@ function move() {
         &lt;img src="http://modularsamples.com/sites/default/files/2020-01/rs1.1.jpg" width="600" height="372" alt="retrosynth" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-791a2bbd81031c530cd28c82a2ede4af9aa574784f5f6d730ee1f8f1ebccf430"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-637ed9fba7a21c8b06ece02e591e7b12c3b9d506cc692e8c66263d3fa2e25281"&gt;
   
     
 
@@ -601,7 +601,7 @@ function move() {
         &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp43_0.png" width="599" height="371" alt="jp4" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-22f019c73a7d025399e46447e6c68e45842bcb4a8f1bf7890555e751ce127bc0"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-1ae8c7519ef360ebca5e1166eae6d39e2c064abf2edb654e7ef9b631b045be66"&gt;
   
     
 
@@ -754,7 +754,7 @@ function move() {
         &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp4_0.jpg" width="600" height="379" alt="jp4" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-dc912971b689a5cd1bce1a739b9e28280b303b95f716f4c16dd9f7d22078f7eb"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-a5cd359cc53c5a9646eab0a01ca5f58216a31fcb4843546d4f6ef91190802a4f"&gt;
   
     
 
@@ -892,7 +892,7 @@ function move() {
         &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp44.png" width="600" height="251" alt="jp4" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-f98a85dca985bc876e4c8e5cc4c708e4dacbff12363c3bf4a9e2faab078219e3"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-09fb2959079e6abf0f04e2eddaf6844a1c842c61ca1951d117b2d19372d4003c"&gt;
   
     
 
@@ -1035,7 +1035,7 @@ function move() {
         &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp43.png" width="599" height="371" alt="jp4" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-833140b8dd5374a822d2faf8ee2a27e0a67949a20ea515deb2b9474471eb64a7"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-955c2f8fc41029bed7811652ffef5a0f547368237b7f74b8a81f4897ecd1f2ed"&gt;
   
     
 
@@ -1183,7 +1183,7 @@ function move() {
         &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp42.jpg" width="600" height="375" alt="jp4" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-dd02b64cdb4dcfd400e11a71b7f3fc07c021aa19cff5deb08d3fb64ef2f3ee61"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-a0f7618789ba3c0fcbd74ad7b079c0cc44b5ee297832906a23f808d9be57a28e"&gt;
   
     
 
@@ -1333,7 +1333,7 @@ function move() {
         &lt;img src="http://modularsamples.com/sites/default/files/2020-01/z1-6.png" width="600" height="206" alt="z1" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-8f0d47cc17d1fbe836e3ccc52d08db399ad238df17641646149f0464eb0147cb"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-cd316c567cc1de27753b61a02c537e92f8c70b92f333d0109c9f170463cbdea8"&gt;
   
     
 

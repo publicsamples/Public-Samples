@@ -24,18 +24,7 @@ var keys = new Tone.Sampler({
 			"A2" : "file22.[mp3|ogg]",
 			"A#2" : "file23.[mp3|ogg]",
 			"B2" : "file24.[mp3|ogg]",
-			"C3" : "file25.[mp3|ogg]",
-	        "C#3" : "file26.[mp3|ogg]",
-	        "D3" : "file27.[mp3|ogg]",
-			"D#3" : "file28.[mp3|ogg]",
-			"E3" : "file29.[mp3|ogg]",
-			"F3" : "file30.[mp3|ogg]",
-			"F#3" : "file31.[mp3|ogg]",
-			"G3" : "file32.[mp3|ogg]",
-			"G#3" : "file33.[mp3|ogg]",
-			"A3" : "file34.[mp3|ogg]",
-			"A#3" : "file35.[mp3|ogg]",
-			"B3" : "file36.[mp3|ogg]"
+			"C3" : "file25.[mp3|ogg]"
 				
 				
 				

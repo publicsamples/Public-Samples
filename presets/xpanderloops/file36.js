@@ -1,6 +1,6 @@
 var keys = new Tone.GrainPlayer({
-			"url" : "/presets/xpanderloops/file36.mp3"
-	
+			"url" : "/presets/xpanderloops/file36.mp3",
+	"loop" : true
 		}).connect(filter);
 					
 document.querySelector("tone-oscilloscope").bind(keys);
