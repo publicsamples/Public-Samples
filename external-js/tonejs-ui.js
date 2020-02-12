@@ -933,16 +933,16 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 				<tone-player-viz slot="top" class="viz" id="top" color="black"></tone-player-viz>
 				<tone-player-viz class="viz" id="bottom" color="white"></tone-player-viz>
 				<tone-slider 
-					min="0.0"
-					max="4"
+					min="0.5"
+					max="2"
 					exp="2"
 					value="1"
 					label="Playback Rate"
 					attribute="playbackRate">
 				</tone-slider>
 				<tone-slider 
-					min="-2400"
-					max="2400"
+					min="-1200"
+					max="1200"
 					default="0"
 					anchor="center"
 					value="0"
@@ -2274,107 +2274,98 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					mute</button>
 				</div>
 			</div>
-		`}});customElements.define("tone-transport",class extends o.a{static get properties(){return{controls:{type:Boolean},position:{type:Boolean}}}constructor(){super(),this.collapsed=!0}bind(t){super.bind(t),this.shadowRoot.querySelector("tone-play-toggle").bind(t),setInterval(()=>{this.shadowRoot.querySelector("#position").textContent=t.position},100)}render(){return i.b`
-			<style>
-				:host {
-					display: block;
-					color: #182C40;
-					background-color: #cc820f;
-                              
-				}
-				#container {
-					background-color: #cc820f;
-					padding: 5px;
-                        height:100px;
-                            
+						`}});customElements.define("tone-transport",class extends o.a{static get properties(){return{controls:{type:Boolean},position:{type:Boolean}}}constructor(){super(),this.collapsed=!0}bind(t){super.bind(t),this.shadowRoot.querySelector("tone-play-toggle").bind(t),setInterval(()=>{this.shadowRoot.querySelector("#position").textContent=t.position},100)}render(){return i.b`
+							<style>
+								:host {
+									display: block;
+									color: #182C40;
+								}
+								#container {
+									background-color: #182C40;
+									padding: 5px;
+								}
+								tone-play-toggle {
+									width: 50%;
+									background-color: #182C40;
+								}
+								#top {
+									position: relative;
+								}
+								#top tone-play-toggle {
+									width: 60%;
+									color: #182C40;
+								}
+								#top #position {
+									background-color: #2BACA9;
+									padding: 5px;
+									position: absolute;
+									width: 30%;
+									right: 8px;
+									transform: translate(0%, -50%);
+									text-align: center;
+									top: 50%;
+									font-family: monospace;
+								}
+								tone-rack {
+									margin-top: 10px;
 					
-				}
-				tone-play-toggle {
-					width: 50%;
-					background-color: #cc820f;
-				}
-				#top {
-					position: relative;
-				}
-				#top tone-play-toggle {
-					width: 60%;
-					color: #cc820f;
-				}
-				#top #position {
-					background-color: #cc820f;
-            
-					position: absolute;
-					width: 30%;
-					right: 8px;
-					transform: translate(0%, -50%);
-					text-align: center;
-					top: 50%;
-					font-family: monospace;
-					color:white;
-				}
-				tone-rack {
+								}
 
-					color: #cc820f;
-					background-color: #cc820f;
-				}
-
-				tone-slider, tone-toggle {
-					display: block;
-
-					background-color: #cc820f;
+								tone-slider, tone-toggle {
+									display: block;
+									margin-top: 10px;
+									background-color: #182C40;
+								}
+								tone-slider {
+									width: 80%;
+									margin: 10px auto 0;
+									background-color: #182C40;
 					
-				}
-				tone-slider {
-					width: 80%;
-
-					background-color: #cc820f;
-					
-				}
-				#tempo {
-					width: calc(100% - 10px);
-					color: #000;
+								}
+								#tempo {
+									width: calc(100% - 10px);
+									color: #8AD6D8;
+								}
 				
-				}
-				
-			}
-			#tempo .attributes {
+							}
+							tempo .attributes {
 		
-				color: #cc820f;
-			}
-			</style>
-			<div id="container">
-				<div id="top">
-					<tone-play-toggle></tone-play-toggle>
-					<div id="position">0:0:0</div>
-				</div>
-				<tone-slider
-					id="tempo"
-					min="1"
-					max="500"
-					label="Tempo"
-					exp="2"
-					units="bpm"
-					attribute="bpm">
-				</tone-slider>
-				${this.controls?i.b`
-					<tone-rack square label="Transport Settings" ?collapsed=${this.collapsed}>
-						<tone-toggle
-							label="Loop"
-							attribute="loop">
-						</tone-toggle>
-						<tone-slider
-							min="0"
-							max="10"
-							label="Loop Start"
-							attribute="loopStart">
-						</tone-slider>
-						<tone-slider
-							min="0"
-							max="10"
-							label="Loop End"
-							attribute="loopEnd">
-						</tone-slider>
-					</tone-rack>
+								color: #8AD6D8;
+							}
+							</style>
+							<div id="container">
+								<div id="top">
+									<tone-play-toggle></tone-play-toggle>
+									<div id="position">0:0:0</div>
+								</div>
+								<tone-slider
+									id="tempo"
+									min="60"
+									max="240"
+									label="Tempo"
+									exp="2"
+									units="bpm"
+									attribute="bpm">
+								</tone-slider>
+								${this.controls?i.b`
+									<tone-rack square label="Transport Settings" ?collapsed=${this.collapsed}>
+										<tone-toggle
+											label="Loop"
+											attribute="loop">
+										</tone-toggle>
+										<tone-slider
+											min="0"
+											max="10"
+											label="Loop Start"
+											attribute="loopStart">
+										</tone-slider>
+										<tone-slider
+											min="0"
+											max="10"
+											label="Loop End"
+											attribute="loopEnd">
+										</tone-slider>
+									</tone-rack>
 				`:i.b``}
 			</div>
 		`}});customElements.define("tone-compressor",class extends o.a{static get properties(){return{label:{type:String}}}constructor(){super(),this.label="Compressor",this.collapsed=!1}renderAttributes(){return i.b``}render(){return i.b`

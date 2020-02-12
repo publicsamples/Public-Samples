@@ -18,10 +18,10 @@
 <link rel="shortcut icon" href="/sites/default/files/mainbg.png" type="image/png" />
 
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com"><title>Modularsamples</title>
-    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_NRR6ewrOUh3v4sODaVZgL28UtIUsqD-TAZOlGoX0maw.css?q4zb0s" />
-<link rel="stylesheet" media="all" href="/sites/default/files/css/css_7zxoISgXCv2tgLkUeBK1rjymMp4ZkXWFucxqnlQP97E.css?q4zb0s" />
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_NRR6ewrOUh3v4sODaVZgL28UtIUsqD-TAZOlGoX0maw.css?q5i912" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_7zxoISgXCv2tgLkUeBK1rjymMp4ZkXWFucxqnlQP97E.css?q5i912" />
 <link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Quicksand&amp;amp;display=swap" />
-<link rel="stylesheet" media="all" href="/sites/default/files/css/css_ifAzZi1gWY63e8ksr1GBXIBxMQFwfCuXpcmyXs3C92o.css?q4zb0s" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_JcG6Z80fDGT2o-LfTWsUY6Qx6rSYQL-nEyYHw0HLVts.css?q5i912" />
 
     <script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
 
@@ -33,7 +33,21 @@
       <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
     
 <div class="page js-layout">
-  <div data-at-row="highlighted" class="l-highlighted l-row">
+  <div data-at-row="header" class="l-header l-row">
+  
+  <header class="l-pr page__row pr-header" role="banner" id="masthead">
+    <div class="l-rw regions container pr-header__rw arc--1 hr--1" data-at-regions="">
+      <div  data-at-region="1" data-at-block-count="1" class="l-r region pr-header__header-first" id="rid-header-first"><div id="block-ms-branding" class="l-bl block block-branding block-config-provider--system block-plugin-id--system-branding-block has-name" id="system-branding-block">
+  <div class="block__inner block-branding__inner">
+
+    <div class="block__content block-branding__content site-branding"><span class="site-branding__text"><strong class="site-branding__name"><a href="/" title="Home" itemprop="url" rel="home" class="site-branding__name-link">Modularsamples</a></strong></span></div></div>
+</div>
+</div>
+    </div>
+  </header>
+  
+</div>
+<div data-at-row="highlighted" class="l-highlighted l-row">
   
   <div class="l-pr page__row pr-highlighted" id="highlighted">
     <div class="l-rw regions container pr-highlighted__rw arc--1 hr--1" data-at-regions="">
@@ -46,12 +60,7 @@
   
   <div class="l-pr page__row pr-main" id="main-content">
     <div class="l-rw regions container pr-main__rw arc--1 hr--1" data-at-regions="">
-      <div  data-at-region="1" data-at-block-count="3" class="l-r region pr-main__content" id="rid-content"><div id="block-ms-branding" class="l-bl block block-branding block-config-provider--system block-plugin-id--system-branding-block has-name" id="system-branding-block">
-  <div class="block__inner block-branding__inner">
-
-    <div class="block__content block-branding__content site-branding"><span class="site-branding__text"><strong class="site-branding__name"><a href="/" title="Home" itemprop="url" rel="home" class="site-branding__name-link">Modularsamples</a></strong></span></div></div>
-</div>
-<main id="block-ms-content--3" class="l-bl block block-main-content" role="main" id="system-main-block">
+      <div  data-at-region="1" data-at-block-count="2" class="l-r region pr-main__content" id="rid-content"><main id="block-ms-content--3" class="l-bl block block-main-content" role="main" id="system-main-block">
   
   <div class="page_variant page-variant--id-page-panels-variant-0 panels-page panels-page--page atl atl--grid-3x3">
   <div class="atl__lr atl__cw">
@@ -398,22 +407,10 @@ Nexus.colors.fill = "#ecd7a2"
 
 
 //aENV Controls
-var attack = new Nexus.Dial('#attack', {
-'mode': 'relative', // "absolute" or "absolute"
-'size': [22, 30],
-'min': 0.01,
-'max': 2.00,
-'step': 0,
-'value': 0
-})
 
-attack.on('change', function(v) {
-keys.attack = v;
-});
-
-var release = new Nexus.Dial('#release', {
+var release = new Nexus.Slider('#release', {
 'mode': 'relative', // "absolute" or "absolute"
-'size': [22, 30],
+'size': [18, 50],
 'min': 0.01,
 'max': 4.00,
 'step': 0,
@@ -424,76 +421,13 @@ release.on('change', function(v) {
 keys.release = v;
 });
 
-//fliter Controls
 
-var fwet = new Nexus.Dial('#fwet', {
-'mode': 'relative', // "absolute" or "absolute"
-'size': [22, 30],
-"min": 0,
-"max" : 1,
-'value' : 0
-})
-
-fwet.on('change', function(v) {
-filter.wet.value = v;
-});
-
-var baseFrequency = new Nexus.Dial('#baseFrequency', {
-'mode': 'absolute', // "absolute" or "absolute"
-'size': [22, 30],
-'min': 20,
-'max': 4000,
-'step': 0,
-    'value': 200
-})
-
-baseFrequency.on('change', function(v) {
-filter.filter.frequency.value = v;
-});
-
-var Q = new Nexus.Dial('#Q', {
-'mode': 'absolute', // "absolute" or "absolute"
-'size': [22, 30],
-'min': 0,
-'max': 10,
-'step': 0,
-    'value': 1
-})
-
-Q.on('change', function(v) {
-filter.filter.Q.value = v;
-});
-
-var depth = new Nexus.Dial('#depth', {
-'mode': 'absolute', // "absolute" or "absolute"
-'size': [22, 30],
-'min': 0.00,
-'max': 1.00,
-'step': 0,
-'value': 0
-})
-
-depth.on('change', function(v) {
-filter.depth.value = v;
-});
-
-var ffrequency = new Nexus.Dial('#ffrequency', {
-'mode': 'absolute', // "absolute" or "absolute"
-'size': [22, 30],
-'min': 0.1,
-'max': 20,
-'step': 0,
-    'value': 4
-})
-ffrequency.on('change', function(v) {
-filter.frequency.value = v;
-});
 
 //chorus Controls
 
-var cwet = new Nexus.Dial('#cwet', {
+var cwet = new Nexus.Slider('#cwet', {
 'mode': 'relative', // "absolute" or "absolute"
-'size': [22, 30],
+'size': [18, 50],
 'min': 0.0,
 'max': 1.0,
 'step': 0,
@@ -505,9 +439,9 @@ chorus.wet.value = v;
 });
 
 
-var cfreq = new Nexus.Dial('#cfreq', {
+var cfreq = new Nexus.Slider('#cfreq', {
 'mode': 'relative', // "absolute" or "absolute"
-'size': [22, 30],
+'size': [18, 50],
 'min': 0.1,
 'max': 2.0,
 'step': 0,
@@ -520,9 +454,9 @@ chorus.frequency.value = v;
 
 //delay Controls
 
-var dwet = new Nexus.Dial('#dwet', {
+var dwet = new Nexus.Slider('#dwet', {
 'mode': 'relative', // "absolute" or "absolute"
-'size': [22, 30],
+'size': [18, 50],
 'min': 0.0,
 'max': 1.0,
 'step': 0,
@@ -533,9 +467,9 @@ dwet.on('change', function(v) {
 feedbackDelay.wet.value = v;
 });
 
-var dtime = new Nexus.Dial('#dtime', {
+var dtime = new Nexus.Slider('#dtime', {
 'mode': 'relative', // "absolute" or "absolute"
-'size': [22, 30],
+'size': [18, 50],
 'min': 0.01,
 'max': 1.0,
 'step': 0,
@@ -549,9 +483,9 @@ feedbackDelay.delayTime.value = v;
 
 //Reverb Controls
 
-var rwet = new Nexus.Dial('#rwet', {
+var rwet = new Nexus.Slider('#rwet', {
 'mode': 'relative', // "absolute" or "absolute"
-'size': [22, 30],
+'size': [18, 50],
 'min': 0.0,
 'max': 1.0,
 'step': 0,
@@ -565,7 +499,7 @@ verb.wet.value = v;
 
 //Transport/seq Controls
 
-var vol = new Nexus.Dial('#vol', {size: [22, 30], min: -36, max: 12,  value: -12});
+var vol = new Nexus.Slider('#vol', {size: [18, 50], min: -36, max: 12,  value: -12});
 vol.on('change', v => eq.volume.value = v)
 
 document.querySelector("tone-transport").bind(Tone.Transport);
@@ -644,7 +578,10 @@ keys.triggerRelease(Tone.Frequency(note.note, "midi").toNote());
       <div  data-at-region="1" data-at-block-count="1" class="l-r region pr-footer__footer" id="rid-footer"><div id="block-builtwith" class="l-bl block block-config-provider--block-content block-plugin-id--block-content-1dc05664-2e50-43ba-be77-94e311735695 block--type-basic block--view-mode-full"id="block-content1dc05664-2e50-43ba-be77-94e311735695">
   <div class="block__inner">
 
-    <div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><p class="text-align-center">Built with: <a href="https://tonejs.github.io">ToneJS</a> - <a href="https://nexus-js.github.io/ui/">NexusUI</a> - <a href="https://github.com/djipco/webmidi">WebMidi.js</a> - <a href="https://www.drupal.org">Drupal</a> - <a href="https://tome.fyi/">Tome</a></p></div></div>
+    <div class="block__content"><div class="clearfix text-formatted field field-block-content--body field-formatter-text-default field-name-body field-type-text-with-summary field-label-hidden has-single"><div class="field__items"><div class="field__item"><p class="text-align-center">Built with: <a href="https://tonejs.github.io">ToneJS</a> - <a href="https://nexus-js.github.io/ui/">NexusUI</a> - <a href="https://github.com/djipco/webmidi">WebMidi.js</a> - <a href="https://www.drupal.org">Drupal</a> - <a href="https://tome.fyi/">Tome</a></p>
+
+<p class="text-align-center">2020 modularsamples.com</p>
+</div></div>
 </div>
 </div></div>
 </div>
