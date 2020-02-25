@@ -28,7 +28,7 @@
         &lt;img src="http://modularsamples.com/sites/default/files/2020-01/mw.jpg" width="600" height="374" alt="morph wave" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-637ed9fba7a21c8b06ece02e591e7b12c3b9d506cc692e8c66263d3fa2e25281"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-3be0e5269d3e44edfed40d57a892e0323de27e0598bc1ef2bcbdcd6d72b8f978"&gt;
   
     
 
@@ -157,7 +157,7 @@ function move() {
   <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Roland Alpha Juno Construction Kit&lt;/span&gt;
 &lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
 &lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Thu, 01/23/2020 - 17:05&lt;/span&gt;
-&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-Alpha-Juno-Construction-Kit/archive/master.zip"&gt;Patches&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="http://modularsamples.com/sites/drupal.dd/files/2020-01/AJCKAudio_0.torrent"&gt;Audio (Bittorrent)&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-Alpha-Juno-Construction-Kit/"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-Alpha-Juno-Contruction-Kit-Saws/"&gt;Saws&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-Alpha-Juno-Construction-Kit-Squares"&gt;Squares&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-Alpha-Juno-Construction-Kit-Misc"&gt;Misc&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
 	&lt;li&gt;&lt;strong&gt;Patches&lt;/strong&gt;: 190&lt;/li&gt;
@@ -172,7 +172,7 @@ function move() {
         &lt;img src="http://modularsamples.com/sites/default/files/2020-01/aj.jpg" width="600" height="372" alt="aj" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-637ed9fba7a21c8b06ece02e591e7b12c3b9d506cc692e8c66263d3fa2e25281"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-3be0e5269d3e44edfed40d57a892e0323de27e0598bc1ef2bcbdcd6d72b8f978"&gt;
   
     
 
@@ -325,7 +325,7 @@ function move() {
         &lt;img src="http://modularsamples.com/sites/default/files/2020-01/mt.jpg" width="600" height="372" alt="Minitaur" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-637ed9fba7a21c8b06ece02e591e7b12c3b9d506cc692e8c66263d3fa2e25281"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-3be0e5269d3e44edfed40d57a892e0323de27e0598bc1ef2bcbdcd6d72b8f978"&gt;
   
     
 
@@ -460,7 +460,7 @@ function move() {
         &lt;img src="http://modularsamples.com/sites/default/files/2020-01/rs1.1.jpg" width="600" height="372" alt="retrosynth" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-637ed9fba7a21c8b06ece02e591e7b12c3b9d506cc692e8c66263d3fa2e25281"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-3be0e5269d3e44edfed40d57a892e0323de27e0598bc1ef2bcbdcd6d72b8f978"&gt;
   
     
 
@@ -601,7 +601,7 @@ function move() {
         &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp43_0.png" width="599" height="371" alt="jp4" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-1ae8c7519ef360ebca5e1166eae6d39e2c064abf2edb654e7ef9b631b045be66"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-7655077790bdef2ee37bcf62e5df1325a0069c6ad358a6e5f2d7b752dd840be5"&gt;
   
     
 
@@ -754,7 +754,7 @@ function move() {
         &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp4_0.jpg" width="600" height="379" alt="jp4" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-a5cd359cc53c5a9646eab0a01ca5f58216a31fcb4843546d4f6ef91190802a4f"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-2653e367e1bbfd4b146ef96411868b28963f08a7615e0decac8ab2cac9f283a9"&gt;
   
     
 
@@ -892,7 +892,7 @@ function move() {
         &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp44.png" width="600" height="251" alt="jp4" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-09fb2959079e6abf0f04e2eddaf6844a1c842c61ca1951d117b2d19372d4003c"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-83931f2ed10e517a94a43a6658f9dd660950a44a5e209929826c2d932f495b30"&gt;
   
     
 
@@ -1035,7 +1035,7 @@ function move() {
         &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp43.png" width="599" height="371" alt="jp4" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-955c2f8fc41029bed7811652ffef5a0f547368237b7f74b8a81f4897ecd1f2ed"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-2da519878d6b7b30bcc59ea9ac981a8a2471276fa4d11e39fb4d36e0c104a635"&gt;
   
     
 
@@ -1183,7 +1183,7 @@ function move() {
         &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp42.jpg" width="600" height="375" alt="jp4" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-a0f7618789ba3c0fcbd74ad7b079c0cc44b5ee297832906a23f808d9be57a28e"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-c05dd2db37fcdd02b5a22a3dd4690fe82dc50c08726c610b1ccd74b45e0bd2e2"&gt;
   
     
 
@@ -1333,7 +1333,7 @@ function move() {
         &lt;img src="http://modularsamples.com/sites/default/files/2020-01/z1-6.png" width="600" height="206" alt="z1" typeof="foaf:Image" /&gt;
 &lt;/div&gt;
     &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-cd316c567cc1de27753b61a02c537e92f8c70b92f333d0109c9f170463cbdea8"&gt;
+&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-a47a2d69a9fce81eca1ebbd97183c425c54bc6e890ad652c19fc0e76df71ec5f"&gt;
   
     
 
