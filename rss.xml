@@ -9,34 +9,41 @@
     <item>
   <title>Morph Instruments</title>
   <link>http://modularsamples.com/morph-instruments</link>
-  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Morph Instruments&lt;/span&gt;
-&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Wed, 01/29/2020 - 15:46&lt;/span&gt;
-&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Morph-Instruments/archive/master.zip"&gt;Patches&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="http://www.mediafire.com/file/qq2qhxx07ykdfkr/MorphAudio.zip/file"&gt;Audio &lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Morph-Instruments"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
+  <description>&lt;span&gt;Morph Instruments&lt;/span&gt;
+
+            &lt;div&gt;&lt;p&gt;A collection of Kontakt instruments using the AET morphing filter&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;MorphDrum&lt;/strong&gt; - 3 Percussive instruments &lt;br /&gt;
+&lt;strong&gt;MorphWave&lt;/strong&gt; - A 3 Oscillator Synth using AET Filter. Some variations using different voice options&lt;/p&gt;&lt;/div&gt;
+      &lt;span&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
+&lt;span&gt;Wed, 01/29/2020 - 15:46&lt;/span&gt;
+
+      &lt;div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Morph-Instruments/archive/master.zip"&gt;Patches&lt;/a&gt;&lt;/div&gt;
+              &lt;div&gt;&lt;a href="http://www.mediafire.com/file/qq2qhxx07ykdfkr/MorphAudio.zip/file"&gt;Audio &lt;/a&gt;&lt;/div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Morph-Instruments"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;
+  
+            &lt;div&gt;&lt;ul&gt;
 	&lt;li&gt;&lt;strong&gt;Instruments&lt;/strong&gt;: 7&lt;/li&gt;
 	&lt;li&gt;&lt;strong&gt;Formats:&lt;/strong&gt; Kontakt &lt;/li&gt;
 	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 2.5GB  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;MorphDrum&lt;/strong&gt; - 3 Percussive instruments &lt;br /&gt;
-&lt;strong&gt;MorphWave&lt;/strong&gt; - A 3 Oscillator Synth using AET Filter. Some variations using different voice options&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
-        &lt;img src="http://modularsamples.com/sites/default/files/2020-01/mw.jpg" width="600" height="374" alt="morph wave" typeof="foaf:Image" /&gt;
+      
+            &lt;div&gt;  &lt;img src="http://modularsamples.com/sites/default/files/2020-01/mw.jpg" width="600" height="374" alt="morph wave" typeof="foaf:Image" /&gt;
+
 &lt;/div&gt;
-    &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-feb7bf6eeab856f581e176b1f683df8e55d6e8f1db0d27ff6064d329b4623321"&gt;
+      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-609df4d26bdab3310b59f7c6bee1e3169641152013f0ad089a76a6f492e5bd3a"&gt;
   
     
 
   
   
 
-      &lt;div class="views-row"&gt;
-    &lt;script&gt;
+      &lt;div class="views-row"&gt;&lt;script&gt;
 &lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
 
 var keys = new Tone.GrainPlayer({
@@ -50,27 +57,21 @@ document.querySelector("tone-play-toggle").bind(keys);
 
 
 //--&gt;&lt;!]]&gt;
-&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;
-  &lt;/div&gt;
+&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
 
   
-    &lt;nav class="pager pager--mini" role="navigation" aria-labelledby="pagination-heading"&gt;
-    &lt;h4 id="pagination-heading" class="pager__heading visually-hidden"&gt;Pagination&lt;/h4&gt;
-    &lt;ul class="pager__items js-pager__items"&gt;
-
-      
-              &lt;li class="pager__item is-active"&gt;
-          &lt;span class="pager__link pager__link--is-active"&gt;(Page 1)&lt;/span&gt;
-        &lt;/li&gt;
-      
-              &lt;li class="pager__item pager__item--next pager__item--text"&gt;
-          &lt;a href="http://modularsamples.com/rss.xml?page=1" class="pager__link" title="Go to next page" rel="next"&gt;
+    &lt;nav role="navigation" aria-labelledby="pagination-heading"&gt;
+    &lt;h4 class="visually-hidden"&gt;Pagination&lt;/h4&gt;
+    &lt;ul class="js-pager__items"&gt;
+                    &lt;li&gt;
+          Page 1        &lt;/li&gt;
+                    &lt;li&gt;
+          &lt;a href="http://modularsamples.com/rss.xml?page=1" title="Go to next page" rel="next"&gt;
             &lt;span class="visually-hidden"&gt;Next page&lt;/span&gt;
             &lt;span aria-hidden="true"&gt;››&lt;/span&gt;
           &lt;/a&gt;
         &lt;/li&gt;
-      
-    &lt;/ul&gt;
+          &lt;/ul&gt;
   &lt;/nav&gt;
 
 
@@ -80,7 +81,10 @@ document.querySelector("tone-play-toggle").bind(keys);
   
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;
+
+  &lt;div&gt;
+    &lt;div&gt;Demo Player&lt;/div&gt;
+              &lt;div&gt;
 &lt;div class="grid-patch"&gt;
 &lt;div class="grid-item2"&gt;
 &lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
@@ -141,11 +145,14 @@ function move() {
 //--&gt;&lt;!]]&gt;
 &lt;/script&gt;
 
-&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="field field-node--field-file field-formatter-file-default field-name-field-file field-type-file field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;File&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;span class="file file--mime-application-x-bittorrent file--general"&gt; &lt;a href="http://modularsamples.com/sites/default/files/2020-01/MorphAudio.torrent" type="application/x-bittorrent; length=439785"&gt;MorphAudio.torrent&lt;/a&gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;
+          &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;div&gt;File&lt;/div&gt;
+              &lt;div&gt;&lt;span class="file file--mime-application-x-bittorrent file--general"&gt;&lt;a href="http://modularsamples.com/sites/default/files/2020-01/MorphAudio.torrent" type="application/x-bittorrent; length=439785"&gt;MorphAudio.torrent&lt;/a&gt;&lt;/span&gt;
 &lt;/div&gt;
+          &lt;/div&gt;
 </description>
   <pubDate>Wed, 29 Jan 2020 15:46:36 +0000</pubDate>
     <dc:creator>rick</dc:creator>
@@ -154,33 +161,38 @@ function move() {
 <item>
   <title>Roland Alpha Juno Construction Kit</title>
   <link>http://modularsamples.com/roland-alpha-juno-construction-kit</link>
-  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Roland Alpha Juno Construction Kit&lt;/span&gt;
-&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Thu, 01/23/2020 - 17:05&lt;/span&gt;
-&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-Alpha-Juno-Contruction-Kit-Saws/"&gt;Saws&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-Alpha-Juno-Construction-Kit-Squares"&gt;Squares&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-Alpha-Juno-Construction-Kit-Misc"&gt;Misc&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
+  <description>&lt;span&gt;Roland Alpha Juno Construction Kit&lt;/span&gt;
+
+            &lt;div&gt;&lt;p&gt;Construction kit made with a Roland Alpha Juno. Includes tons of saw, square and noise waveforms, a bunch of patches and 2 Kontakt instruments.&lt;/p&gt;&lt;/div&gt;
+      &lt;span&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
+&lt;span&gt;Thu, 01/23/2020 - 17:05&lt;/span&gt;
+
+      &lt;div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Roland-Alpha-Juno-Contruction-Kit-Saws/"&gt;Saws&lt;/a&gt;&lt;/div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Roland-Alpha-Juno-Construction-Kit-Squares"&gt;Squares&lt;/a&gt;&lt;/div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Roland-Alpha-Juno-Construction-Kit-Misc"&gt;Misc&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;
+  
+            &lt;div&gt;&lt;ul&gt;
 	&lt;li&gt;&lt;strong&gt;Patches&lt;/strong&gt;: 190&lt;/li&gt;
 	&lt;li&gt;&lt;strong&gt;Formats:&lt;/strong&gt; EXS24 &amp; Kontakt &lt;/li&gt;
 	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 4.25GB  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Construction kit made with a Roland Alpha Juno. Includes tons of saw, square and noise waveforms, a bunch of patches and 2 Kontakt instruments.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
-        &lt;img src="http://modularsamples.com/sites/default/files/2020-01/aj.jpg" width="600" height="372" alt="aj" typeof="foaf:Image" /&gt;
+      
+            &lt;div&gt;  &lt;img src="http://modularsamples.com/sites/default/files/2020-01/aj.jpg" width="600" height="372" alt="aj" typeof="foaf:Image" /&gt;
+
 &lt;/div&gt;
-    &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-feb7bf6eeab856f581e176b1f683df8e55d6e8f1db0d27ff6064d329b4623321"&gt;
+      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-609df4d26bdab3310b59f7c6bee1e3169641152013f0ad089a76a6f492e5bd3a"&gt;
   
     
 
   
   
 
-      &lt;div class="views-row"&gt;
-    &lt;script&gt;
+      &lt;div class="views-row"&gt;&lt;script&gt;
 &lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
 
 var keys = new Tone.GrainPlayer({
@@ -194,27 +206,21 @@ document.querySelector("tone-play-toggle").bind(keys);
 
 
 //--&gt;&lt;!]]&gt;
-&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;
-  &lt;/div&gt;
+&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
 
   
-    &lt;nav class="pager pager--mini" role="navigation" aria-labelledby="pagination-heading"&gt;
-    &lt;h4 id="pagination-heading" class="pager__heading visually-hidden"&gt;Pagination&lt;/h4&gt;
-    &lt;ul class="pager__items js-pager__items"&gt;
-
-      
-              &lt;li class="pager__item is-active"&gt;
-          &lt;span class="pager__link pager__link--is-active"&gt;(Page 1)&lt;/span&gt;
-        &lt;/li&gt;
-      
-              &lt;li class="pager__item pager__item--next pager__item--text"&gt;
-          &lt;a href="http://modularsamples.com/rss.xml?page=1" class="pager__link" title="Go to next page" rel="next"&gt;
+    &lt;nav role="navigation" aria-labelledby="pagination-heading"&gt;
+    &lt;h4 class="visually-hidden"&gt;Pagination&lt;/h4&gt;
+    &lt;ul class="js-pager__items"&gt;
+                    &lt;li&gt;
+          Page 1        &lt;/li&gt;
+                    &lt;li&gt;
+          &lt;a href="http://modularsamples.com/rss.xml?page=1" title="Go to next page" rel="next"&gt;
             &lt;span class="visually-hidden"&gt;Next page&lt;/span&gt;
             &lt;span aria-hidden="true"&gt;››&lt;/span&gt;
           &lt;/a&gt;
         &lt;/li&gt;
-      
-    &lt;/ul&gt;
+          &lt;/ul&gt;
   &lt;/nav&gt;
 
 
@@ -224,7 +230,10 @@ document.querySelector("tone-play-toggle").bind(keys);
   
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;
+
+  &lt;div&gt;
+    &lt;div&gt;Demo Player&lt;/div&gt;
+              &lt;div&gt;
 &lt;div class="grid-patch"&gt;
 &lt;div class="grid-item2"&gt;
 &lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
@@ -294,11 +303,14 @@ function move() {
 //--&gt;&lt;!]]&gt;
 &lt;/script&gt;
 
-&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="field field-node--field-file field-formatter-file-default field-name-field-file field-type-file field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;File&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;span class="file file--mime-application-x-bittorrent file--general"&gt; &lt;a href="http://modularsamples.com/sites/default/files/2020-01/AJCKAudio_0.torrent" type="application/x-bittorrent; length=1542570"&gt;AJCKAudio_0.torrent&lt;/a&gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;
+          &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;div&gt;File&lt;/div&gt;
+              &lt;div&gt;&lt;span class="file file--mime-application-x-bittorrent file--general"&gt;&lt;a href="http://modularsamples.com/sites/default/files/2020-01/AJCKAudio_0.torrent" type="application/x-bittorrent; length=1542570"&gt;AJCKAudio_0.torrent&lt;/a&gt;&lt;/span&gt;
 &lt;/div&gt;
+          &lt;/div&gt;
 </description>
   <pubDate>Thu, 23 Jan 2020 17:05:25 +0000</pubDate>
     <dc:creator>rick</dc:creator>
@@ -307,33 +319,39 @@ function move() {
 <item>
   <title>Moog Minitaur Construction Kit</title>
   <link>http://modularsamples.com/moog-minitaur-construction-kit</link>
-  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Moog Minitaur Construction Kit&lt;/span&gt;
-&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Thu, 01/23/2020 - 16:28&lt;/span&gt;
-&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Moog-Minitaur-Construction-Kit-pt1/archive/master.zip"&gt;Zip pt1&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Moog-Minitaur-Construction-Kit-pt2/archive/master.zip"&gt;Zip pt2&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Moog-Minitaur-Construction-Kit-pt1"&gt;Git Repository pt1 &lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Moog-Minitaur-Construction-Kit-pt2"&gt;Git Repository pt2&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
+  <description>&lt;span&gt;Moog Minitaur Construction Kit&lt;/span&gt;
+
+            &lt;div&gt;&lt;p&gt;Construction kit made with a Moog Minitaur. A bunch of Saw &amp; Squares in various configurations allowing you to create your own sounds. &lt;/p&gt;&lt;/div&gt;
+      &lt;span&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
+&lt;span&gt;Thu, 01/23/2020 - 16:28&lt;/span&gt;
+
+      &lt;div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Moog-Minitaur-Construction-Kit-pt1/archive/master.zip"&gt;Zip pt1&lt;/a&gt;&lt;/div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Moog-Minitaur-Construction-Kit-pt2/archive/master.zip"&gt;Zip pt2&lt;/a&gt;&lt;/div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Moog-Minitaur-Construction-Kit-pt1"&gt;Git Repository pt1 &lt;/a&gt;&lt;/div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Moog-Minitaur-Construction-Kit-pt2"&gt;Git Repository pt2&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;
+  
+            &lt;div&gt;&lt;ul&gt;
 	&lt;li&gt;&lt;strong&gt;Patches&lt;/strong&gt;: 68&lt;/li&gt;
 	&lt;li&gt;&lt;strong&gt;Formats:&lt;/strong&gt; EXS24 &amp; Kontakt  &lt;/li&gt;
 	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 2.7GB  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Construction kit made with a Moog Minitaur. A bunch of Saw &amp; Squares in various configurations allowing you to create your own sounds. &lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
-        &lt;img src="http://modularsamples.com/sites/default/files/2020-01/mt.jpg" width="600" height="372" alt="Minitaur" typeof="foaf:Image" /&gt;
+      
+            &lt;div&gt;  &lt;img src="http://modularsamples.com/sites/default/files/2020-01/mt.jpg" width="600" height="372" alt="Minitaur" typeof="foaf:Image" /&gt;
+
 &lt;/div&gt;
-    &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-feb7bf6eeab856f581e176b1f683df8e55d6e8f1db0d27ff6064d329b4623321"&gt;
+      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-609df4d26bdab3310b59f7c6bee1e3169641152013f0ad089a76a6f492e5bd3a"&gt;
   
     
 
   
   
 
-      &lt;div class="views-row"&gt;
-    &lt;script&gt;
+      &lt;div class="views-row"&gt;&lt;script&gt;
 &lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
 
 var keys = new Tone.GrainPlayer({
@@ -347,27 +365,21 @@ document.querySelector("tone-play-toggle").bind(keys);
 
 
 //--&gt;&lt;!]]&gt;
-&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;
-  &lt;/div&gt;
+&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
 
   
-    &lt;nav class="pager pager--mini" role="navigation" aria-labelledby="pagination-heading"&gt;
-    &lt;h4 id="pagination-heading" class="pager__heading visually-hidden"&gt;Pagination&lt;/h4&gt;
-    &lt;ul class="pager__items js-pager__items"&gt;
-
-      
-              &lt;li class="pager__item is-active"&gt;
-          &lt;span class="pager__link pager__link--is-active"&gt;(Page 1)&lt;/span&gt;
-        &lt;/li&gt;
-      
-              &lt;li class="pager__item pager__item--next pager__item--text"&gt;
-          &lt;a href="http://modularsamples.com/rss.xml?page=1" class="pager__link" title="Go to next page" rel="next"&gt;
+    &lt;nav role="navigation" aria-labelledby="pagination-heading"&gt;
+    &lt;h4 class="visually-hidden"&gt;Pagination&lt;/h4&gt;
+    &lt;ul class="js-pager__items"&gt;
+                    &lt;li&gt;
+          Page 1        &lt;/li&gt;
+                    &lt;li&gt;
+          &lt;a href="http://modularsamples.com/rss.xml?page=1" title="Go to next page" rel="next"&gt;
             &lt;span class="visually-hidden"&gt;Next page&lt;/span&gt;
             &lt;span aria-hidden="true"&gt;››&lt;/span&gt;
           &lt;/a&gt;
         &lt;/li&gt;
-      
-    &lt;/ul&gt;
+          &lt;/ul&gt;
   &lt;/nav&gt;
 
 
@@ -377,7 +389,10 @@ document.querySelector("tone-play-toggle").bind(keys);
   
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;
+
+  &lt;div&gt;
+    &lt;div&gt;Demo Player&lt;/div&gt;
+              &lt;div&gt;
 &lt;div class="grid-patch"&gt;
 &lt;div class="grid-item2"&gt;
 &lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
@@ -432,8 +447,8 @@ function move() {
 //--&gt;&lt;!]]&gt;
 &lt;/script&gt;
 
-&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
+          &lt;/div&gt;
 </description>
   <pubDate>Thu, 23 Jan 2020 16:28:37 +0000</pubDate>
     <dc:creator>rick</dc:creator>
@@ -442,33 +457,37 @@ function move() {
 <item>
   <title>Wavetables for RetroSynth</title>
   <link>http://modularsamples.com/wavetables-retrosynth</link>
-  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Wavetables for RetroSynth&lt;/span&gt;
-&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Wed, 01/22/2020 - 19:31&lt;/span&gt;
-&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Retro-Synth-Wavetables/archive/master.zip"&gt;Zip&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Retro-Synth-Wavetables/"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
+  <description>&lt;span&gt;Wavetables for RetroSynth&lt;/span&gt;
+
+            &lt;div&gt;&lt;p&gt;This collection distills the wider Modular Samples library into a bunch of wavetables, patches and Smart Control Panels for Logic's Retro Synth instrument.&lt;/p&gt;&lt;/div&gt;
+      &lt;span&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
+&lt;span&gt;Wed, 01/22/2020 - 19:31&lt;/span&gt;
+
+      &lt;div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Retro-Synth-Wavetables/archive/master.zip"&gt;Zip&lt;/a&gt;&lt;/div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Retro-Synth-Wavetables/"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;
+  
+            &lt;div&gt;&lt;ul&gt;
 	&lt;li&gt;&lt;strong&gt;Wavetables&lt;/strong&gt;: 337&lt;/li&gt;
 	&lt;li&gt;&lt;strong&gt;Patches&lt;/strong&gt;: 100+  &lt;/li&gt;
 	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 20mb&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;This collection distills the wider Modular Samples library into a bunch of wavetables, patches and Smart Control Panels for Logic's Retro Synth instrument.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
-        &lt;img src="http://modularsamples.com/sites/default/files/2020-01/rs1.1.jpg" width="600" height="372" alt="retrosynth" typeof="foaf:Image" /&gt;
+      
+            &lt;div&gt;  &lt;img src="http://modularsamples.com/sites/default/files/2020-01/rs1.1.jpg" width="600" height="372" alt="retrosynth" typeof="foaf:Image" /&gt;
+
 &lt;/div&gt;
-    &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-feb7bf6eeab856f581e176b1f683df8e55d6e8f1db0d27ff6064d329b4623321"&gt;
+      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-609df4d26bdab3310b59f7c6bee1e3169641152013f0ad089a76a6f492e5bd3a"&gt;
   
     
 
   
   
 
-      &lt;div class="views-row"&gt;
-    &lt;script&gt;
+      &lt;div class="views-row"&gt;&lt;script&gt;
 &lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
 
 var keys = new Tone.GrainPlayer({
@@ -482,27 +501,21 @@ document.querySelector("tone-play-toggle").bind(keys);
 
 
 //--&gt;&lt;!]]&gt;
-&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;
-  &lt;/div&gt;
+&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
 
   
-    &lt;nav class="pager pager--mini" role="navigation" aria-labelledby="pagination-heading"&gt;
-    &lt;h4 id="pagination-heading" class="pager__heading visually-hidden"&gt;Pagination&lt;/h4&gt;
-    &lt;ul class="pager__items js-pager__items"&gt;
-
-      
-              &lt;li class="pager__item is-active"&gt;
-          &lt;span class="pager__link pager__link--is-active"&gt;(Page 1)&lt;/span&gt;
-        &lt;/li&gt;
-      
-              &lt;li class="pager__item pager__item--next pager__item--text"&gt;
-          &lt;a href="http://modularsamples.com/rss.xml?page=1" class="pager__link" title="Go to next page" rel="next"&gt;
+    &lt;nav role="navigation" aria-labelledby="pagination-heading"&gt;
+    &lt;h4 class="visually-hidden"&gt;Pagination&lt;/h4&gt;
+    &lt;ul class="js-pager__items"&gt;
+                    &lt;li&gt;
+          Page 1        &lt;/li&gt;
+                    &lt;li&gt;
+          &lt;a href="http://modularsamples.com/rss.xml?page=1" title="Go to next page" rel="next"&gt;
             &lt;span class="visually-hidden"&gt;Next page&lt;/span&gt;
             &lt;span aria-hidden="true"&gt;››&lt;/span&gt;
           &lt;/a&gt;
         &lt;/li&gt;
-      
-    &lt;/ul&gt;
+          &lt;/ul&gt;
   &lt;/nav&gt;
 
 
@@ -512,7 +525,10 @@ document.querySelector("tone-play-toggle").bind(keys);
   
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;
+
+  &lt;div&gt;
+    &lt;div&gt;Demo Player&lt;/div&gt;
+              &lt;div&gt;
 &lt;div class="grid-patch"&gt;
 &lt;div class="grid-item2"&gt;
 &lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
@@ -573,8 +589,8 @@ function move() {
 //--&gt;&lt;!]]&gt;
 &lt;/script&gt;
 
-&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
+          &lt;/div&gt;
 </description>
   <pubDate>Wed, 22 Jan 2020 19:31:15 +0000</pubDate>
     <dc:creator>rick</dc:creator>
@@ -583,33 +599,37 @@ function move() {
 <item>
   <title>Roland Jupiter 4 - Pads</title>
   <link>http://modularsamples.com/roland-jupiter-4-pads</link>
-  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Roland Jupiter 4 - Pads&lt;/span&gt;
-&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Fri, 01/17/2020 - 15:50&lt;/span&gt;
-&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-Jupiter-4-Pads/archive/master.zip"&gt;Zip&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-Jupiter-4-Pads"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
+  <description>&lt;span&gt;Roland Jupiter 4 - Pads&lt;/span&gt;
+
+            &lt;div&gt;&lt;p&gt;A collection of Pads from the Roland Jupiter 4.&lt;/p&gt;&lt;/div&gt;
+      &lt;span&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
+&lt;span&gt;Fri, 01/17/2020 - 15:50&lt;/span&gt;
+
+      &lt;div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Roland-Jupiter-4-Pads/archive/master.zip"&gt;Zip&lt;/a&gt;&lt;/div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Roland-Jupiter-4-Pads"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;
+  
+            &lt;div&gt;&lt;ul&gt;
 	&lt;li&gt;&lt;strong&gt;Patches&lt;/strong&gt;: 18&lt;/li&gt;
 	&lt;li&gt;&lt;strong&gt;Formats:&lt;/strong&gt; EXS24, Kontakt &amp; SFZ  &lt;/li&gt;
 	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 1.8GB  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;A collection of Pads from the Roland Jupiter 4.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
-        &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp43_0.png" width="599" height="371" alt="jp4" typeof="foaf:Image" /&gt;
+      
+            &lt;div&gt;  &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp43_0.png" width="599" height="371" alt="jp4" typeof="foaf:Image" /&gt;
+
 &lt;/div&gt;
-    &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-8d0997f06ef0b3437d392371a93c92028635f5e991c390884f1c59a50fcf23e4"&gt;
+      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-f88cdc0f19251ca2bab2f53350eb9e0c210ea66976953dae874dc508d5f7761a"&gt;
   
     
 
   
   
 
-      &lt;div class="views-row"&gt;
-    &lt;script&gt;
+      &lt;div class="views-row"&gt;&lt;script&gt;
 &lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
 
 var keys = new Tone.GrainPlayer({
@@ -623,27 +643,21 @@ document.querySelector("tone-play-toggle").bind(keys);
 
 
 //--&gt;&lt;!]]&gt;
-&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;
-  &lt;/div&gt;
+&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
 
   
-    &lt;nav class="pager pager--mini" role="navigation" aria-labelledby="pagination-heading"&gt;
-    &lt;h4 id="pagination-heading" class="pager__heading visually-hidden"&gt;Pagination&lt;/h4&gt;
-    &lt;ul class="pager__items js-pager__items"&gt;
-
-      
-              &lt;li class="pager__item is-active"&gt;
-          &lt;span class="pager__link pager__link--is-active"&gt;(Page 1)&lt;/span&gt;
-        &lt;/li&gt;
-      
-              &lt;li class="pager__item pager__item--next pager__item--text"&gt;
-          &lt;a href="http://modularsamples.com/rss.xml?page=1" class="pager__link" title="Go to next page" rel="next"&gt;
+    &lt;nav role="navigation" aria-labelledby="pagination-heading"&gt;
+    &lt;h4 class="visually-hidden"&gt;Pagination&lt;/h4&gt;
+    &lt;ul class="js-pager__items"&gt;
+                    &lt;li&gt;
+          Page 1        &lt;/li&gt;
+                    &lt;li&gt;
+          &lt;a href="http://modularsamples.com/rss.xml?page=1" title="Go to next page" rel="next"&gt;
             &lt;span class="visually-hidden"&gt;Next page&lt;/span&gt;
             &lt;span aria-hidden="true"&gt;››&lt;/span&gt;
           &lt;/a&gt;
         &lt;/li&gt;
-      
-    &lt;/ul&gt;
+          &lt;/ul&gt;
   &lt;/nav&gt;
 
 
@@ -653,7 +667,10 @@ document.querySelector("tone-play-toggle").bind(keys);
   
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;
+
+  &lt;div&gt;
+    &lt;div&gt;Demo Player&lt;/div&gt;
+              &lt;div&gt;
 &lt;div class="grid-patch"&gt;
 &lt;div class="grid-item2"&gt;
 &lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
@@ -725,8 +742,8 @@ function move() {
 //--&gt;&lt;!]]&gt;
 &lt;/script&gt;
 
-&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
+          &lt;/div&gt;
 </description>
   <pubDate>Fri, 17 Jan 2020 15:50:17 +0000</pubDate>
     <dc:creator>rick</dc:creator>
@@ -736,33 +753,37 @@ function move() {
 <item>
   <title>Roland Jupiter 4 - Misc</title>
   <link>http://modularsamples.com/roland-jupiter-4-misc</link>
-  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Roland Jupiter 4 - Misc&lt;/span&gt;
-&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Fri, 01/17/2020 - 15:34&lt;/span&gt;
-&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-Jupiter-4-Misc/archive/master.zip"&gt;Zip&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-Jupiter-4-Misc"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
+  <description>&lt;span&gt;Roland Jupiter 4 - Misc&lt;/span&gt;
+
+            &lt;div&gt;&lt;p&gt;Blips, loops and strings from the Roland Jupiter 4.&lt;/p&gt;&lt;/div&gt;
+      &lt;span&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
+&lt;span&gt;Fri, 01/17/2020 - 15:34&lt;/span&gt;
+
+      &lt;div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Roland-Jupiter-4-Misc/archive/master.zip"&gt;Zip&lt;/a&gt;&lt;/div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Roland-Jupiter-4-Misc"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;
+  
+            &lt;div&gt;&lt;ul&gt;
 	&lt;li&gt;&lt;strong&gt;Patches&lt;/strong&gt;: 10&lt;/li&gt;
 	&lt;li&gt;&lt;strong&gt;Formats:&lt;/strong&gt; EXS24, Kontakt &amp; SFZ  &lt;/li&gt;
 	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 590mb&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Blips, loops and strings from the Roland Jupiter 4.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
-        &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp4_0.jpg" width="600" height="379" alt="jp4" typeof="foaf:Image" /&gt;
+      
+            &lt;div&gt;  &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp4_0.jpg" width="600" height="379" alt="jp4" typeof="foaf:Image" /&gt;
+
 &lt;/div&gt;
-    &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-158e2e79dbbf75655721f14b9cb726eca217ed7c0bbdda811db458d6cda92b27"&gt;
+      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-a6209e7868eb0ebc66caa7e459ff5c2952e17f3c373a52a9e6f02927224bc22c"&gt;
   
     
 
   
   
 
-      &lt;div class="views-row"&gt;
-    &lt;script&gt;
+      &lt;div class="views-row"&gt;&lt;script&gt;
 &lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
 
 var keys = new Tone.GrainPlayer({
@@ -776,27 +797,21 @@ document.querySelector("tone-play-toggle").bind(keys);
 
 
 //--&gt;&lt;!]]&gt;
-&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;
-  &lt;/div&gt;
+&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
 
   
-    &lt;nav class="pager pager--mini" role="navigation" aria-labelledby="pagination-heading"&gt;
-    &lt;h4 id="pagination-heading" class="pager__heading visually-hidden"&gt;Pagination&lt;/h4&gt;
-    &lt;ul class="pager__items js-pager__items"&gt;
-
-      
-              &lt;li class="pager__item is-active"&gt;
-          &lt;span class="pager__link pager__link--is-active"&gt;(Page 1)&lt;/span&gt;
-        &lt;/li&gt;
-      
-              &lt;li class="pager__item pager__item--next pager__item--text"&gt;
-          &lt;a href="http://modularsamples.com/rss.xml?page=1" class="pager__link" title="Go to next page" rel="next"&gt;
+    &lt;nav role="navigation" aria-labelledby="pagination-heading"&gt;
+    &lt;h4 class="visually-hidden"&gt;Pagination&lt;/h4&gt;
+    &lt;ul class="js-pager__items"&gt;
+                    &lt;li&gt;
+          Page 1        &lt;/li&gt;
+                    &lt;li&gt;
+          &lt;a href="http://modularsamples.com/rss.xml?page=1" title="Go to next page" rel="next"&gt;
             &lt;span class="visually-hidden"&gt;Next page&lt;/span&gt;
             &lt;span aria-hidden="true"&gt;››&lt;/span&gt;
           &lt;/a&gt;
         &lt;/li&gt;
-      
-    &lt;/ul&gt;
+          &lt;/ul&gt;
   &lt;/nav&gt;
 
 
@@ -806,7 +821,10 @@ document.querySelector("tone-play-toggle").bind(keys);
   
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;
+
+  &lt;div&gt;
+    &lt;div&gt;Demo Player&lt;/div&gt;
+              &lt;div&gt;
 &lt;div class="grid-patch"&gt;
 &lt;div class="grid-item2"&gt;
 &lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
@@ -865,8 +883,8 @@ function move() {
 //--&gt;&lt;!]]&gt;
 &lt;/script&gt;
 
-&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
+          &lt;/div&gt;
 </description>
   <pubDate>Fri, 17 Jan 2020 15:34:08 +0000</pubDate>
     <dc:creator>rick</dc:creator>
@@ -876,31 +894,37 @@ function move() {
 <item>
   <title>Roland Jupiter 4 - Leads</title>
   <link>http://modularsamples.com/roland-jupiter-4-leads</link>
-  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Roland Jupiter 4 - Leads&lt;/span&gt;
-&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Fri, 01/17/2020 - 15:17&lt;/span&gt;
-&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-Jupiter-4-Lead/archive/master.zip"&gt;Zip&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-Jupiter-4-Lead"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
+  <description>&lt;span&gt;Roland Jupiter 4 - Leads&lt;/span&gt;
+
+            &lt;div&gt;&lt;p&gt;Lead patches from the Jupiter 4&lt;/p&gt;&lt;/div&gt;
+      &lt;span&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
+&lt;span&gt;Fri, 01/17/2020 - 15:17&lt;/span&gt;
+
+      &lt;div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Roland-Jupiter-4-Lead/archive/master.zip"&gt;Zip&lt;/a&gt;&lt;/div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Roland-Jupiter-4-Lead"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;
+  
+            &lt;div&gt;&lt;ul&gt;
 	&lt;li&gt;&lt;strong&gt;Patches&lt;/strong&gt;: 13&lt;/li&gt;
 	&lt;li&gt;&lt;strong&gt;Formats:&lt;/strong&gt; EXS24, Kontakt &amp; SFZ  &lt;/li&gt;
 	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 1.04GB  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt; &lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
-        &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp44.png" width="600" height="251" alt="jp4" typeof="foaf:Image" /&gt;
+      
+            &lt;div&gt;  &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp44.png" width="600" height="251" alt="jp4" typeof="foaf:Image" /&gt;
+
 &lt;/div&gt;
-    &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-df070c0c0dd0cde78dc7c08fa63065c2e0a6b354556eab848ebe88473f378d7a"&gt;
+      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-070d95554c42cfcb6d14a32e1c89568fffdf6fdfc56f4b2197b729539cae5182"&gt;
   
     
 
   
   
 
-      &lt;div class="views-row"&gt;
-    &lt;script&gt;
+      &lt;div class="views-row"&gt;&lt;script&gt;
 &lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
 
 var keys = new Tone.GrainPlayer({
@@ -914,27 +938,21 @@ document.querySelector("tone-play-toggle").bind(keys);
 
 
 //--&gt;&lt;!]]&gt;
-&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;
-  &lt;/div&gt;
+&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
 
   
-    &lt;nav class="pager pager--mini" role="navigation" aria-labelledby="pagination-heading"&gt;
-    &lt;h4 id="pagination-heading" class="pager__heading visually-hidden"&gt;Pagination&lt;/h4&gt;
-    &lt;ul class="pager__items js-pager__items"&gt;
-
-      
-              &lt;li class="pager__item is-active"&gt;
-          &lt;span class="pager__link pager__link--is-active"&gt;(Page 1)&lt;/span&gt;
-        &lt;/li&gt;
-      
-              &lt;li class="pager__item pager__item--next pager__item--text"&gt;
-          &lt;a href="http://modularsamples.com/rss.xml?page=1" class="pager__link" title="Go to next page" rel="next"&gt;
+    &lt;nav role="navigation" aria-labelledby="pagination-heading"&gt;
+    &lt;h4 class="visually-hidden"&gt;Pagination&lt;/h4&gt;
+    &lt;ul class="js-pager__items"&gt;
+                    &lt;li&gt;
+          Page 1        &lt;/li&gt;
+                    &lt;li&gt;
+          &lt;a href="http://modularsamples.com/rss.xml?page=1" title="Go to next page" rel="next"&gt;
             &lt;span class="visually-hidden"&gt;Next page&lt;/span&gt;
             &lt;span aria-hidden="true"&gt;››&lt;/span&gt;
           &lt;/a&gt;
         &lt;/li&gt;
-      
-    &lt;/ul&gt;
+          &lt;/ul&gt;
   &lt;/nav&gt;
 
 
@@ -944,7 +962,10 @@ document.querySelector("tone-play-toggle").bind(keys);
   
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;
+
+  &lt;div&gt;
+    &lt;div&gt;Demo Player&lt;/div&gt;
+              &lt;div&gt;
 &lt;div class="grid-patch"&gt;
 &lt;div class="grid-item2"&gt;
 &lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
@@ -1006,8 +1027,8 @@ function move() {
 //--&gt;&lt;!]]&gt;
 &lt;/script&gt;
 
-&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
+          &lt;/div&gt;
 </description>
   <pubDate>Fri, 17 Jan 2020 15:17:20 +0000</pubDate>
     <dc:creator>rick</dc:creator>
@@ -1017,33 +1038,37 @@ function move() {
 <item>
   <title>Roland Jupiter 4 - Keys</title>
   <link>http://modularsamples.com/roland-jupiter-4-keys</link>
-  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Roland Jupiter 4 - Keys&lt;/span&gt;
-&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Fri, 01/17/2020 - 05:13&lt;/span&gt;
-&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-Jupiter-4-Keys/archive/master.zip"&gt;Zip&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-Jupiter-4-Keys"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
+  <description>&lt;span&gt;Roland Jupiter 4 - Keys&lt;/span&gt;
+
+            &lt;div&gt;&lt;p&gt;Roland Jupiter 4 piano and organ sounds. Fun fact, most of the patch names from this part of the collection are named after, or references to various cats.&lt;/p&gt;&lt;/div&gt;
+      &lt;span&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
+&lt;span&gt;Fri, 01/17/2020 - 05:13&lt;/span&gt;
+
+      &lt;div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Roland-Jupiter-4-Keys/archive/master.zip"&gt;Zip&lt;/a&gt;&lt;/div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Roland-Jupiter-4-Keys"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;
+  
+            &lt;div&gt;&lt;ul&gt;
 	&lt;li&gt;&lt;strong&gt;Patches&lt;/strong&gt;: 19&lt;/li&gt;
 	&lt;li&gt;&lt;strong&gt;Formats:&lt;/strong&gt; EXS24, Kontakt &amp; SFZ  &lt;/li&gt;
 	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 977mb&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Roland Jupiter 4 piano and organ sounds. Fun fact, most of the patch names from this part of the collection are named after, or references to various cats.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
-        &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp43.png" width="599" height="371" alt="jp4" typeof="foaf:Image" /&gt;
+      
+            &lt;div&gt;  &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp43.png" width="599" height="371" alt="jp4" typeof="foaf:Image" /&gt;
+
 &lt;/div&gt;
-    &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-ab9ea3dde63b7b77b68c674f5b9100ac0478a32102b532cba1127671f802c57f"&gt;
+      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-441acb8a067f34edd49891df1d4eafc4f1f61ce6bfc32a4d576e6ee0d1124ec7"&gt;
   
     
 
   
   
 
-      &lt;div class="views-row"&gt;
-    &lt;script&gt;
+      &lt;div class="views-row"&gt;&lt;script&gt;
 &lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
 
 var keys = new Tone.GrainPlayer({
@@ -1057,27 +1082,21 @@ document.querySelector("tone-play-toggle").bind(keys);
 
 
 //--&gt;&lt;!]]&gt;
-&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;
-  &lt;/div&gt;
+&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
 
   
-    &lt;nav class="pager pager--mini" role="navigation" aria-labelledby="pagination-heading"&gt;
-    &lt;h4 id="pagination-heading" class="pager__heading visually-hidden"&gt;Pagination&lt;/h4&gt;
-    &lt;ul class="pager__items js-pager__items"&gt;
-
-      
-              &lt;li class="pager__item is-active"&gt;
-          &lt;span class="pager__link pager__link--is-active"&gt;(Page 1)&lt;/span&gt;
-        &lt;/li&gt;
-      
-              &lt;li class="pager__item pager__item--next pager__item--text"&gt;
-          &lt;a href="http://modularsamples.com/rss.xml?page=1" class="pager__link" title="Go to next page" rel="next"&gt;
+    &lt;nav role="navigation" aria-labelledby="pagination-heading"&gt;
+    &lt;h4 class="visually-hidden"&gt;Pagination&lt;/h4&gt;
+    &lt;ul class="js-pager__items"&gt;
+                    &lt;li&gt;
+          Page 1        &lt;/li&gt;
+                    &lt;li&gt;
+          &lt;a href="http://modularsamples.com/rss.xml?page=1" title="Go to next page" rel="next"&gt;
             &lt;span class="visually-hidden"&gt;Next page&lt;/span&gt;
             &lt;span aria-hidden="true"&gt;››&lt;/span&gt;
           &lt;/a&gt;
         &lt;/li&gt;
-      
-    &lt;/ul&gt;
+          &lt;/ul&gt;
   &lt;/nav&gt;
 
 
@@ -1087,7 +1106,10 @@ document.querySelector("tone-play-toggle").bind(keys);
   
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;
+
+  &lt;div&gt;
+    &lt;div&gt;Demo Player&lt;/div&gt;
+              &lt;div&gt;
 &lt;div class="grid-patch"&gt;
 &lt;div class="grid-item2"&gt;
 &lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
@@ -1154,8 +1176,8 @@ function move() {
 //--&gt;&lt;!]]&gt;
 &lt;/script&gt;
 
-&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
+          &lt;/div&gt;
 </description>
   <pubDate>Fri, 17 Jan 2020 05:13:30 +0000</pubDate>
     <dc:creator>rick</dc:creator>
@@ -1165,33 +1187,37 @@ function move() {
 <item>
   <title>Roland Jupiter  - FX</title>
   <link>http://modularsamples.com/roland-jupiter-fx</link>
-  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Roland Jupiter  - FX&lt;/span&gt;
-&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Fri, 01/17/2020 - 01:26&lt;/span&gt;
-&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-Jupiter-4-FX/archive/master.zip"&gt;Zip&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Roland-Jupiter-4-FX"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
+  <description>&lt;span&gt;Roland Jupiter  - FX&lt;/span&gt;
+
+            &lt;div&gt;&lt;p&gt;A collection of FX sounds from the Roland Jupiter 4. I'm such a huge fan of this thing it's the only library where all the available patches have been made playable on the website.&lt;/p&gt;&lt;/div&gt;
+      &lt;span&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
+&lt;span&gt;Fri, 01/17/2020 - 01:26&lt;/span&gt;
+
+      &lt;div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Roland-Jupiter-4-FX/archive/master.zip"&gt;Zip&lt;/a&gt;&lt;/div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Roland-Jupiter-4-FX"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;
+  
+            &lt;div&gt;&lt;ul&gt;
 	&lt;li&gt;&lt;strong&gt;Patches&lt;/strong&gt;: 11&lt;/li&gt;
 	&lt;li&gt;&lt;strong&gt;Formats:&lt;/strong&gt; EXS24, Kontakt &amp; SFZ  &lt;/li&gt;
 	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 1GB  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;A collection of FX sounds from the Roland Jupiter 4. I'm such a huge fan of this thing it's the only library where all the available patches have been made playable on the website.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
-        &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp42.jpg" width="600" height="375" alt="jp4" typeof="foaf:Image" /&gt;
+      
+            &lt;div&gt;  &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp42.jpg" width="600" height="375" alt="jp4" typeof="foaf:Image" /&gt;
+
 &lt;/div&gt;
-    &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-841d2c487685364cc7776b51d7a31c0859866189cd5f029c5cac0d13196b4ef8"&gt;
+      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-c235b1077060bc7526bf60e6a6dc7b73a81c6ef18b77b2df92c0a261eef0e358"&gt;
   
     
 
   
   
 
-      &lt;div class="views-row"&gt;
-    &lt;script&gt;
+      &lt;div class="views-row"&gt;&lt;script&gt;
 &lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
 
 var keys = new Tone.GrainPlayer({
@@ -1205,27 +1231,21 @@ document.querySelector("tone-play-toggle").bind(keys);
 
 
 //--&gt;&lt;!]]&gt;
-&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;
-  &lt;/div&gt;
+&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
 
   
-    &lt;nav class="pager pager--mini" role="navigation" aria-labelledby="pagination-heading"&gt;
-    &lt;h4 id="pagination-heading" class="pager__heading visually-hidden"&gt;Pagination&lt;/h4&gt;
-    &lt;ul class="pager__items js-pager__items"&gt;
-
-      
-              &lt;li class="pager__item is-active"&gt;
-          &lt;span class="pager__link pager__link--is-active"&gt;(Page 1)&lt;/span&gt;
-        &lt;/li&gt;
-      
-              &lt;li class="pager__item pager__item--next pager__item--text"&gt;
-          &lt;a href="http://modularsamples.com/rss.xml?page=1" class="pager__link" title="Go to next page" rel="next"&gt;
+    &lt;nav role="navigation" aria-labelledby="pagination-heading"&gt;
+    &lt;h4 class="visually-hidden"&gt;Pagination&lt;/h4&gt;
+    &lt;ul class="js-pager__items"&gt;
+                    &lt;li&gt;
+          Page 1        &lt;/li&gt;
+                    &lt;li&gt;
+          &lt;a href="http://modularsamples.com/rss.xml?page=1" title="Go to next page" rel="next"&gt;
             &lt;span class="visually-hidden"&gt;Next page&lt;/span&gt;
             &lt;span aria-hidden="true"&gt;››&lt;/span&gt;
           &lt;/a&gt;
         &lt;/li&gt;
-      
-    &lt;/ul&gt;
+          &lt;/ul&gt;
   &lt;/nav&gt;
 
 
@@ -1235,7 +1255,10 @@ document.querySelector("tone-play-toggle").bind(keys);
   
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;
+
+  &lt;div&gt;
+    &lt;div&gt;Demo Player&lt;/div&gt;
+              &lt;div&gt;
 &lt;div class="grid-patch"&gt;
 &lt;div class="grid-item2"&gt;
 &lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
@@ -1304,8 +1327,8 @@ function move() {
 //--&gt;&lt;!]]&gt;
 &lt;/script&gt;
 
-&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
+          &lt;/div&gt;
 </description>
   <pubDate>Fri, 17 Jan 2020 01:26:29 +0000</pubDate>
     <dc:creator>rick</dc:creator>
@@ -1315,33 +1338,37 @@ function move() {
 <item>
   <title>Korg Z1 - Strings and Brass</title>
   <link>http://modularsamples.com/korg-z1-strings-and-brass</link>
-  <description>&lt;span class="field field-name-title field-formatter-string field-type-string field-label-hidden"&gt;Korg Z1 - Strings and Brass&lt;/span&gt;
-&lt;span class="field field-name-uid field-formatter-author field-type-entity-reference field-label-hidden"&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field-name-created field-formatter-timestamp field-type-created field-label-hidden"&gt;Fri, 01/17/2020 - 00:14&lt;/span&gt;
-&lt;div class="field field-node--field-downloads field-formatter-link field-name-field-downloads field-type-link field-label-hidden has-multiple"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Korg-Z1-Strings-Brass/archive/master.zip"&gt;Zip&lt;/a&gt;&lt;/div&gt;&lt;div class="field__item"&gt;&lt;a href="https://github.com/publicsamples/Korg-Z1-Strings-Brass"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-library-info field-formatter-text-default field-name-field-library-info field-type-text-long field-label-hidden has-single"&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;&lt;ul&gt;
+  <description>&lt;span&gt;Korg Z1 - Strings and Brass&lt;/span&gt;
+
+            &lt;div&gt;&lt;p&gt;A collection strings and bass from the Korg Z1.&lt;/p&gt;&lt;/div&gt;
+      &lt;span&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
+&lt;span&gt;Fri, 01/17/2020 - 00:14&lt;/span&gt;
+
+      &lt;div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Korg-Z1-Strings-Brass/archive/master.zip"&gt;Zip&lt;/a&gt;&lt;/div&gt;
+              &lt;div&gt;&lt;a href="https://github.com/publicsamples/Korg-Z1-Strings-Brass"&gt;Git Repository&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;
+  
+            &lt;div&gt;&lt;ul&gt;
 	&lt;li&gt;&lt;strong&gt;Patches&lt;/strong&gt;: 10&lt;/li&gt;
 	&lt;li&gt;&lt;strong&gt;Formats:&lt;/strong&gt; EXS24, Kontakt &amp; SFZ  &lt;/li&gt;
 	&lt;li&gt;&lt;strong&gt;Approx Size:&lt;/strong&gt; 1.7GB  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;A collection strings and bass from the Korg Z1.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="field field-node--field-pic field-formatter-image field-name-field-pic field-type-image field-label-hidden has-single"&gt;&lt;figure class="field-type-image__figure image-count-1"&gt;&lt;div class="field-type-image__item"&gt;
-        &lt;img src="http://modularsamples.com/sites/default/files/2020-01/z1-6.png" width="600" height="206" alt="z1" typeof="foaf:Image" /&gt;
+      
+            &lt;div&gt;  &lt;img src="http://modularsamples.com/sites/default/files/2020-01/z1-6.png" width="600" height="206" alt="z1" typeof="foaf:Image" /&gt;
+
 &lt;/div&gt;
-    &lt;/figure&gt;&lt;/div&gt;
-&lt;div class="views-element-container element-container-wrapper"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-83c40622eb9b5bc8e50f45606aca4ae1279efec0568ff98cacc72ed77bf7db87"&gt;
+      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-d49047b22cac90beeebcdc52782daac4e4c937716611725ea12c720420b0f7d2"&gt;
   
     
 
   
   
 
-      &lt;div class="views-row"&gt;
-    &lt;script&gt;
+      &lt;div class="views-row"&gt;&lt;script&gt;
 &lt;!--//--&gt;&lt;![CDATA[// &gt;&lt;!--
 
 var keys = new Tone.GrainPlayer({
@@ -1355,27 +1382,21 @@ document.querySelector("tone-play-toggle").bind(keys);
 
 
 //--&gt;&lt;!]]&gt;
-&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;
-  &lt;/div&gt;
+&lt;/script&gt;&lt;div class="views-field views-field-title"&gt;&lt;span class="field-content"&gt;1&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
 
   
-    &lt;nav class="pager pager--mini" role="navigation" aria-labelledby="pagination-heading"&gt;
-    &lt;h4 id="pagination-heading" class="pager__heading visually-hidden"&gt;Pagination&lt;/h4&gt;
-    &lt;ul class="pager__items js-pager__items"&gt;
-
-      
-              &lt;li class="pager__item is-active"&gt;
-          &lt;span class="pager__link pager__link--is-active"&gt;(Page 1)&lt;/span&gt;
-        &lt;/li&gt;
-      
-              &lt;li class="pager__item pager__item--next pager__item--text"&gt;
-          &lt;a href="http://modularsamples.com/rss.xml?page=1" class="pager__link" title="Go to next page" rel="next"&gt;
+    &lt;nav role="navigation" aria-labelledby="pagination-heading"&gt;
+    &lt;h4 class="visually-hidden"&gt;Pagination&lt;/h4&gt;
+    &lt;ul class="js-pager__items"&gt;
+                    &lt;li&gt;
+          Page 1        &lt;/li&gt;
+                    &lt;li&gt;
+          &lt;a href="http://modularsamples.com/rss.xml?page=1" title="Go to next page" rel="next"&gt;
             &lt;span class="visually-hidden"&gt;Next page&lt;/span&gt;
             &lt;span aria-hidden="true"&gt;››&lt;/span&gt;
           &lt;/a&gt;
         &lt;/li&gt;
-      
-    &lt;/ul&gt;
+          &lt;/ul&gt;
   &lt;/nav&gt;
 
 
@@ -1385,7 +1406,10 @@ document.querySelector("tone-play-toggle").bind(keys);
   
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="clearfix text-formatted field field-node--field-preset field-formatter-text-default field-name-field-preset field-type-text-long field-label-above has-single"&gt;&lt;h3 class="field__label"&gt;Preset&lt;/h3&gt;&lt;div class="field__items"&gt;&lt;div class="field__item"&gt;
+
+  &lt;div&gt;
+    &lt;div&gt;Demo Player&lt;/div&gt;
+              &lt;div&gt;
 &lt;div class="grid-patch"&gt;
 &lt;div class="grid-item2"&gt;
 &lt;div class="dropdown"&gt;&lt;button class="dropbtn"&gt;Patches&lt;/button&gt;
@@ -1445,8 +1469,8 @@ function move() {
 //--&gt;&lt;!]]&gt;
 &lt;/script&gt;
 
-&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
+          &lt;/div&gt;
 </description>
   <pubDate>Fri, 17 Jan 2020 00:14:44 +0000</pubDate>
     <dc:creator>rick</dc:creator>

@@ -450,7 +450,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					border: 2px solid black;
 					border-radius: 22px;
 					padding: 20px;
-					background-color:#bd7303;
+					background-color:#fff;
 					width: 100%;
 				}
 
@@ -584,7 +584,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 
 				#container {
 					display: inline-block;
-					width: 100%;
+					width: 90%;
 				}
 
 				label {
@@ -598,7 +598,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					box-sizing: border-box;
 					width: 100%;
 					height: 44px;
-					background-color: #bd7403;
+					background-color: #fff;
 					outline-color: var(--outline-color);
 					border: 2px solid black;
 					border-radius: 22px;
@@ -807,10 +807,12 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					box-sizing: border-box;
 					background-color: #aaa;
 					overflow: hidden;
+					color:#000;
 				}
 				canvas {
 					width: 100%;
 					height: 100%;
+				    color: black;
 				}
 			</style>
 			<canvas>
@@ -844,8 +846,9 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 
 				tone-oscilloscope {
 					position: absolute;
-					right: 10px;
+					right: 10px;			
 					top: 8px;
+					color: black;
 				}
 
 				tone-select {
@@ -890,7 +893,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 			<style>
 				:host {
 					display: block;
-					width: 100%;
+					width: 90%;
 				}
 
 				tone-slider, tone-toggle {
@@ -1059,8 +1062,8 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					border: none;
 					-webkit-appearance: none;
 					--key-margin: 2px;
-					width: 100%;
-					height: 100%;
+					width: 80%;
+					height: 50px;
 					border: 2px solid white;
 					box-sizing: border-box;
 					padding: 0;
@@ -1400,12 +1403,13 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 				:host {
 					display: inline-block;
 					width: 100%;
-					height: 380px;
+					height: 260px;
 				}
 				#container {
-					width: 100%;
+					width: 90%;
 					height: 100%;
 					display: flex;
+					background-color: #ccc;
 				}
 				.column {
 					flex: 1;
@@ -1432,12 +1436,12 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 				.row {
 					flex: 1;
 					margin: 1px;
-					background-color: #f4f1de;
+					background-color: #fff;
 					transition: background-color 0s;
 				}
 
 				.row.filled {
-				background-color: #522d14;
+				background-color: #000;
 				}
 				
 			</style>
@@ -2283,17 +2287,17 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 								}
 								#container {
 									background-color: #182C40;
-									padding: 5px;
+									padding: 10px;
 								}
 								tone-play-toggle {
-									width: 50%;
+									width: 50px;
 									background-color: #182C40;
 								}
 								#top {
 									position: relative;
 								}
 								#top tone-play-toggle {
-									width: 60%;
+									width: 50px;
 									color: #182C40;
 								}
 								#top #position {
@@ -2995,7 +2999,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 
 				button {
 					box-sizing: border-box;
-					width: 100%;
+					width: 80%;
 					height: 44px;
 					outline-color: var(--outline-color);
 					border: 2px solid black;
