@@ -20,46 +20,8 @@ margin-left:10%;
 }
 
 
-.grid-title {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto  ;
-  padding-left:0.5rem;
-  padding-right:0.5rem;
-padding-bottom:0.8rem;
-margin-left:5px;
 
-
-}
-
-.grid-env {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto  ;
-  padding-left:0.5rem;
-  padding-right:0.5rem;
-padding-bottom:0.8rem;
-margin-left:5px;
-
-
-}
-
-
-
-
-.grid-item {
-
- }
- .grid-item2 {
-
-  }
-
- .grid-item p {
- 	 font-size:1.2rem;
-
-
-  }
-
-
-  ß
+  
   /**
    * Controls
    */
@@ -355,54 +317,75 @@ padding-top:0.5rem;
  padding: 1px;
 }
 
-
 .dropbtn {
-  background-color: #5d1007;
-  color: #ecd7a1;
-  font-size: 12px;
-  border: none;
+	background-color: #5d1007;
+	color: #ecd7a1;
+	font-size: 12px;
+	border: none;
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
+	position: relative;
+	display: inline-block;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+	display: none;
+	position: absolute;
+	background-color: #2e3229;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
 }
 
 .dropdown-content p {
 	background-color: #2e3229;
-  ccolor: #ecd7a1;
-  text-decoration: none;
-  display: block;
+	font-size: 1.6rem;
+	color: #ecd7a1;
+	text-decoration: none;
+	display: block;
 }
 
 .dropdown-content h3 {
 	background-color: #2e3229;
-	font-size:14px;
-  color: #ecd7a1;
-  text-decoration: none;
-  display: block;
+	font-size: 1.6rem;
+	color: #ecd7a1;
+	text-decoration: none;
+	display: block;
 }
 
 
-.dropdown-content p:hover {background-color: #cc820f;}
+.block-field-blocknodesamplelibrarygridbody {
+	padding-right: 5%;
 
-.dropdown-content h3:hover {background-color: #cc820f;}
-
-.dropdown:hover .dropdown-content {display: block;
-background-color: #2e3229;
-
+	}
 }
 
-.dropdown:hover .dropbtn {background-color: #2e3229;}
+.views-row {
+	border-style: dotted;
+	border-width: 1px;
+	margin-bottom: 1rem;
+	padding-top: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.dropdown-content p:hover {
+	background-color: #cc820f;
+}
+
+.dropdown-content h3:hover {
+	background-color: #cc820f;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	background-color: #2e3229;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #2e3229;
+}
  
 
  .grid-item p {
