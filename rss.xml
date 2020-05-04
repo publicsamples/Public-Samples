@@ -13,7 +13,7 @@
 
             &lt;div&gt;&lt;p&gt;Part one of an ongoing attempt to translate the modularsamples library to Alchemy.&lt;/p&gt;
 
-&lt;p&gt;This set is a &lt;a href="https://www.patreon.com/modularsamples"&gt;Patreon exclusive&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt; &lt;/p&gt;&lt;/div&gt;
       &lt;span&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
 &lt;span&gt;Sat, 03/21/2020 - 21:28&lt;/span&gt;
 
@@ -33,7 +33,7 @@
             &lt;div&gt;  &lt;img src="http://modularsamples.com/sites/default/files/2020-03/alchemist-159851.jpg" width="1024" height="746" alt="alchemist" typeof="foaf:Image" /&gt;
 
 &lt;/div&gt;
-      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-5b0a81b81133c153a628f8d7b5a54297172bf5dd5d5afe6a3f8e464b8e5b8fa1"&gt;
+      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-415a402a7ec820506879b577067f3cdecda68115a7cc71dda19e43c40d1c4de3"&gt;
   
     
 
@@ -132,7 +132,7 @@ document.querySelector("tone-play-toggle").bind(keys);
 
             &lt;div&gt;&lt;p&gt;A collection of loops mangled with Kontakt's tone machine.&lt;/p&gt;
 
-&lt;p&gt;This set is a &lt;a href="https://www.patreon.com/modularsamples"&gt;Patreon&lt;/a&gt; exclusive.&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt; &lt;/p&gt;&lt;/div&gt;
       &lt;span&gt;&lt;span lang="" about="http://modularsamples.com/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;rick&lt;/span&gt;&lt;/span&gt;
 &lt;span&gt;Sat, 03/21/2020 - 18:32&lt;/span&gt;
 
@@ -152,7 +152,7 @@ document.querySelector("tone-play-toggle").bind(keys);
             &lt;div&gt;  &lt;img src="http://modularsamples.com/sites/default/files/2020-03/hh.png" width="1213" height="1013" alt="kontakt" typeof="foaf:Image" /&gt;
 
 &lt;/div&gt;
-      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-5b0a81b81133c153a628f8d7b5a54297172bf5dd5d5afe6a3f8e464b8e5b8fa1"&gt;
+      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-415a402a7ec820506879b577067f3cdecda68115a7cc71dda19e43c40d1c4de3"&gt;
   
     
 
@@ -291,7 +291,7 @@ function move() {
             &lt;div&gt;  &lt;img src="http://modularsamples.com/sites/default/files/2020-01/mw.jpg" width="600" height="374" alt="morph wave" typeof="foaf:Image" /&gt;
 
 &lt;/div&gt;
-      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-5b0a81b81133c153a628f8d7b5a54297172bf5dd5d5afe6a3f8e464b8e5b8fa1"&gt;
+      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-415a402a7ec820506879b577067f3cdecda68115a7cc71dda19e43c40d1c4de3"&gt;
   
     
 
@@ -440,7 +440,7 @@ function move() {
             &lt;div&gt;  &lt;img src="http://modularsamples.com/sites/default/files/2020-01/aj.jpg" width="600" height="372" alt="aj" typeof="foaf:Image" /&gt;
 
 &lt;/div&gt;
-      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-5b0a81b81133c153a628f8d7b5a54297172bf5dd5d5afe6a3f8e464b8e5b8fa1"&gt;
+      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-415a402a7ec820506879b577067f3cdecda68115a7cc71dda19e43c40d1c4de3"&gt;
   
     
 
@@ -599,7 +599,7 @@ function move() {
             &lt;div&gt;  &lt;img src="http://modularsamples.com/sites/default/files/2020-01/mt.jpg" width="600" height="372" alt="Minitaur" typeof="foaf:Image" /&gt;
 
 &lt;/div&gt;
-      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-5b0a81b81133c153a628f8d7b5a54297172bf5dd5d5afe6a3f8e464b8e5b8fa1"&gt;
+      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-415a402a7ec820506879b577067f3cdecda68115a7cc71dda19e43c40d1c4de3"&gt;
   
     
 
@@ -735,7 +735,7 @@ function move() {
             &lt;div&gt;  &lt;img src="http://modularsamples.com/sites/default/files/2020-01/rs1.1.jpg" width="600" height="372" alt="retrosynth" typeof="foaf:Image" /&gt;
 
 &lt;/div&gt;
-      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-5b0a81b81133c153a628f8d7b5a54297172bf5dd5d5afe6a3f8e464b8e5b8fa1"&gt;
+      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-415a402a7ec820506879b577067f3cdecda68115a7cc71dda19e43c40d1c4de3"&gt;
   
     
 
@@ -877,7 +877,7 @@ function move() {
             &lt;div&gt;  &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp43_0.png" width="599" height="371" alt="jp4" typeof="foaf:Image" /&gt;
 
 &lt;/div&gt;
-      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-87443a9aa81c8fb768a40497931e48541db710b113a90a6450901f0b390911b4"&gt;
+      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-8f00958de4be417493f591e75c11f35be7250909c72a4a02adc25677dd443581"&gt;
   
     
 
@@ -1031,7 +1031,7 @@ function move() {
             &lt;div&gt;  &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp4_0.jpg" width="600" height="379" alt="jp4" typeof="foaf:Image" /&gt;
 
 &lt;/div&gt;
-      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-79509b892514cf288ae2b9f56f30025d6dfaa4993a1a904189eca545985de55b"&gt;
+      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-9ae73529320f405a182af67e3d53fb6732517f40cb01cb6ade98ce9273bdcd27"&gt;
   
     
 
@@ -1172,7 +1172,7 @@ function move() {
             &lt;div&gt;  &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp44.png" width="600" height="251" alt="jp4" typeof="foaf:Image" /&gt;
 
 &lt;/div&gt;
-      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-a298b0a724c93329e8377db31fe5c1393e8c36224cbf8ade1226805bef000839"&gt;
+      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-de91e894362418364b0ed67908d2966dffa0be993ef440dd0df881efe2b9989a"&gt;
   
     
 
@@ -1316,7 +1316,7 @@ function move() {
             &lt;div&gt;  &lt;img src="http://modularsamples.com/sites/default/files/2020-01/jp43.png" width="599" height="371" alt="jp4" typeof="foaf:Image" /&gt;
 
 &lt;/div&gt;
-      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-be1f4a095cc10ce2d8981c3c7f955fd076d440fda49bf0a973160fa1b5f35589"&gt;
+      &lt;div class="views-element-container"&gt;&lt;div class="view view-eva view-patches view-id-patches view-display-id-entity_view_1 js-view-dom-id-a3fe0226b31d017cdbb3adf9bf5483597ab41d826b8e23f4ce13ce76008669f5"&gt;
   
     
 
