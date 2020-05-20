@@ -332,7 +332,6 @@ padding-top:0.5rem;
 .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: #2e3229;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
@@ -340,18 +339,21 @@ padding-top:0.5rem;
 
 .dropdown-content p {
 	background-color: #2e3229;
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 	color: #ecd7a1;
 	text-decoration: none;
 	display: block;
+	padding-bottom:0.1px;
 }
 
 .dropdown-content h3 {
-	background-color: #2e3229;
-	font-size: 1.6rem;
-	color: #ecd7a1;
+	background-color: none;
+	font-size: 1.4rem;
+	color: #fff;
 	text-decoration: none;
 	display: block;
+	padding-bottom:0.5px;
+	padding-top:0.5rem;
 }
 
 
