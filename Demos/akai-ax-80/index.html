@@ -77,7 +77,7 @@ color:black;
         
 		            <div class="content">
             
-		            <div><body onload="move(); loadJS('../presets/ax80/file1.js');">
+		            <div><body onload="move(); loadJS('../presets/ax80/file2.js');">
 		<div class="grid-patch">
 		<div class="grid-item2">
 		<div class="dropdown"><button class="dropbtn">Patches</button>
@@ -185,6 +185,11 @@ color:black;
 					<td class="text-align-center">Vol</td>
 					<td class="text-align-center">Attack</td>
 					<td class="text-align-center">Release</td>
+					<td>Chorus</td>
+					<td>Speed</td>
+					<td>Delay</td>
+					<td>Time</td>
+					<td>Reverb</td>
 				</tr>
 				<tr>
 					<td class="text-align-center"><tone-play-toggle></tone-play-toggle></td>
@@ -200,36 +205,6 @@ color:black;
 					<td>
 					<div class="text-align-center" id="release"></div>
 					</td>
-				</tr>
-			</tbody>
-		</table>
-		<tone-step-sequencer id="seq1"></tone-step-sequencer>
-
-		</div>
-      
-		        </div>
-		    </div>
-		<div data-layout-content-preview-placeholder-label="&quot;FX&quot; block" class="block block-block-content block-block-content3a705ecf-e07d-4892-b8e4-843e17dda90e">
-    
-		            <h2 class="page_title" >FX</h2>
-        
-		            <div class="content">
-            
-		            <div><table border="0">
-			<tbody>
-				<tr>
-					<td colspan="2" rowspan="1"><strong>Chorus</strong></td>
-					<td colspan="2" rowspan="1"><strong>Delay</strong></td>
-					<td><strong>Reverb</strong></td>
-				</tr>
-				<tr>
-					<td>Mix</td>
-					<td>Speed</td>
-					<td>Mix</td>
-					<td>Time</td>
-					<td>Mix</td>
-				</tr>
-				<tr>
 					<td>
 					<div id="cwet"></div>
 					</td>
@@ -248,9 +223,13 @@ color:black;
 				</tr>
 			</tbody>
 		</table>
+		<tone-step-sequencer id="seq1"></tone-step-sequencer>
 
 		</div>
       
+		        </div>
+		    </div>
+		
 		        </div>
 		    </div>
 
