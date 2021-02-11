@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/**
+ * Book
+ *  - Set styles for book navigation and the menu tree.
+ ============================================================================ */
+.menu--book-tree {
+  margin-bottom: 1rem;
+}
+
+.menu--book-tree .menu__item a {
+  margin-top: 0;
+}
+
+.book-pager {
+  padding: 1rem 0;
+  text-align: center;
+  overflow: auto;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 45.0625em) {
+  .book-pager {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.book-pager__item {
+  list-style: none;
+  vertical-align: top;
+  width: 100%;
+  margin-bottom: 2px;
+}
+
+.book-pager__link {
+  padding: 0.25rem;
+  display: inline-block;
+  position: relative;
+}
+
+.book-pager__link:before, .book-pager__link:after {
+  text-align: center;
+  font-family: FontAwesome, sans-serif;
+  position: absolute;
+  top: 0;
+  padding-top: 0.25rem;
+  width: 1rem;
+  display: none;
+}
+
+.fa-loaded .book-pager__link:before, .fa-loaded .book-pager__link:after {
+  display: inline-block !important;
+}
+
+[dir="rtl"] .book-pager__link:before, [dir="rtl"] .book-pager__link:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+@media screen and (max-width: 45em) {
+  .book-pager__previous {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media screen and (min-width: 45.0625em) {
+  .book-pager__previous {
+    text-align: left;
+    margin-right: auto;
+    width: 46%;
+  }
+}
+
+.book-pager__previous a.book-pager__link {
+  padding-left: 1.5rem;
+}
+
+.book-pager__previous a.book-pager__link:before {
+  content: "";
+  left: 0;
+}
+
+@media screen and (max-width: 45em) {
+  .book-pager__up {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media screen and (min-width: 45.0625em) {
+  .book-pager__up {
+    text-align: center;
+    width: 8%;
+  }
+}
+
+@media screen and (max-width: 45em) {
+  .book-pager__next {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+@media screen and (min-width: 45.0625em) {
+  .book-pager__next {
+    text-align: right;
+    margin-left: auto;
+    width: 46%;
+  }
+}
+
+.book-pager__next a.book-pager__link {
+  padding-right: 1.5rem;
+}
+
+.book-pager__next a.book-pager__link:after {
+  content: "";
+  right: 0;
+}
+/*# sourceMappingURL=book.css.map */

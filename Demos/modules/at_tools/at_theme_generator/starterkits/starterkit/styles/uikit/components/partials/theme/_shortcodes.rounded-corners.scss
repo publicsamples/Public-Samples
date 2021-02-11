@@ -1,0 +1,64 @@
+/**
+ * Shortcodes (Rounded corners)
+ ============================================================================ */
+
+@mixin rounded-corners($radius) {
+  border-radius: $radius;
+
+  [class*="__title"],
+  .node .field-type-image__figure.caption {
+    border-radius: $radius $radius 0 0;
+  }
+
+  .node .field-type-image__figcaption {
+    border-radius: 0 0 $radius $radius;
+  }
+
+  .block, // this allows the class to be set on a region.
+  .node--view-mode-teaser, // node teaser have a border.
+  .node .field-type-image__figure, // border on image fields in nodes.
+  input,
+  .button,
+  textarea,
+  select {
+    border-radius: $radius;
+  }
+}
+
+.rc-2 {
+  @include rounded-corners(2px);
+}
+.rc-3 {
+  @include rounded-corners(3px);
+}
+.rc-4 {
+  @include rounded-corners(4px);
+}
+.rc-5 {
+  @include rounded-corners(5px);
+}
+.rc-6 {
+  @include rounded-corners(6px);
+}
+.rc-7 {
+  @include rounded-corners(7px);
+}
+.rc-8 {
+  @include rounded-corners(8px);
+}
+.rc-9 {
+  @include rounded-corners(9px);
+}
+.rc-10 {
+  @include rounded-corners(10px);
+}
+.rc-12 {
+  @include rounded-corners(12px);
+}
+.rc-15 {
+  @include rounded-corners(15px);
+}
+.rc-20 {
+  @include rounded-corners(20px);
+}
+

@@ -1,0 +1,32 @@
+.fivecol-source-ordered-2-2-4-2-2 .arc--2 .l-r {
+  width: 50%;
+}
+
+.fivecol-source-ordered-2-2-4-2-2 .arc--3 .l-r {
+  width: 33.33333%;
+}
+
+.fivecol-source-ordered-2-2-4-2-2 .arc--4 .l-r {
+  width: 33.33333%;
+}
+
+.fivecol-source-ordered-2-2-4-2-2 .arc--4 .l-r:first-child, .fivecol-source-ordered-2-2-4-2-2 .arc--4 .l-r:last-child {
+  width: 16.66667%;
+}
+
+.fivecol-source-ordered-2-2-4-2-2 .arc--5 .l-r {
+  width: 16.66667%;
+}
+
+.fivecol-source-ordered-2-2-4-2-2 .arc--5 .l-r:first-child {
+  width: 33.33333%;
+  margin-left: 33.33333%;
+}
+
+.fivecol-source-ordered-2-2-4-2-2 .arc--5 .l-r:nth-child(2) {
+  margin-left: -66.66667%;
+}
+
+.fivecol-source-ordered-2-2-4-2-2 .arc--5 .l-r:nth-child(3) {
+  margin-left: -50%;
+}

@@ -1,0 +1,21 @@
+@import "../page-layout-base";
+//
+// Three Regions 4-4-4
+//
+// First region  : 4 grid columns.
+// Second region : 4 grid columns.
+// Third region  : 4 grid columns.
+// ---------------------------------------------------------------------------
+
+.threecol-4-4-4 {
+
+  // Two active regions.
+  .arc--2 .l-r {
+    width: span(6 of 12);
+  }
+
+  // Three active regions.
+  .arc--3 .l-r {
+    width: span(4 of 12);
+  }
+}

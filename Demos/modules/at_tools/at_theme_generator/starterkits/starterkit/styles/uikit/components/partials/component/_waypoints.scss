@@ -1,0 +1,37 @@
+/**
+ * Waypoints
+ * Add styles to support waypoints.js. Waypoints is a way to trigger events when
+ * the page is scrolled.
+ *
+ * Usage:
+ * - Load the library, for example in template suggestion:
+ * - Add the .wp-waypoints class to element you want to apply the event to.
+ * - Add data-wp-[] attributes. By default animations (using animate.css classes)
+ *   and sticky are supported.
+ * - If using animate classes turn these on in the Shortcodes > Animation
+ *   extension in theme settings.
+ *
+ * E.g.:
+ *
+ *  {{- attach_library(theme.name ~ '/waypoints') -}}
+ *   <div
+ *     {{ attributes.addClass('wp-waypoint') }}  // class to initialize the waypoint.
+ *     data-wp-sticky="true"                     // stick to the top as the user scrolls down.
+ *     data-wp-animation="tada"                  // the animate.css class name.
+ *     data-wp-animation-delay="1s"              // time to delay the animation.
+ *     data-wp-animation-offset="bottom-in-view" // waypoints offset keyword or value.
+ *   >
+ *
+ * See: http://imakewebthings.com/waypoints/
+ *      https://www.drupal.org/node/2789671
+ *
+ ============================================================================ */
+
+// Wrapper added to elements with data-wp-sticky="true".
+.sticky-wrapper {
+  .stuck {
+    position: fixed;
+    top: 0;
+  }
+}
+

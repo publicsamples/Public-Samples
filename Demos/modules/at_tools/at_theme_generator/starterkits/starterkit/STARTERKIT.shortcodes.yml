@@ -1,0 +1,518 @@
+textalign:
+  name: 'Text Align'
+  description: ''
+  classes:
+    text_align_center:
+      class: ta-center
+      description: 'Align text centered.'
+    text_align_left:
+      class: ta-left
+      description: 'Align text left.'
+    text_align_right:
+      class: ta-right
+      description: 'Align text right.'
+    text_align_justify:
+      class: ta-justify
+      description: 'Align text justified.'
+
+position:
+  name: Positioning
+  description: 'Float elements left or right. Do not use on Page rows or regions (you will break the layout).'
+  classes:
+    pull_left:
+      class: pull-left
+      description: 'Float element left.'
+    pull_right:
+      class: pull-right
+      description: 'Float element right.'
+    centered-horizontal:
+      class: horizontal-center
+      description: 'Center the element horizontally. Combine with a layout-column to add a width.'
+    centered-vertical:
+      class: vertical-center
+      description: 'Center the element vertically. You must a) set "position-relative" on the parent container and b) combine with a layout-column to add width.'
+    position-relative:
+      class: position-relative
+      description: 'Normally used to set relative for absolytley position child elements (e.g. vertically centered). Maybe used with a trbl class e.g position-top, position-right, position-bottom or position-left.'
+    position-absolute:
+      class: position-absolute
+      description: 'May be used with a trbl class e.g position-top, position-right, position-bottom or position-left.'
+    position-fixed:
+      class: position-fixed
+      description: 'May be used with a trbl class e.g position-top, position-right, position-bottom or position-left.'
+    position-top:
+      class: position-top
+      description: 'Set position in combination with relative or absolute positioning.'
+    position-right:
+      class: position-right
+      description: 'Set position in combination with relative or absolute positioning.'
+    position-bottom:
+      class: position-bottom
+      description: 'Set position in combination with relative or absolute positioning.'
+    position-left:
+      class: position-left
+      description: 'Set position in combination with relative or absolute positioning.'
+    z-index:
+      class: z-index-(1-10)
+      description: 'Layer positioned elements - use with an interger 1 to 10, e.g. z-index-5.'
+
+layout_columns:
+  name: 'Layout columns'
+  description: 'Set a width on an element. Do not use on Page rows or regions (you will break the layout). These are most useful or blocks or other elements within the page (for example you can apply these to elements in a node). All layout-column classes are full width in mobile, which is determined by your theme.'
+  elements:
+    - blocks
+    - other
+    - 'not rows or regions'
+  classes:
+    layout-column-quarter:
+      class: lc-quarter
+      description: 'Element will be one quarter the container width.'
+    layout-column-half:
+      class: lc-half
+      description: 'Element will be one half the container width.'
+    layout-column-three-quarters:
+      class: lc-three-quarters
+      description: 'Element will be three quarters the container width.'
+    layout-column-third:
+      class: lc-third
+      description: 'Element will be one third the container width.'
+    layout-column-two-thirds:
+      class: lc-two-thirds
+      description: 'Element will be two thirds the container width.'
+
+float_region_blocks:
+  name: 'Float Region Blocks'
+  description: 'A combination of positioning and layout for blocks within a region to float blocks. The count class shoud match the number of blocks you wish to have in the region lining up side by side. Example "frb-3". In RTL blocks float right, in LTR blocks float left.'
+  elements:
+    - regions
+  classes:
+    float-region-blocks-count-2:
+      class: frb-2
+      description: 'Two blocks - 2 x 50%.'
+    float-region-blocks-count-3:
+      class: frb-3
+      description: 'Three blocks - 3 x 33.334%.'
+    float-region-blocks-count-4:
+      class: frb-4
+      description: 'Four blocks - 4 x 25%.'
+    float-region-blocks-count-5:
+      class: frb-5
+      description: 'Five blocks - 5 x 20%.'
+    float-region-blocks-count-6:
+      class: frb-6
+      description: 'Six blocks - 3 x 16.667.'
+
+whitespace:
+  name: 'Whitespace control'
+  description: 'Remove padding and margin. Useful if you want a containers contents to fill the entire container, e.g. remove block and region margin and padding.'
+  elements:
+    - blocks
+    - regions
+    - rows
+  classes:
+    spaceless:
+      class: spaceless
+      description: 'Remove padding and margin.'
+    spaceless-all:
+      class: spaceless-all
+      description: 'Remove padding and margin recursively (all elements).'
+    remove-padding:
+      class: rm-padding
+      description: 'Remove padding.'
+    remove-padding-top:
+      class: rm-padding-top
+      description: 'Remove top padding.'
+    remove-padding-bottom:
+      class: rm-padding-bottom
+      description: 'Remove bottom padding.'
+    remove-padding-right:
+      class: rm-padding-right
+      description: 'Remove right padding.'
+    remove-padding-left:
+      class: rm-padding-left
+      description: 'Remove left padding.'
+    remove-margin:
+      class: rm-margin
+      description: 'Remove margin.'
+    remove-margin-top:
+      class: rm-margin-top
+      description: 'Remove top margin.'
+    remove-margin-botom:
+      class: rm-margin-bottom
+      description: 'Remove bottom margin.'
+    remove-margin-right:
+      class: rm-margin-right
+      description: 'Remove right margin.'
+    remove-margin-left:
+      class: rm-margin-left
+      description: 'Remove left margin.'
+    full-width-viewport:
+      class: full-width-viewport
+      description: 'Stretch to full width of the viewport, this will only really work on Row Containers.'
+
+image_styles:
+  name: 'Image Styles'
+  description: 'Set styles for images.'
+  elements:
+    - blocks
+    - regions
+    - rows
+  classes:
+    image-spaceless:
+      class: image-spaceless
+      description: 'Remove any padding or margin from img tags and all wrappers (such as field wrapper markup).'
+    image-full-width:
+      class: image-full-width
+      description: 'Stretch images to 100% of their container.'
+    image-align-left:
+      class: image-align-left
+      description: 'Align images left.'
+    image-align-right:
+      class: image-align-right
+      description: 'Align images right.'
+    image-align-center:
+      class: image-align-center
+      description: 'Align images center.'
+
+grid_blocks:
+  name: Block Grid
+  description: 'Layout blocks in a grid. Apply to full width regions only. A good alternative is to build a View with the format "Grid".'
+  elements:
+    - 'regions that are full width, e.g. leaderboard or content with no sidebars'
+  classes:
+    grid-block-two:
+      class: 'grid-block-2'
+      description: 'Two grid columns.'
+    grid-block-three:
+      class: 'grid-block-3'
+      description: 'Three grid columns.'
+    grid-block-four:
+      class: 'grid-block-4'
+      description: 'Four grid columns.'
+    grid-block-five:
+      class: 'grid-block-5'
+      description: 'Five grid columns.'
+    grid-block-six:
+      class: 'grid-block-6'
+      description: 'Six grid columns.'
+    grid-block-eight:
+      class: 'grid-block-8'
+      description: 'Eight grid columns.'
+    grid-block-ten:
+      class: 'grid-block-10'
+      description: 'Ten grid columns.'
+    grid-block-twelve:
+      class: 'grid-block-12'
+      description: 'Twelve grid columns.'
+
+rounded_corners:
+  name: 'Rounded Corners'
+  description: 'Add rounded corners (border radius). Rounded corners will automatically apply to form elements, tabs etc depending on your theme (e.g. the search block form). You can set a global border radius on the <code>body</code>, then override it in regions or blocks.'
+  elements:
+    - blocks
+    - regions
+    - body
+  classes:
+    rc-0:
+      class: 'rc-0'
+      description: 'Remove border radius.'
+    rc-1:
+      class: 'rc-1'
+      description: 'Border radius 1px'
+    rc-2:
+      class: 'rc-2'
+      description: 'Border radius 2px'
+    rc-3:
+      class: 'rc-3'
+      description: 'Border radius 3px'
+    rc-4:
+      class: 'rc-4'
+      description: 'Border radius 4px'
+    rc-5:
+      class: 'rc-5'
+      description: 'Border radius 5px'
+    rc-6:
+      class: 'rc-6'
+      description: 'Border radius 6px'
+    rc-7:
+      class: 'rc-7'
+      description: 'Border radius 7px'
+    rc-8:
+      class: 'rc-8'
+      description: 'Border radius 8px'
+    rc-9:
+      class: 'rc-9'
+      description: 'Border radius 9px'
+    rc-10:
+      class: 'rc-10'
+      description: 'Border radius 10px'
+    rc-12:
+      class: 'rc-12'
+      description: 'Border radius 12px'
+    rc-15:
+      class: 'rc-15'
+      description: 'Border radius 15px'
+    rc-20:
+      class: 'rc-20'
+      description: 'Border radius 20px'
+
+menu_bullets:
+  name: 'Menu Bullets'
+  description: 'Add font-icon arrows to collapsed and uncollapsed menu items.'
+  elements:
+    - 'menu blocks'
+  classes:
+    fa-arrow:
+      class: 'fa-arrow'
+      description: 'Simple arrows.'
+    fa-caret:
+      class: 'fa-caret'
+      description: 'Simple carets.'
+    fa-angle-double:
+      class: 'fa-angle-double'
+      description: 'Double angle (default with nothing applied is single angle).'
+    fa-chevron:
+      class: 'fa-chevron'
+      description: 'Chevron.'
+
+animate:
+  name: Animatations
+  description: 'Add the "animated" class then one of the following Animate library class names, e.g. "animated, bounce". View demos http://daneden.github.io/animate.css.'
+  elements:
+    - blocks
+    - regions
+  classes:
+    # Attention seekers
+    bounce:
+      class: bounce
+      description: 'Attention: bounce'
+    flash:
+      class: flash
+      description: 'Attention: flash'
+    pulse:
+      class: pulse
+      description: 'Attention: pulse'
+    rubberBand:
+      class: rubberBand
+      description: 'Attention: rubberBand'
+    shake:
+      class: shake
+      description: 'Attention: shake'
+    swing:
+      class: swing
+      description: 'Attention: swing'
+    tada:
+      class: tada
+      description: 'Attention: tada'
+    wobble:
+      class: wobble
+      description: 'Attention: wobble'
+    jello:
+      class: jello
+      description: 'Attention: jello'
+    # Bounces
+    bounceIn:
+      class: bounceIn
+      description: 'Bounce: In'
+    bounceInDown:
+      class: bounceInDown
+      description: 'Bounce: In - Down'
+    bounceInLeft:
+      class: bounceInLeft
+      description: 'Bounce: In - Left'
+    bounceInRight:
+      class: bounceInRight
+      description: 'Bounce: In - Right'
+    bounceInUp:
+      class: bounceInUp
+      description: 'Bounce: In - Up'
+    # Bounces
+    bounceOut:
+      class: bounceOut
+      description: 'Bounce: Out'
+    bounceOutDown:
+      class: bounceOutDown
+      description: 'Bounce: Out - Down'
+    bounceOutLeft:
+      class: bounceOutLeft
+      description: 'Bounce: Out - Left'
+    bounceOutRight:
+      class: bounceOutRight
+      description: 'Bounce: Out - Right'
+    bounceOutUp:
+      class: bounceOutUp
+      description: 'Bounce: Out - Up'
+    # Fade entrances
+    fadeIn:
+      class: fadeIn
+      description: 'Fade: In'
+    fadeInDown:
+      class: fadeInDown
+      description: 'Fade: In - Down'
+    fadeInDownBig:
+      class: fadeInDownBig
+      description: 'Fade: In - Down Big'
+    fadeInLeft:
+      class: fadeInLeft
+      description: 'Fade: In - Left'
+    fadeInLeftBig:
+      class: fadeInLeftBig
+      description: 'Fade: In - Left Big'
+    fadeInRight:
+      class: fadeInRight
+      description: 'Fade: In - Right'
+    fadeInRightBig:
+      class: fadeInRightBig
+      description: 'Fade: In - Right Big'
+    fadeInUp:
+      class: fadeInUp
+      description: 'Fade: In - Up'
+    fadeInUpBig:
+      class: fadeInUpBig
+      description: 'Fade: In - Up Big'
+    # Fade exits
+    fadeOut:
+      class: fadeOut
+      description: 'Fade: Out'
+    fadeOutDown:
+      class: fadeOutDown
+      description: 'Fade: Out - Down'
+    fadeOutDownBig:
+      class: fadeOutDownBig
+      description: 'Fade: Out - Down Big'
+    fadeOutLeft:
+      class: fadeOutLeft
+      description: 'Fade: Out - Left'
+    fadeOutLeftBig:
+      class: fadeOutLeftBig
+      description: 'Fade: Out - Left Big'
+    fadeOutRight:
+      class: fadeOutRight
+      description: 'Fade: Out - Right'
+    fadeOutRightBig:
+      class: fadeOutRightBig
+      description: 'Fade: Out - Right Big'
+    fadeOutUp:
+      class: fadeOutUp
+      description: 'Fade: Out - Up'
+    fadeOutUpBig:
+      class: fadeOutUpBig
+      description: 'Fade: Out - Up Big'
+    # Flip
+    flipInX:
+      class: flipInX
+      description: 'Flip: In X axis'
+    flipInY:
+      class: flipInY
+      description: 'Flip: In Y axis'
+    flipOutX:
+      class: flipOutX
+      description: 'Flip: Out X axis'
+    flipOutY:
+      class: flipOutY
+      description: 'Flip: Out Y axis'
+    # LightSpeed
+    lightSpeedIn:
+      class: lightSpeedIn
+      description: 'Light Speed: In'
+    lightSpeedOut:
+      class: lightSpeedOut
+      description: 'Light Speed: Out'
+    # Rotate
+    rotateIn:
+      class: rotateIn
+      description: 'Rotate: In'
+    rotateInDownLeft:
+      class: rotateInDownLeft
+      description: 'Rotate: In - Down Left'
+    rotateInDownRight:
+      class: rotateInDownRight
+      description: 'Rotate: In - Down Right'
+    rotateInUpLeft:
+      class: rotateInUpLeft
+      description: 'Rotate: In - Up Left'
+    rotateInUpRight:
+      class: rotateInUpRight
+      description: 'Rotate: In - Up Right'
+    rotateOut:
+      class: rotateOut
+      description: 'Rotate: Out'
+    rotateOutDownLeft:
+      class: rotateOutDownLeft
+      description: 'Rotate: Out - Down Left'
+    rotateOutDownRight:
+      class: rotateOutDownRight
+      description: 'Rotate: Out - Down Right'
+    rotateOutUpLeft:
+      class: rotateOutUpLeft
+      description: 'Rotate: Out - Up Left'
+    rotateOutUpRight:
+      class: rotateOutUpRight
+      description: 'Rotate: Out - Up Right'
+    # Hinge
+    hinge:
+      class: hinge
+      description: 'Hinge'
+    # Roll
+    rollIn:
+      class: rollIn
+      description: 'Roll: In'
+    rollOut:
+      class: rollOut
+      description: 'Roll: Out'
+    # Zoom
+    zoomIn:
+      class: zoomIn
+      description: 'Zoom: In'
+    zoomInDown:
+      class: zoomInDown
+      description: 'Zoom: In - Down'
+    zoomInLeft:
+      class: zoomInLeft
+      description: 'Zoom: In - Left'
+    zoomInRight:
+      class: zoomInRight
+      description: 'Zoom: In - Right'
+    zoomInUp:
+      class: zoomInUp
+      description: 'Zoom: In - Up'
+    zoomOut:
+      class: zoomOut
+      description: 'Zoom: Out'
+    zoomOutDown:
+      class: zoomOutDown
+      description: 'Zoom: Out - Down'
+    zoomOutLeft:
+      class: zoomOutLeft
+      description: 'Zoom: Out - Left'
+    zoomOutRight:
+      class: zoomOutRight
+      description: 'Zoom: Out - Right'
+    zoomOutUp:
+      class: zoomOutUp
+      description: 'Zoom: Out - Up'
+    # Slide
+    slideInDown:
+      class: slideInDown
+      description: 'Slide: In - Down'
+    slideInLeft:
+      class: slideInLeft
+      description: 'Slide: In - Left'
+    slideInRight:
+      class: slideInRight
+      description: 'Slide: In - Right'
+    slideInUp:
+      class: slideInUp
+      description: 'Slide: In - Up'
+    slideOutDown:
+      class: slideOutDown
+      description: 'Slide: Out - Down'
+    slideOutLeft:
+      class: slideOutLeft
+      description: 'Slide: Out - Left'
+    slideOutRight:
+      class: slideOutRight
+      description: 'Slide: Out - Right'
+    slideOutUp:
+      class: slideOutUp
+      description: 'Slide: Out - Up'

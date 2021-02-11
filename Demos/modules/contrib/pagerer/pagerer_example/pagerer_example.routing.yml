@@ -1,0 +1,9 @@
+# Pagerer example module routes
+
+pagerer_example.page:
+  path: '/pagerer/example'
+  defaults:
+    _controller: '\Drupal\pagerer_example\Controller\PagererExampleController::examplePage'
+    _title_callback: '\Drupal\pagerer_example\Controller\PagererExampleController::examplePageTitle'
+  requirements:
+    _access: 'TRUE'

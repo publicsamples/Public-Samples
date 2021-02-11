@@ -1,0 +1,53 @@
+@import "../page-layout-base";
+//
+// Three Regions CP 2-2-8
+//
+//   - first (widest region)
+//   - second (narrow region)
+//   - third (narrow region)
+//
+// But you want it to appear like this:
+//
+//   ------------------------------------------------------
+//  |   second    |    third     |          first          |
+//   ------------------------------------------------------
+
+.threecol-row-reverse-2-2-8 {
+  // Reverse row direction.
+  .l-rw {
+    flex-direction: $row-direction-reverse;
+  }
+
+  // Region first and second OR third are active.
+  .hr--1-2,
+  .hr--1-3 {
+    .l-r {
+      &:last-child {
+        width: span(4 of 12);
+      }
+    }
+  }
+
+  // Region second and third are active.
+  .hr--2-3 {
+    .l-r {
+      width: span(6 of 12);
+    }
+  }
+
+  // All three regions are active.
+  .arc--3 .l-r {
+    width: span(2 of 12);
+  }
+
+  // Two or three active regions.
+  .hr--1-2,
+  .hr--1-3,
+  .arc--3 {
+    .l-r {
+      &:first-child {
+        width: span(8 of 12);
+      }
+    }
+  }
+}

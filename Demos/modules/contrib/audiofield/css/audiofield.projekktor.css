@@ -1,0 +1,18 @@
+/*
+ * Projekktor requires custom styling to prevent looking like a video player.
+ */
+.audiofield-projekktor {
+  height: 38px;
+}
+.audiofield-projekktor .ppcontrols {
+  opacity: 100;
+}
+.audiofield-projekktor .ppdisplay,
+.audiofield-projekktor .ppstart {
+  opacity: 0;
+  display: none;
+}
+.audiofield-projekktor.ppstateidle .ppscrubber {
+  opacity: 0;
+  display: none;
+}

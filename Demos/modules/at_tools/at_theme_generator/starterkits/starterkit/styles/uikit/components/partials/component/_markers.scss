@@ -1,0 +1,55 @@
+/**
+ * Markers
+ *  - used for things like node unpublished status.
+ ============================================================================ */
+
+.marker {
+  display: inline;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  border-radius: $border-radius;
+
+  @include output-rhythm(padding, 1px 3px);
+  @include output-rhythm(font-size, $medium * 0.75);
+
+  font-family: $base-font-family;
+
+  &--info {}
+  &--success {}
+  &--warning {}
+  &--error {}
+}
+
+// Colors - keep here because we do not want these to shift
+// when the color module is enabled.
+.marker {
+  background-color: $marker-background-color;
+  color: $marker-color;
+
+  &--info {
+    background-color: $marker-info-background-color;
+  }
+  &--success {
+    background-color: $marker-success-background-color;
+  }
+  &--warning {
+    background-color: $marker-warning-background-color;
+  }
+  &--error {
+    background-color: $marker-error-background-color;
+  }
+}
+
+// Cores hidden is too weak and is easily ruined by setting
+// display properties on the element.
+.hidden {
+  display: none !important;
+}
+
+// Override form markers.
+.preview {
+  .marker {
+    color: $marker-color;
+  }
+}

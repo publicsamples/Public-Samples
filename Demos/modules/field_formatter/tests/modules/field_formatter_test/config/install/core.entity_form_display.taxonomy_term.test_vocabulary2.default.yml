@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.test_vocabulary2.field_test_field2
+    - taxonomy.vocabulary.test_vocabulary2
+  module:
+    - text
+id: taxonomy_term.test_vocabulary2.default
+targetEntityType: taxonomy_term
+bundle: test_vocabulary2
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_test_field2:
+    weight: 31
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  name:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  path: true

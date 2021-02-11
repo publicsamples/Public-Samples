@@ -1,0 +1,27 @@
+.threecol-5-2-5 .hr--1-2 .l-r {
+  width: 83.33333%;
+}
+
+.threecol-5-2-5 .hr--1-2 .l-r:last-child {
+  width: 16.66667%;
+}
+
+.threecol-5-2-5 .hr--1-3 .l-r {
+  width: 50%;
+}
+
+.threecol-5-2-5 .hr--2-3 .l-r {
+  width: 16.66667%;
+}
+
+.threecol-5-2-5 .hr--2-3 .l-r:last-child {
+  width: 83.33333%;
+}
+
+.threecol-5-2-5 .arc--3 .l-r {
+  width: 41.66667%;
+}
+
+.threecol-5-2-5 .arc--3 .l-r:nth-child(2) {
+  width: 16.66667%;
+}

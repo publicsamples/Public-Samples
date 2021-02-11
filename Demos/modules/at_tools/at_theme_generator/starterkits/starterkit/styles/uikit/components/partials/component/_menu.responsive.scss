@@ -1,0 +1,163 @@
+/**
+ * Responsive menu styles.
+ *
+ * Mixins provide the basic structure and a base style (not much), the rest
+ * is up to you, add colors, borders, padding and so on. Icons such as
+ * the hamburger and arrows are set in variables in _variables.scss, and you
+ * use the color variables for menus from there also.
+ *
+ * Menu styles are set in Appearance settings using the Responsive Menus extension.
+ * There you select a block, breakpoint, a default style and a responsive style.
+ * You can safely remove mixins from this file if you not going to use them later
+ * on, and want to save a few bytes in stylesheet size.
+ *
+ * Each mixin takes one or more parameters. Use these to customize the basic
+ * structure of the menu, or call options, for example you can place the
+ * offcanvas menu on the left or right.
+ *
+ * Do not import into breakpoints unless you are not using the Responsive Menu
+ * settings in Appearance Extensions, in which case you will need to load the
+ * at_core/at.responsivemenus library and provide it's required drupalSettings.
+ *
+ * Breakpoints are handled in matchMedia using Enquire.
+ *
+ * Responsive styles are a combination of three things:
+ *  1. Sass/CSS defined here (with breakpoints etc).
+ *  2. jQuery: at.responsiveMenus.js which adds/toggles classes etc.
+ *  3. Theme settings as set in your themes extension settings.
+ ============================================================================ */
+
+// Global styles for the responsive menu row.
+.rm-row {
+  z-index: 100; // Flex alters the z-index, unknown reason...
+}
+
+// Global styles for the responsive menu region.
+.rm-region {
+  margin: 0;
+
+  // Visually hide contextual links, they can get in the way of responsive menu styles.
+  .contextual-region {
+    position: static;
+    .contextual {
+      @include visually-hidden;
+    }
+  }
+}
+
+// Provide a consistent style for visible click handles.
+.rm-toggle  {
+  @include output-rhythm(font-size, $medium);
+  @include output-rhythm(padding, $xxxx-small 0);
+  margin: 0;
+
+  &__link,
+  &__link:hover,
+  &__link:focus,
+  &__link:active {
+    @include output-rhythm(padding, 8px 16px 4px 12px);
+    height: auto;
+    border-radius: $border-radius;
+    cursor: pointer;
+  }
+
+  &__icon {
+    position: relative;
+    @include output-rhythm(height, $medium);
+    @include output-rhythm(width, $medium);
+  }
+
+  &__label {
+    @include output-rhythm(top, -2px);
+    position: relative;
+  }
+}
+
+
+// Flex position responsive block.
+.rm-block {
+  line-height: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+
+  &__inner {
+    width: 100%;
+  }
+}
+
+
+.rm-block__content {
+  .menu {
+    position: relative;
+
+    > .menu__item {
+      z-index: $resp-menu-z-index + 10;
+      position: relative;
+    }
+  }
+
+  &__item {
+    position: relative;
+    @include output-rhythm(font-size, $medium); // explicitly set the font-size since the container may be font-size 0
+
+    &--active-trail > .menu__link {}
+
+    // Strip border top from nested items.
+    &:first-child .menu__link {
+      border-top: 0;
+    }
+  }
+
+  .menu__link {
+    transition: $global-transition;
+    font-weight: $font-weight-light;
+    margin: 0;
+    border: 0;
+
+    &:after,
+    &:before {}
+
+    &:active {}
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    &.active {
+      // Match Drupal base path for frontpage/home links
+      &[href="/"] {
+        &:hover,
+        &:focus {}
+      }
+    }
+  }
+}
+
+
+// No JS?
+.no-js {
+  .rm-block {
+    .menu__link {
+      @include output-rhythm(padding, $xx-small);
+      @include output-rhythm(margin, 1px 0);
+    }
+  }
+}
+
+
+// Mitigate any unwanted space in specific regions.
+.pr-navbar__navbar,
+.pr-leaderboard__leaderboard {
+  .rm-block {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// Responsive menu in the header-second region.
+.pr-header__header-second {
+  .rm-block {}
+}

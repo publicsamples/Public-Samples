@@ -1,0 +1,30 @@
+//  Copyright (c) 2008-2014 Christopher M. Eppstein
+//  All Rights Reserved.
+//  Released under a slightly modified MIT License.
+//  https://github.com/Compass/compass/blob/stable/LICENSE.markdown
+
+// Change the output-rhythm mixin to pass in the $rem-with-px-fallback bool
+// correctly (original from Compass v0.13.alpha.10).
+@mixin output-rhythm($property, $values) {
+  @if $rhythm-unit == rem {
+    @if $rem-with-px-fallback == false {
+      @include rem($property, $values, false);
+    }
+    @else {
+      @include rem($property, $values, true);
+    }
+  }
+  @else {
+    $output: ();
+    @each $value in $values {
+      @if unit($value) == px {
+        // Ensure all pixel values are rounded to the nearest pixel.
+        $output: join($output, round($value));
+      }
+      @else {
+        $output: join($output, $value);
+      }
+    }
+    #{$property}: $output;
+  }
+}

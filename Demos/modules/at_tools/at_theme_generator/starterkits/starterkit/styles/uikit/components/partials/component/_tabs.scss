@@ -1,0 +1,51 @@
+/**
+ * Tabs (local tasks).
+ * Tab styles leverage AT's responsive lists JS feature. This sets a class if
+ * the list is too wide for it's container. This allows us to dynamically change
+ * the design of the tabs menu if they are too wide. We use media queries as a
+ * no-js fallback.
+ ============================================================================ */
+
+.tabs {
+  padding: 0;
+  @include output-rhythm(margin, $medium 0);
+
+  ul {
+    @include cfm;
+    @include output-rhythm(margin-bottom, $medium);
+    padding: 0;
+
+    &.tabs--primary {
+      margin-bottom: 0;
+    }
+  }
+
+  // Set the narrow style.
+  .is-vertical {
+    @include list-style-button-group-vertical('ul.tabs--primary');
+    @include list-style-seven-vertical('ul.tabs--secondary');
+  }
+
+  // Set the wide style.
+  .is-horizontal {
+    @include list-style-tab-group('ul.tabs--primary');
+    @include list-style-seven-horizontal('ul.tabs--secondary');
+  }
+
+  // Use media queries when JS is unavailable.
+  @media #{$mobile} {
+    .no-js & {
+      @include list-style-button-group-vertical('ul.tabs--primary');
+      @include list-style-seven-vertical('ul.tabs--secondary');
+    }
+  }
+
+  @media #{$wide} {
+    .no-js & {
+      @include list-style-tab-group('ul.tabs--primary');
+      @include list-style-seven-horizontal('ul.tabs--secondary');
+    }
+  }
+}
+
+

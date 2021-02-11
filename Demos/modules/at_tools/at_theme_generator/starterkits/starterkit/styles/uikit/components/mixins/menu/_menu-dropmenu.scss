@@ -1,0 +1,136 @@
+// Drop Menus
+// Standard CSS drop menus that will expand any nesting level.
+
+@mixin dropmenu($dropmenu-item-width: 12em, $dropmenu-arrows: true) {
+
+  .ms-dropmenu {
+
+    .rm-toggle {
+      display: none;
+    }
+
+    .rm-block__content {
+      // Allow for momentary mouse out.
+      .menu {
+        transition: 125ms ease-in-out 100ms;
+
+        .menu {
+          transition-delay: 25ms;
+        }
+      }
+
+      .menu__item {
+        text-align: center;
+        position: relative;
+      }
+
+      .menu__link {
+        position: relative;
+        display: block;
+        @include output-rhythm(padding, $xx-small $large);
+
+        @if $dropmenu-arrows == true {
+          &:after {
+            font-family: $icon-font;
+            padding: 0 1px;
+            text-align: $flow-to;
+            position: absolute;
+            @include output-rhythm($flow-to, $medium);
+          }
+        }
+      }
+
+      .menu-level-1 {
+        display: flex;
+        position: relative;
+
+        .menu__item {
+          width: auto;
+          flex: 0 0 auto;
+
+          &:hover,
+          &:focus {
+            > .is-child {
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+        }
+
+        .menu__link:after {
+          content: '';
+          display: none;
+        }
+
+        @if $dropmenu-arrows == true {
+          .fa-loaded & {
+            .menu__item--collapsed.is-parent > span > .menu__link,
+            .menu__item--expanded.is-parent > span > .menu__link {
+              @include output-rhythm(padding-#{$flow-to}, $medium * 2.5);
+
+              &:after {
+                display: inline-block;
+              }
+            }
+
+            .menu__item--expanded.is-parent > span > .menu__link:after {
+              content: $menu-arrow-down;
+            }
+
+            .menu__item--collapsed.is-parent > span > .menu__link:after {
+              content: '';
+            }
+          }
+        }
+      }
+
+      // Hide child menus until hovered (or touch).
+      .is-child {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        margin: 0;
+        padding: 0;
+        max-height: 1000px;
+        width: 100%;
+
+        &:hover,
+        &:focus {
+          visibility: visible;
+          opacity: 1;
+        }
+
+        .menu__item {
+          min-width: $dropmenu-item-width;
+          text-align: $flow-from;
+          width: 100%;
+        }
+      }
+
+      // Menu level 2 and below.
+      .menu-level-2 {
+        #{$flow-from}: 0; // LTR
+        top: auto;
+
+        @if $dropmenu-arrows == true {
+          // FontAwesome loaded.
+          .fa-loaded & {
+            .menu__item--expanded.is-parent > span > .menu__link:after {
+              content: $menu-arrow-right;
+
+              [dir="rtl"] & {
+                content: $menu-arrow-left;
+              }
+            }
+          }
+        }
+
+        .is-child {
+          #{$flow-from}: 100%; // LTR
+          top: 0;
+        }
+      }
+    }
+  }
+}
+

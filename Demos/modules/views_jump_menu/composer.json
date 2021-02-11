@@ -1,0 +1,8 @@
+{
+  "name": "drupal/views_jump_menu",
+  "type": "drupal-module",
+  "description": "Displays Views results as a Select list that links to an entity when clicked.",
+  "homepage": "https://github.com/TopFloorTech/drupal-views_jump_menu",
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev"
+}

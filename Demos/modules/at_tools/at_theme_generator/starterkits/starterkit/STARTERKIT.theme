@@ -1,0 +1,167 @@
+<?php
+
+use Drupal\Component\Utility\Xss;
+use Drupal\Component\Utility\Html;
+
+/**
+ * Add dynamic library definitions.
+ *
+ * Modules may implement this hook to add dynamic library definitions. Static
+ * libraries, which do not depend on any runtime information, should be declared
+ * in a modulename.libraries.yml file instead.
+ *
+ * @return array[]
+ *   An array of library definitions to register, keyed by library ID. The
+ *   library ID will be prefixed with the module name automatically.
+ *
+ * @see core.libraries.yml
+ * @see hook_library_info_alter()
+ */
+function HOOK_library_info_build() {
+  $libraries = [];
+  $theme = 'HOOK';
+  $theme_registry = \Drupal::service('theme.registry')->get();
+  $config = \Drupal::config($theme . '.settings')->get('settings');
+
+  // Layout libraries.
+  $libraries[$theme . '.layout.page'] = [
+    'css' => [
+      'layout' => [
+        'styles/css/generated/' . $theme . '.layout.page.css' => [],
+      ],
+    ],
+  ];
+  foreach ($theme_registry as $key => $values) {
+    if (substr($key, 0, 6) == 'page__') {
+      $suggestion = str_replace('_', '-', $key);
+      $libraries[$theme . '.layout.' . $key] = [
+        'css' => [
+          'layout' => [
+            'styles/css/generated/' . $theme . '.layout.'  . $suggestion . '.css' => [],
+          ],
+        ],
+      ];
+    }
+  }
+
+  // Extension libraries.
+  if (isset($config['enable_extensions']) && $config['enable_extensions'] === 1) {
+    // Fonts.
+    if (isset($config['enable_fonts']) && $config['enable_fonts'] === 1) {
+      // Google fonts.
+      if (!empty($config['font_google'])) {
+        $libraries['google_fonts'] = [
+          'remote' => 'https://fonts.google.com',
+          'license' => [
+            'name' => 'SIL (OFL)',
+            'url' => 'http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL',
+            'gpl-compatible' => TRUE,
+          ],
+          'css' => [
+            'base' => [
+              Xss::filter($config['font_google']) => [],
+            ],
+          ],
+          'weight' => -1000,
+        ];
+      }
+      // Typekit.
+      if (!empty($config['font_typekit'])) {
+        $libraries['typekit_id'] = [
+          'remote' => '//use.typekit.net/',
+          'license' => [
+            'name' => 'Apache 2.0',
+            'url' => 'http://www.apache.org/licenses/LICENSE-2.0',
+            'gpl-compatible' => TRUE,
+          ],
+          'js' => [
+            '//use.typekit.net/' . Html::escape($config['font_typekit']) . '.js' => ['type' => 'external'],
+          ],
+          'header' => TRUE,
+        ];
+      }
+    }
+  }
+
+  return $libraries;
+}
+
+/**
+ * Alter attachments (typically assets) to a page before it is rendered.
+ *
+ * Use this hook when you want to remove or alter attachments on the page, or
+ * add attachments to the page that depend on another module's attachments (this
+ * hook runs after hook_page_attachments().
+ *
+ * @param array &$page
+ *   An empty renderable array representing the page.
+ *
+ * @see hook_page_attachments_alter()
+ */
+function HOOK_page_attachments_alter(array &$page) {
+  $theme = 'HOOK';
+
+  // Attach module dependant libraries.
+  // These libraries are declared in your STARTERKIT.libraries.yml and we only
+  // load if the module is installed.
+  $module_libraries = [
+    'addtoany',
+    'ds',
+    'social_media_links',
+    'superfish',
+  ];
+  $theme_libraries = \Drupal::service('library.discovery')->getLibrariesByExtension($theme);
+  foreach ($module_libraries as $module_library) {
+    if (array_key_exists($module_library, $theme_libraries) && \Drupal::moduleHandler()->moduleExists($module_library) === TRUE) {
+      $page['#attached']['library'][] = "$theme/$module_library";
+    }
+  }
+}
+
+/**
+ * Preprocess variables for html templates.
+ */
+/* -- Delete this line if you want to use this function
+function HOOK_preprocess_html(&$variables) {
+}
+// */
+
+/**
+ * Preprocess variables for page templates.
+ */
+/* -- Delete this line if you want to use this function
+function HOOK_preprocess_page(&$variables) {
+}
+// */
+
+/**
+ * Preprocess variables for field templates.
+ */
+/* -- Delete this line if you want to use this function
+function HOOK_preprocess_field(&$variables) {
+}
+// */
+
+/**
+ * Preprocess variables for node templates.
+ */
+/* -- Delete this line if you want to use this function
+function HOOK_preprocess_node(&$variables) {
+}
+// */
+
+/**
+ * Preprocess variables for comment templates.
+ */
+/* -- Delete this line if you want to use this function
+function HOOK_preprocess_comment(&$variables) {
+}
+// */
+
+/**
+ * Preprocess variables for block templates.
+ */
+/* -- Delete this line if you want to use this function
+function HOOK_preprocess_block(&$variables) {
+}
+// */

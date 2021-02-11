@@ -1,0 +1,149 @@
+/**
+ * Search forms
+ * - search block form
+ * - advanced search form
+ ============================================================================ */
+
+// Search Block form.
+.search-block-form__form {
+  display: block;
+  clear: both;
+  position: relative;
+
+ .form-type-search,
+ .form-actions {
+    display: inline;
+    @include output-rhythm(margin, 0 0 $xx-small);
+  }
+
+ .form-search {
+    width: 100%;
+  }
+
+  // The submit button is not hidden.
+  .submit-is-visible & .form-search {
+    @include output-rhythm(padding-#{$flow-to}, $form_input_button_select_height);
+  }
+
+  .form-actions {
+    position: absolute;
+    top: 0;
+    #{$flow-to}: 0;
+    z-index: 1;
+  }
+
+  // Search block input submit text removed, uses an SVG
+  // icon instead.
+  .form-submit {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    @include output-rhythm(width, $form_input_button_select_height);
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    cursor: pointer;
+    background-image: url(../images/search-icon.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 0 $border-radius $border-radius 0; // LTR
+    background-size: contain;
+  }
+
+  // The contextual links trigger can obscure the search submit input.
+  .contextual-render-processed {
+    //display: none;
+    top: 2px;
+    #{$flow-to}: 2em;
+  }
+
+  // Style placeholders.
+  ::-webkit-input-placeholder {
+    color: $border-color;
+    opacity: 0.75;
+  }
+  :-moz-placeholder {
+    color: $border-color;
+    opacity: 0.75;
+  }
+  ::-moz-placeholder {
+    color: $border-color;
+    opacity: 0.75;
+  }
+  :-ms-input-placeholder {
+    color: $border-color;
+    opacity: 0.75;
+  }
+}
+
+
+// Search Page form.
+.search-page-form {}
+
+// Basic search.
+.search-basic {
+  display: block;
+
+  label {
+    display: block;
+    @include output-rhythm(margin, 0 0 $xx-small);
+  }
+
+  .form-type-search,
+  .form-search {
+    display: block;
+    width: 100%;
+    @include output-rhythm(margin, $xx-small 0);
+  }
+}
+
+// Advanced search.
+.search-advanced {
+  .details-wrapper {
+    // Hide visually redundant legends. This must be very specific so as not to
+    // remove required legends as well, hence the child selectors and
+    // over-specification.
+    > fieldset > legend {
+      @include visually-hidden;
+    }
+  }
+
+  .form-text {
+    min-width: 75%;
+  }
+
+  .form-item,
+  .form-radios,
+  .form-checkboxes {
+    @include output-rhythm(margin-bottom, $xx-small);
+  }
+}
+
+
+.search-help-link {
+  float: $flow-to;
+  @include output-rhythm(font-size, $medium*.875);  // 14px
+  @include output-rhythm(margin-top, -24px);
+  @include output-rhythm(padding-#{$flow-to}, $xxx-small);
+
+  &:before {
+    font-family: $icon-font;
+    content: $help-icon;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    @include output-rhythm(width, $medium);
+
+    // Wait for FontAwesome to load.
+    display: none;
+    .fa-loaded & {
+      display: inline-block;
+    }
+  }
+}
+
+
+

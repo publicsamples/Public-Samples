@@ -1,0 +1,44 @@
+.fivecol-6-6--4-4-4 .arc--2 .l-r {
+  width: 50%;
+  float: left;
+}
+
+.fivecol-6-6--4-4-4 .arc--2 .l-r:last-child {
+  float: right;
+  margin-right: 0;
+}
+
+.fivecol-6-6--4-4-4 .arc--3 .l-r {
+  width: 33.33333%;
+  float: left;
+}
+
+.fivecol-6-6--4-4-4 .arc--3 .l-r:last-child {
+  float: right;
+  margin-right: 0;
+}
+
+.fivecol-6-6--4-4-4 .arc--3 .l-r {
+  width: 25%;
+  float: left;
+}
+
+.fivecol-6-6--4-4-4 .arc--3 .l-r:last-child {
+  float: right;
+  margin-right: 0;
+}
+
+.fivecol-6-6--4-4-4 .arc--5 .l-r {
+  width: 33.33333%;
+  float: left;
+}
+
+.fivecol-6-6--4-4-4 .arc--5 .l-r:first-child, .fivecol-6-6--4-4-4 .arc--5 .l-r:nth-child(2) {
+  width: 50%;
+  float: left;
+}
+
+.fivecol-6-6--4-4-4 .arc--5 .l-r:last-child, .fivecol-6-6--4-4-4 .arc--5 .l-r:nth-child(2) {
+  float: right;
+  margin-right: 0;
+}

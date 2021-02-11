@@ -1,0 +1,200 @@
+/*
+ * Audio.js requires custom styling
+ */
+.audiofield-audiojs audio {
+  position: absolute;
+  left: -1px;
+}
+.audiofield-audiojs {
+  width: 460px;
+  height: 36px;
+  background: #404040;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 12px;
+  -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+}
+.audiofield-audiojs .play-pauseZ {
+  width: 40px;
+  height: 40px;
+  padding: 4px 6px;
+  margin: 0px;
+  float: left;
+  overflow: hidden;
+  border-right: 1px solid #000;
+}
+.audiofield-audiojs p {
+  display: none;
+  width: 25px;
+  height: 40px;
+  margin: 0px;
+  cursor: pointer;
+}
+.audiofield-audiojs .playZ {
+  display: block;
+}
+.audiofield-audiojs .scrubberZ {
+  position: relative;
+  float: left;
+  width: 280px;
+  background: #5a5a5a;
+  height: 14px;
+  margin: 10px;
+  border-left: 0px;
+  border-bottom: 0px;
+  overflow: hidden;
+}
+.audiofield-audiojs .progressZ {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 14px;
+  width: 0px;
+  background: #ccc;
+  z-index: 1;
+}
+.audiofield-audiojs .loadedZ {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 14px;
+  width: 0px;
+  background: #000;
+}
+.audiofield-audiojs .timeZ {
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  margin: 0px 0px 0px 6px;
+  padding: 0px 6px 0px 12px;
+  border-left: 1px solid #000;
+  color: #ddd;
+  text-shadow: 1px 1px 0px rgba(125, 0, 0, 0.5);
+}
+.audiofield-audiojs .timeZ em {
+  padding: 0px 2px 0px 0px;
+  color: #f9f9f9;
+  font-style: normal;
+}
+.audiofield-audiojs .timeZ strong {
+  padding: 0px 0px 0px 2px;
+  font-weight: normal;
+}
+.audiofield-audiojs .error-messageZ {
+  float: left;
+  display: none;
+  margin: 0px 10px;
+  height: 36px;
+  width: 400px;
+  overflow: hidden;
+  line-height: 36px;
+  white-space: nowrap;
+  color: #fff;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -icab-text-overflow: ellipsis;
+  -khtml-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+}
+.audiofield-audiojs .error-messageZ a {
+  color: #eee;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #999;
+  white-space: wrap;
+}
+
+.audiofield-audiojs .playZ {
+  background: url('/libraries/audiojs/player-graphics.gif') -2px -1px no-repeat;
+}
+.audiofield-audiojs .loadingZ {
+  background: url('/libraries/audiojs/player-graphics.gif') -2px -31px no-repeat;
+}
+.audiofield-audiojs .errorZ {
+  background: url('/libraries/audiojs/player-graphics.gif') -2px -61px no-repeat;
+}
+.audiofield-audiojs .pauseZ {
+  background: url('/libraries/audiojs/player-graphics.gif') -2px -91px no-repeat;
+}
+
+.audiofield-audiojs.playingZ .playZ,
+.audiofield-audiojs.playingZ .loadingZ,
+.audiofield-audiojs.playingZ .errorZ {
+  display: none;
+}
+.audiofield-audiojs.playingZ .pauseZ {
+  display: block;
+}
+
+.audiofield-audiojs.loadingZ .playZ,
+.audiofield-audiojs.loadingZ .pauseZ,
+.audiofield-audiojs.loadingZ .errorZ {
+  display: none;
+}
+.audiofield-audiojs.loadingZ .loadingZ {
+  display: block;
+}
+
+.audiofield-audiojs.errorZ .timeZ,
+.audiofield-audiojs.errorZ .playZ,
+.audiofield-audiojs.errorZ .pauseZ,
+.audiofield-audiojs.errorZ .scrubberZ,
+.audiofield-audiojs.errorZ .loadingZ {
+  display: none;
+}
+.audiofield-audiojs.errorZ .errorZ {
+  display: block;
+}
+.audiofield-audiojs.errorZ .play-pauseZ p {
+  cursor: auto;
+}
+.audiofield-audiojs.errorZ .error-messageZ {
+  display: block;
+}
+
+.audiofield-audiojs-frame ol {
+  padding: 0px;
+  margin: 0px;
+  list-style: decimal-leading-zero inside;
+  color: #ccc;
+  width: 460px;
+  border-top: 1px solid #ccc;
+  font-size: 0.9em;
+}
+.audiofield-audiojs-frame ol li {
+  position: relative;
+  margin: 0px;
+  padding: 9px 2px 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+.audiofield-audiojs-frame ol li a {
+  display: block;
+  text-indent: -3.3ex;
+  padding: 0px 0px 0px 20px;
+}
+.audiofield-audiojs-frame li.playing {
+  color: #aaa;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.3);
+}
+.audiofield-audiojs-frame li.playing a {
+  color: #000;
+}
+.audiofield-audiojs-frame li.playing:before {
+  content: '♬';
+  width: 14px;
+  height: 14px;
+  padding: 3px;
+  line-height: 14px;
+  margin: 0px;
+  position: absolute;
+  left: -24px;
+  top: 9px;
+  color: #000;
+  font-size: 13px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+}

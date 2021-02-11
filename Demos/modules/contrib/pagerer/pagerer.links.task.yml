@@ -1,0 +1,4 @@
+pagerer.preset_edit:
+  title: 'Edit'
+  route_name: entity.pagerer_preset.edit_form
+  base_route: entity.pagerer_preset.edit_form

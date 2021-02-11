@@ -1,0 +1,5 @@
+description: 'Generate static page file.'
+options: {}
+arguments: {}
+messages:
+    success: 'Generation of static page file complete.'

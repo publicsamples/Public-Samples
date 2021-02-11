@@ -1,0 +1,12 @@
+.fourcol-6-2-2-2 .arc--2 .l-r,
+.fourcol-6-2-2-2 .arc--4 .l-r:first-child {
+  width: 50%;
+}
+
+.fourcol-6-2-2-2 .arc--3 .l-r {
+  width: 33.33333%;
+}
+
+.fourcol-6-2-2-2 .arc--4 .l-r {
+  width: 16.66667%;
+}

@@ -1,0 +1,23 @@
+.fivecol-2-3-2-3-2 .arc--2 .l-r {
+  width: 50%;
+}
+
+.fivecol-2-3-2-3-2 .arc--3 .l-r {
+  width: 33.33333%;
+}
+
+.fivecol-2-3-2-3-2 .arc--4 .l-r {
+  width: 33.33333%;
+}
+
+.fivecol-2-3-2-3-2 .arc--4 .l-r:first-child, .fivecol-2-3-2-3-2 .arc--4 .l-r:last-child {
+  width: 16.66667%;
+}
+
+.fivecol-2-3-2-3-2 .arc--5 .l-r {
+  width: 16.66667%;
+}
+
+.fivecol-2-3-2-3-2 .arc--5 .l-r:nth-child(2n) {
+  width: 25%;
+}

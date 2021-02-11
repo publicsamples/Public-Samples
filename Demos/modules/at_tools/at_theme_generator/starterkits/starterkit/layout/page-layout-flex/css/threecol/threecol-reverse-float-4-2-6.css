@@ -1,0 +1,25 @@
+.threecol-reverse-float-4-2-6 .hr--1-2 .l-r,
+.threecol-reverse-float-4-2-6 .hr--1-3 .l-r,
+.threecol-reverse-float-4-2-6 .hr--2-3 .l-r {
+  -ms-flex-preferred-size: 50%;
+          -webkit-flex-basis: 50%;
+          flex-basis: 50%;
+}
+
+.threecol-reverse-float-4-2-6 .arc--3 .l-r:first-child {
+  -ms-flex-preferred-size: 50%;
+          -webkit-flex-basis: 50%;
+          flex-basis: 50%;
+}
+
+.threecol-reverse-float-4-2-6 .arc--3 .l-r:nth-child(2) {
+  -ms-flex-preferred-size: 33.33333%;
+          -webkit-flex-basis: 33.33333%;
+          flex-basis: 33.33333%;
+}
+
+.threecol-reverse-float-4-2-6 .arc--3 .l-r:nth-child(3) {
+  -ms-flex-preferred-size: 16.66667%;
+          -webkit-flex-basis: 16.66667%;
+          flex-basis: 16.66667%;
+}

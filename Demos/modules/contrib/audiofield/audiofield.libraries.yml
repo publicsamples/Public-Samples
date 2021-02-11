@@ -1,0 +1,225 @@
+
+audiofield.jplayer:
+  remote: https://github.com/jplayer/jPlayer/archive/2.9.2.zip
+  version: &audiofield_jplayer_version "2.9.2"
+  license: &audiofield_jplayer_license
+    name: MIT
+    url: https://github.com/jplayer/jPlayer/blob/2.9.2/MIT-LICENSE.txt
+    gpl-compatible: true
+  css:
+    component:
+      /libraries/jplayer/lib/circle-player/skin/circle.player.css: {}
+      css/audiofield.css: {}
+  js:
+    /libraries/jplayer/dist/jplayer/jquery.jplayer.min.js: { minified: true }
+    js/jplayer.builder.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+
+audiofield.jplayer.playlist:
+  version: *audiofield_jplayer_version
+  license: *audiofield_jplayer_license
+  js:
+    /libraries/jplayer/dist/add-on/jplayer.playlist.min.js: { minified: true }
+  dependencies:
+    - audiofield/audiofield.jplayer
+
+audiofield.jplayer.inspector:
+  version: *audiofield_jplayer_version
+  license: *audiofield_jplayer_license
+  js:
+    /libraries/jplayer/dist/add-on/jquery.jplayer.inspector.min.js: { minified: true }
+  dependencies:
+    - audiofield/audiofield.jplayer
+
+audiofield.jplayer.transform2d:
+  version: *audiofield_jplayer_version
+  license: *audiofield_jplayer_license
+  js:
+    /libraries/jplayer/lib/circle-player/js/jquery.transform2d.js: {}
+
+audiofield.jplayer.grab:
+  version: *audiofield_jplayer_version
+  license: *audiofield_jplayer_license
+  js:
+    /libraries/jplayer/lib/circle-player/js/jquery.grab.js: {}
+
+audiofield.jplayer.csstransforms:
+  version: *audiofield_jplayer_version
+  license: *audiofield_jplayer_license
+  js:
+    /libraries/jplayer/lib/circle-player/js/mod.csstransforms.min.js: { minified: true }
+
+audiofield.jplayer.theme_jplayer_circle:
+  version: *audiofield_jplayer_version
+  license: *audiofield_jplayer_license
+  css:
+    component:
+      /libraries/jplayer/lib/circle-player/skin/circle.player.css: {}
+  js:
+    js/jplayer.circleplayer.fix.js: {}
+    /libraries/jplayer/lib/circle-player/js/circle.player.js: {}
+  dependencies:
+    - audiofield/audiofield.jplayer
+    - audiofield/audiofield.jplayer.transform2d
+    - audiofield/audiofield.jplayer.grab
+    - audiofield/audiofield.jplayer.csstransforms
+
+audiofield.wordpress:
+  remote: http://wpaudioplayer.com/wp-content/downloads/audio-player-standalone.zip
+  version: "2.2"
+  license:
+    name: MIT
+    url: http://wpaudioplayer.com/license
+    gpl-compatible: true
+  js:
+    /libraries/wordpress-audio/audio-player.js: {}
+    js/wordpress.builder.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+
+audiofield.mediaelement:
+  remote: https://github.com/mediaelement/mediaelement/archive/4.2.5.zip
+  version: "4.2.5"
+  license:
+    name: MIT
+    url: https://mediaelement.mit-license.org/
+    gpl-compatible: true
+  css:
+    component:
+      /libraries/mediaelement/build/mediaelementplayer.min.css: { minified: true }
+      css/audiofield.css: {}
+      css/audiofield.mediaelement.css: {}
+  js:
+    /libraries/mediaelement/build/mediaelement-and-player.min.js: { minified: true }
+    js/mediaelement.builder.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+
+audiofield.soundmanager:
+  remote: https://github.com/scottschiller/SoundManager2/archive/V2.97a.20170601.zip
+  version: &audiofield_soundmanager_version "2.97.20170601"
+  license: &audiofield_soundmanager_license
+    name: BSD
+    url: https://github.com/scottschiller/SoundManager2/blob/V2.97a.20170601/license.txt
+    gpl-compatible: true
+  js:
+    /libraries/soundmanager/script/soundmanager2-nodebug-jsmin.js: { minified: true }
+    js/soundmanager.builder.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+
+audiofield.soundmanager.default:
+  version: *audiofield_soundmanager_version
+  license: *audiofield_soundmanager_license
+  css:
+    component:
+     /libraries/soundmanager/demo/mp3-player-button/css/mp3-player-button.css: {}
+  js:
+    /libraries/soundmanager/demo/mp3-player-button/script/mp3-player-button.js: {}
+  dependencies:
+    - audiofield/audiofield.soundmanager
+
+audiofield.soundmanager.player360:
+  version: *audiofield_soundmanager_version
+  license: *audiofield_soundmanager_license
+  css:
+    component:
+     /libraries/soundmanager/demo/360-player/360player.css: {}
+  js:
+    /libraries/soundmanager/demo/360-player/script/berniecode-animator.js: {}
+    /libraries/soundmanager/demo/360-player/script/360player.js: {}
+  dependencies:
+    - audiofield/audiofield.soundmanager
+
+audiofield.soundmanager.barui:
+  version: *audiofield_soundmanager_version
+  license: *audiofield_soundmanager_license
+  css:
+    component:
+     /libraries/soundmanager/demo/bar-ui/css/bar-ui.css: {}
+  js:
+    /libraries/soundmanager/demo/bar-ui/script/bar-ui.js: {}
+  dependencies:
+    - audiofield/audiofield.soundmanager
+
+audiofield.soundmanager.inlineplayer:
+  version: *audiofield_soundmanager_version
+  license: *audiofield_soundmanager_license
+  css:
+    component:
+     /libraries/soundmanager/demo/play-mp3-links/css/inlineplayer.css: {}
+  js:
+    /libraries/soundmanager/demo/play-mp3-links/script/inlineplayer.js: {}
+  dependencies:
+    - audiofield/audiofield.soundmanager
+
+audiofield.audiojs:
+  remote: http://kolber.github.com/audiojs/audiojs.zip
+  version: "1"
+  license:
+    name: MIT
+    url: https://github.com/kolber/audiojs/blob/1.0.1/LICENSE
+    gpl-compatible: true
+  css:
+    component:
+      css/audiofield.audiojs.css: {}
+  js:
+    /libraries/audiojs/audio.min.js: { minified: true }
+    js/audiojs.builder.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+
+audiofield.projekktor:
+  remote: https://github.com/frankyghost/projekktor/archive/1.3.09.zip
+  version: "1.2.37"
+  license:
+    name: GPL
+    url: https://github.com/frankyghost/projekktor/blob/1.3.09/dist/LICENSE
+    gpl-compatible: true
+  css:
+    component:
+      /libraries/projekktor/themes/maccaco/projekktor.style.css: {}
+      css/audiofield.projekktor.css: {}
+  js:
+    /libraries/projekktor/dist/projekktor-universal.min.js: { minified: true }
+    js/projekktor.builder.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+
+audiofield.wavesurfer:
+  remote: https://github.com/katspaugh/wavesurfer.js/archive/2.0.0-beta01.zip
+  version: "2.0.0-beta01"
+  license:
+    name: BSD 3-Clause License
+    url: https://github.com/katspaugh/wavesurfer.js/blob/master/LICENSE
+    gpl-compatible: true
+  css:
+    component:
+      css/audiofield.wavesurfer.css: {}
+  js:
+    /libraries/wavesurfer/dist/wavesurfer.min.js: { minified: true }
+    js/wavesurfer.builder.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings

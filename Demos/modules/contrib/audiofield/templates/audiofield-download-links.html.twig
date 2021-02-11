@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Default theme implementation for AudioField audioplayer download links.
+ *
+ * Available variables:
+ * - links: downloa
+ *
+ * @ingroup themeable
+ */
+#}
+<table class="audiofield-downloads">
+  <caption>{{ 'Download files:'|trans }}</caption>
+  {% for file in links %}
+    <tr>
+      <td class="audiofield-download-link">{{ file.link }}</td>
+    </tr>
+  {% endfor %}
+</table>

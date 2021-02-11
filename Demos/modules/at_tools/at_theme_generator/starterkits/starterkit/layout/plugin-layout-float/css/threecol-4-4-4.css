@@ -1,0 +1,40 @@
+.atl__lr {
+  margin: 0 -0.625em;
+}
+
+.atl__lc {
+  padding: 0 0.625em;
+  width: 100%;
+}
+
+.atl:before, .atl:after {
+  content: " ";
+  display: table;
+}
+
+.atl:after {
+  clear: both;
+}
+
+.bp--at-core-simple-wide .atl--threecol-4-4-4.l-arc--2 > .atl__cw > .atl__lc,
+.bp--at-core-simple-tablet-isolate .atl--threecol-4-4-4.l-arc--2 > .atl__cw > .atl__lc {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+}
+
+.bp--at-core-simple-wide .atl--threecol-4-4-4.l-arc--3 > .atl__cw > .atl__lc,
+.bp--at-core-simple-tablet-isolate .atl--threecol-4-4-4.l-arc--3 > .atl__cw > .atl__lc {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+}
+
+.bp--at-core-simple-wide .atl--threecol-4-4-4.l-arc--2 > .atl__cw > .atl__lc:last-child, .bp--at-core-simple-wide .atl--threecol-4-4-4.l-arc--3 > .atl__cw > .atl__lc:last-child,
+.bp--at-core-simple-tablet-isolate .atl--threecol-4-4-4.l-arc--2 > .atl__cw > .atl__lc:last-child,
+.bp--at-core-simple-tablet-isolate .atl--threecol-4-4-4.l-arc--3 > .atl__cw > .atl__lc:last-child {
+  float: right;
+  margin-right: 0;
+}

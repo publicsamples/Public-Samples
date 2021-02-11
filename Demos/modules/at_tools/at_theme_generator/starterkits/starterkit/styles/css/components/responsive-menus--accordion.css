@@ -1,0 +1,69 @@
+/**
+ * Accordion styles are set automatically for offcanvas & slidedown.
+ ============================================================================ */
+.rm-accordion-trigger {
+  display: none;
+}
+
+.ms-accordion .menu__link:hover, .ms-accordion .menu__link:focus {
+  outline: 0;
+}
+
+.ms-accordion .is-parent .menu__link {
+  margin-left: 2.5rem;
+}
+
+.ms-accordion .menu__link--wrapper {
+  display: block;
+  position: relative;
+}
+
+.ms-accordion .rm-accordion-trigger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+  height: 100%;
+  width: 2.25rem;
+}
+
+.ms-accordion .rm-accordion-trigger:hover, .ms-accordion .rm-accordion-trigger:focus {
+  outline: 0;
+}
+
+.ms-accordion .is-open--parent .rm-accordion-trigger__icon {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all, 225ms, ease-in-out;
+  -o-transition: all, 225ms, ease-in-out;
+  transition: all, 225ms, ease-in-out;
+}
+
+.ms-accordion .rm-accordion-trigger__icon {
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+  margin: auto;
+  width: 1rem;
+}
+
+.ms-accordion .is-child {
+  padding: 0;
+}
+
+.ms-accordion .is-child .is-parent {
+  margin-left: 2.5rem;
+}
+/*# sourceMappingURL=responsive-menus--accordion.css.map */

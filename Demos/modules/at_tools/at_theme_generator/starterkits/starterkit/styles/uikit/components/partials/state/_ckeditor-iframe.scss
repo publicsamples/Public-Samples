@@ -1,0 +1,44 @@
+/**
+ * CKEditor iframe CSS
+ ============================================================================ */
+
+html {
+  background-color: transparent !important;
+}
+
+body {
+  font-family: $base-font-family;
+  @include output-rhythm(font-size, $medium);
+  @include output-rhythm(padding, $small);
+}
+
+textarea {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.cke_editable,
+.cke_source {
+  background-color: inherit !important;
+  color: inherit !important;
+  box-shadow: none !important;
+  background-image: none !important;
+  visibility: visible;
+  opacity: 1;
+  transition: $global-transition;
+}
+
+.cke_editable {
+  cursor: text;
+  padding: 0.5em !important;
+}
+
+// Equalize margins for indented elements.
+ul,
+ol,
+dl {
+  @include output-rhythm(padding-#{$flow-from}, $xxxx-large);
+  padding-#{$flow-to}: 0;
+}
+
+

@@ -1,0 +1,469 @@
+# Basic data types for Pagerer module.
+
+pagerer.tags_display_config_base:
+  type: mapping
+  mapping:
+    prefix_label:
+      type: text
+      label: 'Prefix label'
+    suffix_label:
+      type: text
+      label: 'Suffix label'
+    page_current:
+      type: text
+      label: 'Current page'
+    page_current_title:
+      type: text
+      label: 'Current page title'
+    page_current_reader:
+      type: text
+      label: 'Current page text for automated readers'
+    first:
+      type: text
+      label: 'Link to first page'
+    first_title:
+      type: text
+      label: 'Title to first page'
+    first_reader:
+      type: text
+      label: 'First page text for automated readers'
+    previous:
+      type: text
+      label: 'Link to previous page'
+    previous_title:
+      type: text
+      label: 'Title to previous page'
+    previous_reader:
+      type: text
+      label: 'Previous page text for automated readers'
+    next:
+      type: text
+      label: 'Link to next page'
+    next_title:
+      type: text
+      label: 'Title to next page'
+    next_reader:
+      type: text
+      label: 'Next page for automated readers'
+    last:
+      type: text
+      label: 'Link to last page'
+    last_title:
+      type: text
+      label: 'Title to last page'
+    last_reader:
+      type: text
+      label: 'Last page for automated readers'
+    pageset_empty:
+      type: text
+      label: 'Empty pager'
+
+pagerer.tags_display_config.standard:
+  type: pagerer.tags_display_config_base
+  mapping:
+    page_previous:
+      type: text
+      label: 'Page before current'
+    page_next:
+      type: text
+      label: 'Page after current'
+    page_title:
+      type: text
+      label: 'Page title'
+    page_reader:
+      type: text
+      label: 'Page text for automated readers'
+
+pagerer.tags_display_config.basic:
+  type: mapping
+  mapping:
+    prefix_label:
+      type: text
+      label: 'Prefix label'
+    first:
+      type: text
+      label: 'Link to first page'
+    first_title:
+      type: text
+      label: 'Title to first page'
+    first_reader:
+      type: text
+      label: 'First page text for automated readers'
+    previous:
+      type: text
+      label: 'Link to previous page'
+    previous_title:
+      type: text
+      label: 'Title to previous page'
+    previous_reader:
+      type: text
+      label: 'Previous page text for automated readers'
+    next:
+      type: text
+      label: 'Link to next page'
+    next_title:
+      type: text
+      label: 'Title to next page'
+    next_reader:
+      type: text
+      label: 'Next page for automated readers'
+    last:
+      type: text
+      label: 'Link to last page'
+    last_title:
+      type: text
+      label: 'Title to last page'
+    last_reader:
+      type: text
+      label: 'Last page for automated readers'
+    pageset_empty:
+      type: text
+      label: 'Empty pager'
+
+pagerer.tags_display_config.progressive:
+  type: pagerer.tags_display_config.standard
+  mapping:
+    page_previous_relative:
+      type: text
+      label: 'Page before current (relative)'
+    page_next_relative:
+      type: text
+      label: 'Page after current (relative)'
+
+pagerer.tags_display_config.adaptive:
+  type: pagerer.tags_display_config.progressive
+
+pagerer.tags_display_config.mini:
+  type: pagerer.tags_display_config_base
+  mapping:
+    widget_title:
+      type: text
+      label: 'Input box - Help text'
+
+pagerer.tags_display_config.slider:
+  type: pagerer.tags_display_config_base
+  mapping:
+    page_previous:
+      type: text
+      label: 'Page before current'
+    page_next:
+      type: text
+      label: 'Page after current'
+    slider_title:
+      type: text
+      label: 'Slider - Help text'
+    slider_tickmark_title:
+      type: text
+      label: 'Slider - Help text to inform users to click on tickmark'
+
+pagerer.tags_display_config.scrollpane:
+  type: pagerer.tags_display_config.standard
+
+pagerer.style_config_base:
+  type: mapping
+  label: 'Base style configuration'
+  mapping:
+    display:
+      type: string
+      label: 'Display'
+    display_restriction:
+      type: integer
+      label: 'Restriction'
+    prefix_display:
+      type: boolean
+      label: 'Display prefix label'
+    suffix_display:
+      type: boolean
+      label: 'Display suffix label'
+    first_link:
+      type: string
+      label: 'Display link to first page'
+    previous_link:
+      type: string
+      label: 'Display link to previous page'
+    next_link:
+      type: string
+      label: 'Display link to next page'
+    last_link:
+      type: string
+      label: 'Display link to last page'
+
+pagerer.style_config.*:
+  type: mapping
+  label: 'Style configuration'
+
+pagerer.style_config.none:
+  type: sequence
+
+pagerer.style_config.standard:
+  type: pagerer.style_config_base
+  label: 'Standard pager style'
+  mapping:
+    quantity:
+      type: integer
+      label: 'Number of pages in the pager list'
+    fl_breakers:
+      type: boolean
+      label: 'Display first and last page breakers'
+    display_mode:
+      type: string
+      label: 'Display mode'
+    separator_display:
+      type: boolean
+      label: 'Display page separators'
+    breaker_display:
+      type: boolean
+      label: 'Display page breakers'
+    tags:
+      type: mapping
+      mapping:
+        page_breaker:
+          type: text
+          label: 'Breaker'
+        page_separator:
+          type: text
+          label: 'Separator'
+        pages:
+          type: pagerer.tags_display_config.standard
+          label: 'Text strings for pages'
+        items:
+          type: pagerer.tags_display_config.standard
+          label: 'Text strings for items'
+        item_ranges:
+          type: pagerer.tags_display_config.standard
+          label: 'Text strings for item ranges'
+
+pagerer.style_config.basic:
+  type: mapping
+  label: 'Base style configuration'
+  mapping:
+    display:
+      type: string
+      label: 'Display'
+    display_restriction:
+      type: integer
+      label: 'Restriction'
+    prefix_display:
+      type: boolean
+      label: 'Display prefix label'
+    first_link:
+      type: string
+      label: 'Display link to first page'
+    previous_link:
+      type: string
+      label: 'Display link to previous page'
+    next_link:
+      type: string
+      label: 'Display link to next page'
+    last_link:
+      type: string
+      label: 'Display link to last page'
+    tags:
+      type: mapping
+      mapping:
+        pages:
+          type: pagerer.tags_display_config.basic
+          label: 'Text strings for pages'
+        items:
+          type: pagerer.tags_display_config.basic
+          label: 'Text strings for items'
+        item_ranges:
+          type: pagerer.tags_display_config.basic
+          label: 'Text strings for item ranges'
+
+pagerer.style_config.progressive:
+  type: pagerer.style_config_base
+  label: 'Progressive pager style'
+  mapping:
+    quantity:
+      type: integer
+      label: 'Number of pages in the pager list'
+    fl_breakers:
+      type: boolean
+      label: 'Display first and last page breakers'
+    display_mode:
+      type: string
+      label: 'Display mode'
+    separator_display:
+      type: boolean
+      label: 'Display page separators'
+    breaker_display:
+      type: boolean
+      label: 'Display page breakers'
+    progr_links:
+      type: string
+      label: 'Progressive links mode'
+    factors:
+      type: string
+      label: 'Scale factors'
+    tags:
+      type: mapping
+      mapping:
+        page_breaker:
+          type: text
+          label: 'Breaker'
+        page_separator:
+          type: text
+          label: 'Separator'
+        pages:
+          type: pagerer.tags_display_config.progressive
+          label: 'Text strings for pages'
+        items:
+          type: pagerer.tags_display_config.progressive
+          label: 'Text strings for items'
+        item_ranges:
+          type: pagerer.tags_display_config.progressive
+          label: 'Text strings for item ranges'
+
+pagerer.style_config.adaptive:
+  type: pagerer.style_config_base
+  label: 'Adaptive pager style'
+  mapping:
+    quantity:
+      type: integer
+      label: 'Number of pages in the pager list'
+    fl_breakers:
+      type: boolean
+      label: 'Display first and last page breakers'
+    display_mode:
+      type: string
+      label: 'Display mode'
+    separator_display:
+      type: boolean
+      label: 'Display page separators'
+    breaker_display:
+      type: boolean
+      label: 'Display page breakers'
+    progr_links:
+      type: string
+      label: 'Progressive links mode'
+    tags:
+      type: mapping
+      mapping:
+        page_breaker:
+          type: text
+          label: 'Breaker'
+        page_separator:
+          type: text
+          label: 'Separator'
+        pages:
+          type: pagerer.tags_display_config.adaptive
+          label: 'Text strings for pages'
+        items:
+          type: pagerer.tags_display_config.adaptive
+          label: 'Text strings for items'
+        item_ranges:
+          type: pagerer.tags_display_config.adaptive
+          label: 'Text strings for item ranges'
+
+pagerer.style_config.mini:
+  type: pagerer.style_config_base
+  label: 'Mini pager style'
+  mapping:
+    display_mode:
+      type: string
+      label: 'Display mode'
+    widget_resize:
+      type: boolean
+      label: 'Automatic widget width adjustment'
+    widget_button:
+      type: string
+      label: 'Widget button'
+    tags:
+      type: mapping
+      mapping:
+        pages:
+          type: pagerer.tags_display_config.mini
+          label: 'Text strings for pages'
+        items:
+          type: pagerer.tags_display_config.mini
+          label: 'Text strings for items'
+
+pagerer.style_config.slider:
+  type: pagerer.style_config_base
+  label: 'Slider pager style'
+  mapping:
+    slider_width:
+      type: integer
+      label: 'Slider width'
+    slider_action:
+      type: string
+      label: 'Slider action confirmation mode'
+    slider_action_timeout:
+      type: integer
+      label: 'Slider confirmation timeout'
+    slider_navigation_icons:
+      type: string
+      label: 'Slider navigation icons mode'
+    tags:
+      type: mapping
+      mapping:
+        pages:
+          type: pagerer.tags_display_config.slider
+          label: 'Text strings for pages'
+        items:
+          type: pagerer.tags_display_config.slider
+          label: 'Text strings for items'
+        item_ranges:
+          type: pagerer.tags_display_config.slider
+          label: 'Text strings for item ranges'
+
+pagerer.style_config.scrollpane:
+  type: pagerer.style_config_base
+  label: 'Scrollpane pager style'
+  mapping:
+    quantity:
+      type: integer
+      label: 'Number of pages in the pager list'
+    separator_display:
+      type: boolean
+      label: 'Display page separators'
+    tags:
+      type: mapping
+      mapping:
+        page_separator:
+          type: text
+          label: 'Separator'
+        pages:
+          type: pagerer.tags_display_config.scrollpane
+          label: 'Text strings for pages'
+        items:
+          type: pagerer.tags_display_config.scrollpane
+          label: 'Text strings for items'
+        item_ranges:
+          type: pagerer.tags_display_config.scrollpane
+          label: 'Text strings for item ranges'
+
+pagerer.style_config.multipane:
+  type: mapping
+  label: 'Multipane pager style'
+  mapping:
+    preset:
+      type: string
+      label: 'Pagerer preset entity'
+    panes:
+      type: pagerer.multipane
+      label: 'Pagerer panes'
+
+pagerer.pane:
+  type: mapping
+  mapping:
+    style:
+      type: string
+      label: 'Style'
+    config:
+      type: pagerer.style_config.[%parent.style]
+      label: 'Style configuration'
+
+pagerer.multipane:
+  type: mapping
+  mapping:
+    left:
+      type: pagerer.pane
+      label: 'Left pane'
+    center:
+      type: pagerer.pane
+      label: 'Center pane'
+    right:
+      type: pagerer.pane
+      label: 'Right pane'

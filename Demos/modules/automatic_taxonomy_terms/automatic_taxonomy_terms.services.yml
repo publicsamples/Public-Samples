@@ -1,0 +1,17 @@
+services:
+  automatic_taxonomy_terms.vocabulary_config:
+    class: Drupal\automatic_taxonomy_terms\Config\VocabularyConfig
+    arguments:
+      - '@config.factory'
+      - '@current_route_match'
+      - '@entity_type.manager'
+      - '@entity_type.bundle.info'
+  automatic_taxonomy_terms.event_subscriber:
+    class: Drupal\automatic_taxonomy_terms\Event\EventSubscriber
+    arguments:
+      - '@automatic_taxonomy_terms.vocabulary_config'
+      - '@token'
+      - '@entity_type.manager'
+      - '@entity_field.manager'
+    tags:
+      - { name: 'event_subscriber' }

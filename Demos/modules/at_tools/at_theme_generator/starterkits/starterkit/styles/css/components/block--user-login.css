@@ -1,0 +1,59 @@
+/**
+ * Block User Login
+ * Style the theme settings for login block (horizontal, placeholders etc).
+ ============================================================================ */
+.block-plugin-id--user-login-block .form-required:after {
+  display: none;
+}
+
+.block-plugin-id--user-login-block .item-list__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.block-plugin-id--user-login-block .item-list__list a {
+  display: block;
+}
+
+.is-horizontal-login-block {
+  margin: 0.625rem 0 1rem;
+}
+
+.is-horizontal-login-block .block__inner:before, .is-horizontal-login-block .block__inner:after {
+  content: " ";
+  display: table;
+}
+
+.is-horizontal-login-block .block__inner:after {
+  clear: both;
+}
+
+.is-horizontal-login-block .block__title {
+  font-family: inherit;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.is-horizontal-login-block .block__title,
+.is-horizontal-login-block .block__content,
+.is-horizontal-login-block .user-login-form,
+.is-horizontal-login-block .user-login-form > div,
+.is-horizontal-login-block .form-item,
+.is-horizontal-login-block .form-actions {
+  float: left;
+  margin: 0 0.3125rem 0 0;
+}
+
+.is-horizontal-login-block form,
+.is-horizontal-login-block .form-item,
+.is-horizontal-login-block .form-actions {
+  margin: 0;
+}
+
+.is-horizontal-login-block label {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+/*# sourceMappingURL=block--user-login.css.map */

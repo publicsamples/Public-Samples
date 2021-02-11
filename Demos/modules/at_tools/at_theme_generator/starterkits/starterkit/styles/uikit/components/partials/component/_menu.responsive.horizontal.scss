@@ -1,0 +1,31 @@
+/**
+ * Basic Horizontal Menu
+ * This will hide all sub-menus no matter what, it has the advantage over the
+ * drop menu of not requiring a width on menu items or arrows.
+ */
+
+@include horizontal($arrows: false);
+
+.ms-horizontal {
+  .rm-block__content {
+    .menu__link {
+      @include output-rhythm(padding, $xx-small $large);
+
+      &:before,
+      &:after {
+        content: "";
+        float: none;
+        width: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  // Header second specific styling.
+  .pr-header__header-second {
+    .menu {
+      //float: #{$flow-to};
+    }
+  }
+}
+

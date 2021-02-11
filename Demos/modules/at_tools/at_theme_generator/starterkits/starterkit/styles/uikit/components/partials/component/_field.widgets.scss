@@ -1,0 +1,108 @@
+/**
+ * Field widgets.
+ ============================================================================ */
+
+form {
+  .field-edit-link {
+    margin: 0 0.3em;
+  }
+
+  .field-multiple-table {
+    margin: 0;
+
+    .field-multiple-drag {
+      width: 30px;
+      padding-right: 0;
+
+      .tabledrag-handle {
+        padding-right: .5em;
+      }
+
+      // RTL for table drag.
+      [dir="rtl"] & {
+        padding-left: 0;
+
+        .tabledrag-handle {
+          padding-left: .5em;
+        }
+      }
+    }
+  }
+
+  .field-add-more-submit {
+    margin: .5em 0 0;
+  }
+}
+
+
+// Image field widget.
+.field--widget-image-image {
+  padding: 0.625em;
+  border: $border-width $border-style;
+  border-radius: $border-radius;
+  @include output-rhythm(margin-bottom, $medium);
+
+  .form-file {
+    padding: 0;
+  }
+
+  .form-type-managed-file {
+    margin-bottom: 0;
+  }
+
+  .image-preview {
+    @include output-rhythm(padding, 0 0 $medium);
+  }
+
+  .image-widget-data {
+    > div:first-child {
+      margin-top: 0;
+    }
+
+    .form-submit {
+      float: #{$flow-to};
+      margin: 0;
+    }
+  }
+
+  // Multi-value field.
+  details {
+    margin: -0.625em;
+    border: 0;
+
+    table {
+      .button {
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+
+// Entity references.
+div[class*="field--widget-entity-reference"] {
+
+  .responsive-table {
+    margin: 0;
+  }
+
+  div.clearfix:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @include output-rhythm(margin-bottom, $medium);
+
+    .dropbutton-wrapper {
+      @include output-rhythm(margin, 0 4px 0 0);
+    }
+
+    // Paragraph fields.
+    .placeholder {
+      @include output-rhythm(padding, 0 4px);
+    }
+  }
+
+  .field-add-more-submit {}
+}
+
+

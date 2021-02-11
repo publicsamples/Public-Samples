@@ -1,0 +1,31 @@
+.fourcol-split-row-12--8-4--12 .hr--2-3 .l-r:first-child {
+  width: 66.66667%;
+}
+
+.fourcol-split-row-12--8-4--12 .hr--2-3 .l-r:last-child {
+  width: 33.33333%;
+}
+
+.fourcol-split-row-12--8-4--12 .hr--1-2-3 .l-r:nth-child(2) {
+  width: 66.66667%;
+}
+
+.fourcol-split-row-12--8-4--12 .hr--1-2-3 .l-r:last-child {
+  width: 33.33333%;
+}
+
+.fourcol-split-row-12--8-4--12 .hr--2-3-4 .l-r:first-child {
+  width: 66.66667%;
+}
+
+.fourcol-split-row-12--8-4--12 .hr--2-3-4 .l-r:nth-child(2) {
+  width: 33.33333%;
+}
+
+.fourcol-split-row-12--8-4--12 .arc--4 .l-r:nth-child(2) {
+  width: 66.66667%;
+}
+
+.fourcol-split-row-12--8-4--12 .arc--4 .l-r:nth-child(3) {
+  width: 33.33333%;
+}

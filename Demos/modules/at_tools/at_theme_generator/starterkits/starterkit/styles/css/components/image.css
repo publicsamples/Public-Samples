@@ -1,0 +1,68 @@
+/**
+ * Images
+ ============================================================================ */
+@media screen and (min-width: 60.0625em) {
+  img.align-left,
+  figure.align-left,
+  .field-type-image__figure.align-left {
+    margin: 0 1rem 1rem 0;
+  }
+  img.align-right,
+  figure.align-right,
+  .field-type-image__figure.align-right {
+    margin: 0 0 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 60em) {
+  img.align-left, img.align-right,
+  figure.align-left,
+  figure.align-right,
+  .field-type-image__figure.align-left,
+  .field-type-image__figure.align-right {
+    float: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+}
+
+img.align-center,
+figure.align-center,
+.field-type-image__figure.align-center {
+  margin-bottom: 1rem;
+}
+
+img.align-center figcaption,
+figure.align-center figcaption,
+.field-type-image__figure.align-center figcaption {
+  text-align: center;
+}
+
+img[class*="align-"],
+figure[class*="align-"],
+.field-type-image__figure[class*="align-"] {
+  clear: both;
+}
+
+.cke_widget_wrapper.align-left {
+  margin: 0 1rem 1rem 0;
+}
+
+.cke_widget_wrapper.align-right {
+  margin: 0 0 1rem 1rem;
+}
+
+.cke_widget_wrapper.align-center {
+  margin-bottom: 1rem;
+}
+
+.cke_widget_wrapper.align-center figcaption {
+  text-align: center;
+}
+
+.cke_widget_wrapper[class*="align-"] {
+  clear: both;
+}
+/*# sourceMappingURL=image.css.map */

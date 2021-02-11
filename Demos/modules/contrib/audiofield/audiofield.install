@@ -1,0 +1,98 @@
+<?php
+
+/**
+ * @file
+ * Installation file for Audiofield module.
+ */
+
+use Drupal\Core\Link;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_requirements().
+ */
+function audiofield_requirements($phase) {
+  $requirements = [];
+
+  if ($phase == 'runtime') {
+    $requirements['audiofield'] = [
+      'title' => t('AudioField Players'),
+      'severity' => REQUIREMENT_INFO,
+      'value' => '',
+      'description' => [
+        'installed' => [
+          '#theme' => 'item_list',
+          '#items' => [],
+          '#title' => '',
+          '#list_type' => 'ul',
+          '#attributes' => [],
+        ],
+        'outdated' => [
+          '#theme' => 'item_list',
+          '#items' => [],
+          '#title' => '',
+          '#list_type' => 'ul',
+          '#attributes' => [],
+        ],
+        'uninstalled' => [
+          '#theme' => 'item_list',
+          '#items' => [],
+          '#title' => '',
+          '#list_type' => 'ul',
+          '#attributes' => [],
+        ],
+      ],
+    ];
+
+    // Loop over each plugin and make sure it's library is installed.
+    foreach (\Drupal::service('plugin.manager.audiofield')->getDefinitions() as $pluginName => $plugin) {
+      // Create an instance of this plugin.
+      $pluginInstance = \Drupal::service('plugin.manager.audiofield')->createInstance($pluginName);
+
+      // Only check install if there is a library for the plugin.
+      if ($pluginInstance->getPluginLibrary()) {
+
+        // Check if the plugin is installed.
+        if (!$pluginInstance->checkInstalled()) {
+          // Show a warning here as something is not installed.
+          $requirements['audiofield']['description']['uninstalled']['#prefix'] = t('Unavailable players');
+          // Try to print the install directory (will fail if the library itself
+          // is broken somehow).
+          try {
+            $requirements['audiofield']['description']['uninstalled']['#items'][] = t(':library_name library has not been installed. Download from <a href=":url">:url</a> and install in %library', [
+              ':library_name' => $pluginInstance->getPluginTitle(),
+              ':url' => $pluginInstance->getPluginRemoteSource(),
+              '%library' => $pluginInstance->getPluginLibraryPath(),
+            ]);
+          }
+          catch (Exception $e) {
+            $requirements['audiofield']['description']['uninstalled']['#items'][] = t(':library_name library has not been installed. Download and install in %library', [
+              ':library_name' => $pluginInstance->getPluginTitFle(),
+              '%library' => $pluginInstance->getPluginLibraryPath(),
+            ]);
+          }
+        }
+        elseif (!$pluginInstance->checkVersion(FALSE)) {
+          $requirements['audiofield']['description']['outdated']['#prefix'] = t('Out of Date players');
+          $requirements['audiofield']['description']['outdated']['#items'][] = t(':library_name library (version @version) is installed at %library, but is out of date. Please update to the latest version available at @url, or by running %command', [
+            ':library_name' => $pluginInstance->getPluginTitle(),
+            '%library' => $pluginInstance->getPluginLibraryPath(),
+            '@version' => $pluginInstance->getPluginLibraryVersion(),
+            '@url' => Link::fromTextAndUrl($pluginInstance->getPluginRemoteSource(), Url::fromUri($pluginInstance->getPluginRemoteSource()))->toString(),
+            '%command' => 'drush audiofield-update',
+          ]);
+        }
+        else {
+          $requirements['audiofield']['description']['installed']['#prefix'] = t('Available players');
+          $requirements['audiofield']['description']['installed']['#items'][] = t(':library_name library (version @version) has been successfully installed at %library', [
+            ':library_name' => $pluginInstance->getPluginTitle(),
+            '@version' => $pluginInstance->getPluginLibraryVersion(),
+            '%library' => $pluginInstance->getPluginLibraryPath(),
+          ]);
+        }
+      }
+    }
+  }
+
+  return $requirements;
+}

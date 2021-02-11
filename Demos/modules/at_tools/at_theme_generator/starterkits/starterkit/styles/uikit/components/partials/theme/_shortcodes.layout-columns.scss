@@ -1,0 +1,26 @@
+/**
+ * Shortcodes (Layout Columns)
+ ============================================================================ */
+
+@media #{$wide} {
+  .lc-quarter {
+    width: 25%;
+  }
+
+  .lc-half {
+    width: 50%;
+  }
+
+  .lc-three-quarters {
+    width: 75%;
+  }
+
+  .lc-third {
+    width: 33.3334%;
+  }
+
+  .lc-two-thirds {
+    width: 66.6667%;
+  }
+}
+

@@ -1,0 +1,21 @@
+/*
+ * some players do not expect the box-sizing setting for Drupal 8, so we reset it here
+ */
+.audiofield {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+/*
+ * be certain all floated content is visible
+ */
+.audiofield:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/*
+ * properly align jPlayer circle player
+ */
+.cp-circle-frame {
+  text-align: center;
+}

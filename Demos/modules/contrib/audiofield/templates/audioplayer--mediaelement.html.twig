@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Default theme implementation for Media Element audio player.
+ *
+ * Available variables:
+ * - plugin_id: the name of the plugin being used for templating.
+ * - plugin_theme: the name of the specific plugin theme, if it exists.
+ * - files: array of render info for each file.
+ * - settings: array of settings for thie player.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="audiofield">
+  {% for file in files %}
+    <div class="audiofield-player">
+      <div class="mediaelementaudio_frame">
+        <audio id="mediaelement_player_{{ file.id }}" preload="{% if settings.audio_player_lazyload == 1 %}none{% else %}auto{% endif %}" {% if settings.audio_player_autoplay == 1 %} autoplay="autoplay" {% endif %} controls>
+          <source src="{{ file.url }}">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <label for="mediaelement_player_{{ file.id }}">{{ file.description }}</label>
+    </div>
+  {% endfor %}
+</div>

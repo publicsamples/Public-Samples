@@ -1,0 +1,31 @@
+/**
+ * Vertical tabs.
+ ============================================================================ */
+
+// Wrapper
+.vertical-tabs {
+  border: $border-width $border-style;
+}
+
+// Menu
+.vertical-tabs__menu {
+  border-top: $border-width $border-style;
+}
+
+.vertical-tabs__menu-item {
+  border: $border-width $border-style;
+  border-top: 0;
+
+  a {}
+  &.first {}
+  &.is-selected {
+    .vertical-tabs__menu-item-title {}
+  }
+}
+
+// Panes
+.vertical-tabs__panes {}
+.vertical-tabs__pane {}
+.details-wrapper {}
+
+

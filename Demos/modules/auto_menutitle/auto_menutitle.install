@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the auto_menutitle module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function auto_menutitle_install() {
+  // Set this module's weight to one higher than that of the menu_ui module.
+  $weight = \Drupal::config('core.extension')->get("module.menu_ui");
+  module_set_weight('auto_menutitle', $weight + 1);
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function auto_menutitle_uninstall() {
+  // Delete variables.
+  $node_types = array_keys(node_type_get_types());
+  foreach ($node_types as $node_type) {
+    \Drupal::state()->delete('auto_menutitle_' . $node_type);
+  }
+}

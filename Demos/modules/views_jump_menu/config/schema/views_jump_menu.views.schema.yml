@@ -1,0 +1,22 @@
+views.style.jump_menu:
+  type: views_style
+  label: 'Jump menu'
+  mapping:
+    class:
+      type: string
+      label: 'Class'
+    wrapper_class:
+      type: string
+      label: 'Wrapper class'
+    label_field:
+      type: string
+      label: 'Label field'
+    url_field:
+      type: string
+      label: 'URL field'
+    select_text:
+      type: label
+      label: 'Select text'
+    select_label:
+      type: label
+      label: 'Select label'

@@ -1,0 +1,50 @@
+/**
+ * Search results.
+ ============================================================================ */
+
+.item-list--search-results {
+  border-radius: $border-radius;
+}
+
+.search-results {
+  @include output-rhythm(margin-bottom, $medium);
+  @include output-rhythm(padding, $medium);
+
+  // Style the empty message.
+  &--empty h3 {
+    @include output-rhythm(font-size, $large);
+  }
+
+  &__item {
+    @include output-rhythm(margin-bottom, $x-large);
+    padding: 0;
+    list-style: none;
+  }
+}
+
+
+// Individual search result.
+.search-result {
+
+  &__title {
+    margin: 0;
+
+    a {}
+  }
+
+  // We assume, like Google and co, that most results get picked based on the
+  // title, not the snippet/description, so we make this smaller to enhance the
+  // visibility of the titles.
+  &__snippet-info {
+    @include output-rhythm(font-size, $medium * .875); // 14px
+  }
+
+  &__snippet {}
+  &__info {}
+
+  // search-snippet & search-info both use p
+  p {
+    margin: 0;
+  }
+}
+

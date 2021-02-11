@@ -1,0 +1,50 @@
+/**
+ * Field Image
+ ============================================================================ */
+
+// AT uses <figure> as the image field wrapper and <figcaption> for image captions.
+.field-type-image {
+
+  margin: 0;
+  padding: 0;
+
+  &.has-single {}
+  &.has-multiple {}
+
+  figure {
+    @include output-rhythm(margin-bottom, $medium);
+  }
+
+  // Wraps the img and figcaption tags for each item.
+  &__item {}
+
+  // If there is no image style set Firefox and other browsers will not respect max-width 100% inside a float.
+  // This can happen if the user does not set a style, so we are protecting the site from breaking.
+  .float-none {
+    float: none !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  // Be sure clearing is OK.
+  + .field-type-image {
+    .field__label {clear: both}
+  }
+}
+
+
+// Remove any floats and reset whitespace in mobile.
+@media #{$mobile-isolate} {
+  .field-type-image [class*="align-"] {
+    text-align: center; // cascades to figcaption
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    @include output-rhythm(margin-bottom, $medium);
+  }
+  .field-type-image figure[class*="align-"] {
+    display: block;
+  }
+}
+
+

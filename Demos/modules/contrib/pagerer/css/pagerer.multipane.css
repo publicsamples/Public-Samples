@@ -1,0 +1,30 @@
+/**
+ * @file
+ * Pagerer multipane CSS
+ */
+
+div.pagerer-container {
+  display: inline-table;
+  border: 0;
+  margin: 0.5em 0;
+  padding: 0;
+  width: 100%;
+}
+div.pagerer-panes {
+  display: table-row;
+  margin: 0;
+}
+div.pagerer-left-pane,
+div.pagerer-center-pane,
+div.pagerer-right-pane {
+  display: table-cell;
+}
+div.pagerer-left-pane ul.pager__items {
+  text-align: left;
+}
+div.pagerer-center-pane ul.pager__items {
+  text-align: center;
+}
+div.pagerer-right-pane ul.pager__items {
+  text-align: right;
+}

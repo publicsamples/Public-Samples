@@ -1,0 +1,31 @@
+/**
+ * Web fonts
+ ============================================================================ */
+
+/* Override Font Awesome classes. */
+.#{$fa-css-prefix}-border {
+  border: $border-style $border-width;
+  border-radius: $border-radius;
+}
+
+
+// FontFaceObserver will add/remove classes to the html element. By default we
+// only check if FontAwesome is loading.
+.fa-loaded {}
+
+/* Hide in-content icons if Font Awesome fails to load. */
+.fa-loading,
+.fa-unavailable {
+  .#{$fa-css-prefix} {
+    display: none;
+  }
+}
+
+
+// Typekit - styles to use before Typekit is loaded.
+// SEE http://help.typekit.com/customer/portal/articles/6852
+.wf-loading {}
+
+// Typekit - styles to use after Typekit is loaded.
+.wf-active {}
+

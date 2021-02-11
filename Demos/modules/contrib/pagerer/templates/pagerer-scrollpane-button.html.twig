@@ -1,0 +1,15 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a pagerer scrollpane button.
+ *
+ * Available variables:
+ * - scope: The scope of the button navigation (first/previous/next/last).
+ * - title: The text for the title attribute (used to present help text to
+ *   user when hovering with the mouse on the element.
+ * - text: The text to be displayed within the button.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class='pagerer-scrollpane-button pagerer-{{ scope }}' title='{{ title }}'>{{- text -}}</div>

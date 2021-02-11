@@ -1,0 +1,54 @@
+@import "../page-layout-base";
+//
+// Main Content 4-8--12 Source Ordered
+//
+// This layout floats the first region right.
+//
+//   - first
+//   - second
+//   - third
+//
+// But you want it to appear like this:
+//
+//   -------------------------------------
+//  |   second  |          first         |
+//   -------------------------------------
+//  |                third               |
+//   -------------------------------------
+
+.threecol-source-ordered-4-8--12 {
+
+  // Region first and second are active.
+  .hr--1-2 {
+    .l-r {
+      &:first-child {
+        width: span(8 of 12);
+        order: 2;
+      }
+
+      &:last-child {
+        width: span(4 of 12);
+        order: 1;
+      }
+    }
+  }
+
+  // Three regions active.
+  .arc--3 {
+    .l-r {
+      &:first-child {
+        width: span(8 of 12);
+        order: 2;
+      }
+
+      &:nth-child(2) {
+        width: span(4 of 12);
+        order: 1;
+      }
+
+      &:last-child {
+        order: 3;
+      }
+    }
+  }
+}

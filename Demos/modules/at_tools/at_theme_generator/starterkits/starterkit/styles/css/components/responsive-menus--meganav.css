@@ -1,0 +1,114 @@
+/**
+ * Mega Nav
+ * Hamburger menu that shows the top level items horizontal, and when expanded
+ * the top level items show vertically with sub-menus horizontal.
+ * This style was borrowed from http://www.theguardian.com
+ ============================================================================ */
+.ms-meganav .rm-region,
+.ms-meganav .rm-block {
+  position: relative;
+}
+
+.ms-meganav .rm-toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 200;
+  padding: 0;
+  margin: 0.125rem 0 0;
+}
+
+.ms-meganav .rm-toggle__link, .ms-meganav .rm-toggle__link:hover, .ms-meganav .rm-toggle__link:focus, .ms-meganav .rm-toggle__link:active {
+  padding: 0.3125rem 0.375rem 0.1875rem;
+}
+
+.ms-meganav .rm-toggle__label {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  word-wrap: normal;
+  font: 0/0 a;
+}
+
+.ms-meganav .rm-block__content {
+  -webkit-transition: all, 225ms, ease-in-out;
+  -o-transition: all, 225ms, ease-in-out;
+  transition: all, 225ms, ease-in-out;
+}
+
+.ms-meganav .rm-block__content .menu {
+  padding: 0;
+}
+
+.ms-meganav .rm-block__content .menu .menu__link {
+  padding: 0.5rem 1rem;
+}
+
+.ms-meganav .rm-block__content .menu .menu__link:before, .ms-meganav .rm-block__content .menu .menu__link:after {
+  content: "";
+  display: none;
+}
+
+.ms-meganav .rm-block__content .menu-level-1 > .menu__item {
+  float: left;
+}
+
+.ms-meganav .rm-block__content .menu-level-2 {
+  display: none;
+  opacity: 0.001;
+}
+
+.ms-meganav.rm-is-open .rm-block__content {
+  padding: 0;
+  margin: 0;
+}
+
+.ms-meganav.rm-is-open .rm-block__content .menu-level-1 > .menu__item {
+  float: none;
+  margin-right: 2.5rem;
+}
+
+.ms-meganav.rm-is-open .rm-block__content .menu-level-1 > .menu__item:before, .ms-meganav.rm-is-open .rm-block__content .menu-level-1 > .menu__item:after {
+  content: " ";
+  display: table;
+}
+
+.ms-meganav.rm-is-open .rm-block__content .menu-level-1 > .menu__item:after {
+  clear: both;
+}
+
+.ms-meganav.rm-is-open .rm-block__content .menu-level-1 > .menu__item:last-child {
+  border-bottom: none;
+}
+
+.ms-meganav.rm-is-open .rm-block__content .menu-level-1 > .menu__item .menu__link {
+  float: left;
+}
+
+.ms-meganav.rm-is-open .rm-block__content .menu-level-1 > .menu__item > span > .menu__link {
+  width: 12em;
+}
+
+.ms-meganav.rm-is-open .rm-block__content .menu-level-2 {
+  display: block;
+  float: left;
+  opacity: 1;
+}
+
+.ms-meganav.rm-is-open .rm-block__content .menu-level-2 .menu {
+  padding: 0;
+}
+
+.ms-meganav.rm-is-open .rm-block__content .menu-level-2 .menu,
+.ms-meganav.rm-is-open .rm-block__content .menu-level-2 .menu__item {
+  float: left;
+}
+
+.ms-meganav.rm-is-open .rm-block__content .menu-level-2 .menu .menu__link,
+.ms-meganav.rm-is-open .rm-block__content .menu-level-2 .menu__item .menu__link {
+  width: auto;
+}
+/*# sourceMappingURL=responsive-menus--meganav.css.map */

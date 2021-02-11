@@ -1,0 +1,34 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a view template to display a jump menu.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the container.
+ * - rows: A list of rows for this jump menu.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's contents.
+ * - title: The title of this group of rows. May be empty.
+ * - select: @todo.
+ *   - type: Starting tag will be either a ul or ol.
+ *   - attributes: HTML attributes for the list element.
+ *
+ * @see template_preprocess_views_view_list()
+ *
+ * @ingroup themeable
+ */
+#}
+{{ attach_library('views_jump_menu/views-jump-menu') }}
+{% if attributes -%}
+<div{{ attributes }}>
+{% endif %}
+  {% if title %}<h3>{{ title }}</h3>{% endif %}
+  <select{{ select.attributes }}{% if select.select_label %} aria-label="{{ select.select_label }}"{% endif %}>
+    <option data-url="">{{ select.select_text }}</option>
+  {% for option in select.options %}
+    <option data-url="{{ option.url }}">{{ option.label|striptags }}</option>
+  {% endfor %}
+  </select>
+{% if attributes -%}
+</div>
+{% endif %}

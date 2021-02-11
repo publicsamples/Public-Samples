@@ -1,0 +1,86 @@
+/**
+ * Basic styles to support the Responsive Tables jQuery feature.
+ *  - to enable responsive tables turn on the extension in your
+ *    themes appearance settings and apply the class 'responsive-enabled'
+ *    to any tables you want to make responsive.
+ ============================================================================ */
+
+// This is a wrapper DIV around the responsive-enabled table, it is added via JS
+// when the Responsive Tables theme extension is enabled and you have added the
+// class "responsive-enabled" to a table.
+.responsive-table {
+  position: relative;
+  @include output-rhythm(margin, 0 0 $large);
+
+  &__scroll {
+  	width: 100%;
+  	overflow-x: auto;
+
+    &::-webkit-scrollbar-thumb {
+    	border-radius: 8px;
+    	border: 3px solid #ffffff;
+    	background-color: rgba(0, 0, 0, .3);
+    }
+  }
+
+  &__message {
+    @include output-rhythm(font-size, $small);
+
+    em:after {
+      font-family: $icon-font;
+      content: $fa-var-long-arrow-right;
+      margin: 0;
+      @include output-rhythm(padding, 0 3px);
+      @include output-rhythm(width, $medium);
+
+      // Wait for FontAwesome to load.
+      display: none;
+      .fa-loaded & {
+        display: inline-block;
+      }
+
+      [dir="rtl"] & {
+        content: $fa-var-long-arrow-left;
+      }
+    }
+  }
+
+  table {
+    margin-bottom: 0;
+  }
+}
+
+
+/// Hide priority columns in small screens. Normally these classes are set when
+// creating a table with Views, or you can add classes to tables created using
+// the CK Editor. SEE https://www.youtube.com/watch?v=Dn2RY9tvcfM
+@media #{$mobile} {
+  th.priority-low,
+  td.priority-low,
+  th.priority-medium,
+  td.priority-medium {
+    display: none;
+  }
+}
+
+
+table {
+  // responsive-enabled is the class you add to tables to make them responsive,
+  // after having enabled the Responsive Tables theme extension.
+  &.responsive-enabled {}
+
+  // has-overflow is added to the table element via JS if you have the Responsive
+  // Table theme extension enabled, have added the "responsive-enabled" class to
+  // a table and the tables width overflows the viewport.
+  &.has-overflow {}
+
+  // Drupal core includes a responsive tables feature, we're not using it by
+  // default but we can set some styles for core tables by targeting it's selector.
+  &.responsive-enabled {
+    width: 100%;
+  }
+}
+
+
+
+

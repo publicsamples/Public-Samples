@@ -1,0 +1,16 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a pagerer slider.
+ *
+ * Available variables:
+ * - id: The id attribute, used to link with the widget state in
+ *   drupalSettings.
+ * - title: The text for the title attribute, used to present help text to
+ *   user when hovering with the mouse on the element.
+ *
+ * @ingroup themeable
+ */
+#}
+{{ attach_library('pagerer/slider') }}
+<div class='pagerer-slider' id="{{ id }}" title="{{ title }}" />

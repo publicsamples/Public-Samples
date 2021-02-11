@@ -1,0 +1,28 @@
+//
+// Global layout declarations.
+//
+// ---------------------------------------------------------------------------
+
+// Import base.
+@import "page-layout-base";
+
+.page {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+.l-rw {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: $row-direction;
+  max-width: 75em;
+  width: 100%;
+}
+
+.l-r {
+  flex: 0 0 auto; // Flex basis auto to support IE10/11
+  padding: 0 0.625em;
+  width: 100%;
+}
+

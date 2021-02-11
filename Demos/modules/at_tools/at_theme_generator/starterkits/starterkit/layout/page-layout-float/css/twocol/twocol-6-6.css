@@ -1,0 +1,9 @@
+.twocol-6-6 .arc--2 .l-r {
+  width: 50%;
+  float: left;
+}
+
+.twocol-6-6 .arc--2 .l-r:last-child {
+  float: right;
+  margin-right: 0;
+}

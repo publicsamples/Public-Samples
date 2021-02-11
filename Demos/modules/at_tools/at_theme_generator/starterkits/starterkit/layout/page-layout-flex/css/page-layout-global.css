@@ -1,0 +1,19 @@
+.page {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+.l-rw {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 75em;
+  width: 100%;
+}
+
+.l-r {
+  flex: 0 0 auto;
+  padding: 0 0.625em;
+  width: 100%;
+}

@@ -1,0 +1,32 @@
+@import "../page-layout-base";
+//
+// Four Regions 3-3-3-3
+//
+// First region  : 3 grid columns.
+// Second region : 3 grid columns.
+// Third region  : 3 grid columns.
+// Fourth region : 3 grid columns.
+//
+// ---------------------------------------------------------------------------
+
+.fourcol-3-3-3-3 {
+
+  // Two active regions.
+  .arc--2 .l-r {
+    width: span(6 of 12);
+  }
+
+  // Three active regions.
+  .arc--3 .l-r {
+    width: span(4 of 12);
+  }
+
+  // Four active regions.
+  .arc--4 .l-r {
+    width: span(3 of 12);
+  }
+
+  // Last child is always last.
+  .l-rw:not(.arc--1) .l-r:last-child {}
+}
+

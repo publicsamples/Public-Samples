@@ -1,0 +1,11 @@
+{
+  "name": "drupal/static_generator",
+  "type": "drupal-module",
+  "description": "Generate a static version of a Drupal site.",
+  "homepage": "http://drupal.org/project/static_genertor",
+  "license": "GPL-2.0+",
+  "require": {
+    "drupal/core": "~8.6"
+  }
+}
+

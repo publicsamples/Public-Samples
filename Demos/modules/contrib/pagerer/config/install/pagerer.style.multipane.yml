@@ -1,0 +1,12 @@
+langcode: en
+default_config:
+  panes:
+    left:
+      style: none
+      config: {  }
+    center:
+      style: standard
+      config: {  }
+    right:
+      style: none
+      config: {  }

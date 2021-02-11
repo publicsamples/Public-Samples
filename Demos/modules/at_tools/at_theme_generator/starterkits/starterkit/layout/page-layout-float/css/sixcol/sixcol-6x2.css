@@ -1,0 +1,30 @@
+.sixcol-6x2 .arc--2 .l-r {
+  width: 50%;
+  float: left;
+}
+
+.sixcol-6x2 .arc--3 .l-r {
+  width: 33.33333%;
+  float: left;
+}
+
+.sixcol-6x2 .arc--4 .l-r {
+  width: 25%;
+  float: left;
+}
+
+.sixcol-6x2 .arc--5 .l-r {
+  width: 18.64407%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+.sixcol-6x2 .arc--6 .l-r {
+  width: 16.66667%;
+  float: left;
+}
+
+.sixcol-6x2 .l-rw:not(.arc--1) .l-r:last-child {
+  float: right;
+  margin-right: 0;
+}

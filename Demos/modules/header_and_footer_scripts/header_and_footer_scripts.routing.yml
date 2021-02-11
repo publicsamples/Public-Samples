@@ -1,0 +1,21 @@
+header_and_footer_scripts.admin.header:
+  path: '/admin/config/development/header-and-footer-scripts/header'
+  defaults:
+    _form: '\Drupal\header_and_footer_scripts\Form\HeaderForm'
+    _title: 'Header Footer Scripts Settings for head'
+  requirements:
+    _permission: 'header_and_footer_scripts_settings'
+header_and_footer_scripts.admin.body:
+  path: '/admin/config/development/header-and-footer-scripts/body'
+  defaults:
+    _form: '\Drupal\header_and_footer_scripts\Form\BodyForm'
+    _title: 'Header and Footer Scripts Settings for Body'
+  requirements:
+    _permission: 'header_and_footer_scripts_settings'
+header_and_footer_scripts.admin.footer:
+  path: '/admin/config/development/header-and-footer-scripts/footer'
+  defaults:
+    _form: '\Drupal\header_and_footer_scripts\Form\FooterForm'
+    _title: 'Header and Footer Scripts Settings for Footer'
+  requirements:
+    _permission: 'header_and_footer_scripts_settings'

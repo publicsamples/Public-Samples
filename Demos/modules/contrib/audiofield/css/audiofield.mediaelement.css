@@ -1,0 +1,6 @@
+/*
+ * Mediaelement requires custom styling to avoid dual-element overlay.
+ */
+.mediaelementaudio_frame .mejs__mediaelement {
+  display: none;
+}

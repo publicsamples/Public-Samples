@@ -1,0 +1,31 @@
+/**
+ * Page
+ *  - for page.html.twig and region markup.
+ ============================================================================ */
+.pr-leaderboard .block:not(.has-title) {
+  margin: 0;
+}
+
+.pr-leaderboard .block:not(.has-title) p {
+  margin: 1rem 0 0;
+}
+
+.pr-leaderboard .block ul,
+.pr-leaderboard .block ol {
+  margin: 0;
+}
+
+.pr-navbar .block {
+  margin: 0;
+}
+
+.pr-navbar .block ul {
+  margin: 0;
+}
+
+@media screen and (min-width: 60.0625em) {
+  .pr-navbar__rw {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=page.css.map */

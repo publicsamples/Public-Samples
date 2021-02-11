@@ -1,0 +1,39 @@
+// Easily generate button style variants.
+
+@mixin button-variant(
+  $button-variant-color,
+  $button-variant-background-color,
+  $has-borders: true,
+  $button-variant-border-width: 1px,
+  $button-variant-border-color: #ccc,
+  $button-variant-border-style: solid,
+  $button-variant-color-hover: $button-variant-color,
+  $button-variant-background-color-hover: $button-variant-background-color,
+  $button-variant-border-color-hover: $button-variant-border-color
+) {
+  color: $button-variant-color;
+  background-color: $button-variant-background-color;
+  //opacity: 1;
+
+  @if $has-borders == true {
+    border: $button-variant-border-width $button-variant-border-color $button-variant-border-style;
+  }
+
+  // Buttons can be links.
+  &:link,
+  &:visited {
+    color: $button-variant-color;
+    background-color: $button-variant-background-color;
+    border-color: $button-variant-border-color;
+  }
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: $button-variant-color-hover;
+    background-color: $button-variant-background-color-hover;
+    border-color: $button-variant-border-color-hover;
+    //opacity: 0.9;
+  }
+}

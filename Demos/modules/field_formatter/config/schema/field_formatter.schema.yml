@@ -1,0 +1,35 @@
+field.formatter.settings.field_formatter_from_view_display:
+  type: mapping
+  mapping:
+    view_mode:
+      label: 'View mode'
+      type: string
+    field_name:
+      label: 'Machine name of the field'
+      type: string
+
+field.formatter.settings.field_formatter_with_inline_settings:
+  type: mapping
+  mapping:
+    field_name:
+      label: 'Machine name of the field'
+      type: string
+    type:
+      label: 'Machine name of the formatter'
+      type: string
+    settings:
+      label: 'Formatter settings'
+      type: field.formatter.settings.[%parent.type]
+    label:
+      label: 'Target field label visibility setting'
+      type: string
+
+field.formatter.settings.field_link:
+  type: mapping
+  mapping:
+    type:
+      label: 'Machine name of the formatter'
+      type: string
+    settings:
+      label: 'Formatter settings'
+      type: field.formatter.settings.[%parent.type]

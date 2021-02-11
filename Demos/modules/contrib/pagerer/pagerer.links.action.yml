@@ -1,0 +1,5 @@
+pagerer.preset_add:
+  route_name: pagerer.preset_add
+  title: 'Add pager'
+  appears_on:
+    - entity.pagerer_preset.collection

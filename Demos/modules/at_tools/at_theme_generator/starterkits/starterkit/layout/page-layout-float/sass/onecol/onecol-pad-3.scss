@@ -1,0 +1,8 @@
+@import "../page-layout-base";
+//
+// pad three
+//
+
+.onecol-pad-3 .l-r {
+  @include pad(3 of 12);
+}

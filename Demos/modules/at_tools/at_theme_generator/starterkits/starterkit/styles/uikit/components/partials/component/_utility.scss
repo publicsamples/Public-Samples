@@ -1,0 +1,53 @@
+/**
+ * Utility
+ * - useful classes to be used anywhere.
+ ============================================================================ */
+
+// FlexPosition styles. See at.flexPosition.js
+.is-flexposition-container {
+  display: flex;
+  flex-direction: $row-direction;
+  height: 100%;
+  width: 100%;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: $row-direction;
+  width: 100%;
+}
+
+
+.is-vertical-center {
+  align-items: center;
+}
+
+
+.is-vertical-top {
+  align-items: flex-start;
+}
+
+
+.is-vertical-bottom {
+  align-items: flex-end;
+}
+
+
+.is-horizontal-center {
+  justify-content: center;
+}
+
+
+.is-horizontal-left {
+  justify-content: flex-start;
+}
+
+
+.is-horizontal-right {
+  justify-content: flex-end;
+}
+
+
+

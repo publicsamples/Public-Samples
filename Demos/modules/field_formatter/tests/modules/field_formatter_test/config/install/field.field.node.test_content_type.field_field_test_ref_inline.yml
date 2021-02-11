@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_field_test_ref_inline
+    - node.type.test_content_type
+    - taxonomy.vocabulary.test_vocabulary
+id: node.test_content_type.field_field_test_ref_inline
+field_name: field_field_test_ref_inline
+entity_type: node
+bundle: test_content_type
+label: field_test_ref_inline
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      test_vocabulary: test_vocabulary
+      test_vocabulary2: test_vocabulary2
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

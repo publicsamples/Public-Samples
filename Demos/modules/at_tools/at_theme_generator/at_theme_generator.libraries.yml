@@ -1,0 +1,16 @@
+# Appearance settings.
+appearance_settings:
+  version: "8.x-1.0"
+  css:
+    theme:
+      css/appearance_settings.css: {}
+
+# Generator styles.
+theme_generator:
+  version: 8.x-1.0
+  css:
+    theme:
+      css/appearance_generator.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.machine-name

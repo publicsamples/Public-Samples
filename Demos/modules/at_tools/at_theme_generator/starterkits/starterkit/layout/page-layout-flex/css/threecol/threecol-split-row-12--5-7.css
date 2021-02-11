@@ -1,0 +1,9 @@
+.threecol-split-row-12--5-7 .hr--2-3 .l-r,
+.threecol-split-row-12--5-7 .arc--3 .l-r:nth-child(2) {
+  width: 41.66667%;
+}
+
+.threecol-split-row-12--5-7 .hr--2-3 .l-r:last-child,
+.threecol-split-row-12--5-7 .arc--3 .l-r:last-child {
+  width: 58.33333%;
+}

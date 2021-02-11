@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ * AT Theme Generator install file.
+ */
+
+use Drupal\at_theme_generator\File\DirectoryOperations;
+
+/**
+ * Implements hook_install().
+ */
+function at_theme_generator_install() {
+  $list_info = \Drupal::service('theme_handler')->listInfo();
+  $theme = 'at_generator';
+
+  // Check if the old at_generator is installed.
+  if (array_key_exists($theme, $list_info)) {
+    // Check if the old generator theme is default, if so replace with Bartik.
+    // Users sometimes made the mistake of setting the old generator theme as
+    // default which totally borks their site, we use this module install to
+    // to try and fix that issue for them.
+    if ($theme == \Drupal::service('theme_handler')->getDefault()) {
+      \Drupal::service('theme_handler')->setDefault('bartik');
+      drupal_set_message(t('Bartik set as default theme.'), 'status');
+    }
+    // Now uninstall it.
+    \Drupal::service('theme_installer')->uninstall([$theme]);
+  }
+  // Now remove the old generator theme.
+  $gen_path = drupal_get_path('theme', $theme);
+  if (!empty($gen_path)) {
+    $directoryOperations = new DirectoryOperations();
+    $directoryOperations->directoryRemove($gen_path);
+    drupal_set_message(t('Old at_generator theme has been removed, please use the new Theme Generator tab in Appearance settings.'), 'status');
+  }
+}
+
+/**
+ * Assign "administer at_theme_generator" permission to roles currently assigned the "administer themes" permission.
+ */
+function at_theme_generator_update_8001() {
+  if ($roles = user_roles(FALSE, 'administer themes')) {
+    foreach ($roles as $rid => $role) {
+      user_role_grant_permissions($rid, ['administer at_theme_generator']);
+    }
+  }
+}

@@ -1,0 +1,91 @@
+<?php
+
+/**
+ * @file
+ * Contains views_jump_menu.module.
+ */
+
+\Drupal::moduleHandler()->loadInclude('views_jump_menu', 'inc', 'views_jump_menu.theme');
+
+/**
+ * Implements hook_theme().
+ */
+function views_jump_menu_theme($existing, $type, $theme, $path) {
+  return [
+    'views_jump_menu' => [
+      'variables' => ['view' => NULL, 'rows' => NULL],
+    ],
+  ];
+}
+
+/**
+ * Gets classes for the jump menu select element.
+ *
+ * @param array $options
+ *   Options passed in for the select element.
+ *
+ * @return array
+ *   A cleaned array of class names.
+ */
+function views_jump_menu_get_select_classes(array $options) {
+  $class = $options['class'] ?: '';
+  $class = explode(' ', $class);
+  $class[] = 'ViewsJumpMenu';
+  $class[] = 'js-viewsJumpMenu';
+  return array_map('\Drupal\Component\Utility\Html::cleanCssIdentifier', $class);
+}
+
+/**
+ * Implements template_preprocess_views_jump_menu().
+ */
+function views_jump_menu_preprocess_views_jump_menu(&$variables) {
+  /** @var Drupal\views\ViewExecutable $view */
+  $view = $variables['view'];
+  /** @var Drupal\views\ResultRow[] $rows */
+  $rows = $variables['rows'];
+  $options = $view->style_plugin->options;
+
+  if ($options['wrapper_class']) {
+    $variables['attributes']['class'][] = $options['wrapper_class'];
+  }
+
+  $select = [
+    'select_text' => $options['select_text'],
+    'select_label' => $options['select_label'],
+    'attributes' => new Drupal\Core\Template\Attribute([
+      'class' => views_jump_menu_get_select_classes($options),
+      'title' => $options['select_text'],
+    ]),
+    'options' => [],
+  ];
+
+  if (!empty($options['label_field'])) {
+
+    /**
+     * @var string $id
+     * @var Drupal\views\ResultRow $row
+     */
+    foreach ($rows as $id => $row) {
+      $view->row_index = $row->index;
+
+      // Make sure each field handler has cached the right contents before
+      // rendering them in the select field.
+      foreach (['label_field', 'url_field'] as $fieldType) {
+        /**
+         * @var string $field
+         * @var \Drupal\views\Plugin\views\field\FieldHandlerInterface $handler
+         */
+        foreach ($view->field[$options[$fieldType]]->displayHandler->getHandlers('field') as $field => $handler) {
+          $handler->advancedRender($row);
+        }
+      }
+
+      $select['options'][$id] = [
+        'label' => $view->field[$options['label_field']]->advancedRender($row),
+        'url' => $view->field[$options['url_field']]->advancedRender($row),
+      ];
+    }
+  }
+
+  $variables['select'] = $select;
+}

@@ -1,0 +1,13 @@
+generator_directory: 'private://'
+rsync_public: 'rsync -azr --delete --delete-excluded'
+rsync_public_exclude: 'css,js,php,.csslintrc,.editorconfig,.env.example,.eslintignore,.eslintrc.json,.htaccess,.ht.router.php,.svnignore,.travis.yml'
+rsync_code: 'rsync -azr --prune-empty-dirs --delete --include="*/" --include="*.svg" --include="*.png" --include="*.jpg" --include="*.gif" --include="*.css" --include="*.js" --exclude="*"'
+paths_generate: '/node'
+drupal: 'sites,modules,themes,core'
+verbose_logging: false
+gen_unpublished: false
+generate_index: true
+process_video: true
+esi_blocks: false
+esi_sg_esi: true
+render_method: 'Guzzle'

@@ -1,0 +1,72 @@
+<?php
+
+/**
+ * @file
+ * Provide a specific pager displaying node in a specific view mode.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function views_slideshow_rendered_entity_pager_theme() {
+  return array(
+    'views_slideshow_rendered_entity_pager' => array(
+      'variables' => array(
+        'vss_id' => NULL,
+        'view' => NULL,
+        'settings' => array(),
+        'location' => NULL,
+        'attributes' => array(),
+      ),
+      'template' => 'views-slideshow-pager-fields',
+      'path' => drupal_get_path('module', 'views_slideshow') . '/templates/',
+    ),
+  );
+}
+
+/**
+ * Template preprocess function for Views Slideshow rendered entity pager.
+ */
+function template_preprocess_views_slideshow_rendered_entity_pager(&$vars) {
+  // Add javascript settings for the field.
+  $vars['#attached']['library'][] = 'views_slideshow/widget_info';
+  $vars['#attached']['drupalSettings']['viewsSlideshowPagerFields'][$vars['vss_id']] = array(
+    $vars['location'] => array(
+      'activatePauseOnHover' => $vars['settings']['views_slideshow_rendered_entity_pager']['views_slideshow_rendered_entity_pager_hover'],
+    ),
+  );
+
+  // Add hover intent library.
+  $vars['#attached']['library'][] = 'views_slideshow/jquery_hoverIntent';
+
+  $vars['widget_id'] = $vars['attributes']['id'];
+
+  // Add our class to the wrapper.
+  $vars['attributes']['class'][] = 'views_slideshow_rendered_entity_pager';
+
+  // Keep also the default pager_field class which is used in javascript.
+  $vars['attributes']['class'][] = 'views_slideshow_pager_field';
+
+  $baseTable = $vars['view']->storage->get('base_table');
+  $entityType = \Drupal::service('views.views_data')->get($baseTable)['table']['entity type'];
+  $view_builder = \Drupal::entityManager()->getViewBuilder($entityType);
+
+  // Render all the fields unless there is only 1 slide and the user specified
+  // to hide them when there is only one slide.
+  $vars['rendered_field_items'] = '';
+  if (empty($vars['settings']['hide_on_single_slide']) || count($vars['view']->result) > $vars['view']->style_options['views_slideshow_cycle']['items_per_slide']) {
+    foreach ($vars['view']->result as $count => $item) {
+      $entity = \Drupal::entityManager()->loadEntityByUuid($item->_entity->getEntityTypeId(), $item->_entity->uuid());
+      $built_entity = $view_builder->view($entity, $vars['settings']['views_slideshow_rendered_entity_pager']['views_slideshow_rendered_entity_pager_view_mode']);
+      $rendered_entity = \Drupal::service('renderer')->render($built_entity);
+      $vars['rendered_field_items'][] = array(
+        '#theme' => $vars['view']->buildThemeFunctions('views_slideshow_pager_field_item'),
+        '#vss_id' => $vars['vss_id'],
+        '#item' => $rendered_entity,
+        '#count' => $count,
+        '#location' => $vars['location'],
+        '#length' => count($vars['view']->result),
+      );
+    }
+  }
+}

@@ -1,0 +1,337 @@
+/**
+ * Form Base
+ * Set base styles for form elements.
+ ============================================================================ */
+
+input,
+select,
+button,
+textarea {
+  @include output-rhythm(font-size, $medium);
+}
+
+
+// Select, Textarea and most input types.
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  max-width: 100%;
+  width: 99.999%; // prevent weird overflows when zoomed
+  box-sizing: border-box;
+  border-radius: $form-border-radius;
+  border: $form-border-width $form-border-style;
+  transition: $global-transition;
+
+  &:focus {
+    outline: 0;
+    outline: thin dotted \9; // IE9
+  }
+
+  &:hover,
+  &:focus {}
+
+  &[disabled] {
+    cursor: not-allowed;
+
+    &:hover,
+    &:focus {}
+  }
+}
+
+
+input {
+  line-height: 1; // reset line-height
+  vertical-align: middle; // make sure this happens
+  @include output-rhythm(height, $form_input_height);
+  @include output-rhythm(padding, 0 $xx-small);
+}
+
+
+// Checkbox, radio, file.
+input {
+  &[type="checkbox"],
+  &[type="radio"] {
+    min-width: 13px;
+    display: inline-block;
+    position: relative;
+    @include output-rhythm(bottom, 1px);
+    @include output-rhythm(margin-#{$flow-from}, 3px);
+
+    // Fix Safari issue with moving options.
+    width: auto;
+    height: auto;
+    transform: scale(1);
+  }
+
+  // Focus for file, radio and checkbox.
+  &[type="file"]:focus,
+  &[type="radio"]:focus,
+  &[type="checkbox"]:focus {}
+}
+
+
+// Stop iOS/webkit styling form elements.
+textarea,
+button,
+.button,
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="submit"],
+input[type="tel"],
+input[type="text"],
+input[type="url"] {
+  -webkit-appearance: none;
+}
+
+
+// Just remove the box shadow form some inputs in webkit.
+input[type="time"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"] {
+  background-clip: padding-box;
+}
+
+
+// Remove all the special stuff webkit adds to
+// search fields, it's a PITA to theme.
+input[type="search"] {
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+  }
+}
+
+// Select.
+select {
+  @include output-rhythm(height, $form_input_button_select_height);
+  > option {}
+}
+
+
+textarea {
+  @include output-rhythm(padding, $xx-small);
+}
+
+
+// Set height auto for textarea and selects.
+textarea,
+select[size],
+select[multiple] {
+  height: auto;
+}
+
+
+// Label.
+label {
+  font-weight: $font-weight-semibold;
+  text-decoration: none;
+  white-space: nowrap;
+  display: block;
+
+  // radio, checkbox options
+  &.option {
+    font-weight: normal;
+    display: inline-block;
+  }
+}
+
+
+// Fieldset.
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+// Legend.
+legend {}
+
+
+// Details.
+details {
+  border: $form-border-width $form-border-style;
+  border-radius: $border-radius;
+  display: block; // Firefox seems to need this?
+  @include output-rhythm(margin, $medium 0);
+  @include output-rhythm(max-height, 50px);
+  overflow-y: hidden;
+  transition: all 450ms ease-in-out;
+
+  &:focus {
+    outline: none !important;
+  }
+
+  .details-wrapper {
+    transition: all 650ms ease-in-out;
+  }
+
+  > summary {
+    &:before {
+      font-family: $icon-font;
+      float: left;
+      margin: -1px 0 0;
+      @include output-rhythm(height, $medium);
+      @include output-rhythm(width, $medium);
+
+      // Wait for FontAwesome to load.
+      display: none;
+
+      .fa-loaded & {
+        display: block;
+      }
+
+      // RTL
+      [dir="rtl"] & {
+        float: right;
+      }
+    }
+  }
+
+  &[open] > summary {
+    &:before {
+      content: $form-details-summary-open; // LTR
+    }
+  }
+
+  &:not([open]) > summary:before {
+    content: $form-details-summary-closed; // LTR
+
+    // RTL
+    [dir="rtl"] & {
+      @include fa-icon-flip(-1, 1, 0);
+    }
+  }
+
+  .js & {
+    &:not([open]) {
+      .details-wrapper {
+        display: block;
+        visibility: hidden;
+        opacity: 0.1;
+      }
+
+      > summary:before {
+        content: $form-details-summary-closed; // LTR
+
+        // RTL
+        [dir="rtl"] & {
+          @include fa-icon-flip(-1, 1, 0);
+        }
+      }
+    }
+
+    &[open] {
+      max-height: 2500px;
+      overflow: scroll;
+
+      .details-wrapper {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      > summary {
+        &:before {
+          content: $form-details-summary-open; // LTR
+        }
+      }
+    }
+  }
+}
+
+
+// Summary.
+summary {
+  cursor: pointer;
+  display: block; // Firefox seems to need this?
+  @include output-rhythm(padding, $x-small);
+  outline: 0;
+}
+
+
+// Remove idiotic triangles added by webkit browsers... sigh...
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+
+// Readonly.
+input,
+select,
+textarea {
+  &[readonly] {}
+}
+
+
+// Disabled.
+button[disabled],
+input[disabled],
+select[disabled],
+select[disabled] option,
+select[disabled] optgroup,
+textarea[disabled],
+a.button_disabled {
+  box-shadow: none;
+  opacity: 0.7;
+  user-select: none;
+  cursor: default;
+}
+
+
+// Invalid.
+input,
+button,
+.button,
+select,
+textarea {
+  &:invalid {
+    box-shadow: none;
+  }
+
+  &:focus:invalid {}
+}
+
+
+// Placeholders.
+input::-webkit-input-placeholder {}
+textarea::-webkit-input-placeholder {}
+
+input:-moz-placeholder {}
+textarea:-moz-placeholder {}
+
+input::-moz-placeholder {}
+textarea::-moz-placeholder {}
+
+input:-ms-input-placeholder {}
+textarea:-ms-input-placeholder {}
+
+input.placeholder_text {}
+textarea.placeholder_text {}
+
+
+// Hide placeholders on focus.
+input:focus::-webkit-input-placeholder {opacity: 0.2}
+input:focus:-moz-placeholder {opacity: 0.2}
+input:focus::-moz-placeholder {opacity: 0.2}
+input:focus:-ms-input-placeholder {opacity: 0.2}
+
+
+

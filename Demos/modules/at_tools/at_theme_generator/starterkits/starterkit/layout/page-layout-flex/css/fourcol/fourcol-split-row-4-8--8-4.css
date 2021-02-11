@@ -1,0 +1,18 @@
+.fourcol-split-row-4-8--8-4 .arc--2 .l-r,
+.fourcol-split-row-4-8--8-4 .arc--3 .l-r:first-child,
+.fourcol-split-row-4-8--8-4 .arc--4 .l-r:first-child,
+.fourcol-split-row-4-8--8-4 .arc--4 .l-r:last-child {
+  width: 33.33333%;
+}
+
+.fourcol-split-row-4-8--8-4 .arc--2 .l-r:last-child {
+  width: 66.66667%;
+}
+
+.fourcol-split-row-4-8--8-4 .arc--3 .l-r:nth-child(2) {
+  width: 66.66667%;
+}
+
+.fourcol-split-row-4-8--8-4 .arc--4 .l-r {
+  width: 66.66667%;
+}

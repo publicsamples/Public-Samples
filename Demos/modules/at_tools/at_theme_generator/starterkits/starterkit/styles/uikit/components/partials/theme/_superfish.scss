@@ -1,0 +1,164 @@
+/**
+ * Superfish Menus
+ * This only loads if the Superfish module is enabled.
+ * - fix issues
+ * - provide CSS for style "none.
+ ============================================================================ */
+
+ul.sf-menu {
+
+  // Fix sub-indicator arrows so they're not cut off.
+  .sf-sub-indicator {
+    @include output-rhythm(height, $medium);
+    @include output-rhythm(width, $medium);
+  }
+
+  // Style None.
+  &.sf-style-none {
+    float: left;
+    padding: 0;
+
+    &.sf-navbar {
+      width: 100%;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    a,
+    a:visited,
+    span.nolink {
+      border: 0 none;
+      padding: 0.75em 1em;
+      @include output-rhythm(padding, $small $medium);
+    }
+
+    a.sf-with-ul,
+    span.nolink.sf-with-ul {
+      //padding-right: 2.25em;
+      @include output-rhythm(padding-#{$flow-to}, $xxx-large);
+    }
+
+    span.sf-description {
+      display: block;
+      font-size: smaller;
+      line-height: 1.5;
+      margin: 0.25em 0 0 0;
+      @include output-rhythm(margin, $xxxx-small 0 0 0);
+      padding: 0;
+    }
+
+    li,
+    &.sf-navbar {
+      //background: red; // debug
+    }
+
+    li li,
+    li li li,
+    &.sf-navbar > li > ul,
+    &.sf-navbar li ul {
+      background: #fff;
+    }
+
+    li:hover,
+    li.sfHover,
+    a:focus,
+    a:hover,
+    span.nolink:hover {
+      outline: 0;
+    }
+
+    &.sf-navbar li ul li ul {
+      background: transparent;
+    }
+
+    // Accordion  menus (responsive style).
+    &.sf-accordion {
+
+      li.sf-expanded {
+        //background: yellow; // debug
+      }
+
+      li.sf-expanded > a,
+      li.sf-expanded > span.nolink {
+        font-weight: bold;
+      }
+
+      li a.sf-accordion-button {
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 499;
+      }
+
+      li li a,
+      li li span.nolink {
+        @include output-rhythm(padding-#{$flow-from}, 24px);
+      }
+
+      li li li a,
+      li li li span.nolink {
+        @include output-rhythm(padding-#{$flow-from}, 36px);
+      }
+
+      li li li li a,
+      li li li li span.nolink {
+        @include output-rhythm(padding-#{$flow-from}, 48px);
+      }
+
+      li li li li li a,
+      li li li li li span.nolink {
+        @include output-rhythm(padding-#{$flow-from}, 60px);
+      }
+    }
+
+    // Multi column.
+    li.sf-multicolumn-wrapper {
+      ol {
+        li {
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      a.menuparent,
+      span.nolink.menuparent {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+div.sf-accordion-toggle.sf-style-none {
+  a {
+    //background: silver; // debug
+    //border: 1px solid red; // debug
+    //color: pink; // debug
+    display: inline-block;
+    font-weight: bold;
+    @include output-rhythm(padding, $medium $xx-large $medium $medium);
+    position: relative;
+
+    &.sf-expanded {
+      font-weight: bold;
+    }
+  }
+
+  > a:after {
+    content: "≡";
+    position: absolute;
+    @include output-rhythm(font-size, $xx-large);
+    @include output-rhythm(right, $small);
+    top: 42%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    speak: none;
+  }
+}
+

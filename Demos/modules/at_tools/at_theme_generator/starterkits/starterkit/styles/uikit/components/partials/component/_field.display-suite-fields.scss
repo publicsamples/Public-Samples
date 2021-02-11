@@ -1,0 +1,65 @@
+/**
+ * Fields added by Display Suite
+ ============================================================================ */
+
+// Target all DS fields.
+.field-type-ds {}
+
+
+// Node
+.field-node--node-title {}
+
+// Some node fields will likely share styles.
+.field-node--node-submitted-by,
+.field-node--node-author,
+.field-node--node-post-date,
+.field-node--node-changed-date {}
+
+.field-node--user {}
+.field-node--node-author {}
+.field-node--node-post-date {}
+.field-node--node-changed-date {}
+
+.field-node--node-link {
+  @include cfm;
+  clear: both;
+
+  @media #{$wide} {
+    float: right;
+
+    .field__item {
+      margin: 0 0 0 $medium;
+
+      [dir="rtl"] & {
+        margin: 0 $medium 0 0;
+      }
+    }
+  }
+}
+
+
+// Comment
+.field-comment--comment-title {}
+
+// Some comment fields will likely share styles.
+.field-comment--comment-author,
+.field-comment--comment-post-date,
+.field-comment--comment-changed-date {}
+
+.field-comment--comment-user {}
+.field-comment--comment-author {}
+.field-comment--comment-post-date {}
+.field-comment--comment-changed-date {}
+
+
+// User
+.field-user--username {}
+
+
+// 3rd Party
+.field-node--addtoany-field {}
+
+
+// Labels
+.field-label-hidden {}
+

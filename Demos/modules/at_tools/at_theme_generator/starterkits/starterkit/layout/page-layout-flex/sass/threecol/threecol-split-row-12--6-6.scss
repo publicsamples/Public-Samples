@@ -1,0 +1,19 @@
+@import "../page-layout-base";
+//
+// Three Regions split 12--6-6
+//
+// ---------------------------------------------------------------------------
+
+.threecol-split-row-12--6-6 {
+
+  // Two or three regions are active.
+  .hr--2-3 .l-r,
+  .arc--3 .l-r:nth-child(2) {
+    width: span(6 of 12);
+  }
+
+  .hr--2-3 .l-r:last-child,
+  .arc--3 .l-r:last-child {
+    width: span(6 of 12);
+  }
+}

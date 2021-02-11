@@ -1,0 +1,141 @@
+/**
+ * Book
+ *  - Set styles for book navigation and the menu tree.
+ ============================================================================ */
+
+// Wrapper.
+.book-navigation {
+  &.has-tree {}
+  &.has-links {}
+}
+
+// Menu tree in book navigation links.
+.menu--book-tree {
+  @include output-rhythm(margin-bottom, $medium);
+
+  .menu__item {
+    a {
+      margin-top: 0;
+    }
+  }
+}
+
+// Pager links.
+.book-pager {
+  @include output-rhythm(padding, $medium 0);
+  text-align: center;
+  overflow: auto;
+  border-top: $border-width $border-style $border-color;
+  border-bottom: $border-width $border-style $border-color;
+
+  display: flex;
+  flex-direction: column;
+
+  @media #{$tablet} {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  // Book navigation menu tree is showing. This usually occurs on the
+  // book parent.
+  .has-tree & {}
+
+  // has list items classes.
+  .has-prev {}
+  .has-next {}
+  .has-parent {}
+
+  // Items.
+  &__item {
+    list-style: none;
+    vertical-align: top;
+    width: 100%;
+    margin-bottom: 2px; // touch target separation
+  }
+
+  // Link.
+  &__link {
+    @include output-rhythm(padding, 4px);
+    display: inline-block;
+    position: relative;
+
+    &:before,
+    &:after {
+      text-align: center;
+      font-family: $icon-font;
+      position: absolute;
+      top: 0;
+      @include output-rhythm(padding-top, 4px);
+      @include output-rhythm(width, $medium);
+
+      // Wait for FontAwesome to load.
+      display: none;
+      .fa-loaded & {
+        display: inline-block !important;
+      }
+
+      [dir="rtl"] & {
+        @include fa-icon-flip(-1, 1, 0);
+      }
+    }
+  }
+
+  // Use the maximum width by incorporating a more complex layout
+  // of floats and box-sizing.
+  &__previous {
+    @media #{$mobile-isolate} {
+      order: 2;
+    }
+
+    @media #{$tablet} {
+      text-align: $flow-from;
+      margin-#{$flow-to}: auto;
+      width: 46%;
+    }
+
+    a.book-pager__link {
+      @include output-rhythm(padding-#{$flow-from}, $medium * 1.5);
+
+      &:before {
+        content: $menu-arrow-left;
+        #{$flow-from}: 0;
+      }
+    }
+  }
+
+  // Up.
+  &__up {
+    @media #{$mobile-isolate} {
+      order: 1;
+    }
+
+    @media #{$tablet} {
+      text-align: center;
+      width: 8%;
+    }
+  }
+
+  // Next
+  &__next {
+    @media #{$mobile-isolate} {
+      order: 3;
+    }
+
+    @media #{$tablet} {
+      text-align: $flow-to;
+      margin-#{$flow-from}: auto;
+      width: 46%;
+    }
+
+    a.book-pager__link {
+      @include output-rhythm(padding-#{$flow-to}, $medium * 1.5);
+
+      &:after {
+        content: $menu-arrow-right;
+        #{$flow-to}: 0;
+      }
+    }
+  }
+}
+

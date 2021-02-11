@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a pagerer page entry textbox.
+ *
+ * Available variables:
+ * - id: The id attribute, used to link with the widget state in
+ *   drupalSettings.
+ * - title: The text for the title attribute, used to present help text to
+ *   user when hovering with the mouse on the element.
+ * - value: The initial value of the input element (e.g. current page number).
+ * - min: The minimum value of the input element (e.g. first page).
+ * - max: The maximum value of the input element (e.g. last page).
+ * - step: The increment value of the input element (e.g. 1 for pages).
+ * - button: Toggle for the rendering of the trigger button.
+ *
+ * @ingroup themeable
+ */
+#}
+{{ attach_library('pagerer/mini') }}
+{% spaceless %}
+<div class="pagerer-page-widget">
+  <input type="number" class="pagerer-page" id="{{ id }}" title="{{ title }}" value="{{ value }}" min="{{ min }}" max="{{ max }}" step="{{ step }}">
+  {% if button %}
+    <input type="button" class="pagerer-page-button" value="&#10003;">
+  {% endif %}
+</div>
+{% endspaceless %}

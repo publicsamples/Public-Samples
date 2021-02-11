@@ -1,0 +1,62 @@
+// Slide-down
+// Simple hamburger menu that slides vertically downwards. Pushes and reflows
+// the content below by default. You could set this to postion absolute and
+// style like an overlay (no reflow or pushing etc).
+
+@mixin slidedown($arrows: false) {
+
+  .ms-slidedown {
+
+    .rm-toggle {
+      margin-#{$flow-from}: 0;
+      padding-#{$flow-from}: 0;
+    }
+
+    .rm-block__content {
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+      transition: $global-transition;
+
+      .menu__link {
+        @include output-rhythm(margin-bottom, 4px);
+        @include output-rhythm(padding, $xx-small);
+        position: relative;
+        display: block;
+
+        &:after {
+          content: none;
+          display: none;
+        }
+      }
+
+      .is-child {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transition: $global-transition;
+
+        &.is-open--child {
+          position: relative;
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+
+      .menu__item {
+        font-family: inherit;
+      }
+    }
+
+    &.rm-is-open {
+      .rm-block__content {
+        position: relative;
+        visibility: visible;
+        opacity: 1;
+        @include output-rhythm(padding, 0 0 $xx-small);
+      }
+    }
+  }
+}
+
+

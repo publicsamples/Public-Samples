@@ -1,0 +1,1355 @@
+/**
+ * Colors
+ * - Add or modify colors for all theme elements.
+ * - Most colors are set in _variables.scss where you can make global changes
+ *   without touching this file at all.
+ * - If your theme is using the Color module be very careful about what you
+ *   change in this file, or in the global _variables.scss file, the color
+ *   schemes expect certain hex values to exist in the color.css file - it is
+ *   safer to place colors in a partial that is not parsed by the Color module.
+ ============================================================================ */
+/**
+ * base.elements
+ ============================================================================ */
+html {
+  background-color: #333333;
+}
+
+body {
+  background-color: transparent;
+  color: #363636;
+}
+
+a {
+  color: #0066cc;
+}
+
+a:visited {
+  color: #0066cc;
+}
+
+a:active, a.active {
+  color: #0066cc;
+}
+
+a:hover, a:focus {
+  color: #0066cc;
+}
+
+blockquote {
+  border-color: #cccccc;
+}
+
+blockquote p:first-child:before {
+  color: #cccccc;
+}
+
+blockquote small {
+  color: #5c5c5c;
+}
+
+blockquote.pull-right {
+  border-right-color: #cccccc;
+}
+
+hr {
+  border-color: #cccccc;
+}
+
+/**
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background-color: #b3d4fc;
+}
+
+::selection {
+  background-color: #b3d4fc;
+}
+
+del {
+  color: #5c5c5c;
+}
+
+code,
+pre,
+var,
+kbd,
+samp {
+  background: #f2f2f2;
+}
+
+/**
+ * Web fonts
+ ============================================================================ */
+/* Override Font Awesome classes. */
+.fa-border {
+  border-color: #cccccc;
+}
+
+/*  Extra classes for Font Awesome. */
+.fa-text-color {
+  color: #363636;
+}
+
+.fa-text-color-light {
+  color: #808080;
+}
+
+.fa-text-color-medium {
+  color: #5c5c5c;
+}
+
+.fa-match-border {
+  color: #cccccc;
+}
+
+.fa-match-border-light {
+  color: #eeeeee;
+}
+
+.fa-match-link {
+  color: #0066cc;
+}
+
+.fa-trans-white-25 {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.fa-trans-white-50 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.fa-trans-white-75 {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.fa-trans-black-25 {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.fa-trans-black-50 {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.fa-trans-black-75 {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+/**
+ * Page
+ *  - mainly for markup that is printed directly in page.html.twig and
+ *    .l-r {}
+ ============================================================================ */
+.page {
+  background-color: #f7f7f7;
+}
+
+.regions {
+  background-color: #f7f7f7;
+}
+
+.pr-header {
+  color: #363636;
+  background-color: #fafafa;
+}
+
+.pr-header .regions {
+  background: inherit;
+}
+
+.pr-navbar {
+  color: #ffffff;
+  background-color: #666666;
+}
+
+.pr-navbar .regions {
+  background: inherit;
+}
+
+.pr-navbar .menu a {
+  color: inherit;
+}
+
+.pr-features {
+  color: #363636;
+  background-color: #d3d3d3;
+}
+
+.pr-features .regions {
+  background: inherit;
+}
+
+.pr-subfeatures {
+  color: #363636;
+  background-color: #d3d3d3;
+}
+
+.pr-subfeatures .regions {
+  background: inherit;
+}
+
+.pr-footer {
+  color: #ffffff;
+  background-color: #666666;
+}
+
+.pr-footer .regions {
+  background: inherit;
+}
+
+.pr-footer .menu a {
+  color: inherit;
+}
+
+.pr-footer .menu a.active, .pr-footer .menu a:hover, .pr-footer .menu a:focus {
+  color: inherit;
+}
+
+/**
+ * AT attribution message
+ *  - a toggle setting in the theme settings, you can turn it on/off using
+ *    the Markup overrides extension.
+ ============================================================================ */
+.attribution .l-rw {
+  background-color: transparent;
+}
+
+.attribution .attribution__link {
+  color: #363636;
+}
+
+/**
+ * Feed Icons
+ *  - icons are SVG, SEE feed-icon.html.twig in AT Core templates directory.
+ ============================================================================ */
+.feed-icon-rss__path {
+  fill: rgba(0, 0, 0, 0.6);
+}
+
+/**
+ * Branding styles
+ *  - Drupal core branding block.
+ ============================================================================ */
+.site-branding__name-link:link, .site-branding__name-link:visited {
+  color: #5c5c5c;
+}
+
+.site-branding__name-link:hover, .site-branding__name-link:active {
+  color: #363636;
+}
+
+/**
+ * Blocks
+ ============================================================================ */
+/**
+ * Menus
+ *  - style Drupal core block menus.
+ *  - for the drop menu and other responsive menus see the mixins and the
+ *    _navbar.scss partial.
+ ============================================================================ */
+.menu .menu__link {
+  color: #0066cc;
+  border-color: #cccccc;
+}
+
+.menu .menu__link:hover, .menu .menu__link:focus {
+  color: #0066cc;
+}
+
+.menu .menu__link.active {
+  color: #0066cc;
+}
+
+.menu__item:first-child .menu__link {
+  border-color: #cccccc;
+}
+
+/**
+ * Responsive menu styles.
+ *
+ * Mixins provide the basic structure and a base style (not much), the rest
+ * is up to you, add colors, borders, padding and so on. Icons such as
+ * the hamburger and arrows are set in variables in _variables.scss, and you
+ * use the color variables for menus from there also.
+ *
+ * Menu styles are set in Appearance settings using the Responsive Menus extension.
+ * There you select a block, breakpoint, a default style and a responsive style.
+ * You can safely remove mixins from this file if you not going to use them later
+ * on, and want to save a few bytes in stylesheet size.
+ *
+ * Each mixin takes one or more parameters. Use these to customize the basic structure
+ * of the menu, or call options, for example you can place the offcanvas menu on the
+ * left or right.
+ *
+ * Do not import into breakpoints unless you are not using the Responsive Menu
+ * settings in Appearance Extensions, in which case you will need to load the
+ * at_core/at.responsivemenus library and provide it's required drupalSettings.
+ *
+ * Breakpoints are handled in matchMedia using Enquire.
+ *
+ * Responsive styles are a combination of three things:
+ *  1. Sass/CSS defined here (with breakpoints etc).
+ *  2. jQuery: responsive-menus.js in AT Core libraries which adds/toggles classes.
+ *  3. Theme settings as set in your themes Advanced extension settings.
+ ============================================================================ */
+.rm-toggle__link, .rm-toggle__link:hover, .rm-toggle__link:focus, .rm-toggle__link:active {
+  color: #ffffff;
+  background-color: #666666;
+}
+
+.rm-toggle__icon {
+  fill: #ffffff;
+}
+
+.rm-toggle span {
+  background-color: transparent;
+}
+
+.ms-offcanvas .rm-block__content .menu .menu__link,
+.ms-offcanvas .rm-block__content .menu .rm-accordion-trigger,
+.ms-vertical .rm-block__content .menu .menu__link,
+.ms-vertical .rm-block__content .menu .rm-accordion-trigger,
+.ms-slidedown .rm-block__content .menu .menu__link,
+.ms-slidedown .rm-block__content .menu .rm-accordion-trigger,
+.ms-tiles .rm-block__content .menu .menu__link,
+.ms-tiles .rm-block__content .menu .rm-accordion-trigger {
+  color: #ffffff;
+  background-color: #666666;
+}
+
+.ms-offcanvas .rm-block__content .menu .menu__link:hover, .ms-offcanvas .rm-block__content .menu .menu__link:focus,
+.ms-offcanvas .rm-block__content .menu .rm-accordion-trigger:hover,
+.ms-offcanvas .rm-block__content .menu .rm-accordion-trigger:focus,
+.ms-vertical .rm-block__content .menu .menu__link:hover,
+.ms-vertical .rm-block__content .menu .menu__link:focus,
+.ms-vertical .rm-block__content .menu .rm-accordion-trigger:hover,
+.ms-vertical .rm-block__content .menu .rm-accordion-trigger:focus,
+.ms-slidedown .rm-block__content .menu .menu__link:hover,
+.ms-slidedown .rm-block__content .menu .menu__link:focus,
+.ms-slidedown .rm-block__content .menu .rm-accordion-trigger:hover,
+.ms-slidedown .rm-block__content .menu .rm-accordion-trigger:focus,
+.ms-tiles .rm-block__content .menu .menu__link:hover,
+.ms-tiles .rm-block__content .menu .menu__link:focus,
+.ms-tiles .rm-block__content .menu .rm-accordion-trigger:hover,
+.ms-tiles .rm-block__content .menu .rm-accordion-trigger:focus {
+  color: #ffffff;
+  background-color: #757575;
+}
+
+.ms-offcanvas .rm-block__content .menu .menu__link.is-active,
+.ms-vertical .rm-block__content .menu .menu__link.is-active,
+.ms-slidedown .rm-block__content .menu .menu__link.is-active,
+.ms-tiles .rm-block__content .menu .menu__link.is-active {
+  color: #ffffff;
+  background-color: #757575;
+}
+
+.ms-offcanvas .rm-block__content .menu .menu__link.is-active[href="/"],
+.ms-vertical .rm-block__content .menu .menu__link.is-active[href="/"],
+.ms-slidedown .rm-block__content .menu .menu__link.is-active[href="/"],
+.ms-tiles .rm-block__content .menu .menu__link.is-active[href="/"] {
+  color: #ffffff;
+  background-color: #666666;
+}
+
+.ms-offcanvas .rm-block__content .menu .menu__link.is-active[href="/"]:hover, .ms-offcanvas .rm-block__content .menu .menu__link.is-active[href="/"]:focus,
+.ms-vertical .rm-block__content .menu .menu__link.is-active[href="/"]:hover,
+.ms-vertical .rm-block__content .menu .menu__link.is-active[href="/"]:focus,
+.ms-slidedown .rm-block__content .menu .menu__link.is-active[href="/"]:hover,
+.ms-slidedown .rm-block__content .menu .menu__link.is-active[href="/"]:focus,
+.ms-tiles .rm-block__content .menu .menu__link.is-active[href="/"]:hover,
+.ms-tiles .rm-block__content .menu .menu__link.is-active[href="/"]:focus {
+  color: #ffffff;
+  background-color: #757575;
+}
+
+.ms-offcanvas .rm-block__content .rm-accordion-trigger__icon,
+.ms-vertical .rm-block__content .rm-accordion-trigger__icon,
+.ms-slidedown .rm-block__content .rm-accordion-trigger__icon,
+.ms-tiles .rm-block__content .rm-accordion-trigger__icon {
+  background-color: transparent !important;
+  fill: #ffffff;
+}
+
+.ms-slidedown .rm-row,
+.ms-slidedown .rm-region {
+  background-color: #fafafa;
+}
+
+.ms-dropmenu .rm-block__content .menu-level-1 > li > span > .menu__link,
+.ms-horizontal .rm-block__content .menu-level-1 > li > span > .menu__link {
+  color: inherit;
+  background-color: transparent;
+}
+
+.ms-dropmenu .rm-block__content .menu-level-1 > li > span > .menu__link:hover, .ms-dropmenu .rm-block__content .menu-level-1 > li > span > .menu__link:focus,
+.ms-horizontal .rm-block__content .menu-level-1 > li > span > .menu__link:hover,
+.ms-horizontal .rm-block__content .menu-level-1 > li > span > .menu__link:focus {
+  color: #ffffff;
+  background-color: #757575;
+}
+
+.ms-dropmenu .rm-block__content .menu-level-1 > li > span > .menu__link.is-active,
+.ms-horizontal .rm-block__content .menu-level-1 > li > span > .menu__link.is-active {
+  color: #ffffff;
+  background-color: #757575;
+}
+
+.ms-dropmenu .rm-block__content .menu-level-1 > li > span > .menu__link.is-active[href="/"],
+.ms-horizontal .rm-block__content .menu-level-1 > li > span > .menu__link.is-active[href="/"] {
+  color: inherit;
+  background-color: transparent;
+}
+
+.ms-dropmenu .rm-block__content .menu-level-1 > li > span > .menu__link.is-active[href="/"]:hover, .ms-dropmenu .rm-block__content .menu-level-1 > li > span > .menu__link.is-active[href="/"]:focus,
+.ms-horizontal .rm-block__content .menu-level-1 > li > span > .menu__link.is-active[href="/"]:hover,
+.ms-horizontal .rm-block__content .menu-level-1 > li > span > .menu__link.is-active[href="/"]:focus {
+  color: #ffffff;
+  background-color: #757575;
+}
+
+.ms-dropmenu .rm-block__content .menu-level-2 .menu__link,
+.ms-horizontal .rm-block__content .menu-level-2 .menu__link {
+  color: #ffffff;
+  background-color: #666666;
+}
+
+.ms-dropmenu .rm-block__content .menu-level-2 .menu__link:hover, .ms-dropmenu .rm-block__content .menu-level-2 .menu__link:focus,
+.ms-horizontal .rm-block__content .menu-level-2 .menu__link:hover,
+.ms-horizontal .rm-block__content .menu-level-2 .menu__link:focus {
+  color: #ffffff;
+  background-color: #757575;
+}
+
+.ms-dropmenu .rm-block__content .menu-level-2 .menu__link.is-active,
+.ms-horizontal .rm-block__content .menu-level-2 .menu__link.is-active {
+  color: #ffffff;
+  background-color: #757575;
+}
+
+.ms-overlay .rm-toggle {
+  background-color: rgba(0, 0, 0, 0.875);
+}
+
+.ms-overlay .rm-toggle:hover, .ms-overlay .rm-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.ms-overlay .rm-toggle__link, .ms-overlay .rm-toggle__icon {
+  background-color: transparent;
+}
+
+.ms-overlay .rm-toggle__link:hover, .ms-overlay .rm-toggle__link:focus, .ms-overlay .rm-toggle__icon:hover, .ms-overlay .rm-toggle__icon:focus {
+  background-color: transparent;
+}
+
+.ms-overlay.rm-is-open .rm-toggle {
+  opacity: 1;
+  background-color: white;
+}
+
+.ms-overlay.rm-is-open .rm-toggle__icon {
+  fill: black;
+}
+
+.ms-overlay .rm-block__content {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.ms-overlay .rm-block__content .menu {
+  background-color: transparent;
+}
+
+.ms-overlay .rm-block__content .menu .menu__link {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.ms-overlay .rm-block__content .menu .menu__link:hover, .ms-overlay .rm-block__content .menu .menu__link:focus, .ms-overlay .rm-block__content .menu .menu__link.is-active {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.ms-overlay .rm-block__content .menu .menu__link.is-active[href="/"] {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.ms-overlay .rm-block__content .menu .menu__link.is-active[href="/"]:hover, .ms-overlay .rm-block__content .menu .menu__link.is-active[href="/"]:focus {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.ms-overlay .rm-block__content .menu .rm-accordion-trigger {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.ms-overlay .rm-block__content .menu .rm-accordion-trigger:hover, .ms-overlay .rm-block__content .menu .rm-accordion-trigger:focus {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.ms-overlay .rm-block__content .menu .rm-accordion-trigger__icon {
+  fill: white;
+}
+
+.ms-meganav .rm-block__content .menu .menu__link {
+  color: inherit;
+  background-color: transparent;
+}
+
+.ms-meganav .rm-block__content .menu .menu__link:hover, .ms-meganav .rm-block__content .menu .menu__link:focus {
+  color: #ffffff;
+  background-color: #757575;
+}
+
+.ms-meganav.rm-is-open .rm-block__content .menu-level-1 > .menu__item {
+  border-bottom: 1px solid #cccccc;
+}
+
+.ms-meganav.rm-is-open .rm-block__content .menu-level-1 > .menu__item > span > .menu__link {
+  color: #ffffff;
+  background-color: #666666;
+}
+
+.ms-meganav.rm-is-open .rm-block__content .menu-level-1 > .menu__item > span > .menu__link:hover, .ms-meganav.rm-is-open .rm-block__content .menu-level-1 > .menu__item > span > .menu__link:focus {
+  color: #ffffff;
+  background-color: #757575;
+}
+
+/**
+ * Breadcrumbs
+ ============================================================================ */
+.breadcrumb li:before {
+  color: #cccccc;
+}
+
+.breadcrumb a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+/**
+ * Pagers
+ * - Full system pager.
+ * - Views mini pager.
+ ============================================================================ */
+.pager__link {
+  border-color: #cccccc;
+}
+
+.pager__link:focus, .pager__link:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.pager__link:active {
+  -webkit-box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.75);
+          box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.75);
+  opacity: 0.9;
+}
+
+.pager__link--is-active {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.pager--mini .pager__link--is-active {
+  background-color: transparent;
+  opacity: 0.65;
+}
+
+/**
+ * Table Theme
+ * Style Drupal selectors for tables.
+ ============================================================================ */
+tr:hover {
+  background-color: #ededed;
+}
+
+thead tr {
+  color: #363636;
+  background-color: #e8e8e8;
+}
+
+tr,
+td,
+th {
+  border-color: #cccccc;
+}
+
+/**
+ * Forms
+ *  - This probably seems like a lot - remember AT unsets system.theme.css and
+ *    gives you complete control over all form elements.
+ *
+ * Note:
+ *  - input type submit is treated as a 'button', see _buttons.scss
+ *  - for drop buttons see _buttons.scss
+ ============================================================================ */
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  color: #363636;
+  border-color: #cccccc;
+  background-color: #ffffff;
+}
+
+textarea:focus,
+select:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus {
+  border-color: #cccccc;
+  color: #363636;
+}
+
+textarea:hover, textarea:focus,
+select:hover,
+select:focus,
+input[type="date"]:hover,
+input[type="date"]:focus,
+input[type="datetime"]:hover,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:hover,
+input[type="datetime-local"]:focus,
+input[type="email"]:hover,
+input[type="email"]:focus,
+input[type="month"]:hover,
+input[type="month"]:focus,
+input[type="number"]:hover,
+input[type="number"]:focus,
+input[type="password"]:hover,
+input[type="password"]:focus,
+input[type="search"]:hover,
+input[type="search"]:focus,
+input[type="tel"]:hover,
+input[type="tel"]:focus,
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="time"]:hover,
+input[type="time"]:focus,
+input[type="url"]:hover,
+input[type="url"]:focus,
+input[type="week"]:hover,
+input[type="week"]:focus {
+  background-color: #ffffff;
+}
+
+textarea[disabled]:hover, textarea[disabled]:focus,
+select[disabled]:hover,
+select[disabled]:focus,
+input[type="date"][disabled]:hover,
+input[type="date"][disabled]:focus,
+input[type="datetime"][disabled]:hover,
+input[type="datetime"][disabled]:focus,
+input[type="datetime-local"][disabled]:hover,
+input[type="datetime-local"][disabled]:focus,
+input[type="email"][disabled]:hover,
+input[type="email"][disabled]:focus,
+input[type="month"][disabled]:hover,
+input[type="month"][disabled]:focus,
+input[type="number"][disabled]:hover,
+input[type="number"][disabled]:focus,
+input[type="password"][disabled]:hover,
+input[type="password"][disabled]:focus,
+input[type="search"][disabled]:hover,
+input[type="search"][disabled]:focus,
+input[type="tel"][disabled]:hover,
+input[type="tel"][disabled]:focus,
+input[type="text"][disabled]:hover,
+input[type="text"][disabled]:focus,
+input[type="time"][disabled]:hover,
+input[type="time"][disabled]:focus,
+input[type="url"][disabled]:hover,
+input[type="url"][disabled]:focus,
+input[type="week"][disabled]:hover,
+input[type="week"][disabled]:focus {
+  color: #363636;
+}
+
+/**
+ * Collapsible details.
+ *
+ * @see collapse.js
+ * @thanks http://nicolasgallagher.com/css-background-image-hacks/
+ */
+details {
+  border-color: #cccccc;
+  background-color: #f7f7f7;
+}
+
+input[readonly],
+select[readonly],
+textarea[readonly] {
+  background-color: #ededed;
+  color: #363636;
+}
+
+button[disabled],
+input[disabled],
+select[disabled],
+select[disabled] option,
+select[disabled] optgroup,
+textarea[disabled],
+a.button_disabled {
+  background-color: #ededed;
+  color: #363636;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #363636;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #363636;
+}
+
+input.placeholder_text,
+textarea.placeholder_text {
+  color: #363636;
+}
+
+/**
+ * Form Theme
+ ============================================================================ */
+.form-type-radio label.option,
+.form-type-checkbox label.option {
+  border-color: #cccccc;
+  background-color: #ffffff;
+}
+
+.form-type-radio label.option:focus, .form-type-radio label.option:hover,
+.form-type-checkbox label.option:focus,
+.form-type-checkbox label.option:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.filter-wrapper {
+  border-color: #cccccc;
+}
+
+.tips {
+  color: #363636;
+}
+
+.description {
+  color: #363636;
+}
+
+form .marker {
+  color: #ee0000;
+}
+
+.form-required:after {
+  color: #ee0000;
+}
+
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border-color: #f9c9bf;
+}
+
+/**
+ * Vertical tabs.
+ ============================================================================ */
+.vertical-tabs {
+  background-color: #f2f2f2;
+  border-color: #cccccc;
+}
+
+.vertical-tabs__menu {
+  background-color: #ffffff;
+  border-top-color: #cccccc;
+}
+
+.vertical-tabs__menu-item {
+  background: #ffffff;
+  border-color: #cccccc;
+}
+
+.vertical-tabs__menu-item.is-selected {
+  background-color: #f2f2f2;
+}
+
+.vertical-tabs__menu-item.is-selected .vertical-tabs__menu-item-title {
+  color: #363636;
+}
+
+.vertical-tabs__pane {
+  background-color: #f2f2f2;
+}
+
+/**
+ * Buttons
+ * We include button styling separate (from _forms.scss) mainly because the form
+ * styles are quite long already and we often want to add unique button variants.
+ *
+ *  - applies to elements with class "button", includes styles for:
+ *  - input buttons
+ *  - anchor links styled as buttons
+ *  - drop buttons
+ *  - action link buttons
+ ============================================================================ */
+button,
+.button {
+  color: #fcfcfc;
+  background-color: #828282;
+  border-color: #828282;
+  opacity: 0.9;
+  -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.5);
+}
+
+button:hover, button:focus,
+.button:hover,
+.button:focus {
+  opacity: 1;
+  color: #fcfcfc;
+  background-color: #828282;
+}
+
+button:visited,
+.button:visited {
+  color: #fcfcfc;
+  background-color: #828282;
+}
+
+button[disabled]:hover,
+.button[disabled]:hover {
+  opacity: 1;
+}
+
+.button--primary {
+  color: #fcfcfc;
+  background-color: #0066cc;
+  border: 1px #0066cc solid;
+}
+
+.button--primary:link, .button--primary:visited {
+  color: #fcfcfc;
+  background-color: #0066cc;
+  border-color: #0066cc;
+}
+
+.button--primary:hover, .button--primary:focus, .button--primary:active, .button--primary.active {
+  color: #fcfcfc;
+  background-color: #0066cc;
+  border-color: #0066cc;
+}
+
+.button--danger {
+  color: #a51b00;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button--danger:link, .button--danger:visited {
+  color: #a51b00;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.button--danger:hover, .button--danger:focus, .button--danger:active, .button--danger.active {
+  color: #a51b00;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.button-action {
+  opacity: 1;
+}
+
+#edit-preview {
+  background-color: #ffffff;
+  color: #828282;
+}
+
+button.link-edit-summary {
+  background-color: inherit;
+  color: #363636;
+}
+
+button.link-edit-summary:hover, button.link-edit-summary:focus {
+  background-color: inherit;
+  color: #363636;
+}
+
+/* Drop buttons */
+.dropbutton-widget {
+  background-color: #f7f7f7;
+  border-color: #828282;
+}
+
+.dropbutton-widget:hover, .dropbutton-widget:focus {
+  border-color: #828282;
+}
+
+.dropbutton .dropbutton-action .button {
+  color: #fcfcfc;
+  background-color: #0066cc;
+}
+
+.dropbutton .dropbutton-action .button:link, .dropbutton .dropbutton-action .button:visited {
+  color: #fcfcfc;
+  background-color: #0066cc;
+  border-color: #ccc;
+}
+
+.dropbutton .dropbutton-action .button:hover, .dropbutton .dropbutton-action .button:focus, .dropbutton .dropbutton-action .button:active, .dropbutton .dropbutton-action .button.active {
+  color: #fcfcfc;
+  background-color: #0066cc;
+  border-color: #ccc;
+}
+
+.dropbutton .secondary-action {
+  border-top-color: #828282;
+}
+
+.dropbutton .secondary-action .button {
+  background-color: #f7f7f7;
+  color: #828282;
+}
+
+.dropbutton .dropbutton-toggle button:hover {
+  background-color: transparent;
+}
+
+.dropbutton-multiple .dropbutton {
+  border-right-color: #828282;
+}
+
+[dir="rtl"] .dropbutton-multiple .dropbutton {
+  border-left-color: #828282;
+}
+
+.dropbutton-multiple.open .dropbutton-action .button {
+  border-radius: 2px 0 0 0;
+}
+
+.dropbutton-arrow {
+  color: #828282;
+}
+
+/**
+ * Modal dialogs.
+ *  -  override jQuery UI styles.
+ ============================================================================ */
+.ui-widget-overlay {
+  background: rgba(0, 0, 0, 0.95);
+  opacity: 0.3;
+}
+
+.ui-dialog .form-text {
+  background-color: inherit !important;
+  color: black !important;
+  border-color: silver !important;
+}
+
+.ui-dialog .form-text::-webkit-input-placeholder {
+  color: silver;
+}
+
+.ui-dialog .form-text:-ms-input-placeholder {
+  color: silver;
+}
+
+.ui-dialog .form-text::-ms-input-placeholder {
+  color: silver;
+}
+
+.ui-dialog .form-text::placeholder {
+  color: silver;
+}
+
+.ui-dialog .form-type-radio label.option,
+.ui-dialog .form-type-checkbox label.option {
+  border-color: transparent;
+  background-color: inherit;
+}
+
+.ui-dialog .form-type-radio label.option:focus, .ui-dialog .form-type-radio label.option:hover,
+.ui-dialog .form-type-checkbox label.option:focus,
+.ui-dialog .form-type-checkbox label.option:hover {
+  color: inherit;
+  background-color: inherit;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+  color: #363636;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+  color: #fcfcfc;
+  background: #828282;
+  border-color: #828282;
+  opacity: 0.9;
+  -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.5);
+}
+
+.ui-dialog .ui-dialog-buttonpane button:hover, .ui-dialog .ui-dialog-buttonpane button:focus {
+  opacity: 1;
+  color: #fcfcfc;
+  background: #828282;
+}
+
+.ui-dialog .ui-dialog-buttonpane button:visited {
+  color: #fcfcfc;
+  background: #828282;
+}
+
+.ui-dialog .ui-dialog-buttonpane button[disabled]:hover {
+  opacity: 1;
+}
+
+.ui-dialog .ui-dialog-buttonpane .button--primary {
+  color: #fcfcfc;
+  background-color: #0066cc;
+  border: 1px #0066cc solid;
+}
+
+.ui-dialog .ui-dialog-buttonpane .button--primary:link, .ui-dialog .ui-dialog-buttonpane .button--primary:visited {
+  color: #fcfcfc;
+  background-color: #0066cc;
+  border-color: #0066cc;
+}
+
+.ui-dialog .ui-dialog-buttonpane .button--primary:hover, .ui-dialog .ui-dialog-buttonpane .button--primary:focus, .ui-dialog .ui-dialog-buttonpane .button--primary:active, .ui-dialog .ui-dialog-buttonpane .button--primary.active {
+  color: #fcfcfc;
+  background-color: #0066cc;
+  border-color: #0066cc;
+}
+
+/**
+ * File icons
+ * AT un-sets Drupal core file field CSS for image icons and replaces them
+ * with FontAwesome icons.
+ ============================================================================ */
+.file a:before {
+  color: #808080;
+}
+
+/**
+ * File upload widgets.
+ ============================================================================ */
+.field--widget-file-generic,
+.field--widget-image-image {
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+
+.field--widget-file-generic details,
+.field--widget-image-image details {
+  background: transparent;
+}
+
+.field--widget-image-image .image-preview {
+  background-color: transparent;
+}
+
+/**
+ * Field Taxonomy Reference
+ ============================================================================ */
+/**
+ * Labels.
+ *  -  for example "new" mark on comments, tags etc.
+ ============================================================================ */
+.filter-help a:after,
+.more-help-link a:after {
+  color: #cccccc;
+}
+
+/**
+ * Messages
+ *  - System messages such as status, warning and error are NOT included
+ *    here as we don't want them to shift or change in color module, since
+ *    they are too important with regards to accessibility etc.
+ ============================================================================ */
+.dev-query {
+  color: #f7f7f7;
+}
+
+body > pre,
+.xdebug-var-dump {
+  color: #f7f7f7;
+}
+
+.page .xdebug-var-dump {
+  color: #363636;
+}
+
+body:before {
+  color: #a51b00;
+}
+
+/**
+ * Content Types (nodes)
+ *  - in Drupal a content type is a bunch of fields we use to enter and display
+ *    content, such as pages, blog posts, forum posts and so on. Each of those
+ *    is usually a content type you create in the Drupal admin.
+ *  - an instance of a content type (e.g. a single blog post) is called a node,
+ *    the root template is called node.html.twg and the base selector is .node {}
+ ============================================================================ */
+.node {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.node--sticky {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/**
+ * Node Add Edit Forms.
+ ============================================================================ */
+.layout-region-node-secondary__inner {
+  border-color: #cccccc;
+  background-color: #ffffff;
+}
+
+.layout-region-node-secondary__inner .entity-meta details[open] {
+  -webkit-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.085);
+          box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.085);
+}
+
+.layout-region-node-secondary__inner .entity-meta details[open] > summary {
+  background-color: rgba(0, 0, 0, 0.025);
+}
+
+/**
+ * Aggregator
+ ============================================================================ */
+.aggregator-item {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+/**
+ * Forums
+ *  - see table.scss for generic table styles.
+ ============================================================================ */
+.forum .icon svg {
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+/**
+ * Search results pages
+ ============================================================================ */
+.item-list--search-results {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.search-result__snippet-info {
+  color: #5c5c5c;
+}
+
+/**
+ * Comments
+ *  - comment field (holds comment title, form, comments etc)
+ *  - styles for comments
+ ============================================================================ */
+.comment {
+  border-color: #eeeeee;
+}
+
+/**
+ * Social media
+ *  - styles for socila media links, modules etc.
+ ============================================================================ */
+.block-social-media-links .platform__link,
+.pane-social-media-link-widget .platform__link {
+  color: #363636;
+  opacity: 0.65;
+}
+
+.block-social-media-links .platform__link:hover, .block-social-media-links .platform__link:focus,
+.pane-social-media-link-widget .platform__link:hover,
+.pane-social-media-link-widget .platform__link:focus {
+  opacity: 1;
+}
+
+/**
+ * Views
+ ============================================================================ */
+.view-empty:not(:empty) .links a[href="/node/add"] {
+  opacity: 0.9;
+  -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.5);
+  color: #fcfcfc;
+  background-color: #0066cc;
+  border: 1px #0066cc solid;
+}
+
+.view-empty:not(:empty) .links a[href="/node/add"]:hover, .view-empty:not(:empty) .links a[href="/node/add"]:focus {
+  opacity: 1;
+}
+
+.view-empty:not(:empty) .links a[href="/node/add"][disabled]:hover {
+  opacity: 1;
+}
+
+.view-empty:not(:empty) .links a[href="/node/add"]:link, .view-empty:not(:empty) .links a[href="/node/add"]:visited {
+  color: #fcfcfc;
+  background-color: #0066cc;
+  border-color: #0066cc;
+}
+
+.view-empty:not(:empty) .links a[href="/node/add"]:hover, .view-empty:not(:empty) .links a[href="/node/add"]:focus, .view-empty:not(:empty) .links a[href="/node/add"]:active, .view-empty:not(:empty) .links a[href="/node/add"].active {
+  color: #fcfcfc;
+  background-color: #0066cc;
+  border-color: #0066cc;
+}
+
+/**
+ * CKEditor Colors
+ * Pretty brutal, but effective, combines with other editor partials and files,
+ * mainly for Mimic but will color borders for moono also.
+ ============================================================================ */
+.cke_chrome {
+  border-color: #cccccc !important;
+  border-top-color: #cccccc !important;
+  border-bottom-color: #cccccc !important;
+  color: #363636 !important;
+}
+
+.cke_top {
+  border-bottom-color: #cccccc !important;
+  background-color: #f7f7f7 !important;
+  color: #363636 !important;
+}
+
+.cke_bottom {
+  border-top-color: #cccccc !important;
+  background-color: #f7f7f7 !important;
+  color: #363636 !important;
+}
+
+.cke_editable,
+textarea.cke_source,
+.cke_combopanel {
+  background-color: #ffffff !important;
+  color: #363636 !important;
+}
+
+.cke_combo_off a.cke_combo_button,
+a.cke_button_off {
+  color: #363636 !important;
+}
+
+.cke_combo_off a.cke_combo_button:hover, .cke_combo_off a.cke_combo_button:focus, .cke_combo_off a.cke_combo_button:active,
+a.cke_button_off:hover,
+a.cke_button_off:focus,
+a.cke_button_off:active {
+  background-color: #f2f2f2 !important;
+  color: #363636 !important;
+}
+
+.cke_combo_on a.cke_combo_button,
+a.cke_button_on {
+  background-color: #f2f2f2 !important;
+  color: #363636 !important;
+}
+
+.cke_combo_on a.cke_combo_button:hover, .cke_combo_on a.cke_combo_button:focus, .cke_combo_on a.cke_combo_button:active,
+a.cke_button_on:hover,
+a.cke_button_on:focus,
+a.cke_button_on:active {
+  background-color: #f2f2f2 !important;
+  color: #363636 !important;
+}
+
+.cke_panel,
+.cke_combopanel {
+  background-color: #ffffff !important;
+  border-color: #cccccc !important;
+}
+
+.cke_combo_text {
+  color: #363636 !important;
+}
+
+.cke_combo_arrow {
+  border-top-color: #cccccc !important;
+}
+
+.cke_panel_listItem a {
+  color: inherit !important;
+}
+
+* html .cke_panel_listItem a {
+  color: #363636 !important;
+}
+
+*:first-child + html .cke_panel_listItem a {
+  color: #363636 !important;
+}
+
+.cke_panel_listItem.cke_selected a {
+  background-color: #f2f2f2 !important;
+}
+
+.cke_panel_listItem a:hover, .cke_panel_listItem a:focus, .cke_panel_listItem a:active {
+  background-color: #f2f2f2 !important;
+  color: #363636 !important;
+}
+
+.cke_reset_all,
+.cke_button_icon:before {
+  color: #363636 !important;
+}
+
+.cke_resizer {
+  border-color: transparent #cccccc transparent transparent !important;
+}
+
+a.cke_menu_button:after, a.cke_menu_button:before,
+a.cke_combo_button:after,
+a.cke_combo_button:before,
+a.cke_button:after,
+a.cke_button:before {
+  display: none !important;
+}
+
+input.cke_dialog_ui_input_text,
+input.cke_dialog_ui_input_password {
+  background-color: white !important;
+  color: black !important;
+}
+
+.ckeditor-dialog-loading,
+.ckeditor-dialog-loading * {
+  background-color: #f2f2f2 !important;
+  color: #363636 !important;
+  border-color: #eeeeee !important;
+}
+/*# sourceMappingURL=color.css.map */

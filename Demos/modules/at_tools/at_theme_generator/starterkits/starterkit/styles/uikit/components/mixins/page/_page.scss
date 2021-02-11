@@ -1,0 +1,76 @@
+// Mixins for setting color, gradients, and patterns on the page wrapper and
+// page rows.
+
+// Page pattern over single color.
+@mixin page-pattern-overlay($background-color, $pattern_url) {
+  background-image: url(#{$pattern_url});
+}
+
+
+// Page pattern over gradient.
+@mixin page-pattern-overlay-gradient($color-start, $color-stop, $pattern_url) {
+  background-image: url(#{$pattern_url}), linear-gradient($color-start 0%, $color-stop 100%);
+}
+
+
+// Row background color, single.
+@mixin page-row-background-color($background-color, $page-row-fullwidth) {
+  @if $page-row-fullwidth {
+    background-color: $background-color;
+
+    .regions {
+      background: inherit;
+    }
+  }
+  @else {
+    .regions {
+      background-color: $background-color;
+    }
+  }
+}
+
+
+// Row gradients.
+@mixin page-row-gradiant($color-start, $color-stop, $page-row-fullwidth) {
+  @if $page-row-fullwidth {
+    background-color: $color-start;
+    background-image: linear-gradient($color-start 0%, $color-stop 100%);
+
+    .regions {
+      background: inherit;
+    }
+  }
+  @else {
+    .regions {
+      background-color: $color-start;
+      background-image: linear-gradient($color-start 0%, $color-stop 100%);
+    }
+  }
+}
+
+
+// Row pattern over single color.
+@mixin page-row-pattern-overlay($pattern_url, $page-row-fullwidth) {
+  @if $page-row-fullwidth {
+    background-image: url(#{$pattern_url});
+  }
+  @else {
+    &.regions {
+      background-image: url(#{$pattern_url});
+    }
+  }
+}
+
+
+// Row pattern over gradient.
+@mixin page-row-pattern-overlay-gradient($color-start, $color-stop, $pattern_url, $page-row-fullwidth) {
+  @if $page-row-fullwidth {
+    background-image: url(#{$pattern_url}), linear-gradient($color-start 0%, $color-stop 100%);
+  }
+  @else {
+    &.regions {
+      background-image: url(#{$pattern_url}), linear-gradient($color-start 0%, $color-stop 100%);
+    }
+  }
+}
+

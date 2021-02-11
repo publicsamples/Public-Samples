@@ -1,0 +1,66 @@
+// =============================================================================
+//
+//      Breakpoints / Media Queries
+//
+// =============================================================================
+//
+// Adaptivetheme ships with two breakpoint module groups - simple and advanced.
+// The simple group is a subset of the advanced group and uses just two
+// breakpoints, tablet-isolate and widescreen. Below is a list of all
+// breakpoints included with AT Core (usable by all sub-themes in layout theme
+//settings and here).
+//
+// SEE: adaptivetheme/at_core/at_core.breakpoints.yml
+//
+// These breakpoints use ems, which mean they are dependant on the base font
+// size,so any pixel equivalents stated here assume base font size of 16px.
+// Change them to suit your requirements.
+//
+//   mobile-isolate - 0 to 45em (0 to 720px), small screens only.
+//   tablet-isolate - 45.0625em and max-width 65em (721px to 960px), isolate tablets.
+//   wide-isolate   - 60.0625em and max-width 120em (961px to 1920px), isolate tablets.
+//   tablet         - 45.0625em (721px) and up.
+//   wide           - 60.0625em (961px) and up.
+//   huge           - 120.0625em (1921px) and up, for big resolution.
+//
+// Here you can see how each breakpoint cascades or isolates. Most of the time
+// a layout will use tablet-isolate and widescreen OR tablet-isolate,
+// widescreen-isolate and huge.
+//
+// | $mobile-isolate -->|
+//                      | $tablet-isolate -->|
+//                                           | $wide-isolate ---->|
+//                      | $tablet --------------------------------------------->
+//                                           | $wide -------------------------->
+//                                                                | $huge ----->
+//
+// Isolate with min/max.
+$mobile-isolate : "screen and (max-width: 45em)";
+$tablet-isolate : "screen and (min-width: 45.0625em) and (max-width: 60em)";
+$wide-isolate   : "screen and (min-width: 60.0625em) and (max-width: 120em)";
+// Min width only.
+$tablet         : "screen and (min-width: 45.0625em)";
+$wide           : "screen and (min-width: 60.0625em)";
+$huge           : "screen and (min-width: 120.0625em)";
+
+
+// Breakpoints - Responsive Menus
+//
+// Responsive breakpoints differ in that they are all max-width. In other words
+// they are effectively a "desktop first" strategy. The concept is that we set
+// the responsive menu to activate up to a certain width, after that the default
+// menu is activated.
+//
+// The "max-width" breakpoint is a special case in that it exactly matches the
+// CSS "max-width" of the default layout settings. AT sub-themes are set to use
+// this breakpoint by default for responsive menus (see Responsive Menu
+// extension in Appearance settings).
+//
+//   mobile    - 0 to 60em (0 to 960px)
+//   max-width - 0 to 75em (0 to 1200px)
+//
+// | mobile ------------->|
+// | maxwidth ------------------------------->|
+//
+$mobile    : "screen and (max-width: 60em)";
+$max-width : "screen and (max-width: 75em)";

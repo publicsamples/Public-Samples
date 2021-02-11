@@ -1,0 +1,11 @@
+services:
+  pagerer.factory:
+    class: Drupal\pagerer\PagererFactory
+    calls:
+      - [initPagers]
+  pagerer.style.manager:
+    class: Drupal\pagerer\Plugin\PagererStyleManager
+    parent: default_plugin_manager
+    arguments: ['@config.factory']
+    tags:
+      - { name: plugin_manager_cache_clear }

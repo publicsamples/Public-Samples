@@ -1,0 +1,155 @@
+<?php
+
+/**
+ * @file
+ * Drupal Module: Audiofield.
+ *
+ * Allows the use of multiple audio player plugins for display of audio files.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_library_info_build().
+ */
+function audiofield_library_info_build() {
+  $libraries = [];
+
+  // Here we dynamically build a library for each skin.
+  // This allows users to add custom skins to the library's skins folder.
+  foreach (_audiofield_list_skins('jplayer_audio_player') as $skin) {
+    $libraries[$skin['library_name']] = [
+      'css' => [
+        'component' => [
+          $skin['path'] => [
+            'minified' => TRUE,
+          ],
+        ],
+      ],
+      'dependencies' => [
+        'core/jquery',
+      ],
+    ];
+  }
+
+  return $libraries;
+}
+
+/**
+ * Helper function to list available skins.
+ */
+function _audiofield_list_skins($player) {
+  $skins = [];
+  if ($player == 'jplayer_audio_player') {
+    $files = file_scan_directory(DRUPAL_ROOT . '/libraries/jplayer/dist/skin/', '#.*\.min\.css#');
+    foreach ($files as $file) {
+      // Generate a human readable name.
+      $name = preg_replace("/^(jplayer\.)(.*)(\.min)/", '$2', $file->name);
+      $skins[$name] = [
+        'library_name' => 'audiofield.jplayer.theme_' . preg_replace('#[^A-Za-z0-9]#', '', $name),
+        'name' => $name,
+        'path' => str_replace(DRUPAL_ROOT, '', $file->uri),
+      ];
+    }
+  }
+  ksort($skins);
+  return $skins;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function audiofield_theme($existing, $type, $theme, $path) {
+  return [
+    'audiofield_download_links' => [
+      'variables' => [
+        'links' => NULL,
+      ],
+    ],
+    'audioplayer' => [
+      'variables' => [
+        'plugin_id' => NULL,
+        'plugin_theme' => NULL,
+        'files' => NULL,
+        'settings' => NULL,
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function audiofield_theme_suggestions_audioplayer_alter(array &$suggestions, array $variables) {
+  // Suggest a template using the plugin name.
+  $suggestions[] = 'audioplayer__' . $variables['plugin_id'];
+
+  // Suggest a template with the plugin/theme name if it exists.
+  if (!empty($variables['plugin_theme'])) {
+    $suggestions[] = 'audioplayer__' . $variables['plugin_id'] . '__' . $variables['plugin_theme'];
+  }
+}
+
+/**
+ * Implements hook_theme_registry_alter().
+ */
+function audiofield_theme_registry_alter(&$theme_registry) {
+  /*
+   * By default, Drupal 8 does not include theme suggestions from inside the
+   * module in which they were created, so we must add them manually here.
+   */
+  $path = drupal_get_path('module', 'audiofield');
+  $audioplayer_templates = drupal_find_theme_templates($theme_registry, '.html.twig', $path);
+  foreach ($audioplayer_templates as &$audioplayer_template) {
+    $audioplayer_template['type'] = 'module';
+  }
+  $theme_registry += $audioplayer_templates;
+}
+
+/**
+ * Implements hook_help().
+ */
+function audiofield_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.audiofield':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('AudioField is a file formatter for the File and Link modules. It allows you to upload or link audio files and play them on your site using one of several audio players available. It supports most audio formats (depends on the selected audio player). Please see <a href=":url">the module documentation</a> for examples of the players in use.', [':url' => 'https://www.drupal.org/docs/8/modules/audiofield']) . '</p>';
+      $output .= '<h3>' . t('Uses') . '</h3>';
+      $output .= '<p>' . t('Audiofield supports the following audio players, which must be downloaded and installed as libraries:') . '</p>';
+      $output .= '<dl>';
+      $output .= '<dt>' . t('Default HTML5 audio player') . '</dt>';
+      $output .= '<dd>' . t('Built into major browsers.') . '</dd>';
+      $output .= '<dt>' . t('Audio.js') . '</dt>';
+      $output .= '<dd>' . t('<a href=":url">:url</a>', [
+        ':url' => 'https://kolber.github.io/audiojs/',
+      ]) . '</dd>';
+      $output .= '<dt>' . t('jPlayer') . '</dt>';
+      $output .= '<dd>' . t('<a href=":url">:url</a>', [
+        ':url' => 'http://jplayer.org/',
+      ]) . '</dd>';
+      $output .= '<dt>' . t('MediaElement') . '</dt>';
+      $output .= '<dd>' . t('<a href=":url">:url</a>', [
+        ':url' => 'http://mediaelementjs.com/',
+      ]) . '</dd>';
+      $output .= '<dt>' . t('Projekktor') . '</dt>';
+      $output .= '<dd>' . t('<a href=":url">:url</a>', [
+        ':url' => 'https://github.com/frankyghost/projekktor',
+      ]) . '</dd>';
+      $output .= '<dt>' . t('SoundManager') . '</dt>';
+      $output .= '<dd>' . t('<a href=":url">:url</a>', [
+        ':url' => 'http://www.schillmania.com/projects/soundmanager2',
+      ]) . '</dd>';
+      $output .= '<dt>' . t('wavesurfer.js') . '</dt>';
+      $output .= '<dd>' . t('<a href=":url">:url</a>', [
+        ':url' => 'https://wavesurfer-js.org',
+      ]) . '</dd>';
+      $output .= '<dt>' . t('WordPress Audio') . '</dt>';
+      $output .= '<dd>' . t('<a href=":url">:url</a>', [
+        ':url' => 'http://wpaudioplayer.com',
+      ]) . '</dd>';
+      $output .= '</dl>';
+
+      return $output;
+  }
+}

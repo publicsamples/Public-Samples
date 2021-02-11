@@ -1,0 +1,90 @@
+# Schema for configuration files of the Pagerer module.
+
+# Schema for settings.
+pagerer.settings:
+  type: config_object
+  label: 'Pagerer settings'
+  mapping:
+    core_override_preset:
+      type: string
+      label: 'Preset replacing standard pager'
+
+# Pagerer preset entities.
+pagerer.preset.*:
+  type: config_entity
+  label: 'Pagerer preset entity'
+  mapping:
+    id:
+      type: string
+      label: 'Pager entity id'
+    label:
+      type: label
+      label: 'Pager name'
+    panes:
+      type: pagerer.multipane
+      label: 'Pager panes'
+
+# Pagerer styles default configurations.
+pagerer.style.standard:
+  type: config_object
+  label: 'Standard pager style'
+  mapping:
+    default_config:
+      type: pagerer.style_config.standard
+      label: 'Standard pager style default configuration'
+
+pagerer.style.basic:
+  type: config_object
+  label: 'Basic pager style'
+  mapping:
+    default_config:
+      type: pagerer.style_config.basic
+      label: 'Basic pager style default configuration'
+
+pagerer.style.mini:
+  type: config_object
+  label: 'Mini pager style'
+  mapping:
+    default_config:
+      type: pagerer.style_config.mini
+      label: 'Mini pager style default configuration'
+
+pagerer.style.progressive:
+  type: config_object
+  label: 'Progressive pager style'
+  mapping:
+    default_config:
+      type: pagerer.style_config.progressive
+      label: 'Progressive pager style default configuration'
+
+pagerer.style.adaptive:
+  type: config_object
+  label: 'Adaptive pager style'
+  mapping:
+    default_config:
+      type: pagerer.style_config.adaptive
+      label: 'Adaptive pager style default configuration'
+
+pagerer.style.slider:
+  type: config_object
+  label: 'Slider pager style'
+  mapping:
+    default_config:
+      type: pagerer.style_config.slider
+      label: 'Slider pager style default configuration'
+
+pagerer.style.scrollpane:
+  type: config_object
+  label: 'Scrollpane pager style'
+  mapping:
+    default_config:
+      type: pagerer.style_config.scrollpane
+      label: 'Scrollpane pager style default configuration'
+
+pagerer.style.multipane:
+  type: config_object
+  label: 'Multipane pager style'
+  mapping:
+    default_config:
+      type: pagerer.style_config.multipane
+      label: 'Multipane pager style default configuration'

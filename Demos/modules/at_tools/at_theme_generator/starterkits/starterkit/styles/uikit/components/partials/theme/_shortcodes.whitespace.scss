@@ -1,0 +1,66 @@
+/**
+ * Shortcodes (Whitespace control)
+ ============================================================================ */
+
+.spaceless {
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  max-height: none;
+}
+
+.spaceless-all,
+.spaceless-all * {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+.rm-padding {
+  padding: 0;
+}
+
+.rm-padding-top {
+  padding-top: 0;
+}
+
+.rm-padding-bottom {
+  padding-bottom: 0;
+}
+
+.rm-padding-right {
+  padding-right: 0;
+}
+
+.rm-padding-left {
+  padding-left: 0;
+}
+
+.rm-margin {
+  margin: 0;
+}
+
+.rm-margin-top {
+  margin-top: 0;
+}
+
+.rm-margin-bottom {
+  margin-bottom: 0;
+}
+
+.rm-margin-right {
+  margin-right: 0;
+}
+
+.rm-margin-left {
+  margin-left: 0;
+}
+
+.full-width-viewport {
+  max-width: none;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+}
+

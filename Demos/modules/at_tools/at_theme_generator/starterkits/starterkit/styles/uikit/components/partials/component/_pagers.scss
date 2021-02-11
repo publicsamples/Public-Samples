@@ -1,0 +1,165 @@
+/**
+ * Pagers
+ * - Full system pager.
+ * - Views mini pager.
+ ============================================================================ */
+
+// <nav> element wrapper.
+.pager {
+  @include output-rhythm(margin, $medium 0);
+  text-align: center;
+
+  // Local reset.
+  ul, ol {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+}
+
+
+// The regular system pager, e.g. used by default pager for the front page view.
+.pager--full {}
+
+// The Views mini-pager, e.g. used by default for taxonomy term page views.
+.pager--mini {
+  .pager__link--is-active {
+    @include output-rhythm(font-size, $medium * 0.875); // 14px
+  }
+}
+
+
+// pager_items is a wrapper and the list root.
+.pager__items {
+  padding: 0;
+  margin: 0 auto;
+}
+
+
+// li class for every pager item in any list.
+.pager__item {
+  margin: 1px;
+  display: inline-block;
+}
+
+
+@media #{$mobile-isolate} {
+  .pager__items__first-previous,
+  .pager__items__num-pages,
+  .pager__items__next-last {
+    text-align: center;
+  }
+  .pager__items__first-previous,
+  .pager__items__next-last {
+    .pager__item {
+      display: inline;
+    }
+  }
+}
+
+
+@media #{$tablet} {
+  .pager__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .pager__items__first-previous,
+  .pager__items__num-pages,
+  .pager__items__next-last {
+    display: inline-block;
+  }
+
+  .pager__items__num-pages {
+    //text-align: center;
+  }
+
+  .pager__items__first-previous {
+    text-align: #{$flow-from};
+  }
+  .pager__items__next-last {
+    text-align: #{$flow-to};
+  }
+}
+
+
+.pager__items__first-previous {}
+.pager__items__num-pages {}
+.pager__items__next-last {}
+
+
+// Active or "current" list item.
+.pager__item.is-active {}
+
+
+// Pager links are either an <a>, or a <span> for the current item in the
+// Views mini-pager.
+.pager__link {
+  display: inline-block;
+  border-radius: $border-radius;
+  transition: $global-transition;
+  @include output-rhythm(padding, 2px 7px 0);
+
+  border: 0;
+  //border: $border-width $border-style;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+// Global padding for all pager links (anchors).
+.pager__link {
+
+}
+
+
+// Active or "current" link.
+.pager__link--is-active {}
+
+
+// List item for the word "First"
+.pager__item--first {}
+
+
+// List item for the word "Previous"
+.pager__item--previous {}
+
+
+// List item for the word "Next"
+.pager__item--next {}
+
+// List item for the word "Last"
+.pager__item--last {}
+
+
+// Each numeric pager item has this class.
+.pager__item--num {}
+
+
+// First and last classes for numeric pager items.
+.pager__item--num-first {}
+.pager__item--num-last {}
+
+
+// Pager ellipsis appear when there are more pages than display in the pager.
+// Set on a span tag that wraps the ellipsis.
+.pager__ellipsis {}
+
+
+// Ellipsis are showing before the first numeric item.
+// E.g. first previous ...2 3 4 next last
+.pager__ellipsis--before {}
+
+
+// Ellipsis are showing after the last numeric item.
+// E.g. 1 2 3... next last
+.pager__ellipsis--after {}
+
+

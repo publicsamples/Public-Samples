@@ -1,0 +1,21 @@
+.threecol-2-5-5 .arc--3 .l-r {
+  width: 41.66667%;
+}
+
+.threecol-2-5-5 .arc--3 .l-r:first-child {
+  width: 16.66667%;
+}
+
+.threecol-2-5-5 .hr--1-3 .l-r,
+.threecol-2-5-5 .hr--1-2 .l-r {
+  width: 16.66667%;
+}
+
+.threecol-2-5-5 .hr--1-3 .l-r:last-child,
+.threecol-2-5-5 .hr--1-2 .l-r:last-child {
+  width: 83.33333%;
+}
+
+.threecol-2-5-5 .hr--2-3 .l-r {
+  width: 50%;
+}

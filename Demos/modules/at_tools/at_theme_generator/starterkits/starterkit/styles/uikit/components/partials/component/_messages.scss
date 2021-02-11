@@ -1,0 +1,150 @@
+/**
+ * Messages
+ * Style system messages such as status, warning and error.
+ * Colors are kept here, we don't want these to shift in color module.
+ ============================================================================ */
+
+.messages {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding: 1.25em;
+  margin: 1.25em 0;
+
+  border: $border-width $border-style;
+  border-radius: $border-radius;
+
+  // YAML Forms module adds a box-shadow that don't jive with our styles.
+  box-shadow: none;
+
+  &+ .messages {
+    margin-top: $large;
+    @include margin-leader(1, $medium);
+  }
+
+  .container {
+    box-sizing: border-box;
+  }
+}
+
+.messages__list {
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+
+  &+ .messages__item {
+    @include margin-leader(1, $medium);
+  }
+
+  .item-list ul {
+    @include output-rhythm(margin, $large 0);
+
+    li {
+      list-style: square;
+    }
+  }
+}
+
+
+// Success (status).
+.messages--status,
+table tr.ok {
+  background-color: $success-background-color;
+}
+
+.messages--status,
+.ok {
+  color: $success-text-color;
+  border-color: $success-border-color;
+}
+
+
+// Warning.
+.messages--warning,
+table tr.warning {
+  background-color: $warning-background-color;
+}
+
+.messages--warning,
+.warning {
+  color: $warning-text-color;
+  border-color: $warning-border-color;
+}
+
+
+// Error.
+.messages--error,
+table tr.error {
+  background-color: $error-background-color;
+}
+
+.messages--error,
+.error {
+  color: $error-text-color;
+  border-color: $error-border-color;
+}
+
+
+// All, background image?
+.messages--status,
+.messages--warning,
+.messages--error {
+  background-image: none;
+}
+
+
+// RTL.
+[dir="rtl"] .messages {
+  text-align: right;
+}
+
+
+// Message icons.
+.messages .icon {
+  &:before {
+    font-family: $icon-font;
+    float: left;
+    vertical-align: top;
+    @include output-rhythm(padding, 0 $small 0 0);
+
+    // Wait for FontAwesome to load.
+    display: none;
+    .fa-loaded & {
+      display: block;
+    }
+  }
+}
+
+[dir="rtl"] .messages .icon:before {
+  @include output-rhythm(padding, 0 0 0 $small);
+  float: right;
+}
+
+.icon-status:before {
+  content: $messages-status-icon;
+}
+
+.icon-warning:before {
+  content: $messages-warning-icon;
+}
+
+.icon-error:before {
+  content: $messages-error-icon;
+}
+
+
+// Devel query messages
+.dev-query {}
+
+// xdebug-var-dump
+body > pre,
+.xdebug-var-dump {}
+
+.page {
+  .xdebug-var-dump {}
+}
+
+// SASS errors
+body {
+  &:before {}
+}

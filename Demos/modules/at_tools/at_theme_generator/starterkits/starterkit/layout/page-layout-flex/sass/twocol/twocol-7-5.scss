@@ -1,0 +1,31 @@
+@import "../page-layout-base";
+//
+// Two Regions 7-5
+//
+// First region  : 7 grid columns.
+// Second region : 5 grid columns.
+//
+// Actual Source Order:
+//
+//  - first
+//  - second
+//
+// Appearance:
+//
+//  ------------------------------------------------
+//  |       first (7)           |    second (5)    |
+//  ------------------------------------------------
+//  Key: region-name (grid columns)
+
+.twocol-7-5 {
+
+  .arc--2 {
+    .l-r {
+       width: span(7 of 12);
+
+      &:last-child {
+        width: span(5 of 12);
+      }
+    }
+  }
+}

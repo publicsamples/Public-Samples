@@ -1,0 +1,76 @@
+<?php
+/**
+ * Verifies that Ace library is present.
+ * The library is searched in the recommended directory for
+ * storing external libraries under 8.x: DRUPAL_ROOT/libraries.
+ * For preserving backwards compatibility, ace_editor/libraries
+ * is also checked.
+ */
+function ace_editor_lib_path() {
+
+  $paths_to_check = [
+    '/libraries',
+    '/' . drupal_get_path('module', 'ace_editor') . '/libraries/',
+    '/' . drupal_get_path('profile', drupal_get_profile()) . '/libraries/',
+    ];
+
+  foreach ($paths_to_check as $path) {
+    $found = file_scan_directory(DRUPAL_ROOT . $path, '/^ace\.js/', ['recurse' => TRUE]);
+    if ($found) {
+      return substr(preg_replace('/ace\.js/', '', reset($found)->uri), strlen(DRUPAL_ROOT));
+    }
+  }
+  return FALSE;
+}
+
+/**
+ * Implements hook_library_info_build()
+ *
+ * Selects all theme and mode files from ace editor external library and add it
+ * to drupal library.
+ */
+
+function ace_editor_library_info_build() {
+
+  $path = ace_editor_lib_path();
+
+  // Collects all theme and mode files available.
+  $files = file_scan_directory(DRUPAL_ROOT . $path, '/(theme|mode)-(.+)\.js$/', ['recurse' => FALSE]);
+
+  $libraries = [];
+  foreach ($files as $file_info) {
+
+    $asset = explode('-', $file_info->name);
+    $library_name = $asset[0] . '.' . $asset[1];
+    $libraries[$library_name] = $path . $file_info->filename;
+
+  }
+  $libs = [];
+  foreach ($libraries as $key => $value) {
+    $libs[$key] = [
+      'js' => [
+        $value => [],
+      ],
+    ];
+  }
+  return $libs;
+}
+
+
+/**
+ * Implements hook_library_info_alter().
+ * @param array $libraries
+ * @param string $extension
+ */
+function ace_editor_library_info_alter(&$libraries, $extension) {
+  if ($extension == 'ace_editor') {
+    $library_path = ace_editor_lib_path();
+    $libraries['primary']['js'][$library_path . 'ace.js'] = ['weight' => -2];
+    $config = \Drupal::config('ace_editor.settings')->get();
+    if ($config['auto_complete']) {
+      $libraries['primary']['js'][$library_path . 'ext-language_tools.js'] = ['weight' => -2];
+    }
+    $libraries['formatter']['js'][$library_path . 'ace.js'] = ['weight' => -2];
+    $libraries['filter']['js'][$library_path . 'ace.js'] = ['weight' => -2];
+  }
+}

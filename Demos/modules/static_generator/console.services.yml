@@ -1,0 +1,42 @@
+services:
+  static_generator.generate-all:
+    class: Drupal\static_generator\Command\GenerateAllCommand
+    arguments: ['@static_generator']
+    tags:
+      - { name: drupal.command }
+
+  static_generator.generate-pages:
+    class: Drupal\static_generator\Command\GeneratePagesCommand
+    arguments: ['@static_generator']
+    tags:
+      - { name: drupal.command }
+
+  static_generator.generate-pages-type:
+    class: Drupal\static_generator\Command\GeneratePagesTypeCommand
+    arguments: ['@static_generator']
+    tags:
+      - { name: drupal.command }
+
+  static_generator.generate-files:
+    class: Drupal\static_generator\Command\GenerateFilesCommand
+    arguments: ['@static_generator']
+    tags:
+      - { name: drupal.command }
+
+  static_generator.generate-blocks:
+    class: Drupal\static_generator\Command\GenerateBlocksCommand
+    arguments: ['@static_generator']
+    tags:
+      - { name: drupal.command }
+
+  static_generator.generate-redirects:
+    class: Drupal\static_generator\Command\GenerateRedirectsCommand
+    arguments: ['@static_generator']
+    tags:
+      - { name: drupal.command }
+
+  static_generator.delete:
+    class: Drupal\static_generator\Command\DeleteCommand
+    arguments: ['@static_generator']
+    tags:
+      - { name: drupal.command }

@@ -1,0 +1,32 @@
+@import "../page-layout-base";
+//
+// Two Regions 9-3
+//
+// First region  : 9 grid columns.
+// Second region : 3 grid columns.
+//
+// Actual Source Order:
+//
+//  - first
+//  - second
+//
+// Appearance:
+//
+//  ------------------------------------------------
+//  |       first (9)               |  second (3)  |
+//  ------------------------------------------------
+//  Key: region-name (grid columns)
+
+.twocol-9-3 {
+
+  .arc--2 {
+    .l-r {
+      width: span(9 of 12);
+
+      &:last-child {
+        width: span(3 of 12);
+      }
+    }
+  }
+}
+

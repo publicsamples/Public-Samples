@@ -1,0 +1,19 @@
+@import "plugin-layout-base";
+//
+// Two Regions 7-5
+// -----------------------------------------------------------------------------
+
+.bp--at-core-simple-wide,
+.bp--at-core-simple-tablet-isolate {
+  .atl--twocol-7-5 {
+    &.l-arc--2 {
+      > .atl__cw > .atl__lc {
+        width: span(7 of 12);
+
+        &:last-child {
+          width: span(5 of 12);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+/**
+ * @file
+ * Pagerer scrollpane CSS
+ */
+
+/* scrollpane buttons */
+div.pagerer-scrollpane-button span.ui-button-text {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* scrollpane embedded pager */
+nav.pagerer-scrollpane-embedded {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* scrollpane viewport */
+div.pagerer-viewport {
+  overflow: hidden;
+  position: absolute;
+}
+/* scrollpane embedded items list */
+div.pagerer-viewport ul.pager__items {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+}
+/* scrollpane embedded pager item */
+div.pagerer-viewport li.pager__item {
+  white-space: nowrap;
+  position: absolute;
+}

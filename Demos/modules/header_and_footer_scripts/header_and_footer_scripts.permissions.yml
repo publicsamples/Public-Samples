@@ -1,0 +1,4 @@
+header_and_footer_scripts_settings:
+  title: 'Add Scripts all over the site'
+  description: 'Users who have this permission can add and remove the scripts from the site.'
+  restrict access: TRUE

@@ -1,0 +1,199 @@
+/**
+ * Print
+ * This aggressively styles print output, you can remove all of it if you want
+ * print to be identical to a normal web page, or adjust it to better suit
+ * your design and requirements. For example this only removes a sub-set of
+ * regions, all others will print.
+ ============================================================================ */
+
+@media print {
+
+  // Global style reset.
+  * {
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    //color: #000 !important; /* Black prints faster: h5bp.com/s */
+  }
+
+
+  // Force full width and remove margin and padding etc.
+  html,
+  body,
+  .l-rw,
+  .pr-main .l-r--content,
+  .block-main-content,
+  article {
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  // Correct toolbar body padding etc.
+  body {
+    top: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+
+  // Remove floats.
+  .pr-main .l-r--content,
+  .block-main-content {
+    float: none;
+  }
+
+
+  // Remove rows, regions and toolbar.
+  [id*="toolbar-"],
+  [class*="_sidebar-"],
+  .pr-navbar,
+  .l-rw-navbar,
+  .l-r--page-top,
+  .l-r--page-bottom,
+  .pr-temporary-tabs,
+  .comment-form-wrapper,
+  .block-breadcrumbs,
+  .links,
+  .contextual,
+  .tabs,
+  .feed-icons,
+  .messages {
+    display: none !important;
+    width: 0;
+    height: 0;
+    float: none;
+  }
+
+
+  // Add a border bottom to break up long lists of node teasers.
+  .node--view-mode-teaser {
+    border-bottom: 1px dotted silver;
+    margin-bottom: 1em;
+  }
+
+
+  // Underline links.
+  a,
+  a:visited {
+    text-decoration: underline;
+    color: $link-color !important; // default blue by default.
+  }
+
+
+  // Use to print the href attribute.
+  a[href]:after {
+    //content: " (" attr(href) ")";
+  }
+
+
+  // Print abbr titles.
+  abbr[title]:after {
+    //content: " (" attr(title) ")";
+  }
+
+
+  // Remove text decoration from branding links.
+  .site-branding a,
+  .node__title a {
+    text-decoration: none;
+  }
+
+
+  // Reset margins.
+  .block,
+  .node,
+  .comment,
+  .page__row,
+  .regions,
+  .region {
+    margin: 0 0 12px;
+  }
+
+
+  // Reset padding on menu links.
+  .menu a {
+    @include output-rhythm(padding, 0 $medium $xx-small 0);  // LTR
+  }
+  [dir="rtl"] .menu a {
+    @include output-rhythm(padding, 0 0 $xx-small $medium);
+  }
+
+
+  /* Don't show links for images, or javascript/internal links */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+
+  // Remove borders.
+  body,
+  img,
+  caption,
+  .page,
+  .field,
+  .block,
+  .comment,
+  .node,
+  .view,
+  .page__row,
+  .regions,
+  .region {
+    border: 0 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+
+  // Try to avoid page breaks inside, e.g. don't split this content
+  // over multiple print sheets.
+  pre,
+  code,
+  img,
+  svg,
+  tr,
+  blockquote {
+    page-break-inside: avoid;
+  }
+
+
+  // Let thead behave like a <thead> element in case they don't.
+  thead {
+    display: table-header-group; /* h5bp.com/t */
+  }
+
+
+  // Prevent overflowing images.
+  img {
+    max-width: 100%;
+  }
+
+
+  // Page margin.
+  @page {
+    margin: 0.5cm;
+  }
+
+
+  // Try to avoid orphans and widows.
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+
+  // Try to avoid page breaks after, since these are probably
+  // content headers.
+  h1,
+  h2 {
+    page-break-after: avoid;
+  }
+}
+
+
+

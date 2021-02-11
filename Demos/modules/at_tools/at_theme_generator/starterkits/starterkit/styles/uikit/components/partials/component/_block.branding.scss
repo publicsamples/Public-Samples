@@ -1,0 +1,73 @@
+/**
+ * Branding styles
+ *  - Drupal core branding block.
+ ============================================================================ */
+
+.block-plugin-id--system-branding-block {
+  @include output-rhythm(margin, $large 0);
+}
+
+
+.site-branding {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: $row-direction;
+
+  &__text,
+  &__name,
+  &__slogan {
+    display: block;
+  }
+
+  // link around the logo image
+  &__logo-link {
+    display: block;
+    @include output-rhythm(padding-#{$flow-to}, $medium);
+  }
+
+  // logo image
+  &__logo-img {}
+
+  // wrapper around site name and slogan (byline)
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: $row-direction;
+    margin: 0;
+  }
+
+  // site name
+  &__name {
+    @include output-rhythm(font-size, $large);
+
+    @media #{$wide} {
+      @include output-rhythm(font-size, $x-large);
+    }
+
+    @include output-rhythm(padding-#{$flow-to}, $medium);
+    font-weight: $font-weight-normal;
+  }
+
+  // site name link
+  &__name-link {
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  // site slogan
+  &__slogan {
+    //@include output-rhythm(padding, $xxx-small 0);
+    font-weight: $font-weight-normal;
+  }
+}
+
+
+// Conditional classes
+.has-logo {}
+.has-name {}
+.has-slogan {}
+

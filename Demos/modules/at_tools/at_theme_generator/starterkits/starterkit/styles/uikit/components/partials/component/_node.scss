@@ -1,0 +1,171 @@
+/**
+ * Content Types (nodes)
+ *  - in Drupal a content type is a bunch of fields we use to enter and display
+ *    content, such as pages, blog posts, forum posts and so on. Each of those
+ *    is usually a content type you create in the Drupal admin.
+ *  - an instance of a content type (e.g. a single blog post) is called a node,
+ *    the root template is node.html.twig and the base selector is .node {}
+ ============================================================================ */
+
+.node {
+  //border: $node-teaser-border-color $node-teaser-border-width;
+  margin-bottom: 1.25em;
+  padding: 1.25em;
+  border-radius: $border-radius;
+
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  // Status marker
+  &__status {
+    float: $flow-to;
+  }
+
+
+  // Header - includes title (h1 full, h2 teaser), user picture, author and date.
+  &__header {}
+  &__title {}
+
+
+  // View modes
+  &--view-mode-default {}
+
+  &--view-mode-full {
+    &__title {
+      @include output-rhythm(margin, 0 0 $medium);
+    }
+  }
+
+  &--view-mode-teaser {
+    ul:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  // Node title link - applies to view-mode teaser.
+  &__title-link {}
+
+
+  // Node author picture, name and date details.
+  &__meta {
+    display: flex;
+    align-items: center;
+    @include output-rhythm(margin, $medium 0);
+
+    // Author picture is showing.
+    &--has-author-picture {}
+
+    // User picture.
+    .field-type-image {
+      @include output-rhythm(margin, 0 $small 0 0);
+
+      // figure wraper
+      &__figure {
+        margin: 0;
+        padding: 0;
+      }
+
+      img {
+        width: auto;
+        @include output-rhythm(height, $medium * 3);
+      }
+    }
+
+    // Remove potentially empty article element.
+    article:empty {
+      display: none;
+    }
+  }
+
+
+  // Node submitted, typically "Submitted by... on..."
+  &__submitted {
+    // User name
+    .field--name-uid {}
+
+    // Created date/time
+    .field--name-created {}
+  }
+
+  .node__author {
+    &:after {
+      content: "-";
+      display: inline-block;
+    }
+  }
+  .node__pubdate {}
+
+  &__meta--has-author-picture {
+    .node__submitted {
+      @include output-rhythm(margin-top, 4px);
+    }
+
+    .node__author {
+      &:after {
+        display: none;
+      }
+    }
+
+    .node__author,
+    .node__pubdate {
+      margin: 0;
+      display: block;
+    }
+  }
+
+  @media #{$mobile} {
+    .node__author {
+      &:after {
+        display: none;
+      }
+    }
+
+    .node__author,
+    .node__pubdate {
+      margin: 0;
+      display: block;
+    }
+  }
+
+  // Node links.
+  &__links {
+    clear: both;
+
+    .inline {
+      li {
+        &.node-readmore {}
+        &.comment-new-comment {}
+        &.comment-forbidden {}
+      }
+    }
+  }
+
+  // Content types
+  &--type-article {}
+  &--type-page {}
+  &--type-forum {}
+
+
+  // States
+  &--promoted {}
+  &--unpublished {}
+
+  &--sticky {
+    padding: 0;
+  }
+
+  // Field image borders.
+  .field-type-image__item {
+    //border: $border-width $border-style;
+    //border-radius: $border-radius;
+    //@include output-rhythm(padding, $small);
+    //display: inline-block;
+  }
+
+  .field-type-image__figcaption {
+    //@include output-rhythm(padding, $small  0 0 0);
+  }
+}
+

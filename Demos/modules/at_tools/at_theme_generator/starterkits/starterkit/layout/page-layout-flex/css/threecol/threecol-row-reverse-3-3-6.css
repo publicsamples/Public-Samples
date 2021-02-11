@@ -1,0 +1,19 @@
+.threecol-row-reverse-3-3-6 .l-rw {
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.threecol-row-reverse-3-3-6 .hr--1-2 .l-r,
+.threecol-row-reverse-3-3-6 .hr--1-3 .l-r,
+.threecol-row-reverse-3-3-6 .hr--2-3 .l-r {
+  width: 50%;
+}
+
+.threecol-row-reverse-3-3-6 .arc--3 .l-r {
+  width: 25%;
+}
+
+.threecol-row-reverse-3-3-6 .arc--3 .l-r:first-child {
+  width: 50%;
+}

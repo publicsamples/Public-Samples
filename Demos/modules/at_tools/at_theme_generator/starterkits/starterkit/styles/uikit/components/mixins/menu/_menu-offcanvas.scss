@@ -1,0 +1,85 @@
+// Off Canvas
+
+@mixin offcanvas($oc-position: left, $width: 15em, $arrows: false) {
+
+  $pad-dir: padding-right;
+  $transform_block: translate3d(-#{$width}, 0, 0);
+  $transform_page: translate3d($width, 0, 0);
+
+  @if $oc-position == right {
+    $pad-dir: padding-left;
+    $transform_block: translate3d($width, 0, 0);
+    $transform_page: translate3d(-#{$width}, 0, 0);
+  }
+
+  .ms-offcanvas {
+
+    > .page {
+      transition: $global-transition;
+    }
+
+    .rm-toggle {
+      float: $oc-position;
+      margin-#{$oc-position}: 0;
+      padding-#{$oc-position}: 0;
+
+      &__link {
+        display: inline-block;
+      }
+    }
+
+    .rm-block__content {
+      opacity: .001;
+      display: none;
+      #{$oc-position}: 0;
+      transform: $transform_block;
+      transition: $global-transition;
+
+      .menu__link {
+        @include output-rhythm(margin-bottom, 4px);
+        @include output-rhythm(padding, $xx-small $large);
+        display: block;
+
+        &:after {
+          content: none;
+          display: none;
+        }
+      }
+
+      .is-child {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transition: $global-transition;
+
+        &.is-open--child {
+          position: relative;
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+
+    // Menu is open.
+    &.rm-is-open {
+      > .page {
+        position: relative;
+        transform: $transform_page;
+      }
+
+      // Remove any space so the menu butts right up against the page edge.
+      .l-pr {
+        margin: 0;
+        padding: 0;
+      }
+
+      .rm-block__content {
+        opacity: 1;
+        display: block;
+        width: $width;
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+}

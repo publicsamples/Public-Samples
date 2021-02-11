@@ -1,0 +1,273 @@
+<?php
+
+/**
+ * @file
+ * Primarily Drupal hooks and global API functions to exclude node titles.
+ *
+ * This is the main module file for Exclude Node Title. 
+ */
+
+use Drupal\Core\Render\Element;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\NodeInterface;
+use Drupal\node\NodeForm;
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function exclude_node_title_preprocess_html(&$vars) {
+  if (!\Drupal::currentUser()->hasPermission('use exclude node title')) {
+    return;
+  }
+
+  $exclude_manager = \Drupal::service('exclude_node_title.manager');
+  $route_match = \Drupal::routeMatch();
+
+  $route_name = $route_match->getRouteName();
+  switch ($route_name) {
+    case 'entity.node.edit_form':
+      $node = $route_match->getParameter('node');
+      $exclude_manager->preprocessTitle($vars, $node, 'nodeform');
+      break;
+
+    case 'entity.node.canonical':
+      $node = $route_match->getParameter('node');
+      if ($exclude_manager->isTitleExcluded($node, 'full')) {
+        unset($vars['head_title']['title']);
+      }
+      break;
+
+  }
+}
+
+/**
+ * Implements hook_preprocess_page_title().
+ */
+function exclude_node_title_preprocess_page_title(&$vars) {
+  if (!\Drupal::currentUser()->hasPermission('use exclude node title')) {
+    return;
+  }
+
+  $exclude_manager = \Drupal::service('exclude_node_title.manager');
+  $route_match = \Drupal::routeMatch();
+
+  $route_name = $route_match->getRouteName();
+  switch ($route_name) {
+    case 'entity.node.edit_form':
+      $node = $route_match->getParameter('node');
+      $exclude_manager->preprocessTitle($vars, $node, 'nodeform');
+      break;
+
+    case 'entity.node.canonical':
+      $node = $route_match->getParameter('node');
+      $exclude_manager->preprocessTitle($vars, $node, 'full');
+      break;
+
+  }
+}
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function exclude_node_title_preprocess_page(&$vars) {
+  if (!\Drupal::currentUser()->hasPermission('use exclude node title')) {
+    return;
+  }
+
+  $exclude_manager = \Drupal::service('exclude_node_title.manager');
+  $route_match = \Drupal::routeMatch();
+
+  $route_name = $route_match->getRouteName();
+  switch ($route_name) {
+    case 'entity.node.edit_form':
+      $node = $route_match->getParameter('node');
+      $exclude_manager->preprocessTitle($vars, $node, 'nodeform');
+      break;
+
+    case 'entity.node.canonical':
+      $node = $route_match->getParameter('node');
+      $exclude_manager->preprocessTitle($vars, $node, 'full');
+      break;
+
+   }
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function exclude_node_title_preprocess_node(&$vars) {
+  if (\Drupal::currentUser()->hasPermission('use exclude node title')) {
+    \Drupal::service('exclude_node_title.manager')
+      ->preprocessTitle($vars, $vars['node'], $vars['view_mode']);
+  }
+}
+
+/**
+ * Implements hook_preprocess_field().
+ */
+function exclude_node_title_preprocess_field(&$vars) {
+  $exclude_manager = \Drupal::service('exclude_node_title.manager');
+
+  if (\Drupal::currentUser()->hasPermission('use exclude node title') &&
+    $exclude_manager->isSearchExcluded() &&
+    $vars['element']['#field_name'] == 'title' &&
+    $vars['element']['#object'] instanceof NodeInterface &&
+    $exclude_manager->isTitleExcluded($vars['element']['#object'], 'search_result') &&
+    $vars['element']['#view_mode'] == 'search_result'
+  ) {
+    foreach ($vars['items'] as &$item) {
+      $item['content']['#context']['value'] = '';
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_search_result().
+ */
+function exclude_node_title_preprocess_search_result(&$vars) {
+  $exclude_manager = \Drupal::service('exclude_node_title.manager');
+
+  if ($vars['plugin_id'] == 'node_search' &&
+    \Drupal::currentUser()->hasPermission('use exclude node title') &&
+    $exclude_manager->isSearchExcluded() &&
+    $exclude_manager->isTitleExcluded($vars['result']['node']->id(), 'search_result')
+  ) {
+    $vars['result']['title'] = '';
+    $vars['title'] = '<em>' . t('View content') . '</em>';
+  }
+}
+
+/**
+ * Implements hook_node_update().
+ */
+function exclude_node_title_node_update(NodeInterface $node) {
+  if (exclude_node_title_check_perm($node)) {
+    exclude_node_title_set_flag($node, $node->exclude_node_title);
+  }
+}
+
+/**
+ * Implements hook_node_insert().
+ */
+function exclude_node_title_node_insert(NodeInterface $node) {
+  if (exclude_node_title_check_perm($node)) {
+    exclude_node_title_set_flag($node, $node->exclude_node_title);
+  }
+}
+
+/**
+ * Implements hook_node_delete().
+ */
+function exclude_node_title_node_delete(NodeInterface $node) {
+  if ($node->exclude_node_title == 1) {
+    exclude_node_title_set_flag($node, 0);
+  }
+}
+
+/**
+ * Check permission to change node title exclusion.
+ *
+ * @param NodeInterface $node
+ * @return bool
+ */
+function exclude_node_title_check_perm(NodeInterface $node) {
+  $user = \Drupal::currentUser();
+
+  if ($user->hasPermission('exclude any node title')) {
+    return TRUE;
+  }
+
+  if ($user->hasPermission('exclude own node title') && $user->id() == $node->getOwnerId()) {
+    return TRUE;
+  }
+
+  return FALSE;
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function exclude_node_title_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form_object = $form_state->getFormObject();
+  $exclude_manager = \Drupal::service('exclude_node_title.manager');
+
+  if ($form_object instanceof NodeForm) {
+    /** @var NodeInterface $node */
+    $node = $form_object->getEntity();
+    $node_type = $node->getType();
+
+    if (\Drupal::currentUser()->hasPermission('use exclude node title')) {
+      if ($exclude_manager->isTitleExcluded($node->id(), 'nodeform')) {
+        $form['title']['#access'] = FALSE;
+      }
+    }
+
+    // Make sure user have permissions correct.
+    if (!exclude_node_title_check_perm($node)) {
+      return FALSE;
+    }
+
+    // Don't bother to add form element if the content type isn't configured
+    // to be excluded by user...
+    if ($exclude_manager->getBundleExcludeMode($node_type) == 'user') {
+      $weight = $form['title']['#weight'] + 0.1;
+      $form['exclude_node_title'] = array(
+        '#type' => 'checkbox',
+        '#field_name' => 'exclude_node_title',
+        '#title' => t('Exclude title from display'),
+        '#required' => FALSE,
+        '#element_validate' => ['exclude_node_title_set_form_value'],
+        '#default_value' => $exclude_manager->isNodeExcluded($node),
+        '#weight' => $weight,
+      );
+    }
+  }
+}
+
+/**
+ * Set exclude_node_title flag for the given node.
+ */
+function exclude_node_title_set_flag($node, $value = 1) {
+  $exclude_manager = \Drupal::service('exclude_node_title.manager');
+
+  if ($value == 1 && !$exclude_manager->isNodeExcluded($node)) {
+    $exclude_manager->addNodeToList($node);
+  }
+  if ($value == 0 && $exclude_manager->isNodeExcluded($node)) {
+    $exclude_manager->removeNodeFromList($node);
+  }
+}
+
+/**
+ * Implements hook_field_attach_delete_bundle().
+ */
+function exclude_node_title_field_attach_delete_bundle($entity_type, $bundle, $instances) {
+  $config = \Drupal::configFactory()->getEditable('exclude_node_title.settings');
+
+  // When deleting a content type, we make sure and clean our variable.
+  if ($entity_type == 'node') {
+    $config
+      ->clear('content_types.' . $bundle)
+      ->clear('content_type_modes.' . $bundle)
+      ->save();
+  }
+}
+
+/**
+ * Implements hook_ds_fields_info_alter().
+ */
+function exclude_node_title_ds_fields_info_alter(&$plugins) {
+  if (!empty($plugins['node_title'])) {
+    $plugins['node_title']['class'] = 'Drupal\exclude_node_title\Plugin\DsField\Node\NodeTitle';
+    $plugins['node_title']['provider'] = 'exclude_node_title';
+  }
+}
+
+/**
+ * Function setting node meta field value to make possible parsing it by hooks.
+ */
+function exclude_node_title_set_form_value($element, FormStateInterface $form_state, $form) {
+  $values = $form_state->getValues();
+  $node = $form_state->getFormObject()->getEntity();
+  $node->exclude_node_title = $values['exclude_node_title'];
+}

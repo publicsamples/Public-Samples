@@ -1,0 +1,89 @@
+/**
+ * Shortcodes (Positioning)
+ ============================================================================ */
+
+.horizontal-center,
+.center-element {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// We need robust styles for pull classes because they may be overridden, for
+// example by Font Awesome.
+@media #{$mobile} {
+  .pull-right,
+  [dir="rtl"] .pull-left,
+  .pull-left,
+  [dir="rtl"] .pull-right {
+    float: none;
+    right: auto;
+    left: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+@media #{$wide} {
+  .pull-right,
+  [dir="rtl"] .pull-left {
+    float: right;
+    right: 0;
+    left: auto;
+  }
+
+  .pull-left,
+  [dir="rtl"] .pull-right {
+    float: left;
+    right: auto;
+    left: 0;
+  }
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-static {
+  position: static;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-top {
+  top: 0;
+  bottom: auto;
+}
+
+.position-right {
+  right: 0;
+  left: auto;
+}
+
+.position-bottom {
+  bottom: 0;
+  top: auto;
+}
+
+.position-left {
+  left: 0;
+  right: auto;
+}
+
+$z-indexes: 10;
+@for $i from 1 through $z-indexes {
+  .z-index-#{$i} { z-index: $i }
+}

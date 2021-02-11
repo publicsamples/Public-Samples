@@ -1,0 +1,15 @@
+name: Views Slideshow Rendered Entity Pager
+type: module
+description: 'Provides a pager displaying rendered entity.'
+package: Views
+# version: 8.1
+# core: 8.x
+dependencies:
+ - views_slideshow:views_slideshow
+
+
+# Information added by Drupal.org packaging script on 2018-12-11
+version: '8.x-4.0'
+core: '8.x'
+project: 'views_slideshow_rendered_entity_pager'
+datestamp: 1544541490

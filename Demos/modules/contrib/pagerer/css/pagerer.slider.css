@@ -1,0 +1,35 @@
+/**
+ * @file
+ * Pagerer slider CSS
+ */
+
+/* pagerer-slider widget */
+div.pagerer-slider {
+  display: inline-block;
+  width: 15em;
+}
+div.pagerer-slider  .ui-slider-handle {
+  border: 1px solid;
+  border-color: inherit;
+  padding: 0;
+  text-align: center;
+  vertical-align: top;
+}
+div.pagerer-slider-control-icon {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  display: inline-block;
+  vertical-align: text-bottom;
+  user-select: none;
+}
+div.pagerer-slider-handle-icon {
+  display: inline-block;
+}
+div.pagerer-slider-handle-icon.throbber {
+  background-image: url(../images/throbber.gif);
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}

@@ -1,0 +1,35 @@
+@import "plugin-layout-base";
+//
+// Two Regions 9-3
+//
+// First region  : 9 grid columns.
+// Second region : 3 grid columns.
+//
+// Actual Source Order:
+//
+//  - first
+//  - second
+//
+// Appearance:
+//
+//  ------------------------------------------------
+//  |       first (9)               |  second (3)  |
+//  ------------------------------------------------
+//  Key: region-name (grid columns)
+// -----------------------------------------------------------------------------
+
+.bp--at-core-simple-wide,
+.bp--at-core-simple-tablet-isolate {
+  .atl--twocol-9-3 {
+
+    &.l-arc--2 {
+      > .atl__cw > .atl__lc {
+        @include span(9 of 12);
+
+        &:last-child {
+          @include span(3 of 12 last);
+        }
+      }
+    }
+  }
+}

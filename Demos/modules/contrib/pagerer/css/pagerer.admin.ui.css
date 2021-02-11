@@ -1,0 +1,11 @@
+/**
+ * @file
+ * Pagerer administration UI CSS
+ */
+
+.pagerer-panes-container-pane {
+  display: inline;
+}
+table td.pagerer-admin-preset-preview {
+  font-size: 80%;
+}

@@ -1,0 +1,40 @@
+{#
+/**
+ * @file
+ * Default theme implementation for Audio.js audio player.
+ *
+ * Available variables:
+ * - plugin_id: the name of the plugin being used for templating.
+ * - plugin_theme: the name of the specific plugin theme, if it exists.
+ * - files: array of render info for each file.
+ * - settings: array of settings for thie player.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="audiofield">
+  <div id="{{ settings.id }}" class="audiofield-audiojs-frame">
+    <div class="audiofield-audiojs">
+      <audio preload="{% if settings.audio_player_lazyload == 1 %}none{% else %}auto{% endif %}" {% if settings.audio_player_autoplay == 1 %} autoplay="autoplay" {% endif %}></audio>
+      <div class="play-pauseZ">
+        <p class="playZ"></p>
+        <p class="pauseZ"></p>
+        <p class="loadingZ"></p>
+        <p class="errorZ"></p>
+      </div>
+      <div class="scrubberZ">
+        <div class="progressZ"></div>
+        <div class="loadedZ"></div>
+      </div>
+      <div class="timeZ">
+        <em class="playedZ">00:00</em>/<strong class="durationZ">00:00</strong>
+      </div>
+      <div class="error-messageZ"></div>
+    </div>
+    <ol>
+      {% for file in files %}
+        <li><a href="#" data-src="{{ file.url }}">{{ file.description }}</a></li>
+      {% endfor %}
+    </ol>
+  </div>
+</div>

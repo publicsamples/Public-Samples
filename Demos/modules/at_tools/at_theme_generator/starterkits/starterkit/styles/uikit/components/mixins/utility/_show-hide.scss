@@ -1,0 +1,44 @@
+// Hide content but maintain accessibility
+@mixin visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  word-wrap: normal;
+  font: 0/0 a;
+}
+
+// Turns off the element-invisible effect
+@mixin visually-hidden-off {
+  position: static !important;
+  clip: auto;
+  overflow: visible;
+  height: auto;
+  width: auto;
+  font-family: inherit;
+}
+
+// Visually hidden but focus-able, e.g. skip links
+@mixin visually-hidden-focusable {
+  @extend visually-hidden;
+  &.focusable {
+    &:active,
+    &:focus {
+      @include visually-hidden-off;
+    }
+  }
+}
+
+// Shift content off screen, can be useful when you really need to do this.
+@mixin offscreen {
+  position: absolute;
+  top: -99999em;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  outline: 0;
+}
+
+

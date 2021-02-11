@@ -1,0 +1,46 @@
+/**
+ * Skip link
+ *  - Allows keyboard users to quickly skip to the main content of the page.
+ ============================================================================ */
+
+.skip-link {
+  color: #fff;
+  background-color: #444;
+  border-radius: 0 0 $border-radius $border-radius;
+  opacity: 0;
+  transition: opacity 0.15s ease-in;
+  z-index: 50;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  text-align: center;
+  @include output-rhythm(padding, $xxx-small $medium);
+
+  @media #{$mobile-isolate} {
+    left: 10%;
+    transform: none;
+  }
+
+  &:visited,
+  &:active,
+  &:focus {
+    color: #fff;
+  }
+
+  &:focus {
+    text-decoration: none;
+    opacity: 1;
+  }
+
+  &.visually-hidden.focusable:focus {
+    position: absolute !important;
+    @include output-rhythm(width, 180px);
+
+    @media #{$mobile-isolate} {
+      width: 80%;
+    }
+  }
+}
+
+
+

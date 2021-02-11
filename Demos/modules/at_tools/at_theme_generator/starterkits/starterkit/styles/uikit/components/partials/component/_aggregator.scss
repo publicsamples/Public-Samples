@@ -1,0 +1,75 @@
+/**
+ * Aggregator
+ ============================================================================ */
+
+.aggregator-feed {
+  margin-bottom: 1.25em;
+
+  // Feed source title, prints on view modes that are not "full".
+  > h2 {}
+}
+
+.aggregator-item {
+  @include cfm;
+
+  //border: $node-teaser-border-color $node-teaser-border-width;
+
+  // Test card design by default
+  margin-bottom: 1.25em;
+  padding: 1.25em;
+  border-radius: $border-radius;
+}
+
+
+// Item title.
+.feed-item-title {
+  @include output-rhythm(margin, 0 0 $medium);
+}
+
+
+// Item main content.
+.item-description {
+  @include output-rhythm(margin, $medium 0);
+}
+
+
+// Item source field.
+.field-aggregator-item--fid {}
+
+
+// Item timestamp.
+.field-aggregator-item--timestamp {}
+
+
+// Item author, sometimes this is empty but still prints empty markup in the output.
+.field-aggregator-item--author {}
+
+
+// Feed "last checked" timestamp.
+.field-aggregator-feed--checked {}
+
+
+// Feed description.
+.feed-description {}
+
+
+// Feed URL, usually has a label and field item.
+.field-aggregator-feed--link {}
+
+
+// Feed aggregator block.
+.block-plugin-id--aggregator-feed-block {
+  .item-list__item {
+    @include output-rhythm(margin-bottom, $x-small);
+
+    a {
+      display: inline-block;
+      line-height: 1.25;
+    }
+  }
+}
+
+
+
+
+

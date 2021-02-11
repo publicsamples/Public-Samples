@@ -1,0 +1,21 @@
+/**
+ * Tile menu
+ * $tile_count: whole number, must be a factor of the $context
+ * $context: whole number, a $susy container, can be 8, 10 or 12.
+ * $arrows: boolean
+ ============================================================================ */
+
+@include tiles($context: 12, $tile_count: 2, $arrows: false);
+
+.ms-tiles {
+  .rm-block__content {
+    @include output-rhythm(padding, $xx-small 0);
+
+    .menu-level-1 {
+      > .menu__item {
+        @include output-rhythm(margin, $xx-small 0);
+      }
+    }
+  }
+}
+

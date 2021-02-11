@@ -1,0 +1,62 @@
+# Libraries are defined in alphabetical order.
+
+admin.ui:
+  version: VERSION
+  css:
+    theme:
+      css/pagerer.admin.ui.css: {}
+
+base.css:
+  version: VERSION
+  css:
+    theme:
+      css/pagerer.base.css: {}
+
+base.js:
+  version: VERSION
+  js:
+    js/base.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+
+mini:
+  version: VERSION
+  js:
+    js/mini.js: {}
+  css:
+    theme:
+      css/pagerer.mini.css: {}
+  dependencies:
+    - pagerer/base.js
+    - core/jquery.ui.button
+
+multipane:
+  version: VERSION
+  css:
+    theme:
+      css/pagerer.multipane.css: {}
+
+scrollpane:
+  version: VERSION
+  js:
+    js/scrollpane.js: {}
+  css:
+    theme:
+      css/pagerer.scrollpane.css: {}
+  dependencies:
+    - pagerer/base.js
+    - core/jquery.ui.button
+
+slider:
+  version: VERSION
+  js:
+    js/slider.js: {}
+  css:
+    theme:
+      css/pagerer.slider.css: {}
+  dependencies:
+    - pagerer/base.js
+    - core/jquery.ui.slider

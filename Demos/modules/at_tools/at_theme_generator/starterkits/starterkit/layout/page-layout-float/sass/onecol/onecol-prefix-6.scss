@@ -1,0 +1,8 @@
+@import "../page-layout-base";
+//
+// Prefix six
+//
+
+.onecol-prefix-6 .l-r {
+  @include prefix(6 of 12);
+}
