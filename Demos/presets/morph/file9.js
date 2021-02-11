@@ -26,6 +26,6 @@ var keys = new Tone.Sampler({
 			"C3" : "file25.[mp3|ogg]"
 					}, {
 
-						"baseUrl" : "/presets/morph/Threat/"
+						"baseUrl" : "/Demos/presets/morph/Threat/"
 					})					.connect(filter);
 					

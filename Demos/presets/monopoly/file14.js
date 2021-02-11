@@ -53,7 +53,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/monopoly/SnowStorm/"
+						"baseUrl" : "/Demos/presets/monopoly/SnowStorm/"
 					})					.connect(filter);
 					
 					

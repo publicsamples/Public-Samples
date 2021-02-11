@@ -11,7 +11,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/ax80/Solids/"
+						"baseUrl" : "/Demos/presets/ax80/Solids/"
 					})					.connect(filter);
 					
 					

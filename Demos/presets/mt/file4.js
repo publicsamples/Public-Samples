@@ -40,7 +40,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/mt/Noisesomepad/"
+						"baseUrl" : "/Demos/presets/mt/Noisesomepad/"
 					})					.connect(filter);
 					
 					

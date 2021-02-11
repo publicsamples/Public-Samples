@@ -29,7 +29,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/A4/BleepWorld/"
+						"baseUrl" : "/Demos/presets/A4/BleepWorld/"
 					})					.connect(filter);
 					
 					

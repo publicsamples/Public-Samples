@@ -29,7 +29,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/esq1/FibrePad/"
+						"baseUrl" : "/Demos/presets/esq1/FibrePad/"
 					})					.connect(filter);
 					
 				

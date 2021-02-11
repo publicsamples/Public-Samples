@@ -12,7 +12,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/xpander/Weeper/"
+						"baseUrl" : "/Demos/presets/xpander/Weeper/"
 					})					.connect(filter);
 					
 					

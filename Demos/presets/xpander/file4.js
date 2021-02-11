@@ -28,7 +28,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/xpander/leafblower/"
+						"baseUrl" : "/Demos/presets/xpander/leafblower/"
 					})					.connect(filter);
 					
 					

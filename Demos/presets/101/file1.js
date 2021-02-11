@@ -39,6 +39,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/101/1OSC/"
+						"baseUrl" : "/Demos/presets/101/1OSC/"
 					})					.connect(filter);
 					

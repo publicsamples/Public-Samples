@@ -51,7 +51,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/cs30/CrunchLoop/"
+						"baseUrl" : "/Demos/presets/cs30/CrunchLoop/"
 					})					.connect(filter);
 					
 					

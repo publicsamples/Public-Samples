@@ -42,7 +42,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/z1/StringsBrass/String2/"
+						"baseUrl" : "/Demos/presets/z1/StringsBrass/String2/"
 					})					.connect(filter);
 					
 					

@@ -28,6 +28,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/mt/FunLFO/"
+						"baseUrl" : "/Demos/presets/mt/FunLFO/"
 					})					.connect(filter);
 					

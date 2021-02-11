@@ -41,7 +41,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/aj/Idle/"
+						"baseUrl" : "/Demos/presets/aj/Idle/"
 					})					.connect(filter);
 					
 					

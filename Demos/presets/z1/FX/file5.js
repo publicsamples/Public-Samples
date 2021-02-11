@@ -40,7 +40,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/z1/FX/Tryingtobecool/"
+						"baseUrl" : "/Demos/presets/z1/FX/Tryingtobecool/"
 					})					.connect(filter);
 					
 					

@@ -11,7 +11,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/tetra/PacmacBass/"
+						"baseUrl" : "/Demos/presets/tetra/PacmacBass/"
 					})					.connect(filter);
 					
 					

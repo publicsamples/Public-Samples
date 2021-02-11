@@ -12,7 +12,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/tetra/WideSync/"
+						"baseUrl" : "/Demos/presets/tetra/WideSync/"
 					})					.connect(filter);
 					
 					

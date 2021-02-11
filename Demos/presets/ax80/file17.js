@@ -12,7 +12,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/ax80/SyncBalls/"
+						"baseUrl" : "/Demos/presets/ax80/SyncBalls/"
 					})					.connect(filter);
 					
 					

@@ -53,7 +53,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/monopoly/Bumpkin130/"
+						"baseUrl" : "/Demos/presets/monopoly/Bumpkin130/"
 					})					.connect(filter);
 					
 					

@@ -7,7 +7,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/s612/singles/"
+						"baseUrl" : "/Demos/presets/s612/singles/"
 					})					.connect(filter);
 					
 					

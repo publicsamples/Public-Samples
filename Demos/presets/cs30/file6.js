@@ -39,7 +39,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/cs30/DramaTime96/"
+						"baseUrl" : "/Demos/presets/cs30/DramaTime96/"
 					})					.connect(filter);
 					
 					

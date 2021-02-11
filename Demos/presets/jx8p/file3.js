@@ -29,7 +29,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/jx8p/NoistDecade/"
+						"baseUrl" : "/Demos/presets/jx8p/NoistDecade/"
 					})					.connect(filter);
 					
 					

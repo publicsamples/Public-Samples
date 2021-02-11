@@ -52,7 +52,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/monopoly/LowPulse/"
+						"baseUrl" : "/Demos/presets/monopoly/LowPulse/"
 					})					.connect(filter);
 					
 					

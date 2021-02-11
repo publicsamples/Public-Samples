@@ -55,7 +55,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/cs30/TwinkleToes/"
+						"baseUrl" : "/Demos/presets/cs30/TwinkleToes/"
 					})					.connect(filter);
 					
 					

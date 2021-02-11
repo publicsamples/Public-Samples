@@ -29,7 +29,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/jx3p/InSpace/"
+						"baseUrl" : "/Demos/presets/jx3p/InSpace/"
 					})					.connect(filter);
 					
 					

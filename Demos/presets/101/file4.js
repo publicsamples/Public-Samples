@@ -40,7 +40,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/101/hogchord/"
+						"baseUrl" : "/Demos/presets/101/hogchord/"
 					})					.connect(filter);
 					
 					

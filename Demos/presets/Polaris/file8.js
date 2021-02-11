@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/Polaris/RingSync/"
+						"baseUrl" : "/Demos/presets/Polaris/RingSync/"
 					})					.connect(filter);
 					
 					

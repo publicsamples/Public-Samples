@@ -29,6 +29,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/formerloops/Deadswan/"
+						"baseUrl" : "/Demos/presets/formerloops/Deadswan/"
 					})					.connect(filter);
 					

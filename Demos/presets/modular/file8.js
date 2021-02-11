@@ -41,7 +41,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/modular/Littlebell/"
+						"baseUrl" : "/Demos/presets/modular/Littlebell/"
 					})					.connect(filter);
 					
 					

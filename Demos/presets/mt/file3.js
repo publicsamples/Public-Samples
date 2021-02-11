@@ -40,7 +40,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/mt/LARGESIZE/"
+						"baseUrl" : "/Demos/presets/mt/LARGESIZE/"
 					})					.connect(filter);
 					
 					

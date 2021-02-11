@@ -12,7 +12,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/xpander/VoxLead/"
+						"baseUrl" : "/Demos/presets/xpander/VoxLead/"
 					})					.connect(filter);
 					
 					

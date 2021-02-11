@@ -42,7 +42,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/z1/Pads/SpaceLadies/"
+						"baseUrl" : "/Demos/presets/z1/Pads/SpaceLadies/"
 					})					.connect(filter);
 					
 					

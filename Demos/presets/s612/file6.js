@@ -23,7 +23,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/s612/ringooff/"
+						"baseUrl" : "/Demos/presets/s612/ringooff/"
 					})					.connect(filter);
 					
 					

@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/jx3p/IvorEvanBiggurun/"
+						"baseUrl" : "/Demos/presets/jx3p/IvorEvanBiggurun/"
 					})					.connect(filter);
 					
 					

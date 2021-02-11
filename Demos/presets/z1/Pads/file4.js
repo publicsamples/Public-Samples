@@ -42,7 +42,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/z1/Pads/SeaShe/"
+						"baseUrl" : "/Demos/presets/z1/Pads/SeaShe/"
 					})					.connect(filter);
 					
 					

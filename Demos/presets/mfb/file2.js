@@ -11,7 +11,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/mfb/CaptainofIndustry/"
+						"baseUrl" : "/Demos/presets/mfb/CaptainofIndustry/"
 					})					.connect(filter);
 					
 				

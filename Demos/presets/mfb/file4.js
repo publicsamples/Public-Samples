@@ -29,7 +29,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/mfb/FilterMod/"
+						"baseUrl" : "/Demos/presets/mfb/FilterMod/"
 					})					.connect(filter);
 					
 					

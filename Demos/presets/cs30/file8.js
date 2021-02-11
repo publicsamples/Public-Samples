@@ -47,7 +47,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/cs30/Juicy/"
+						"baseUrl" : "/Demos/presets/cs30/Juicy/"
 					})					.connect(filter);
 					
 					

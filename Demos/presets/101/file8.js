@@ -41,7 +41,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/101/sysXpwmsweep/"
+						"baseUrl" : "/Demos/presets/101/sysXpwmsweep/"
 					})					.connect(filter);
 					
 					

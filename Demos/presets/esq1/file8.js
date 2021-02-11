@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/esq1/simmeringagro/"
+						"baseUrl" : "/Demos/presets/esq1/simmeringagro/"
 					})					.connect(filter);
 					
 					

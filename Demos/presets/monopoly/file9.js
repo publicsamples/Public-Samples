@@ -52,7 +52,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/monopoly/HarshMistress/"
+						"baseUrl" : "/Demos/presets/monopoly/HarshMistress/"
 					})					.connect(filter);
 					
 					

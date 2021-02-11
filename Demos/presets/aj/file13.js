@@ -43,7 +43,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/aj/ShapeMod/"
+						"baseUrl" : "/Demos/presets/aj/ShapeMod/"
 					})					.connect(filter);
 					
 					

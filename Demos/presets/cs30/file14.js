@@ -42,7 +42,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/cs30/TwoFingers/"
+						"baseUrl" : "/Demos/presets/cs30/TwoFingers/"
 					})					.connect(filter);
 					
 					

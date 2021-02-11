@@ -42,6 +42,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/formerloops/G00F144/"
+						"baseUrl" : "/Demos/presets/formerloops/G00F144/"
 					})					.connect(filter);
 					

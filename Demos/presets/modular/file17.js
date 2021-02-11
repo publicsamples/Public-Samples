@@ -42,7 +42,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/modular/YouLuckyFucks/"
+						"baseUrl" : "/Demos/presets/modular/YouLuckyFucks/"
 					})					.connect(filter);
 					
 					

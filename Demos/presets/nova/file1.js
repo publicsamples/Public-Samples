@@ -30,6 +30,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/nova/BigChord/"
+						"baseUrl" : "/Demos/presets/nova/BigChord/"
 					})					.connect(filter);
 					

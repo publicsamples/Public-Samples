@@ -54,7 +54,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/cs30/DirtyPluck/"
+						"baseUrl" : "/Demos/presets/cs30/DirtyPluck/"
 					})					.connect(filter);
 					
 					

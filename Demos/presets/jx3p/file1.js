@@ -11,6 +11,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/jx3p/Airy/"
+						"baseUrl" : "/Demos/presets/jx3p/Airy/"
 					})					.connect(filter);
 					

@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/xpander/TubeString/"
+						"baseUrl" : "/Demos/presets/xpander/TubeString/"
 					})					.connect(filter);
 					
 					

@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/max/notright/"
+						"baseUrl" : "/Demos/presets/max/notright/"
 					})					.connect(filter);
 					
 					

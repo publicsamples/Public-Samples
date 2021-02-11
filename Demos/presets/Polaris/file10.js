@@ -31,7 +31,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/Polaris/SweetandFullofGrace/"
+						"baseUrl" : "/Demos/presets/Polaris/SweetandFullofGrace/"
 					})					.connect(filter);
 					
 					

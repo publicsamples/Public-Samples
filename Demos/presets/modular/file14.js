@@ -42,7 +42,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/modular/Wavers/"
+						"baseUrl" : "/Demos/presets/modular/Wavers/"
 					})					.connect(filter);
 					
 					

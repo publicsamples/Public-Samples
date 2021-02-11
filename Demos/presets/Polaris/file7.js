@@ -31,7 +31,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/Polaris/PolarisDarkPiano/"
+						"baseUrl" : "/Demos/presets/Polaris/PolarisDarkPiano/"
 					})					.connect(filter);
 					
 					

@@ -30,6 +30,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/max/BadMAX/"
+						"baseUrl" : "/Demos/presets/max/BadMAX/"
 					})					.connect(filter);
 					

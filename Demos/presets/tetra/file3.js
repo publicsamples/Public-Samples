@@ -12,7 +12,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/tetra/insanityPlug/"
+						"baseUrl" : "/Demos/presets/tetra/insanityPlug/"
 					})					.connect(filter);
 					
 					

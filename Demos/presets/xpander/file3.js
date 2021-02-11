@@ -41,7 +41,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/xpander/FMBell/"
+						"baseUrl" : "/Demos/presets/xpander/FMBell/"
 					})					.connect(filter);
 					
 					

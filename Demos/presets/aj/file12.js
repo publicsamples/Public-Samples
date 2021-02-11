@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/aj/sbass/"
+						"baseUrl" : "/Demos/presets/aj/sbass/"
 					})					.connect(filter);
 					
 					

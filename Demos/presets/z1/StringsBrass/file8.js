@@ -42,7 +42,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/z1/StringsBrass/Z1vsKWTalliwhacker/"
+						"baseUrl" : "/Demos/presets/z1/StringsBrass/Z1vsKWTalliwhacker/"
 					})					.connect(filter);
 					
 					

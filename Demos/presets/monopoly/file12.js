@@ -49,7 +49,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/monopoly/ScratchySoundtrack/"
+						"baseUrl" : "/Demos/presets/monopoly/ScratchySoundtrack/"
 					})					.connect(filter);
 					
 					

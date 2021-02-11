@@ -30,6 +30,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/esq1/Epiano2/"
+						"baseUrl" : "/Demos/presets/esq1/Epiano2/"
 					})					.connect(filter);
 					

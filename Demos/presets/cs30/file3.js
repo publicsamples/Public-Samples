@@ -40,7 +40,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/cs30/BusyEagle/"
+						"baseUrl" : "/Demos/presets/cs30/BusyEagle/"
 					})					.connect(filter);
 					
 					

@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/modular/Whatdouseewhenucloseyreyes/"
+						"baseUrl" : "/Demos/presets/modular/Whatdouseewhenucloseyreyes/"
 					})					.connect(filter);
 					
 					

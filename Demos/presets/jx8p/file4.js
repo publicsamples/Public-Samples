@@ -29,7 +29,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/jx8p/ProtoFilter/"
+						"baseUrl" : "/Demos/presets/jx8p/ProtoFilter/"
 					})					.connect(filter);
 					
 					

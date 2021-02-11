@@ -41,7 +41,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/z1/Pads/zOrganpad/"
+						"baseUrl" : "/Demos/presets/z1/Pads/zOrganpad/"
 					})					.connect(filter);
 					
 					

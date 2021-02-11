@@ -41,7 +41,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/xpander/Boat/"
+						"baseUrl" : "/Demos/presets/xpander/Boat/"
 					})					.connect(filter);
 					
 				

@@ -28,7 +28,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/max/notinuse/"
+						"baseUrl" : "/Demos/presets/max/notinuse/"
 					})					.connect(filter);
 					
 					

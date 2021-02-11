@@ -29,7 +29,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/mfb/CrazyLFO/"
+						"baseUrl" : "/Demos/presets/mfb/CrazyLFO/"
 					})					.connect(filter);
 					
 					

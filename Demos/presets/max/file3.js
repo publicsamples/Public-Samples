@@ -28,7 +28,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/max/GassyBrass/"
+						"baseUrl" : "/Demos/presets/max/GassyBrass/"
 					})					.connect(filter);
 					
 					

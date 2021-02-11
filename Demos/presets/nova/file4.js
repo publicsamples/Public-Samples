@@ -28,7 +28,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/nova/Lush/"
+						"baseUrl" : "/Demos/presets/nova/Lush/"
 					})					.connect(filter);
 					
 					

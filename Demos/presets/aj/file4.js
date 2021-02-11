@@ -27,7 +27,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/aj/Biznes/"
+						"baseUrl" : "/Demos/presets/aj/Biznes/"
 					})					.connect(filter);
 					
 					

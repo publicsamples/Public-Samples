@@ -28,7 +28,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/Polaris/FarOff/"
+						"baseUrl" : "/Demos/presets/Polaris/FarOff/"
 					})					.connect(filter);
 					
 					

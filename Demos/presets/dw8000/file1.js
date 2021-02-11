@@ -11,7 +11,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/dw8000/DrugWaves/"
+						"baseUrl" : "/Demos/presets/dw8000/DrugWaves/"
 					})					.connect(filter);
 					
 				

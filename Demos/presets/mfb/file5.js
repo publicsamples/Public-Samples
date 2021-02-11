@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/mfb/GooeyFM/"
+						"baseUrl" : "/Demos/presets/mfb/GooeyFM/"
 					})					.connect(filter);
 					
 					

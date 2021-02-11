@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/jx3p/SnapBass/"
+						"baseUrl" : "/Demos/presets/jx3p/SnapBass/"
 					})					.connect(filter);
 					
 					

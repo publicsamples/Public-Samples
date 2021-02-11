@@ -40,7 +40,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/modular/FoldBass/"
+						"baseUrl" : "/Demos/presets/modular/FoldBass/"
 					})					.connect(filter);
 					
 					

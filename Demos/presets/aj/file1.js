@@ -41,6 +41,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/aj/BadGuyStrings/"
+						"baseUrl" : "/Demos/presets/aj/BadGuyStrings/"
 					})					.connect(filter);
 					

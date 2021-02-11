@@ -30,6 +30,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/Polaris/Dusty/"
+						"baseUrl" : "/Demos/presets/Polaris/Dusty/"
 					})					.connect(filter);
 					

@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/A4/GritChord/"
+						"baseUrl" : "/Demos/presets/A4/GritChord/"
 					})					.connect(filter);
 					
 					

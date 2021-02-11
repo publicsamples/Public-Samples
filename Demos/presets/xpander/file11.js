@@ -42,7 +42,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/xpander/WarmMin7/"
+						"baseUrl" : "/Demos/presets/xpander/WarmMin7/"
 					})					.connect(filter);
 					
 					

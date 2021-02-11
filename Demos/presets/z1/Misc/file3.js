@@ -41,7 +41,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/z1/Misc/Gob/"
+						"baseUrl" : "/Demos/presets/z1/Misc/Gob/"
 					})					.connect(filter);
 					
 					

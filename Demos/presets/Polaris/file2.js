@@ -29,7 +29,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/Polaris/Empiricist/"
+						"baseUrl" : "/Demos/presets/Polaris/Empiricist/"
 					})					.connect(filter);
 					
 				

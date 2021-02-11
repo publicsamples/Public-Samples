@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/Polaris/MessyMod/"
+						"baseUrl" : "/Demos/presets/Polaris/MessyMod/"
 					})					.connect(filter);
 					
 					

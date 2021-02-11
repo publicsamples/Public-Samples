@@ -42,7 +42,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/101/SysXpluckysqr/"
+						"baseUrl" : "/Demos/presets/101/SysXpluckysqr/"
 					})					.connect(filter);
 					
 					

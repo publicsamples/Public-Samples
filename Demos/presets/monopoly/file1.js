@@ -48,6 +48,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/monopoly/AlleyCat/"
+						"baseUrl" : "/Demos/presets/monopoly/AlleyCat/"
 					})					.connect(filter);
 					

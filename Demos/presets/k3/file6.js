@@ -12,7 +12,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/k3/DarkLead/"
+						"baseUrl" : "/Demos/presets/k3/DarkLead/"
 					})					.connect(filter);
 					
 					

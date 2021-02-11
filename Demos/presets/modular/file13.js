@@ -31,7 +31,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/modular/TidalChord/"
+						"baseUrl" : "/Demos/presets/modular/TidalChord/"
 					})					.connect(filter);
 					
 					

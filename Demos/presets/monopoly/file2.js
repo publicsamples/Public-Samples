@@ -40,7 +40,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/monopoly/Antagonist/"
+						"baseUrl" : "/Demos/presets/monopoly/Antagonist/"
 					})					.connect(filter);
 					
 				

@@ -11,7 +11,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/ax80/Diplodocus/"
+						"baseUrl" : "/Demos/presets/ax80/Diplodocus/"
 					})					.connect(filter);
 					
 					

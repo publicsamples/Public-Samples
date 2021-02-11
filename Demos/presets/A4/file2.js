@@ -29,7 +29,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/A4/AniAnalog/"
+						"baseUrl" : "/Demos/presets/A4/AniAnalog/"
 					})					.connect(filter);
 					
 				

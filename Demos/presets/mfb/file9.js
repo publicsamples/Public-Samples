@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/mfb/ShortBass/"
+						"baseUrl" : "/Demos/presets/mfb/ShortBass/"
 					})					.connect(filter);
 					
 					

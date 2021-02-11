@@ -39,6 +39,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/morph/DirtyPlucker/"
+						"baseUrl" : "/Demos/presets/morph/DirtyPlucker/"
 					})					.connect(filter);
 					

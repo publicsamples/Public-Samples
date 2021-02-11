@@ -11,6 +11,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/jx8p/DarkPadDetune/"
+						"baseUrl" : "/Demos/presets/jx8p/DarkPadDetune/"
 					})					.connect(filter);
 					

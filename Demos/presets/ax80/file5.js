@@ -12,7 +12,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/ax80/EasyPluck/"
+						"baseUrl" : "/Demos/presets/ax80/EasyPluck/"
 					})					.connect(filter);
 					
 					

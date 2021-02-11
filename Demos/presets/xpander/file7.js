@@ -42,7 +42,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/xpander/Telapia/"
+						"baseUrl" : "/Demos/presets/xpander/Telapia/"
 					})					.connect(filter);
 					
 					

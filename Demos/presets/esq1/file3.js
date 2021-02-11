@@ -28,7 +28,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/esq1/FunkyKeys/"
+						"baseUrl" : "/Demos/presets/esq1/FunkyKeys/"
 					})					.connect(filter);
 					
 					

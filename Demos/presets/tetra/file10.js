@@ -12,7 +12,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/tetra/SyncBass/"
+						"baseUrl" : "/Demos/presets/tetra/SyncBass/"
 					})					.connect(filter);
 					
 					

@@ -29,7 +29,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/max/CrunchyStardust/"
+						"baseUrl" : "/Demos/presets/max/CrunchyStardust/"
 					})					.connect(filter);
 					
 				

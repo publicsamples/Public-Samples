@@ -31,7 +31,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/esq1/Sawedinto3/"
+						"baseUrl" : "/Demos/presets/esq1/Sawedinto3/"
 					})					.connect(filter);
 					
 					

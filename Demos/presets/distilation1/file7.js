@@ -42,6 +42,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/distilation1/fbell/"
+						"baseUrl" : "/Demos/presets/distilation1/fbell/"
 					})					.connect(filter);
 					

@@ -27,6 +27,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/morph/Landscaping/"
+						"baseUrl" : "/Demos/presets/morph/Landscaping/"
 					})					.connect(filter);
 					

@@ -6,7 +6,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/s612/obstring/"
+						"baseUrl" : "/Demos/presets/s612/obstring/"
 					})					.connect(filter);
 					
 					

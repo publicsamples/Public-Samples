@@ -42,7 +42,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/aj/Multiform/"
+						"baseUrl" : "/Demos/presets/aj/Multiform/"
 					})					.connect(filter);
 					
 					

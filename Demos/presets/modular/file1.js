@@ -41,6 +41,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/modular/2xfilter/"
+						"baseUrl" : "/Demos/presets/modular/2xfilter/"
 					})					.connect(filter);
 					

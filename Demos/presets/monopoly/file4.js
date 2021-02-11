@@ -51,7 +51,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/monopoly/BloodOrgan/"
+						"baseUrl" : "/Demos/presets/monopoly/BloodOrgan/"
 					})					.connect(filter);
 					
 					

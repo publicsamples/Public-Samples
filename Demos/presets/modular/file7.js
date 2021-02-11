@@ -42,7 +42,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/modular/HellsTypewrighter/"
+						"baseUrl" : "/Demos/presets/modular/HellsTypewrighter/"
 					})					.connect(filter);
 					
 					

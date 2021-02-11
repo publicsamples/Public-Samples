@@ -42,6 +42,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/distilation1/ShivBeat/"
+						"baseUrl" : "/Demos/presets/distilation1/ShivBeat/"
 					})					.connect(filter);
 					

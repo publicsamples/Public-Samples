@@ -31,7 +31,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/cs30/K30L/"
+						"baseUrl" : "/Demos/presets/cs30/K30L/"
 					})					.connect(filter);
 					
 					

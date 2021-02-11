@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/A4/Sines75/"
+						"baseUrl" : "/Demos/presets/A4/Sines75/"
 					})					.connect(filter);
 					
 					

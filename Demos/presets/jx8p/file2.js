@@ -11,7 +11,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/jx8p/ModPad/"
+						"baseUrl" : "/Demos/presets/jx8p/ModPad/"
 					})					.connect(filter);
 					
 				

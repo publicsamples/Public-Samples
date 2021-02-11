@@ -12,7 +12,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/ax80/WorkingStrings/"
+						"baseUrl" : "/Demos/presets/ax80/WorkingStrings/"
 					})					.connect(filter);
 					
 					

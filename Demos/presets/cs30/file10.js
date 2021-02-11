@@ -52,7 +52,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/cs30/NoisyBass/"
+						"baseUrl" : "/Demos/presets/cs30/NoisyBass/"
 					})					.connect(filter);
 					
 					

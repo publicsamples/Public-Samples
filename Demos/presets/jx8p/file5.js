@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/jx8p/SlowBass/"
+						"baseUrl" : "/Demos/presets/jx8p/SlowBass/"
 					})					.connect(filter);
 					
 					

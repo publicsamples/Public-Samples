@@ -31,7 +31,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/mfb/Witch/"
+						"baseUrl" : "/Demos/presets/mfb/Witch/"
 					})					.connect(filter);
 					
 					

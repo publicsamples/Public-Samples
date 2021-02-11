@@ -11,6 +11,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/ax80/Agressif/"
+						"baseUrl" : "/Demos/presets/ax80/Agressif/"
 					})					.connect(filter);
 					

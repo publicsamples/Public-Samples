@@ -11,6 +11,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/mfb/BooBass/"
+						"baseUrl" : "/Demos/presets/mfb/BooBass/"
 					})					.connect(filter);
 					

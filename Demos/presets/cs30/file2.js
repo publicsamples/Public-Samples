@@ -40,7 +40,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/cs30/BigStrings/"
+						"baseUrl" : "/Demos/presets/cs30/BigStrings/"
 					})					.connect(filter);
 					
 				

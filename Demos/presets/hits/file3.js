@@ -29,7 +29,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/hits/kit3/"
+						"baseUrl" : "/Demos/presets/hits/kit3/"
 					})					.connect(filter);
 					
 					

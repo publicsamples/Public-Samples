@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/mt/Sweep/"
+						"baseUrl" : "/Demos/presets/mt/Sweep/"
 					})					.connect(filter);
 					
 					

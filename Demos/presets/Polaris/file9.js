@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/Polaris/SharpMush/"
+						"baseUrl" : "/Demos/presets/Polaris/SharpMush/"
 					})					.connect(filter);
 					
 					

@@ -12,7 +12,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/tetra/LocationShifter/"
+						"baseUrl" : "/Demos/presets/tetra/LocationShifter/"
 					})					.connect(filter);
 					
 					

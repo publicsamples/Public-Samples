@@ -11,7 +11,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/tetra/FatBastard/"
+						"baseUrl" : "/Demos/presets/tetra/FatBastard/"
 					})					.connect(filter);
 					
 					

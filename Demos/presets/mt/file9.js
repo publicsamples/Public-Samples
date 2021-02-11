@@ -40,7 +40,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/mt/Sparkly/"
+						"baseUrl" : "/Demos/presets/mt/Sparkly/"
 					})					.connect(filter);
 					
 					

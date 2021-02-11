@@ -42,7 +42,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/xpander/Videodrome/"
+						"baseUrl" : "/Demos/presets/xpander/Videodrome/"
 					})					.connect(filter);
 					
 					

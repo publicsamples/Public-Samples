@@ -30,6 +30,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/cs30/Astonished/"
+						"baseUrl" : "/Demos/presets/cs30/Astonished/"
 					})					.connect(filter);
 					

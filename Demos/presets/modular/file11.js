@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/modular/RubbingSines/"
+						"baseUrl" : "/Demos/presets/modular/RubbingSines/"
 					})					.connect(filter);
 					
 					

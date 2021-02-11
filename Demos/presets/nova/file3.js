@@ -28,7 +28,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/nova/Flutter/"
+						"baseUrl" : "/Demos/presets/nova/Flutter/"
 					})					.connect(filter);
 					
 					

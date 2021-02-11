@@ -47,7 +47,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/modular/EuroTrash/"
+						"baseUrl" : "/Demos/presets/modular/EuroTrash/"
 					})					.connect(filter);
 					
 					

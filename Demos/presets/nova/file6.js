@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/nova/WantMatch/"
+						"baseUrl" : "/Demos/presets/nova/WantMatch/"
 					})					.connect(filter);
 					
 					

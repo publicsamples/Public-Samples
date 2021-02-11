@@ -29,7 +29,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/nova/DelayLoop/"
+						"baseUrl" : "/Demos/presets/nova/DelayLoop/"
 					})					.connect(filter);
 					
 				

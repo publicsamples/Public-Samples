@@ -31,7 +31,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/jx3p/SyncDown/"
+						"baseUrl" : "/Demos/presets/jx3p/SyncDown/"
 					})					.connect(filter);
 					
 					

@@ -42,7 +42,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/aj/Viewpoint/"
+						"baseUrl" : "/Demos/presets/aj/Viewpoint/"
 					})					.connect(filter);
 					
 					

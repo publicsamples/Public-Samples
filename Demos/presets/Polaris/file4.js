@@ -28,7 +28,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/Polaris/Lander/"
+						"baseUrl" : "/Demos/presets/Polaris/Lander/"
 					})					.connect(filter);
 					
 					

@@ -41,7 +41,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/aj/Cbass/"
+						"baseUrl" : "/Demos/presets/aj/Cbass/"
 					})					.connect(filter);
 					
 					

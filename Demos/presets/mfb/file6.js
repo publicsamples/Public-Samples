@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/mfb/MagicResin/"
+						"baseUrl" : "/Demos/presets/mfb/MagicResin/"
 					})					.connect(filter);
 					
 					

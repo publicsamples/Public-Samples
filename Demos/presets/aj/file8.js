@@ -41,7 +41,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/aj/Cutter/"
+						"baseUrl" : "/Demos/presets/aj/Cutter/"
 					})					.connect(filter);
 					
 					

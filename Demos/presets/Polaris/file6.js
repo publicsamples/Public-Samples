@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/Polaris/PokeItWithAStick/"
+						"baseUrl" : "/Demos/presets/Polaris/PokeItWithAStick/"
 					})					.connect(filter);
 					
 					

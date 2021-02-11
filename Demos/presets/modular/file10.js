@@ -52,7 +52,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/modular/PWPad/"
+						"baseUrl" : "/Demos/presets/modular/PWPad/"
 					})					.connect(filter);
 					
 					

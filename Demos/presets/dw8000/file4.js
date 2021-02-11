@@ -11,7 +11,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/dw8000/MrClicky/"
+						"baseUrl" : "/Demos/presets/dw8000/MrClicky/"
 					})					.connect(filter);
 					
 				

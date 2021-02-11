@@ -27,6 +27,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/morph/Mstring/"
+						"baseUrl" : "/Demos/presets/morph/Mstring/"
 					})					.connect(filter);
 					

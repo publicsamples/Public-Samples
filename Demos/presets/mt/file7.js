@@ -42,7 +42,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/mt/SleepNow/"
+						"baseUrl" : "/Demos/presets/mt/SleepNow/"
 					})					.connect(filter);
 					
 					

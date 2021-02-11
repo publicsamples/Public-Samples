@@ -41,7 +41,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/modular/nightmare/"
+						"baseUrl" : "/Demos/presets/modular/nightmare/"
 					})					.connect(filter);
 					
 					

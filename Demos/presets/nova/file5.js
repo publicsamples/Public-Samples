@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/nova/MaxMod75/"
+						"baseUrl" : "/Demos/presets/nova/MaxMod75/"
 					})					.connect(filter);
 					
 					

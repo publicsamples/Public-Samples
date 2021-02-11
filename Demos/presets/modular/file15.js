@@ -42,7 +42,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/modular/WeightLossBass/"
+						"baseUrl" : "/Demos/presets/modular/WeightLossBass/"
 					})					.connect(filter);
 					
 					

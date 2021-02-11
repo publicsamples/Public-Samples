@@ -29,7 +29,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/mt/SmallMG/"
+						"baseUrl" : "/Demos/presets/mt/SmallMG/"
 					})					.connect(filter);
 					
 					

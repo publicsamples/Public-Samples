@@ -45,7 +45,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/modular/DifferentPaths/"
+						"baseUrl" : "/Demos/presets/modular/DifferentPaths/"
 					})					.connect(filter);
 					
 					

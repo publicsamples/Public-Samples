@@ -42,7 +42,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/z1/Pads/Tonsilsout/"
+						"baseUrl" : "/Demos/presets/z1/Pads/Tonsilsout/"
 					})					.connect(filter);
 					
 					

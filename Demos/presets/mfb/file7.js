@@ -30,7 +30,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/mfb/Organicchord/"
+						"baseUrl" : "/Demos/presets/mfb/Organicchord/"
 					})					.connect(filter);
 					
 					

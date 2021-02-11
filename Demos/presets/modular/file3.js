@@ -54,7 +54,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/modular/AnalogPM/"
+						"baseUrl" : "/Demos/presets/modular/AnalogPM/"
 					})					.connect(filter);
 					
 					

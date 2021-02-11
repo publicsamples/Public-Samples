@@ -28,7 +28,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/mt/ONDIET/"
+						"baseUrl" : "/Demos/presets/mt/ONDIET/"
 					})					.connect(filter);
 					
 					

@@ -29,7 +29,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/jx3p/Cease/"
+						"baseUrl" : "/Demos/presets/jx3p/Cease/"
 					})					.connect(filter);
 					
 					

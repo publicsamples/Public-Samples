@@ -26,6 +26,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/morph/NoiseBass/"
+						"baseUrl" : "/Demos/presets/morph/NoiseBass/"
 					})					.connect(filter);
 					

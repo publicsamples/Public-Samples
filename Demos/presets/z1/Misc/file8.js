@@ -29,7 +29,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/z1/Misc/Roughneckkittens/"
+						"baseUrl" : "/Demos/presets/z1/Misc/Roughneckkittens/"
 					})					.connect(filter);
 					
 					

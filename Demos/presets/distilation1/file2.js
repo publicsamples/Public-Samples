@@ -30,6 +30,6 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/distilation1/166000/"
+						"baseUrl" : "/Demos/presets/distilation1/166000/"
 					})					.connect(filter);
 					

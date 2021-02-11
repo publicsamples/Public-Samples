@@ -47,7 +47,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/monopoly/Grottylittlepuke/"
+						"baseUrl" : "/Demos/presets/monopoly/Grottylittlepuke/"
 					})					.connect(filter);
 					
 					

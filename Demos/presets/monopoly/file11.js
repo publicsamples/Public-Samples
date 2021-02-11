@@ -53,7 +53,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/monopoly/MeatPad/"
+						"baseUrl" : "/Demos/presets/monopoly/MeatPad/"
 					})					.connect(filter);
 					
 					

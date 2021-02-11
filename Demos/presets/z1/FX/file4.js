@@ -41,7 +41,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/z1/FX/StringBouncer/"
+						"baseUrl" : "/Demos/presets/z1/FX/StringBouncer/"
 					})					.connect(filter);
 					
 					

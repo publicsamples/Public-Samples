@@ -42,7 +42,7 @@ var keys = new Tone.Sampler({
 				
 					}, {
 
-						"baseUrl" : "/presets/mt/plinky/"
+						"baseUrl" : "/Demos/presets/mt/plinky/"
 					})					.connect(filter);
 					
 					
