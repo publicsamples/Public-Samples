@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/style.css" />
+	<script src="../external-js/Tone.js" type="text/javascript">
+	</script>
+	<script src="../external-js/audiokeys.js" type="text/javascript">
+	</script>
+	<script src="../external-js/tonejs-ui.js" type="text/javascript">
+	</script>
+	<script src="../external-js/NexusUI.js" type="text/javascript">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/webmidi">
+	</script>
+	<title>Dave Smith Instruments Tetra</title>
+</head>
+<body onload="move(); loadJS('../presets/tetra/file1.js');">
+	<div class="content">
+	<div data-layout-content-preview-placeholder-label="&quot;Player&quot; field" class="block block-layout-builder block-field-blocknodeslgrainfield-spreset">
+    
+	            <h2 class="page_title" >Player</h2>
+        
+	            <div class="content">
+            
+	            <div><body onload=" loadJS('/presets/drones/file1.js');">
+	<div class="grid-patch">
+	<div class="grid-item2">
+	<div class="dropdown"><button class="dropbtn">Patches</button>
+	<div class="dropdown-content">
+	<h3 onclick="clear(); stop(); loadJS('/presets/drones/file1.js');">Listen</h3>
+
+	<h3 onclick="clear(); stop(); loadJS('/presets/drones/file2.js');">A4 Mellow Stretch</h3>
+
+	<h3 onclick="clear(); stop(); loadJS('/presets/drones/file3.js');">ACUI</h3>
+
+	<h3 onclick="clear(); stop(); loadJS('/presets/drones/file4.js');;">AIR</h3>
+
+	<h3 onclick="clear(); stop(); loadJS('/presets/drones/file5.js');">ALL</h3>
+
+	<h3 onclick="clear(); stop(); loadJS('/presets/drones/file6.js');">BANGER</h3>
+
+	<h3 onclick="clear(); stop(); loadJS('/presets/drones/file7.js');">Chim3</h3>
+
+	<h3 onclick="clear(); stop(); loadJS('/presets/drones/file8.js');">Kite Down</h3>
+
+	<h3 onclick="clear(); stop(); loadJS('/presets/drones/file9.js');">Kite Up</h3>
+
+	<h3 onclick="clear(); stop(); loadJS('/presets/drones/file10.js');">EFX Drone</h3>
+
+	<h3 onclick="clear(); stop(); loadJS('/presets/drones/file11.js');">Fast Fluff</h3>
+
+	<h3 onclick="clear(); stop(); loadJS('/presets/drones/file12.js');">MIGHT</h3>
+
+	<h3 onclick="clear(); stop(); loadJS('/presets/drones/file13.js');">Shiv3</h3>
+	</div>
+	</div>
+	</div>
+	</div>
+	</body></div>
+      
+	        </div>
+	    </div>
+	<div data-layout-content-preview-placeholder-label="&quot;Player&quot; block" class="block block-block-content block-block-content2c7142b3-3a4f-47ff-8e5d-72862ed9ba75">
+    
+        
+	            <div class="content">
+            
+	            <div><tone-play-toggle></tone-play-toggle>
+
+
+	<tone-grain-player></tone-grain-player>
+	</div>
+      
+	        </div>
+	    </div>
+	<div data-layout-content-preview-placeholder-label="&quot;FX&quot; block" class="block block-block-content block-block-content132cac83-d454-4d7d-b32e-98e891058e9c">
+    
+	            <h2 class="page_title" >FX</h2>
+        
+	            <div class="content">
+            
+	            <div><table border="0">
+		<tbody>
+			<tr>
+				<td colspan="2" rowspan="1"><strong>Chorus</strong></td>
+				<td colspan="2" rowspan="1"><strong>Delay</strong></td>
+				<td><strong>Reverb</strong></td>
+ 
+			</tr>
+			<tr>
+				<td>Mix</td>
+				<td>Speed</td>
+				<td>Mix</td>
+				<td>Time</td>
+				<td>Mix</td>
+				<td>Volume</td>
+			</tr>
+			<tr>
+				<td>
+				<div id="cwet"></div>
+				</td>
+				<td>
+				<div id="cfreq"></div>
+				</td>
+				<td>
+				<div id="dwet"></div>
+				</td>
+				<td>
+				<div id="dtime"></div>
+				</td>
+				<td>
+				<div id="rwet"></div>
+				</td>
+					<td>
+				<div id="vol"></div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	</div>
+      
+	        </div>
+	    </div>
+
+	      </div>
+    
+	  </div>
+	  <div class="layout layout--onecol">
+	    <div  class="layout__region layout__region--content">
+	      <div data-layout-content-preview-placeholder-label="&quot;grain-code&quot; block" class="block block-block-content block-block-content3b236564-db61-42f5-8e7c-3584999e8de2">
+    
+        
+	            <div class="content">
+            
+	            <div><script type="text/javascript">
+
+	function loadJS(file) {
+	// DOM: Create the script element
+	var jsElm = document.createElement("script");
+	// set the type attribute
+	jsElm.type = "application/javascript";
+	// make the script element load file
+	jsElm.src = file;
+	// finally insert the element to the body element in order to load the script
+	document.body.appendChild(jsElm);
+	}
+
+
+
+	var eq = new Tone.Volume({
+	    "volume" : -12
+    
+	}).toMaster({
+	})
+
+	var verb = new Tone.Freeverb({
+	"wet" : 0.0
+	}).connect(eq);	
+
+	//the feedback delay
+	var feedbackDelay = new Tone.PingPongDelay({
+	"wet" : 0.0
+	}).connect(verb);		
+
+	var chorus = new Tone.Chorus({
+		"wet" : 0.0
+	}).connect(feedbackDelay);		
+
+	var filter = new Tone.AutoFilter({
+		"wet" : 0.0
+	}).connect(chorus).start();		
+
+
+	
+	Nexus.colors.accent = "#ccc"
+	Nexus.colors.fill = "#333"
+
+
+
+	//chorus Controls
+
+	var cwet = new Nexus.Dial('#cwet', {
+	'mode': 'relative', // "absolute" or "absolute"
+	'size': [40, 40],
+	'min': 0.0,
+	'max': 1.0,
+	'step': 0,
+	'value': 0
+	})
+
+	cwet.on('change', function(v) {
+	chorus.wet.value = v;
+	});
+
+
+	var cfreq = new Nexus.Dial('#cfreq', {
+	'mode': 'relative', // "absolute" or "absolute"
+	'size': [40, 40],
+	'min': 0.1,
+	'max': 2.0,
+	'step': 0,
+	'value': 0.60
+	})
+
+	cfreq.on('change', function(v) {
+	chorus.frequency.value = v;
+	});
+
+	//delay Controls
+
+	var dwet = new Nexus.Dial('#dwet', {
+	'mode': 'relative', // "absolute" or "absolute"
+	'size': [40, 40],
+	'min': 0.0,
+	'max': 1.0,
+	'step': 0,
+	'value': 0
+	})
+
+	dwet.on('change', function(v) {
+	feedbackDelay.wet.value = v;
+	});
+
+	var dtime = new Nexus.Dial('#dtime', {
+	'mode': 'relative', // "absolute" or "absolute"
+	'size': [40, 40],
+	'min': 0.01,
+	'max': 1.0,
+	'step': 0,
+	'value': 0.25
+	})
+
+	dtime.on('change', function(v) {
+	feedbackDelay.delayTime.value = v;
+	});
+
+
+	//Reverb Controls
+
+	var rwet = new Nexus.Dial('#rwet', {
+	'mode': 'relative', // "absolute" or "absolute"
+	'size': [40, 40],
+	'min': 0.0,
+	'max': 1.0,
+	'step': 0,
+	'value': 0
+	})
+
+	rwet.on('change', function(v) {
+	verb.wet.value = v;
+	});
+
+	//Transport/seq Controls
+
+	var vol = new Nexus.Dial('#vol', {size: [40, 40], min: -36, max: 12,  value: -12});
+	vol.on('change', function(v) {
+	eq.volume.value = v;
+	});
+
+
+
+	function stop() {
+	keys.stop();
+	keys.disconnect();
+
+
+	}
+
+	</script></div>
+      
+	        </div>
+	    </div>
+</body>
+</html>
