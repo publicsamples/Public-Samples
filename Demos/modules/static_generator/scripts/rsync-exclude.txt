@@ -1,3 +1,0 @@
-rsync_public_exclude.tmp
-robots.txt
-.htaccess

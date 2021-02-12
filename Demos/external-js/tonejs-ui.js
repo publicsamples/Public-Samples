@@ -1406,7 +1406,7 @@ function g(t){return"slot"===t.localName}class y{static getFlattenedNodes(t){ret
 					height: 260px;
 				}
 				#container {
-					width: 90%;
+					width: 100%;
 					height: 100%;
 					display: flex;
 					background-color: #ccc;

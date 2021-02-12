@@ -1,7 +1,0 @@
-views-jump-menu:
-  version: 1.x
-  js:
-    js/views-jump-menu.js: {}
-  dependencies:
-    - core/jquery
-    - core/drupal

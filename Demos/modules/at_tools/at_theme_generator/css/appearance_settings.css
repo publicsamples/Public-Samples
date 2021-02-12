@@ -1,5 +1,0 @@
-/* Override styles on the themes list page */
-
-#system-themes-page .at-theme-generator {
-  display: none !important; /* Override clearfix display table. */
-}

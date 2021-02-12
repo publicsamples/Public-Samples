@@ -1,5 +1,0 @@
-skin:
-  version: 8.x-1.0
-  css:
-    theme:
-      styles/css/SKIN.css: { weight: 1500 }
