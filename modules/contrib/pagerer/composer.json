@@ -1,8 +1,0 @@
-{
-    "name": "drupal/pagerer",
-    "type": "drupal-module",
-    "description": "Configurable pager styles.",
-    "require": {
-        "drupal/core": "^8.5"
-    }
-}

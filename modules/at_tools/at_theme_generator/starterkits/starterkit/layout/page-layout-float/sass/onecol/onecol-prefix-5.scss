@@ -1,8 +1,0 @@
-@import "../page-layout-base";
-//
-// Prefix five
-//
-
-.onecol-prefix-1 .l-r {
-  @include prefix(5 of 12);
-}

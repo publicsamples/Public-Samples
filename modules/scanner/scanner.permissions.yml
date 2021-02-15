@@ -1,8 +1,0 @@
-administer scanner settings:
-  title: Administer scanner settings
-perform search and replace:
-  title: Perform search and replace
-  description: Users with this permission can perform both the search and replace operations
-perform search only:
-  title: Perform search only
-  description: Users with this permission are only allow to search, not replace

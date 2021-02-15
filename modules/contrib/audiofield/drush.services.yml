@@ -1,7 +1,0 @@
-services:
-  audiofield.commands:
-    class: \Drupal\audiofield\Commands\AudiofieldCommands
-    arguments:
-      - '@plugin.manager.audiofield'
-    tags:
-      - { name: drush.command }
